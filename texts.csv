@@ -1,0 +1,54 @@
+key,section,texte
+navbar.home,Navbar,Accueil
+navbar.services,Navbar,Services
+navbar.sectors,Navbar,Secteurs
+navbar.contact,Navbar,Contact
+footer.title,Footer,IAGE
+footer.subtitle,Footer,Institut d'Analyse Génomique et d'Écologie
+footer.navigation,Footer,Navigation
+footer.home,Footer,Accueil
+footer.services,Footer,Services
+footer.sectors,Footer,Secteurs
+footer.contact,Footer,Contact
+footer.contactTitle,Footer,Contact
+footer.email,Footer,Email: contact@iage-france.com
+footer.copyright,Footer,© {année} IAGE. Tous droits réservés.
+home.hero.title,Home (Hero),Solutions d'analyse pour votre industrie
+home.hero.subtitle,Home (Hero),"Expertise, innovation et qualité au service de vos besoins"
+home.hero.cta,Home (Hero),Contactez-nous
+home.services.title,Home (Services),Nos Services
+home.services.0.title,Home (Services),Analyses de laboratoire
+home.services.0.description,Home (Services),Des analyses précises et fiables pour répondre à vos besoins spécifiques.
+home.services.1.title,Home (Services),Conseil et expertise
+home.services.1.description,Home (Services),Un accompagnement personnalisé pour optimiser vos processus.
+home.services.2.title,Home (Services),Formation
+home.services.2.description,Home (Services),Des programmes de formation adaptés à vos équipes.
+home.sectors.title,Home (Secteurs),Nos Domaines d'Expertise
+home.sectors.agroalimentaire.name,Home (Secteurs),Agroalimentaire
+home.sectors.agroalimentaire.description,Home (Secteurs),Analyses et contrôles pour l'industrie agroalimentaire
+home.sectors.pharmaceutique.name,Home (Secteurs),Pharmaceutique
+home.sectors.pharmaceutique.description,Home (Secteurs),Solutions pour l'industrie pharmaceutique
+home.sectors.cosmetique.name,Home (Secteurs),Cosmétique
+home.sectors.cosmetique.description,Home (Secteurs),Contrôles et analyses cosmétiques
+home.sectors.environnement.name,Home (Secteurs),Environnement
+home.sectors.environnement.description,Home (Secteurs),Analyses environnementales
+home.sectors.chimie.name,Home (Secteurs),Chimie
+home.sectors.chimie.description,Home (Secteurs),Analyses chimiques et contrôles
+home.sectors.metallurgie.name,Home (Secteurs),Métallurgie
+home.sectors.metallurgie.description,Home (Secteurs),Contrôles métallurgiques
+home.sectors.textile.name,Home (Secteurs),Textile
+home.sectors.textile.description,Home (Secteurs),Analyses pour l'industrie textile
+home.sectors.automobile.name,Home (Secteurs),Automobile
+home.sectors.automobile.description,Home (Secteurs),Contrôles pour l'industrie automobile
+home.cta.title,Home (CTA),Prêt à commencer ?
+home.cta.subtitle,Home (CTA),Contactez-nous pour discuter de vos besoins et découvrir comment nous pouvons vous aider.
+home.cta.button,Home (CTA),Prendre contact
+contact.title,Contact,Contact
+contact.form.name,Contact,Nom
+contact.form.email,Contact,Email
+contact.form.company,Contact,Entreprise
+contact.form.phone,Contact,Téléphone
+contact.form.message,Contact,Message
+contact.form.submit,Contact,Envoyer
+services.title,Services,Nos Services
+sectors.title,Secteurs,Nos Secteurs d'Activité 

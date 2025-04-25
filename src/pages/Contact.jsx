@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import 'leaflet/dist/leaflet.css'
 import L from 'leaflet'
+import { texts } from '../content/texts' // Import des textes
 
 // Fix for Leaflet default icon
 delete L.Icon.Default.prototype._getIconUrl
@@ -31,7 +32,7 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    // Here you would typically send the form data to your backend
+    // TODO: Remplacer par une vraie soumission (ex: Formspree, backend)
     console.log('Form submitted:', formData)
   }
 
@@ -42,12 +43,12 @@ const Contact = () => {
       exit={{ opacity: 0 }}
       className="container mx-auto px-4 py-8"
     >
-      <h1 className="text-4xl font-bold mb-8">Contact</h1>
+      <h1 className="text-4xl font-bold mb-8">{texts.contact.title}</h1>
       <div className="max-w-2xl mx-auto">
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
             <label htmlFor="name" className="block text-sm font-medium text-gray-700">
-              Nom
+              {texts.contact.form.name}
             </label>
             <input
               type="text"
@@ -60,7 +61,7 @@ const Contact = () => {
           </div>
           <div>
             <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-              Email
+              {texts.contact.form.email}
             </label>
             <input
               type="email"
@@ -73,7 +74,7 @@ const Contact = () => {
           </div>
           <div>
             <label htmlFor="company" className="block text-sm font-medium text-gray-700">
-              Entreprise
+              {texts.contact.form.company}
             </label>
             <input
               type="text"
@@ -86,7 +87,7 @@ const Contact = () => {
           </div>
           <div>
             <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
-              Téléphone
+              {texts.contact.form.phone}
             </label>
             <input
               type="tel"
@@ -99,7 +100,7 @@ const Contact = () => {
           </div>
           <div>
             <label htmlFor="message" className="block text-sm font-medium text-gray-700">
-              Message
+              {texts.contact.form.message}
             </label>
             <textarea
               id="message"
@@ -114,7 +115,7 @@ const Contact = () => {
             type="submit"
             className="w-full bg-primary text-white py-2 px-4 rounded-md hover:bg-primary-dark"
           >
-            Envoyer
+            {texts.contact.form.submit}
           </button>
         </form>
       </div>

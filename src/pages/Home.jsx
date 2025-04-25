@@ -1,57 +1,76 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
+import { texts } from '../content/texts'
 
 const Home = () => {
   const sectors = [
     {
-      name: 'Agroalimentaire',
+      name: texts.home.sectors.agroalimentaire.name,
       icon: '🌾',
       color: 'bg-green-100 hover:bg-green-200',
-      description: 'Analyses et contrôles pour l\'industrie agroalimentaire'
+      description: texts.home.sectors.agroalimentaire.description
     },
     {
-      name: 'Pharmaceutique',
+      name: texts.home.sectors.pharmaceutique.name,
       icon: '💊',
       color: 'bg-blue-100 hover:bg-blue-200',
-      description: 'Solutions pour l\'industrie pharmaceutique'
+      description: texts.home.sectors.pharmaceutique.description
     },
     {
-      name: 'Cosmétique',
+      name: texts.home.sectors.cosmetique.name,
       icon: '💄',
       color: 'bg-pink-100 hover:bg-pink-200',
-      description: 'Contrôles et analyses cosmétiques'
+      description: texts.home.sectors.cosmetique.description
     },
     {
-      name: 'Environnement',
+      name: texts.home.sectors.environnement.name,
       icon: '🌍',
       color: 'bg-emerald-100 hover:bg-emerald-200',
-      description: 'Analyses environnementales'
+      description: texts.home.sectors.environnement.description
     },
     {
-      name: 'Chimie',
+      name: texts.home.sectors.chimie.name,
       icon: '🧪',
       color: 'bg-purple-100 hover:bg-purple-200',
-      description: 'Analyses chimiques et contrôles'
+      description: texts.home.sectors.chimie.description
     },
     {
-      name: 'Métallurgie',
+      name: texts.home.sectors.metallurgie.name,
       icon: '⚙️',
       color: 'bg-gray-100 hover:bg-gray-200',
-      description: 'Contrôles métallurgiques'
+      description: texts.home.sectors.metallurgie.description
     },
     {
-      name: 'Textile',
+      name: texts.home.sectors.textile.name,
       icon: '🧵',
       color: 'bg-indigo-100 hover:bg-indigo-200',
-      description: 'Analyses pour l\'industrie textile'
+      description: texts.home.sectors.textile.description
     },
     {
-      name: 'Automobile',
+      name: texts.home.sectors.automobile.name,
       icon: '🚗',
       color: 'bg-red-100 hover:bg-red-200',
-      description: 'Contrôles pour l\'industrie automobile'
+      description: texts.home.sectors.automobile.description
     }
   ]
+
+  const servicesPreview = [
+      {
+        title: texts.home.services[0].title,
+        description: texts.home.services[0].description,
+        icon: '🔬',
+      },
+      {
+        title: texts.home.services[1].title,
+        description: texts.home.services[1].description,
+        icon: '💡',
+      },
+      {
+        title: texts.home.services[2].title,
+        description: texts.home.services[2].description,
+        icon: '📚',
+      },
+  ];
 
   return (
     <div className="min-h-screen">
@@ -65,16 +84,16 @@ const Home = () => {
             className="w-full text-center text-white py-20"
           >
             <h1 className="text-5xl md:text-7xl font-bold mb-8 text-white max-w-4xl mx-auto leading-tight">
-              Solutions d'analyse pour votre industrie
+              {texts.home.hero.title}
             </h1>
             <p className="text-xl md:text-2xl mb-12 text-gray-100 max-w-2xl mx-auto">
-              Expertise, innovation et qualité au service de vos besoins
+              {texts.home.hero.subtitle}
             </p>
             <Link
               to="/contact"
               className="inline-block bg-white text-primary font-semibold px-8 py-4 rounded-lg hover:bg-gray-100 transition-colors text-lg"
             >
-              Contactez-nous
+              {texts.home.hero.cta}
             </Link>
           </motion.div>
         </div>
@@ -83,25 +102,9 @@ const Home = () => {
       {/* Services Preview */}
       <section className="py-20 bg-gray-50">
         <div className="container">
-          <h2 className="text-4xl font-bold text-center mb-16">Nos Services</h2>
+          <h2 className="text-4xl font-bold text-center mb-16">{texts.home.services.title}</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            {[
-              {
-                title: 'Analyses de laboratoire',
-                description: 'Des analyses précises et fiables pour répondre à vos besoins spécifiques.',
-                icon: '🔬',
-              },
-              {
-                title: 'Conseil et expertise',
-                description: 'Un accompagnement personnalisé pour optimiser vos processus.',
-                icon: '💡',
-              },
-              {
-                title: 'Formation',
-                description: 'Des programmes de formation adaptés à vos équipes.',
-                icon: '📚',
-              },
-            ].map((service, index) => (
+            {servicesPreview.map((service, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
@@ -121,7 +124,7 @@ const Home = () => {
       {/* Sectors Grid */}
       <section className="py-20 bg-white">
         <div className="container">
-          <h2 className="text-4xl font-bold text-center mb-16">Nos Domaines d'Expertise</h2>
+          <h2 className="text-4xl font-bold text-center mb-16">{texts.home.sectors.title}</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
             {sectors.map((sector, index) => (
               <motion.div
@@ -147,15 +150,15 @@ const Home = () => {
       {/* CTA Section */}
       <section className="py-20 bg-primary">
         <div className="container text-center">
-          <h2 className="text-4xl font-bold mb-8 text-white">Prêt à commencer ?</h2>
+          <h2 className="text-4xl font-bold mb-8 text-white">{texts.home.cta.title}</h2>
           <p className="text-xl mb-12 text-gray-100 max-w-2xl mx-auto">
-            Contactez-nous pour discuter de vos besoins et découvrir comment nous pouvons vous aider.
+            {texts.home.cta.subtitle}
           </p>
           <Link
             to="/contact"
             className="inline-block bg-white text-primary font-semibold px-8 py-4 rounded-lg hover:bg-gray-100 transition-colors text-lg"
           >
-            Prendre contact
+            {texts.home.cta.button}
           </Link>
         </div>
       </section>

@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { logos } from "../assets/logo"
 import ThemeSwitcher from "./ThemeSwitcher"
+import { texts } from '../content/texts'
 
 function useIsDark() {
   const [isDark, setIsDark] = useState(() =>
@@ -22,10 +23,10 @@ function Navbar() {
   const isDark = useIsDark()
 
   const navItems = [
-    { name: 'Accueil', path: '/' },
-    { name: 'Services', path: '/services' },
-    { name: 'Secteurs', path: '/sectors' },
-    { name: 'Contact', path: '/contact' },
+    { name: texts.navbar.home, path: '/' },
+    { name: texts.navbar.services, path: '/services' },
+    { name: texts.navbar.sectors, path: '/sectors' },
+    { name: texts.navbar.contact, path: '/contact' },
   ]
 
   return (
