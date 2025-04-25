@@ -4,7 +4,7 @@ navbar.services,Navbar,Services
 navbar.sectors,Navbar,Secteurs
 navbar.contact,Navbar,Contact
 footer.title,Footer,IAGE
-footer.subtitle,Footer,Institut d'Analyse Génomique et d'Écologie
+footer.subtitle,Footer,Ingéniérie et Analyse en Génétique Environnementale
 footer.navigation,Footer,Navigation
 footer.home,Footer,Accueil
 footer.services,Footer,Services
@@ -13,7 +13,7 @@ footer.contact,Footer,Contact
 footer.contactTitle,Footer,Contact
 footer.email,Footer,Email: contact@iage-france.com
 footer.copyright,Footer,© {année} IAGE. Tous droits réservés.
-home.hero.title,Home (Hero),Solutions d'analyse pour votre industrie
+home.hero.title,Home (Hero),Solutions d'analyses et d'expertise pour votre industrie
 home.hero.subtitle,Home (Hero),"Expertise, innovation et qualité au service de vos besoins"
 home.hero.cta,Home (Hero),Contactez-nous
 home.services.title,Home (Services),Nos Services
@@ -23,23 +23,24 @@ home.services.1.title,Home (Services),Conseil et expertise
 home.services.1.description,Home (Services),Un accompagnement personnalisé pour optimiser vos processus.
 home.services.2.title,Home (Services),Formation
 home.services.2.description,Home (Services),Des programmes de formation adaptés à vos équipes.
-home.sectors.title,Home (Secteurs),Nos Domaines d'Expertise
-home.sectors.agroalimentaire.name,Home (Secteurs),Agroalimentaire
-home.sectors.agroalimentaire.description,Home (Secteurs),Analyses et contrôles pour l'industrie agroalimentaire
-home.sectors.pharmaceutique.name,Home (Secteurs),Pharmaceutique
-home.sectors.pharmaceutique.description,Home (Secteurs),Solutions pour l'industrie pharmaceutique
-home.sectors.cosmetique.name,Home (Secteurs),Cosmétique
-home.sectors.cosmetique.description,Home (Secteurs),Contrôles et analyses cosmétiques
-home.sectors.environnement.name,Home (Secteurs),Environnement
-home.sectors.environnement.description,Home (Secteurs),Analyses environnementales
-home.sectors.chimie.name,Home (Secteurs),Chimie
-home.sectors.chimie.description,Home (Secteurs),Analyses chimiques et contrôles
-home.sectors.metallurgie.name,Home (Secteurs),Métallurgie
-home.sectors.metallurgie.description,Home (Secteurs),Contrôles métallurgiques
-home.sectors.textile.name,Home (Secteurs),Textile
-home.sectors.textile.description,Home (Secteurs),Analyses pour l'industrie textile
-home.sectors.automobile.name,Home (Secteurs),Automobile
-home.sectors.automobile.description,Home (Secteurs),Contrôles pour l'industrie automobile
+home.sectors.title,Home (Secteurs),Nos domaines d'expertise
+home.sectors.01.name,Home (Secteurs),Epidémiosurveillance (WES)
+home.sectors.01.description,Home (Secteurs),"Mesures de pathogènes dans les eaux usées 
+Possibilité de Certification COFRAC"
+home.sectors.02.name,Home (Secteurs),Hygiène hospitalière
+home.sectors.02.description,Home (Secteurs),Mesures de contrôle de désinfection
+home.sectors.03.name,Home (Secteurs),Hygiène intérieure et Hygiène publique
+home.sectors.03.description,Home (Secteurs),"Mesures de contrôle de la qualité de l'air, de présences de nuisibles"
+home.sectors.04.name,Home (Secteurs),Gazons sportifs
+home.sectors.04.description,Home (Secteurs),Mesures de présence de pathogènes du gazon
+home.sectors.05.name,Home (Secteurs),Viti – Vini
+home.sectors.05.description,Home (Secteurs),Mesures de pathogènes ou de qualité du process
+home.sectors.06.name,Home (Secteurs),Arboriculture (Pomme)
+home.sectors.06.description,Home (Secteurs),Mesure de pathogènes
+home.sectors.07.name,Home (Secteurs),Conchyliculture
+home.sectors.07.description,Home (Secteurs),Mesure de contrôle contre la présence de pathogènes humains
+home.sectors.08.name,Home (Secteurs),Aviculture
+home.sectors.08.description,Home (Secteurs),Mesures de contrôle pathogènes aviaires
 home.cta.title,Home (CTA),Prêt à commencer ?
 home.cta.subtitle,Home (CTA),Contactez-nous pour discuter de vos besoins et découvrir comment nous pouvons vous aider.
 home.cta.button,Home (CTA),Prendre contact

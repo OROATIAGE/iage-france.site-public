@@ -5,52 +5,53 @@ import { texts } from '../content/texts'
 const Home = () => {
   const sectors = [
     {
-      name: texts.home.sectors.agroalimentaire.name,
-      icon: '🌾',
+      name: texts.home.sectors['01'].name,
+      icon: '🦠',
       color: 'bg-green-100 hover:bg-green-200',
-      description: texts.home.sectors.agroalimentaire.description
+      description: texts.home.sectors['01'].description
     },
     {
-      name: texts.home.sectors.pharmaceutique.name,
-      icon: '💊',
+      name: texts.home.sectors['02'].name,
+      icon: '🏥',
       color: 'bg-blue-100 hover:bg-blue-200',
-      description: texts.home.sectors.pharmaceutique.description
+      description: texts.home.sectors['02'].description
     },
     {
-      name: texts.home.sectors.cosmetique.name,
-      icon: '💄',
+      name: texts.home.sectors['03'].name,
+      icon: '🏠',
       color: 'bg-pink-100 hover:bg-pink-200',
-      description: texts.home.sectors.cosmetique.description
+      description: texts.home.sectors['03'].description
     },
     {
-      name: texts.home.sectors.environnement.name,
-      icon: '🌍',
+      name: texts.home.sectors['04'].name,
+      icon: '/assets/icons/football-field.svg',
+      isSvg: true,
       color: 'bg-emerald-100 hover:bg-emerald-200',
-      description: texts.home.sectors.environnement.description
+      description: texts.home.sectors['04'].description
     },
     {
-      name: texts.home.sectors.chimie.name,
-      icon: '🧪',
+      name: texts.home.sectors['05'].name,
+      icon: '🍇',
       color: 'bg-purple-100 hover:bg-purple-200',
-      description: texts.home.sectors.chimie.description
+      description: texts.home.sectors['05'].description
     },
     {
-      name: texts.home.sectors.metallurgie.name,
-      icon: '⚙️',
+      name: texts.home.sectors['06'].name,
+      icon: '🍎',
       color: 'bg-gray-100 hover:bg-gray-200',
-      description: texts.home.sectors.metallurgie.description
+      description: texts.home.sectors['06'].description
     },
     {
-      name: texts.home.sectors.textile.name,
-      icon: '🧵',
+      name: texts.home.sectors['07'].name,
+      icon: '🦪',
       color: 'bg-indigo-100 hover:bg-indigo-200',
-      description: texts.home.sectors.textile.description
+      description: texts.home.sectors['07'].description
     },
     {
-      name: texts.home.sectors.automobile.name,
-      icon: '🚗',
+      name: texts.home.sectors['08'].name,
+      icon: '🐔',
       color: 'bg-red-100 hover:bg-red-200',
-      description: texts.home.sectors.automobile.description
+      description: texts.home.sectors['08'].description
     }
   ]
 
@@ -134,11 +135,15 @@ const Home = () => {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="flex flex-col items-center"
               >
-                <div className={`${sector.color} w-32 h-32 rounded-full flex flex-col items-center justify-center transition-all duration-300 transform hover:scale-110 shadow-lg`}>
-                  <span className="text-4xl mb-2">{sector.icon}</span>
-                  <span className="text-sm font-semibold text-center">{sector.name}</span>
+                <div className={`${sector.color} w-36 h-36 md:w-40 md:h-40 rounded-full flex flex-col items-center justify-center p-4 transition-all duration-300 transform hover:scale-110 shadow-lg`}>
+                  {sector.isSvg ? (
+                    <img src={sector.icon} alt={sector.name} className="w-20 h-20 object-contain" />
+                  ) : (
+                    <span className="text-5xl mb-2">{sector.icon}</span>
+                  )}
+                  <span className="text-base font-semibold text-center mt-2">{sector.name}</span>
                 </div>
-                <p className="mt-6 text-gray-600 text-center max-w-[200px]">
+                <p className="mt-6 text-gray-600 text-center max-w-[200px] whitespace-pre-line">
                   {sector.description}
                 </p>
               </motion.div>

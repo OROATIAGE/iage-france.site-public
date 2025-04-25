@@ -7,7 +7,7 @@ export const texts = {
   },
   "footer": {
     "title": "IAGE",
-    "subtitle": "Institut d'Analyse Génomique et d'Écologie",
+    "subtitle": "Ingéniérie et Analyse en Génétique Environnementale",
     "navigation": "Navigation",
     "home": "Accueil",
     "services": "Services",
@@ -19,7 +19,7 @@ export const texts = {
   },
   "home": {
     "hero": {
-      "title": "Solutions d'analyse pour votre industrie",
+      "title": "Solutions d'analyses et d'expertise pour votre industrie",
       "subtitle": "Expertise, innovation et qualité au service de vos besoins",
       "cta": "Contactez-nous"
     },
@@ -39,38 +39,38 @@ export const texts = {
       "title": "Nos Services"
     },
     "sectors": {
-      "title": "Nos Domaines d'Expertise",
-      "agroalimentaire": {
-        "name": "Agroalimentaire",
-        "description": "Analyses et contrôles pour l'industrie agroalimentaire"
+      "title": "Nos domaines d'expertise",
+      "01": {
+        "name": "Epidémiosurveillance (WES)",
+        "description": "Mesures de pathogènes dans les eaux usées \nPossibilité de Certification COFRAC"
       },
-      "pharmaceutique": {
-        "name": "Pharmaceutique",
-        "description": "Solutions pour l'industrie pharmaceutique"
+      "02": {
+        "name": "Hygiène hospitalière",
+        "description": "Mesures de contrôle de désinfection"
       },
-      "cosmetique": {
-        "name": "Cosmétique",
-        "description": "Contrôles et analyses cosmétiques"
+      "03": {
+        "name": "Hygiène intérieure et Hygiène publique",
+        "description": "Mesures de contrôle de la qualité de l'air, de présences de nuisibles"
       },
-      "environnement": {
-        "name": "Environnement",
-        "description": "Analyses environnementales"
+      "04": {
+        "name": "Gazons sportifs",
+        "description": "Mesures de présence de pathogènes du gazon"
       },
-      "chimie": {
-        "name": "Chimie",
-        "description": "Analyses chimiques et contrôles"
+      "05": {
+        "name": "Viti – Vini",
+        "description": "Mesures de pathogènes ou de qualité du process"
       },
-      "metallurgie": {
-        "name": "Métallurgie",
-        "description": "Contrôles métallurgiques"
+      "06": {
+        "name": "Arboriculture (Pomme)",
+        "description": "Mesure de pathogènes"
       },
-      "textile": {
-        "name": "Textile",
-        "description": "Analyses pour l'industrie textile"
+      "07": {
+        "name": "Conchyliculture",
+        "description": "Mesure de contrôle contre la présence de pathogènes humains"
       },
-      "automobile": {
-        "name": "Automobile",
-        "description": "Contrôles pour l'industrie automobile"
+      "08": {
+        "name": "Aviculture",
+        "description": "Mesures de contrôle pathogènes aviaires"
       }
     },
     "cta": {
