@@ -8,11 +8,23 @@ export default {
     extend: {
       colors: {
         primary: '#003366', // Bleu IAGE
+        'primary-dark': '#002244',
         secondary: '#00A0E9',
+        'secondary-dark': '#0080C9',
         accent: '#FF6B00',
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
+      },
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: '1rem',
+          sm: '2rem',
+          lg: '4rem',
+          xl: '5rem',
+          '2xl': '6rem',
+        },
       },
     },
   },

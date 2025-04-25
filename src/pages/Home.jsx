@@ -56,23 +56,23 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-primary to-secondary text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative bg-gradient-to-r from-primary to-secondary">
+        <div className="container min-h-[70vh] flex items-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-center"
+            className="w-full text-center text-white py-20"
           >
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            <h1 className="text-5xl md:text-7xl font-bold mb-8 text-white max-w-4xl mx-auto leading-tight">
               Solutions d'analyse pour votre industrie
             </h1>
-            <p className="text-xl md:text-2xl mb-8">
+            <p className="text-xl md:text-2xl mb-12 text-gray-100 max-w-2xl mx-auto">
               Expertise, innovation et qualité au service de vos besoins
             </p>
             <Link
               to="/contact"
-              className="bg-white text-primary px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors"
+              className="inline-block bg-white text-primary font-semibold px-8 py-4 rounded-lg hover:bg-gray-100 transition-colors text-lg"
             >
               Contactez-nous
             </Link>
@@ -81,10 +81,10 @@ const Home = () => {
       </section>
 
       {/* Services Preview */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-12">Nos Services</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <section className="py-20 bg-gray-50">
+        <div className="container">
+          <h2 className="text-4xl font-bold text-center mb-16">Nos Services</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {[
               {
                 title: 'Analyses de laboratoire',
@@ -107,11 +107,11 @@ const Home = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.2 }}
-                className="bg-white p-6 rounded-lg shadow-lg"
+                className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow"
               >
-                <div className="text-4xl mb-4">{service.icon}</div>
-                <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-                <p className="text-gray-600">{service.description}</p>
+                <div className="text-5xl mb-6">{service.icon}</div>
+                <h3 className="text-2xl font-semibold mb-4">{service.title}</h3>
+                <p className="text-gray-600 text-lg">{service.description}</p>
               </motion.div>
             ))}
           </div>
@@ -119,10 +119,10 @@ const Home = () => {
       </section>
 
       {/* Sectors Grid */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-12">Nos Domaines d'Expertise</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+      <section className="py-20 bg-white">
+        <div className="container">
+          <h2 className="text-4xl font-bold text-center mb-16">Nos Domaines d'Expertise</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
             {sectors.map((sector, index) => (
               <motion.div
                 key={index}
@@ -131,14 +131,11 @@ const Home = () => {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="flex flex-col items-center"
               >
-                <Link
-                  to={`/sectors#${sector.name.toLowerCase()}`}
-                  className={`${sector.color} w-32 h-32 rounded-full flex flex-col items-center justify-center transition-all duration-300 transform hover:scale-105 shadow-lg`}
-                >
+                <div className={`${sector.color} w-32 h-32 rounded-full flex flex-col items-center justify-center transition-all duration-300 transform hover:scale-110 shadow-lg`}>
                   <span className="text-4xl mb-2">{sector.icon}</span>
                   <span className="text-sm font-semibold text-center">{sector.name}</span>
-                </Link>
-                <p className="mt-4 text-sm text-gray-600 text-center max-w-[200px]">
+                </div>
+                <p className="mt-6 text-gray-600 text-center max-w-[200px]">
                   {sector.description}
                 </p>
               </motion.div>
@@ -148,15 +145,15 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-primary text-white py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-6">Prêt à commencer ?</h2>
-          <p className="text-xl mb-8">
+      <section className="py-20 bg-primary">
+        <div className="container text-center">
+          <h2 className="text-4xl font-bold mb-8 text-white">Prêt à commencer ?</h2>
+          <p className="text-xl mb-12 text-gray-100 max-w-2xl mx-auto">
             Contactez-nous pour discuter de vos besoins et découvrir comment nous pouvons vous aider.
           </p>
           <Link
             to="/contact"
-            className="bg-white text-primary px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors"
+            className="inline-block bg-white text-primary font-semibold px-8 py-4 rounded-lg hover:bg-gray-100 transition-colors text-lg"
           >
             Prendre contact
           </Link>
