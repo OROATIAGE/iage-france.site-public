@@ -1,11 +1,27 @@
 import { Link } from 'react-router-dom'
+import { logos } from "../assets/logo"
+import { useState, useEffect } from "react"
+
+function useIsDark() {
+  const [isDark, setIsDark] = useState(false)
+  useEffect(() => {
+    const match = window.matchMedia("(prefers-color-scheme: dark)")
+    const check = () => setIsDark(document.documentElement.classList.contains("dark") || match.matches)
+    check()
+    match.addEventListener("change", check)
+    return () => match.removeEventListener("change", check)
+  }, [])
+  return isDark
+}
 
 function Footer() {
+  const isDark = useIsDark()
   return (
-    <footer className="bg-gray-800 text-white">
+    <footer className="bg-gray-800 text-white dark:bg-black dark:text-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
+            <img src={isDark ? logos.symbol.white : logos.symbol.blue} alt="Logo IAGE" className="h-10 mb-2" style={{ maxWidth: 60 }} />
             <h3 className="text-lg font-semibold mb-4">IAGE</h3>
             <p className="text-gray-300">
               Institut d'Analyse Génomique et d'Écologie
