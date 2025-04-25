@@ -4,15 +4,17 @@ import { logos } from "../assets/logo"
 import ThemeSwitcher from "./ThemeSwitcher"
 
 function useIsDark() {
-  const [isDark, setIsDark] = useState(false)
+  const [isDark, setIsDark] = useState(() =>
+    document.documentElement.classList.contains("dark")
+  );
   useEffect(() => {
-    const match = window.matchMedia("(prefers-color-scheme: dark)")
-    const check = () => setIsDark(document.documentElement.classList.contains("dark") || match.matches)
-    check()
-    match.addEventListener("change", check)
-    return () => match.removeEventListener("change", check)
-  }, [])
-  return isDark
+    const observer = new MutationObserver(() => {
+      setIsDark(document.documentElement.classList.contains("dark"));
+    });
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
+    return () => observer.disconnect();
+  }, []);
+  return isDark;
 }
 
 function Navbar() {
