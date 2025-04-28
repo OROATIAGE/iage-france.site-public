@@ -42,7 +42,7 @@ function Navbar() {
       path: '/services',
       dropdown: servicesDropdownItems
     },
-    { name: texts.navbar.sectors, path: '/sectors' },
+    { name: texts.navbar.sectors, path: '/#sectors-grid' },
     { name: texts.navbar.contact, path: '/contact' },
   ]
 

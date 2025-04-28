@@ -46,7 +46,7 @@ function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/sectors" className="text-gray-300 hover:text-white">
+                <Link to="/#sectors-grid" className="text-gray-300 hover:text-white dark:text-gray-400 dark:hover:text-white">
                   {texts.footer.sectors}
                 </Link>
               </li>

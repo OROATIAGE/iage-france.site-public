@@ -55,38 +55,38 @@ contact.form.submit,Contact,Envoyer
 services.title,Services,Nos Services
 sectors.title,Secteurs,Nos Secteurs d'Activité
 about.title,About,À propos de nous
-sectors.page.01.catchphrase,"Secteur 01 (Page)",Êtes-vous responsable de la surveillance sanitaire des eaux usées ou d'un plan d'eau ?
-sectors.page.01.intro,"Secteur 01 (Page)","IAGE vous accompagne avec des solutions d'analyse génomique précises et rapides pour l'épidémiosurveillance environnementale, notamment via l'analyse des eaux usées (Wastewater Based Epidemiology - WBE)."
-sectors.page.01.services.title,"Secteur 01 (Page)","Nos solutions adaptées à l'épidémiosurveillance :"
-sectors.page.01.diagbox.title,"Secteur 01 (Page)","DiagBox® WES"
-sectors.page.01.diagbox.description,"Secteur 01 (Page)","Le kit clé-en-main pour une détection et quantification rapide (48h) et autonome des pathogènes (virus, bactéries) dans vos échantillons d'eau. Simple, efficace, et stockable sans contrainte."
-sectors.page.01.catalog.title,"Secteur 01 (Page)","Analyses Catalogue et Combinaisons Spécifiques"
-sectors.page.01.catalog.description,"Secteur 01 (Page)","Choisissez parmi nos analyses standardisées (ex: SARS-CoV-2 dans les eaux usées) ou combinez plusieurs méthodes pour un suivi sur mesure de pathogènes spécifiques à vos problématiques."
-sectors.page.01.development.title,"Secteur 01 (Page)","Développement de Nouvelles Méthodes"
-sectors.page.01.development.description,"Secteur 01 (Page)","Nous innovons avec vous pour développer et valider des méthodes d'analyse pour de nouvelles cibles virales ou bactériennes, répondant aux enjeux émergents de santé publique."
-sectors.page.01.sampling.title,"Secteur 01 (Page)","Prélèvement en continu"
-sectors.page.01.sampling.description,"Secteur 01 (Page)","Nous proposons également des solutions pour le prélèvement en continu, particulièrement adaptées au suivi dynamique des matrices aqueuses."
-sectors.page.01.cta.diagbox,"Secteur 01 (Page)","Découvrir DiagBox® WES"
-navbar.services.dropdown.all,Navbar,"Voir tous les services"
-navbar.services.dropdown.diagbox,Navbar,"DiagBox®"
-navbar.services.dropdown.catalog,Navbar,"Analyses Catalogue"
-navbar.services.dropdown.specific,Navbar,"Combinaisons Spécifiques"
-navbar.services.dropdown.development,Navbar,"Développement Méthodes"
-navbar.services.dropdown.sampling,Navbar,"Outils de Prélèvement"
-navbar.services.dropdown.local_labs,Navbar,"Laboratoires Dédiés"
-services.page.title,Services (Page),"Nos Solutions et Services Analytiques"
-services.page.intro,Services (Page),"Découvrez comment IAGE répond à vos besoins spécifiques grâce à une gamme complète de services, de l'analyse rapide sur site au développement de méthodes innovantes."
-services.page.diagbox_title,Services (Page),"DiagBox® : Simplicité et Rapidité"
+sectors.page.01.catchphrase,Secteur 01 (Page),Êtes-vous responsable de la surveillance sanitaire des eaux usées ou d'un plan d'eau ?
+sectors.page.01.intro,Secteur 01 (Page),"IAGE vous accompagne avec des solutions d'analyse génomique précises et rapides pour l'épidémiosurveillance environnementale, notamment via l'analyse des eaux usées (Wastewater Based Epidemiology - WBE)."
+sectors.page.01.services.title,Secteur 01 (Page),Nos solutions adaptées à l'épidémiosurveillance :
+sectors.page.01.diagbox.title,Secteur 01 (Page),DiagBox® WES
+sectors.page.01.diagbox.description,Secteur 01 (Page),"Le kit clé-en-main pour une détection et quantification rapide (48h) et autonome des pathogènes (virus, bactéries) dans vos échantillons d'eau. Simple, efficace, et stockable sans contrainte."
+sectors.page.01.catalog.title,Secteur 01 (Page),Analyses Catalogue et Combinaisons Spécifiques
+sectors.page.01.catalog.description,Secteur 01 (Page),Choisissez parmi nos analyses standardisées (ex: SARS-CoV-2 dans les eaux usées) ou combinez plusieurs méthodes pour un suivi sur mesure de pathogènes spécifiques à vos problématiques.
+sectors.page.01.development.title,Secteur 01 (Page),Développement de Nouvelles Méthodes
+sectors.page.01.development.description,Secteur 01 (Page),"Nous innovons avec vous pour développer et valider des méthodes d'analyse pour de nouvelles cibles virales ou bactériennes, répondant aux enjeux émergents de santé publique."
+sectors.page.01.sampling.title,Secteur 01 (Page),Prélèvement en continu
+sectors.page.01.sampling.description,Secteur 01 (Page),"Nous proposons également des solutions pour le prélèvement en continu, particulièrement adaptées au suivi dynamique des matrices aqueuses."
+sectors.page.01.cta.diagbox,Secteur 01 (Page),Découvrir DiagBox® WES
+navbar.services.dropdown.all,Navbar,Voir tous les services
+navbar.services.dropdown.diagbox,Navbar,DiagBox®
+navbar.services.dropdown.catalog,Navbar,Analyses Catalogue
+navbar.services.dropdown.specific,Navbar,Combinaisons Spécifiques
+navbar.services.dropdown.development,Navbar,Développement Méthodes
+navbar.services.dropdown.sampling,Navbar,Outils de Prélèvement
+navbar.services.dropdown.local_labs,Navbar,Laboratoires Dédiés
+services.page.title,Services (Page),Nos Solutions et Services Analytiques
+services.page.intro,Services (Page),"Découvrez comment IAGE répond à vos besoins spécifiques grâce à une gamme complète de services, de l'analyse spécifique au développement de méthodes innovantes."
+services.page.diagbox_title,Services (Page),DiagBox® : Simplicité et Rapidité
 services.page.diagbox_description,Services (Page),"Nos kits DiagBox® sont des solutions clé-en-main pour des analyses rapides (résultats en 48h) et autonomes. Chaque kit inclut le matériel de prélèvement adapté, le transport et l'analyse en laboratoire. Faciles à stocker et à utiliser, ils sont idéaux pour le contrôle qualité régulier, le suivi ou la confirmation rapide d'une suspicion (ex: pathogènes gazon, qualité de l'air intérieur, nuisibles)."
-services.page.catalog_title,Services (Page),"Analyses Catalogue : Précision et Fiabilité"
+services.page.catalog_title,Services (Page),Analyses Catalogue : Précision et Fiabilité
 services.page.catalog_description,Services (Page),"Nous proposons un large catalogue d'analyses standardisées, validées et optimisées pour différents types de matrices (eaux, sols, air, surfaces, etc.). Ces analyses couvrent la détection et la quantification de nombreux micro-organismes (virus, bactéries, champignons) et paramètres spécifiques. Consultez notre catalogue pour trouver l'analyse adaptée à votre besoin."
-services.page.specific_title,Services (Page),"Combinaisons Spécifiques : Flexibilité sur Mesure"
+services.page.specific_title,Services (Page),Combinaisons Spécifiques : Flexibilité sur Mesure
 services.page.specific_description,Services (Page),"Vos besoins sont uniques ? Nous pouvons combiner plusieurs méthodes d'analyses catalogue ou adapter nos protocoles pour répondre précisément à vos problématiques. Que ce soit pour suivre simultanément plusieurs pathogènes ou analyser une matrice complexe, nous évaluons la faisabilité et validons des approches sur mesure."
-services.page.development_title,Services (Page),"Développement de Nouvelles Méthodes : Innovation et R&D"
+services.page.development_title,Services (Page),Développement de Nouvelles Méthodes : Innovation et R&D
 services.page.development_description,Services (Page),"Face à des enjeux émergents ou des besoins non couverts par les méthodes existantes, IAGE s'engage dans le développement et la validation de nouvelles méthodes d'analyse. En partenariat R&D, nous créons des solutions innovantes pour de nouvelles cibles (virus émergents, bactéries spécifiques) ou des applications uniques, y compris le développement de kits spécifiques."
-services.page.sampling_title,Services (Page),"Outils de Prélèvement Adaptés"
+services.page.sampling_title,Services (Page),Outils de Prélèvement Adaptés
 services.page.sampling_description,Services (Page),"La qualité de l'analyse commence par un prélèvement pertinent. Nous fournissons ou recommandons les outils de prélèvement les mieux adaptés à votre matrice et à vos objectifs, y compris des solutions pour le prélèvement en continu (eaux, air) et des dispositifs spécifiques pour garantir l'intégrité de vos échantillons."
-services.page.local_labs_title,Services (Page),"Laboratoires Locaux Spécialisés et Dédiés"
+services.page.local_labs_title,Services (Page),Laboratoires Locaux Spécialisés et Dédiés
 services.page.local_labs_description,Services (Page),"Pour des besoins récurrents, des volumes importants ou une nécessité de résultats ultra-rapides, nous pouvons étudier la mise en place de laboratoires d'analyse locaux, spécialisés et dédiés à votre activité. Cette solution offre une autonomie et une réactivité maximales, avec notre support pour l'installation, la formation et le suivi qualité."
-services.page.back_to_sectors_title,Services (Page),"Explorer nos domaines d'application"
-services.page.back_to_sectors_link_text,Services (Page),"Voir nos secteurs d'activité"
+services.page.back_to_sectors_title,Services (Page),Explorer nos domaines d'application
+services.page.back_to_sectors_link_text,Services (Page),Voir nos secteurs d'activité

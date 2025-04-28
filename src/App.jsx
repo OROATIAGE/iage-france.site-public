@@ -8,10 +8,12 @@ import Contact from './pages/Contact'
 import Sectors from './pages/Sectors'
 import About from './pages/About'
 import SectorPage from './pages/SectorPage'
+import ScrollToTop from './components/ScrollToTop'
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="flex flex-col min-h-screen">
         <Navbar />
         <main className="flex-grow pt-16">

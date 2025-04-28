@@ -54,7 +54,7 @@ export const texts = {
       "title": "Nos domaines d'expertise",
       "01": {
         "name": "Epidémiosurveillance (WES)",
-        "description": "Mesures de pathogènes dans les eaux usées \r\nPossibilité de Certification COFRAC"
+        "description": "Mesures de pathogènes dans les eaux usées \nPossibilité de Certification COFRAC"
       },
       "02": {
         "name": "Hygiène hospitalière",
@@ -106,7 +106,7 @@ export const texts = {
     "title": "Nos Services",
     "page": {
       "title": "Nos Solutions et Services Analytiques",
-      "intro": "Découvrez comment IAGE répond à vos besoins spécifiques grâce à une gamme complète de services, de l'analyse rapide sur site au développement de méthodes innovantes.",
+      "intro": "Découvrez comment IAGE répond à vos besoins spécifiques grâce à une gamme complète de services, de l'analyse spécifique au développement de méthodes innovantes.",
       "diagbox_title": "DiagBox® : Simplicité et Rapidité",
       "diagbox_description": "Nos kits DiagBox® sont des solutions clé-en-main pour des analyses rapides (résultats en 48h) et autonomes. Chaque kit inclut le matériel de prélèvement adapté, le transport et l'analyse en laboratoire. Faciles à stocker et à utiliser, ils sont idéaux pour le contrôle qualité régulier, le suivi ou la confirmation rapide d'une suspicion (ex: pathogènes gazon, qualité de l'air intérieur, nuisibles).",
       "catalog_title": "Analyses Catalogue : Précision et Fiabilité",
