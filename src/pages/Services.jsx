@@ -22,15 +22,15 @@ function Services() {
     if (location.hash) {
       const id = location.hash.replace('#', '');
       const element = document.getElementById(id);
-      console.log(`[Services Page Effect] Attempting to scroll to element with id: ${id}`, element); // Log
       if (element) {
-        // Supprimer le setTimeout et réactiver le smooth scroll
-        console.log(`[Services Page Effect] Executing smooth scrollIntoView for: ${id}`); // Log
         element.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
+    } else {
+      // S'il n'y a pas de hash, s'assurer qu'on est en haut de page
+      window.scrollTo(0, 0);
     }
-    // Déclencher l'effet si l'objet location complet ou spécifiquement le hash ou la clé change
-  }, [location.key, location.hash]); // Utiliser location.key et location.hash comme dépendances
+    // Déclencher l'effet si la clé ou le hash change (pathname géré par ScrollToTop globalement)
+  }, [location.key, location.hash]); // Garder ces dépendances
 
   // Fonction pour récupérer les textes de manière sûre
   const getPageText = (key) => texts.services?.page?.[key] || '';
