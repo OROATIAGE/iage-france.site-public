@@ -9,6 +9,7 @@ import Sectors from './pages/Sectors'
 import About from './pages/About'
 import SectorPage from './pages/SectorPage'
 import ScrollToTop from './components/ScrollToTop'
+import DiagboxGazonPage from './pages/DiagboxGazonPage'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/services" element={<Services />} />
+              <Route path="/services/diagbox/04" element={<DiagboxGazonPage />} />
               <Route path="/sectors" element={<Sectors />} />
               <Route path="/sectors/:sectorId" element={<SectorPage />} />
               <Route path="/contact" element={<Contact />} />

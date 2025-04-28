@@ -45,8 +45,11 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    @apply scroll-smooth; /* Activer le défilement doux */
+  }
   body {
-    @apply bg-gray-50 text-gray-900;
+    @apply bg-gray-50 text-gray-900 dark:bg-gray-950; /* Ajuster la couleur dark body */
   }
 
   h1 {
