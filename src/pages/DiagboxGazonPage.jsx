@@ -61,6 +61,15 @@ const priceList = [
 ];
 
 function DiagboxGazonPage() {
+
+  // Créer le mapping Ref -> ID de section
+  const kitRefToSectionIdMap = {};
+  kitTypes.forEach(typeInfo => {
+    typeInfo.kits.forEach(kitRef => {
+      kitRefToSectionIdMap[kitRef] = typeInfo.type;
+    });
+  });
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -120,6 +129,13 @@ function DiagboxGazonPage() {
                     {getText(`toc.${kitTypeInfo.type}_link`)} 
                 </a>
             ))}
+            {/* Ajouter le lien vers les prix */}
+             <a 
+                href="#prices" 
+                className="px-4 py-2 bg-accent/10 dark:bg-accent/20 text-accent dark:text-orange-300 text-sm font-medium rounded-full hover:bg-accent/20 dark:hover:bg-accent/30 transition-colors"
+            >
+                {getText(`toc.prices_link`)} 
+            </a>
         </div>
         <div className="mt-6 text-right">
           <a href="#toc" className="text-sm text-secondary hover:text-secondary-dark dark:text-secondary-light dark:hover:text-secondary transition-colors">
@@ -183,18 +199,21 @@ function DiagboxGazonPage() {
              {(kitTypeInfo.kits.some(ref => getText(`kits.${ref}.targets`, '').includes('Pythium Blight*'))) &&
                 <p className="mt-4 text-xs text-gray-500 dark:text-gray-400 italic">{getText('pythium_note')}</p>
              }
-             {/* Lien Retour TOC - Placé ici, à la fin de la section */}
-             <div className="mt-6 text-right">
-                <a href="#toc" className="text-sm text-secondary hover:text-secondary-dark dark:text-secondary-light dark:hover:text-secondary transition-colors">
-                    {getText('toc.back_link')}
-                </a>
-             </div>
+             {/* Liens en bas de section */}
+            <div className="mt-6 flex justify-between items-center">
+              <a href="#prices" className="text-sm text-accent hover:text-accent/80 dark:text-orange-300 dark:hover:text-orange-200 transition-colors font-medium">
+                {getText('link_to_prices')}
+              </a>
+              <a href="#toc" className="text-sm text-secondary hover:text-secondary-dark dark:text-secondary-light dark:hover:text-secondary transition-colors">
+                {getText('toc.back_link')}
+              </a>
+            </div>
           </section>
         ))}
       </div>
 
       {/* --- Price List Section --- */}
-      <section className="mt-12 md:mt-16 pt-10 border-t border-gray-200 dark:border-gray-700">
+      <section id="prices" className="mt-12 md:mt-16 pt-10 border-t border-gray-200 dark:border-gray-700 scroll-mt-20 md:scroll-mt-24">
           <h2 className="text-2xl md:text-3xl font-semibold text-center text-gray-800 dark:text-gray-200 mb-8">
             {getText('prices.title')}
           </h2>
@@ -211,7 +230,11 @@ function DiagboxGazonPage() {
                 {priceList.map((kitRef) => (
                   <tr key={kitRef}>
                     <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 dark:text-gray-100">{kitRef}</td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600 dark:text-gray-300">{getText(`kits.${kitRef}.name`)}</td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600 dark:text-gray-300">
+                      <a href={`#${kitRefToSectionIdMap[kitRef] ?? ''}`} className="hover:underline hover:text-primary dark:hover:text-secondary transition-colors">
+                         {getText(`kits.${kitRef}.name`)}
+                      </a>
+                    </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600 dark:text-gray-300 text-right">{getText(`prices.${kitRef}`)}</td>
                   </tr>
                 ))}

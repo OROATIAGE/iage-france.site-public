@@ -511,8 +511,10 @@ export const texts = {
         "sol_link": "Sol / Substrat (Avant plaquage)",
         "racine_gazon_link": "Racine + Gazon (Vision globale)",
         "plaquage_link": "Accompagnement Plaquage (Sécurisation)",
+        "prices_link": "Voir les tarifs",
         "back_link": "Retour à l'accès rapide ⬆️"
-      }
+      },
+      "link_to_prices": "Voir le tarif"
     }
   }
 };
