@@ -15,7 +15,7 @@ export default {
         accent: '#FF6B00',
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        sans: ['DINRoundPro', 'Inter', 'sans-serif'],
       },
       container: {
         center: true,

@@ -1,4 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+/* Font Definitions */
+@font-face {
+  font-family: 'DINRoundPro';
+  src: url('/fonts/DINRoundPro-Light.otf') format('opentype');
+  font-weight: 300; /* Light */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DINRoundPro';
+  src: url('/fonts/DINRoundPro.otf') format('opentype');
+  font-weight: 400; /* Normal / Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DINRoundPro';
+  src: url('/fonts/DINRoundPro-Medium.otf') format('opentype');
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DINRoundPro';
+  src: url('/fonts/DINRoundPro-Bold.otf') format('opentype');
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DINRoundPro';
+  src: url('/fonts/DINRoundPro-Black.otf') format('opentype');
+  font-weight: 900; /* Black */
+  font-style: normal;
+}
+/* End Font Definitions */
 
 @tailwind base;
 @tailwind components;
@@ -7,7 +42,6 @@
 @layer base {
   body {
     @apply bg-gray-50 text-gray-900;
-    font-family: 'Inter', sans-serif;
   }
 
   h1 {
