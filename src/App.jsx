@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import Services from './pages/Services'
 import Contact from './pages/Contact'
 import Sectors from './pages/Sectors'
+import About from './pages/About'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <AnimatePresence mode="wait">
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
               <Route path="/services" element={<Services />} />
               <Route path="/sectors" element={<Sectors />} />
               <Route path="/contact" element={<Contact />} />

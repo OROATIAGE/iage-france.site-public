@@ -1,6 +1,7 @@
 export const texts = {
   "navbar": {
     "home": "Accueil",
+    "about": "À propos de nous",
     "services": "Services",
     "sectors": "Secteurs",
     "contact": "Contact"
@@ -42,7 +43,7 @@ export const texts = {
       "title": "Nos domaines d'expertise",
       "01": {
         "name": "Epidémiosurveillance (WES)",
-        "description": "Mesures de pathogènes dans les eaux usées \nPossibilité de Certification COFRAC"
+        "description": "Mesures de pathogènes dans les eaux usées \r\nPossibilité de Certification COFRAC"
       },
       "02": {
         "name": "Hygiène hospitalière",
@@ -94,6 +95,9 @@ export const texts = {
     "title": "Nos Services"
   },
   "sectors": {
-    "title": "Nos Secteurs d'Activité "
+    "title": "Nos Secteurs d'Activité"
+  },
+  "about": {
+    "title": "À propos de nous"
   }
 };

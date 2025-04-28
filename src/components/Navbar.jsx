@@ -24,6 +24,7 @@ function Navbar() {
 
   const navItems = [
     { name: texts.navbar.home, path: '/' },
+    { name: texts.navbar.about, path: '/about' },
     { name: texts.navbar.services, path: '/services' },
     { name: texts.navbar.sectors, path: '/sectors' },
     { name: texts.navbar.contact, path: '/contact' },

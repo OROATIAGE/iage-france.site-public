@@ -1,5 +1,6 @@
 key,section,texte
 navbar.home,Navbar,Accueil
+navbar.about,Navbar,À propos de nous
 navbar.services,Navbar,Services
 navbar.sectors,Navbar,Secteurs
 navbar.contact,Navbar,Contact
@@ -52,4 +53,5 @@ contact.form.phone,Contact,Téléphone
 contact.form.message,Contact,Message
 contact.form.submit,Contact,Envoyer
 services.title,Services,Nos Services
-sectors.title,Secteurs,Nos Secteurs d'Activité 
+sectors.title,Secteurs,Nos Secteurs d'Activité
+about.title,About,À propos de nous
