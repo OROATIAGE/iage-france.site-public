@@ -55,7 +55,7 @@ function Services() {
             <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 dark:text-gray-200 mb-4 border-l-4 border-secondary pl-4">
               {getPageText(service.titleKey)}
             </h2>
-            <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
+            <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed whitespace-pre-line">
               {getPageText(service.descriptionKey)}
             </p>
           </section>
