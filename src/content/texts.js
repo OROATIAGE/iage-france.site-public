@@ -496,7 +496,18 @@ export const texts = {
         "PF000047": "830,00€",
         "PF000048": "1015,00€",
         "PF000049": "1340,00€",
-        "PF000050": "2140,00€"
+        "PF000050": "2140,00€",
+        "type_header": "Type de Kit",
+        "info_link": "(Cliquez sur une désignation ou un type de kit pour voir sa description)"
+      },
+      "types": {
+        "lingette": "Lingette",
+        "dechet": "Déchets de Tonte",
+        "sympto": "Gazon Symptomatique",
+        "racine": "Racine",
+        "sol": "Sol / Substrat",
+        "racine_gazon": "Racine + Gazon",
+        "plaquage": "Accompagnement Plaquage"
       },
       "cta": {
         "text": "Pour en savoir plus sur nos DIAGBOX® ou échanger avec notre équipe, contactez-nous.",
@@ -511,8 +522,7 @@ export const texts = {
         "sol_link": "Sol / Substrat (Avant plaquage)",
         "racine_gazon_link": "Racine + Gazon (Vision globale)",
         "plaquage_link": "Accompagnement Plaquage (Sécurisation)",
-        "prices_link": "Voir les tarifs",
-        "back_link": "Retour à l'accès rapide ⬆️"
+        "prices_link": "Voir les tarifs"
       },
       "link_to_prices": "Voir le tarif"
     }

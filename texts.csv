@@ -307,6 +307,17 @@ diagbox.gazon.prices.PF000047,DiagBox Gazon,"830,00€"
 diagbox.gazon.prices.PF000048,DiagBox Gazon,"1015,00€"
 diagbox.gazon.prices.PF000049,DiagBox Gazon,"1340,00€"
 diagbox.gazon.prices.PF000050,DiagBox Gazon,"2140,00€"
+diagbox.gazon.prices.type_header,DiagBox Gazon,"Type de Kit"
+diagbox.gazon.prices.info_link,DiagBox Gazon,"(Cliquez sur une désignation ou un type de kit pour voir sa description)"
+
+// Noms courts pour les types de kit (pour le tableau)
+diagbox.gazon.types.lingette,DiagBox Gazon,"Lingette"
+diagbox.gazon.types.dechet,DiagBox Gazon,"Déchets de Tonte"
+diagbox.gazon.types.sympto,DiagBox Gazon,"Gazon Symptomatique"
+diagbox.gazon.types.racine,DiagBox Gazon,"Racine"
+diagbox.gazon.types.sol,DiagBox Gazon,"Sol / Substrat"
+diagbox.gazon.types.racine_gazon,DiagBox Gazon,"Racine + Gazon"
+diagbox.gazon.types.plaquage,DiagBox Gazon,"Accompagnement Plaquage"
 
 // -- CTA Final --
 diagbox.gazon.cta.text,DiagBox Gazon,"Pour en savoir plus sur nos DIAGBOX® ou échanger avec notre équipe, contactez-nous."
@@ -322,5 +333,4 @@ diagbox.gazon.toc.sol_link,DiagBox Gazon TOC,"Sol / Substrat (Avant plaquage)"
 diagbox.gazon.toc.racine_gazon_link,DiagBox Gazon TOC,"Racine + Gazon (Vision globale)"
 diagbox.gazon.toc.plaquage_link,DiagBox Gazon TOC,"Accompagnement Plaquage (Sécurisation)"
 diagbox.gazon.toc.prices_link,DiagBox Gazon TOC,"Voir les tarifs"
-diagbox.gazon.toc.back_link,DiagBox Gazon TOC,"Retour à l'accès rapide ⬆️"
 diagbox.gazon.link_to_prices,DiagBox Gazon Section,"Voir le tarif"

@@ -217,27 +217,44 @@ function DiagboxGazonPage() {
           <h2 className="text-2xl md:text-3xl font-semibold text-center text-gray-800 dark:text-gray-200 mb-8">
             {getText('prices.title')}
           </h2>
+          <p className="text-center text-sm text-gray-500 dark:text-gray-400 -mt-4 mb-6">
+            {getText('prices.info_link')}
+          </p>
           <div className="overflow-x-auto">
             <table className="min-w-full w-full divide-y divide-gray-200 dark:divide-gray-700 border dark:border-gray-600 shadow-sm rounded-lg">
               <thead className="bg-gray-50 dark:bg-gray-700">
                 <tr>
                   <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Référence</th>
                   <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Désignation</th>
+                  <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
+                    {getText('prices.type_header')}
+                  </th>
                   <th scope="col" className="px-6 py-3 text-right text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Prix Indicatif HT</th>
                 </tr>
               </thead>
               <tbody className="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700">
-                {priceList.map((kitRef) => (
-                  <tr key={kitRef}>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 dark:text-gray-100">{kitRef}</td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600 dark:text-gray-300">
-                      <a href={`#${kitRefToSectionIdMap[kitRef] ?? ''}`} className="hover:underline hover:text-primary dark:hover:text-secondary transition-colors">
-                         {getText(`kits.${kitRef}.name`)}
-                      </a>
-                    </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600 dark:text-gray-300 text-right">{getText(`prices.${kitRef}`)}</td>
-                  </tr>
-                ))}
+                {priceList.map((kitRef) => {
+                  const typeId = kitRefToSectionIdMap[kitRef] ?? '';
+                  return (
+                    <tr key={kitRef}>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 dark:text-gray-100">{kitRef}</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600 dark:text-gray-300">
+                        <a 
+                          href={`#${typeId}`}
+                          className="text-primary dark:text-secondary hover:underline transition-colors"
+                        >
+                          {getText(`kits.${kitRef}.name`)}
+                        </a>
+                      </td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">
+                        <a href={`#${typeId}`} className="hover:underline hover:text-primary dark:hover:text-secondary transition-colors">
+                           {getText(`types.${typeId}`)} 
+                        </a>
+                      </td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600 dark:text-gray-300 text-right">{getText(`prices.${kitRef}`)}</td>
+                    </tr>
+                  );
+                })}
               </tbody>
             </table>
           </div>
