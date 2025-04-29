@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { texts } from '../content/texts';
 import { FaLeaf, FaVial, FaPaperPlane } from 'react-icons/fa'; // Exemple d'icônes
+import DiagboxGazonNav from '../components/DiagboxGazonNav';
 
 // Helper function pour récupérer les textes (suppose une structure texts.diagbox.gazon...)
 const getText = (key, defaultValue = '') => {
@@ -77,6 +78,8 @@ function DiagboxGazonPage() {
       exit={{ opacity: 0 }}
       className="container mx-auto px-4 py-12 md:py-16"
     >
+      <DiagboxGazonNav />
+
       {/* --- Hero Section --- */}
       <div className="text-center mb-12 md:mb-16">
         <h1 className="text-4xl md:text-5xl font-bold text-primary dark:text-secondary mb-4">
