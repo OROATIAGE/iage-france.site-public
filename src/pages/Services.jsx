@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { Link, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import { texts } from '../content/texts'; // Import des textes
+import ServicesNav from '../components/ServicesNav';
 
 function Services() {
   const location = useLocation();
@@ -42,6 +43,8 @@ function Services() {
       exit={{ opacity: 0 }}
       className="container mx-auto px-4 py-12 md:py-16"
     >
+      <ServicesNav />
+
       <h1 className="text-4xl md:text-5xl font-bold text-primary dark:text-secondary mb-6 text-center">
         {getPageText('title')}
       </h1>

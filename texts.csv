@@ -334,3 +334,11 @@ diagbox.gazon.toc.racine_gazon_link,DiagBox Gazon TOC,"Racine + Gazon (Vision gl
 diagbox.gazon.toc.plaquage_link,DiagBox Gazon TOC,"Accompagnement Plaquage (Sécurisation)"
 diagbox.gazon.toc.prices_link,DiagBox Gazon TOC,"Voir les tarifs"
 diagbox.gazon.link_to_prices,DiagBox Gazon Section,"Voir le tarif"
+
+// Labels courts pour la navigation de la page Services
+services.nav.diagbox,Services Nav,"DiagBox®"
+services.nav.catalog,Services Nav,"Catalogue"
+services.nav.specific-combinations,Services Nav,"Combinaisons"
+services.nav.development,Services Nav,"R&D"
+services.nav.sampling-tools,Services Nav,"Préleveurs"
+services.nav.local-labs,Services Nav,"Labos Locaux"

@@ -121,6 +121,14 @@ export const texts = {
       "local_labs_description": "Pour des besoins récurrents, des volumes importants ou une nécessité de résultats ultra-rapides, nous pouvons étudier la mise en place de laboratoires d'analyse locaux, spécialisés et dédiés à votre activité. Cette solution offre une autonomie et une réactivité maximales, avec notre support pour l'installation, la formation et le suivi qualité.",
       "back_to_sectors_title": "Explorer nos domaines d'application",
       "back_to_sectors_link_text": "Voir nos secteurs d'activité"
+    },
+    "nav": {
+      "diagbox": "DiagBox®",
+      "catalog": "Catalogue",
+      "specific-combinations": "Combinaisons",
+      "development": "R&D",
+      "sampling-tools": "Préleveurs",
+      "local-labs": "Labos Locaux"
     }
   },
   "sectors": {
