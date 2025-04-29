@@ -61,7 +61,7 @@ export const texts = {
         "description": "Mesures de contrôle de désinfection"
       },
       "03": {
-        "name": "Hygiène intérieure et Hygiène publique",
+        "name": "Hygiène intérieure",
         "description": "Mesures de contrôle de la qualité de l'air, de présences de nuisibles"
       },
       "04": {

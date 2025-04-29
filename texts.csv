@@ -30,7 +30,7 @@ home.sectors.01.description,Home (Secteurs),"Mesures de pathogènes dans les eau
 Possibilité de Certification COFRAC"
 home.sectors.02.name,Home (Secteurs),Hygiène hospitalière
 home.sectors.02.description,Home (Secteurs),Mesures de contrôle de désinfection
-home.sectors.03.name,Home (Secteurs),Hygiène intérieure et Hygiène publique
+home.sectors.03.name,Home (Secteurs),"Hygiène intérieure"
 home.sectors.03.description,Home (Secteurs),"Mesures de contrôle de la qualité de l'air, de présences de nuisibles"
 home.sectors.04.name,Home (Secteurs),Gazons sportifs
 home.sectors.04.description,Home (Secteurs),Mesures de présence de pathogènes du gazon
