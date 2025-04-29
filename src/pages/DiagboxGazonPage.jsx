@@ -117,7 +117,19 @@ function DiagboxGazonPage() {
         </div>
       </section>
 
-      {/* --- Table of Contents Section --- */}
+      {/* --- General Info Sections --- */}
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 md:mb-16">
+        <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+            <h3 className="text-xl font-semibold mb-3 text-primary dark:text-secondary">{getText('ideal_for.title')}</h3>
+            <p className="text-gray-700 dark:text-gray-300 text-sm">{getText('ideal_for.text')}</p>
+        </div>
+         <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+            <h3 className="text-xl font-semibold mb-3 text-primary dark:text-secondary">{getText('kit_content.title')}</h3>
+            <p className="text-gray-700 dark:text-gray-300 whitespace-pre-line">{getText('kit_content.text')}</p>
+        </div>
+      </section>
+
+      {/* --- Table of Contents Section (New Position) --- */}
       <section id="toc" className="mb-12 md:mb-16 scroll-mt-20 md:scroll-mt-24">
         <h3 className="text-xl font-semibold text-center text-gray-800 dark:text-gray-200 mb-4">
             {getText('toc.title')} 
@@ -139,23 +151,6 @@ function DiagboxGazonPage() {
             >
                 {getText(`toc.prices_link`)} 
             </a>
-        </div>
-        <div className="mt-6 text-right">
-          <a href="#toc" className="text-sm text-secondary hover:text-secondary-dark dark:text-secondary-light dark:hover:text-secondary transition-colors">
-            {getText('toc.back_link')}
-          </a>
-        </div>
-      </section>
-
-      {/* --- General Info Sections --- */}
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 md:mb-16">
-        <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
-            <h3 className="text-xl font-semibold mb-3 text-primary dark:text-secondary">{getText('ideal_for.title')}</h3>
-            <p className="text-gray-700 dark:text-gray-300 text-sm">{getText('ideal_for.text')}</p>
-        </div>
-         <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
-            <h3 className="text-xl font-semibold mb-3 text-primary dark:text-secondary">{getText('kit_content.title')}</h3>
-            <p className="text-gray-700 dark:text-gray-300 whitespace-pre-line">{getText('kit_content.text')}</p>
         </div>
       </section>
 
@@ -227,9 +222,6 @@ function DiagboxGazonPage() {
               <a href="#prices" className="text-sm text-accent hover:text-accent/80 dark:text-orange-300 dark:hover:text-orange-200 transition-colors font-medium">
                 {getText('link_to_prices')}
               </a>
-              <a href="#toc" className="text-sm text-secondary hover:text-secondary-dark dark:text-secondary-light dark:hover:text-secondary transition-colors">
-                {getText('toc.back_link')}
-              </a>
             </div>
           </section>
         ))}
@@ -243,9 +235,12 @@ function DiagboxGazonPage() {
           <p className="text-center text-sm text-gray-500 dark:text-gray-400 -mt-4 mb-6">
             {getText('prices.info_link')}
           </p>
-          <div className="overflow-x-auto">
-            <table className="min-w-full w-full divide-y divide-gray-200 dark:divide-gray-700 border dark:border-gray-600 shadow-sm rounded-lg">
-              <thead className="bg-gray-50 dark:bg-gray-700">
+          {/* Responsive Table Container */}
+          <div className="overflow-x-auto md:overflow-visible">
+            {/* Add responsive classes and data labels */}
+            <table className="min-w-full w-full divide-y divide-gray-200 dark:divide-gray-700 md:border dark:border-gray-600 shadow-sm md:rounded-lg responsive-kit-table">
+              {/* Hide header on mobile */}
+              <thead className="bg-gray-50 dark:bg-gray-700 hidden md:table-header-group">
                 <tr>
                   <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Référence</th>
                   <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Désignation</th>
@@ -255,13 +250,25 @@ function DiagboxGazonPage() {
                   <th scope="col" className="px-6 py-3 text-right text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Prix Indicatif HT</th>
                 </tr>
               </thead>
-              <tbody className="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700">
+              {/* Make tbody flex container on mobile */}
+              <tbody className="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700 flex flex-col md:table-row-group md:divide-y">
                 {priceList.map((kitRef) => {
                   const typeId = kitRefToSectionIdMap[kitRef] ?? '';
+                  const typeText = getText(`types.${typeId}`) || typeId; // Get type name or fallback to id
                   return (
-                    <tr key={kitRef}>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 dark:text-gray-100">{kitRef}</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600 dark:text-gray-300">
+                    // Each row becomes a card on mobile
+                    <tr key={kitRef} className="block md:table-row border-b last:border-b-0 md:border-none dark:border-gray-700 p-4 md:p-0">
+                      {/* Cells become blocks with labels */}
+                      <td 
+                        data-label="Référence"
+                        className="block md:table-cell md:px-6 md:py-4 md:whitespace-nowrap text-sm font-medium text-gray-900 dark:text-gray-100 responsive-cell"
+                      >
+                        {kitRef}
+                      </td>
+                      <td 
+                        data-label="Désignation"
+                        className="block md:table-cell md:px-6 md:py-4 md:whitespace-nowrap text-sm text-gray-600 dark:text-gray-300 responsive-cell"
+                      >
                         <a 
                           href={`#${typeId}`}
                           className="text-primary dark:text-secondary hover:underline transition-colors"
@@ -269,12 +276,20 @@ function DiagboxGazonPage() {
                           {getText(`kits.${kitRef}.name`)}
                         </a>
                       </td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">
+                      <td 
+                        data-label={getText('prices.type_header', 'Type')}
+                        className="block md:table-cell md:px-6 md:py-4 md:whitespace-nowrap text-sm text-gray-500 dark:text-gray-400 responsive-cell"
+                      >
                         <a href={`#${typeId}`} className="hover:underline hover:text-primary dark:hover:text-secondary transition-colors">
-                           {getText(`types.${typeId}`)} 
+                           {typeText}
                         </a>
                       </td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600 dark:text-gray-300 text-right">{getText(`prices.${kitRef}`)}</td>
+                      <td 
+                        data-label="Prix Indicatif HT"
+                        className="block md:table-cell md:px-6 md:py-4 md:whitespace-nowrap text-sm text-gray-600 dark:text-gray-300 md:text-right responsive-cell"
+                      >
+                        {getText(`prices.${kitRef}`)}
+                      </td>
                     </tr>
                   );
                 })}
