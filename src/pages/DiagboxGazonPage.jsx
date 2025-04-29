@@ -178,21 +178,41 @@ function DiagboxGazonPage() {
             </ul>
             
             <h4 className="text-lg font-semibold mb-3 text-gray-800 dark:text-gray-200">{getText(`${kitTypeInfo.type}.kits.title`)}</h4>
-            <div className="overflow-x-auto">
-              <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700 border dark:border-gray-600">
-                <thead className="bg-gray-50 dark:bg-gray-700">
+            {/* Responsive Table Container */}
+            <div className="overflow-x-auto md:overflow-visible">
+              {/* Add data labels using CSS ::before on mobile */}
+              <table className="min-w-full w-full divide-y divide-gray-200 dark:divide-gray-700 md:border dark:border-gray-600 responsive-kit-table">
+                <thead className="bg-gray-50 dark:bg-gray-700 hidden md:table-header-group"> {/* Hide header on mobile */} 
                   <tr>
                     <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Référence</th>
                     <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Désignation</th>
                     <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Organismes Ciblés</th>
                   </tr>
                 </thead>
-                <tbody className="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700">
+                {/* Make tbody the main flex container on mobile */}
+                <tbody className="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700 flex flex-col md:table-row-group md:divide-y">
                   {kitTypeInfo.kits.map((kitRef) => (
-                    <tr key={kitRef}>
-                      <td className="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-900 dark:text-gray-100">{kitRef}</td>
-                      <td className="px-4 py-3 whitespace-nowrap text-sm text-gray-600 dark:text-gray-300">{getText(`kits.${kitRef}.name`)}</td>
-                      <td className="px-4 py-3 text-sm text-gray-600 dark:text-gray-300">{getText(`kits.${kitRef}.targets`)}</td>
+                    // Each row becomes a card on mobile
+                    <tr key={kitRef} className="block md:table-row border-b last:border-b-0 md:border-none dark:border-gray-700 p-4 md:p-0">
+                      {/* Each cell becomes a block with label on mobile */} 
+                      <td 
+                        data-label="Référence" 
+                        className="block md:table-cell md:px-4 md:py-3 md:whitespace-nowrap text-sm font-medium text-gray-900 dark:text-gray-100 responsive-cell"
+                      >
+                        {kitRef}
+                      </td>
+                      <td 
+                        data-label="Désignation" 
+                        className="block md:table-cell md:px-4 md:py-3 md:whitespace-nowrap text-sm text-gray-600 dark:text-gray-300 responsive-cell"
+                      >
+                        {getText(`kits.${kitRef}.name`)}
+                      </td>
+                      <td 
+                        data-label="Organismes Ciblés" 
+                        className="block md:table-cell md:px-4 md:py-3 text-sm text-gray-600 dark:text-gray-300 responsive-cell"
+                      >
+                        {getText(`kits.${kitRef}.targets`)}
+                      </td>
                     </tr>
                   ))}
                 </tbody>
