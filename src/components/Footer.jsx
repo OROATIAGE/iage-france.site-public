@@ -71,8 +71,17 @@ function Footer() {
             <p className="text-gray-300">{texts.footer.email}</p>
           </div>
         </div>
-        <div className="mt-8 pt-8 border-t border-gray-700 text-center text-gray-300">
-          <p>{texts.footer.copyright.replace('{année}', currentYear)}</p>
+        <div className="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400 text-sm">
+          <p className="mb-2">{texts.footer.copyright.replace('{année}', currentYear)}</p>
+          <div className="flex justify-center space-x-4">
+            <Link to="/privacy-policy" className="hover:text-white transition-colors">
+              {texts.footer?.privacy || 'Politique de confidentialité'}
+            </Link>
+            <span aria-hidden="true">|</span>
+            <Link to="/legal-notice" className="hover:text-white transition-colors">
+              {texts.footer?.legal || 'Mentions légales'}
+            </Link>
+          </div>
         </div>
       </div>
     </footer>

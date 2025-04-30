@@ -99,7 +99,7 @@ function SectorPage() {
       {/* Bouton Retour (optionnel) */}
       <div className="text-center mt-12">
         <Link to="/#sectors-grid" className="btn-secondary">
-          Voir tous les secteurs
+          {texts.sectors?.common?.back_button || 'Voir tous les secteurs'}
         </Link>
       </div>
 

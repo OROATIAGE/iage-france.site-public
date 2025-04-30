@@ -21,7 +21,9 @@ export const texts = {
     "contact": "Contact",
     "contactTitle": "Contact",
     "email": "Email: contact@iage-france.com",
-    "copyright": "© {année} IAGE. Tous droits réservés."
+    "copyright": "© {année} IAGE. Tous droits réservés.",
+    "privacy": "Politique de confidentialité",
+    "legal": "Mentions légales"
   },
   "home": {
     "hero": {
@@ -105,7 +107,7 @@ export const texts = {
       "diagbox_description": "Nos kits DiagBox® sont des solutions clé-en-main pour des analyses rapides (résultats en 48h) et autonomes.\n\nChaque kit inclut le matériel de prélèvement adapté, le transport et l'analyse en laboratoire. \n\nFaciles à stocker et à utiliser, ils sont idéaux pour le contrôle qualité régulier, le suivi ou la confirmation rapide d'une suspicion (ex: pathogènes gazon, qualité de l'air intérieur, nuisibles).",
       "catalog_title": "Analyses catalogue : Précision et Fiabilité",
       "catalog_description": "Nous proposons un large catalogue d'analyses standardisées, validées et optimisées pour différents types de matrices (eaux, sols, air, surfaces, etc.). Ces analyses couvrent la détection et la quantification de nombreux micro-organismes (virus, bactéries, champignons) et paramètres spécifiques.\n\nToutes nos mesures de microbiologie – quantification d'ADN ou d'ARN – sont réalisées en digital PCR et à partir de procédés de préparations développés et optimisés par IAGE. Cela garanti leur précision, leur sensibilité et leur répétabilité. IAGE est à ce jour le seul laboratoire à proposer des analyses en digital PCR dans les eaux usées certifiées COFRAC\n\nConsultez notre catalogue pour trouver l'analyse adaptée à votre besoin.",
-      "specific_title": "Combinaisons ppécifiques : Flexibilité sur mesure",
+      "specific_title": "Combinaisons spécifiques : Flexibilité sur mesure",
       "specific_description": "Vos besoins sont uniques ? Nous pouvons combiner plusieurs méthodes d'analyses catalogue ou adapter nos protocoles pour répondre précisément à vos problématiques.\n\nLa combinaison de méthodes nécessite une étape de validation technique impliquant des analyses supplémentaires (réplicas). La tarification est donc établie sur mesure, prenant en compte le type d'échantillon, le résultat attendu, les méthodes unitaires utilisées et les analyses de validation nécessaires.",
       "development_title": "Développement de nouvelles méthodes : Innovation et R&D",
       "development_description": "Face à des enjeux émergents (virus, bactéries), pour intégrer une analyse spécifique dans un projet de recherche ou pour un POC (Proof Of Concept) répondant à un appel d'offres, IAGE s'engage dans le développement et la validation de nouvelles méthodes d'analyse.\n\nNotre processus débute par une étude de faisabilité (étude bibliographique, design, matrice, critères d'efficacité attendus, ressources humaines). L'offre de prix, validée par nos directions scientifique, recherche et commerciale, reflète ce travail de R&D (temps expert, achats spécifiques). L'intégration d'analyses catalogue existantes au sein du développement peut permettre d'optimiser les coûts.\n\nC'est une approche partenariale pour innover ensemble.",
@@ -114,7 +116,7 @@ export const texts = {
       "local_labs_title": "Laboratoires locaux spécialisés et dédiés",
       "local_labs_description": "Pour des besoins récurrents, des volumes importants ou une nécessité de résultats ultra-rapides, nous pouvons étudier la mise en place de laboratoires d'analyse locaux, spécialisés et dédiés à votre activité. Cette solution offre une autonomie et une réactivité maximales, avec notre support pour l'installation, la formation et le suivi qualité.",
       "back_to_sectors_title": "Explorer nos domaines d'application",
-      "back_to_sectors_link_text": "Voir nos secteurs d'activité",
+      "back_to_sectors_link_text": "Voir nos domaines d'activité",
       "category1_title": "Analyses de précision",
       "category2_title": "Diagbox® et Services pour l'aide à la décision",
       "category3_title": "Équipements et laboratoires dédiés",
@@ -141,7 +143,7 @@ export const texts = {
     }
   },
   "sectors": {
-    "title": "Nos Secteurs d'Activité",
+    "title": "Nos domaines d'activité",
     "page": {
       "01": {
         "catchphrase": "Vous portez une responsabilité dans le suivi de la santé de la population locale, ou vous souhaitez contribuer à la prévention des épidémies :",
@@ -327,6 +329,9 @@ export const texts = {
           "diagbox": "Découvrir DiagBox® Aviculture"
         }
       }
+    },
+    "common": {
+      "back_button": "Voir tous les domaines"
     }
   },
   "about": {
@@ -573,5 +578,54 @@ export const texts = {
   "// Noms courts pour les types de kit (pour le tableau)": "",
   "// -- CTA Final --": "",
   "// -- Table des matières (TOC) pour DiagBox Gazon --": "",
-  "// Labels courts pour la navigation de la page Services": ""
+  "// Labels courts pour la navigation de la page Services": "",
+  "privacy": {
+    "title": "Politique de confidentialité",
+    "content": "Contenu de la politique de confidentialité à ajouter..."
+  },
+  "legal": {
+    "title": "Mentions légales",
+    "section1_title": "1. Éditeur du site",
+    "section1_intro": "",
+    "section1_company_name": "Le présent site est édité par IAGE - Ingénierie et Analyse en Génétique Environnementale",
+    "section1_company_details": "SASU au capital de 190 700,00 €",
+    "section1_address1": "335 rue Louis Lépine – 34000 Montpellier",
+    "section1_address2": "Bureau de IAGE Paris : 42 avenue Raymond Poincaré – 75116 Paris",
+    "section1_rcs": "Immatriculée au Registre du Commerce et des Sociétés de Montpellier sous le numéro 828 570 168 00033",
+    "section1_vat": "Numéro de TVA intracommunautaire : FR59828570168",
+    "section1_director_intro": "Directeur de la publication : Monsieur Franz Durandet, Président",
+    "section1_director_details": "",
+    "section1_contact_intro": "Contact :",
+    "section1_contact_phone": "(standard) 04 48 79 84 91",
+    "section1_contact_email": "contact@iage-france.com",
+    "section2_title": "2. Hébergement",
+    "section2_intro": "Le site est hébergé par :",
+    "section2_host_name": "Vercel Inc.",
+    "section2_host_address": "440 N Barranca Ave #4133 Covina - CA 91723 – USA",
+    "section2_host_site": "Site : https://vercel.com",
+    "section3_title": "3. Propriété intellectuelle",
+    "section3_content1": "Tous les contenus présents sur ce site, incluant de façon non limitative les textes, images, graphismes, logos, icônes, vidéos, sons, logiciels, sont la propriété exclusive de la société IAGE ou sont utilisés avec l'autorisation de leurs auteurs.",
+    "section3_content2": "Toute reproduction, représentation, modification, publication, adaptation, totale ou partielle, des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite sauf autorisation écrite préalable de IAGE.",
+    "section4_title": "4. Données personnelles",
+    "section4_content1": "Les informations collectées via les formulaires de contact sont enregistrées dans un fichier informatisé par IAGE pour répondre aux demandes de renseignements. Ces données sont traitées conformément au Règlement Général sur la Protection des Données (RGPD).",
+    "section4_responsible": "Monsieur Franz Durandet",
+    "section4_purpose": "Gestion des demandes via le site",
+    "section4_duration": "3 ans maximum",
+    "section4_recipient": "IAGE uniquement (aucune transmission à des tiers)",
+    "section4_rights_intro": "Conformément aux dispositions des articles 39 et suivants de la loi « informatique et libertés » et du RGPD, vous disposez d'un droit d'accès, de rectification, d'opposition, de suppression et de portabilité de vos données personnelles. Pour exercer ces droits, vous pouvez contacter :",
+    "section4_contact_name": "IAGE – Délégué à la protection des données",
+    "section4_contact_email": "contact@iage-france.com",
+    "section4_contact_address": "ou par courrier à : 335 rue Louis Lépine – 34000 Montpellier",
+    "section4_cnil": "Vous pouvez également introduire une réclamation auprès de la CNIL : ",
+    "section5_title": "5. Cookies",
+    "section5_content1": "Le site peut utiliser des cookies ou traceurs pour améliorer votre expérience de navigation, analyser le trafic ou proposer des contenus adaptés.",
+    "section5_content2": "Lors de votre première visite, si des Cookies sont effectivement présents, un bandeau vous informe de la présence de cookies et vous propose d'accepter ou de refuser leur utilisation. Vous pouvez à tout moment configurer vos préférences via les paramètres de votre navigateur.",
+    "section5_types_intro": "Types de cookies utilisés : aucun",
+    "section5_type1": "",
+    "section5_type2": "",
+    "section5_type3": "",
+    "section6_title": "6. Responsabilités",
+    "section6_content1": "IAGE s'efforce de fournir sur ce site des informations aussi précises que possible. Toutefois, elle ne saurait être tenue responsable des omissions, inexactitudes ou carences dans la mise à jour, qu'elles soient de son fait ou du fait de tiers partenaires.",
+    "section6_content2": "L'utilisateur reconnaît utiliser les informations et outils disponibles sur le site sous sa responsabilité exclusive."
+  }
 };

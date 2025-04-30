@@ -14,6 +14,8 @@ footer.contact,Footer,Contact
 footer.contactTitle,Footer,Contact
 footer.email,Footer,Email: contact@iage-france.com
 footer.copyright,Footer,© {année} IAGE. Tous droits réservés.
+footer.privacy,Footer,Politique de confidentialité
+footer.legal,Footer,Mentions légales
 home.hero.title,Home (Hero),L'expertise du vivant à votre service
 home.hero.subtitle,Home (Hero),Voir l'invisible pour agir à temps
 home.hero.cta,Home (Hero),Contactez-nous
@@ -53,7 +55,7 @@ contact.form.phone,Contact,Téléphone
 contact.form.message,Contact,Message
 contact.form.submit,Contact,Envoyer
 services.title,Services,Nos Services
-sectors.title,Secteurs,Nos Secteurs d'Activité
+sectors.title,Secteurs,Nos domaines d'activité
 about.title,About,À propos de nous
 sectors.page.01.catchphrase,Secteur 01 (Page),"Vous portez une responsabilité dans le suivi de la santé de la population locale, ou vous souhaitez contribuer à la prévention des épidémies :"
 sectors.page.01.intro,Secteur 01 (Page),"IAGE vous accompagne avec des solutions d'analyse génomique précises et rapides pour l'épidémiosurveillance environnementale, notamment via l'analyse des eaux usées (Wastewater Based Epidemiology - WBE)."
@@ -82,7 +84,7 @@ services.page.catalog_description,Services (Page),"Nous proposons un large catal
 Toutes nos mesures de microbiologie – quantification d'ADN ou d'ARN – sont réalisées en digital PCR et à partir de procédés de préparations développés et optimisés par IAGE. Cela garanti leur précision, leur sensibilité et leur répétabilité. IAGE est à ce jour le seul laboratoire à proposer des analyses en digital PCR dans les eaux usées certifiées COFRAC
 
 Consultez notre catalogue pour trouver l'analyse adaptée à votre besoin."
-services.page.specific_title,Services (Page),Combinaisons ppécifiques : Flexibilité sur mesure
+services.page.specific_title,Services (Page),Combinaisons spécifiques : Flexibilité sur mesure
 services.page.specific_description,Services (Page),"Vos besoins sont uniques ? Nous pouvons combiner plusieurs méthodes d'analyses catalogue ou adapter nos protocoles pour répondre précisément à vos problématiques.
 
 La combinaison de méthodes nécessite une étape de validation technique impliquant des analyses supplémentaires (réplicas). La tarification est donc établie sur mesure, prenant en compte le type d'échantillon, le résultat attendu, les méthodes unitaires utilisées et les analyses de validation nécessaires."
@@ -99,7 +101,7 @@ En particulier pour les applications qui utilisent des matrices eaux dans des mi
 services.page.local_labs_title,Services (Page),Laboratoires locaux spécialisés et dédiés
 services.page.local_labs_description,Services (Page),"Pour des besoins récurrents, des volumes importants ou une nécessité de résultats ultra-rapides, nous pouvons étudier la mise en place de laboratoires d'analyse locaux, spécialisés et dédiés à votre activité. Cette solution offre une autonomie et une réactivité maximales, avec notre support pour l'installation, la formation et le suivi qualité."
 services.page.back_to_sectors_title,Services (Page),Explorer nos domaines d'application
-services.page.back_to_sectors_link_text,Services (Page),Voir nos secteurs d'activité
+services.page.back_to_sectors_link_text,Services (Page),Voir nos domaines d'activité
 // Textes pour Secteur 02: Hygiène hospitalière,,
 sectors.page.02.catchphrase,Secteur 02 (Page),Vous êtes responsable de l'hygiène dans un établissement de santé ou une société de nettoyage spécialisée :
 sectors.page.02.intro,Secteur 02 (Page),"IAGE vous accompagne avec des solutions d'analyse pour le contrôle de la désinfection, la validation de protocoles et la surveillance environnementale en milieu hospitalier, garantissant la sécurité des patients et du personnel."
@@ -342,3 +344,49 @@ services.nav.sampling-advice,Services Nav,Optimiser les prélèvements
 services.nav.thresholds,Services Nav,Seuils décisionnels
 services.nav.mobile-viz,Services Nav,Visualisations en mobilité
 services.nav.modeling,Services Nav,Modélisations et anticipations
+sectors.common.back_button,Sectors Common,Voir tous les domaines
+privacy.title,Privacy Page,Politique de confidentialité
+privacy.content,Privacy Page,Contenu de la politique de confidentialité à ajouter...
+legal.title,Legal Page,Mentions légales
+legal.section1_title,Legal Page,1. Éditeur du site
+legal.section1_intro,Legal Page,
+legal.section1_company_name,Legal Page,Le présent site est édité par IAGE - Ingénierie et Analyse en Génétique Environnementale
+legal.section1_company_details,Legal Page,"SASU au capital de 190 700,00 €"
+legal.section1_address1,Legal Page,335 rue Louis Lépine – 34000 Montpellier
+legal.section1_address2,Legal Page,Bureau de IAGE Paris : 42 avenue Raymond Poincaré – 75116 Paris
+legal.section1_rcs,Legal Page,Immatriculée au Registre du Commerce et des Sociétés de Montpellier sous le numéro 828 570 168 00033
+legal.section1_vat,Legal Page,Numéro de TVA intracommunautaire : FR59828570168
+legal.section1_director_intro,Legal Page,"Directeur de la publication : Monsieur Franz Durandet, Président"
+legal.section1_director_details,Legal Page,
+legal.section1_contact_intro,Legal Page,Contact :
+legal.section1_contact_phone,Legal Page,(standard) 04 48 79 84 91
+legal.section1_contact_email,Legal Page,contact@iage-france.com
+legal.section2_title,Legal Page,2. Hébergement
+legal.section2_intro,Legal Page,Le site est hébergé par :
+legal.section2_host_name,Legal Page,Vercel Inc.
+legal.section2_host_address,Legal Page,440 N Barranca Ave #4133 Covina - CA 91723 – USA
+legal.section2_host_site,Legal Page,Site : https://vercel.com
+legal.section3_title,Legal Page,3. Propriété intellectuelle
+legal.section3_content1,Legal Page,"Tous les contenus présents sur ce site, incluant de façon non limitative les textes, images, graphismes, logos, icônes, vidéos, sons, logiciels, sont la propriété exclusive de la société IAGE ou sont utilisés avec l'autorisation de leurs auteurs."
+legal.section3_content2,Legal Page,"Toute reproduction, représentation, modification, publication, adaptation, totale ou partielle, des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite sauf autorisation écrite préalable de IAGE."
+legal.section4_title,Legal Page,4. Données personnelles
+legal.section4_content1,Legal Page,Les informations collectées via les formulaires de contact sont enregistrées dans un fichier informatisé par IAGE pour répondre aux demandes de renseignements. Ces données sont traitées conformément au Règlement Général sur la Protection des Données (RGPD).
+legal.section4_responsible,Legal Page,Monsieur Franz Durandet
+legal.section4_purpose,Legal Page,Gestion des demandes via le site
+legal.section4_duration,Legal Page,3 ans maximum
+legal.section4_recipient,Legal Page,IAGE uniquement (aucune transmission à des tiers)
+legal.section4_rights_intro,Legal Page,"Conformément aux dispositions des articles 39 et suivants de la loi « informatique et libertés » et du RGPD, vous disposez d'un droit d'accès, de rectification, d'opposition, de suppression et de portabilité de vos données personnelles. Pour exercer ces droits, vous pouvez contacter :"
+legal.section4_contact_name,Legal Page,IAGE – Délégué à la protection des données
+legal.section4_contact_email,Legal Page,contact@iage-france.com
+legal.section4_contact_address,Legal Page,ou par courrier à : 335 rue Louis Lépine – 34000 Montpellier
+legal.section4_cnil,Legal Page,Vous pouvez également introduire une réclamation auprès de la CNIL : 
+legal.section5_title,Legal Page,5. Cookies
+legal.section5_content1,Legal Page,"Le site peut utiliser des cookies ou traceurs pour améliorer votre expérience de navigation, analyser le trafic ou proposer des contenus adaptés."
+legal.section5_content2,Legal Page,"Lors de votre première visite, si des Cookies sont effectivement présents, un bandeau vous informe de la présence de cookies et vous propose d'accepter ou de refuser leur utilisation. Vous pouvez à tout moment configurer vos préférences via les paramètres de votre navigateur."
+legal.section5_types_intro,Legal Page,Types de cookies utilisés : aucun
+legal.section5_type1,Legal Page,
+legal.section5_type2,Legal Page,
+legal.section5_type3,Legal Page,
+legal.section6_title,Legal Page,6. Responsabilités
+legal.section6_content1,Legal Page,"IAGE s'efforce de fournir sur ce site des informations aussi précises que possible. Toutefois, elle ne saurait être tenue responsable des omissions, inexactitudes ou carences dans la mise à jour, qu'elles soient de son fait ou du fait de tiers partenaires."
+legal.section6_content2,Legal Page,L'utilisateur reconnaît utiliser les informations et outils disponibles sur le site sous sa responsabilité exclusive.

@@ -10,6 +10,9 @@ import About from './pages/About'
 import SectorPage from './pages/SectorPage'
 import ScrollToTop from './components/ScrollToTop'
 import DiagboxGazonPage from './pages/DiagboxGazonPage'
+// Import new pages
+import PrivacyPolicy from './pages/PrivacyPolicy' 
+import LegalNotice from './pages/LegalNotice'
 
 function App() {
   return (
@@ -27,6 +30,9 @@ function App() {
               <Route path="/sectors" element={<Sectors />} />
               <Route path="/sectors/:sectorId" element={<SectorPage />} />
               <Route path="/contact" element={<Contact />} />
+              {/* Add routes for new pages */}
+              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+              <Route path="/legal-notice" element={<LegalNotice />} />
             </Routes>
           {/* </AnimatePresence> Mettre en commentaire temporairement */}
         </main>
