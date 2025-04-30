@@ -48,7 +48,7 @@ export const texts = {
       "title": "Nos domaines d'expertise",
       "01": {
         "name": "Epidémiosurveillance (WES)",
-        "description": "Mesures de pathogènes dans les eaux usées \r\nPossibilité de Certification COFRAC"
+        "description": "Mesures de pathogènes dans les eaux usées \nPossibilité de Certification COFRAC"
       },
       "02": {
         "name": "Hygiène hospitalière",
@@ -100,23 +100,23 @@ export const texts = {
     "title": "Nos Services",
     "page": {
       "title": "Nos Solutions et Services Analytiques",
-      "intro": "Découvrez comment IAGE répond à vos besoins spécifiques grâce à une gamme complète de services, de l'analyse spécifique au développement de méthodes innovantes.",
+      "intro": "Découvrez comment IAGE répond à vos besoins spécifiques et vous aide dans vos prises de décision opérationnelles grâce à une gamme complète d'analyses, de services et de produits",
       "diagbox_title": "DiagBox® : Simplicité et Rapidité",
-      "diagbox_description": "Nos kits DiagBox® sont des solutions clé-en-main pour des analyses rapides (résultats en 48h) et autonomes. Chaque kit inclut le matériel de prélèvement adapté, le transport et l'analyse en laboratoire. Faciles à stocker et à utiliser, ils sont idéaux pour le contrôle qualité régulier, le suivi ou la confirmation rapide d'une suspicion (ex: pathogènes gazon, qualité de l'air intérieur, nuisibles).",
+      "diagbox_description": "Nos kits DiagBox® sont des solutions clé-en-main pour des analyses rapides (résultats en 48h) et autonomes.\n\nChaque kit inclut le matériel de prélèvement adapté, le transport et l'analyse en laboratoire. \n\nFaciles à stocker et à utiliser, ils sont idéaux pour le contrôle qualité régulier, le suivi ou la confirmation rapide d'une suspicion (ex: pathogènes gazon, qualité de l'air intérieur, nuisibles).",
       "catalog_title": "Analyses Catalogue : Précision et Fiabilité",
-      "catalog_description": "Nous proposons un large catalogue d'analyses standardisées, validées et optimisées pour différents types de matrices (eaux, sols, air, surfaces, etc.). Ces analyses couvrent la détection et la quantification de nombreux micro-organismes (virus, bactéries, champignons) et paramètres spécifiques. Consultez notre catalogue pour trouver l'analyse adaptée à votre besoin.",
+      "catalog_description": "Nous proposons un large catalogue d'analyses standardisées, validées et optimisées pour différents types de matrices (eaux, sols, air, surfaces, etc.). Ces analyses couvrent la détection et la quantification de nombreux micro-organismes (virus, bactéries, champignons) et paramètres spécifiques.\n\nToutes nos mesures de microbiologie – quantification d'ADN ou d'ARN – sont réalisées en digital PCR et à partir de procédés de préparations développés et optimisés par IAGE. Cela garanti leur précision, leur sensibilité et leur répétabilité. IAGE est à ce jour le seul laboratoire à proposer des analyses en digital PCR dans les eaux usées certifiées COFRAC\n\nConsultez notre catalogue pour trouver l'analyse adaptée à votre besoin.",
       "specific_title": "Combinaisons Spécifiques : Flexibilité sur Mesure",
       "specific_description": "Vos besoins sont uniques ? Nous pouvons combiner plusieurs méthodes d'analyses catalogue ou adapter nos protocoles pour répondre précisément à vos problématiques.\\n\\nLa combinaison de méthodes nécessite une étape de validation technique impliquant des analyses supplémentaires (réplicas). La tarification est donc établie sur mesure, prenant en compte le type d'échantillon, le résultat attendu, les méthodes unitaires utilisées et les analyses de validation nécessaires.",
       "development_title": "Développement de Nouvelles Méthodes : Innovation et R&D",
-      "development_description": "Face à des enjeux émergents (virus, bactéries), pour intégrer une analyse spécifique dans un projet de recherche ou pour un POC (Proof Of Concept) répondant à un appel d'offres, IAGE s'engage dans le développement et la validation de nouvelles méthodes d'analyse.\\n\\nNotre processus débute par une étude de faisabilité (étude bibliographique, design, matrice, critères d'efficacité attendus, ressources humaines). L'offre de prix, validée par nos directions scientifique, recherche et commerciale, reflète ce travail de R&D (temps expert, achats spécifiques). L'intégration d'analyses catalogue existantes au sein du développement peut permettre d'optimiser les coûts.\\n\\nC'est une approche partenariale pour innover ensemble.",
+      "development_description": "Face à des enjeux émergents (virus, bactéries), pour intégrer une analyse spécifique dans un projet de recherche ou pour un POC (Proof Of Concept) répondant à un appel d'offres, IAGE s'engage dans le développement et la validation de nouvelles méthodes d'analyse.\n\nNotre processus débute par une étude de faisabilité (étude bibliographique, design, matrice, critères d'efficacité attendus, ressources humaines). L'offre de prix, validée par nos directions scientifique, recherche et commerciale, reflète ce travail de R&D (temps expert, achats spécifiques). L'intégration d'analyses catalogue existantes au sein du développement peut permettre d'optimiser les coûts.\n\nC'est une approche partenariale pour innover ensemble.",
       "sampling_title": "Outils de Prélèvement Adaptés",
-      "sampling_description": "La qualité de l'analyse commence par un prélèvement pertinent. Nous fournissons ou recommandons les outils et process de prélèvement les mieux adaptés à votre matrice et à vos objectifs.\\n\\nEn particulier pour les applications qui utilisent des matrices eaux dans des milieux dynamiques (réseaux d'eaux usées sous circulation, sorties de bâtiments, cours d'eau, mer,...), nous avons développé des préleveurs automatiques  adaptés aux prélèvements en continu d'eaux dans ces contextes difficiles, et des dispositifs spécifiques pour garantir l'intégrité de vos échantillons.",
+      "sampling_description": "La qualité de l'analyse commence par un prélèvement pertinent. Nous fournissons ou recommandons les outils et process de prélèvement les mieux adaptés à votre matrice et à vos objectifs.\n\nEn particulier pour les applications qui utilisent des matrices eaux dans des milieux dynamiques (réseaux d'eaux usées sous circulation, sorties de bâtiments, cours d'eau, mer,...), nous avons développé des préleveurs automatiques  adaptés aux prélèvements en continu d'eaux dans ces contextes difficiles, et des dispositifs spécifiques pour garantir l'intégrité de vos échantillons.",
       "local_labs_title": "Laboratoires Locaux Spécialisés et Dédiés",
       "local_labs_description": "Pour des besoins récurrents, des volumes importants ou une nécessité de résultats ultra-rapides, nous pouvons étudier la mise en place de laboratoires d'analyse locaux, spécialisés et dédiés à votre activité. Cette solution offre une autonomie et une réactivité maximales, avec notre support pour l'installation, la formation et le suivi qualité.",
       "back_to_sectors_title": "Explorer nos domaines d'application",
       "back_to_sectors_link_text": "Voir nos secteurs d'activité",
       "category1_title": "Analyses de précision",
-      "category2_title": "Diagbox®",
+      "category2_title": "Diagbox® et Services pour l'aide à la décision",
       "category3_title": "Équipements et labo dédiés",
       "sampling_advice_title": "Conseil et solutions pour faciliter les prélèvements",
       "sampling_advice_description": "Description à compléter...",
@@ -129,22 +129,22 @@ export const texts = {
     },
     "nav": {
       "diagbox": "DiagBox®",
-      "catalog": "Catalogue",
-      "specific-combinations": "Combinaisons",
+      "catalog": "Catalogue des analyses",
+      "specific-combinations": "Combinaisons sur mesure",
       "development": "R&D",
-      "sampling-tools": "Préleveurs",
-      "local-labs": "Labos Locaux",
-      "sampling-advice": "Conseil Prélèvement",
-      "thresholds": "Seuils Décisionnels",
-      "mobile-viz": "Viz Mobilité",
-      "modeling": "Modélisation"
+      "sampling-tools": "Préleveurs d'eaux",
+      "local-labs": "Laboratoires locaux",
+      "sampling-advice": "Optimiser les prélèvements",
+      "thresholds": "Seuils décisionnels",
+      "mobile-viz": "Visualisations en mobilité",
+      "modeling": "Modélisations et anticipations"
     }
   },
   "sectors": {
     "title": "Nos Secteurs d'Activité",
     "page": {
       "01": {
-        "catchphrase": "Êtes-vous responsable de la surveillance sanitaire des eaux usées ou d'un plan d'eau ?",
+        "catchphrase": "Vous portez une responsabilité dans le suivi de la santé de la population locale, ou vous souhaitez contribuer à la prévention des épidémies :",
         "intro": "IAGE vous accompagne avec des solutions d'analyse génomique précises et rapides pour l'épidémiosurveillance environnementale, notamment via l'analyse des eaux usées (Wastewater Based Epidemiology - WBE).",
         "services": {
           "title": "Nos solutions adaptées à l'épidémiosurveillance :"
@@ -170,7 +170,7 @@ export const texts = {
         }
       },
       "02": {
-        "catchphrase": "Êtes-vous responsable de l'hygiène dans un établissement de santé ou une société de nettoyage spécialisée ?",
+        "catchphrase": "Vous êtes responsable de l'hygiène dans un établissement de santé ou une société de nettoyage spécialisée :",
         "intro": "IAGE vous accompagne avec des solutions d'analyse pour le contrôle de la désinfection, la validation de protocoles et la surveillance environnementale en milieu hospitalier, garantissant la sécurité des patients et du personnel.",
         "services": {
           "title": "Nos solutions adaptées à l'hygiène hospitalière :"
@@ -192,7 +192,7 @@ export const texts = {
         }
       },
       "03": {
-        "catchphrase": "Gérez-vous la qualité de l'air intérieur, l'entretien de locaux ou luttez-vous contre les nuisibles (PCO) ?",
+        "catchphrase": "Vous gérez la qualité de l'air intérieur, l'entretien de locaux ou vous luttez contre les nuisibles (PCO) :",
         "intro": "IAGE offre des outils d'analyse pour évaluer la qualité de l'air (moisissures), détecter la présence de nuisibles (punaises de lit, rongeurs) et valider l'efficacité des produits d'entretien.",
         "services": {
           "title": "Nos solutions pour l'hygiène intérieure et publique :"
@@ -214,7 +214,7 @@ export const texts = {
         }
       },
       "04": {
-        "catchphrase": "Êtes-vous responsable de l'entretien de gazons sportifs (clubs, collectivités, distributeurs) ?",
+        "catchphrase": "Vous assurez la charge de l'entretien de gazons sportifs (clubs, collectivités, distributeurs) :",
         "intro": "IAGE aide à préserver la qualité de vos gazons grâce à la détection précoce et précise des pathogènes (champignons, nématodes) responsables des maladies.",
         "services": {
           "title": "Nos solutions pour la santé des gazons sportifs :"
@@ -236,7 +236,7 @@ export const texts = {
         }
       },
       "05": {
-        "catchphrase": "Acteur de la filière vitivinicole (technicien, coopérative, négoce, institut technique) ?",
+        "catchphrase": "Vous êtes un acteur de la filière vitivinicole (technicien, coopérative, négoce, institut technique) :",
         "intro": "IAGE fournit des outils d'analyse moléculaire pour le suivi sanitaire de la vigne (maladies du bois, mildiou, oïdium) et le contrôle qualité du processus de vinification (levures, bactéries).",
         "services": {
           "title": "Nos solutions pour la viticulture et la vinification :"
@@ -258,7 +258,7 @@ export const texts = {
         }
       },
       "06": {
-        "catchphrase": "Professionnel de la filière pomme (station de conservation, coopérative, technicien, négoce) ?",
+        "catchphrase": "Vous êtes un professionnel de la filière pomme (station de conservation, coopérative, technicien, négoce) :",
         "intro": "IAGE propose des analyses pour la détection précoce des maladies de conservation et des pathogènes affectant les vergers de pommiers, afin d'optimiser la qualité et réduire les pertes.",
         "services": {
           "title": "Nos solutions pour l'arboriculture (pomme) :"
@@ -280,7 +280,7 @@ export const texts = {
         }
       },
       "07": {
-        "catchphrase": "Acteur de la conchyliculture (ostréiculteur, institut, collectivité) soucieux de la qualité sanitaire ?",
+        "catchphrase": "Vous êtes un acteur de la conchyliculture (ostréiculteur, institut, collectivité) soucieux de la qualité sanitaire :",
         "intro": "IAGE offre des solutions d'analyse rapide pour le contrôle de la qualité microbiologique des eaux conchylicoles et la détection de pathogènes humains (virus, bactéries) pouvant affecter les coquillages.",
         "services": {
           "title": "Nos solutions pour la conchyliculture :"
@@ -306,7 +306,7 @@ export const texts = {
         }
       },
       "08": {
-        "catchphrase": "Acteur de la filière avicole (industrie agroalimentaire, coopérative, institut) visant la maîtrise sanitaire ?",
+        "catchphrase": "Vous êtes un acteur de la filière avicole (industrie agroalimentaire, coopérative, institut) visant la maîtrise sanitaire :",
         "intro": "IAGE fournit des outils d'analyse moléculaire pour la détection et le suivi des principaux pathogènes aviaires (Salmonella, Campylobacter, virus Influenza) dans les élevages et l'environnement.",
         "services": {
           "title": "Nos solutions pour la filière avicole :"
@@ -333,7 +333,7 @@ export const texts = {
     "title": "À propos de nous",
     "page": {
       "intro1": "Fondée en 2017 à Montpellier, IAGE est spécialisée dans l'analyse biologique et environnementale.",
-      "intro2": "Nous proposons des services de diagnostics ultra-précoces, accessibles et actionnables, pensés pour tous les acteurs du vivant.",
+      "intro2": "Nous proposons des services de diagnostics ultra-précoces, accessibles et dont les resultats aident aux prises de décision, pensés pour tous les acteurs du vivant.",
       "ambition_title": "Notre ambition : Voir l'invisible pour agir à temps.",
       "ambition_text": "Là où d'autres interviennent trop tard, IAGE fait le choix de l'anticipation, de la prévention et de l'accompagnement sur mesure.",
       "strength_title": "Notre force : Rendre l'expertise scientifique simple et opérationnelle.",
@@ -341,6 +341,14 @@ export const texts = {
       "conclusion": "Avec IAGE, la biologie devient un levier clair et fiable pour prendre des décisions rapides, pertinentes et durables."
     }
   },
+  "// Textes pour Secteur 02: Hygiène hospitalière": "",
+  "// Textes pour Secteur 03: Hygiène intérieure & Hygiène publique": "",
+  "// Textes pour Secteur 04: Gazons sportifs": "",
+  "// Textes pour Secteur 05: Viti – Vini": "",
+  "// Textes pour Secteur 06: Arboriculture (Pomme)": "",
+  "// Textes pour Secteur 07: Conchyliculture": "",
+  "// Textes pour Secteur 08: Aviculture": "",
+  "// ==== DiagBox Gazon Page ====": "",
   "diagbox": {
     "gazon": {
       "title": "DIAGBOX® Gazon",
@@ -366,7 +374,7 @@ export const texts = {
       },
       "kit_content": {
         "title": "Contenu d'un kit type",
-        "text": "Matériel de prélèvement\r\nInstructions d'utilisation simples\r\nEmballage sécurisé avec transport inclus\r\nAnalyse dPCR en laboratoire"
+        "text": "Matériel de prélèvement\nInstructions d'utilisation simples\nEmballage sécurisé avec transport inclus\nAnalyse dPCR en laboratoire"
       },
       "lingette": {
         "catchphrase": "Un kit pensé pour celles et ceux qui veulent agir dès les premiers signes.",
@@ -552,5 +560,18 @@ export const texts = {
       },
       "link_to_prices": "Voir le tarif"
     }
-  }
+  },
+  "// -- Section Lingette --": "",
+  "// -- Section Déchets de tonte --": "",
+  "// -- Section Gazon Symptomatique --": "",
+  "// -- Section Racine --": "",
+  "// -- Section Sol / Substrat --": "",
+  "// -- Section Racine + Gazon --": "",
+  "// -- Section Accompagnement Plaquage --": "",
+  "// -- Note commune pour les cibles --": "",
+  "// -- Liste de Prix --": "",
+  "// Noms courts pour les types de kit (pour le tableau)": "",
+  "// -- CTA Final --": "",
+  "// -- Table des matières (TOC) pour DiagBox Gazon --": "",
+  "// Labels courts pour la navigation de la page Services": ""
 };
