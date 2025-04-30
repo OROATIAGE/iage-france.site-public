@@ -23,7 +23,7 @@ home.services.0.description,Home (Services),"Des analyses précises et fiables, 
 home.services.1.title,Home (Services),"Diagbox®, Conseils et Expertise"
 home.services.1.description,Home (Services),Un accompagnement personnalisé pour accompagner vos prises de décisions
 home.services.2.title,Home (Services),Vous équiper et former vos équipes
-home.services.2.description,Home (Services),"Equiments spécialisées, laboratoires locaux, accompagnement technique, pour encore plus de réactivité"
+home.services.2.description,Home (Services),"Equiments spécialisés, laboratoires locaux, accompagnement technique, pour encore plus de réactivité"
 home.sectors.title,Home (Secteurs),Nos domaines d'expertise
 home.sectors.01.name,Home (Secteurs),Epidémiosurveillance (WES)
 home.sectors.01.description,Home (Secteurs),"Mesures de pathogènes dans les eaux usées 
@@ -76,27 +76,27 @@ services.page.diagbox_description,Services (Page),"Nos kits DiagBox® sont des s
 Chaque kit inclut le matériel de prélèvement adapté, le transport et l'analyse en laboratoire. 
 
 Faciles à stocker et à utiliser, ils sont idéaux pour le contrôle qualité régulier, le suivi ou la confirmation rapide d'une suspicion (ex: pathogènes gazon, qualité de l'air intérieur, nuisibles)."
-services.page.catalog_title,Services (Page),Analyses Catalogue : Précision et Fiabilité
+services.page.catalog_title,Services (Page),Analyses catalogue : Précision et Fiabilité
 services.page.catalog_description,Services (Page),"Nous proposons un large catalogue d'analyses standardisées, validées et optimisées pour différents types de matrices (eaux, sols, air, surfaces, etc.). Ces analyses couvrent la détection et la quantification de nombreux micro-organismes (virus, bactéries, champignons) et paramètres spécifiques.
 
 Toutes nos mesures de microbiologie – quantification d'ADN ou d'ARN – sont réalisées en digital PCR et à partir de procédés de préparations développés et optimisés par IAGE. Cela garanti leur précision, leur sensibilité et leur répétabilité. IAGE est à ce jour le seul laboratoire à proposer des analyses en digital PCR dans les eaux usées certifiées COFRAC
 
 Consultez notre catalogue pour trouver l'analyse adaptée à votre besoin."
-services.page.specific_title,Services (Page),Combinaisons Spécifiques : Flexibilité sur Mesure
+services.page.specific_title,Services (Page),Combinaisons ppécifiques : Flexibilité sur mesure
 services.page.specific_description,Services (Page),"Vos besoins sont uniques ? Nous pouvons combiner plusieurs méthodes d'analyses catalogue ou adapter nos protocoles pour répondre précisément à vos problématiques.
 
 La combinaison de méthodes nécessite une étape de validation technique impliquant des analyses supplémentaires (réplicas). La tarification est donc établie sur mesure, prenant en compte le type d'échantillon, le résultat attendu, les méthodes unitaires utilisées et les analyses de validation nécessaires."
-services.page.development_title,Services (Page),Développement de Nouvelles Méthodes : Innovation et R&D
+services.page.development_title,Services (Page),Développement de nouvelles méthodes : Innovation et R&D
 services.page.development_description,Services (Page),"Face à des enjeux émergents (virus, bactéries), pour intégrer une analyse spécifique dans un projet de recherche ou pour un POC (Proof Of Concept) répondant à un appel d'offres, IAGE s'engage dans le développement et la validation de nouvelles méthodes d'analyse.
 
 Notre processus débute par une étude de faisabilité (étude bibliographique, design, matrice, critères d'efficacité attendus, ressources humaines). L'offre de prix, validée par nos directions scientifique, recherche et commerciale, reflète ce travail de R&D (temps expert, achats spécifiques). L'intégration d'analyses catalogue existantes au sein du développement peut permettre d'optimiser les coûts.
 
 C'est une approche partenariale pour innover ensemble."
-services.page.sampling_title,Services (Page),Outils de Prélèvement Adaptés
+services.page.sampling_title,Services (Page),Outils de prélèvement adaptés
 services.page.sampling_description,Services (Page),"La qualité de l'analyse commence par un prélèvement pertinent. Nous fournissons ou recommandons les outils et process de prélèvement les mieux adaptés à votre matrice et à vos objectifs.
 
 En particulier pour les applications qui utilisent des matrices eaux dans des milieux dynamiques (réseaux d'eaux usées sous circulation, sorties de bâtiments, cours d'eau, mer,...), nous avons développé des préleveurs automatiques  adaptés aux prélèvements en continu d'eaux dans ces contextes difficiles, et des dispositifs spécifiques pour garantir l'intégrité de vos échantillons."
-services.page.local_labs_title,Services (Page),Laboratoires Locaux spécialisés et dédiés
+services.page.local_labs_title,Services (Page),Laboratoires locaux spécialisés et dédiés
 services.page.local_labs_description,Services (Page),"Pour des besoins récurrents, des volumes importants ou une nécessité de résultats ultra-rapides, nous pouvons étudier la mise en place de laboratoires d'analyse locaux, spécialisés et dédiés à votre activité. Cette solution offre une autonomie et une réactivité maximales, avec notre support pour l'installation, la formation et le suivi qualité."
 services.page.back_to_sectors_title,Services (Page),Explorer nos domaines d'application
 services.page.back_to_sectors_link_text,Services (Page),Voir nos secteurs d'activité
@@ -329,7 +329,7 @@ about.page.strength_text,About Page,"Parce que nous connaissons les réalités d
 about.page.conclusion,About Page,"Avec IAGE, la biologie devient un levier clair et fiable pour prendre des décisions rapides, pertinentes et durables."
 services.page.category1_title,Services Page,Analyses de précision
 services.page.category2_title,Services Page,Diagbox® et Services pour l'aide à la décision
-services.page.category3_title,Services Page,Équipements et labo dédiés
+services.page.category3_title,Services Page,Équipements et laboratoires dédiés
 services.page.sampling_advice_title,Services Page,Conseil et solutions pour faciliter les prélèvements
 services.page.sampling_advice_description,Services Page,Description à compléter...
 services.page.thresholds_title,Services Page,Définitions de seuils pour faciliter les prises de décision

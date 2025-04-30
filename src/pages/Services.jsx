@@ -73,29 +73,37 @@ function Services() {
 
       {/* Boucle sur les catégories */}
       <div className="space-y-16 md:space-y-20">
-        {categoriesData.map((category, categoryIndex) => (
-          <div key={category.categoryTitleKey}>
-            {/* Titre de la catégorie */}
-            <h2 className="text-3xl md:text-4xl font-semibold text-primary dark:text-secondary mb-8 border-b-2 border-primary/30 dark:border-secondary/30 pb-3">
-              {getPageText(category.categoryTitleKey)}
-            </h2>
-            {/* Boucle sur les services DANS la catégorie */}
-            <div className="space-y-10 md:space-y-12 pl-4"> {/* Ajout de padding pour les services sous la catégorie */}
-              {category.services.map((service) => (
-                <section key={service.id} id={service.id} className="scroll-mt-28 md:scroll-mt-32"> {/* Increased scroll margin top further */}
-                  {/* Titre du service */}
-                  <h3 className="text-2xl md:text-3xl font-semibold text-gray-800 dark:text-gray-200 mb-4 border-l-4 border-secondary pl-4">
-                    {getPageText(service.titleKey)}
-                  </h3>
-                  {/* Description du service */}
-                  <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed whitespace-pre-line ml-6"> {/* Léger retrait pour la description */}
-                    {getPageText(service.descriptionKey)}
-                  </p>
-                </section>
-              ))}
+        {categoriesData.map((category, categoryIndex) => {
+          // Define category ID based on index or title key
+          let categoryId = '';
+          if (category.categoryTitleKey === 'category1_title') categoryId = 'category-analyses';
+          else if (category.categoryTitleKey === 'category2_title') categoryId = 'category-diagbox-conseil';
+          else if (category.categoryTitleKey === 'category3_title') categoryId = 'category-equipements';
+
+          return (
+            <div key={category.categoryTitleKey} id={categoryId} className="scroll-mt-24"> {/* Added ID and scroll-margin */}
+              {/* Titre de la catégorie */}
+              <h2 className="text-3xl md:text-4xl font-semibold text-primary dark:text-secondary mb-8 border-b-2 border-primary/30 dark:border-secondary/30 pb-3">
+                {getPageText(category.categoryTitleKey)}
+              </h2>
+              {/* Boucle sur les services DANS la catégorie */}
+              <div className="space-y-10 md:space-y-12 pl-4"> {/* Ajout de padding pour les services sous la catégorie */}
+                {category.services.map((service) => (
+                  <section key={service.id} id={service.id} className="scroll-mt-28 md:scroll-mt-32"> {/* Increased scroll margin top further */}
+                    {/* Titre du service */}
+                    <h3 className="text-2xl md:text-3xl font-semibold text-gray-800 dark:text-gray-200 mb-4 border-l-4 border-secondary pl-4">
+                      {getPageText(service.titleKey)}
+                    </h3>
+                    {/* Description du service */}
+                    <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed whitespace-pre-line ml-6"> {/* Léger retrait pour la description */}
+                      {getPageText(service.descriptionKey)}
+                    </p>
+                  </section>
+                ))}
+              </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
 
       {/* Section Retour aux Secteurs - Modified */}

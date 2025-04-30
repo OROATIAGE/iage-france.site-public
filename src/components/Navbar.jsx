@@ -74,73 +74,78 @@ function Navbar() {
 
           {/* Desktop menu */}
           <div className="hidden sm:flex sm:items-center sm:space-x-8">
-            {navItems.map((item) => (
-              item.dropdown ? (
-                <div 
-                  key={item.name}
-                  className="relative" 
-                  onMouseEnter={handleServicesMouseEnter}
-                  onMouseLeave={handleServicesMouseLeave}
-                >
+            {navItems.map((item) => {
+              // Handle Services Dropdown
+              if (item.dropdown) {
+                return (
+                  <div 
+                    key={item.name}
+                    className="relative" 
+                    onMouseEnter={handleServicesMouseEnter}
+                    onMouseLeave={handleServicesMouseLeave}
+                  >
+                    <Link
+                      to={item.path}
+                      className="text-gray-900 dark:text-gray-100 hover:text-primary dark:hover:text-secondary px-3 py-2 text-sm font-medium border-b-2 border-transparent hover:border-primary dark:hover:border-secondary transition-colors flex items-center"
+                    >
+                      {item.name}
+                      <svg className={`w-4 h-4 ml-1 transition-transform duration-200 ${isServicesOpen ? 'transform rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </Link>
+                    {isServicesOpen && (
+                      <div 
+                        className="absolute left-0 mt-1 w-56 rounded-md shadow-lg bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5 py-1 z-50"
+                        onMouseEnter={handleServicesMouseEnter}
+                        onMouseLeave={handleServicesMouseLeave}
+                      >
+                        {item.dropdown.map((subItem) => (
+                          <Link
+                            key={subItem.name}
+                            to={subItem.path}
+                            className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-primary dark:hover:text-secondary"
+                            onClick={() => {
+                              setIsServicesOpen(false);
+                              clearTimeout(servicesTimeoutRef.current);
+                            }}
+                          >
+                            {subItem.name}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                );
+              }
+              // Handle Domaines Link (add onClick)
+              else if (item.path === '/#sectors-grid') {
+                return (
                   <Link
+                    key={item.name} 
                     to={item.path}
-                    className="text-gray-900 dark:text-gray-100 hover:text-primary dark:hover:text-secondary px-3 py-2 text-sm font-medium border-b-2 border-transparent hover:border-primary dark:hover:border-secondary transition-colors flex items-center"
+                    className="text-gray-900 dark:text-gray-100 hover:text-primary dark:hover:text-secondary px-3 py-2 text-sm font-medium border-b-2 border-transparent hover:border-primary dark:hover:border-secondary transition-colors"
+                    onClick={() => {
+                      const element = document.getElementById('sectors-grid');
+                      if (element) {
+                        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                      }
+                    }}
                   >
                     {item.name}
-                    <svg className={`w-4 h-4 ml-1 transition-transform duration-200 ${isServicesOpen ? 'transform rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
                   </Link>
-                  {isServicesOpen && (
-                    <div 
-                      className="absolute left-0 mt-1 w-56 rounded-md shadow-lg bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5 py-1 z-50"
-                      onMouseEnter={handleServicesMouseEnter}
-                      onMouseLeave={handleServicesMouseLeave}
-                    >
-                      {item.dropdown.map((subItem) => (
-                        <Link
-                          key={subItem.name}
-                          to={subItem.path}
-                          className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-primary dark:hover:text-secondary"
-                          onClick={() => {
-                            setIsServicesOpen(false);
-                            clearTimeout(servicesTimeoutRef.current);
-                          }}
-                        >
-                          {subItem.name}
-                        </Link>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              ) : (
-                <Link
-                  key={item.name}
-                  to={item.path}
-                  className="text-gray-900 dark:text-gray-100 hover:text-primary dark:hover:text-secondary px-3 py-2 text-sm font-medium border-b-2 border-transparent hover:border-primary dark:hover:border-secondary transition-colors"
-                >
-                  {item.name}
-                </Link>
-              )
-            ))}
-            <Link
-              key={texts.navbar.sectors}
-              to="/#sectors-grid"
-              className="text-gray-900 dark:text-gray-100 hover:text-primary dark:hover:text-secondary px-3 py-2 text-sm font-medium border-b-2 border-transparent hover:border-primary dark:hover:border-secondary transition-colors"
-              onClick={() => {
-                const element = document.getElementById('sectors-grid');
-                if (element) {
-                  element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-              }}
-            >
-              {texts.navbar.sectors}
-            </Link>
-            <Link
-              key={texts.navbar.contact}
-              to="/contact"
-              className="text-gray-900 dark:text-gray-100 hover:text-primary dark:hover:text-secondary px-3 py-2 text-sm font-medium border-b-2 border-transparent hover:border-primary dark:hover:border-secondary transition-colors"
-            >
-              {texts.navbar.contact}
-            </Link>
+                );
+              }
+              // Handle standard links (About, Contact)
+              else {
+                return (
+                  <Link
+                    key={item.name}
+                    to={item.path}
+                    className="text-gray-900 dark:text-gray-100 hover:text-primary dark:hover:text-secondary px-3 py-2 text-sm font-medium border-b-2 border-transparent hover:border-primary dark:hover:border-secondary transition-colors"
+                  >
+                    {item.name}
+                  </Link>
+                );
+              }
+            })}
             <ThemeSwitcher />
           </div>
 

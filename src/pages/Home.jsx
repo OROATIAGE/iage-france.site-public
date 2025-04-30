@@ -119,18 +119,23 @@ const Home = () => {
         <div className="container">
           <h2 className="text-4xl font-bold text-center mb-16">{texts.home.services.title}</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            {servicesPreview.map((service, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.2 }}
-                className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow"
-              >
-                <div className="text-5xl mb-6">{service.icon}</div>
-                <h3 className="text-2xl font-semibold mb-4">{service.title}</h3>
-                <p className="text-gray-600 text-lg">{service.description}</p>
-              </motion.div>
+            {[
+              { service: servicesPreview[0], linkTo: '/services#category-analyses' },
+              { service: servicesPreview[1], linkTo: '/services#category-diagbox-conseil' },
+              { service: servicesPreview[2], linkTo: '/services#category-equipements' },
+            ].map(({ service, linkTo }, index) => (
+              <Link key={index} to={linkTo} className="group block">
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.2 }}
+                  className="bg-white rounded-xl shadow-lg p-8 h-full group-hover:shadow-xl group-hover:scale-[1.02] transition-all duration-300"
+                >
+                  <div className="text-5xl mb-6">{service.icon}</div>
+                  <h3 className="text-2xl font-semibold mb-4">{service.title}</h3>
+                  <p className="text-gray-600 text-lg">{service.description}</p>
+                </motion.div>
+              </Link>
             ))}
           </div>
         </div>
