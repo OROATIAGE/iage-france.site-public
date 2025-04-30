@@ -24,14 +24,19 @@ function Navbar() {
   const servicesTimeoutRef = useRef(null);
   const isDark = useIsDark()
 
+  // Updated list of all services for the dropdown
   const servicesDropdownItems = [
-    { name: texts.navbar.services.dropdown.all, path: '/services' },
-    { name: texts.navbar.services.dropdown.diagbox, path: '/services#diagbox' },
-    { name: texts.navbar.services.dropdown.catalog, path: '/services#catalog' },
-    { name: texts.navbar.services.dropdown.specific, path: '/services#specific-combinations' },
-    { name: texts.navbar.services.dropdown.development, path: '/services#development' },
-    { name: texts.navbar.services.dropdown.sampling, path: '/services#sampling-tools' },
-    { name: texts.navbar.services.dropdown.local_labs, path: '/services#local-labs' },
+    { name: texts.navbar.services.dropdown.all, path: '/services' }, // Voir tous les services
+    { name: texts.services?.nav?.catalog || 'Catalogue', path: '/services#catalog' },
+    { name: texts.services?.nav?.['specific-combinations'] || 'Combinaisons', path: '/services#specific-combinations' },
+    { name: texts.services?.nav?.development || 'R&D', path: '/services#development' },
+    { name: texts.services?.nav?.diagbox || 'DiagBox®', path: '/services#diagbox' },
+    { name: texts.services?.nav?.['sampling-advice'] || 'Conseil Prélèvement', path: '/services#sampling-advice' },
+    { name: texts.services?.nav?.thresholds || 'Seuils Décisionnels', path: '/services#thresholds' },
+    { name: texts.services?.nav?.['mobile-viz'] || 'Viz Mobilité', path: '/services#mobile-viz' },
+    { name: texts.services?.nav?.modeling || 'Modélisation', path: '/services#modeling' },
+    { name: texts.services?.nav?.['sampling-tools'] || 'Préleveurs', path: '/services#sampling-tools' },
+    { name: texts.services?.nav?.['local-labs'] || 'Labos Locaux', path: '/services#local-labs' },
   ];
 
   const navItems = [

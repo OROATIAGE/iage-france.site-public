@@ -21,12 +21,16 @@ const getText = (keyString, defaultValue = '') => {
   }
 };
 
-// Définir les sections pour la page Services (sans shortLabel)
+// UPDATED sections list to include all individual services
 const sections = [
-  { id: 'diagbox' }, // Utiliser l'ID pour construire la clé du label nav
   { id: 'catalog' },
   { id: 'specific-combinations' },
   { id: 'development' },
+  { id: 'diagbox' },
+  { id: 'sampling-advice' },
+  { id: 'thresholds' },
+  { id: 'mobile-viz' },
+  { id: 'modeling' },
   { id: 'sampling-tools' },
   { id: 'local-labs' },
 ];

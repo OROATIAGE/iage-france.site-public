@@ -1,22 +1,8 @@
 import { motion } from 'framer-motion'
-import { Link, useLocation } from 'react-router-dom'
-import { useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import { texts } from '../content/texts'
 
 const Home = () => {
-  const location = useLocation();
-
-  useEffect(() => {
-    if (location.hash === '#sectors-grid') {
-      const element = document.getElementById('sectors-grid');
-      if (element) {
-        setTimeout(() => {
-          element.scrollIntoView({ behavior: 'smooth' });
-        }, 100);
-      }
-    }
-  }, [location]);
-
   const sectors = [
     {
       id: '01',
@@ -91,7 +77,7 @@ const Home = () => {
       {
         title: texts.home.services[2].title,
         description: texts.home.services[2].description,
-        icon: '📚',
+        icon: '🛠️',
       },
   ];
 
@@ -113,10 +99,16 @@ const Home = () => {
               {texts.home.hero.subtitle}
             </p>
             <Link
-              to="/contact"
+              to="/#sectors-grid"
               className="inline-block bg-white text-primary font-semibold px-8 py-4 rounded-lg hover:bg-gray-100 transition-colors text-lg"
+              onClick={(e) => {
+                const element = document.getElementById('sectors-grid');
+                if (element) {
+                  element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+              }}
             >
-              {texts.home.hero.cta}
+              {texts.home.sectors.title}
             </Link>
           </motion.div>
         </div>

@@ -7,34 +7,53 @@ import ServicesNav from '../components/ServicesNav';
 function Services() {
   const location = useLocation();
 
-  // Données des services avec leurs IDs pour les ancres et les NOUVELLES clés de texte
-  const servicesData = [
-    { id: 'diagbox', titleKey: 'diagbox_title', descriptionKey: 'diagbox_description' },
-    { id: 'catalog', titleKey: 'catalog_title', descriptionKey: 'catalog_description' },
-    { id: 'specific-combinations', titleKey: 'specific_title', descriptionKey: 'specific_description' },
-    { id: 'development', titleKey: 'development_title', descriptionKey: 'development_description' },
-    { id: 'sampling-tools', titleKey: 'sampling_title', descriptionKey: 'sampling_description' },
-    { id: 'local-labs', titleKey: 'local_labs_title', descriptionKey: 'local_labs_description' },
+  // Fonction pour récupérer les textes de manière sûre
+  const getPageText = (key) => texts.services?.page?.[key] || '';
+
+  // NOUVELLE structure de données par catégorie
+  const categoriesData = [
+    {
+      categoryTitleKey: 'category1_title', // Analyses de précision
+      services: [
+        { id: 'catalog', titleKey: 'catalog_title', descriptionKey: 'catalog_description' },
+        { id: 'specific-combinations', titleKey: 'specific_title', descriptionKey: 'specific_description' },
+        { id: 'development', titleKey: 'development_title', descriptionKey: 'development_description' },
+      ],
+    },
+    {
+      categoryTitleKey: 'category2_title', // Diagbox®, Conseil et Expertise
+      services: [
+        { id: 'diagbox', titleKey: 'diagbox_title', descriptionKey: 'diagbox_description' },
+        // Nouveaux services ajoutés ici
+        { id: 'sampling-advice', titleKey: 'sampling_advice_title', descriptionKey: 'sampling_advice_description' },
+        { id: 'thresholds', titleKey: 'thresholds_title', descriptionKey: 'thresholds_description' },
+        { id: 'mobile-viz', titleKey: 'mobile_viz_title', descriptionKey: 'mobile_viz_description' },
+        { id: 'modeling', titleKey: 'modeling_title', descriptionKey: 'modeling_description' },
+      ],
+    },
+    {
+      categoryTitleKey: 'category3_title', // Équipements et labo dédiés
+      services: [
+        { id: 'sampling-tools', titleKey: 'sampling_title', descriptionKey: 'sampling_description' },
+        { id: 'local-labs', titleKey: 'local_labs_title', descriptionKey: 'local_labs_description' },
+      ],
+    },
   ];
 
-  // Réintroduire le useEffect avec une dépendance plus fiable
   useEffect(() => {
-    // Essayer de défiler seulement si on a un hash
     if (location.hash) {
       const id = location.hash.replace('#', '');
       const element = document.getElementById(id);
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        // Use timeout to ensure layout is complete before scrolling
+        setTimeout(() => {
+           element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 100);
       }
     } else {
-      // S'il n'y a pas de hash, s'assurer qu'on est en haut de page
       window.scrollTo(0, 0);
     }
-    // Déclencher l'effet si la clé ou le hash change (pathname géré par ScrollToTop globalement)
-  }, [location.key, location.hash]); // Garder ces dépendances
-
-  // Fonction pour récupérer les textes de manière sûre
-  const getPageText = (key) => texts.services?.page?.[key] || '';
+  }, [location.key, location.hash]);
 
   return (
     <motion.div
@@ -52,16 +71,30 @@ function Services() {
         {getPageText('intro')}
       </p>
 
+      {/* Boucle sur les catégories */}
       <div className="space-y-16 md:space-y-20">
-        {servicesData.map((service) => (
-          <section key={service.id} id={service.id} className="scroll-mt-20 md:scroll-mt-24"> {/* scroll-mt pour compenser la navbar fixe */}
-            <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 dark:text-gray-200 mb-4 border-l-4 border-secondary pl-4">
-              {getPageText(service.titleKey)}
+        {categoriesData.map((category, categoryIndex) => (
+          <div key={category.categoryTitleKey}>
+            {/* Titre de la catégorie */}
+            <h2 className="text-3xl md:text-4xl font-semibold text-primary dark:text-secondary mb-8 border-b-2 border-primary/30 dark:border-secondary/30 pb-3">
+              {getPageText(category.categoryTitleKey)}
             </h2>
-            <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed whitespace-pre-line">
-              {getPageText(service.descriptionKey)}
-            </p>
-          </section>
+            {/* Boucle sur les services DANS la catégorie */}
+            <div className="space-y-10 md:space-y-12 pl-4"> {/* Ajout de padding pour les services sous la catégorie */}
+              {category.services.map((service) => (
+                <section key={service.id} id={service.id} className="scroll-mt-28 md:scroll-mt-32"> {/* Increased scroll margin top further */}
+                  {/* Titre du service */}
+                  <h3 className="text-2xl md:text-3xl font-semibold text-gray-800 dark:text-gray-200 mb-4 border-l-4 border-secondary pl-4">
+                    {getPageText(service.titleKey)}
+                  </h3>
+                  {/* Description du service */}
+                  <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed whitespace-pre-line ml-6"> {/* Léger retrait pour la description */}
+                    {getPageText(service.descriptionKey)}
+                  </p>
+                </section>
+              ))}
+            </div>
+          </div>
         ))}
       </div>
 

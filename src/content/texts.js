@@ -5,13 +5,7 @@ export const texts = {
     "services": {
       "title": "Services",
       "dropdown": {
-        "all": "Voir tous les services",
-        "diagbox": "DiagBox®",
-        "catalog": "Analyses Catalogue",
-        "specific": "Combinaisons Spécifiques",
-        "development": "Développement Méthodes",
-        "sampling": "Outils de Prélèvement",
-        "local_labs": "Laboratoires Dédiés"
+        "all": "Voir tous les services"
       }
     },
     "sectors": "Secteurs",
@@ -31,22 +25,22 @@ export const texts = {
   },
   "home": {
     "hero": {
-      "title": "Solutions d'analyses et d'expertise pour votre industrie",
-      "subtitle": "Expertise, innovation et qualité au service de vos besoins",
+      "title": "L'expertise du vivant à votre service",
+      "subtitle": "Voir l'invisible pour agir à temps",
       "cta": "Contactez-nous"
     },
     "services": {
       "0": {
-        "title": "Analyses de laboratoire",
-        "description": "Des analyses précises et fiables pour répondre à vos besoins spécifiques."
+        "title": "Analyses de précisions",
+        "description": "Des analyses précises et fiables, sur catalogue ou à la demande, pour répondre à tous vos besoins"
       },
       "1": {
-        "title": "Conseil et expertise",
-        "description": "Un accompagnement personnalisé pour optimiser vos processus."
+        "title": "Diagbox®, Conseils et Expertise",
+        "description": "Un accompagnement personnalisé pour accompagner vos prises de décisions"
       },
       "2": {
-        "title": "Formation",
-        "description": "Des programmes de formation adaptés à vos équipes."
+        "title": "Vous équiper et former vos équipes",
+        "description": "Equiments spécialisées, laboratoires locaux, accompagnement technique, pour encore plus de réactivité"
       },
       "title": "Nos Services"
     },
@@ -112,15 +106,26 @@ export const texts = {
       "catalog_title": "Analyses Catalogue : Précision et Fiabilité",
       "catalog_description": "Nous proposons un large catalogue d'analyses standardisées, validées et optimisées pour différents types de matrices (eaux, sols, air, surfaces, etc.). Ces analyses couvrent la détection et la quantification de nombreux micro-organismes (virus, bactéries, champignons) et paramètres spécifiques. Consultez notre catalogue pour trouver l'analyse adaptée à votre besoin.",
       "specific_title": "Combinaisons Spécifiques : Flexibilité sur Mesure",
-      "specific_description": "Vos besoins sont uniques ? Nous pouvons combiner plusieurs méthodes d'analyses catalogue ou adapter nos protocoles pour répondre précisément à vos problématiques. Que ce soit pour suivre simultanément plusieurs pathogènes ou analyser une matrice complexe, nous évaluons la faisabilité et validons des approches sur mesure.\r\n\r\nLa combinaison de méthodes nécessite une étape de validation technique impliquant des analyses supplémentaires (réplicas). La tarification est donc établie sur mesure, prenant en compte le type d'échantillon, le résultat attendu, les méthodes unitaires utilisées et les analyses de validation nécessaires.",
+      "specific_description": "Vos besoins sont uniques ? Nous pouvons combiner plusieurs méthodes d'analyses catalogue ou adapter nos protocoles pour répondre précisément à vos problématiques.\\n\\nLa combinaison de méthodes nécessite une étape de validation technique impliquant des analyses supplémentaires (réplicas). La tarification est donc établie sur mesure, prenant en compte le type d'échantillon, le résultat attendu, les méthodes unitaires utilisées et les analyses de validation nécessaires.",
       "development_title": "Développement de Nouvelles Méthodes : Innovation et R&D",
-      "development_description": "Face à des enjeux émergents (virus, bactéries), pour intégrer une analyse spécifique dans un projet de recherche ou pour un POC (Proof Of Concept) répondant à un appel d'offres, IAGE s'engage dans le développement et la validation de nouvelles méthodes d'analyse.\r\n\r\nNotre processus débute par une étude de faisabilité (étude bibliographique, design, matrice, critères d'efficacité attendus, ressources humaines). L'offre de prix, validée par nos directions scientifique, recherche et commerciale, reflète ce travail de R&D (temps expert, achats spécifiques). L'intégration d'analyses catalogue existantes au sein du développement peut permettre d'optimiser les coûts.\r\n\r\nC'est une approche partenariale pour innover ensemble.",
+      "development_description": "Face à des enjeux émergents (virus, bactéries), pour intégrer une analyse spécifique dans un projet de recherche ou pour un POC (Proof Of Concept) répondant à un appel d'offres, IAGE s'engage dans le développement et la validation de nouvelles méthodes d'analyse.\\n\\nNotre processus débute par une étude de faisabilité (étude bibliographique, design, matrice, critères d'efficacité attendus, ressources humaines). L'offre de prix, validée par nos directions scientifique, recherche et commerciale, reflète ce travail de R&D (temps expert, achats spécifiques). L'intégration d'analyses catalogue existantes au sein du développement peut permettre d'optimiser les coûts.\\n\\nC'est une approche partenariale pour innover ensemble.",
       "sampling_title": "Outils de Prélèvement Adaptés",
-      "sampling_description": "La qualité de l'analyse commence par un prélèvement pertinent. Nous fournissons ou recommandons les outils et process de prélèvement les mieux adaptés à votre matrice et à vos objectifs.\r\n\r\nEn particulier pour les applications qui utilisent des matrices eaux dans des milieux dynamiques (réseaux d'eaux usées sous circulation, sorties de bâtiments, cours d'eau, mer,...), nous avons développé des préleveurs automatiques  adaptés aux prélèvements en continu d'eaux dans ces contextes difficiles, et des dispositifs spécifiques pour garantir l'intégrité de vos échantillons.",
+      "sampling_description": "La qualité de l'analyse commence par un prélèvement pertinent. Nous fournissons ou recommandons les outils et process de prélèvement les mieux adaptés à votre matrice et à vos objectifs.\\n\\nEn particulier pour les applications qui utilisent des matrices eaux dans des milieux dynamiques (réseaux d'eaux usées sous circulation, sorties de bâtiments, cours d'eau, mer,...), nous avons développé des préleveurs automatiques  adaptés aux prélèvements en continu d'eaux dans ces contextes difficiles, et des dispositifs spécifiques pour garantir l'intégrité de vos échantillons.",
       "local_labs_title": "Laboratoires Locaux Spécialisés et Dédiés",
       "local_labs_description": "Pour des besoins récurrents, des volumes importants ou une nécessité de résultats ultra-rapides, nous pouvons étudier la mise en place de laboratoires d'analyse locaux, spécialisés et dédiés à votre activité. Cette solution offre une autonomie et une réactivité maximales, avec notre support pour l'installation, la formation et le suivi qualité.",
       "back_to_sectors_title": "Explorer nos domaines d'application",
-      "back_to_sectors_link_text": "Voir nos secteurs d'activité"
+      "back_to_sectors_link_text": "Voir nos secteurs d'activité",
+      "category1_title": "Analyses de précision",
+      "category2_title": "Diagbox®",
+      "category3_title": "Équipements et labo dédiés",
+      "sampling_advice_title": "Conseil et solutions pour faciliter les prélèvements",
+      "sampling_advice_description": "Description à compléter...",
+      "thresholds_title": "Définitions de seuils pour faciliter les prises de décision",
+      "thresholds_description": "Description à compléter...",
+      "mobile_viz_title": "Outils de représentation des résultats en mobilité",
+      "mobile_viz_description": "Description à compléter...",
+      "modeling_title": "Modélisations et anticipations",
+      "modeling_description": "Description à compléter..."
     },
     "nav": {
       "diagbox": "DiagBox®",
@@ -128,7 +133,11 @@ export const texts = {
       "specific-combinations": "Combinaisons",
       "development": "R&D",
       "sampling-tools": "Préleveurs",
-      "local-labs": "Labos Locaux"
+      "local-labs": "Labos Locaux",
+      "sampling-advice": "Conseil Prélèvement",
+      "thresholds": "Seuils Décisionnels",
+      "mobile-viz": "Viz Mobilité",
+      "modeling": "Modélisation"
     }
   },
   "sectors": {
@@ -321,7 +330,16 @@ export const texts = {
     }
   },
   "about": {
-    "title": "À propos de nous"
+    "title": "À propos de nous",
+    "page": {
+      "intro1": "Fondée en 2017 à Montpellier, IAGE est spécialisée dans l'analyse biologique et environnementale.",
+      "intro2": "Nous proposons des services de diagnostics ultra-précoces, accessibles et actionnables, pensés pour tous les acteurs du vivant.",
+      "ambition_title": "Notre ambition : Voir l'invisible pour agir à temps.",
+      "ambition_text": "Là où d'autres interviennent trop tard, IAGE fait le choix de l'anticipation, de la prévention et de l'accompagnement sur mesure.",
+      "strength_title": "Notre force : Rendre l'expertise scientifique simple et opérationnelle.",
+      "strength_text": "Parce que nous connaissons les réalités de terrain — qu'il s'agisse de collectivités, exploitants ou industriels — nous avons transformé notre savoir-faire en solutions clefs en main : du prélèvement à l'analyse, jusqu'à la mise en œuvre de plans d'actions concrets.",
+      "conclusion": "Avec IAGE, la biologie devient un levier clair et fiable pour prendre des décisions rapides, pertinentes et durables."
+    }
   },
   "diagbox": {
     "gazon": {
