@@ -136,8 +136,8 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Sectors Grid */}
-      <section id="sectors-grid" className="py-20 bg-white dark:bg-gray-900">
+      {/* Sectors Grid - Reverted scroll-mt */}
+      <section id="sectors-grid" className="py-20 bg-white dark:bg-gray-900 scroll-mt-24">
         <div className="container">
           <h2 className="text-4xl font-bold text-center mb-16 text-gray-900 dark:text-white">{texts.home.sectors.title}</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-12">

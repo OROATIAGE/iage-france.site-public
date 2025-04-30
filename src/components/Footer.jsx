@@ -46,7 +46,16 @@ function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/#sectors-grid" className="text-gray-300 hover:text-white dark:text-gray-400 dark:hover:text-white">
+                <Link 
+                  to="/#sectors-grid" 
+                  className="text-gray-300 hover:text-white dark:text-gray-400 dark:hover:text-white"
+                  onClick={() => {
+                    const element = document.getElementById('sectors-grid');
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                  }}
+                >
                   {texts.footer.sectors}
                 </Link>
               </li>

@@ -121,6 +121,26 @@ function Navbar() {
                 </Link>
               )
             ))}
+            <Link
+              key={texts.navbar.sectors}
+              to="/#sectors-grid"
+              className="text-gray-900 dark:text-gray-100 hover:text-primary dark:hover:text-secondary px-3 py-2 text-sm font-medium border-b-2 border-transparent hover:border-primary dark:hover:border-secondary transition-colors"
+              onClick={() => {
+                const element = document.getElementById('sectors-grid');
+                if (element) {
+                  element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+              }}
+            >
+              {texts.navbar.sectors}
+            </Link>
+            <Link
+              key={texts.navbar.contact}
+              to="/contact"
+              className="text-gray-900 dark:text-gray-100 hover:text-primary dark:hover:text-secondary px-3 py-2 text-sm font-medium border-b-2 border-transparent hover:border-primary dark:hover:border-secondary transition-colors"
+            >
+              {texts.navbar.contact}
+            </Link>
             <ThemeSwitcher />
           </div>
 
@@ -177,6 +197,30 @@ function Navbar() {
               </Link>
             )
           ))}
+          <Link
+            key={`mobile-${texts.navbar.sectors}`}
+            to="/#sectors-grid"
+            className="text-gray-900 dark:text-gray-100 hover:text-primary dark:hover:text-secondary block px-3 py-2 text-base font-medium border-l-4 border-transparent hover:border-primary dark:hover:border-secondary transition-colors"
+            onClick={() => {
+              setIsOpen(false);
+              const element = document.getElementById('sectors-grid');
+              if (element) {
+                setTimeout(() => {
+                  element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 150);
+              }
+            }}
+          >
+            {texts.navbar.sectors}
+          </Link>
+          <Link
+            key={`mobile-${texts.navbar.contact}`}
+            to="/contact"
+            className="text-gray-900 dark:text-gray-100 hover:text-primary dark:hover:text-secondary block px-3 py-2 text-base font-medium border-l-4 border-transparent hover:border-primary dark:hover:border-secondary transition-colors"
+            onClick={() => setIsOpen(false)}
+          >
+            {texts.navbar.contact}
+          </Link>
         </div>
       </div>
     </nav>

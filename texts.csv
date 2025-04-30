@@ -2,14 +2,14 @@ key,section,texte
 navbar.home,Navbar,Accueil
 navbar.about,Navbar,À propos de nous
 navbar.services.title,Navbar,Services
-navbar.sectors,Navbar,Secteurs
+navbar.sectors,Navbar,Domaines
 navbar.contact,Navbar,Contact
 footer.title,Footer,IAGE
 footer.subtitle,Footer,Ingéniérie et Analyse en Génétique Environnementale
 footer.navigation,Footer,Navigation
 footer.home,Footer,Accueil
 footer.services,Footer,Services
-footer.sectors,Footer,Secteurs
+footer.sectors,Footer,Domaines
 footer.contact,Footer,Contact
 footer.contactTitle,Footer,Contact
 footer.email,Footer,Email: contact@iage-france.com
@@ -83,7 +83,9 @@ Toutes nos mesures de microbiologie – quantification d'ADN ou d'ARN – sont r
 
 Consultez notre catalogue pour trouver l'analyse adaptée à votre besoin."
 services.page.specific_title,Services (Page),Combinaisons Spécifiques : Flexibilité sur Mesure
-services.page.specific_description,Services (Page),"Vos besoins sont uniques ? Nous pouvons combiner plusieurs méthodes d'analyses catalogue ou adapter nos protocoles pour répondre précisément à vos problématiques.\n\nLa combinaison de méthodes nécessite une étape de validation technique impliquant des analyses supplémentaires (réplicas). La tarification est donc établie sur mesure, prenant en compte le type d'échantillon, le résultat attendu, les méthodes unitaires utilisées et les analyses de validation nécessaires."
+services.page.specific_description,Services (Page),"Vos besoins sont uniques ? Nous pouvons combiner plusieurs méthodes d'analyses catalogue ou adapter nos protocoles pour répondre précisément à vos problématiques.
+
+La combinaison de méthodes nécessite une étape de validation technique impliquant des analyses supplémentaires (réplicas). La tarification est donc établie sur mesure, prenant en compte le type d'échantillon, le résultat attendu, les méthodes unitaires utilisées et les analyses de validation nécessaires."
 services.page.development_title,Services (Page),Développement de Nouvelles Méthodes : Innovation et R&D
 services.page.development_description,Services (Page),"Face à des enjeux émergents (virus, bactéries), pour intégrer une analyse spécifique dans un projet de recherche ou pour un POC (Proof Of Concept) répondant à un appel d'offres, IAGE s'engage dans le développement et la validation de nouvelles méthodes d'analyse.
 
@@ -94,7 +96,7 @@ services.page.sampling_title,Services (Page),Outils de Prélèvement Adaptés
 services.page.sampling_description,Services (Page),"La qualité de l'analyse commence par un prélèvement pertinent. Nous fournissons ou recommandons les outils et process de prélèvement les mieux adaptés à votre matrice et à vos objectifs.
 
 En particulier pour les applications qui utilisent des matrices eaux dans des milieux dynamiques (réseaux d'eaux usées sous circulation, sorties de bâtiments, cours d'eau, mer,...), nous avons développé des préleveurs automatiques  adaptés aux prélèvements en continu d'eaux dans ces contextes difficiles, et des dispositifs spécifiques pour garantir l'intégrité de vos échantillons."
-services.page.local_labs_title,Services (Page),Laboratoires Locaux Spécialisés et Dédiés
+services.page.local_labs_title,Services (Page),Laboratoires Locaux spécialisés et dédiés
 services.page.local_labs_description,Services (Page),"Pour des besoins récurrents, des volumes importants ou une nécessité de résultats ultra-rapides, nous pouvons étudier la mise en place de laboratoires d'analyse locaux, spécialisés et dédiés à votre activité. Cette solution offre une autonomie et une réactivité maximales, avec notre support pour l'installation, la formation et le suivi qualité."
 services.page.back_to_sectors_title,Services (Page),Explorer nos domaines d'application
 services.page.back_to_sectors_link_text,Services (Page),Voir nos secteurs d'activité

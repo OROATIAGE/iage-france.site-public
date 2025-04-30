@@ -98,14 +98,21 @@ function Services() {
         ))}
       </div>
 
-      {/* Section Retour aux Secteurs */}
+      {/* Section Retour aux Secteurs - Modified */}
       <section className="mt-16 md:mt-20 pt-10 border-t border-gray-200 dark:border-gray-700 text-center">
-        <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 dark:text-gray-200 mb-6">
-          {getPageText('back_to_sectors_title')}
-        </h2>
+        <Link 
+          to="/#sectors-grid" 
+        > 
+          <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 dark:text-gray-200 mb-6 hover:text-primary dark:hover:text-secondary transition-colors duration-200 inline-block underline hover:underline"> 
+            {getPageText('back_to_sectors_title')}
+          </h2>
+        </Link>
+        {/* Removed the redundant button */}
+        {/* 
         <Link to="/#sectors-grid" className="btn-primary">
           {getPageText('back_to_sectors_link_text')}
         </Link>
+        */}
       </section>
     </motion.div>
   );
