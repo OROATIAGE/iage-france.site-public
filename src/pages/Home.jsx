@@ -63,22 +63,52 @@ const Home = () => {
     }
   ]
 
-  const servicesPreview = [
-      {
-        title: texts.home.services[0].title,
-        description: texts.home.services[0].description,
-        icon: '🔬',
-      },
-      {
-        title: texts.home.services[1].title,
-        description: texts.home.services[1].description,
-        icon: '💡',
-      },
-      {
-        title: texts.home.services[2].title,
-        description: texts.home.services[2].description,
-        icon: '🛠️',
-      },
+  const problemSolvingCategories = [
+    {
+      id: 'health-hygiene-category',
+      heroCardKey: 'card_title_health',
+      imageSrc: '/images/hygiene-sante-publique.webp',
+      titleKey: 'category_health_hygiene_title',
+      subdomains: [
+        { textKey: 'subdomain_epidemiology', link: '/sectors/01' },
+        { textKey: 'subdomain_hospital_hygiene', link: '/sectors/02' },
+        { textKey: 'subdomain_indoor_hygiene', link: '/sectors/03' },
+      ],
+    },
+    {
+      id: 'agriculture-livestock-category',
+      heroCardKey: 'card_title_agriculture',
+      imageSrc: '/images/agriculture_elevage.webp',
+      titleKey: 'category_agriculture_livestock_title',
+      subdomains: [
+        { textKey: 'subdomain_viticulture', link: '/sectors/05' },
+        { textKey: 'subdomain_arboriculture', link: '/sectors/06' },
+        { textKey: 'subdomain_shellfish_farming', link: '/sectors/07' },
+        { textKey: 'subdomain_poultry_farming', link: '/sectors/08' },
+      ],
+    },
+    {
+      id: 'industrial-fermentation-category',
+      heroCardKey: 'card_title_industrial',
+      imageSrc: '/images/industrie_bioenergie.webp',
+      titleKey: 'category_industrial_fermentation_title',
+      subdomains: [
+        { textKey: 'subdomain_winemaking', link: '/sectors/05' },
+        { textKey: 'subdomain_purification_systems', link: '/solutions/systemes-epuration' },
+        { textKey: 'subdomain_methanizers', link: '/solutions/methaniseurs' },
+      ],
+    },
+    {
+      id: 'turf-parks-category',
+      heroCardKey: 'card_title_turf',
+      imageSrc: '/images/gazons_pro_parcs_jardins.webp',
+      titleKey: 'category_turf_parks_title',
+      subdomains: [
+        { textKey: 'subdomain_sports_turf', link: '/sectors/04' },
+        { textKey: 'subdomain_golf_courses', link: '/sectors/04' },
+        { textKey: 'subdomain_cemeteries', link: '/sectors/04' },
+      ],
+    },
   ];
 
   return (
@@ -92,81 +122,69 @@ const Home = () => {
             transition={{ duration: 0.8 }}
             className="w-full text-center text-white py-20"
           >
-            <h1 className="text-5xl md:text-7xl font-bold mb-8 text-white max-w-4xl mx-auto leading-tight">
+            <h2 className="text-2xl md:text-3xl font-bold mb-8 text-white max-w-4xl mx-auto leading-tight">
               {texts.home.hero.title}
-            </h1>
+            </h2>
             <p className="text-xl md:text-2xl mb-12 text-gray-100 max-w-2xl mx-auto">
               {texts.home.hero.subtitle}
             </p>
-            <Link
-              to="/#sectors-grid"
-              className="inline-block bg-white text-primary font-semibold px-8 py-4 rounded-lg hover:bg-gray-100 transition-colors text-lg"
-              onClick={(e) => {
-                const element = document.getElementById('sectors-grid');
-                if (element) {
-                  element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-              }}
-            >
-              {texts.home.sectors.title}
-            </Link>
+            <div className="mt-10">
+              <p className="text-4xl md:text-6xl mb-6 text-gray-100 font-semibold">
+                {texts.home.hero.professional_intro}
+              </p>
+              <div className="flex flex-wrap justify-center items-stretch gap-6">
+                {problemSolvingCategories.map(category => (
+                  <Link
+                    key={category.id}
+                    to={`/#${category.id}`}
+                    className="group bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 w-64 flex flex-col overflow-hidden"
+                    onClick={(e) => {
+                      const element = document.getElementById(category.id);
+                      if (element) {
+                        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                      }
+                    }}
+                  >
+                    <img 
+                      src={category.imageSrc} 
+                      alt={(texts.home.hero[category.heroCardKey] || '').replace(/\\n/g, '\n')} 
+                      className="h-40 w-full object-cover rounded-t-lg"
+                    />
+                    <div className="bg-primary text-white p-3 w-full text-center rounded-b-lg flex-grow flex items-center justify-center">
+                      <span className="font-semibold text-sm whitespace-pre-line">{(texts.home.hero[category.heroCardKey] || '').replace(/\\n/g, '\n')}</span>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
           </motion.div>
         </div>
       </section>
 
-      {/* Services Preview */}
-      <section className="py-20 bg-gray-50">
+      {/* New Problem Solving Categories Section */}
+      <section id="sectors-grid" className="py-20 bg-white dark:bg-gray-900 scroll-mt-20 md:scroll-mt-24">
         <div className="container">
-          <h2 className="text-4xl font-bold text-center mb-16">{texts.home.services.title}</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            {[
-              { service: servicesPreview[0], linkTo: '/services#category-analyses' },
-              { service: servicesPreview[1], linkTo: '/services#category-diagbox-conseil' },
-              { service: servicesPreview[2], linkTo: '/services#category-equipements' },
-            ].map(({ service, linkTo }, index) => (
-              <Link key={index} to={linkTo} className="group block">
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.2 }}
-                  className="bg-white rounded-xl shadow-lg p-8 h-full group-hover:shadow-xl group-hover:scale-[1.02] transition-all duration-300"
-                >
-                  <div className="text-5xl mb-6">{service.icon}</div>
-                  <h3 className="text-2xl font-semibold mb-4">{service.title}</h3>
-                  <p className="text-gray-600 text-lg">{service.description}</p>
-                </motion.div>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Sectors Grid - Reverted scroll-mt */}
-      <section id="sectors-grid" className="py-20 bg-white dark:bg-gray-900 scroll-mt-24">
-        <div className="container">
-          <h2 className="text-4xl font-bold text-center mb-16 text-gray-900 dark:text-white">{texts.home.sectors.title}</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
-            {sectors.map((sector, index) => (
-              <Link key={sector.id} to={`/sectors/${sector.id}`} className="flex flex-col items-center group">
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="flex flex-col items-center"
-                >
-                  <div className={`${sector.color} w-36 h-36 md:w-40 md:h-40 rounded-full flex flex-col items-center justify-center p-4 transition-all duration-300 transform group-hover:scale-110 shadow-lg`}>
-                    {sector.isSvg ? (
-                      <img src={sector.icon} alt={sector.name} className="w-20 h-20 object-contain" />
-                    ) : (
-                      <span className="text-5xl mb-2">{sector.icon}</span>
-                    )}
-                    <span className="text-base font-semibold text-center mt-2 text-gray-800 dark:text-gray-200">{sector.name}</span>
-                  </div>
-                  <p className="mt-6 text-gray-600 dark:text-gray-400 text-center max-w-[200px] whitespace-pre-line">
-                    {sector.description}
-                  </p>
-                </motion.div>
-              </Link>
+          <h2 className="text-4xl font-bold text-center mb-16 text-gray-900 dark:text-white">
+            {texts.home.sectors.title} {/* Nous répondons à vos questions */}
+          </h2>
+          <div className="space-y-16">
+            {problemSolvingCategories.map((category) => (
+              <section key={category.id} id={category.id} className="scroll-mt-20 md:scroll-mt-24">
+                <h3 className="text-3xl font-semibold text-primary dark:text-secondary mb-8 border-b-2 border-primary/30 dark:border-secondary/30 pb-3">
+                  {texts.home.sectors[category.titleKey]}
+                </h3>
+                <div className="flex flex-wrap gap-4 justify-center sm:justify-start">
+                  {category.subdomains.map((subdomain) => (
+                    <Link
+                      key={subdomain.textKey}
+                      to={subdomain.link}
+                      className="bg-secondary/10 hover:bg-secondary/20 dark:bg-secondary/20 dark:hover:bg-secondary/30 text-secondary dark:text-secondary-light px-6 py-3 rounded-full text-sm font-medium transition-colors duration-200 shadow-sm hover:shadow-md"
+                    >
+                      {texts.home.sectors[subdomain.textKey]}
+                    </Link>
+                  ))}
+                </div>
+              </section>
             ))}
           </div>
         </div>

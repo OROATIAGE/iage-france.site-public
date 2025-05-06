@@ -29,7 +29,12 @@ export const texts = {
     "hero": {
       "title": "L'expertise du vivant à votre service",
       "subtitle": "Voir l'invisible pour agir à temps",
-      "cta": "Contactez-nous"
+      "cta": "Contactez-nous",
+      "professional_intro": "Nos recommandations :",
+      "card_title_health": "Santé publique, \nHygiène dans les bâtiments",
+      "card_title_agriculture": "Agriculture, élevage",
+      "card_title_industrial": "Fermentations agroalimentaire,\nTraitement des eaux – bio-énergie...",
+      "card_title_turf": "Gazons professionnels, parcs, jardins"
     },
     "services": {
       "0": {
@@ -47,7 +52,24 @@ export const texts = {
       "title": "Nos Services"
     },
     "sectors": {
-      "title": "Nos domaines d'expertise",
+      "title": "Nous répondons à vos questions",
+      "category_health_hygiene_title": "Santé publique et Hygiène intérieure",
+      "category_agriculture_livestock_title": "Agriculture et élevage",
+      "category_industrial_fermentation_title": "Fermentations industrielles",
+      "category_turf_parks_title": "Gazons et parc",
+      "subdomain_epidemiology": "Suivi global de la santé de la population (WES)",
+      "subdomain_hospital_hygiene": "Hygiène hospitalière",
+      "subdomain_indoor_hygiene": "Hygiène intérieure",
+      "subdomain_viticulture": "Viticulture",
+      "subdomain_arboriculture": "Arboriculture",
+      "subdomain_shellfish_farming": "Conchyliculture",
+      "subdomain_poultry_farming": "Aviculture",
+      "subdomain_winemaking": "Vinification",
+      "subdomain_purification_systems": "Systèmes d'épuration",
+      "subdomain_methanizers": "Méthaniseurs",
+      "subdomain_sports_turf": "Gazons de stades sportifs",
+      "subdomain_golf_courses": "Golfs",
+      "subdomain_cemeteries": "Cimetières",
       "01": {
         "name": "Epidémiosurveillance (WES)",
         "description": "Mesures de pathogènes dans les eaux usées \nPossibilité de Certification COFRAC"
@@ -219,7 +241,7 @@ export const texts = {
         "catchphrase": "Vous assurez la charge de l'entretien de gazons sportifs (clubs, collectivités, distributeurs) :",
         "intro": "IAGE aide à préserver la qualité de vos gazons grâce à la détection précoce et précise des pathogènes (champignons, nématodes) responsables des maladies.",
         "services": {
-          "title": "Nos solutions pour la santé des gazons sportifs :"
+          "title": "Vous vous posez des questions sur la santé de vos gazons"
         },
         "diagbox": {
           "title": "DiagBox® Gazon",
@@ -338,7 +360,7 @@ export const texts = {
     "title": "À propos de nous",
     "page": {
       "intro1": "Fondée en 2017 à Montpellier, IAGE est spécialisée dans l'analyse biologique et environnementale.",
-      "intro2": "Nous proposons des services de diagnostics ultra-précoces, accessibles et dont les resultats aident aux prises de décision, pensés pour tous les acteurs du vivant.",
+      "intro2": "Nous proposons des services de diagnostics ultra-précoces, accessibles et dont les résultats aident aux prises de décision, pensés pour tous les acteurs du vivant.",
       "ambition_title": "Notre ambition : Voir l'invisible pour agir à temps.",
       "ambition_text": "Là où d'autres interviennent trop tard, IAGE fait le choix de l'anticipation, de la prévention et de l'accompagnement sur mesure.",
       "strength_title": "Notre force : Rendre l'expertise scientifique simple et opérationnelle.",
@@ -561,9 +583,40 @@ export const texts = {
         "sol_link": "Sol / Substrat (Avant plaquage)",
         "racine_gazon_link": "Racine + Gazon (Vision globale)",
         "plaquage_link": "Accompagnement Plaquage (Sécurisation)",
-        "prices_link": "Voir les tarifs"
+        "prices_link": "Voir les prix",
+        "questions_link": "Retour aux Questions"
       },
-      "link_to_prices": "Voir le tarif"
+      "link_to_prices": "Voir les prix",
+      "qna_intro": {
+        "q1_sub1_PF000011": "pour un contrôle rapide sur toute l'étendue du gazon",
+        "q1_sub1_PF000016": "pour un contrôle ciblé sur des portions du gazon",
+        "q1_sub2_PF000013": "pour un contrôle rapide sur toute l'étendue du gazon",
+        "q1_sub2_PF000018": "pour un contrôle ciblé sur des portions du gazon en été",
+        "q1_sub2_PF000019": "pour un contrôle ciblé sur des portions du gazon en hivers",
+        "q1_sub3_PF000015": "pour un contrôle rapide sur toute l'étendue du gazon",
+        "q1_sub3_PF000020": "pour un contrôle ciblé sur des portions du gazon",
+        "q1_sub4_PF000048": "pour contrôler l'état des racines",
+        "q1_sub5_PF000047": "pour contrôler l'état du sol",
+        "q2_sub1_PF000033": "pour analyser la présence des pathogènes d'été sur un gazon symptomatique",
+        "q2_sub1_PF000035": "pour une analyse à large spectre d'un gazon symptomatique",
+        "q3_PF000050": "Pour sécuriser un nouveau plaquage (sol + racines + gazon)",
+        "q4_PF000049": "<b>Suivi conjoint racines et partie aérienne</b>, pour vérifier efficacement l'effet de traitements et/ou pouvoir réagir au plus tôt aux risques de contamination",
+        "q4_PF000050": "<b>Accompagnement plaquage</b> : un contrôle complet pour maitriser tous les risques : identifier des pathogènes éventuels dans le substrat avant pose, et réduire les risques d'un apport de pathogènes dans le nouveau plaquage"
+      },
+      "group_title": {
+        "q1_sub1": "Kits Diagbox : Contrôle Pyriculariose (précoce)",
+        "q1_sub2": "Kits Diagbox : Contrôle Pathogènes Courants (précoce)",
+        "q1_sub3": "Kits Diagbox : Contrôle Tous Pathogènes Habituels (précoce)",
+        "q1_sub4": "Kits Diagbox : Contrôle des Racines",
+        "q1_sub5": "Kits Diagbox : Contrôle du Sol",
+        "q2_sub1": "Kits Diagbox : Analyse sur Gazon Symptomatique",
+        "q3": "Kits Diagbox : Analyse Avant Nouveau Plaquage",
+        "q4_combined": "Kits combinés"
+      },
+      "button_show_all_kits": "Afficher tous les groupes de kits",
+      "button_hide_all_kits": "Masquer tous les groupes de kits",
+      "pythium_note_prefix": "* ",
+      "pythium_note_suffix_detail": ": Pythium aphanidermatum, P. arrhenomanes, P. aristosporum, P. torulosum, P. graminicola, P. tardicrescens, P. periilum, P. catenulatum."
     }
   },
   "// -- Section Lingette --": "",
@@ -578,6 +631,22 @@ export const texts = {
   "// Noms courts pour les types de kit (pour le tableau)": "",
   "// -- CTA Final --": "",
   "// -- Table des matières (TOC) pour DiagBox Gazon --": "",
+  "gazon": {
+    "qna": {
+      "q1_title": "Je ne vois pas de symptômes, ou je viens de faire un traitement, quelles sont mes possibilité de contrôle, pour anticiper les différents risques ou m'assurer de l'effet du traitement  ?",
+      "q1_sub1": "Comment m'assurer que mon gazon n'est pas (ou plus) touché par la pyryculariose car c'est la maladie le plus répandue dans ma région ou mon plus grand risque habituel ?",
+      "q1_sub2": "Comment m'assurer que mon gazon n'est pas (ou plus) touché par l'un des pathogènes les plus répandus ?",
+      "q1_sub3": "Comment m'assurer que mon gazon n'est (plus) touché par aucun des pathogènes habituels",
+      "q1_sub4": "Comment m'assurer que les racines ne sont pas (ou plus) non plus touchées ?",
+      "q1_sub5": "Comment m'assurer que le sol n'est pas (ou plus) touché ?",
+      "q2_title": "J'ai détecté des symptômes, comment agir avec pertinence ?",
+      "q2_sub1": "Comment caractériser le pathogène principal et les pathogènes secondaires présents pour savoir comment réagir ?",
+      "q2_sub2": "Comment savoir si mes racines sont touchées ?",
+      "q2_sub3": "Comment savoir si mon sol est touché ?",
+      "q3_title": "Je vais poser un nouveau gazon (plaquage), mon sol est-il bien sans risque ou dois-je envisager un traitement préalable ?",
+      "q4_title": "je veux des analyses complètes au meilleur prix, quelles sont les recommandations ?"
+    }
+  },
   "// Labels courts pour la navigation de la page Services": "",
   "privacy": {
     "title": "Politique de confidentialité",

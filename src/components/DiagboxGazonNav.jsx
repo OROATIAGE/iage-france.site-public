@@ -17,6 +17,7 @@ const getText = (key, defaultValue = '') => {
 
 // Définir les sections ici pour éviter de dépendre d'une importation complexe
 const sections = [
+  { id: 'gazon-qna-accordion', textKey: 'toc.questions_link', isQnaLink: true },
   { id: 'lingette', textKey: 'toc.lingette_link' },
   { id: 'dechet', textKey: 'toc.dechet_link' },
   { id: 'sympto', textKey: 'toc.sympto_link' },
@@ -27,7 +28,7 @@ const sections = [
   { id: 'prices', textKey: 'toc.prices_link', isPrice: true }, // Marquer la section prix
 ];
 
-function DiagboxGazonNav() {
+function DiagboxGazonNav({ onNavigateToQna }) {
   const [isVisible, setIsVisible] = useState(false);
   const [activeSection, setActiveSection] = useState(null);
   const navRef = useRef(null); // Référence pour le conteneur de la nav
@@ -139,12 +140,17 @@ function DiagboxGazonNav() {
 
         // Style conditionnel pour le lien actif et le lien prix
         const baseClasses = "inline-block px-4 py-2 rounded-full text-sm font-medium mr-2 transition-all duration-300";
-        const activeClasses = section.isPrice 
+        let activeClasses = section.isPrice 
             ? "bg-accent/20 dark:bg-accent/30 text-accent dark:text-orange-300 ring-2 ring-accent/50" 
             : "bg-secondary/20 dark:bg-secondary/30 text-secondary dark:text-secondary-light ring-2 ring-secondary/50";
-        const inactiveClasses = section.isPrice 
+        let inactiveClasses = section.isPrice 
             ? "bg-accent/5 dark:bg-accent/10 text-accent/80 dark:text-orange-400/80 hover:bg-accent/10 dark:hover:bg-accent/20"
             : "bg-secondary/5 dark:bg-secondary/10 text-secondary/80 dark:text-secondary-light/80 hover:bg-secondary/10 dark:hover:bg-secondary/20";
+
+        if (section.isQnaLink) {
+          activeClasses = "bg-green-500/20 dark:bg-green-500/30 text-green-600 dark:text-green-400 ring-2 ring-green-500/50"; // Example: Green for Q&A
+          inactiveClasses = "bg-green-500/5 dark:bg-green-500/10 text-green-700/80 dark:text-green-500/80 hover:bg-green-500/10 dark:hover:bg-green-500/20";
+        }
 
         return (
           <a
@@ -153,10 +159,13 @@ function DiagboxGazonNav() {
             href={`#${section.id}`}
             className={`${baseClasses} ${isActive ? activeClasses : inactiveClasses}`}
             onClick={(e) => {
-              // Optionnel: Améliorer le smooth scroll si nécessaire
-              // e.preventDefault();
-              // document.getElementById(section.id)?.scrollIntoView({ behavior: 'smooth', block: 'start' }); 
-              setActiveSection(section.id); // Marquer comme actif au clic immédiatement
+              if (section.isQnaLink && onNavigateToQna) {
+                e.preventDefault(); // Prevent default anchor behavior
+                onNavigateToQna(); // Call the handler from SectorPage
+                setActiveSection(section.id); // Still set it active in the nav
+              } else {
+                setActiveSection(section.id); 
+              }
             }}
           >
             {text}
