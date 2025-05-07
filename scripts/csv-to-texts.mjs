@@ -12,7 +12,7 @@ const outputJsPath = path.join(outputDirPath, 'texts.js'); // Chemin complet du 
 
 const result = {};
 
-fs.createReadStream(inputCsvPath)
+fs.createReadStream(inputCsvPath, { encoding: 'utf8' })
   .pipe(csvParser())
   .on('data', (row) => {
     // Vérifie si la ligne a bien une clé et un texte

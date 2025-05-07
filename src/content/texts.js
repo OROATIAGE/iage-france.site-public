@@ -231,7 +231,7 @@ export const texts = {
           "description": "Consultez notre catalogue d'analyses pour les principaux pathogènes du gazon. Nous pouvons combiner des analyses pour un profil complet ou rechercher des pathogènes spécifiques sur demande.",
           "title": "Analyses Catalogue et Combinaisons Spécifiques"
         },
-        "catchphrase": "Vous assurez la charge de l'entretien de gazons sportifs (clubs, collectivités, distributeurs) :",
+        "catchphrase": "En charge de l'entretien de gazons sportifs (clubs, collectivités, distributeurs), vous faites face à à la diffusion de la Pyriculariose qui menace vos pelouses, tandis que la loi Labbé supprime l'usage des produits phytosanitaires de synthèse.\nComment répondre à ces nouveaux défis de manière efficace et économique ?",
         "cta": {
           "diagbox": "Découvrir DiagBox® Gazon"
         },

@@ -305,24 +305,16 @@ function SectorPage() {
         {/* --- Gazon Intro Section - Part 1 (Title and Catchphrase) --- */}
         <div className="bg-gradient-to-r from-primary/10 to-secondary/10 dark:from-primary/20 dark:to-secondary/20 p-8 rounded-lg mb-6 shadow-sm">
           <h1 className="text-3xl md:text-4xl font-bold text-primary dark:text-secondary mb-4">{sectorName}</h1>
-          <p className="text-xl md:text-2xl font-semibold text-primary dark:text-gray-300">
+          <p className="text-xl md:text-2xl font-semibold text-primary dark:text-gray-300 whitespace-pre-line">
             {getText(pageData, 'catchphrase')}
           </p>
         </div>
 
         {/* --- NEW Perspective Text Section --- */}
         <div className="my-8 md:my-12 prose lg:prose-xl max-w-none dark:prose-invert text-primary dark:text-gray-300">
-          {
-            (() => {
-              const perspectiveTextString = getText(pageData, 'perspective_text');
-              // console.log('Perspective Text for splitting:', JSON.stringify(perspectiveTextString)); // Keep for now if still debugging
-              return perspectiveTextString.split('\n').map((paragraph, index) => { // Changed to split by single '\n'
-                const trimmedParagraph = paragraph.trim();
-                // Avoid rendering empty paragraphs if there were multiple newlines together
-                return trimmedParagraph ? <p key={index}>{trimmedParagraph}</p> : null;
-              });
-            })()
-          }
+          <p className="whitespace-pre-line">
+            {getText(pageData, 'perspective_text')}
+          </p>
         </div>
 
         {/* --- Gazon Intro Section - Part 2 (IAGE Intro with list) --- */}
