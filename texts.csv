@@ -1,455 +1,437 @@
-key,section,texte,
-navbar.home,Navbar,Accueil,
-navbar.about,Navbar,À propos de nous,
-navbar.services.title,Navbar,Services,
-navbar.sectors,Navbar,Domaines,
-navbar.contact,Navbar,Contact,
-footer.title,Footer,IAGE,
-footer.subtitle,Footer,Ingéniérie et Analyse en Génétique Environnementale,
-footer.navigation,Footer,Navigation,
-footer.home,Footer,Accueil,
-footer.services,Footer,Services,
-footer.sectors,Footer,Domaines,
-footer.contact,Footer,Contact,
-footer.contactTitle,Footer,Contact,
-footer.email,Footer,Email: contact@iage-france.com,
-footer.copyright,Footer,© {année} IAGE. Tous droits réservés.,
-footer.privacy,Footer,Politique de confidentialité,
-footer.legal,Footer,Mentions légales,
-home.hero.title,Home (Hero),L'expertise du vivant à votre service,
-home.hero.subtitle,Home (Hero),Voir l'invisible pour agir à temps,
-home.hero.cta,Home (Hero),Contactez-nous,
-home.services.title,Home (Services),Nos Services,
-home.services.0.title,Home (Services),Analyses de précisions,
-home.services.0.description,Home (Services),"Des analyses précises et fiables, sur catalogue ou à la demande, pour répondre à tous vos besoins",
-home.services.1.title,Home (Services),"Diagbox®, Conseils et Expertise",
-home.services.1.description,Home (Services),Un accompagnement personnalisé pour accompagner vos prises de décisions,
-home.services.2.title,Home (Services),Vous équiper et former vos équipes,
-home.services.2.description,Home (Services),"Equiments spécialisés, laboratoires locaux, accompagnement technique, pour encore plus de réactivité",
-home.sectors.title,Home (Secteurs),Nous répondons à vos questions,
-home.sectors.category_health_hygiene_title,Home (Secteurs),Santé publique et Hygiène intérieure,
-home.sectors.category_agriculture_livestock_title,Home (Secteurs),Agriculture et élevage,
-home.sectors.category_industrial_fermentation_title,Home (Secteurs),Fermentations industrielles,
-home.sectors.category_turf_parks_title,Home (Secteurs),Gazons et parc,
-home.sectors.subdomain_epidemiology,Home (Secteurs),Suivi global de la santé de la population (WES),
-home.sectors.subdomain_hospital_hygiene,Home (Secteurs),Hygiène hospitalière,
-home.sectors.subdomain_indoor_hygiene,Home (Secteurs),Hygiène intérieure,
-home.sectors.subdomain_viticulture,Home (Secteurs),Viticulture,
-home.sectors.subdomain_arboriculture,Home (Secteurs),Arboriculture,
-home.sectors.subdomain_shellfish_farming,Home (Secteurs),Conchyliculture,
-home.sectors.subdomain_poultry_farming,Home (Secteurs),Aviculture,
-home.sectors.subdomain_winemaking,Home (Secteurs),Vinification,
-home.sectors.subdomain_purification_systems,Home (Secteurs),Systèmes d'épuration,
-home.sectors.subdomain_methanizers,Home (Secteurs),Méthaniseurs,
-home.sectors.subdomain_sports_turf,Home (Secteurs),Gazons de stades sportifs,
-home.sectors.subdomain_golf_courses,Home (Secteurs),Golfs,
-home.sectors.subdomain_cemeteries,Home (Secteurs),Cimetières,
-home.sectors.01.name,Home (Secteurs),Epidémiosurveillance (WES),
-home.sectors.01.description,Home (Secteurs),"Mesures de pathogènes dans les eaux usées 
-Possibilité de Certification COFRAC",
-home.sectors.02.name,Home (Secteurs),Hygiène hospitalière,
-home.sectors.02.description,Home (Secteurs),Mesures de contrôle de désinfection,
-home.sectors.03.name,Home (Secteurs),Hygiène intérieure,
-home.sectors.03.description,Home (Secteurs),"Mesures de contrôle de la qualité de l'air, de présences de nuisibles",
-home.sectors.04.name,Home (Secteurs),Gazons sportifs,
-home.sectors.04.description,Home (Secteurs),Mesures de présence de pathogènes du gazon,
-home.sectors.05.name,Home (Secteurs),Viti – Vini,
-home.sectors.05.description,Home (Secteurs),Mesures de pathogènes ou de qualité du process,
-home.sectors.06.name,Home (Secteurs),Arboriculture (Pomme),
-home.sectors.06.description,Home (Secteurs),Mesure de pathogènes,
-home.sectors.07.name,Home (Secteurs),Conchyliculture,
-home.sectors.07.description,Home (Secteurs),Mesure de contrôle contre la présence de pathogènes humains,
-home.sectors.08.name,Home (Secteurs),Aviculture,
-home.sectors.08.description,Home (Secteurs),Mesures de contrôle pathogènes aviaires,
-home.cta.title,Home (CTA),Prêt à commencer ?,
-home.cta.subtitle,Home (CTA),Contactez-nous pour discuter de vos besoins et découvrir comment nous pouvons vous aider.,
-home.cta.button,Home (CTA),Prendre contact,
-home.hero.professional_intro,Home (Hero),Nos recommandations :,
+key,section,texte
+navbar.about,Navbar,À propos de nous
+navbar.contact,Navbar,Contact
+navbar.home,Navbar,Accueil
+navbar.sectors,Navbar,Domaines
+navbar.services.dropdown.all,Navbar,Voir tous les services
+navbar.services.title,Navbar,Services
+home.cta.button,Home (CTA),Prendre contact
+home.cta.subtitle,Home (CTA),Contactez-nous pour discuter de vos besoins et découvrir comment nous pouvons vous aider.
+home.cta.title,Home (CTA),Prêt à commencer ?
+home.hero.card_title_agriculture,Home (Hero),"Agriculture, élevage"
 home.hero.card_title_health,Home (Hero),"Santé publique, 
-Hygiène dans les bâtiments",
-home.hero.card_title_agriculture,Home (Hero),"Agriculture, élevage",
+Hygiène dans les bâtiments"
 home.hero.card_title_industrial,Home (Hero),"Fermentations agroalimentaire,
-Traitement des eaux – bio-énergie...",
-home.hero.card_title_turf,Home (Hero),"Gazons professionnels, parcs, jardins",
-contact.title,Contact,Contact,
-contact.form.name,Contact,Nom,
-contact.form.email,Contact,Email,
-contact.form.company,Contact,Entreprise,
-contact.form.phone,Contact,Téléphone,
-contact.form.message,Contact,Message,
-contact.form.submit,Contact,Envoyer,
-services.title,Services,Nos Services,
-sectors.title,Secteurs,Nos domaines d'activité,
-about.title,About,À propos de nous,
-sectors.page.01.catchphrase,Secteur 01 (Page),"Vous portez une responsabilité dans le suivi de la santé de la population locale, ou vous souhaitez contribuer à la prévention des épidémies :",
-sectors.page.01.intro,Secteur 01 (Page),"IAGE vous accompagne avec des solutions d'analyse génomique précises et rapides pour l'épidémiosurveillance environnementale, notamment via l'analyse des eaux usées (Wastewater Based Epidemiology - WBE).",
-sectors.page.01.services.title,Secteur 01 (Page),Nos solutions adaptées à l'épidémiosurveillance :,
-sectors.page.01.diagbox.title,Secteur 01 (Page),DiagBox® WES,
-sectors.page.01.diagbox.description,Secteur 01 (Page),"Le kit clé-en-main pour une détection et quantification rapide (48h) et autonome des pathogènes (virus, bactéries) dans vos échantillons d'eau. Simple, efficace, et stockable sans contrainte.",
-sectors.page.01.catalog.title,Secteur 01 (Page),Analyses Catalogue et Combinaisons Spécifiques,
-sectors.page.01.catalog.description,Secteur 01 (Page),Choisissez parmi nos analyses standardisées (ex: SARS-CoV-2 dans les eaux usées) ou combinez plusieurs méthodes pour un suivi sur mesure de pathogènes spécifiques à vos problématiques.,
-sectors.page.01.development.title,Secteur 01 (Page),Développement de Nouvelles Méthodes,
-sectors.page.01.development.description,Secteur 01 (Page),"Nous innovons avec vous pour développer et valider des méthodes d'analyse pour de nouvelles cibles virales ou bactériennes, répondant aux enjeux émergents de santé publique.",
-sectors.page.01.sampling.title,Secteur 01 (Page),Prélèvement en continu,
-sectors.page.01.sampling.description,Secteur 01 (Page),"Nous proposons également des solutions pour le prélèvement en continu, particulièrement adaptées au suivi dynamique des matrices aqueuses.",
-sectors.page.01.cta.diagbox,Secteur 01 (Page),Découvrir DiagBox® WES,
-navbar.services.dropdown.all,Navbar,Voir tous les services,
-services.page.title,Services (Page),Nos Solutions et Services Analytiques,
-services.page.intro,Services (Page),"Découvrez comment IAGE répond à vos besoins spécifiques et vous aide dans vos prises de décision opérationnelles grâce à une gamme complète d'analyses, de services et de produits",
-services.page.diagbox_title,Services (Page),DiagBox® : Simplicité et Rapidité,
-services.page.diagbox_description,Services (Page),"Nos kits DiagBox® sont des solutions clé-en-main pour des analyses rapides (résultats en 48h) et autonomes.
-
-Chaque kit inclut le matériel de prélèvement adapté, le transport et l'analyse en laboratoire. 
-
-Faciles à stocker et à utiliser, ils sont idéaux pour le contrôle qualité régulier, le suivi ou la confirmation rapide d'une suspicion (ex: pathogènes gazon, qualité de l'air intérieur, nuisibles).",
-services.page.catalog_title,Services (Page),Analyses catalogue : Précision et Fiabilité,
+Traitement des eaux – bio-énergie..."
+home.hero.card_title_turf,Home (Hero),"Gazons professionnels, parcs, jardins"
+home.hero.cta,Home (Hero),Contactez-nous
+home.hero.professional_intro,Home (Hero),Nos recommandations :
+home.hero.subtitle,Home (Hero),Voir l'invisible pour agir à temps
+home.hero.title,Home (Hero),L'expertise du vivant à votre service
+home.sectors.01.description,Home (Secteurs),"Mesures de pathogènes dans les eaux usées 
+Possibilité de Certification COFRAC"
+home.sectors.01.name,Home (Secteurs),Epidémiosurveillance (WES)
+home.sectors.02.description,Home (Secteurs),Mesures de contrôle de désinfection
+home.sectors.02.name,Home (Secteurs),Hygiène hospitalière
+home.sectors.03.description,Home (Secteurs),"Mesures de contrôle de la qualité de l'air, de présences de nuisibles"
+home.sectors.03.name,Home (Secteurs),Hygiène intérieure
+home.sectors.04.description,Home (Secteurs),Mesures de présence de pathogènes du gazon
+home.sectors.04.name,Home (Secteurs),Gazons sportifs
+home.sectors.05.description,Home (Secteurs),Mesures de pathogènes ou de qualité du process
+home.sectors.05.name,Home (Secteurs),Viti – Vini
+home.sectors.06.description,Home (Secteurs),Mesure de pathogènes
+home.sectors.06.name,Home (Secteurs),Arboriculture (Pomme)
+home.sectors.07.description,Home (Secteurs),Mesure de contrôle contre la présence de pathogènes humains
+home.sectors.07.name,Home (Secteurs),Conchyliculture
+home.sectors.08.description,Home (Secteurs),Mesures de contrôle pathogènes aviaires
+home.sectors.08.name,Home (Secteurs),Aviculture
+home.sectors.category_agriculture_livestock_title,Home (Secteurs),Agriculture et élevage
+home.sectors.category_health_hygiene_title,Home (Secteurs),Santé publique et Hygiène intérieure
+home.sectors.category_industrial_fermentation_title,Home (Secteurs),Fermentations industrielles
+home.sectors.category_turf_parks_title,Home (Secteurs),Gazons et parc
+home.sectors.subdomain_arboriculture,Home (Secteurs),Arboriculture
+home.sectors.subdomain_cemeteries,Home (Secteurs),Cimetières
+home.sectors.subdomain_epidemiology,Home (Secteurs),Suivi global de la santé de la population (WES)
+home.sectors.subdomain_golf_courses,Home (Secteurs),Golfs
+home.sectors.subdomain_hospital_hygiene,Home (Secteurs),Hygiène hospitalière
+home.sectors.subdomain_indoor_hygiene,Home (Secteurs),Hygiène intérieure
+home.sectors.subdomain_methanizers,Home (Secteurs),Méthaniseurs
+home.sectors.subdomain_poultry_farming,Home (Secteurs),Aviculture
+home.sectors.subdomain_purification_systems,Home (Secteurs),Systèmes d'épuration
+home.sectors.subdomain_shellfish_farming,Home (Secteurs),Conchyliculture
+home.sectors.subdomain_sports_turf,Home (Secteurs),Gazons de stades sportifs
+home.sectors.subdomain_viticulture,Home (Secteurs),Viticulture
+home.sectors.subdomain_winemaking,Home (Secteurs),Vinification
+home.sectors.title,Home (Secteurs),Nous répondons à vos questions
+home.services.0.description,Home (Services),"Des analyses précises et fiables, sur catalogue ou à la demande, pour répondre à tous vos besoins"
+home.services.0.title,Home (Services),Analyses de précisions
+home.services.1.description,Home (Services),Un accompagnement personnalisé pour accompagner vos prises de décisions
+home.services.1.title,Home (Services),"Diagbox®, Conseils et Expertise"
+home.services.2.description,Home (Services),"Equiments spécialisés, laboratoires locaux, accompagnement technique, pour encore plus de réactivité"
+home.services.2.title,Home (Services),Vous équiper et former vos équipes
+home.services.title,Home (Services),Nos Services
+about.page.ambition_text,About Page,"Là où d'autres interviennent trop tard, IAGE fait le choix de l'anticipation, de la prévention et de l'accompagnement sur mesure."
+about.page.ambition_title,About Page,Notre ambition : Voir l'invisible pour agir à temps.
+about.page.conclusion,About Page,"Avec IAGE, la biologie devient un levier clair et fiable pour prendre des décisions rapides, pertinentes et durables."
+about.page.intro1,About Page,"Fondée en 2017 à Montpellier, IAGE est spécialisée dans l'analyse biologique et environnementale."
+about.page.intro2,About Page,"Nous proposons des services de diagnostics ultra-précoces, accessibles et dont les résultats aident aux prises de décision, pensés pour tous les acteurs du vivant."
+about.page.strength_text,About Page,"Parce que nous connaissons les réalités de terrain — qu'il s'agisse de collectivités, exploitants ou industriels — nous avons transformé notre savoir-faire en solutions clefs en main : du prélèvement à l'analyse, jusqu'à la mise en œuvre de plans d'actions concrets."
+about.page.strength_title,About Page,Notre force : Rendre l'expertise scientifique simple et opérationnelle.
+about.title,About,À propos de nous
+services.nav.catalog,Services Nav,Catalogue des analyses
+services.nav.development,Services Nav,R&D
+services.nav.diagbox,Services Nav,DiagBox®
+services.nav.local-labs,Services Nav,Laboratoires locaux
+services.nav.mobile-viz,Services Nav,Visualisations en mobilité
+services.nav.modeling,Services Nav,Modélisations et anticipations
+services.nav.sampling-advice,Services Nav,Optimiser les prélèvements
+services.nav.sampling-tools,Services Nav,Préleveurs d'eaux
+services.nav.specific-combinations,Services Nav,Combinaisons sur mesure
+services.nav.thresholds,Services Nav,Seuils décisionnels
+services.page.back_to_sectors_link_text,Services (Page),Voir nos domaines d'activité
+services.page.back_to_sectors_title,Services (Page),Explorer nos domaines d'application
 services.page.catalog_description,Services (Page),"Nous proposons un large catalogue d'analyses standardisées, validées et optimisées pour différents types de matrices (eaux, sols, air, surfaces, etc.). Ces analyses couvrent la détection et la quantification de nombreux micro-organismes (virus, bactéries, champignons) et paramètres spécifiques.
 
 Toutes nos mesures de microbiologie – quantification d'ADN ou d'ARN – sont réalisées en digital PCR et à partir de procédés de préparations développés et optimisés par IAGE. Cela garanti leur précision, leur sensibilité et leur répétabilité. IAGE est à ce jour le seul laboratoire à proposer des analyses en digital PCR dans les eaux usées certifiées COFRAC
 
-Consultez notre catalogue pour trouver l'analyse adaptée à votre besoin.",
-services.page.specific_title,Services (Page),Combinaisons spécifiques : Flexibilité sur mesure,
-services.page.specific_description,Services (Page),"Vos besoins sont uniques ? Nous pouvons combiner plusieurs méthodes d'analyses catalogue ou adapter nos protocoles pour répondre précisément à vos problématiques.
-
-La combinaison de méthodes nécessite une étape de validation technique impliquant des analyses supplémentaires (réplicas). La tarification est donc établie sur mesure, prenant en compte le type d'échantillon, le résultat attendu, les méthodes unitaires utilisées et les analyses de validation nécessaires.",
-services.page.development_title,Services (Page),Développement de nouvelles méthodes : Innovation et R&D,
+Consultez notre catalogue pour trouver l'analyse adaptée à votre besoin."
+services.page.catalog_title,Services (Page),Analyses catalogue : Précision et Fiabilité
+services.page.category1_title,Services Page,Analyses de précision
+services.page.category2_title,Services Page,Diagbox® et Services pour l'aide à la décision
+services.page.category3_title,Services Page,Équipements et laboratoires dédiés
 services.page.development_description,Services (Page),"Face à des enjeux émergents (virus, bactéries), pour intégrer une analyse spécifique dans un projet de recherche ou pour un POC (Proof Of Concept) répondant à un appel d'offres, IAGE s'engage dans le développement et la validation de nouvelles méthodes d'analyse.
 
 Notre processus débute par une étude de faisabilité (étude bibliographique, design, matrice, critères d'efficacité attendus, ressources humaines). L'offre de prix, validée par nos directions scientifique, recherche et commerciale, reflète ce travail de R&D (temps expert, achats spécifiques). L'intégration d'analyses catalogue existantes au sein du développement peut permettre d'optimiser les coûts.
 
-C'est une approche partenariale pour innover ensemble.",
-services.page.sampling_title,Services (Page),Outils de prélèvement adaptés,
+C'est une approche partenariale pour innover ensemble."
+services.page.development_title,Services (Page),Développement de nouvelles méthodes : Innovation et R&D
+services.page.diagbox_description,Services (Page),"Nos kits DiagBox® sont des solutions clé-en-main pour des analyses rapides (résultats en 48h) et autonomes.
+
+Chaque kit inclut le matériel de prélèvement adapté, le transport et l'analyse en laboratoire. 
+
+Faciles à stocker et à utiliser, ils sont idéaux pour le contrôle qualité régulier, le suivi ou la confirmation rapide d'une suspicion (ex: pathogènes gazon, qualité de l'air intérieur, nuisibles)."
+services.page.diagbox_title,Services (Page),DiagBox® : Simplicité et Rapidité
+services.page.intro,Services (Page),"Découvrez comment IAGE répond à vos besoins spécifiques et vous aide dans vos prises de décision opérationnelles grâce à une gamme complète d'analyses, de services et de produits"
+services.page.local_labs_description,Services (Page),"Pour des besoins récurrents, des volumes importants ou une nécessité de résultats ultra-rapides, nous pouvons étudier la mise en place de laboratoires d'analyse locaux, spécialisés et dédiés à votre activité. Cette solution offre une autonomie et une réactivité maximales, avec notre support pour l'installation, la formation et le suivi qualité."
+services.page.local_labs_title,Services (Page),Laboratoires locaux spécialisés et dédiés
+services.page.mobile_viz_description,Services Page,Description à compléter...
+services.page.mobile_viz_title,Services Page,Outils de représentation des résultats en mobilité
+services.page.modeling_description,Services Page,Description à compléter...
+services.page.modeling_title,Services Page,Modélisations et anticipations
+services.page.sampling_advice_description,Services Page,Description à compléter...
+services.page.sampling_advice_title,Services Page,Conseil et solutions pour faciliter les prélèvements
 services.page.sampling_description,Services (Page),"La qualité de l'analyse commence par un prélèvement pertinent. Nous fournissons ou recommandons les outils et process de prélèvement les mieux adaptés à votre matrice et à vos objectifs.
 
-En particulier pour les applications qui utilisent des matrices eaux dans des milieux dynamiques (réseaux d'eaux usées sous circulation, sorties de bâtiments, cours d'eau, mer,...), nous avons développé des préleveurs automatiques  adaptés aux prélèvements en continu d'eaux dans ces contextes difficiles, et des dispositifs spécifiques pour garantir l'intégrité de vos échantillons.",
-services.page.local_labs_title,Services (Page),Laboratoires locaux spécialisés et dédiés,
-services.page.local_labs_description,Services (Page),"Pour des besoins récurrents, des volumes importants ou une nécessité de résultats ultra-rapides, nous pouvons étudier la mise en place de laboratoires d'analyse locaux, spécialisés et dédiés à votre activité. Cette solution offre une autonomie et une réactivité maximales, avec notre support pour l'installation, la formation et le suivi qualité.",
-services.page.back_to_sectors_title,Services (Page),Explorer nos domaines d'application,
-services.page.back_to_sectors_link_text,Services (Page),Voir nos domaines d'activité,
-// Textes pour Secteur 02: Hygiène hospitalière,,,
-sectors.page.02.catchphrase,Secteur 02 (Page),Vous êtes responsable de l'hygiène dans un établissement de santé ou une société de nettoyage spécialisée :,
-sectors.page.02.intro,Secteur 02 (Page),"IAGE vous accompagne avec des solutions d'analyse pour le contrôle de la désinfection, la validation de protocoles et la surveillance environnementale en milieu hospitalier, garantissant la sécurité des patients et du personnel.",
-sectors.page.02.services.title,Secteur 02 (Page),Nos solutions adaptées à l'hygiène hospitalière :,
-sectors.page.02.diagbox.title,Secteur 02 (Page),DiagBox® Hygiène Hospitalière,
-sectors.page.02.diagbox.description,Secteur 02 (Page),"Le kit clé-en-main pour une détection et quantification rapide (48h) et autonome de marqueurs microbiens (bactéries, moisissures) sur surfaces ou dans l'air après désinfection. Simple, efficace, et idéal pour vos contrôles qualité réguliers.",
-sectors.page.02.catalog.title,Secteur 02 (Page),Analyses Catalogue et Combinaisons Spécifiques,
-sectors.page.02.catalog.description,Secteur 02 (Page),"Choisissez parmi nos analyses standardisées (ex: recherche de légionelles, staphylocoques dorés) ou combinez plusieurs méthodes pour un suivi sur mesure des points critiques de votre établissement.",
-sectors.page.02.development.title,Secteur 02 (Page),Développement de Nouvelles Méthodes,
-sectors.page.02.development.description,Secteur 02 (Page),"Nous innovons avec vous pour développer et valider des méthodes d'analyse pour de nouvelles cibles pertinentes en milieu hospitalier (pathogènes émergents, biofilms) ou pour évaluer l'efficacité de nouveaux protocoles/produits de désinfection.",
-sectors.page.02.cta.diagbox,Secteur 02 (Page),Découvrir DiagBox® Hygiène,
-// Textes pour Secteur 03: Hygiène intérieure & Hygiène publique,,,
-sectors.page.03.catchphrase,Secteur 03 (Page),"Vous gérez la qualité de l'air intérieur, l'entretien de locaux ou vous luttez contre les nuisibles (PCO) :",
-sectors.page.03.intro,Secteur 03 (Page),"IAGE offre des outils d'analyse pour évaluer la qualité de l'air (moisissures), détecter la présence de nuisibles (punaises de lit, rongeurs) et valider l'efficacité des produits d'entretien.",
-sectors.page.03.services.title,Secteur 03 (Page),Nos solutions pour l'hygiène intérieure et publique :,
-sectors.page.03.diagbox.title,Secteur 03 (Page),DiagBox® Qualité Intérieure & Nuisibles,
-sectors.page.03.diagbox.description,Secteur 03 (Page),"Nos kits clé-en-main permettent une détection rapide (48h) et autonome de moisissures dans l'air ou de traces ADN de nuisibles (punaises de lit, rongeurs). Idéal pour un diagnostic rapide et ciblé.",
-sectors.page.03.catalog.title,Secteur 03 (Page),Analyses Catalogue et Combinaisons Spécifiques,
-sectors.page.03.catalog.description,Secteur 03 (Page),"Explorez nos analyses pour la qualité de l'air intérieur (QAI), l'identification d'allergènes ou la détection spécifique de nuisibles. Des combinaisons peuvent être étudiées pour des diagnostics complets.",
-sectors.page.03.development.title,Secteur 03 (Page),Développement de Nouvelles Méthodes,
-sectors.page.03.development.description,Secteur 03 (Page),Besoin d'une méthode spécifique pour un nouveau type de contaminant intérieur ou un nuisible particulier ? Nous développons des solutions d'analyse sur mesure en partenariat avec les formulateurs et les professionnels de l'hygiène.,
-sectors.page.03.cta.diagbox,Secteur 03 (Page),Découvrir DiagBox® Intérieur,
-// Textes pour Secteur 04: Gazons sportifs,,,
-sectors.page.04.catchphrase,Secteur 04 (Page),"Vous assurez la charge de l'entretien de gazons sportifs (clubs, collectivités, distributeurs) :",
-sectors.page.04.intro,Secteur 04 (Page),"IAGE aide à préserver la qualité de vos gazons grâce à la détection précoce et précise des pathogènes (champignons, nématodes) responsables des maladies.",
-sectors.page.04.services.title,Secteur 04 (Page),Vous vous posez des questions sur la santé de vos gazons, voici nos solutions :
-sectors.page.04.diagbox.title,Secteur 04 (Page),DiagBox® Gazon,
-sectors.page.04.diagbox.description,Secteur 04 (Page),"Le kit clé-en-main pour prélever facilement gazon, racines ou substrat et obtenir en 48h un diagnostic précis des pathogènes présents. Anticipez les traitements et optimisez la santé de vos terrains.",
-sectors.page.04.catalog.title,Secteur 04 (Page),Analyses Catalogue et Combinaisons Spécifiques,
-sectors.page.04.catalog.description,Secteur 04 (Page),Consultez notre catalogue d'analyses pour les principaux pathogènes du gazon. Nous pouvons combiner des analyses pour un profil complet ou rechercher des pathogènes spécifiques sur demande.,
-sectors.page.04.development.title,Secteur 04 (Page),Développement de Nouvelles Méthodes,
-sectors.page.04.development.description,Secteur 04 (Page),"En collaboration avec les instituts techniques, les distributeurs et les clubs, nous développons de nouvelles méthodes pour détecter des pathogènes émergents ou spécifiques à certaines conditions environnementales.",
-sectors.page.04.cta.diagbox,Secteur 04 (Page),Découvrir DiagBox® Gazon,
-// Textes pour Secteur 05: Viti – Vini,,,
-sectors.page.05.catchphrase,Secteur 05 (Page),"Vous êtes un acteur de la filière vitivinicole (technicien, coopérative, négoce, institut technique) :",
-sectors.page.05.intro,Secteur 05 (Page),"IAGE fournit des outils d'analyse moléculaire pour le suivi sanitaire de la vigne (maladies du bois, mildiou, oïdium) et le contrôle qualité du processus de vinification (levures, bactéries).",
-sectors.page.05.services.title,Secteur 05 (Page),Nos solutions pour la viticulture et la vinification :,
-sectors.page.05.diagbox.title,Secteur 05 (Page),DiagBox® Vigne & Vin,
-sectors.page.05.diagbox.description,Secteur 05 (Page),"Des kits clé-en-main pour un diagnostic rapide (48h) des pathogènes de la vigne ou pour le suivi des micro-organismes clés durant la vinification. Prélevez, envoyez, recevez vos résultats.",
-sectors.page.05.catalog.title,Secteur 05 (Page),Analyses Catalogue et Combinaisons Spécifiques,
-sectors.page.05.catalog.description,Secteur 05 (Page),"Notre catalogue couvre les principaux pathogènes (Esca, Eutypiose, Black Dead Arm) et micro-organismes d'intérêt (Brettanomyces). Des analyses combinées ou sur mesure sont possibles pour vos suivis spécifiques.",
-sectors.page.05.development.title,Secteur 05 (Page),Développement de Nouvelles Méthodes,
-sectors.page.05.development.description,Secteur 05 (Page),"Nous collaborons avec les acteurs de la filière pour développer des méthodes de détection pour de nouveaux pathogènes, des indicateurs de qualité ou des suivis spécifiques liés à des itinéraires techniques innovants.",
-sectors.page.05.cta.diagbox,Secteur 05 (Page),Découvrir DiagBox® Vigne & Vin,
-// Textes pour Secteur 06: Arboriculture (Pomme),,,
-sectors.page.06.catchphrase,Secteur 06 (Page),"Vous êtes un professionnel de la filière pomme (station de conservation, coopérative, technicien, négoce) :",
-sectors.page.06.intro,Secteur 06 (Page),"IAGE propose des analyses pour la détection précoce des maladies de conservation et des pathogènes affectant les vergers de pommiers, afin d'optimiser la qualité et réduire les pertes.",
-sectors.page.06.services.title,Secteur 06 (Page),Nos solutions pour l'arboriculture (pomme) :,
-sectors.page.06.diagbox.title,Secteur 06 (Page),DiagBox® Arbo Pomme,
-sectors.page.06.diagbox.description,Secteur 06 (Page),Le kit clé-en-main pour détecter rapidement (48h) les principaux pathogènes responsables des maladies de conservation (ex: Gloeosporium) ou présents dans le verger. Anticipez les risques et adaptez vos stratégies.,
-sectors.page.06.catalog.title,Secteur 06 (Page),Analyses Catalogue et Combinaisons Spécifiques,
-sectors.page.06.catalog.description,Secteur 06 (Page),Consultez nos analyses pour les pathogènes clés de la pomme en verger et en conservation. Des analyses combinées peuvent être réalisées pour un bilan sanitaire complet.,
-sectors.page.06.development.title,Secteur 06 (Page),Développement de Nouvelles Méthodes,
-sectors.page.06.development.description,Secteur 06 (Page),"En lien avec les instituts techniques et les organisations professionnelles, nous développons des méthodes pour de nouvelles menaces sanitaires ou pour des suivis spécifiques liés à de nouvelles variétés ou pratiques culturales.",
-sectors.page.06.cta.diagbox,Secteur 06 (Page),Découvrir DiagBox® Arbo Pomme,
-// Textes pour Secteur 07: Conchyliculture,,,
-sectors.page.07.catchphrase,Secteur 07 (Page),"Vous êtes un acteur de la conchyliculture (ostréiculteur, institut, collectivité) soucieux de la qualité sanitaire :",
-sectors.page.07.intro,Secteur 07 (Page),"IAGE offre des solutions d'analyse rapide pour le contrôle de la qualité microbiologique des eaux conchylicoles et la détection de pathogènes humains (virus, bactéries) pouvant affecter les coquillages.",
-sectors.page.07.services.title,Secteur 07 (Page),Nos solutions pour la conchyliculture :,
-sectors.page.07.diagbox.title,Secteur 07 (Page),DiagBox® Conchyliculture,
-sectors.page.07.diagbox.description,Secteur 07 (Page),"Le kit clé-en-main pour une surveillance rapide (48h) et autonome de la qualité de l'eau ou la recherche de pathogènes spécifiques (ex: Norovirus, Vibrio). Simple, fiable et adapté à vos autocontrôles.",
-sectors.page.07.catalog.title,Secteur 07 (Page),Analyses Catalogue et Combinaisons Spécifiques,
-sectors.page.07.catalog.description,Secteur 07 (Page),Notre catalogue inclut les analyses réglementaires et de suivi pour les principaux indicateurs et pathogènes. Des combinaisons sur mesure sont possibles pour des plans de surveillance spécifiques.,
-sectors.page.07.development.title,Secteur 07 (Page),Développement de Nouvelles Méthodes,
-sectors.page.07.development.description,Secteur 07 (Page),"En collaboration avec les instituts et les professionnels, nous développons de nouvelles méthodes pour la détection de pathogènes émergents, de toxines algales ou pour améliorer la rapidité et la sensibilité des analyses.",
-sectors.page.07.sampling.title,Secteur 07 (Page),Prélèvement en continu,
-sectors.page.07.sampling.description,Secteur 07 (Page),"Nous proposons également des solutions pour le prélèvement en continu des eaux, permettant un suivi dynamique et réactif de la qualité microbiologique.",
-sectors.page.07.cta.diagbox,Secteur 07 (Page),Découvrir DiagBox® Conchyliculture,
-// Textes pour Secteur 08: Aviculture,,,
-sectors.page.08.catchphrase,Secteur 08 (Page),"Vous êtes un acteur de la filière avicole (industrie agroalimentaire, coopérative, institut) visant la maîtrise sanitaire :",
-sectors.page.08.intro,Secteur 08 (Page),"IAGE fournit des outils d'analyse moléculaire pour la détection et le suivi des principaux pathogènes aviaires (Salmonella, Campylobacter, virus Influenza) dans les élevages et l'environnement.",
-sectors.page.08.services.title,Secteur 08 (Page),Nos solutions pour la filière avicole :,
-sectors.page.08.diagbox.title,Secteur 08 (Page),DiagBox® Aviculture,
-sectors.page.08.diagbox.description,Secteur 08 (Page),"Le kit clé-en-main pour une détection rapide (48h) et fiable des pathogènes cibles directement à partir de prélèvements environnementaux (chiffonnettes, poussières) ou d'échantillons biologiques. Un outil essentiel pour vos plans de contrôle.",
-sectors.page.08.catalog.title,Secteur 08 (Page),Analyses Catalogue et Combinaisons Spécifiques,
-sectors.page.08.catalog.description,Secteur 08 (Page),Consultez notre catalogue pour les analyses des pathogènes aviaires majeurs. Nous proposons des combinaisons pour des suivis multi-pathogènes ou des analyses spécifiques sur demande.,
-sectors.page.08.development.title,Secteur 08 (Page),Développement de Nouvelles Méthodes,
-sectors.page.08.development.description,Secteur 08 (Page),"Nous travaillons avec les instituts de recherche et les acteurs de la filière pour développer des méthodes innovantes pour de nouveaux pathogènes, le typage rapide de souches ou l'évaluation de stratégies de contrôle.",
-sectors.page.08.cta.diagbox,Secteur 08 (Page),Découvrir DiagBox® Aviculture,
-// ==== DiagBox Gazon Page ====,,,
-diagbox.gazon.title,DiagBox Gazon,DIAGBOX® Gazon,
-diagbox.gazon.subtitle,DiagBox Gazon,Des approches complètes pour comprendre et prévenir les risques biologiques sur le gazon,
-diagbox.gazon.process.title,DiagBox Gazon,"DIAGBOX® : L'analyse de précision, en toute simplicité",
-diagbox.gazon.process.step1.title,DiagBox Gazon,Étape 1,
-diagbox.gazon.process.step1.text,DiagBox Gazon,Récoltez votre échantillon en suivant les instructions inscrites dans la notice,
-diagbox.gazon.process.step2.title,DiagBox Gazon,Étape 2,
-diagbox.gazon.process.step2.text,DiagBox Gazon,Enregistrez-vous via le lien qui se trouve dans la notice,
-diagbox.gazon.process.step3.title,DiagBox Gazon,Étape 3,
-diagbox.gazon.process.step3.text,DiagBox Gazon,Envoyez votre échantillon et vous recevrez vos résultats d'analyse 48h après sa réception par le laboratoire IAGE,
-diagbox.gazon.ideal_for.title,DiagBox Gazon,Idéal pour,
-diagbox.gazon.ideal_for.text,DiagBox Gazon,Terrain de football – Terrain de rugby – Terrain de golf – Hippodrome – Terrain de cricket – Terrain de polo – Stade multisports – Parc municipal – Jardin public – Aire de jeux – Cimetière – Espace vert autour d'une école/hôpital/mairie – Campus universitaire – Espace extérieur d'entreprise – Jardin d'hôtel – Centre de congrès – Résidence privée – Accotement végétalisé – Entrée de ville – Rond-point – Gare – Aéroport – Jardin de villa/résidence haut de gamme – Lieu de réception – Pelouse événementielle,
-diagbox.gazon.kit_content.title,DiagBox Gazon,Contenu d'un kit type,
+En particulier pour les applications qui utilisent des matrices eaux dans des milieux dynamiques (réseaux d'eaux usées sous circulation, sorties de bâtiments, cours d'eau, mer,...), nous avons développé des préleveurs automatiques  adaptés aux prélèvements en continu d'eaux dans ces contextes difficiles, et des dispositifs spécifiques pour garantir l'intégrité de vos échantillons."
+services.page.sampling_title,Services (Page),Outils de prélèvement adaptés
+services.page.specific_description,Services (Page),"Vos besoins sont uniques ? Nous pouvons combiner plusieurs méthodes d'analyses catalogue ou adapter nos protocoles pour répondre précisément à vos problématiques.
+
+La combinaison de méthodes nécessite une étape de validation technique impliquant des analyses supplémentaires (réplicas). La tarification est donc établie sur mesure, prenant en compte le type d'échantillon, le résultat attendu, les méthodes unitaires utilisées et les analyses de validation nécessaires."
+services.page.specific_title,Services (Page),Combinaisons spécifiques : Flexibilité sur mesure
+services.page.thresholds_description,Services Page,Description à compléter...
+services.page.thresholds_title,Services Page,Définitions de seuils pour faciliter les prises de décision
+services.page.title,Services (Page),Nos Solutions et Services Analytiques
+services.title,Services,Nos Services
+sectors.common.back_button,Sectors Common,Voir tous les domaines
+sectors.page.01.catalog.description,Secteur 01 (Page),Choisissez parmi nos analyses standardisées (ex: SARS-CoV-2 dans les eaux usées) ou combinez plusieurs méthodes pour un suivi sur mesure de pathogènes spécifiques à vos problématiques.
+sectors.page.01.catalog.title,Secteur 01 (Page),Analyses Catalogue et Combinaisons Spécifiques
+sectors.page.01.catchphrase,Secteur 01 (Page),"Vous portez une responsabilité dans le suivi de la santé de la population locale, ou vous souhaitez contribuer à la prévention des épidémies :"
+sectors.page.01.cta.diagbox,Secteur 01 (Page),Découvrir DiagBox® WES
+sectors.page.01.development.description,Secteur 01 (Page),"Nous innovons avec vous pour développer et valider des méthodes d'analyse pour de nouvelles cibles virales ou bactériennes, répondant aux enjeux émergents de santé publique."
+sectors.page.01.development.title,Secteur 01 (Page),Développement de Nouvelles Méthodes
+sectors.page.01.diagbox.description,Secteur 01 (Page),"Le kit clé-en-main pour une détection et quantification rapide (48h) et autonome des pathogènes (virus, bactéries) dans vos échantillons d'eau. Simple, efficace, et stockable sans contrainte."
+sectors.page.01.diagbox.title,Secteur 01 (Page),DiagBox® WES
+sectors.page.01.intro,Secteur 01 (Page),"IAGE vous accompagne avec des solutions d'analyse génomique précises et rapides pour l'épidémiosurveillance environnementale, notamment via l'analyse des eaux usées (Wastewater Based Epidemiology - WBE)."
+sectors.page.01.sampling.description,Secteur 01 (Page),"Nous proposons également des solutions pour le prélèvement en continu, particulièrement adaptées au suivi dynamique des matrices aqueuses."
+sectors.page.01.sampling.title,Secteur 01 (Page),Prélèvement en continu
+sectors.page.01.services.title,Secteur 01 (Page),Nos solutions adaptées à l'épidémiosurveillance :
+sectors.page.02.catalog.description,Secteur 02 (Page),"Choisissez parmi nos analyses standardisées (ex: recherche de légionelles, staphylocoques dorés) ou combinez plusieurs méthodes pour un suivi sur mesure des points critiques de votre établissement."
+sectors.page.02.catalog.title,Secteur 02 (Page),Analyses Catalogue et Combinaisons Spécifiques
+sectors.page.02.catchphrase,Secteur 02 (Page),Vous êtes responsable de l'hygiène dans un établissement de santé ou une société de nettoyage spécialisée :
+sectors.page.02.cta.diagbox,Secteur 02 (Page),Découvrir DiagBox® Hygiène
+sectors.page.02.development.description,Secteur 02 (Page),"Nous innovons avec vous pour développer et valider des méthodes d'analyse pour de nouvelles cibles pertinentes en milieu hospitalier (pathogènes émergents, biofilms) ou pour évaluer l'efficacité de nouveaux protocoles/produits de désinfection."
+sectors.page.02.development.title,Secteur 02 (Page),Développement de Nouvelles Méthodes
+sectors.page.02.diagbox.description,Secteur 02 (Page),"Le kit clé-en-main pour une détection et quantification rapide (48h) et autonome de marqueurs microbiens (bactéries, moisissures) sur surfaces ou dans l'air après désinfection. Simple, efficace, et idéal pour vos contrôles qualité réguliers."
+sectors.page.02.diagbox.title,Secteur 02 (Page),DiagBox® Hygiène Hospitalière
+sectors.page.02.intro,Secteur 02 (Page),"IAGE vous accompagne avec des solutions d'analyse pour le contrôle de la désinfection, la validation de protocoles et la surveillance environnementale en milieu hospitalier, garantissant la sécurité des patients et du personnel."
+sectors.page.02.services.title,Secteur 02 (Page),Nos solutions adaptées à l'hygiène hospitalière :
+sectors.page.03.catalog.description,Secteur 03 (Page),"Explorez nos analyses pour la qualité de l'air intérieur (QAI), l'identification d'allergènes ou la détection spécifique de nuisibles. Des combinaisons peuvent être étudiées pour des diagnostics complets."
+sectors.page.03.catalog.title,Secteur 03 (Page),Analyses Catalogue et Combinaisons Spécifiques
+sectors.page.03.catchphrase,Secteur 03 (Page),"Vous gérez la qualité de l'air intérieur, l'entretien de locaux ou vous luttez contre les nuisibles (PCO) :"
+sectors.page.03.cta.diagbox,Secteur 03 (Page),Découvrir DiagBox® Intérieur
+sectors.page.03.development.description,Secteur 03 (Page),Besoin d'une méthode spécifique pour un nouveau type de contaminant intérieur ou un nuisible particulier ? Nous développons des solutions d'analyse sur mesure en partenariat avec les formulateurs et les professionnels de l'hygiène.
+sectors.page.03.development.title,Secteur 03 (Page),Développement de Nouvelles Méthodes
+sectors.page.03.diagbox.description,Secteur 03 (Page),"Nos kits clé-en-main permettent une détection rapide (48h) et autonome de moisissures dans l'air ou de traces ADN de nuisibles (punaises de lit, rongeurs). Idéal pour un diagnostic rapide et ciblé."
+sectors.page.03.diagbox.title,Secteur 03 (Page),DiagBox® Qualité Intérieure & Nuisibles
+sectors.page.03.intro,Secteur 03 (Page),"IAGE offre des outils d'analyse pour évaluer la qualité de l'air (moisissures), détecter la présence de nuisibles (punaises de lit, rongeurs) et valider l'efficacité des produits d'entretien."
+sectors.page.03.services.title,Secteur 03 (Page),Nos solutions pour l'hygiène intérieure et publique :
+sectors.page.04.catalog.description,Secteur 04 (Page),Consultez notre catalogue d'analyses pour les principaux pathogènes du gazon. Nous pouvons combiner des analyses pour un profil complet ou rechercher des pathogènes spécifiques sur demande.
+sectors.page.04.catalog.title,Secteur 04 (Page),Analyses Catalogue et Combinaisons Spécifiques
+sectors.page.04.catchphrase,Secteur 04 (Page),"Vous assurez la charge de l'entretien de gazons sportifs (clubs, collectivités, distributeurs) :"
+sectors.page.04.cta.diagbox,Secteur 04 (Page),Découvrir DiagBox® Gazon
+sectors.page.04.development.description,Secteur 04 (Page),"En collaboration avec les instituts techniques, les distributeurs et les clubs, nous développons de nouvelles méthodes pour détecter des pathogènes émergents ou spécifiques à certaines conditions environnementales."
+sectors.page.04.development.title,Secteur 04 (Page),Développement de Nouvelles Méthodes
+sectors.page.04.diagbox.description,Secteur 04 (Page),"Le kit clé-en-main pour prélever facilement gazon, racines ou substrat et obtenir en 48h un diagnostic précis des pathogènes présents. Anticipez les traitements et optimisez la santé de vos terrains."
+sectors.page.04.diagbox.title,Secteur 04 (Page),DiagBox® Gazon
+sectors.page.04.intro,Secteur 04 (Page),"IAGE aide à préserver la qualité de vos gazons grâce :
+    - à ses produits de détection précoce et précise des pathogènes (champignons, nématodes) responsables des maladies
+    - à ses recommandations adaptées à votre situation et à vos besoins"
+sectors.page.04.services.title,Secteur 04 (Page),"Vous vous posez des questions sur la santé de vos gazons, voici nos solutions :"
+sectors.page.05.catalog.description,Secteur 05 (Page),"Notre catalogue couvre les principaux pathogènes (Esca, Eutypiose, Black Dead Arm) et micro-organismes d'intérêt (Brettanomyces). Des analyses combinées ou sur mesure sont possibles pour vos suivis spécifiques."
+sectors.page.05.catalog.title,Secteur 05 (Page),Analyses Catalogue et Combinaisons Spécifiques
+sectors.page.05.catchphrase,Secteur 05 (Page),"Vous êtes un acteur de la filière vitivinicole (technicien, coopérative, négoce, institut technique) :"
+sectors.page.05.cta.diagbox,Secteur 05 (Page),Découvrir DiagBox® Vigne & Vin
+sectors.page.05.development.description,Secteur 05 (Page),"Nous collaborons avec les acteurs de la filière pour développer des méthodes de détection pour de nouveaux pathogènes, des indicateurs de qualité ou des suivis spécifiques liés à des itinéraires techniques innovants."
+sectors.page.05.development.title,Secteur 05 (Page),Développement de Nouvelles Méthodes
+sectors.page.05.diagbox.description,Secteur 05 (Page),"Des kits clé-en-main pour un diagnostic rapide (48h) des pathogènes de la vigne ou pour le suivi des micro-organismes clés durant la vinification. Prélevez, envoyez, recevez vos résultats."
+sectors.page.05.diagbox.title,Secteur 05 (Page),DiagBox® Vigne & Vin
+sectors.page.05.intro,Secteur 05 (Page),"IAGE fournit des outils d'analyse moléculaire pour le suivi sanitaire de la vigne (maladies du bois, mildiou, oïdium) et le contrôle qualité du processus de vinification (levures, bactéries)."
+sectors.page.05.services.title,Secteur 05 (Page),Nos solutions pour la viticulture et la vinification :
+sectors.page.06.catalog.description,Secteur 06 (Page),Consultez nos analyses pour les pathogènes clés de la pomme en verger et en conservation. Des analyses combinées peuvent être réalisées pour un bilan sanitaire complet.
+sectors.page.06.catalog.title,Secteur 06 (Page),Analyses Catalogue et Combinaisons Spécifiques
+sectors.page.06.catchphrase,Secteur 06 (Page),"Vous êtes un professionnel de la filière pomme (station de conservation, coopérative, technicien, négoce) :"
+sectors.page.06.cta.diagbox,Secteur 06 (Page),Découvrir DiagBox® Arbo Pomme
+sectors.page.06.development.description,Secteur 06 (Page),"En lien avec les instituts techniques et les organisations professionnelles, nous développons des méthodes pour de nouvelles menaces sanitaires ou pour des suivis spécifiques liés à de nouvelles variétés ou pratiques culturales."
+sectors.page.06.development.title,Secteur 06 (Page),Développement de Nouvelles Méthodes
+sectors.page.06.diagbox.description,Secteur 06 (Page),Le kit clé-en-main pour détecter rapidement (48h) les principaux pathogènes responsables des maladies de conservation (ex: Gloeosporium) ou présents dans le verger. Anticipez les risques et adaptez vos stratégies.
+sectors.page.06.diagbox.title,Secteur 06 (Page),DiagBox® Arbo Pomme
+sectors.page.06.intro,Secteur 06 (Page),"IAGE propose des analyses pour la détection précoce des maladies de conservation et des pathogènes affectant les vergers de pommiers, afin d'optimiser la qualité et réduire les pertes."
+sectors.page.06.services.title,Secteur 06 (Page),Nos solutions pour l'arboriculture (pomme) :
+sectors.page.07.catalog.description,Secteur 07 (Page),Notre catalogue inclut les analyses réglementaires et de suivi pour les principaux indicateurs et pathogènes. Des combinaisons sur mesure sont possibles pour des plans de surveillance spécifiques.
+sectors.page.07.catalog.title,Secteur 07 (Page),Analyses Catalogue et Combinaisons Spécifiques
+sectors.page.07.catchphrase,Secteur 07 (Page),"Vous êtes un acteur de la conchyliculture (ostréiculteur, institut, collectivité) soucieux de la qualité sanitaire :"
+sectors.page.07.cta.diagbox,Secteur 07 (Page),Découvrir DiagBox® Conchyliculture
+sectors.page.07.development.description,Secteur 07 (Page),"En collaboration avec les instituts et les professionnels, nous développons de nouvelles méthodes pour la détection de pathogènes émergents, de toxines algales ou pour améliorer la rapidité et la sensibilité des analyses."
+sectors.page.07.development.title,Secteur 07 (Page),Développement de Nouvelles Méthodes
+sectors.page.07.diagbox.description,Secteur 07 (Page),"Le kit clé-en-main pour une surveillance rapide (48h) et autonome de la qualité de l'eau ou la recherche de pathogènes spécifiques (ex: Norovirus, Vibrio). Simple, fiable et adapté à vos autocontrôles."
+sectors.page.07.diagbox.title,Secteur 07 (Page),DiagBox® Conchyliculture
+sectors.page.07.intro,Secteur 07 (Page),"IAGE offre des solutions d'analyse rapide pour le contrôle de la qualité microbiologique des eaux conchylicoles et la détection de pathogènes humains (virus, bactéries) pouvant affecter les coquillages."
+sectors.page.07.sampling.description,Secteur 07 (Page),"Nous proposons également des solutions pour le prélèvement en continu des eaux, permettant un suivi dynamique et réactif de la qualité microbiologique."
+sectors.page.07.sampling.title,Secteur 07 (Page),Prélèvement en continu
+sectors.page.07.services.title,Secteur 07 (Page),Nos solutions pour la conchyliculture :
+sectors.page.08.catalog.description,Secteur 08 (Page),Consultez notre catalogue pour les analyses des pathogènes aviaires majeurs. Nous proposons des combinaisons pour des suivis multi-pathogènes ou des analyses spécifiques sur demande.
+sectors.page.08.catalog.title,Secteur 08 (Page),Analyses Catalogue et Combinaisons Spécifiques
+sectors.page.08.catchphrase,Secteur 08 (Page),"Vous êtes un acteur de la filière avicole (industrie agroalimentaire, coopérative, institut) visant la maîtrise sanitaire :"
+sectors.page.08.cta.diagbox,Secteur 08 (Page),Découvrir DiagBox® Aviculture
+sectors.page.08.development.description,Secteur 08 (Page),"Nous travaillons avec les instituts de recherche et les acteurs de la filière pour développer des méthodes innovantes pour de nouveaux pathogènes, le typage rapide de souches ou l'évaluation de stratégies de contrôle."
+sectors.page.08.development.title,Secteur 08 (Page),Développement de Nouvelles Méthodes
+sectors.page.08.diagbox.description,Secteur 08 (Page),"Le kit clé-en-main pour une détection rapide (48h) et fiable des pathogènes cibles directement à partir de prélèvements environnementaux (chiffonnettes, poussières) ou d'échantillons biologiques. Un outil essentiel pour vos plans de contrôle."
+sectors.page.08.diagbox.title,Secteur 08 (Page),DiagBox® Aviculture
+sectors.page.08.intro,Secteur 08 (Page),"IAGE fournit des outils d'analyse moléculaire pour la détection et le suivi des principaux pathogènes aviaires (Salmonella, Campylobacter, virus Influenza) dans les élevages et l'environnement."
+sectors.page.08.services.title,Secteur 08 (Page),Nos solutions pour la filière avicole :
+sectors.title,Secteurs,Nos domaines d'activité
+diagbox.gazon.button_hide_all_kits,Diagbox Buttons,Masquer tous les groupes de kits
+diagbox.gazon.button_show_all_kits,Diagbox Buttons,Afficher tous les groupes de kits
+diagbox.gazon.cta.button,DiagBox Gazon,Contacter un expert
+diagbox.gazon.cta.text,DiagBox Gazon,"Pour en savoir plus sur nos DIAGBOX® ou échanger avec notre équipe, contactez-nous."
+diagbox.gazon.dechet.catchphrase,DiagBox Gazon,"Des kits pour détecter les pathogènes là où ils se cachent, avant qu'ils n'affectent votre pelouse."
+diagbox.gazon.dechet.description,DiagBox Gazon,"Les DIAGBOX® Déchets de tonte sont des kits de prélèvement simples d'utilisation conçus pour détecter et quantifier la présence des pathogènes ciblés. Les résultats obtenus vous permettent de mettre en place des solutions de protection et un suivi de leur efficacité. Grâce à ces données précises, vous pouvez intervenir avant même l'apparition des symptômes pour empêcher que des maladies ne s'installent sur votre gazon. Ces DIAGBOX® offrent une solution efficace pour instaurer un suivi régulier."
+diagbox.gazon.dechet.kits.title,DiagBox Gazon,Kits disponibles (Prélèvement Déchets de Tonte)
+diagbox.gazon.dechet.why_use.point1,DiagBox Gazon,"Caractériser et quantifier votre risque : Identifier les pathogènes avant symptômes, évaluer le risque."
+diagbox.gazon.dechet.why_use.point2,DiagBox Gazon,"Évaluation de l'efficacité des traitements sur la durée : Suivre l'évolution post-traitement, ajuster la stratégie."
+diagbox.gazon.dechet.why_use.title,DiagBox Gazon,Pourquoi utiliser la DIAGBOX® Déchets de tonte ?
+diagbox.gazon.group_title.q1_sub1,Diagbox Group Titles,Kits Diagbox : Contrôle Pyriculariose (précoce)
+diagbox.gazon.group_title.q1_sub2,Diagbox Group Titles,Kits Diagbox : Contrôle Pathogènes Courants (précoce)
+diagbox.gazon.group_title.q1_sub3,Diagbox Group Titles,Kits Diagbox : Contrôle Tous Pathogènes Habituels (précoce)
+diagbox.gazon.group_title.q1_sub4,Diagbox Group Titles,Kits Diagbox : Contrôle des Racines
+diagbox.gazon.group_title.q1_sub5,Diagbox Group Titles,Kits Diagbox : Contrôle du Sol
+diagbox.gazon.group_title.q2_sub1,Diagbox Group Titles,Kits Diagbox : Analyse sur Gazon Symptomatique
+diagbox.gazon.group_title.q3,Diagbox Group Titles,Kits Diagbox : Analyse Avant Nouveau Plaquage
+diagbox.gazon.group_title.q4_combined,Diagbox Group Titles,Kits combinés
+diagbox.gazon.ideal_for.text,DiagBox Gazon,Terrain de football – Terrain de rugby – Terrain de golf – Hippodrome – Terrain de cricket – Terrain de polo – Stade multisports – Parc municipal – Jardin public – Aire de jeux – Cimetière – Espace vert autour d'une école/hôpital/mairie – Campus universitaire – Espace extérieur d'entreprise – Jardin d'hôtel – Centre de congrès – Résidence privée – Accotement végétalisé – Entrée de ville – Rond-point – Gare – Aéroport – Jardin de villa/résidence haut de gamme – Lieu de réception – Pelouse événementielle
+diagbox.gazon.ideal_for.title,DiagBox Gazon,Idéal pour
 diagbox.gazon.kit_content.text,DiagBox Gazon,"Matériel de prélèvement
 Instructions d'utilisation simples
 Emballage sécurisé avec transport inclus
-Analyse dPCR en laboratoire",
-// -- Section Lingette --,,,
-diagbox.gazon.lingette.catchphrase,DiagBox Gazon,Un kit pensé pour celles et ceux qui veulent agir dès les premiers signes.,
-diagbox.gazon.lingette.description,DiagBox Gazon,"Les DIAGBOX® Lingette sont des kits de prélèvement simples d'utilisation, conçus pour détecter la présence des pathogènes ciblés. Une seule lingette permet d'obtenir une vue d'ensemble de la zone tondue et de repérer l'apparition précoce des agents pathogènes sur votre pelouse. Vous pouvez ainsi appliquer rapidement les traitements adaptés. Ces DIAGBOX® offrent une solution efficace pour instaurer un suivi régulier.",
-diagbox.gazon.lingette.why_use.title,DiagBox Gazon,Pourquoi utiliser la DIAGBOX® Lingette ?,
-diagbox.gazon.lingette.why_use.point1,DiagBox Gazon,Identifier votre risque : Détecter la pyriculariose dans votre gazon.,
-diagbox.gazon.lingette.why_use.point2,DiagBox Gazon,"Un prélèvement représentatif et rapide à la fin de votre tonte : Facile d'utilisation (passer la lingette sur les lames en quelques minutes), résultats représentifs de l'ensemble de la zone tondue.",
-diagbox.gazon.lingette.kits.title,DiagBox Gazon,Kits disponibles (Prélèvement Lingette),
-diagbox.gazon.kits.PF000011.name,DiagBox Gazon,Pyriculariose - Lingette,
-diagbox.gazon.kits.PF000011.targets,DiagBox Gazon,Pyricularia Oryzae - Pyriculariose,
-diagbox.gazon.kits.PF000013.name,DiagBox Gazon,Pathogènes du gazon - Estival - Lingette,
-diagbox.gazon.kits.PF000013.targets,DiagBox Gazon,"Pyricularia oryzae, Athelia rolfsii, Clarireedia jacksonii/homoeocarpa, Complexe helminthosporiose, 9 souches Pythium Blight*",
-diagbox.gazon.kits.PF000015.name,DiagBox Gazon,Pathogène du gazon - Diagnostic - Lingette,
-diagbox.gazon.kits.PF000015.targets,DiagBox Gazon,"Idem PF000013 + Colletotrichum graminicola, Microdochium nivale, Leptosphaerulina trifolii, Rhizoctonia solani",
-// -- Section Déchets de tonte --,,,
-diagbox.gazon.dechet.catchphrase,DiagBox Gazon,"Des kits pour détecter les pathogènes là où ils se cachent, avant qu'ils n'affectent votre pelouse.",
-diagbox.gazon.dechet.description,DiagBox Gazon,"Les DIAGBOX® Déchets de tonte sont des kits de prélèvement simples d'utilisation conçus pour détecter et quantifier la présence des pathogènes ciblés. Les résultats obtenus vous permettent de mettre en place des solutions de protection et un suivi de leur efficacité. Grâce à ces données précises, vous pouvez intervenir avant même l'apparition des symptômes pour empêcher que des maladies ne s'installent sur votre gazon. Ces DIAGBOX® offrent une solution efficace pour instaurer un suivi régulier.",
-diagbox.gazon.dechet.why_use.title,DiagBox Gazon,Pourquoi utiliser la DIAGBOX® Déchets de tonte ?,
-diagbox.gazon.dechet.why_use.point1,DiagBox Gazon,"Caractériser et quantifier votre risque : Identifier les pathogènes avant symptômes, évaluer le risque.",
-diagbox.gazon.dechet.why_use.point2,DiagBox Gazon,"Évaluation de l'efficacité des traitements sur la durée : Suivre l'évolution post-traitement, ajuster la stratégie.",
-diagbox.gazon.dechet.kits.title,DiagBox Gazon,Kits disponibles (Prélèvement Déchets de Tonte),
-diagbox.gazon.kits.PF000016.name,DiagBox Gazon,Pyriculariose - Déchets de tonte,
-diagbox.gazon.kits.PF000016.targets,DiagBox Gazon,Pyricularia Oryzae - Pyriculariose,
-diagbox.gazon.kits.PF000018.name,DiagBox Gazon,Pathogènes du gazon - Estival - Déchets de tonte (#1),
-diagbox.gazon.kits.PF000018.targets,DiagBox Gazon,"Pyricularia oryzae, Athelia rolfsii, Clarireedia jacksonii/homoeocarpa, Complexe helminthosporiose, 9 souches Pythium Blight*",
-diagbox.gazon.kits.PF000019.name,DiagBox Gazon,Pathogènes du gazon - Hivernal - Déchets de tonte (#2),
-diagbox.gazon.kits.PF000019.targets,DiagBox Gazon,"Clarireedia jacksonii/homoeocarpa, Complexe helminthosporiose, Colletotrichum graminicola, Microdochium nivale, 9 souches Pythium Blight*",
-diagbox.gazon.kits.PF000020.name,DiagBox Gazon,Pathogènes du gazon - Diagnostic - Déchets de tonte,
-diagbox.gazon.kits.PF000020.targets,DiagBox Gazon,"Pyricularia oryzae, Athelia rolfsii, Clarireedia jacksonii/homoeocarpa, Complexe helminthosporiose, Colletotrichum graminicola, Microdochium nivale, Leptosphaerulina trifolii, Rhizoctonia solani, 9 souches Pythium Blight*",
-// -- Section Gazon Symptomatique --,,,
-diagbox.gazon.sympto.catchphrase,DiagBox Gazon,"Pour celles et ceux qui veulent comprendre l'origine des symptômes, pas seulement les masquer.",
-diagbox.gazon.sympto.description,DiagBox Gazon,"Les DIAGBOX® Gazon symptomatique sont des kits de prélèvement simples d'utilisation conçus pour prélever des échantillons de gazon présentant des symptômes. Grâce aux analyses associées, vous obtenez des résultats précis qui permettent de caractériser et quantifier les pathogènes responsables. Ces résultats vous fournissent une vue d'ensemble sur le pathogène principal et les pathogènes secondaires, afin de guider votre stratégie de traitement de manière globale et efficace, sans se limiter à la maladie principale.",
-diagbox.gazon.sympto.why_use.title,DiagBox Gazon,Pourquoi utiliser la DIAGBOX® Gazon Symptomatique ?,
-diagbox.gazon.sympto.why_use.point1,DiagBox Gazon,"Caractériser et quantifier les pathogènes présents : Identifier le pathogène principal, prendre en compte les pathogènes secondaires.",
-diagbox.gazon.sympto.kits.title,DiagBox Gazon,Kits disponibles (Prélèvement Gazon Symptomatique),
-diagbox.gazon.kits.PF000033.name,DiagBox Gazon,Pathogènes du gazon - Estival - Caractérisation,
-diagbox.gazon.kits.PF000033.targets,DiagBox Gazon,"Pyricularia oryzae, Athelia rolfsii, Clarireedia jacksonii/homoeocarpa, Complexe helminthosporiose, 9 souches Pythium Blight*",
-diagbox.gazon.kits.PF000035.name,DiagBox Gazon,Pathogènes du gazon - Diagnostic - Caractérisation,
-diagbox.gazon.kits.PF000035.targets,DiagBox Gazon,"Idem PF000033 + Colletotrichum graminicola, Microdochium nivale, Leptosphaerulina trifolii, Rhizoctonia solani",
-// -- Section Racine --,,,
-diagbox.gazon.racine.catchphrase,DiagBox Gazon,Pensée pour aller chercher les réponses là où tout commence : dans les racines.,
-diagbox.gazon.racine.description,DiagBox Gazon,"Les DIAGBOX® Racine sont conçus pour analyser le système racinaire. Ces analyses permettent d'identifier et de quantifier les pathogènes présents dans les racines avant l'apparition des symptômes visibles sur la partie aérienne. Vous pouvez ainsi évaluer le risque, suivre l'évolution de la pression pathogène et mesurer l'impact des traitements racinaires (biocontrôle, biostimulants).",
-diagbox.gazon.racine.why_use.title,DiagBox Gazon,Pourquoi utiliser la DIAGBOX® Racine ?,
-diagbox.gazon.racine.why_use.point1,DiagBox Gazon,"Caractériser et quantifier votre risque : Détecter les pathogènes dans les racines avant symptômes, évaluer le risque.",
-diagbox.gazon.racine.why_use.point2,DiagBox Gazon,"Évaluation de l'efficacité des traitements sur la durée : Mesurer l'impact des produits sur les pathogènes racinaires, ajuster la stratégie.",
-diagbox.gazon.racine.kits.title,DiagBox Gazon,Kits disponibles (Prélèvement Racine),
-diagbox.gazon.kits.PF000048.name,DiagBox Gazon,Pathogènes du gazon - Diagnostic - Racine,
-diagbox.gazon.kits.PF000048.targets,DiagBox Gazon,"Pyricularia oryzae, Athelia rolfsii, Clarireedia jacksonii/homoeocarpa, Complexe helminthosporiose, Colletotrichum graminicola, Microdochium nivale, Leptosphaerulina trifolii, Rhizoctonia solani, 9 souches Pythium Blight*",
-// -- Section Sol / Substrat --,,,
-diagbox.gazon.sol.catchphrase,DiagBox Gazon,Parce que votre future pelouse mérite un sol sain pour bien démarrer.,
-diagbox.gazon.sol.description,DiagBox Gazon,"Les DIAGBOX® Sol/Substrat sont des kits de prélèvement simples d'utilisation conçus pour analyser le sol situé sous le système racinaire de votre gazon. Ces analyses permettent d'identifier et de quantifier les pathogènes encore présents dans le substrat avant le plaquage. Vous anticipez ainsi les risques de contamination de votre future pelouse, et mettez en place des mesures préventives adaptées.",
-diagbox.gazon.sol.why_use.title,DiagBox Gazon,Pourquoi utiliser la DIAGBOX® Sol / Substrat ?,
-diagbox.gazon.sol.why_use.point1,DiagBox Gazon,Caractériser et quantifier votre risque : Détecter les pathogènes dans le sol avant symptômes.,
-diagbox.gazon.sol.why_use.point2,DiagBox Gazon,Diagnostic avant la pose : Vérifier l'absence de pathogènes résiduels avant un nouveau plaquage.,
-diagbox.gazon.sol.kits.title,DiagBox Gazon,Kits disponibles (Prélèvement Sol / Substrat),
-diagbox.gazon.kits.PF000047.name,DiagBox Gazon,Pathogènes du gazon - Diagnostic - Substrat,
-diagbox.gazon.kits.PF000047.targets,DiagBox Gazon,"Pyricularia oryzae, Athelia rolfsii, Clarireedia jacksonii/homoeocarpa, Complexe helminthosporiose, Colletotrichum graminicola, Microdochium nivale, Leptosphaerulina trifolii, Rhizoctonia solani, 9 souches Pythium Blight*",
-// -- Section Racine + Gazon --,,,
-diagbox.gazon.racine_gazon.catchphrase,DiagBox Gazon,"Parce que gérer le risque, c'est aussi savoir observer au-dessus et en-dessous.",
-diagbox.gazon.racine_gazon.description,DiagBox Gazon,Les DIAGBOX® Racine & Gazon sont des kits conçus pour analyser conjointement les racines et les parties aériennes (via déchets de tonte). Cette double approche permet d'évaluer la présence de pathogènes à différents niveaux de la plante. Vous obtenez une vision globale de l'état sanitaire de votre pelouse. Rappel : Cette offre regroupe les kits Racine (PF000048) et Déchets de tonte (PF000020).,
-diagbox.gazon.racine_gazon.why_use.title,DiagBox Gazon,Pourquoi utiliser la DIAGBOX® Racine + Gazon ?,
-diagbox.gazon.racine_gazon.why_use.point1,DiagBox Gazon,Caractériser et quantifier votre risque global : Identifier les pathogènes sur gazon ET racines avant symptômes.,
-diagbox.gazon.racine_gazon.why_use.point2,DiagBox Gazon,Évaluation complète de l'efficacité des traitements : Suivre l'évolution post-intervention sur les deux compartiments.,
-diagbox.gazon.racine_gazon.why_use.point3,DiagBox Gazon,"Suivi annuel complet : Contrôler l'efficacité des actions (biocontrôle, biostimulation) et surveiller la pression pathogène globale.",
-diagbox.gazon.racine_gazon.kits.title,DiagBox Gazon,Kit combiné disponible,
-diagbox.gazon.kits.PF000049.name,DiagBox Gazon,Pathogènes du gazon - Racine + Gazon,
-diagbox.gazon.kits.PF000049.targets,DiagBox Gazon,Combine les cibles des kits PF000020 (Déchets Tonte - Diagnostic) et PF000048 (Racine - Diagnostic),
-// -- Section Accompagnement Plaquage --,,,
-diagbox.gazon.plaquage.catchphrase,DiagBox Gazon,Pour éviter les mauvaises surprises… même quand tout semble parfait.,
-diagbox.gazon.plaquage.description,DiagBox Gazon,"Les DIAGBOX® Accompagnement Plaquage sont conçus pour analyser les trois composantes clés de votre future pelouse : le substrat de l'ancienne pelouse, les racines et les parties aériennes des rouleaux de gazon avant plaquage. Vous bénéficiez ainsi d'un état sanitaire complet pour sécuriser votre implantation. Rappel : Combine les kits Sol/Substrat (PF000047), Racine (PF000048) et Déchets de tonte (PF000020).",
-diagbox.gazon.plaquage.why_use.title,DiagBox Gazon,Pourquoi utiliser la DIAGBOX® Accompagnement Plaquage ?,
-diagbox.gazon.plaquage.why_use.point1,DiagBox Gazon,"Caractériser et quantifier le risque total : Identifier les pathogènes dans substrat, racines ET gazon avant pose.",
-diagbox.gazon.plaquage.why_use.point2,DiagBox Gazon,Évaluation préventive complète : Mesurer l'impact potentiel avant traitement et ajuster.,
-diagbox.gazon.plaquage.why_use.point3,DiagBox Gazon,Analyse du rouleau avant plaquage : Anticiper les risques de détérioration post-pose et sécuriser l'investissement.,
-diagbox.gazon.plaquage.kits.title,DiagBox Gazon,Offre d'accompagnement disponible,
-diagbox.gazon.kits.PF000050.name,DiagBox Gazon,Pathogènes du gazon - Accompagnement plaquage,
-diagbox.gazon.kits.PF000050.targets,DiagBox Gazon,"Combine les cibles des kits PF000020 (Déchets Tonte - Diagnostic), PF000047 (Substrat - Diagnostic) et PF000048 (Racine - Diagnostic)",
-// -- Note commune pour les cibles --,,,
-diagbox.gazon.pythium_note,DiagBox Gazon,"*9 souches pathogènes de Pythium Blight : Pythium aphanidermatum, P. arrhenomanes, P. aristosporum, P. torulosum, P. graminicola, P. tardicrescens, P. periilum, P. catenulatum",
-// -- Liste de Prix --,,,
-diagbox.gazon.prices.title,DiagBox Gazon,DIAGBOX® Gazon - Liste des prix (Indicatifs HT),
-diagbox.gazon.prices.PF000011,DiagBox Gazon,"185,00€",
-diagbox.gazon.prices.PF000013,DiagBox Gazon,"430,00€",
-diagbox.gazon.prices.PF000015,DiagBox Gazon,"670,00€",
-diagbox.gazon.prices.PF000016,DiagBox Gazon,"185,00€",
-diagbox.gazon.prices.PF000018,DiagBox Gazon,"430,00€",
-diagbox.gazon.prices.PF000019,DiagBox Gazon,"430,00€",
-diagbox.gazon.prices.PF000020,DiagBox Gazon,"670,00€",
-diagbox.gazon.prices.PF000033,DiagBox Gazon,"640,00€",
-diagbox.gazon.prices.PF000035,DiagBox Gazon,"1015,00€",
-diagbox.gazon.prices.PF000047,DiagBox Gazon,"830,00€",
-diagbox.gazon.prices.PF000048,DiagBox Gazon,"1015,00€",
-diagbox.gazon.prices.PF000049,DiagBox Gazon,"1340,00€",
-diagbox.gazon.prices.PF000050,DiagBox Gazon,"2140,00€",
-diagbox.gazon.prices.type_header,DiagBox Gazon,Type de Kit,
-diagbox.gazon.prices.info_link,DiagBox Gazon,(Cliquez sur une désignation ou un type de kit pour voir sa description),
-// Noms courts pour les types de kit (pour le tableau),,,
-diagbox.gazon.types.lingette,DiagBox Gazon,Lingette,
-diagbox.gazon.types.dechet,DiagBox Gazon,Déchets de Tonte,
-diagbox.gazon.types.sympto,DiagBox Gazon,Gazon Symptomatique,
-diagbox.gazon.types.racine,DiagBox Gazon,Racine,
-diagbox.gazon.types.sol,DiagBox Gazon,Sol / Substrat,
-diagbox.gazon.types.racine_gazon,DiagBox Gazon,Racine + Gazon,
-diagbox.gazon.types.plaquage,DiagBox Gazon,Accompagnement Plaquage,
-// -- CTA Final --,,,
-diagbox.gazon.cta.text,DiagBox Gazon,"Pour en savoir plus sur nos DIAGBOX® ou échanger avec notre équipe, contactez-nous.",
-diagbox.gazon.cta.button,DiagBox Gazon,Contacter un expert,
-// -- Table des matières (TOC) pour DiagBox Gazon --,,,
-diagbox.gazon.toc.title,DiagBox Gazon TOC,Accès rapide aux types de kits :,
-diagbox.gazon.toc.lingette_link,DiagBox Gazon TOC,Lingette (Action précoce),
-diagbox.gazon.toc.dechet_link,DiagBox Gazon TOC,Déchets de Tonte (Détection précoce),
-diagbox.gazon.toc.sympto_link,DiagBox Gazon TOC,Gazon Symptomatique (Diagnostic),
-diagbox.gazon.toc.racine_link,DiagBox Gazon TOC,Racine (Diagnostic profond),
-diagbox.gazon.toc.sol_link,DiagBox Gazon TOC,Sol / Substrat (Avant plaquage),
-diagbox.gazon.toc.racine_gazon_link,DiagBox Gazon TOC,Racine + Gazon (Vision globale),
-diagbox.gazon.toc.plaquage_link,DiagBox Gazon TOC,Accompagnement Plaquage (Sécurisation),
-diagbox.gazon.toc.prices_link,DiagBox Gazon TOC,Voir les prix,
-diagbox.gazon.toc.questions_link,DiagBox Gazon TOC,Retour aux Questions,
-diagbox.gazon.link_to_prices,DiagBox Gazon Section,Voir les prix,
-gazon.qna.q1_title,Gazon Q&A,"Je ne vois pas de symptômes, ou je viens de faire un traitement, quelles sont mes possibilité de contrôle, pour anticiper les différents risques ou m'assurer de l'effet du traitement  ?",
-gazon.qna.q1_sub1,Gazon Q&A,Comment m'assurer que mon gazon n'est pas (ou plus) touché par la pyryculariose car c'est la maladie le plus répandue dans ma région ou mon plus grand risque habituel ?,
-gazon.qna.q1_sub2,Gazon Q&A,Comment m'assurer que mon gazon n'est pas (ou plus) touché par l'un des pathogènes les plus répandus ?,
-gazon.qna.q1_sub3,Gazon Q&A,Comment m'assurer que mon gazon n'est (plus) touché par aucun des pathogènes habituels,
-gazon.qna.q1_sub4,Gazon Q&A,Comment m'assurer que les racines ne sont pas (ou plus) non plus touchées ?,
-gazon.qna.q1_sub5,Gazon Q&A,Comment m'assurer que le sol n'est pas (ou plus) touché ?,
-gazon.qna.q2_title,Gazon Q&A,"J'ai détecté des symptômes, comment agir avec pertinence ?",
-gazon.qna.q2_sub1,Gazon Q&A,Comment caractériser le pathogène principal et les pathogènes secondaires présents pour savoir comment réagir ?,
-gazon.qna.q2_sub2,Gazon Q&A,Comment savoir si mes racines sont touchées ?,
-gazon.qna.q2_sub3,Gazon Q&A,Comment savoir si mon sol est touché ?,
-gazon.qna.q3_title,Gazon Q&A,"Je vais poser un nouveau gazon (plaquage), mon sol est-il bien sans risque ou dois-je envisager un traitement préalable ?",
-diagbox.gazon.qna_intro.q1_sub1_PF000011,Gazon Q&A Intros,pour un contrôle rapide sur toute l'étendue du gazon,
-diagbox.gazon.qna_intro.q1_sub1_PF000016,Gazon Q&A Intros,pour un contrôle ciblé sur des portions du gazon,
-diagbox.gazon.qna_intro.q1_sub2_PF000013,Gazon Q&A Intros,pour un contrôle rapide sur toute l'étendue du gazon,
-diagbox.gazon.qna_intro.q1_sub2_PF000018,Gazon Q&A Intros,pour un contrôle ciblé sur des portions du gazon en été,
-diagbox.gazon.qna_intro.q1_sub2_PF000019,Gazon Q&A Intros,pour un contrôle ciblé sur des portions du gazon en hivers,
-diagbox.gazon.qna_intro.q1_sub3_PF000015,Gazon Q&A Intros,pour un contrôle rapide sur toute l'étendue du gazon,
-diagbox.gazon.qna_intro.q1_sub3_PF000020,Gazon Q&A Intros,pour un contrôle ciblé sur des portions du gazon,
-diagbox.gazon.qna_intro.q1_sub4_PF000048,Gazon Q&A Intros,pour contrôler l'état des racines,
-diagbox.gazon.qna_intro.q1_sub5_PF000047,Gazon Q&A Intros,pour contrôler l'état du sol,
-diagbox.gazon.qna_intro.q2_sub1_PF000033,Gazon Q&A Intros,pour analyser la présence des pathogènes d'été sur un gazon symptomatique,
-diagbox.gazon.qna_intro.q2_sub1_PF000035,Gazon Q&A Intros,pour une analyse à large spectre d'un gazon symptomatique,
-diagbox.gazon.qna_intro.q3_PF000050,Gazon Q&A Intros,Pour sécuriser un nouveau plaquage (sol + racines + gazon),
-// Labels courts pour la navigation de la page Services,,,
-services.nav.diagbox,Services Nav,DiagBox®,
-services.nav.catalog,Services Nav,Catalogue des analyses,
-services.nav.specific-combinations,Services Nav,Combinaisons sur mesure,
-services.nav.development,Services Nav,R&D,
-services.nav.sampling-tools,Services Nav,Préleveurs d'eaux,
-services.nav.local-labs,Services Nav,Laboratoires locaux,
-about.page.intro1,About Page,"Fondée en 2017 à Montpellier, IAGE est spécialisée dans l'analyse biologique et environnementale.",
-about.page.intro2,About Page,"Nous proposons des services de diagnostics ultra-précoces, accessibles et dont les résultats aident aux prises de décision, pensés pour tous les acteurs du vivant.",
-about.page.ambition_title,About Page,Notre ambition : Voir l'invisible pour agir à temps.,
-about.page.ambition_text,About Page,"Là où d'autres interviennent trop tard, IAGE fait le choix de l'anticipation, de la prévention et de l'accompagnement sur mesure.",
-about.page.strength_title,About Page,Notre force : Rendre l'expertise scientifique simple et opérationnelle.,
-about.page.strength_text,About Page,"Parce que nous connaissons les réalités de terrain — qu'il s'agisse de collectivités, exploitants ou industriels — nous avons transformé notre savoir-faire en solutions clefs en main : du prélèvement à l'analyse, jusqu'à la mise en œuvre de plans d'actions concrets.",
-about.page.conclusion,About Page,"Avec IAGE, la biologie devient un levier clair et fiable pour prendre des décisions rapides, pertinentes et durables.",
-services.page.category1_title,Services Page,Analyses de précision,
-services.page.category2_title,Services Page,Diagbox® et Services pour l'aide à la décision,
-services.page.category3_title,Services Page,Équipements et laboratoires dédiés,
-services.page.sampling_advice_title,Services Page,Conseil et solutions pour faciliter les prélèvements,
-services.page.sampling_advice_description,Services Page,Description à compléter...,
-services.page.thresholds_title,Services Page,Définitions de seuils pour faciliter les prises de décision,
-services.page.thresholds_description,Services Page,Description à compléter...,
-services.page.mobile_viz_title,Services Page,Outils de représentation des résultats en mobilité,
-services.page.mobile_viz_description,Services Page,Description à compléter...,
-services.page.modeling_title,Services Page,Modélisations et anticipations,
-services.page.modeling_description,Services Page,Description à compléter...,
-services.nav.sampling-advice,Services Nav,Optimiser les prélèvements,
-services.nav.thresholds,Services Nav,Seuils décisionnels,
-services.nav.mobile-viz,Services Nav,Visualisations en mobilité,
-services.nav.modeling,Services Nav,Modélisations et anticipations,
-sectors.common.back_button,Sectors Common,Voir tous les domaines,
-privacy.title,Privacy Page,Politique de confidentialité,
-privacy.content,Privacy Page,Contenu de la politique de confidentialité à ajouter...,
-legal.title,Legal Page,Mentions légales,
-legal.section1_title,Legal Page,1. Éditeur du site,
-legal.section1_intro,Legal Page,,
-legal.section1_company_name,Legal Page,Le présent site est édité par IAGE - Ingénierie et Analyse en Génétique Environnementale,
-legal.section1_company_details,Legal Page,"SASU au capital de 190 700,00 €",
-legal.section1_address1,Legal Page,335 rue Louis Lépine – 34000 Montpellier,
-legal.section1_address2,Legal Page,Bureau de IAGE Paris : 42 avenue Raymond Poincaré – 75116 Paris,
-legal.section1_rcs,Legal Page,Immatriculée au Registre du Commerce et des Sociétés de Montpellier sous le numéro 828 570 168 00033,
-legal.section1_vat,Legal Page,Numéro de TVA intracommunautaire : FR59828570168,
-legal.section1_director_intro,Legal Page,"Directeur de la publication : Monsieur Franz Durandet, Président",
-legal.section1_director_details,Legal Page,,
-legal.section1_contact_intro,Legal Page,Contact :,
-legal.section1_contact_phone,Legal Page,(standard) 04 48 79 84 91,
-legal.section1_contact_email,Legal Page,contact@iage-france.com,
-legal.section2_title,Legal Page,2. Hébergement,
-legal.section2_intro,Legal Page,Le site est hébergé par :,
-legal.section2_host_name,Legal Page,Vercel Inc.,
-legal.section2_host_address,Legal Page,440 N Barranca Ave #4133 Covina - CA 91723 – USA,
-legal.section2_host_site,Legal Page,Site : https://vercel.com,
-legal.section3_title,Legal Page,3. Propriété intellectuelle,
-legal.section3_content1,Legal Page,"Tous les contenus présents sur ce site, incluant de façon non limitative les textes, images, graphismes, logos, icônes, vidéos, sons, logiciels, sont la propriété exclusive de la société IAGE ou sont utilisés avec l'autorisation de leurs auteurs.",
-legal.section3_content2,Legal Page,"Toute reproduction, représentation, modification, publication, adaptation, totale ou partielle, des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite sauf autorisation écrite préalable de IAGE.",
-legal.section4_title,Legal Page,4. Données personnelles,
-legal.section4_content1,Legal Page,Les informations collectées via les formulaires de contact sont enregistrées dans un fichier informatisé par IAGE pour répondre aux demandes de renseignements. Ces données sont traitées conformément au Règlement Général sur la Protection des Données (RGPD).,
-legal.section4_responsible,Legal Page,Monsieur Franz Durandet,
-legal.section4_purpose,Legal Page,Gestion des demandes via le site,
-legal.section4_duration,Legal Page,3 ans maximum,
-legal.section4_recipient,Legal Page,IAGE uniquement (aucune transmission à des tiers),
-legal.section4_rights_intro,Legal Page,"Conformément aux dispositions des articles 39 et suivants de la loi « informatique et libertés » et du RGPD, vous disposez d'un droit d'accès, de rectification, d'opposition, de suppression et de portabilité de vos données personnelles. Pour exercer ces droits, vous pouvez contacter :",
-legal.section4_contact_name,Legal Page,IAGE – Délégué à la protection des données,
-legal.section4_contact_email,Legal Page,contact@iage-france.com,
-legal.section4_contact_address,Legal Page,ou par courrier à : 335 rue Louis Lépine – 34000 Montpellier,
-legal.section4_cnil,Legal Page,Vous pouvez également introduire une réclamation auprès de la CNIL : ,
-legal.section5_title,Legal Page,5. Cookies,
-legal.section5_content1,Legal Page,"Le site peut utiliser des cookies ou traceurs pour améliorer votre expérience de navigation, analyser le trafic ou proposer des contenus adaptés.",
-legal.section5_content2,Legal Page,"Lors de votre première visite, si des Cookies sont effectivement présents, un bandeau vous informe de la présence de cookies et vous propose d'accepter ou de refuser leur utilisation. Vous pouvez à tout moment configurer vos préférences via les paramètres de votre navigateur.",
-legal.section5_types_intro,Legal Page,Types de cookies utilisés : aucun,
-legal.section5_type1,Legal Page,,
-legal.section5_type2,Legal Page,,
-legal.section5_type3,Legal Page,,
-legal.section6_title,Legal Page,6. Responsabilités,
-legal.section6_content1,Legal Page,"IAGE s'efforce de fournir sur ce site des informations aussi précises que possible. Toutefois, elle ne saurait être tenue responsable des omissions, inexactitudes ou carences dans la mise à jour, qu'elles soient de son fait ou du fait de tiers partenaires.",
-legal.section6_content2,Legal Page,L'utilisateur reconnaît utiliser les informations et outils disponibles sur le site sous sa responsabilité exclusive.,
-diagbox.gazon.group_title.q1_sub1,Diagbox Group Titles,Kits Diagbox : Contrôle Pyriculariose (précoce),
-diagbox.gazon.group_title.q1_sub2,Diagbox Group Titles,Kits Diagbox : Contrôle Pathogènes Courants (précoce),
-diagbox.gazon.group_title.q1_sub3,Diagbox Group Titles,Kits Diagbox : Contrôle Tous Pathogènes Habituels (précoce),
-diagbox.gazon.group_title.q1_sub4,Diagbox Group Titles,Kits Diagbox : Contrôle des Racines,
-diagbox.gazon.group_title.q1_sub5,Diagbox Group Titles,Kits Diagbox : Contrôle du Sol,
-diagbox.gazon.group_title.q2_sub1,Diagbox Group Titles,Kits Diagbox : Analyse sur Gazon Symptomatique,
-diagbox.gazon.group_title.q3,Diagbox Group Titles,Kits Diagbox : Analyse Avant Nouveau Plaquage,
-diagbox.gazon.button_show_all_kits,Diagbox Buttons,Afficher tous les groupes de kits,
-diagbox.gazon.button_hide_all_kits,Diagbox Buttons,Masquer tous les groupes de kits,
-gazon.qna.q4_title,Gazon Q&A,"je veux des analyses complètes au meilleur prix, quelles sont les recommandations ?",
-diagbox.gazon.group_title.q4_combined,Diagbox Group Titles,Kits combinés,
-diagbox.gazon.qna_intro.q4_PF000049,Gazon Q&A Intros,"<b>Suivi conjoint racines et partie aérienne</b>, pour vérifier efficacement l'effet de traitements et/ou pouvoir réagir au plus tôt aux risques de contamination",
-diagbox.gazon.qna_intro.q4_PF000050,Gazon Q&A Intros,"<b>Accompagnement plaquage</b> : un contrôle complet pour maitriser tous les risques : identifier des pathogènes éventuels dans le substrat avant pose, et réduire les risques d'un apport de pathogènes dans le nouveau plaquage",
-diagbox.gazon.pythium_note_prefix,DiagBox Gazon Notes,* ,
-diagbox.gazon.pythium_note_suffix_detail,DiagBox Gazon Notes,": Pythium aphanidermatum, P. arrhenomanes, P. aristosporum, P. torulosum, P. graminicola, P. tardicrescens, P. periilum, P. catenulatum.",
+Analyse dPCR en laboratoire"
+diagbox.gazon.kit_content.title,DiagBox Gazon,Contenu d'un kit type
+diagbox.gazon.kits.PF000011.name,DiagBox Gazon,Pyriculariose - Lingette
+diagbox.gazon.kits.PF000011.targets,DiagBox Gazon,Pyricularia Oryzae - Pyriculariose
+diagbox.gazon.kits.PF000013.name,DiagBox Gazon,Pathogènes du gazon - Estival - Lingette
+diagbox.gazon.kits.PF000013.targets,DiagBox Gazon,"Pyricularia oryzae, Athelia rolfsii, Clarireedia jacksonii/homoeocarpa, Complexe helminthosporiose, 9 souches Pythium Blight*"
+diagbox.gazon.kits.PF000015.name,DiagBox Gazon,Pathogène du gazon - Diagnostic - Lingette
+diagbox.gazon.kits.PF000015.targets,DiagBox Gazon,"Idem PF000013 + Colletotrichum graminicola, Microdochium nivale, Leptosphaerulina trifolii, Rhizoctonia solani"
+diagbox.gazon.kits.PF000016.name,DiagBox Gazon,Pyriculariose - Déchets de tonte
+diagbox.gazon.kits.PF000016.targets,DiagBox Gazon,Pyricularia Oryzae - Pyriculariose
+diagbox.gazon.kits.PF000018.name,DiagBox Gazon,Pathogènes du gazon - Estival - Déchets de tonte (#1)
+diagbox.gazon.kits.PF000018.targets,DiagBox Gazon,"Pyricularia oryzae, Athelia rolfsii, Clarireedia jacksonii/homoeocarpa, Complexe helminthosporiose, 9 souches Pythium Blight*"
+diagbox.gazon.kits.PF000019.name,DiagBox Gazon,Pathogènes du gazon - Hivernal - Déchets de tonte (#2)
+diagbox.gazon.kits.PF000019.targets,DiagBox Gazon,"Clarireedia jacksonii/homoeocarpa, Complexe helminthosporiose, Colletotrichum graminicola, Microdochium nivale, 9 souches Pythium Blight*"
+diagbox.gazon.kits.PF000020.name,DiagBox Gazon,Pathogènes du gazon - Diagnostic - Déchets de tonte
+diagbox.gazon.kits.PF000020.targets,DiagBox Gazon,"Pyricularia oryzae, Athelia rolfsii, Clarireedia jacksonii/homoeocarpa, Complexe helminthosporiose, Colletotrichum graminicola, Microdochium nivale, Leptosphaerulina trifolii, Rhizoctonia solani, 9 souches Pythium Blight*"
+diagbox.gazon.kits.PF000033.name,DiagBox Gazon,Pathogènes du gazon - Estival - Caractérisation
+diagbox.gazon.kits.PF000033.targets,DiagBox Gazon,"Pyricularia oryzae, Athelia rolfsii, Clarireedia jacksonii/homoeocarpa, Complexe helminthosporiose, 9 souches Pythium Blight*"
+diagbox.gazon.kits.PF000035.name,DiagBox Gazon,Pathogènes du gazon - Diagnostic - Caractérisation
+diagbox.gazon.kits.PF000035.targets,DiagBox Gazon,"Idem PF000033 + Colletotrichum graminicola, Microdochium nivale, Leptosphaerulina trifolii, Rhizoctonia solani"
+diagbox.gazon.kits.PF000047.name,DiagBox Gazon,Pathogènes du gazon - Diagnostic - Substrat
+diagbox.gazon.kits.PF000047.targets,DiagBox Gazon,"Pyricularia oryzae, Athelia rolfsii, Clarireedia jacksonii/homoeocarpa, Complexe helminthosporiose, Colletotrichum graminicola, Microdochium nivale, Leptosphaerulina trifolii, Rhizoctonia solani, 9 souches Pythium Blight*"
+diagbox.gazon.kits.PF000048.name,DiagBox Gazon,Pathogènes du gazon - Diagnostic - Racine
+diagbox.gazon.kits.PF000048.targets,DiagBox Gazon,"Pyricularia oryzae, Athelia rolfsii, Clarireedia jacksonii/homoeocarpa, Complexe helminthosporiose, Colletotrichum graminicola, Microdochium nivale, Leptosphaerulina trifolii, Rhizoctonia solani, 9 souches Pythium Blight*"
+diagbox.gazon.kits.PF000049.name,DiagBox Gazon,Pathogènes du gazon - Racine + Gazon
+diagbox.gazon.kits.PF000049.targets,DiagBox Gazon,Combine les cibles des kits PF000020 (Déchets Tonte - Diagnostic) et PF000048 (Racine - Diagnostic)
+diagbox.gazon.kits.PF000050.name,DiagBox Gazon,Pathogènes du gazon - Accompagnement plaquage
+diagbox.gazon.kits.PF000050.targets,DiagBox Gazon,"Combine les cibles des kits PF000020 (Déchets Tonte - Diagnostic), PF000047 (Substrat - Diagnostic) et PF000048 (Racine - Diagnostic)"
+diagbox.gazon.lingette.catchphrase,DiagBox Gazon,Un kit pensé pour celles et ceux qui veulent agir dès les premiers signes.
+diagbox.gazon.lingette.description,DiagBox Gazon,"Les DIAGBOX® Lingette sont des kits de prélèvement simples d'utilisation, conçus pour détecter la présence des pathogènes ciblés. Une seule lingette permet d'obtenir une vue d'ensemble de la zone tondue et de repérer l'apparition précoce des agents pathogènes sur votre pelouse. Vous pouvez ainsi appliquer rapidement les traitements adaptés. Ces DIAGBOX® offrent une solution efficace pour instaurer un suivi régulier."
+diagbox.gazon.lingette.kits.title,DiagBox Gazon,Kits disponibles (Prélèvement Lingette)
+diagbox.gazon.lingette.why_use.point1,DiagBox Gazon,Identifier votre risque : Détecter la pyriculariose dans votre gazon.
+diagbox.gazon.lingette.why_use.point2,DiagBox Gazon,"Un prélèvement représentatif et rapide à la fin de votre tonte : Facile d'utilisation (passer la lingette sur les lames en quelques minutes), résultats représentifs de l'ensemble de la zone tondue."
+diagbox.gazon.lingette.why_use.title,DiagBox Gazon,Pourquoi utiliser la DIAGBOX® Lingette ?
+diagbox.gazon.link_to_prices,DiagBox Gazon Section,Voir les prix
+diagbox.gazon.plaquage.catchphrase,DiagBox Gazon,Pour éviter les mauvaises surprises… même quand tout semble parfait.
+diagbox.gazon.plaquage.description,DiagBox Gazon,"Les DIAGBOX® Accompagnement Plaquage sont conçus pour analyser les trois composantes clés de votre future pelouse : le substrat de l'ancienne pelouse, les racines et les parties aériennes des rouleaux de gazon avant plaquage. Vous bénéficiez ainsi d'un état sanitaire complet pour sécuriser votre implantation. Rappel : Combine les kits Sol/Substrat (PF000047), Racine (PF000048) et Déchets de tonte (PF000020)."
+diagbox.gazon.plaquage.kits.title,DiagBox Gazon,Offre d'accompagnement disponible
+diagbox.gazon.plaquage.why_use.point1,DiagBox Gazon,"Caractériser et quantifier le risque total : Identifier les pathogènes dans substrat, racines ET gazon avant pose."
+diagbox.gazon.plaquage.why_use.point2,DiagBox Gazon,Évaluation préventive complète : Mesurer l'impact potentiel avant traitement et ajuster.
+diagbox.gazon.plaquage.why_use.point3,DiagBox Gazon,Analyse du rouleau avant plaquage : Anticiper les risques de détérioration post-pose et sécuriser l'investissement.
+diagbox.gazon.plaquage.why_use.title,DiagBox Gazon,Pourquoi utiliser la DIAGBOX® Accompagnement Plaquage ?
+diagbox.gazon.prices.PF000011,DiagBox Gazon,"185,00€"
+diagbox.gazon.prices.PF000013,DiagBox Gazon,"430,00€"
+diagbox.gazon.prices.PF000015,DiagBox Gazon,"670,00€"
+diagbox.gazon.prices.PF000016,DiagBox Gazon,"185,00€"
+diagbox.gazon.prices.PF000018,DiagBox Gazon,"430,00€"
+diagbox.gazon.prices.PF000019,DiagBox Gazon,"430,00€"
+diagbox.gazon.prices.PF000020,DiagBox Gazon,"670,00€"
+diagbox.gazon.prices.PF000033,DiagBox Gazon,"640,00€"
+diagbox.gazon.prices.PF000035,DiagBox Gazon,"1015,00€"
+diagbox.gazon.prices.PF000047,DiagBox Gazon,"830,00€"
+diagbox.gazon.prices.PF000048,DiagBox Gazon,"1015,00€"
+diagbox.gazon.prices.PF000049,DiagBox Gazon,"1340,00€"
+diagbox.gazon.prices.PF000050,DiagBox Gazon,"2140,00€"
+diagbox.gazon.prices.info_link,DiagBox Gazon,(Cliquez sur une désignation ou un type de kit pour voir sa description)
+diagbox.gazon.prices.title,DiagBox Gazon,DIAGBOX® Gazon - Liste des prix (Indicatifs HT)
+diagbox.gazon.prices.type_header,DiagBox Gazon,Type de Kit
+diagbox.gazon.process.step1.text,DiagBox Gazon,Récoltez votre échantillon en suivant les instructions inscrites dans la notice
+diagbox.gazon.process.step1.title,DiagBox Gazon,Étape 1
+diagbox.gazon.process.step2.text,DiagBox Gazon,Enregistrez-vous via le lien qui se trouve dans la notice
+diagbox.gazon.process.step2.title,DiagBox Gazon,Étape 2
+diagbox.gazon.process.step3.text,DiagBox Gazon,Envoyez votre échantillon et vous recevrez vos résultats d'analyse 48h après sa réception par le laboratoire IAGE
+diagbox.gazon.process.step3.title,DiagBox Gazon,Étape 3
+diagbox.gazon.process.title,DiagBox Gazon,"DIAGBOX® : L'analyse de précision, en toute simplicité"
+diagbox.gazon.pythium_note,DiagBox Gazon,"*9 souches pathogènes de Pythium Blight : Pythium aphanidermatum, P. arrhenomanes, P. aristosporum, P. torulosum, P. graminicola, P. tardicrescens, P. periilum, P. catenulatum"
+diagbox.gazon.pythium_note_prefix,DiagBox Gazon Notes,* 
+diagbox.gazon.pythium_note_suffix_detail,DiagBox Gazon Notes,": Pythium aphanidermatum, P. arrhenomanes, P. aristosporum, P. torulosum, P. graminicola, P. tardicrescens, P. periilum, P. catenulatum."
+diagbox.gazon.qna_intro.q1_sub1_PF000011,Gazon Q&A Intros,pour un contrôle rapide sur toute l'étendue du gazon
+diagbox.gazon.qna_intro.q1_sub1_PF000016,Gazon Q&A Intros,pour un contrôle ciblé sur des portions du gazon
+diagbox.gazon.qna_intro.q1_sub2_PF000013,Gazon Q&A Intros,pour un contrôle rapide sur toute l'étendue du gazon
+diagbox.gazon.qna_intro.q1_sub2_PF000018,Gazon Q&A Intros,pour un contrôle ciblé sur des portions du gazon en été
+diagbox.gazon.qna_intro.q1_sub2_PF000019,Gazon Q&A Intros,pour un contrôle ciblé sur des portions du gazon en hivers
+diagbox.gazon.qna_intro.q1_sub3_PF000015,Gazon Q&A Intros,pour un contrôle rapide sur toute l'étendue du gazon
+diagbox.gazon.qna_intro.q1_sub3_PF000020,Gazon Q&A Intros,pour un contrôle ciblé sur des portions du gazon
+diagbox.gazon.qna_intro.q1_sub4_PF000048,Gazon Q&A Intros,pour contrôler l'état des racines
+diagbox.gazon.qna_intro.q1_sub5_PF000047,Gazon Q&A Intros,pour contrôler l'état du sol
+diagbox.gazon.qna_intro.q2_sub1_PF000033,Gazon Q&A Intros,pour analyser la présence des pathogènes d'été sur un gazon symptomatique
+diagbox.gazon.qna_intro.q2_sub1_PF000035,Gazon Q&A Intros,pour une analyse à large spectre d'un gazon symptomatique
+diagbox.gazon.qna_intro.q3_PF000050,Gazon Q&A Intros,Pour sécuriser un nouveau plaquage (sol + racines + gazon)
+diagbox.gazon.qna_intro.q4_PF000049,Gazon Q&A Intros,"<b>Suivi conjoint racines et partie aérienne</b>, pour vérifier efficacement l'effet de traitements et/ou pouvoir réagir au plus tôt aux risques de contamination"
+diagbox.gazon.qna_intro.q4_PF000050,Gazon Q&A Intros,"<b>Accompagnement plaquage</b> : un contrôle complet pour maitriser tous les risques : identifier des pathogènes éventuels dans le substrat avant pose, et réduire les risques d'un apport de pathogènes dans le nouveau plaquage"
+diagbox.gazon.racine.catchphrase,DiagBox Gazon,Pensée pour aller chercher les réponses là où tout commence : dans les racines.
+diagbox.gazon.racine.description,DiagBox Gazon,"Les DIAGBOX® Racine sont conçus pour analyser le système racinaire. Ces analyses permettent d'identifier et de quantifier les pathogènes présents dans les racines avant l'apparition des symptômes visibles sur la partie aérienne. Vous pouvez ainsi évaluer le risque, suivre l'évolution de la pression pathogène et mesurer l'impact des traitements racinaires (biocontrôle, biostimulants)."
+diagbox.gazon.racine.kits.title,DiagBox Gazon,Kits disponibles (Prélèvement Racine)
+diagbox.gazon.racine.why_use.point1,DiagBox Gazon,"Caractériser et quantifier votre risque : Détecter les pathogènes dans les racines avant symptômes, évaluer le risque."
+diagbox.gazon.racine.why_use.point2,DiagBox Gazon,"Évaluation de l'efficacité des traitements sur la durée : Mesurer l'impact des produits sur les pathogènes racinaires, ajuster la stratégie."
+diagbox.gazon.racine.why_use.title,DiagBox Gazon,Pourquoi utiliser la DIAGBOX® Racine ?
+diagbox.gazon.racine_gazon.catchphrase,DiagBox Gazon,"Parce que gérer le risque, c'est aussi savoir observer au-dessus et en-dessous."
+diagbox.gazon.racine_gazon.description,DiagBox Gazon,Les DIAGBOX® Racine & Gazon sont des kits conçus pour analyser conjointement les racines et les parties aériennes (via déchets de tonte). Cette double approche permet d'évaluer la présence de pathogènes à différents niveaux de la plante. Vous obtenez une vision globale de l'état sanitaire de votre pelouse. Rappel : Cette offre regroupe les kits Racine (PF000048) et Déchets de tonte (PF000020).
+diagbox.gazon.racine_gazon.kits.title,DiagBox Gazon,Kit combiné disponible
+diagbox.gazon.racine_gazon.why_use.point1,DiagBox Gazon,Caractériser et quantifier votre risque global : Identifier les pathogènes sur gazon ET racines avant symptômes.
+diagbox.gazon.racine_gazon.why_use.point2,DiagBox Gazon,Évaluation complète de l'efficacité des traitements : Suivre l'évolution post-intervention sur les deux compartiments.
+diagbox.gazon.racine_gazon.why_use.point3,DiagBox Gazon,"Suivi annuel complet : Contrôler l'efficacité des actions (biocontrôle, biostimulation) et surveiller la pression pathogène globale."
+diagbox.gazon.racine_gazon.why_use.title,DiagBox Gazon,Pourquoi utiliser la DIAGBOX® Racine + Gazon ?
+diagbox.gazon.sol.catchphrase,DiagBox Gazon,Parce que votre future pelouse mérite un sol sain pour bien démarrer.
+diagbox.gazon.sol.description,DiagBox Gazon,"Les DIAGBOX® Sol/Substrat sont des kits de prélèvement simples d'utilisation conçus pour analyser le sol situé sous le système racinaire de votre gazon. Ces analyses permettent d'identifier et de quantifier les pathogènes encore présents dans le substrat avant le plaquage. Vous anticipez ainsi les risques de contamination de votre future pelouse, et mettez en place des mesures préventives adaptées."
+diagbox.gazon.sol.kits.title,DiagBox Gazon,Kits disponibles (Prélèvement Sol / Substrat)
+diagbox.gazon.sol.why_use.point1,DiagBox Gazon,Caractériser et quantifier votre risque : Détecter les pathogènes dans le sol avant symptômes.
+diagbox.gazon.sol.why_use.point2,DiagBox Gazon,Diagnostic avant la pose : Vérifier l'absence de pathogènes résiduels avant un nouveau plaquage.
+diagbox.gazon.sol.why_use.title,DiagBox Gazon,Pourquoi utiliser la DIAGBOX® Sol / Substrat ?
+diagbox.gazon.subtitle,DiagBox Gazon,Des approches complètes pour comprendre et prévenir les risques biologiques sur le gazon
+diagbox.gazon.sympto.catchphrase,DiagBox Gazon,"Pour celles et ceux qui veulent comprendre l'origine des symptômes, pas seulement les masquer."
+diagbox.gazon.sympto.description,DiagBox Gazon,"Les DIAGBOX® Gazon symptomatique sont des kits de prélèvement simples d'utilisation conçus pour prélever des échantillons de gazon présentant des symptômes. Grâce aux analyses associées, vous obtenez des résultats précis qui permettent de caractériser et quantifier les pathogènes responsables. Ces résultats vous fournissent une vue d'ensemble sur le pathogène principal et les pathogènes secondaires, afin de guider votre stratégie de traitement de manière globale et efficace, sans se limiter à la maladie principale."
+diagbox.gazon.sympto.kits.title,DiagBox Gazon,Kits disponibles (Prélèvement Gazon Symptomatique)
+diagbox.gazon.sympto.why_use.point1,DiagBox Gazon,"Caractériser et quantifier les pathogènes présents : Identifier le pathogène principal, prendre en compte les pathogènes secondaires."
+diagbox.gazon.sympto.why_use.title,DiagBox Gazon,Pourquoi utiliser la DIAGBOX® Gazon Symptomatique ?
+diagbox.gazon.title,DiagBox Gazon,DIAGBOX® Gazon
+diagbox.gazon.toc.dechet_link,DiagBox Gazon TOC,Déchets de Tonte (Détection précoce)
+diagbox.gazon.toc.lingette_link,DiagBox Gazon TOC,Lingette (Action précoce)
+diagbox.gazon.toc.plaquage_link,DiagBox Gazon TOC,Accompagnement Plaquage (Sécurisation)
+diagbox.gazon.toc.prices_link,DiagBox Gazon TOC,Voir les prix
+diagbox.gazon.toc.questions_link,DiagBox Gazon TOC,Retour aux Questions
+diagbox.gazon.toc.racine_gazon_link,DiagBox Gazon TOC,Racine + Gazon (Vision globale)
+diagbox.gazon.toc.racine_link,DiagBox Gazon TOC,Racine (Diagnostic profond)
+diagbox.gazon.toc.sol_link,DiagBox Gazon TOC,Sol / Substrat (Avant plaquage)
+diagbox.gazon.toc.sympto_link,DiagBox Gazon TOC,Gazon Symptomatique (Diagnostic)
+diagbox.gazon.toc.title,DiagBox Gazon TOC,Accès rapide aux types de kits :
+diagbox.gazon.types.dechet,DiagBox Gazon,Déchets de Tonte
+diagbox.gazon.types.lingette,DiagBox Gazon,Lingette
+diagbox.gazon.types.plaquage,DiagBox Gazon,Accompagnement Plaquage
+diagbox.gazon.types.racine,DiagBox Gazon,Racine
+diagbox.gazon.types.racine_gazon,DiagBox Gazon,Racine + Gazon
+diagbox.gazon.types.sol,DiagBox Gazon,Sol / Substrat
+diagbox.gazon.types.sympto,DiagBox Gazon,Gazon Symptomatique
+gazon.qna.q1_sub1,Gazon Q&A,"Si la pyriculariose est la maladie la plus répandue dans votre région, ou si vous savez djà que c'est le principal risque, vous pouvez faire une mesure uniquement sur cette cible, pour un coût très limité"
+gazon.qna.q1_sub2,Gazon Q&A,"Si vous avez un doute sur la nature du risque, vous pouvez opter pour une analyse plus large sur des pathogènes ciblés"
+gazon.qna.q1_sub3,Gazon Q&A,Comment m'assurer que mon gazon n'est (plus) touché par aucun des pathogènes habituels
+gazon.qna.q1_sub4,Gazon Q&A,Comment m'assurer que les racines ne sont pas (ou plus) non plus touchées ?
+gazon.qna.q1_sub5,Gazon Q&A,Comment m'assurer que le sol n'est pas (ou plus) touché ?
+gazon.qna.q1_title,Gazon Q&A,"Je ne vois pas de symptômes, ou je viens de faire un traitement, quelles sont mes possibilité de contrôle, pour anticiper les différents risques ou m'assurer de l'effet du traitement  ?"
+gazon.qna.q2_sub1,Gazon Q&A,Comment caractériser le pathogène principal et les pathogènes secondaires présents pour savoir comment réagir ?
+gazon.qna.q2_sub2,Gazon Q&A,Comment savoir si mes racines sont touchées ?
+gazon.qna.q2_sub3,Gazon Q&A,Comment savoir si mon sol est touché ?
+gazon.qna.q2_title,Gazon Q&A,"J'ai détecté des symptômes, comment agir avec pertinence ?"
+gazon.qna.q3_title,Gazon Q&A,"Je vais poser un nouveau gazon (plaquage), mon sol est-il bien sans risque ou dois-je envisager un traitement préalable ?"
+gazon.qna.q4_title,Gazon Q&A,"je veux des analyses complètes au meilleur prix, quelles sont les recommandations ?"
+gazon.qna.q5_title,Gazon Q&A,J'ai d'autres questions
+contact.form.company,Contact,Entreprise
+contact.form.email,Contact,Email
+contact.form.message,Contact,Message
+contact.form.name,Contact,Nom
+contact.form.phone,Contact,Téléphone
+contact.form.submit,Contact,Envoyer
+contact.title,Contact,Contact
+legal.section1_address1,Legal Page,335 rue Louis Lépine – 34000 Montpellier
+legal.section1_address2,Legal Page,Bureau de IAGE Paris : 42 avenue Raymond Poincaré – 75116 Paris
+legal.section1_company_details,Legal Page,"SASU au capital de 190 700,00 €"
+legal.section1_company_name,Legal Page,Le présent site est édité par IAGE - Ingénierie et Analyse en Génétique Environnementale
+legal.section1_contact_email,Legal Page,contact@iage-france.com
+legal.section1_contact_intro,Legal Page,Contact :
+legal.section1_contact_phone,Legal Page,(standard) 04 48 79 84 91
+legal.section1_director_details,Legal Page,
+legal.section1_director_intro,Legal Page,"Directeur de la publication : Monsieur Franz Durandet, Président"
+legal.section1_intro,Legal Page,
+legal.section1_rcs,Legal Page,Immatriculée au Registre du Commerce et des Sociétés de Montpellier sous le numéro 828 570 168 00033
+legal.section1_title,Legal Page,1. Éditeur du site
+legal.section1_vat,Legal Page,Numéro de TVA intracommunautaire : FR59828570168
+legal.section2_host_address,Legal Page,440 N Barranca Ave #4133 Covina - CA 91723 – USA
+legal.section2_host_name,Legal Page,Vercel Inc.
+legal.section2_host_site,Legal Page,Site : https://vercel.com
+legal.section2_intro,Legal Page,Le site est hébergé par :
+legal.section2_title,Legal Page,2. Hébergement
+legal.section3_content1,Legal Page,"Tous les contenus présents sur ce site, incluant de façon non limitative les textes, images, graphismes, logos, icônes, vidéos, sons, logiciels, sont la propriété exclusive de la société IAGE ou sont utilisés avec l'autorisation de leurs auteurs."
+legal.section3_content2,Legal Page,"Toute reproduction, représentation, modification, publication, adaptation, totale ou partielle, des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite sauf autorisation écrite préalable de IAGE."
+legal.section3_title,Legal Page,3. Propriété intellectuelle
+legal.section4_cnil,Legal Page,Vous pouvez également introduire une réclamation auprès de la CNIL : 
+legal.section4_contact_address,Legal Page,ou par courrier à : 335 rue Louis Lépine – 34000 Montpellier
+legal.section4_contact_email,Legal Page,contact@iage-france.com
+legal.section4_contact_name,Legal Page,IAGE – Délégué à la protection des données
+legal.section4_content1,Legal Page,Les informations collectées via les formulaires de contact sont enregistrées dans un fichier informatisé par IAGE pour répondre aux demandes de renseignements. Ces données sont traitées conformément au Règlement Général sur la Protection des Données (RGPD).
+legal.section4_duration,Legal Page,3 ans maximum
+legal.section4_purpose,Legal Page,Gestion des demandes via le site
+legal.section4_recipient,Legal Page,IAGE uniquement (aucune transmission à des tiers)
+legal.section4_responsible,Legal Page,Monsieur Franz Durandet
+legal.section4_rights_intro,Legal Page,"Conformément aux dispositions des articles 39 et suivants de la loi « informatique et libertés » et du RGPD, vous disposez d'un droit d'accès, de rectification, d'opposition, de suppression et de portabilité de vos données personnelles. Pour exercer ces droits, vous pouvez contacter :"
+legal.section4_title,Legal Page,4. Données personnelles
+legal.section5_content1,Legal Page,"Le site peut utiliser des cookies ou traceurs pour améliorer votre expérience de navigation, analyser le trafic ou proposer des contenus adaptés."
+legal.section5_content2,Legal Page,"Lors de votre première visite, si des Cookies sont effectivement présents, un bandeau vous informe de la présence de cookies et vous propose d'accepter ou de refuser leur utilisation. Vous pouvez à tout moment configurer vos préférences via les paramètres de votre navigateur."
+legal.section5_title,Legal Page,5. Cookies
+legal.section5_type1,Legal Page,
+legal.section5_type2,Legal Page,
+legal.section5_type3,Legal Page,
+legal.section5_types_intro,Legal Page,Types de cookies utilisés : aucun
+legal.section6_content1,Legal Page,"IAGE s'efforce de fournir sur ce site des informations aussi précises que possible. Toutefois, elle ne saurait être tenue responsable des omissions, inexactitudes ou carences dans la mise à jour, qu'elles soient de son fait ou du fait de tiers partenaires."
+legal.section6_content2,Legal Page,L'utilisateur reconnaît utiliser les informations et outils disponibles sur le site sous sa responsabilité exclusive.
+legal.section6_title,Legal Page,6. Responsabilités
+legal.title,Legal Page,Mentions légales
+privacy.content,Privacy Page,Contenu de la politique de confidentialité à ajouter...
+privacy.title,Privacy Page,Politique de confidentialité
+footer.contact,Footer,Contact
+footer.contactTitle,Footer,Contact
+footer.copyright,Footer,© {année} IAGE. Tous droits réservés.
+footer.email,Footer,Email: contact@iage-france.com
+footer.home,Footer,Accueil
+footer.legal,Footer,Mentions légales
+footer.navigation,Footer,Navigation
+footer.privacy,Footer,Politique de confidentialité
+footer.sectors,Footer,Domaines
+footer.services,Footer,Services
+footer.subtitle,Footer,Ingéniérie et Analyse en Génétique Environnementale
+footer.title,Footer,IAGE

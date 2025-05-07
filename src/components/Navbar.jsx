@@ -86,7 +86,7 @@ function Navbar() {
                   >
                     <Link
                       to={item.path}
-                      className="text-gray-900 dark:text-gray-100 hover:text-primary dark:hover:text-secondary px-3 py-2 text-sm font-medium border-b-2 border-transparent hover:border-primary dark:hover:border-secondary transition-colors flex items-center"
+                      className="text-primary dark:text-gray-100 hover:text-primary dark:hover:text-secondary px-3 py-2 text-sm font-medium border-b-2 border-transparent hover:border-primary dark:hover:border-secondary transition-colors flex items-center"
                     >
                       {item.name}
                       <svg className={`w-4 h-4 ml-1 transition-transform duration-200 ${isServicesOpen ? 'transform rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
@@ -101,7 +101,7 @@ function Navbar() {
                           <Link
                             key={subItem.name}
                             to={subItem.path}
-                            className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-primary dark:hover:text-secondary"
+                            className="block px-4 py-2 text-sm text-primary dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-primary dark:hover:text-secondary"
                             onClick={() => {
                               setIsServicesOpen(false);
                               clearTimeout(servicesTimeoutRef.current);
@@ -121,7 +121,7 @@ function Navbar() {
                   <Link
                     key={item.name} 
                     to={item.path}
-                    className="text-gray-900 dark:text-gray-100 hover:text-primary dark:hover:text-secondary px-3 py-2 text-sm font-medium border-b-2 border-transparent hover:border-primary dark:hover:border-secondary transition-colors"
+                    className="text-primary dark:text-gray-100 hover:text-primary dark:hover:text-secondary px-3 py-2 text-sm font-medium border-b-2 border-transparent hover:border-primary dark:hover:border-secondary transition-colors"
                     onClick={() => {
                       const element = document.getElementById('sectors-grid');
                       if (element) {
@@ -139,7 +139,7 @@ function Navbar() {
                   <Link
                     key={item.name}
                     to={item.path}
-                    className="text-gray-900 dark:text-gray-100 hover:text-primary dark:hover:text-secondary px-3 py-2 text-sm font-medium border-b-2 border-transparent hover:border-primary dark:hover:border-secondary transition-colors"
+                    className="text-primary dark:text-gray-100 hover:text-primary dark:hover:text-secondary px-3 py-2 text-sm font-medium border-b-2 border-transparent hover:border-primary dark:hover:border-secondary transition-colors"
                   >
                     {item.name}
                   </Link>
@@ -177,13 +177,13 @@ function Navbar() {
           {navItems.map((item) => (
             item.dropdown ? (
               <div key={item.name} className="px-3 py-2">
-                <span className="text-gray-900 dark:text-gray-100 text-base font-medium">{item.name}</span>
+                <span className="text-primary dark:text-gray-100 text-base font-medium">{item.name}</span>
                 <div className="mt-1 pl-3 space-y-1 border-l border-gray-300 dark:border-gray-600">
                   {item.dropdown.map((subItem) => (
                     <Link
                       key={subItem.name}
                       to={subItem.path}
-                      className="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-secondary block py-1 text-base font-medium"
+                      className="text-primary dark:text-gray-300 hover:text-primary dark:hover:text-secondary block py-1 text-base font-medium"
                       onClick={() => setIsOpen(false)}
                     >
                       {subItem.name}
@@ -195,7 +195,7 @@ function Navbar() {
               <Link
                 key={item.name}
                 to={item.path}
-                className="text-gray-900 dark:text-gray-100 hover:text-primary dark:hover:text-secondary block px-3 py-2 text-base font-medium border-l-4 border-transparent hover:border-primary dark:hover:border-secondary transition-colors"
+                className="text-primary dark:text-gray-100 hover:text-primary dark:hover:text-secondary block px-3 py-2 text-base font-medium border-l-4 border-transparent hover:border-primary dark:hover:border-secondary transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 {item.name}
@@ -205,7 +205,7 @@ function Navbar() {
           <Link
             key={`mobile-${texts.navbar.sectors}`}
             to="/#sectors-grid"
-            className="text-gray-900 dark:text-gray-100 hover:text-primary dark:hover:text-secondary block px-3 py-2 text-base font-medium border-l-4 border-transparent hover:border-primary dark:hover:border-secondary transition-colors"
+            className="text-primary dark:text-gray-100 hover:text-primary dark:hover:text-secondary block px-3 py-2 text-base font-medium border-l-4 border-transparent hover:border-primary dark:hover:border-secondary transition-colors"
             onClick={() => {
               setIsOpen(false);
               const element = document.getElementById('sectors-grid');
@@ -221,7 +221,7 @@ function Navbar() {
           <Link
             key={`mobile-${texts.navbar.contact}`}
             to="/contact"
-            className="text-gray-900 dark:text-gray-100 hover:text-primary dark:hover:text-secondary block px-3 py-2 text-base font-medium border-l-4 border-transparent hover:border-primary dark:hover:border-secondary transition-colors"
+            className="text-primary dark:text-gray-100 hover:text-primary dark:hover:text-secondary block px-3 py-2 text-base font-medium border-l-4 border-transparent hover:border-primary dark:hover:border-secondary transition-colors"
             onClick={() => setIsOpen(false)}
           >
             {texts.navbar.contact}

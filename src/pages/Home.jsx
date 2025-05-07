@@ -164,7 +164,7 @@ const Home = () => {
       {/* New Problem Solving Categories Section */}
       <section id="sectors-grid" className="py-20 bg-white dark:bg-gray-900 scroll-mt-20 md:scroll-mt-24">
         <div className="container">
-          <h2 className="text-4xl font-bold text-center mb-16 text-gray-900 dark:text-white">
+          <h2 className="text-4xl font-bold text-center mb-16 text-primary dark:text-white">
             {texts.home.sectors.title} {/* Nous répondons à vos questions */}
           </h2>
           <div className="space-y-16">

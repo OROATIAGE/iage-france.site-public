@@ -1,0 +1,127 @@
+@font-face {
+  font-family: 'DINRoundPro';
+  src: url('/fonts/DINRoundPro-Light.woff2') format('woff2'); /* Use only WOFF2 */
+  font-weight: 300; /* Light */
+  font-style: normal;
+  font-display: swap; /* Improves perceived performance */
+}
+
+@font-face {
+  font-family: 'DINRoundPro';
+  src: url('/fonts/DINRoundPro.woff2') format('woff2');
+  font-weight: 400; /* Normal / Regular */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DINRoundPro';
+  src: url('/fonts/DINRoundPro-Medium.woff2') format('woff2');
+  font-weight: 500; /* Medium */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DINRoundPro';
+  src: url('/fonts/DINRoundPro-Bold.woff2') format('woff2');
+  font-weight: 700; /* Bold */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DINRoundPro';
+  src: url('/fonts/DINRoundPro-Black.woff2') format('woff2');
+  font-weight: 900; /* Black */
+  font-style: normal;
+  font-display: swap;
+}
+/* End Font Definitions */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth; /* Activer le défilement doux */
+  }
+  body {
+    @apply bg-gray-50 text-primary dark:bg-gray-950 dark:text-gray-200; /* Ajuster la couleur dark body et default text à primary */
+  }
+
+  h1 {
+    @apply text-4xl font-bold text-primary mb-6; /* Déjà primary, ok */
+  }
+
+  h2 {
+    @apply text-2xl font-semibold text-primary dark:text-secondary-light mb-4; /* Default h2 en primary, dark mode en secondary-light */
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white px-6 py-2 rounded-md hover:bg-primary/90 transition-colors;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-white px-6 py-2 rounded-md hover:bg-secondary/90 transition-colors;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow;
+  }
+
+  .section {
+    @apply py-16;
+  }
+
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Styles pour les tableaux de kits responsives */
+  @media (max-width: 767px) { /* md breakpoint */
+    .responsive-kit-table tbody {
+      @apply divide-y-0; /* Supprimer les diviseurs par défaut de tbody sur mobile */
+    }
+    .responsive-kit-table tr {
+        @apply mb-4 shadow rounded-lg bg-white dark:bg-gray-800; /* Style de carte pour chaque ligne */
+        @apply border dark:border-gray-700; 
+    }
+    .responsive-cell {
+      @apply px-4 py-2; /* Ajouter du padding interne aux cellules */
+      @apply relative pl-24; /* Espace pour le label */
+      @apply text-left; /* Assurer l'alignement gauche */
+    }
+    .responsive-cell::before {
+      @apply content-[attr(data-label)]; /* Utiliser le contenu de data-label */
+      @apply absolute left-0 top-0 px-4 py-2; /* Positionner le label */
+      @apply w-24; /* Largeur fixe pour le label */
+      @apply text-xs font-bold uppercase text-gray-500 dark:text-gray-400; /* Style du label */
+      @apply h-full flex items-center; /* Centrer verticalement */
+      /* Optionnel: Ligne de séparation */
+      /* @apply border-r border-gray-200 dark:border-gray-700 mr-2; */
+    }
+  }
+}
+
+/* Animations */
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms ease-in;
+} 

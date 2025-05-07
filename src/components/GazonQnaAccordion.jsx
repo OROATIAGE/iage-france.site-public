@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import { texts } from '../content/texts';
 import { FaChevronDown, FaChevronRight } from 'react-icons/fa'; // Icons for accordion
 
@@ -26,13 +27,19 @@ const qnaData = [
   {
     id: 'q3',
     titleKey: 'q3_title', 
-    target: '#qna-group-q1_sub5', // Changed target to point to the soil control group
+    target: '#qna-group-q3', // Corrected: was #qna-group-q1_sub5, should be q3 specific group for plaquage
     subquestions: [],
   },
   {
     id: 'q4',
     titleKey: 'q4_title',
     target: '#qna-group-q4_combined',
+    subquestions: [],
+  },
+  {
+    id: 'q5', // New question ID
+    titleKey: 'q5_title', // New text key
+    target: '/contact',     // Target is the contact page path
     subquestions: [],
   },
 ];
@@ -42,24 +49,30 @@ const getQnaText = (key) => texts.gazon?.qna?.[key] || '';
 
 function GazonQnaAccordion({ onOpenKitGroup }) {
   const [openAccordion, setOpenAccordion] = useState(null); // State to track open section
+  const navigate = useNavigate(); // Initialize navigate
 
   const handleToggle = (id) => {
     setOpenAccordion(openAccordion === id ? null : id);
   };
 
   const handleLinkClick = (e, target) => {
-    const targetId = target.replace('#', '');
-    const element = document.getElementById(targetId);
-    if (element) {
-       e.preventDefault(); // Prevent default hash jump if using JS scroll
-       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-       if (onOpenKitGroup) {
-        onOpenKitGroup(targetId); // Call the callback to open the corresponding kit group
-       }
-       // Optionally close this Q&A accordion after click
-       // setOpenAccordion(null); 
+    if (target.startsWith('#')) {
+      const targetId = target.replace('#', '');
+      const element = document.getElementById(targetId);
+      if (element) {
+         e.preventDefault(); 
+         element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+         if (onOpenKitGroup) {
+          onOpenKitGroup(targetId); 
+         }
+      }
+    } else {
+      // For internal page links like '/contact'
+      e.preventDefault();
+      navigate(target);
+      // Optionally close this Q&A accordion after click
+      // setOpenAccordion(null); 
     }
-    // Allow default if element not found immediately (rare)
   };
 
   return (

@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { texts } from '../content/texts'; // Import des textes centralisés
 // Import necessary components and icons for the Gazons specific section
 import DiagboxGazonNav from '../components/DiagboxGazonNav'; 
-import { FaLeaf, FaVial, FaPaperPlane, FaChevronDown, FaChevronRight } from 'react-icons/fa';
+import { FaLeaf, FaVial, FaPaperPlane, FaChevronDown, FaChevronRight, FaAngleRight } from 'react-icons/fa';
 import GazonQnaAccordion from '../components/GazonQnaAccordion'; // Import the new component
 import { useState, useEffect } from 'react';
 
@@ -216,7 +216,7 @@ const renderKitDetails = (kitRef) => {
         <p><strong>Désignation:</strong> {getDiagboxText(`kits.${kitRef}.name`, 'N/A')}</p>
         <p><strong>Organismes Ciblés:</strong> <span dangerouslySetInnerHTML={{ __html: finalTargetsDisplayHtml }} /></p>
         <p><strong>Prix Indicatif HT:</strong> {combinedKitPriceString}</p>
-        {individualPricesText && <p className="text-sm text-gray-700 dark:text-gray-300">{individualPricesText}</p>}
+        {individualPricesText && <p className="text-sm text-primary dark:text-gray-300">{individualPricesText}</p>}
         {savingText && <p className="text-sm font-semibold text-green-600 dark:text-green-400">{savingText}</p>}
       </div>
       
@@ -302,21 +302,39 @@ function SectorPage() {
         exit={{ opacity: 0 }}
         className="container mx-auto px-4 py-12 md:py-16"
       >
-        {/* --- Original Gazon Intro Section --- */}
-        <div className="bg-gradient-to-r from-primary/10 to-secondary/10 dark:from-primary/20 dark:to-secondary/20 p-8 rounded-lg mb-12 shadow-sm">
+        {/* --- Gazon Intro Section - Part 1 (Title and Catchphrase) --- */}
+        <div className="bg-gradient-to-r from-primary/10 to-secondary/10 dark:from-primary/20 dark:to-secondary/20 p-8 rounded-lg mb-6 shadow-sm">
           <h1 className="text-3xl md:text-4xl font-bold text-primary dark:text-secondary mb-4">{sectorName}</h1>
-          <p className="text-xl md:text-2xl font-semibold text-gray-700 dark:text-gray-300 mb-6">
+          <p className="text-xl md:text-2xl font-semibold text-primary dark:text-gray-300">
             {getText(pageData, 'catchphrase')}
-          </p>
-          <p className="text-lg text-gray-600 dark:text-gray-400">
-            {getText(pageData, 'intro')}
           </p>
         </div>
 
-        {/* --- Updated Title --- */}
-        <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 dark:text-gray-200 mb-8 text-center">
-          {getText(pageData, 'services.title')} {/* Vous vous posez des questions... */}
-        </h2>
+        {/* --- Gazon Intro Section - Part 2 (IAGE Intro with list) --- */}
+        <div className="bg-gradient-to-r from-primary/10 to-secondary/10 dark:from-primary/20 dark:to-secondary/20 p-8 rounded-lg mb-12 shadow-sm">
+          {
+            (() => {
+              const introText = getText(pageData, 'intro');
+              const lines = introText.split('\n');
+              const mainLine = lines[0];
+              const listItems = lines.slice(1);
+
+              return (
+                <>
+                  <p className="text-xl md:text-2xl font-semibold text-gray-700 dark:text-gray-300 mb-3 flex items-center">
+                    <FaAngleRight className="mr-2 text-secondary dark:text-secondary-light" /> 
+                    {mainLine}
+                  </p>
+                  {listItems.map((item, index) => (
+                    <p key={index} className="text-lg md:text-xl font-semibold text-gray-700 dark:text-gray-300 ml-12 mb-1">
+                      {item.startsWith('-') ? item.substring(1).trim() : item.trim()} {/* Remove dash if present, then trim */}
+                    </p>
+                  ))}
+                </>
+              );
+            })()
+          }
+        </div>
 
         {/* --- Q&A Accordion Section --- */}
         <GazonQnaAccordion onOpenKitGroup={setInitiallyOpenKitGroup} />
@@ -414,7 +432,7 @@ function SectorPage() {
 
         {/* Price List Section remains */}
         <section id="prices" className="mt-12 md:mt-16 pt-10 border-t border-gray-200 dark:border-gray-700 scroll-mt-20 md:scroll-mt-24">
-            <h2 className="text-2xl md:text-3xl font-semibold text-center text-gray-800 dark:text-gray-200 mb-8">
+            <h2 className="text-2xl md:text-3xl font-semibold text-center text-primary dark:text-gray-200 mb-8">
               {getDiagboxText('prices.title')}
             </h2>
             <p className="text-center text-sm text-gray-500 dark:text-gray-400 -mt-4 mb-6">
@@ -440,13 +458,13 @@ function SectorPage() {
                       <tr key={kitRef} className="block md:table-row border-b last:border-b-0 md:border-none dark:border-gray-700 p-4 md:p-0">
                         <td 
                           data-label="Référence"
-                          className="block md:table-cell md:px-6 md:py-4 md:whitespace-nowrap text-sm font-medium text-gray-900 dark:text-gray-100 responsive-cell"
+                          className="block md:table-cell md:px-6 md:py-4 md:whitespace-nowrap text-sm font-medium text-primary dark:text-gray-100 responsive-cell"
                         >
                           {kitRef}
                         </td>
                         <td 
                           data-label="Désignation"
-                          className="block md:table-cell md:px-6 md:py-4 md:whitespace-nowrap text-sm text-gray-600 dark:text-gray-300 responsive-cell"
+                          className="block md:table-cell md:px-6 md:py-4 md:whitespace-nowrap text-sm text-primary dark:text-gray-300 responsive-cell"
                         >
                           {/* Link removed, just display text */}
                           {getDiagboxText(`kits.${kitRef}.name`)}
@@ -487,13 +505,13 @@ function SectorPage() {
           {/* Card 1: Catalogue */}
           <div className="card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
             <h3 className="text-xl font-bold text-primary dark:text-secondary mb-3">{getText(pageData, 'catalog.title')}</h3>
-            <p className="text-gray-600 dark:text-gray-300">{getText(pageData, 'catalog.description')}</p>
+            <p className="text-primary dark:text-gray-300">{getText(pageData, 'catalog.description')}</p>
           </div>
 
           {/* Card 2: Development */}
           <div className="card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
             <h3 className="text-xl font-bold text-primary dark:text-secondary mb-3">{getText(pageData, 'development.title')}</h3>
-            <p className="text-gray-600 dark:text-gray-300">{getText(pageData, 'development.description')}</p>
+            <p className="text-primary dark:text-gray-300">{getText(pageData, 'development.description')}</p>
           </div>
         </div>
 
@@ -527,7 +545,7 @@ function SectorPage() {
           <p className="text-xl md:text-2xl font-semibold text-gray-700 dark:text-gray-300 mb-6">
             {getText(pageData, 'catchphrase')}
           </p>
-          <p className="text-lg text-gray-600 dark:text-gray-400">
+          <p className="text-xl md:text-2xl font-semibold text-gray-700 dark:text-gray-300 mb-6">
             {getText(pageData, 'intro')}
           </p>
         </div>
@@ -540,7 +558,7 @@ function SectorPage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           <div className="card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
             <h3 className="text-xl font-bold text-primary dark:text-secondary mb-3">{getText(pageData, 'diagbox.title')}</h3>
-            <p className="text-gray-600 dark:text-gray-300">{getText(pageData, 'diagbox.description')}</p>
+            <p className="text-primary dark:text-gray-300">{getText(pageData, 'diagbox.description')}</p>
             {getText(pageData, 'cta.diagbox') && (
                <Link
                  to={`/services/diagbox/${sectorId}`} // Lien dynamique basé sur sectorId
@@ -552,19 +570,19 @@ function SectorPage() {
           </div>
           <div className="card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
             <h3 className="text-xl font-bold text-primary dark:text-secondary mb-3">{getText(pageData, 'catalog.title')}</h3>
-            <p className="text-gray-600 dark:text-gray-300">{getText(pageData, 'catalog.description')}</p>
+            <p className="text-primary dark:text-gray-300">{getText(pageData, 'catalog.description')}</p>
           </div>
           <div className="card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
             <h3 className="text-xl font-bold text-primary dark:text-secondary mb-3">{getText(pageData, 'development.title')}</h3>
-            <p className="text-gray-600 dark:text-gray-300">{getText(pageData, 'development.description')}</p>
+            <p className="text-primary dark:text-gray-300">{getText(pageData, 'development.description')}</p>
           </div>
         </div>
 
         {/* Mention Prélèvement Continu */}
         {getText(pageData, 'sampling.description') && (
            <div className="bg-gray-100 dark:bg-gray-700 p-6 rounded-lg shadow-inner mb-12">
-              <h3 className="text-xl font-semibold text-gray-700 dark:text-gray-200 mb-3">{getText(pageData, 'sampling.title')}</h3>
-              <p className="text-gray-600 dark:text-gray-300">{getText(pageData, 'sampling.description')}</p>
+              <h3 className="text-xl font-semibold text-primary dark:text-gray-200 mb-3">{getText(pageData, 'sampling.title')}</h3>
+              <p className="text-primary dark:text-gray-300">{getText(pageData, 'sampling.description')}</p>
            </div>
         )}
 

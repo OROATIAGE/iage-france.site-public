@@ -47,7 +47,7 @@ const Contact = () => {
       <div className="max-w-2xl mx-auto">
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
-            <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="name" className="block text-sm font-medium text-primary dark:text-gray-300">
               {texts.contact.form.name}
             </label>
             <input
@@ -60,7 +60,7 @@ const Contact = () => {
             />
           </div>
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="email" className="block text-sm font-medium text-primary dark:text-gray-300">
               {texts.contact.form.email}
             </label>
             <input
@@ -73,7 +73,7 @@ const Contact = () => {
             />
           </div>
           <div>
-            <label htmlFor="company" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="company" className="block text-sm font-medium text-primary dark:text-gray-300">
               {texts.contact.form.company}
             </label>
             <input
@@ -86,7 +86,7 @@ const Contact = () => {
             />
           </div>
           <div>
-            <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="phone" className="block text-sm font-medium text-primary dark:text-gray-300">
               {texts.contact.form.phone}
             </label>
             <input
@@ -99,7 +99,7 @@ const Contact = () => {
             />
           </div>
           <div>
-            <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="message" className="block text-sm font-medium text-primary dark:text-gray-300">
               {texts.contact.form.message}
             </label>
             <textarea

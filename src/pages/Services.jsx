@@ -67,7 +67,7 @@ function Services() {
       <h1 className="text-4xl md:text-5xl font-bold text-primary dark:text-secondary mb-6 text-center">
         {getPageText('title')}
       </h1>
-      <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-12 md:mb-16 text-center max-w-3xl mx-auto">
+      <p className="text-lg md:text-xl text-primary dark:text-gray-300 mb-12 md:mb-16 text-center max-w-3xl mx-auto">
         {getPageText('intro')}
       </p>
 
@@ -91,11 +91,11 @@ function Services() {
                 {category.services.map((service) => (
                   <section key={service.id} id={service.id} className="scroll-mt-28 md:scroll-mt-32"> {/* Increased scroll margin top further */}
                     {/* Titre du service */}
-                    <h3 className="text-2xl md:text-3xl font-semibold text-gray-800 dark:text-gray-200 mb-4 border-l-4 border-secondary pl-4">
+                    <h3 className="text-2xl md:text-3xl font-semibold text-primary dark:text-gray-200 mb-4 border-l-4 border-secondary pl-4">
                       {getPageText(service.titleKey)}
                     </h3>
                     {/* Description du service */}
-                    <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed whitespace-pre-line ml-6"> {/* Léger retrait pour la description */}
+                    <p className="text-primary dark:text-gray-300 text-lg leading-relaxed whitespace-pre-line ml-6"> {/* Léger retrait pour la description */}
                       {getPageText(service.descriptionKey)}
                     </p>
                   </section>
@@ -111,7 +111,7 @@ function Services() {
         <Link 
           to="/#sectors-grid" 
         > 
-          <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 dark:text-gray-200 mb-6 hover:text-primary dark:hover:text-secondary transition-colors duration-200 inline-block underline hover:underline"> 
+          <h2 className="text-2xl md:text-3xl font-semibold text-primary dark:text-gray-200 mb-6 hover:text-primary dark:hover:text-secondary transition-colors duration-200 inline-block underline hover:underline"> 
             {getPageText('back_to_sectors_title')}
           </h2>
         </Link>
