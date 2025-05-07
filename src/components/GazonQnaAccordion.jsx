@@ -16,6 +16,17 @@ const qnaData = [
     ],
   },
   {
+    id: 'q1b',
+    titleKey: 'q1b_title',
+    subquestions: [
+      { textKey: 'q1_sub1', target: '#qna-group-q1_sub1' }, 
+      { textKey: 'q1_sub2', target: '#qna-group-q1_sub2' }, 
+      { textKey: 'q1_sub3', target: '#qna-group-q1_sub3' }, 
+      { textKey: 'q1_sub4', target: '#qna-group-q1_sub4' }, 
+      { textKey: 'q1_sub5', target: '#qna-group-q1_sub5' }, 
+    ],
+  },
+  {
     id: 'q2',
     titleKey: 'q2_title',
     subquestions: [

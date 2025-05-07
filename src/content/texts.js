@@ -246,7 +246,8 @@ export const texts = {
         "intro": "IAGE aide à préserver la qualité de vos gazons et à réduire vos coûts d'entretien grâce :\n    - à ses services de détection précoce et précise des champignons responsables des maladies du gazon\n    - à ses recommandations et outils de suivis adaptés à votre situation et à vos besoins",
         "services": {
           "title": "Vous vous posez des questions sur la santé de vos gazons, voici nos solutions :"
-        }
+        },
+        "perspective_text": "Vous faites face à de nouveaux défis économiques et environnementaux : depuis 2016, la prolifération de maladies comme la pyriculariose, difficile à traiter, peut détruire un gazon en quelques semaines. La loi Labbé, adoptée en 2014, interdit progressivement l'usage des produits phytosanitaires de synthèse, ce qui s'applique aux pelouses sportives naturelles  depuis le 1er janvier. Comment concilier ces deux défis d'une manière économiquement supportable ?\n\nLa clé d'une réponse efficace à ces deux problématiques : la détection très précoce des pathogènes, pour permettre des traitements localisés, ou limiter les besoins de remplacement des gazons. Encore faut-il pouvoir non seulement détecter de manière précise et précoce, encore faut-il pouvoir le faire dans tous les compartiments : les feuilles, les racines, les sols. A défaut de quoi, si le pathogène a pu s'installer dans le sol, le seul remplacement de la pelouse ne conduira qu'à devoir le refaire de manière répétée !\n\nIAGE, à partir de sa technologie de mesure, de ses propres innovations et en partenariat avec plusieurs partenaires académiques, a mis au point un ensemble de solutions de détection, d'interprétation et de conseils pour répondre à tous les cas de figure des exploitants de gazons sportifs. En travaillant sur le terrain avec ses premiers clients, IAGE a construit des solutions clefs en main, facilement mises en oeuvre par les exploitants, pour leur permettre de conserver dans la durée un gazon performant dans le plein respect de leurs objectifs environnementaux et économiques.\n\nQue vous ayez un problème ponctuel, ou que vous souhaitiez mettre en place un suivi en continu de votre gazon, IAGE a une solution pour vous : explorez nos solutions ou contactez-nous pour une analyses spécifique de vos besoins."
       },
       "05": {
         "catalog": {
@@ -593,7 +594,8 @@ export const texts = {
       "q1_sub3": "Comment m'assurer que mon gazon n'est (plus) touché par aucun des pathogènes habituels",
       "q1_sub4": "Comment m'assurer que les racines ne sont pas (ou plus) non plus touchées ?",
       "q1_sub5": "Comment m'assurer que le sol n'est pas (ou plus) touché ?",
-      "q1_title": "Je ne vois pas de symptômes, ou je viens de faire un traitement, quelles sont mes possibilité de contrôle, pour anticiper les différents risques ou m'assurer de l'effet du traitement  ?",
+      "q1_title": "Je ne vois pas de symptômes, mais je veux contrôler l'état de mon gazon pour anticiper tout risque, ou pour avoir des conseils pour planifier mes traitements",
+      "q1b_title": "Je viens de faire un traitement, je veux m'assurer de son effet et éventuellement avoir des conseils sur la suite",
       "q2_sub1": "Comment caractériser le pathogène principal et les pathogènes secondaires présents pour savoir comment réagir ?",
       "q2_sub2": "Comment savoir si mes racines sont touchées ?",
       "q2_sub3": "Comment savoir si mon sol est touché ?",

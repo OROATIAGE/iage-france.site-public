@@ -310,6 +310,21 @@ function SectorPage() {
           </p>
         </div>
 
+        {/* --- NEW Perspective Text Section --- */}
+        <div className="my-8 md:my-12 prose lg:prose-xl max-w-none dark:prose-invert text-primary dark:text-gray-300">
+          {
+            (() => {
+              const perspectiveTextString = getText(pageData, 'perspective_text');
+              // console.log('Perspective Text for splitting:', JSON.stringify(perspectiveTextString)); // Keep for now if still debugging
+              return perspectiveTextString.split('\n').map((paragraph, index) => { // Changed to split by single '\n'
+                const trimmedParagraph = paragraph.trim();
+                // Avoid rendering empty paragraphs if there were multiple newlines together
+                return trimmedParagraph ? <p key={index}>{trimmedParagraph}</p> : null;
+              });
+            })()
+          }
+        </div>
+
         {/* --- Gazon Intro Section - Part 2 (IAGE Intro with list) --- */}
         <div className="bg-gradient-to-r from-primary/10 to-secondary/10 dark:from-primary/20 dark:to-secondary/20 p-8 rounded-lg mb-12 shadow-sm">
           {

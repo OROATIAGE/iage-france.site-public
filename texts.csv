@@ -167,6 +167,13 @@ sectors.page.04.intro,Secteur 04 (Page),"IAGE aide à préserver la qualité de 
     - à ses services de détection précoce et précise des champignons responsables des maladies du gazon
     - à ses recommandations et outils de suivis adaptés à votre situation et à vos besoins"
 sectors.page.04.services.title,Secteur 04 (Page),"Vous vous posez des questions sur la santé de vos gazons, voici nos solutions :"
+sectors.page.04.perspective_text,Secteur 04 (Page),"Vous faites face à de nouveaux défis économiques et environnementaux : depuis 2016, la prolifération de maladies comme la pyriculariose, difficile à traiter, peut détruire un gazon en quelques semaines. La loi Labbé, adoptée en 2014, interdit progressivement l'usage des produits phytosanitaires de synthèse, ce qui s'applique aux pelouses sportives naturelles  depuis le 1er janvier. Comment concilier ces deux défis d'une manière économiquement supportable ?
+
+La clé d'une réponse efficace à ces deux problématiques : la détection très précoce des pathogènes, pour permettre des traitements localisés, ou limiter les besoins de remplacement des gazons. Encore faut-il pouvoir non seulement détecter de manière précise et précoce, encore faut-il pouvoir le faire dans tous les compartiments : les feuilles, les racines, les sols. A défaut de quoi, si le pathogène a pu s'installer dans le sol, le seul remplacement de la pelouse ne conduira qu'à devoir le refaire de manière répétée !
+
+IAGE, à partir de sa technologie de mesure, de ses propres innovations et en partenariat avec plusieurs partenaires académiques, a mis au point un ensemble de solutions de détection, d'interprétation et de conseils pour répondre à tous les cas de figure des exploitants de gazons sportifs. En travaillant sur le terrain avec ses premiers clients, IAGE a construit des solutions clefs en main, facilement mises en oeuvre par les exploitants, pour leur permettre de conserver dans la durée un gazon performant dans le plein respect de leurs objectifs environnementaux et économiques.
+
+Que vous ayez un problème ponctuel, ou que vous souhaitiez mettre en place un suivi en continu de votre gazon, IAGE a une solution pour vous : explorez nos solutions ou contactez-nous pour une analyses spécifique de vos besoins."
 sectors.page.05.catalog.description,Secteur 05 (Page),"Notre catalogue couvre les principaux pathogènes (Esca, Eutypiose, Black Dead Arm) et micro-organismes d'intérêt (Brettanomyces). Des analyses combinées ou sur mesure sont possibles pour vos suivis spécifiques."
 sectors.page.05.catalog.title,Secteur 05 (Page),Analyses Catalogue et Combinaisons Spécifiques
 sectors.page.05.catchphrase,Secteur 05 (Page),"Vous êtes un acteur de la filière vitivinicole (technicien, coopérative, négoce, institut technique) :"
@@ -363,7 +370,8 @@ gazon.qna.q1_sub2,Gazon Q&A,"Si vous avez un doute sur la nature du risque, vous
 gazon.qna.q1_sub3,Gazon Q&A,Comment m'assurer que mon gazon n'est (plus) touché par aucun des pathogènes habituels
 gazon.qna.q1_sub4,Gazon Q&A,Comment m'assurer que les racines ne sont pas (ou plus) non plus touchées ?
 gazon.qna.q1_sub5,Gazon Q&A,Comment m'assurer que le sol n'est pas (ou plus) touché ?
-gazon.qna.q1_title,Gazon Q&A,"Je ne vois pas de symptômes, ou je viens de faire un traitement, quelles sont mes possibilité de contrôle, pour anticiper les différents risques ou m'assurer de l'effet du traitement  ?"
+gazon.qna.q1_title,Gazon Q&A,"Je ne vois pas de symptômes, mais je veux contrôler l'état de mon gazon pour anticiper tout risque, ou pour avoir des conseils pour planifier mes traitements"
+gazon.qna.q1b_title,Gazon Q&A,"Je viens de faire un traitement, je veux m'assurer de son effet et éventuellement avoir des conseils sur la suite"
 gazon.qna.q2_sub1,Gazon Q&A,Comment caractériser le pathogène principal et les pathogènes secondaires présents pour savoir comment réagir ?
 gazon.qna.q2_sub2,Gazon Q&A,Comment savoir si mes racines sont touchées ?
 gazon.qna.q2_sub3,Gazon Q&A,Comment savoir si mon sol est touché ?
