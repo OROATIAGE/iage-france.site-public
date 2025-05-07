@@ -122,14 +122,14 @@ const Home = () => {
             transition={{ duration: 0.8 }}
             className="w-full text-center text-white py-20"
           >
-            <h2 className="text-2xl md:text-3xl font-bold mb-8 text-white max-w-4xl mx-auto leading-tight">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-white max-w-4xl mx-auto leading-tight">
               {texts.home.hero.title}
             </h2>
-            <p className="text-xl md:text-2xl mb-12 text-gray-100 max-w-2xl mx-auto">
+            <p className="text-2xl md:text-3xl mb-12 text-gray-100 max-w-2xl mx-auto">
               {texts.home.hero.subtitle}
             </p>
             <div className="mt-10">
-              <p className="text-4xl md:text-6xl mb-6 text-gray-100 font-semibold">
+              <p className="text-4xl md:text-5xl mb-6 text-white font-semibold">
                 {texts.home.hero.professional_intro}
               </p>
               <div className="flex flex-wrap justify-center items-stretch gap-6">

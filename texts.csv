@@ -13,9 +13,9 @@ home.hero.card_title_health,Home (Hero),"Santé publique,
 Hygiène dans les bâtiments"
 home.hero.card_title_industrial,Home (Hero),"Fermentations agroalimentaire,
 Traitement des eaux – bio-énergie..."
-home.hero.card_title_turf,Home (Hero),"Gazons professionnels, parcs, jardins"
+home.hero.card_title_turf,Home (Hero),"Gazons naturels professionnels, parcs, jardins"
 home.hero.cta,Home (Hero),Contactez-nous
-home.hero.professional_intro,Home (Hero),Nos recommandations :
+home.hero.professional_intro,Home (Hero),Nos services pour vos secteurs d'activité :
 home.hero.subtitle,Home (Hero),Voir l'invisible pour agir à temps
 home.hero.title,Home (Hero),L'expertise du vivant à votre service
 home.sectors.01.description,Home (Secteurs),"Mesures de pathogènes dans les eaux usées 
@@ -37,19 +37,19 @@ home.sectors.08.description,Home (Secteurs),Mesures de contrôle pathogènes avi
 home.sectors.08.name,Home (Secteurs),Aviculture
 home.sectors.category_agriculture_livestock_title,Home (Secteurs),Agriculture et élevage
 home.sectors.category_health_hygiene_title,Home (Secteurs),Santé publique et Hygiène intérieure
-home.sectors.category_industrial_fermentation_title,Home (Secteurs),Fermentations industrielles
-home.sectors.category_turf_parks_title,Home (Secteurs),Gazons et parc
+home.sectors.category_industrial_fermentation_title,Home (Secteurs),Procédés de traitement industriels
+home.sectors.category_turf_parks_title,Home (Secteurs),Gazons naturels et parc
 home.sectors.subdomain_arboriculture,Home (Secteurs),Arboriculture
 home.sectors.subdomain_cemeteries,Home (Secteurs),Cimetières
-home.sectors.subdomain_epidemiology,Home (Secteurs),Suivi global de la santé de la population (WES)
+home.sectors.subdomain_epidemiology,Home (Secteurs),Epidémiologie par les eaux usées (WBE-WES)
 home.sectors.subdomain_golf_courses,Home (Secteurs),Golfs
 home.sectors.subdomain_hospital_hygiene,Home (Secteurs),Hygiène hospitalière
 home.sectors.subdomain_indoor_hygiene,Home (Secteurs),Hygiène intérieure
 home.sectors.subdomain_methanizers,Home (Secteurs),Méthaniseurs
 home.sectors.subdomain_poultry_farming,Home (Secteurs),Aviculture
-home.sectors.subdomain_purification_systems,Home (Secteurs),Systèmes d'épuration
+home.sectors.subdomain_purification_systems,Home (Secteurs),Systèmes de traitement des eaux
 home.sectors.subdomain_shellfish_farming,Home (Secteurs),Conchyliculture
-home.sectors.subdomain_sports_turf,Home (Secteurs),Gazons de stades sportifs
+home.sectors.subdomain_sports_turf,Home (Secteurs),Gazons sportifs des stades
 home.sectors.subdomain_viticulture,Home (Secteurs),Viticulture
 home.sectors.subdomain_winemaking,Home (Secteurs),Vinification
 home.sectors.title,Home (Secteurs),Nous répondons à vos questions
@@ -163,9 +163,9 @@ sectors.page.04.development.description,Secteur 04 (Page),"En collaboration avec
 sectors.page.04.development.title,Secteur 04 (Page),Développement de Nouvelles Méthodes
 sectors.page.04.diagbox.description,Secteur 04 (Page),"Le kit clé-en-main pour prélever facilement gazon, racines ou substrat et obtenir en 48h un diagnostic précis des pathogènes présents. Anticipez les traitements et optimisez la santé de vos terrains."
 sectors.page.04.diagbox.title,Secteur 04 (Page),DiagBox® Gazon
-sectors.page.04.intro,Secteur 04 (Page),"IAGE aide à préserver la qualité de vos gazons grâce :
-    - à ses produits de détection précoce et précise des pathogènes (champignons, nématodes) responsables des maladies
-    - à ses recommandations adaptées à votre situation et à vos besoins"
+sectors.page.04.intro,Secteur 04 (Page),"IAGE aide à préserver la qualité de vos gazons et à réduire vos coûts d'entretien grâce :
+    - à ses services de détection précoce et précise des champignons responsables des maladies du gazon
+    - à ses recommandations et outils de suivis adaptés à votre situation et à vos besoins"
 sectors.page.04.services.title,Secteur 04 (Page),"Vous vous posez des questions sur la santé de vos gazons, voici nos solutions :"
 sectors.page.05.catalog.description,Secteur 05 (Page),"Notre catalogue couvre les principaux pathogènes (Esca, Eutypiose, Black Dead Arm) et micro-organismes d'intérêt (Brettanomyces). Des analyses combinées ou sur mesure sont possibles pour vos suivis spécifiques."
 sectors.page.05.catalog.title,Secteur 05 (Page),Analyses Catalogue et Combinaisons Spécifiques

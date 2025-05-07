@@ -21,9 +21,9 @@ export const texts = {
       "card_title_agriculture": "Agriculture, élevage",
       "card_title_health": "Santé publique, \nHygiène dans les bâtiments",
       "card_title_industrial": "Fermentations agroalimentaire,\nTraitement des eaux – bio-énergie...",
-      "card_title_turf": "Gazons professionnels, parcs, jardins",
+      "card_title_turf": "Gazons naturels professionnels, parcs, jardins",
       "cta": "Contactez-nous",
-      "professional_intro": "Nos recommandations :",
+      "professional_intro": "Nos services pour vos secteurs d'activité :",
       "subtitle": "Voir l'invisible pour agir à temps",
       "title": "L'expertise du vivant à votre service"
     },
@@ -62,19 +62,19 @@ export const texts = {
       },
       "category_agriculture_livestock_title": "Agriculture et élevage",
       "category_health_hygiene_title": "Santé publique et Hygiène intérieure",
-      "category_industrial_fermentation_title": "Fermentations industrielles",
-      "category_turf_parks_title": "Gazons et parc",
+      "category_industrial_fermentation_title": "Procédés de traitement industriels",
+      "category_turf_parks_title": "Gazons naturels et parc",
       "subdomain_arboriculture": "Arboriculture",
       "subdomain_cemeteries": "Cimetières",
-      "subdomain_epidemiology": "Suivi global de la santé de la population (WES)",
+      "subdomain_epidemiology": "Epidémiologie par les eaux usées (WBE-WES)",
       "subdomain_golf_courses": "Golfs",
       "subdomain_hospital_hygiene": "Hygiène hospitalière",
       "subdomain_indoor_hygiene": "Hygiène intérieure",
       "subdomain_methanizers": "Méthaniseurs",
       "subdomain_poultry_farming": "Aviculture",
-      "subdomain_purification_systems": "Systèmes d'épuration",
+      "subdomain_purification_systems": "Systèmes de traitement des eaux",
       "subdomain_shellfish_farming": "Conchyliculture",
-      "subdomain_sports_turf": "Gazons de stades sportifs",
+      "subdomain_sports_turf": "Gazons sportifs des stades",
       "subdomain_viticulture": "Viticulture",
       "subdomain_winemaking": "Vinification",
       "title": "Nous répondons à vos questions"
@@ -243,7 +243,7 @@ export const texts = {
           "description": "Le kit clé-en-main pour prélever facilement gazon, racines ou substrat et obtenir en 48h un diagnostic précis des pathogènes présents. Anticipez les traitements et optimisez la santé de vos terrains.",
           "title": "DiagBox® Gazon"
         },
-        "intro": "IAGE aide à préserver la qualité de vos gazons grâce :\n    - à ses produits de détection précoce et précise des pathogènes (champignons, nématodes) responsables des maladies\n    - à ses recommandations adaptées à votre situation et à vos besoins",
+        "intro": "IAGE aide à préserver la qualité de vos gazons et à réduire vos coûts d'entretien grâce :\n    - à ses services de détection précoce et précise des champignons responsables des maladies du gazon\n    - à ses recommandations et outils de suivis adaptés à votre situation et à vos besoins",
         "services": {
           "title": "Vous vous posez des questions sur la santé de vos gazons, voici nos solutions :"
         }
