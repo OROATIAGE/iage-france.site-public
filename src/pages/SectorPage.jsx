@@ -238,6 +238,22 @@ const renderKitDetails = (kitRef) => {
   );
 };
 
+const TextWithBoldMarkdown = ({ text }) => {
+  if (!text || typeof text !== 'string') return null;
+
+  // Sépare le texte par le marqueur de gras **
+  // Les segments impairs seront le contenu à mettre en gras
+  const parts = text.split(/\*\*(.*?)\*\*/g);
+
+  return (
+    <>
+      {parts.map((part, index) =>
+        index % 2 === 1 ? <strong key={index}>{part}</strong> : part
+      )}
+    </>
+  );
+};
+
 function SectorPage() {
   const { sectorId } = useParams(); 
   const [openKitGroupAccordions, setOpenKitGroupAccordions] = useState({});
@@ -313,7 +329,7 @@ function SectorPage() {
         {/* --- NEW Perspective Text Section --- */}
         <div className="my-8 md:my-12 prose lg:prose-xl max-w-none dark:prose-invert text-primary dark:text-gray-300">
           <p className="whitespace-pre-line">
-            {getText(pageData, 'perspective_text')}
+            <TextWithBoldMarkdown text={getText(pageData, 'perspective_text')} />
           </p>
         </div>
 
