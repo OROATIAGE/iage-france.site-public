@@ -318,39 +318,25 @@ function SectorPage() {
         exit={{ opacity: 0 }}
         className="container mx-auto px-4 py-12 md:py-16"
       >
-        {/* --- Gazon Intro Section - Part 1 (Title and Catchphrase) --- */}
+        {/* --- Gazon Intro Section - Title and Direct Intro --- */}
         <div className="bg-gradient-to-r from-primary/10 to-secondary/10 dark:from-primary/20 dark:to-secondary/20 p-8 rounded-lg mb-6 shadow-sm">
           <h1 className="text-3xl md:text-4xl font-bold text-primary dark:text-secondary mb-4">{sectorName}</h1>
-          <p className="text-xl md:text-2xl font-semibold text-primary dark:text-gray-300 whitespace-pre-line">
-            {getText(pageData, 'catchphrase')}
-          </p>
-        </div>
-
-        {/* --- NEW Perspective Text Section --- */}
-        <div className="my-8 md:my-12 prose lg:prose-xl max-w-none dark:prose-invert text-primary dark:text-gray-300">
-          <p className="whitespace-pre-line">
-            <TextWithBoldMarkdown text={getText(pageData, 'perspective_text')} />
-          </p>
-        </div>
-
-        {/* --- Gazon Intro Section - Part 2 (IAGE Intro with list) --- */}
-        <div className="bg-gradient-to-r from-primary/10 to-secondary/10 dark:from-primary/20 dark:to-secondary/20 p-8 rounded-lg mb-12 shadow-sm">
+          {/* Directly show the 'intro' text after the title */}
           {
             (() => {
               const introText = getText(pageData, 'intro');
               const lines = introText.split('\n');
               const mainLine = lines[0];
               const listItems = lines.slice(1);
-
               return (
                 <>
                   <p className="text-xl md:text-2xl font-semibold text-gray-700 dark:text-gray-300 mb-3 flex items-center">
-                    <FaAngleRight className="mr-2 text-secondary dark:text-secondary-light" /> 
+                    <FaAngleRight className="mr-2 text-secondary dark:text-secondary-light" />
                     {mainLine}
                   </p>
                   {listItems.map((item, index) => (
                     <p key={index} className="text-lg md:text-xl font-semibold text-gray-700 dark:text-gray-300 ml-12 mb-1">
-                      {item.startsWith('-') ? item.substring(1).trim() : item.trim()} {/* Remove dash if present, then trim */}
+                      {item.startsWith('-') ? item.substring(1).trim() : item.trim()}
                     </p>
                   ))}
                 </>
@@ -413,45 +399,7 @@ function SectorPage() {
         </section>
 
         {/* --- NEW: Q&A Driven Diagbox Groups --- */}
-        <div className="mt-8 md:mt-12 mb-8">
-            <button 
-                onClick={handleToggleAllKitGroups}
-                className="mb-6 px-4 py-2 bg-secondary/10 hover:bg-secondary/20 dark:bg-secondary/20 dark:hover:bg-secondary/30 text-secondary dark:text-secondary-light rounded-md text-sm font-medium transition-colors duration-200 shadow-sm hover:shadow-md"
-            >
-                {showAllKitGroups ? getDiagboxText('button_hide_all_kits', 'Masquer tous les kits') : getDiagboxText('button_show_all_kits', 'Afficher tous les kits')}
-            </button>
-        </div>
-
-        <div className="space-y-6">
-          {qnaKitGroups.map((group) => {
-            const isOpen = showAllKitGroups || !!openKitGroupAccordions[group.id];
-            return (
-              <section key={group.id} id={group.id} className="scroll-mt-24 md:scroll-mt-28 border rounded-lg overflow-hidden shadow-sm bg-white dark:bg-gray-800 dark:border-gray-700">
-                <button
-                  onClick={() => handleToggleKitGroupAccordion(group.id)}
-                  className="w-full flex justify-between items-center p-4 text-left text-lg font-semibold text-primary dark:text-secondary hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors"
-                >
-                  <span>{getDiagboxText(group.titleKey, `Groupe ${group.id}`)}</span>
-                  {isOpen ? <FaChevronDown className="text-primary dark:text-secondary" /> : <FaChevronRight className="text-gray-500" />}
-                </button>
-
-                {isOpen && (
-                  <div className="p-4 md:p-6 border-t bg-gray-50 dark:bg-gray-800/30 dark:border-gray-600 space-y-6">
-                    {group.kits.map(kit => (
-                      <div key={kit.ref} className="bg-white dark:bg-gray-800 p-4 rounded-md shadow">
-                         <p 
-                           className="italic text-gray-600 dark:text-gray-400 mb-3 border-l-4 border-secondary/50 pl-3"
-                           dangerouslySetInnerHTML={{ __html: getDiagboxText(kit.introKey, `Intro pour ${kit.ref}`) }}
-                         />
-                         {renderKitDetails(kit.ref)}
-                      </div>
-                    ))}
-                  </div>
-                )}
-              </section>
-            );
-          })}
-        </div>
+        {/* (SUPPRIMÉ) <div className="mt-8 md:mt-12 mb-8"> ... </div> et le bloc qnaKitGroups.map(...) */}
 
         {/* Price List Section remains */}
         <section id="prices" className="mt-12 md:mt-16 pt-10 border-t border-gray-200 dark:border-gray-700 scroll-mt-20 md:scroll-mt-24">

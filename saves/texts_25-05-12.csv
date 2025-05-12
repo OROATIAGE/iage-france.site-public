@@ -39,19 +39,19 @@ home.sectors.category_agriculture_livestock_title,Home (Secteurs),Agriculture et
 home.sectors.category_health_hygiene_title,Home (Secteurs),Santé publique et Hygiène intérieure
 home.sectors.category_industrial_fermentation_title,Home (Secteurs),Procédés de traitement industriels
 home.sectors.category_turf_parks_title,Home (Secteurs),Gazons naturels et parc
-home.sectors.subdomain_arboriculture,Home (Secteurs),Vous souhaitez protéger plus efficacement vos pommiers contre leurs pathogènes
-home.sectors.subdomain_cemeteries,Home (Secteurs),Vous souhaitez mieux protéger les pelouses de vos cimetières
-home.sectors.subdomain_epidemiology,Home (Secteurs),Vous souhaitez suivre l'état de santé d'une population via les eaux usées (WBE-WES)
-home.sectors.subdomain_golf_courses,Home (Secteurs),Vous voulez améliorer l'entretien de pelouses de Golfs
-home.sectors.subdomain_hospital_hygiene,Home (Secteurs),"Vous voulez renforcer la qualité de l'Hygiène hospitalière de vos bâtiments (maladies nosocomiales, résistances antibactériennes,...)"
-home.sectors.subdomain_indoor_hygiene,Home (Secteurs),"Vous voulez assurer l'Hygiène intérieure de vos bâtiments (nuisibles, qualité de l'air,...)"
-home.sectors.subdomain_methanizers,Home (Secteurs),Vous souhaitez améliorer les rendements de vos Méthaniseurs
-home.sectors.subdomain_poultry_farming,Home (Secteurs),Vous souhaitez renforcer la protection de  vos élevages contre la grippe aviaire
-home.sectors.subdomain_purification_systems,Home (Secteurs),"Vous souhaitez renforcer la performance de vos traitements biologiques (STEP, réseaux,...)"
-home.sectors.subdomain_shellfish_farming,Home (Secteurs),Vous souhaitez mieux protéger vos élevages d'huitres et leur commercialisation contre les norovirus
-home.sectors.subdomain_sports_turf,Home (Secteurs),Vous souhaiter mieux assurer la qualité des Gazons sportifs des stades
-home.sectors.subdomain_viticulture,Home (Secteurs),Vous souhaiter mieux protéger vos vignes contre leurs différents pathogènes
-home.sectors.subdomain_winemaking,Home (Secteurs),Vous souhaitez mieux contrôler les processus biologique dans vos étapes de vinification
+home.sectors.subdomain_arboriculture,Home (Secteurs),Arboriculture
+home.sectors.subdomain_cemeteries,Home (Secteurs),Cimetières
+home.sectors.subdomain_epidemiology,Home (Secteurs),Epidémiologie par les eaux usées (WBE-WES)
+home.sectors.subdomain_golf_courses,Home (Secteurs),Golfs
+home.sectors.subdomain_hospital_hygiene,Home (Secteurs),Hygiène hospitalière
+home.sectors.subdomain_indoor_hygiene,Home (Secteurs),Hygiène intérieure
+home.sectors.subdomain_methanizers,Home (Secteurs),Méthaniseurs
+home.sectors.subdomain_poultry_farming,Home (Secteurs),Aviculture
+home.sectors.subdomain_purification_systems,Home (Secteurs),Systèmes de traitement des eaux
+home.sectors.subdomain_shellfish_farming,Home (Secteurs),Conchyliculture
+home.sectors.subdomain_sports_turf,Home (Secteurs),Gazons sportifs des stades
+home.sectors.subdomain_viticulture,Home (Secteurs),Viticulture
+home.sectors.subdomain_winemaking,Home (Secteurs),Vinification
 home.sectors.title,Home (Secteurs),Nous répondons à vos questions
 home.services.0.description,Home (Services),"Des analyses précises et fiables, sur catalogue ou à la demande, pour répondre à tous vos besoins"
 home.services.0.title,Home (Services),Analyses de précisions
@@ -368,7 +368,7 @@ diagbox.gazon.types.racine,DiagBox Gazon,Racine
 diagbox.gazon.types.racine_gazon,DiagBox Gazon,Racine + Gazon
 diagbox.gazon.types.sol,DiagBox Gazon,Sol / Substrat
 diagbox.gazon.types.sympto,DiagBox Gazon,Gazon Symptomatique
-gazon.qna.q1_sub1,Gazon Q&A,"Si la pyriculariose est la maladie la plus répandue dans votre région, ou si vous savez déjà que c'est le principal risque, vous pouvez faire une mesure uniquement sur cette cible, pour un coût très limité"
+gazon.qna.q1_sub1,Gazon Q&A,"Si la pyriculariose est la maladie la plus répandue dans votre région, ou si vous savez djà que c'est le principal risque, vous pouvez faire une mesure uniquement sur cette cible, pour un coût très limité"
 gazon.qna.q1_sub2,Gazon Q&A,"Si vous avez un doute sur la nature du risque, vous pouvez opter pour une analyse plus large sur des pathogènes ciblés"
 gazon.qna.q1_sub3,Gazon Q&A,Comment m'assurer que mon gazon n'est (plus) touché par aucun des pathogènes habituels
 gazon.qna.q1_sub4,Gazon Q&A,Comment m'assurer que les racines ne sont pas (ou plus) non plus touchées ?
@@ -447,13 +447,9 @@ footer.subtitle,Footer,Ingéniérie et Analyse en Génétique Environnementale
 footer.title,Footer,IAGE
 diagbox.gazon.qna_reco.common.recommendation_title,Diagbox Gazon QNA Reco,Notre recommandation :
 diagbox.gazon.qna_reco.common.contact_link,Diagbox Gazon QNA Reco,Contactez-nous
-diagbox.gazon.qna_reco.qna-group-q1_sub1.recommendation_text,Diagbox Gazon QNA Reco,Notre recommandation :
-diagbox.gazon.qna_reco.qna-group-q1_sub1.conclusion_text_prefix,Diagbox Gazon QNA Reco,"Même si votre inquiétude porte sur la pyriculariose, nous vous recommandons de faire un **audit** de l'état de santé **complet** de votre gazon, à travers un **diagnostic fin et global sur la présence ou l'absence de l'ensemble des pathogènes** potentiellement présents (Diagbox PF 00015). Ce diagnostic est rapide et simple à réaliser : il suffit de passer une lingette sur les lames de la tondeuse, nous l'envoyer avec l'enveloppe prépayée, et nous vous indiquerons tous les pathogènes présents. 
-
-**En cas de détection positive**, nous vous recommandons vivement de passer à une analyse sur les déchets de tonte (PF000020) qui permettra la **quantification du pathogène principal et du ou des pathogènes secondaires**. Nous serons alors en mesure d'évaluer l'importance du risque pour votre gazon, et de vous apporter des **conseil ciblés** sur les mesures à envisager.
-
-Vous pouvez bien entendu **choisir de ne tester que la présence de la Pyriculariose**, si c'est le seul risque que vous voulez évaluer (avec les Diagbox de diagnostic PF00011 et quantification PF 00016). S'il s'avère présent, nous vous apporterons des conseils sur **des mesures adaptées à votre situation** à envisager contre ce pathogène."
-diagbox.gazon.qna_reco.qna-group-q1_sub1.conclusion_text_suffix,Diagbox Gazon QNA Reco,Les DIAGBOX® recommandées :
+diagbox.gazon.qna_reco.qna-group-q1_sub1.recommendation_text,Diagbox Gazon QNA Reco,(Texte de recommandation pour Kits Diagbox : Contrôle Pyriculariose (précoce) à compléter dans texts.csv)
+diagbox.gazon.qna_reco.qna-group-q1_sub1.conclusion_text_prefix,Diagbox Gazon QNA Reco,(Texte de conclusion avant le lien pour Kits Diagbox : Contrôle Pyriculariose (précoce) à compléter)
+diagbox.gazon.qna_reco.qna-group-q1_sub1.conclusion_text_suffix,Diagbox Gazon QNA Reco,(Texte de conclusion après le lien pour Kits Diagbox : Contrôle Pyriculariose (précoce) à compléter).
 diagbox.gazon.qna_reco.qna-group-q1_sub2.recommendation_text,Diagbox Gazon QNA Reco,(Texte de recommandation pour Kits Diagbox : Contrôle Pathogènes Courants (précoce) à compléter dans texts.csv)
 diagbox.gazon.qna_reco.qna-group-q1_sub2.conclusion_text_prefix,Diagbox Gazon QNA Reco,(Texte de conclusion avant le lien pour Kits Diagbox : Contrôle Pathogènes Courants (précoce) à compléter)
 diagbox.gazon.qna_reco.qna-group-q1_sub2.conclusion_text_suffix,Diagbox Gazon QNA Reco,(Texte de conclusion après le lien pour Kits Diagbox : Contrôle Pathogènes Courants (précoce) à compléter).
@@ -475,12 +471,3 @@ diagbox.gazon.qna_reco.qna-group-q3.conclusion_text_suffix,Diagbox Gazon QNA Rec
 diagbox.gazon.qna_reco.qna-group-q4_combined.recommendation_text,Diagbox Gazon QNA Reco,(Texte de recommandation pour Kits combinés à compléter dans texts.csv)
 diagbox.gazon.qna_reco.qna-group-q4_combined.conclusion_text_prefix,Diagbox Gazon QNA Reco,(Texte de conclusion avant le lien pour Kits combinés à compléter)
 diagbox.gazon.qna_reco.qna-group-q4_combined.conclusion_text_suffix,Diagbox Gazon QNA Reco,(Texte de conclusion après le lien pour Kits combinés à compléter).
-diagbox.gazon.qna_bon_a_savoir.q1,Diagbox Gazon QNA BonASavoir,"La Pyriculariose est malheureusement une maladie pour laquelle **il n'existe pas encore de traitements** (début 2025). Une fois présente, elle peut s'étendre et détruire l'ensemble d'une pelouse en quelques semaines si les conditions s'y prêtent. La seule solution est alors un remplacement de la pelouse. Une **détection la plus précoce possible** est donc un atout majeur pour **réduire les risques et les coûts** pour l'exploitant : elle permet d'intervenir sur une portion réduite de la la pelouse, et d'éviter de plus que le pathogène ne s'incruste dans les sols."
-diagbox.gazon.qna_bon_a_savoir.q2,Diagbox Gazon QNA BonASavoir,"À compléter : texte ""Bon à savoir"" pour la question 2 (planification traitements)"
-diagbox.gazon.qna_bon_a_savoir.q3,Diagbox Gazon QNA BonASavoir,"À compléter : texte ""Bon à savoir"" pour la question 3 (symptômes détectés)"
-diagbox.gazon.qna_bon_a_savoir.q4,Diagbox Gazon QNA BonASavoir,"À compléter : texte ""Bon à savoir"" pour la question 4 (nouveau gazon/plaquage)"
-diagbox.gazon.qna_bon_a_savoir.q5,Diagbox Gazon QNA BonASavoir,"À compléter : texte ""Bon à savoir"" pour la question 5 (autres questions)"
-diagbox.gazon.qna_intro.reco_PF000015,Diagbox Gazon QNA Intros,Pour un diagnostic global de tous les pathogènes du gazon (lingette)
-diagbox.gazon.qna_intro.reco_PF000020,Diagbox Gazon QNA Intros,Pour quantifier précisément le risque principal et les pathogènes secondaires (déchets de tonte)
-diagbox.gazon.qna_intro.reco_PF000011,Diagbox Gazon QNA Intros,Pour cibler uniquement la pyriculariose (lingette)
-diagbox.gazon.qna_intro.reco_PF000016,Diagbox Gazon QNA Intros,Pour quantifier la pyriculariose (déchets de tonte)
