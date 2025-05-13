@@ -15,9 +15,9 @@ home.hero.card_title_industrial,Home (Hero),"Fermentations agroalimentaire,
 Traitement des eaux – bio-énergie..."
 home.hero.card_title_turf,Home (Hero),"Gazons naturels professionnels, parcs, jardins"
 home.hero.cta,Home (Hero),Contactez-nous
-home.hero.professional_intro,Home (Hero),Découvrez nos solutions :
-home.hero.subtitle,Home (Hero),L'expertise scientifique enfin accessible pour vos décisions de terrain
-home.hero.title,Home (Hero),Voyez l'invisible. Agissez à temps
+home.hero.professional_intro,Home (Hero),Nos services pour vos secteurs d'activité :
+home.hero.subtitle,Home (Hero),Voir l'invisible pour agir à temps
+home.hero.title,Home (Hero),L'expertise du vivant à votre service
 home.sectors.01.description,Home (Secteurs),"Mesures de pathogènes dans les eaux usées 
 Possibilité de Certification COFRAC"
 home.sectors.01.name,Home (Secteurs),Epidémiosurveillance (WES)
@@ -285,13 +285,13 @@ diagbox.gazon.plaquage.why_use.point1,DiagBox Gazon,"Caractériser et quantifier
 diagbox.gazon.plaquage.why_use.point2,DiagBox Gazon,Évaluation préventive complète : Mesurer l'impact potentiel avant traitement et ajuster.
 diagbox.gazon.plaquage.why_use.point3,DiagBox Gazon,Analyse du rouleau avant plaquage : Anticiper les risques de détérioration post-pose et sécuriser l'investissement.
 diagbox.gazon.plaquage.why_use.title,DiagBox Gazon,Pourquoi utiliser la DIAGBOX® Accompagnement Plaquage ?
-diagbox.gazon.prices.PF000011,DiagBox Gazon,"185,00€"
-diagbox.gazon.prices.PF000013,DiagBox Gazon,"430,00€"
-diagbox.gazon.prices.PF000015,DiagBox Gazon,"670,00€"
-diagbox.gazon.prices.PF000016,DiagBox Gazon,"185,00€"
-diagbox.gazon.prices.PF000018,DiagBox Gazon,"430,00€"
-diagbox.gazon.prices.PF000019,DiagBox Gazon,"430,00€"
-diagbox.gazon.prices.PF000020,DiagBox Gazon,"670,00€"
+diagbox.gazon.prices.PF000011,DiagBox Gazon,"185,00€ (à revoir pour être plus bas que le prix de la quantification)"
+diagbox.gazon.prices.PF000013,DiagBox Gazon,"430,00€ (à revoir pour être plus bas que le prix de la quantification)"
+diagbox.gazon.prices.PF000015,DiagBox Gazon,"670,00€ (à revoir pour être plus bas que le prix de la quantification)"
+diagbox.gazon.prices.PF000016,DiagBox Gazon,"185,00€ (à revoir pour être plus haut que le prix de l'identification, inclure un rabais si l'identification a été faite avant)"
+diagbox.gazon.prices.PF000018,DiagBox Gazon,"430,00€ (à revoir pour être plus haut que le prix de l'identification, inclure un rabais si l'identification a été faite avant)"
+diagbox.gazon.prices.PF000019,DiagBox Gazon,"430,00€ "
+diagbox.gazon.prices.PF000020,DiagBox Gazon,"670,00€ (à revoir pour être plus bas que le prix de la quantification)"
 diagbox.gazon.prices.PF000033,DiagBox Gazon,"640,00€"
 diagbox.gazon.prices.PF000035,DiagBox Gazon,"1015,00€"
 diagbox.gazon.prices.PF000047,DiagBox Gazon,"830,00€"
@@ -447,12 +447,12 @@ footer.subtitle,Footer,Ingéniérie et Analyse en Génétique Environnementale
 footer.title,Footer,IAGE
 diagbox.gazon.qna_reco.common.recommendation_title,Diagbox Gazon QNA Reco,Notre recommandation :
 diagbox.gazon.qna_reco.common.contact_link,Diagbox Gazon QNA Reco,Contactez-nous
-diagbox.gazon.qna_reco.qna-group-q1_sub1.recommendation_text,Diagbox Gazon QNA Reco,Notre recommandation :
-diagbox.gazon.qna_reco.qna-group-q1_sub1.conclusion_text_prefix,Diagbox Gazon QNA Reco,"Vous pouvez obtenir très rapidement la **confirmation de l'absence ou de la présence de la pyriculariose** grâce à notre kit de **diagnostic** dédié : Diagbox PF00011. Ce diagnostic est rapide et simple à réaliser : il suffit de passer une lingette sur les lames de la tondeuse, nous l'envoyer avec l'enveloppe prépayée, pour obtenir le résultat en 48h. 
+diagbox.gazon.qna_reco.qna-group-q1_sub1.recommendation_text,Diagbox Gazon QNA Reco,Nos recommandations :
+diagbox.gazon.qna_reco.qna-group-q1_sub1.conclusion_text_prefix,Diagbox Gazon QNA Reco,"**Testez d'abord la présence de la pyriculariose** grâce à notre kit de **diagnostic** dédié (Diagbox PF00011). Ce kit est **rapide et simple à réaliser** : il contient une lingette à passer sur les lames de votre tondeuse après coupe, et une enveloppe prépayée pour nous expédier la lingette et obtenir le résultat en 48h. 
 
-**S'il s'avère positif**, nous vous recommanderons alors de **quantifier** l'importance de la présence du pathogène par une analyse sur les déchets de tonte (Diagbox PF 00016). En fonction des niveaux atteints, nous pourrons vous apporter  des conseils sur **des mesures adaptées à votre situation** à envisager contre ce pathogène.
+**Sile test est positif**, utilisez le kit de mesure (Diagbox PF 00016) pour **quantifier** l'importance de la présence du pathogène, en envoyant dans ce kit des déchets de tonte. Nous pourrons alors vous conseiller sur **des mesures adaptées à votre situation**.
 
-Si vous souhaitez une couverture plus large des risques, vous pouvez opter pour un **audit** de l'état de santé **complet** de votre gazon, à travers un **diagnostic fin et global sur la présence ou l'absence de l'ensemble des pathogènes** potentiellement présents (Diagbox PF 00015). En fonction de son résultat, vous pourrez passer à une quantification sur les déchets de tonte de la pyriculariose seule (Diagbox PF 00016), ou de l'ensemble des pathogènes présents (Diagbox PF000020) pour obtenir la **quantification du pathogène principal et du ou des pathogènes secondaires**. Nous serons alors en mesure d'évaluer l'importance des risques pour votre gazon, et de vous apporter des **conseil ciblés** sur les mesures à envisager."
+Un doute subsiste ? Ou vous préférez sauter les étapes et faire tout de suite un diagnostic complet ? Optez pour un **audit** de l'état de santé **complet** de votre gazon, à travers un **diagnostic global sur la présence de l'ensemble des principaux pathogènes** (Diagbox PF 00015). En cas de détection, passez à une mesure plus précise des pathogènes présents (Diagbox PF000020) pour obtenir la **quantification du pathogène principal et du ou des pathogènes secondaires**. Nous pourrons alors vous apporter des **conseil ciblés** sur les mesures à envisager."
 diagbox.gazon.qna_reco.qna-group-q1_sub1.conclusion_text_suffix,Diagbox Gazon QNA Reco,Les DIAGBOX® recommandées :
 diagbox.gazon.qna_reco.qna-group-q1_sub2.recommendation_text,Diagbox Gazon QNA Reco,
 diagbox.gazon.qna_reco.qna-group-q1_sub2.conclusion_text_prefix,Diagbox Gazon QNA Reco,
@@ -466,33 +466,41 @@ diagbox.gazon.qna_reco.qna-group-q1_sub4.conclusion_text_suffix,Diagbox Gazon QN
 diagbox.gazon.qna_reco.qna-group-q1_sub5.recommendation_text,Diagbox Gazon QNA Reco,
 diagbox.gazon.qna_reco.qna-group-q1_sub5.conclusion_text_prefix,Diagbox Gazon QNA Reco,
 diagbox.gazon.qna_reco.qna-group-q1_sub5.conclusion_text_suffix,Diagbox Gazon QNA Reco,
-diagbox.gazon.qna_reco.qna-group-q2_sub1.recommendation_text,Diagbox Gazon QNA Reco,Notre recommandation :
-diagbox.gazon.qna_reco.qna-group-q2_sub1.conclusion_text_prefix,Diagbox Gazon QNA Reco,"Pour une première approche rapide, vous pouvez faire un **diagnostic de présence** des principaux pathogènes présents dans votre gazon, avec la Diagbox PF 00015. Ce diagnostic est **rapide et simple** à réaliser : il suffit de passer une lingette sur les lames de la tondeuse, nous l'envoyer avec l'enveloppe prépayée, pour obtenir le résultat en 48h. Vous connaîtrez alors votre risque de court terme, et nous pourrons vous apporter à partir de là des conseils pour orienter vos actions.
+diagbox.gazon.qna_reco.qna-group-q2_sub1.recommendation_text,Diagbox Gazon QNA Reco,Nos recommandations :
+diagbox.gazon.qna_reco.qna-group-q2_sub1.conclusion_text_prefix,Diagbox Gazon QNA Reco,"Faites un **diagnostic de présence** des principaux pathogènes présents dans votre gazon, grâce à la Diagbox PF 00015. Ce kit est **rapide et simple** à réaliser : il contient une lingette à passer sur les lames de votre tondeuse après coupe, et une enveloppe prépayée pour nous expédier la lingette et obtenir le résultat en 48h. Vous connaîtrez alors **votre risque de court terme**, et nous vous apporterons des conseils pour orienter vos actions.
 
-Si vous souhaitez au contraire tout de suite avoir une **évaluation globale de vos risques à court, moyens et long terme**, pour bâtir un vrai **plan de prévention**, nous recommandons de réaliser directement une **quantification des pathogènes dans chacun des compartiments** : feuilles, racines et sols, avec la Diagbox PF 00050.
-
-A partir de cet état, nous pourrons vous conseiller les actions à entreprendre, et mettre en place **un suivi** dans la durée pour **optimiser les apports de produits de traitement**.
+Vous voulez tout de suite le niveau le plus élevé de maîtrise des risques ? Optez pour une **évaluation globale de vos risques à court, moyens et long terme**, afin de bâtir un vrai **plan de prévention** : réalisez pour cela directement une **quantification des pathogènes dans chacun des compartiments** : feuilles, racines et sols, avec la Diagbox PF 00050.
+A partir des résultat de cette quantification, nous vous conseillerons sur les actions à entreprendre, et vous accompagnerons pour mettre en place **un suivi** dans la durée, avec des **outils de visualisation des résultats** pour optimiser les apports de produits de traitement.
 
 Bien entendu, nous pouvons vous proposer des **approches intermédiaires adaptées à vos besoins et contraintes** : n'hésitez pas à nous contacter pour cela !"
 diagbox.gazon.qna_reco.qna-group-q2_sub1.conclusion_text_suffix,Diagbox Gazon QNA Reco,Les DIAGBOX® recommandées :
-diagbox.gazon.qna_reco.qna-group-q3.recommendation_text,Diagbox Gazon QNA Reco,Notre recommandation :
-diagbox.gazon.qna_reco.qna-group-q3.conclusion_text_prefix,Diagbox Gazon QNA Reco,"Nous vous recommandons de réaliser **le plus rapidement possible** la quantification des pathogènes présents dans les feuilles des zones touchées. Pour cela, vous pouvez recourir aux Diagbox PF 0018 si la détection a lieu en été, ou PF 00019 en hivers. Pour encore **plus de réactivité et de facilité**, vous pouvez aussi **disposer à l'avance** de la Diagbox PF00020 qui couvre l'ensemble des pathogènes et que vous **utilisez dès que des symptômes apparaissent**.
+diagbox.gazon.qna_reco.qna-group-q3.recommendation_text,Diagbox Gazon QNA Reco,Nos recommandations :
+diagbox.gazon.qna_reco.qna-group-q3.conclusion_text_prefix,Diagbox Gazon QNA Reco,"Réalisez **le plus rapidement possible** la quantification des pathogènes présents en nous envoyant des feuilles des zones touchées. Pour cela, utilisez la Diagbox PF 00018 si l'apparition des symptômes a lieu en été, ou PF 00019 en hivers. 
 
-**Si plusieurs zone différentes sont déjà touchées**, nous recommandons de réaliser **un prélèvement (avec une Diagbox dédiée) différent pour chaque zone** : cela permettra de faire un diagnostic plus précis et plus complet.
+Pour encore **plus de réactivité et de facilité, disposez dans vos stocks ** de la Diagbox PF00020 qui couvre l'ensemble des pathogènes et **utilisez-la dès que des symptômes apparaissent**.
 
-Nous serons alors en mesure des vous accompagner pour mettre en place les traitements, et voir avec vous si des diagnostic des autres compartiments (racine, sols) sont nécessaires."
+**Si plusieurs zone différentes sont déjà touchées**, réalisez de préférence **un prélèvement différent pour chaque zone** avec les Diagbox choisies: cela permettra de faire un diagnostic pour chaque endroit touché et d'aller vers des solutions encore plus adaptées.
+
+Nous vous accompagnerons pour le suivi des traitements, et voir avec vous si des diagnostic des autres compartiments (racine, sols) sont nécessaires."
 diagbox.gazon.qna_reco.qna-group-q3.conclusion_text_suffix,Diagbox Gazon QNA Reco,Les DIAGBOX® recommandées :
-diagbox.gazon.qna_reco.qna-group-q4_combined.recommendation_text,Diagbox Gazon QNA Reco,Notre recommandation :
-diagbox.gazon.qna_reco.qna-group-q4_combined.conclusion_text_prefix,Diagbox Gazon QNA Reco,"Nous recommandons de réaliser **un diagnostic des sols** avant tout nouveau plaquage, avec la Diagbox PF 00047 : les pathogènes présent dans les sols, même en faibles quantités, représentent un **risque de long terme** et peuvent conduire à la destruction prématurée de votre pelouse, ou au minimum à des **surcoûts d'entretien**. Les identifier et les quantifier nous permettra de vous accompagner dans la mise en place de traitement et d'un suivi. **Vous sécuriser ainsi votre investissement**.
+diagbox.gazon.qna_reco.qna-group-q4_combined.recommendation_text,Diagbox Gazon QNA Reco,Nos recommandations :
+diagbox.gazon.qna_reco.qna-group-q4_combined.conclusion_text_prefix,Diagbox Gazon QNA Reco,"Réalisez **un diagnostic des sols** avant tout nouveau plaquage, avec la Diagbox PF 00047 : les pathogènes présents dans les sols, même en faibles quantités, représentent un **risque de long terme** et peuvent conduire à la destruction prématurée de votre pelouse, ou à des **surcoûts d'entretien**. Nous vous accompagnerons ensuite au besoin dans le suivi des traitements et de l'état de santé du sol. 
 
-Fort de notre expérience sur des cas concrets, nous recommandons également de **tester les plaquages livrés**, pour évaluer leur bon état (Diagbox PF 00049). Vous pouvez aussi demander à votre fournisseur de vous donner une preuve de ce bon état, par exemple avec un relevé des mesures réalisées par ses soins.
+Vous voulez encore plus sécuriser votre investissement ? **Testez également les plaquages livrés**, pour évaluer leur bon état (Diagbox PF 00049), ou demandez à votre fournisseur une preuve de ce bon état, par exemple avec un relevé de mesures réalisées par ses soins.
 
-Si vous optez pour la réalisation de l'ensemble des analyses par vous même, vous pouvez recourir à la Digabox PF 00050 qui **intègre les analyses des trois compartiments (sols + feuilles et racines)**."
+Si vous optez pour la réalisation de l'ensemble des analyses par vous même, utilisez la Digabox PF 00050 qui **intègre les analyses des trois compartiments (sols + feuilles et racines)**."
 diagbox.gazon.qna_reco.qna-group-q4_combined.conclusion_text_suffix,Diagbox Gazon QNA Reco,Les DIAGBOX® recommandées :
-diagbox.gazon.qna_bon_a_savoir.q1,Diagbox Gazon QNA BonASavoir,"La **Pyriculariose** est malheureusement une maladie pour laquelle **il n'existe pas encore de traitements**. Une fois présente, elle peut s'étendre et détruire l'ensemble d'une pelouse en quelques semaines si les conditions s'y prêtent. La seule solution est alors un remplacement de la pelouse. Une **détection la plus précoce possible** est donc un atout majeur pour **réduire les risques et les coûts** pour l'exploitant : elle permet d'intervenir sur une portion réduite de la la pelouse, et d'éviter de plus que le pathogène ne s'incruste dans les sols."
-diagbox.gazon.qna_bon_a_savoir.q2,Diagbox Gazon QNA BonASavoir,"**La loi Labbé** de 2014 impose depuis le 1er janvier 2025 la **suppression des produits phytosanitaires de synthèse** pour le traitement des gazons sportifs. Cela **réduit le nombre de produits utilisables** et vous conduit peut être à revoir vos programmes de traitement. Dans ce contexte, pouvoir **anticiper au plus tôt avant la diffusion d'une maladie** apporte un avantage considérable pour protéger votre gazon au meilleur coût. Cela suppose un suivi des **risques de court ou moyen termes (feuilles et racines), mais aussi des risques à long terme (sol)**."
-diagbox.gazon.qna_bon_a_savoir.q3,Diagbox Gazon QNA BonASavoir,"Quand une détérioration du gazon est détectée, cela indique un **niveau déjà important** du ou des pathogènes en cause. **Identifier au plus vite tous les agents responsables**, c'est pouvoir mettre en place les traitements adaptés avec le plus de chances de sauver la pelouse ou de limiter les coûts d'entretien."
-diagbox.gazon.qna_bon_a_savoir.q4,Diagbox Gazon QNA BonASavoir,"Installer un nouveau plaquage représente un **investissement conséquent**. Or trop souvent, aucune évaluation de la santé des sols ni du gazon apportés n'est faite, et il arrive malheureusement que des pathogènes encore présents dans le sol, ou apportés par le plaquages, **amènent à des coûts d'entretiens élevés**, voir au pire ruinent la nouvelle pelouse. Une **vérification préalable de leur état de santé** serait pourtant une précaution élémentaire au regard de l'investissement réalisé."
+diagbox.gazon.qna_bon_a_savoir.q1,Diagbox Gazon QNA BonASavoir,"La **Pyriculariose** est malheureusement une maladie pour laquelle **il n'existe pas encore de traitements**. 
+Elle peut s'étendre et détruire une pelouse en quelques semaines. 
+IAGE a défini des outils de **détection précoce** pour réduire les risques et les coûts d'entretien et intervenir avant que la pyriculariose ne s'incruste dans les sols."
+diagbox.gazon.qna_bon_a_savoir.q2,Diagbox Gazon QNA BonASavoir,"**Depuis le 1er janvier 2025**, la loi Labbé de 2014 impose la **suppression des produits phytosanitaires de synthèse** pour le traitement des gazons sportifs. 
+**Le nombre de produits utilisables est réduit** et vous avez peut être dû revoir vos programmes de traitement.
+IAGE a défini des outils pour '**réagir au plus tôt, avant la diffusion d'une maladie** et assurer un **suivi des risques de court ou moyen termes (feuilles et racines), et des risques à long terme (sol)** afin de maîtriser vos coûts d'entretien en protégeant au mieux votre gazon."
+diagbox.gazon.qna_bon_a_savoir.q3,Diagbox Gazon QNA BonASavoir,"Une **détérioration visible** du gazon indique un **niveau déjà important** du ou des pathogènes en cause. 
+IAGE a défini des outils pour **identifier au plus vite tous les agents responsables**, et vous permettre de mettre en place les traitements adaptés avec le plus de chances de sauver la pelouse et de limiter vos coûts d'entretien."
+diagbox.gazon.qna_bon_a_savoir.q4,Diagbox Gazon QNA BonASavoir,"Installer un nouveau plaquage représente un **investissement conséquent**. 
+L'absence d'évaluation de la santé des sols ou du gazon apportés peut permettre à des pathogènes présents dans le sol ou apportés par le plaquages de proliférer, **conduisant à des coûts d'entretiens élevés**, voir au pire à la ruine de la nouvelle pelouse. 
+IAGE a défini des outils pour assurer une **vérification préalable des états de santé de chaque compartiment** (sol, racines, feuilles) pour réduire les risques au regard de l'investissement réalisé."
 diagbox.gazon.qna_bon_a_savoir.q5,Diagbox Gazon QNA BonASavoir,Il y a en effet de nombreuses situations différentes ! Nous serons heureux de voir avec vous comment vous aider au mieux
 diagbox.gazon.qna_intro.reco_PF000015,Diagbox Gazon QNA Intros,Pour un diagnostic global de tous les pathogènes du gazon (lingette)
 diagbox.gazon.qna_intro.reco_PF000020,Diagbox Gazon QNA Intros,Pour quantifier précisément le risque principal et les pathogènes secondaires (déchets de tonte)

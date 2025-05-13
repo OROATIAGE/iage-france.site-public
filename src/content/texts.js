@@ -23,9 +23,9 @@ export const texts = {
       "card_title_industrial": "Fermentations agroalimentaire,\nTraitement des eaux – bio-énergie...",
       "card_title_turf": "Gazons naturels professionnels, parcs, jardins",
       "cta": "Contactez-nous",
-      "professional_intro": "Découvrez nos solutions :",
-      "subtitle": "L'expertise scientifique enfin accessible pour vos décisions de terrain",
-      "title": "Voyez l'invisible. Agissez à temps"
+      "professional_intro": "Nos services pour vos secteurs d'activité :",
+      "subtitle": "Voir l'invisible pour agir à temps",
+      "title": "L'expertise du vivant à votre service"
     },
     "sectors": {
       "01": {
@@ -463,13 +463,13 @@ export const texts = {
         }
       },
       "prices": {
-        "PF000011": "185,00€",
-        "PF000013": "430,00€",
-        "PF000015": "670,00€",
-        "PF000016": "185,00€",
-        "PF000018": "430,00€",
-        "PF000019": "430,00€",
-        "PF000020": "670,00€",
+        "PF000011": "185,00€ (à revoir pour être plus bas que le prix de la quantification)",
+        "PF000013": "430,00€ (à revoir pour être plus bas que le prix de la quantification)",
+        "PF000015": "670,00€ (à revoir pour être plus bas que le prix de la quantification)",
+        "PF000016": "185,00€ (à revoir pour être plus haut que le prix de l'identification, inclure un rabais si l'identification a été faite avant)",
+        "PF000018": "430,00€ (à revoir pour être plus haut que le prix de l'identification, inclure un rabais si l'identification a été faite avant)",
+        "PF000019": "430,00€ ",
+        "PF000020": "670,00€ (à revoir pour être plus bas que le prix de la quantification)",
         "PF000033": "640,00€",
         "PF000035": "1015,00€",
         "PF000047": "830,00€",
@@ -601,8 +601,8 @@ export const texts = {
           "contact_link": "Contactez-nous"
         },
         "qna-group-q1_sub1": {
-          "recommendation_text": "Notre recommandation :",
-          "conclusion_text_prefix": "Vous pouvez obtenir très rapidement la **confirmation de l'absence ou de la présence de la pyriculariose** grâce à notre kit de **diagnostic** dédié : Diagbox PF00011. Ce diagnostic est rapide et simple à réaliser : il suffit de passer une lingette sur les lames de la tondeuse, nous l'envoyer avec l'enveloppe prépayée, pour obtenir le résultat en 48h. \n\n**S'il s'avère positif**, nous vous recommanderons alors de **quantifier** l'importance de la présence du pathogène par une analyse sur les déchets de tonte (Diagbox PF 00016). En fonction des niveaux atteints, nous pourrons vous apporter  des conseils sur **des mesures adaptées à votre situation** à envisager contre ce pathogène.\n\nSi vous souhaitez une couverture plus large des risques, vous pouvez opter pour un **audit** de l'état de santé **complet** de votre gazon, à travers un **diagnostic fin et global sur la présence ou l'absence de l'ensemble des pathogènes** potentiellement présents (Diagbox PF 00015). En fonction de son résultat, vous pourrez passer à une quantification sur les déchets de tonte de la pyriculariose seule (Diagbox PF 00016), ou de l'ensemble des pathogènes présents (Diagbox PF000020) pour obtenir la **quantification du pathogène principal et du ou des pathogènes secondaires**. Nous serons alors en mesure d'évaluer l'importance des risques pour votre gazon, et de vous apporter des **conseil ciblés** sur les mesures à envisager.",
+          "recommendation_text": "Nos recommandations :",
+          "conclusion_text_prefix": "**Testez d'abord la présence de la pyriculariose** grâce à notre kit de **diagnostic** dédié (Diagbox PF00011). Ce kit est **rapide et simple à réaliser** : il contient une lingette à passer sur les lames de votre tondeuse après coupe, et une enveloppe prépayée pour nous expédier la lingette et obtenir le résultat en 48h. \n\n**Sile test est positif**, utilisez le kit de mesure (Diagbox PF 00016) pour **quantifier** l'importance de la présence du pathogène, en envoyant dans ce kit des déchets de tonte. Nous pourrons alors vous conseiller sur **des mesures adaptées à votre situation**.\n\nUn doute subsiste ? Ou vous préférez sauter les étapes et faire tout de suite un diagnostic complet ? Optez pour un **audit** de l'état de santé **complet** de votre gazon, à travers un **diagnostic global sur la présence de l'ensemble des principaux pathogènes** (Diagbox PF 00015). En cas de détection, passez à une mesure plus précise des pathogènes présents (Diagbox PF000020) pour obtenir la **quantification du pathogène principal et du ou des pathogènes secondaires**. Nous pourrons alors vous apporter des **conseil ciblés** sur les mesures à envisager.",
           "conclusion_text_suffix": "Les DIAGBOX® recommandées :"
         },
         "qna-group-q1_sub2": {
@@ -626,26 +626,26 @@ export const texts = {
           "conclusion_text_suffix": ""
         },
         "qna-group-q2_sub1": {
-          "recommendation_text": "Notre recommandation :",
-          "conclusion_text_prefix": "Pour une première approche rapide, vous pouvez faire un **diagnostic de présence** des principaux pathogènes présents dans votre gazon, avec la Diagbox PF 00015. Ce diagnostic est **rapide et simple** à réaliser : il suffit de passer une lingette sur les lames de la tondeuse, nous l'envoyer avec l'enveloppe prépayée, pour obtenir le résultat en 48h. Vous connaîtrez alors votre risque de court terme, et nous pourrons vous apporter à partir de là des conseils pour orienter vos actions.\n\nSi vous souhaitez au contraire tout de suite avoir une **évaluation globale de vos risques à court, moyens et long terme**, pour bâtir un vrai **plan de prévention**, nous recommandons de réaliser directement une **quantification des pathogènes dans chacun des compartiments** : feuilles, racines et sols, avec la Diagbox PF 00050.\n\nA partir de cet état, nous pourrons vous conseiller les actions à entreprendre, et mettre en place **un suivi** dans la durée pour **optimiser les apports de produits de traitement**.\n\nBien entendu, nous pouvons vous proposer des **approches intermédiaires adaptées à vos besoins et contraintes** : n'hésitez pas à nous contacter pour cela !",
+          "recommendation_text": "Nos recommandations :",
+          "conclusion_text_prefix": "Faites un **diagnostic de présence** des principaux pathogènes présents dans votre gazon, grâce à la Diagbox PF 00015. Ce kit est **rapide et simple** à réaliser : il contient une lingette à passer sur les lames de votre tondeuse après coupe, et une enveloppe prépayée pour nous expédier la lingette et obtenir le résultat en 48h. Vous connaîtrez alors **votre risque de court terme**, et nous vous apporterons des conseils pour orienter vos actions.\n\nVous voulez tout de suite le niveau le plus élevé de maîtrise des risques ? Optez pour une **évaluation globale de vos risques à court, moyens et long terme**, afin de bâtir un vrai **plan de prévention** : réalisez pour cela directement une **quantification des pathogènes dans chacun des compartiments** : feuilles, racines et sols, avec la Diagbox PF 00050.\nA partir des résultat de cette quantification, nous vous conseillerons sur les actions à entreprendre, et vous accompagnerons pour mettre en place **un suivi** dans la durée, avec des **outils de visualisation des résultats** pour optimiser les apports de produits de traitement.\n\nBien entendu, nous pouvons vous proposer des **approches intermédiaires adaptées à vos besoins et contraintes** : n'hésitez pas à nous contacter pour cela !",
           "conclusion_text_suffix": "Les DIAGBOX® recommandées :"
         },
         "qna-group-q3": {
-          "recommendation_text": "Notre recommandation :",
-          "conclusion_text_prefix": "Nous vous recommandons de réaliser **le plus rapidement possible** la quantification des pathogènes présents dans les feuilles des zones touchées. Pour cela, vous pouvez recourir aux Diagbox PF 0018 si la détection a lieu en été, ou PF 00019 en hivers. Pour encore **plus de réactivité et de facilité**, vous pouvez aussi **disposer à l'avance** de la Diagbox PF00020 qui couvre l'ensemble des pathogènes et que vous **utilisez dès que des symptômes apparaissent**.\n\n**Si plusieurs zone différentes sont déjà touchées**, nous recommandons de réaliser **un prélèvement (avec une Diagbox dédiée) différent pour chaque zone** : cela permettra de faire un diagnostic plus précis et plus complet.\n\nNous serons alors en mesure des vous accompagner pour mettre en place les traitements, et voir avec vous si des diagnostic des autres compartiments (racine, sols) sont nécessaires.",
+          "recommendation_text": "Nos recommandations :",
+          "conclusion_text_prefix": "Réalisez **le plus rapidement possible** la quantification des pathogènes présents en nous envoyant des feuilles des zones touchées. Pour cela, utilisez la Diagbox PF 00018 si l'apparition des symptômes a lieu en été, ou PF 00019 en hivers. \n\nPour encore **plus de réactivité et de facilité, disposez dans vos stocks ** de la Diagbox PF00020 qui couvre l'ensemble des pathogènes et **utilisez-la dès que des symptômes apparaissent**.\n\n**Si plusieurs zone différentes sont déjà touchées**, réalisez de préférence **un prélèvement différent pour chaque zone** avec les Diagbox choisies: cela permettra de faire un diagnostic pour chaque endroit touché et d'aller vers des solutions encore plus adaptées.\n\nNous vous accompagnerons pour le suivi des traitements, et voir avec vous si des diagnostic des autres compartiments (racine, sols) sont nécessaires.",
           "conclusion_text_suffix": "Les DIAGBOX® recommandées :"
         },
         "qna-group-q4_combined": {
-          "recommendation_text": "Notre recommandation :",
-          "conclusion_text_prefix": "Nous recommandons de réaliser **un diagnostic des sols** avant tout nouveau plaquage, avec la Diagbox PF 00047 : les pathogènes présent dans les sols, même en faibles quantités, représentent un **risque de long terme** et peuvent conduire à la destruction prématurée de votre pelouse, ou au minimum à des **surcoûts d'entretien**. Les identifier et les quantifier nous permettra de vous accompagner dans la mise en place de traitement et d'un suivi. **Vous sécuriser ainsi votre investissement**.\n\nFort de notre expérience sur des cas concrets, nous recommandons également de **tester les plaquages livrés**, pour évaluer leur bon état (Diagbox PF 00049). Vous pouvez aussi demander à votre fournisseur de vous donner une preuve de ce bon état, par exemple avec un relevé des mesures réalisées par ses soins.\n\nSi vous optez pour la réalisation de l'ensemble des analyses par vous même, vous pouvez recourir à la Digabox PF 00050 qui **intègre les analyses des trois compartiments (sols + feuilles et racines)**.",
+          "recommendation_text": "Nos recommandations :",
+          "conclusion_text_prefix": "Réalisez **un diagnostic des sols** avant tout nouveau plaquage, avec la Diagbox PF 00047 : les pathogènes présents dans les sols, même en faibles quantités, représentent un **risque de long terme** et peuvent conduire à la destruction prématurée de votre pelouse, ou à des **surcoûts d'entretien**. Nous vous accompagnerons ensuite au besoin dans le suivi des traitements et de l'état de santé du sol. \n\nVous voulez encore plus sécuriser votre investissement ? **Testez également les plaquages livrés**, pour évaluer leur bon état (Diagbox PF 00049), ou demandez à votre fournisseur une preuve de ce bon état, par exemple avec un relevé de mesures réalisées par ses soins.\n\nSi vous optez pour la réalisation de l'ensemble des analyses par vous même, utilisez la Digabox PF 00050 qui **intègre les analyses des trois compartiments (sols + feuilles et racines)**.",
           "conclusion_text_suffix": "Les DIAGBOX® recommandées :"
         }
       },
       "qna_bon_a_savoir": {
-        "q1": "La **Pyriculariose** est malheureusement une maladie pour laquelle **il n'existe pas encore de traitements**. Une fois présente, elle peut s'étendre et détruire l'ensemble d'une pelouse en quelques semaines si les conditions s'y prêtent. La seule solution est alors un remplacement de la pelouse. Une **détection la plus précoce possible** est donc un atout majeur pour **réduire les risques et les coûts** pour l'exploitant : elle permet d'intervenir sur une portion réduite de la la pelouse, et d'éviter de plus que le pathogène ne s'incruste dans les sols.",
-        "q2": "**La loi Labbé** de 2014 impose depuis le 1er janvier 2025 la **suppression des produits phytosanitaires de synthèse** pour le traitement des gazons sportifs. Cela **réduit le nombre de produits utilisables** et vous conduit peut être à revoir vos programmes de traitement. Dans ce contexte, pouvoir **anticiper au plus tôt avant la diffusion d'une maladie** apporte un avantage considérable pour protéger votre gazon au meilleur coût. Cela suppose un suivi des **risques de court ou moyen termes (feuilles et racines), mais aussi des risques à long terme (sol)**.",
-        "q3": "Quand une détérioration du gazon est détectée, cela indique un **niveau déjà important** du ou des pathogènes en cause. **Identifier au plus vite tous les agents responsables**, c'est pouvoir mettre en place les traitements adaptés avec le plus de chances de sauver la pelouse ou de limiter les coûts d'entretien.",
-        "q4": "Installer un nouveau plaquage représente un **investissement conséquent**. Or trop souvent, aucune évaluation de la santé des sols ni du gazon apportés n'est faite, et il arrive malheureusement que des pathogènes encore présents dans le sol, ou apportés par le plaquages, **amènent à des coûts d'entretiens élevés**, voir au pire ruinent la nouvelle pelouse. Une **vérification préalable de leur état de santé** serait pourtant une précaution élémentaire au regard de l'investissement réalisé.",
+        "q1": "La **Pyriculariose** est malheureusement une maladie pour laquelle **il n'existe pas encore de traitements**. \nElle peut s'étendre et détruire une pelouse en quelques semaines. \nIAGE a défini des outils de **détection précoce** pour réduire les risques et les coûts d'entretien et intervenir avant que la pyriculariose ne s'incruste dans les sols.",
+        "q2": "**Depuis le 1er janvier 2025**, la loi Labbé de 2014 impose la **suppression des produits phytosanitaires de synthèse** pour le traitement des gazons sportifs. \n**Le nombre de produits utilisables est réduit** et vous avez peut être dû revoir vos programmes de traitement.\nIAGE a défini des outils pour '**réagir au plus tôt, avant la diffusion d'une maladie** et assurer un **suivi des risques de court ou moyen termes (feuilles et racines), et des risques à long terme (sol)** afin de maîtriser vos coûts d'entretien en protégeant au mieux votre gazon.",
+        "q3": "Une **détérioration visible** du gazon indique un **niveau déjà important** du ou des pathogènes en cause. \nIAGE a défini des outils pour **identifier au plus vite tous les agents responsables**, et vous permettre de mettre en place les traitements adaptés avec le plus de chances de sauver la pelouse et de limiter vos coûts d'entretien.",
+        "q4": "Installer un nouveau plaquage représente un **investissement conséquent**. \nL'absence d'évaluation de la santé des sols ou du gazon apportés peut permettre à des pathogènes présents dans le sol ou apportés par le plaquages de proliférer, **conduisant à des coûts d'entretiens élevés**, voir au pire à la ruine de la nouvelle pelouse. \nIAGE a défini des outils pour assurer une **vérification préalable des états de santé de chaque compartiment** (sol, racines, feuilles) pour réduire les risques au regard de l'investissement réalisé.",
         "q5": "Il y a en effet de nombreuses situations différentes ! Nous serons heureux de voir avec vous comment vous aider au mieux"
       }
     }
