@@ -23,9 +23,9 @@ export const texts = {
       "card_title_industrial": "Fermentations agroalimentaire,\nTraitement des eaux – bio-énergie...",
       "card_title_turf": "Gazons naturels professionnels, parcs, jardins",
       "cta": "Contactez-nous",
-      "professional_intro": "Nos services pour vos secteurs d'activité :",
-      "subtitle": "Voir l'invisible pour agir à temps",
-      "title": "L'expertise du vivant à votre service"
+      "professional_intro": "Découvrez nos solutions :",
+      "subtitle": "L'expertise scientifique enfin accessible pour vos décisions de terrain",
+      "title": "Voyez l'invisible. Agissez à temps"
     },
     "sectors": {
       "01": {
@@ -77,7 +77,7 @@ export const texts = {
       "subdomain_sports_turf": "Vous souhaiter mieux assurer la qualité des Gazons sportifs des stades",
       "subdomain_viticulture": "Vous souhaiter mieux protéger vos vignes contre leurs différents pathogènes",
       "subdomain_winemaking": "Vous souhaitez mieux contrôler les processus biologique dans vos étapes de vinification",
-      "title": "Nous répondons à vos questions"
+      "title": "Vos enjeux, nos outils"
     },
     "services": {
       "0": {
@@ -522,7 +522,7 @@ export const texts = {
         "reco_PF000047": "Pour contrôler l'état du sol (substrat)",
         "reco_PF000048": "Pour contrôler l'état des racines",
         "reco_PF000049": "Pour un suivi conjoint racines et partie aérienne",
-        "reco_PF000050": "Pour un état de santé des trois compartiments (sol + racines + gazon) et sécuriser un nouveau plaquage"
+        "reco_PF000050": "Pour un état de santé des trois compartiments (sol + racines + gazon) ou sécuriser un nouveau plaquage"
       },
       "racine": {
         "catchphrase": "Pensée pour aller chercher les réponses là où tout commence : dans les racines.",
