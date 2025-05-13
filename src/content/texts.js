@@ -19,8 +19,8 @@ export const texts = {
     },
     "hero": {
       "card_title_agriculture": "Agriculture, élevage",
-      "card_title_health": "Santé publique, \r\nHygiène dans les bâtiments",
-      "card_title_industrial": "Fermentations agroalimentaire,\r\nTraitement des eaux – bio-énergie...",
+      "card_title_health": "Santé publique, \nHygiène dans les bâtiments",
+      "card_title_industrial": "Fermentations agroalimentaire,\nTraitement des eaux – bio-énergie...",
       "card_title_turf": "Gazons naturels professionnels, parcs, jardins",
       "cta": "Contactez-nous",
       "professional_intro": "Nos services pour vos secteurs d'activité :",
@@ -29,7 +29,7 @@ export const texts = {
     },
     "sectors": {
       "01": {
-        "description": "Mesures de pathogènes dans les eaux usées \r\nPossibilité de Certification COFRAC",
+        "description": "Mesures de pathogènes dans les eaux usées \nPossibilité de Certification COFRAC",
         "name": "Epidémiosurveillance (WES)"
       },
       "02": {
@@ -123,14 +123,14 @@ export const texts = {
     "page": {
       "back_to_sectors_link_text": "Voir nos domaines d'activité",
       "back_to_sectors_title": "Explorer nos domaines d'application",
-      "catalog_description": "Nous proposons un large catalogue d'analyses standardisées, validées et optimisées pour différents types de matrices (eaux, sols, air, surfaces, etc.). Ces analyses couvrent la détection et la quantification de nombreux micro-organismes (virus, bactéries, champignons) et paramètres spécifiques.\r\n\r\nToutes nos mesures de microbiologie – quantification d'ADN ou d'ARN – sont réalisées en digital PCR et à partir de procédés de préparations développés et optimisés par IAGE. Cela garanti leur précision, leur sensibilité et leur répétabilité. IAGE est à ce jour le seul laboratoire à proposer des analyses en digital PCR dans les eaux usées certifiées COFRAC\r\n\r\nConsultez notre catalogue pour trouver l'analyse adaptée à votre besoin.",
+      "catalog_description": "Nous proposons un large catalogue d'analyses standardisées, validées et optimisées pour différents types de matrices (eaux, sols, air, surfaces, etc.). Ces analyses couvrent la détection et la quantification de nombreux micro-organismes (virus, bactéries, champignons) et paramètres spécifiques.\n\nToutes nos mesures de microbiologie – quantification d'ADN ou d'ARN – sont réalisées en digital PCR et à partir de procédés de préparations développés et optimisés par IAGE. Cela garanti leur précision, leur sensibilité et leur répétabilité. IAGE est à ce jour le seul laboratoire à proposer des analyses en digital PCR dans les eaux usées certifiées COFRAC\n\nConsultez notre catalogue pour trouver l'analyse adaptée à votre besoin.",
       "catalog_title": "Analyses catalogue : Précision et Fiabilité",
       "category1_title": "Analyses de précision",
       "category2_title": "Diagbox® et Services pour l'aide à la décision",
       "category3_title": "Équipements et laboratoires dédiés",
-      "development_description": "Face à des enjeux émergents (virus, bactéries), pour intégrer une analyse spécifique dans un projet de recherche ou pour un POC (Proof Of Concept) répondant à un appel d'offres, IAGE s'engage dans le développement et la validation de nouvelles méthodes d'analyse.\r\n\r\nNotre processus débute par une étude de faisabilité (étude bibliographique, design, matrice, critères d'efficacité attendus, ressources humaines). L'offre de prix, validée par nos directions scientifique, recherche et commerciale, reflète ce travail de R&D (temps expert, achats spécifiques). L'intégration d'analyses catalogue existantes au sein du développement peut permettre d'optimiser les coûts.\r\n\r\nC'est une approche partenariale pour innover ensemble.",
+      "development_description": "Face à des enjeux émergents (virus, bactéries), pour intégrer une analyse spécifique dans un projet de recherche ou pour un POC (Proof Of Concept) répondant à un appel d'offres, IAGE s'engage dans le développement et la validation de nouvelles méthodes d'analyse.\n\nNotre processus débute par une étude de faisabilité (étude bibliographique, design, matrice, critères d'efficacité attendus, ressources humaines). L'offre de prix, validée par nos directions scientifique, recherche et commerciale, reflète ce travail de R&D (temps expert, achats spécifiques). L'intégration d'analyses catalogue existantes au sein du développement peut permettre d'optimiser les coûts.\n\nC'est une approche partenariale pour innover ensemble.",
       "development_title": "Développement de nouvelles méthodes : Innovation et R&D",
-      "diagbox_description": "Nos kits DiagBox® sont des solutions clé-en-main pour des analyses rapides (résultats en 48h) et autonomes.\r\n\r\nChaque kit inclut le matériel de prélèvement adapté, le transport et l'analyse en laboratoire. \r\n\r\nFaciles à stocker et à utiliser, ils sont idéaux pour le contrôle qualité régulier, le suivi ou la confirmation rapide d'une suspicion (ex: pathogènes gazon, qualité de l'air intérieur, nuisibles).",
+      "diagbox_description": "Nos kits DiagBox® sont des solutions clé-en-main pour des analyses rapides (résultats en 48h) et autonomes.\n\nChaque kit inclut le matériel de prélèvement adapté, le transport et l'analyse en laboratoire. \n\nFaciles à stocker et à utiliser, ils sont idéaux pour le contrôle qualité régulier, le suivi ou la confirmation rapide d'une suspicion (ex: pathogènes gazon, qualité de l'air intérieur, nuisibles).",
       "diagbox_title": "DiagBox® : Simplicité et Rapidité",
       "intro": "Découvrez comment IAGE répond à vos besoins spécifiques et vous aide dans vos prises de décision opérationnelles grâce à une gamme complète d'analyses, de services et de produits",
       "local_labs_description": "Pour des besoins récurrents, des volumes importants ou une nécessité de résultats ultra-rapides, nous pouvons étudier la mise en place de laboratoires d'analyse locaux, spécialisés et dédiés à votre activité. Cette solution offre une autonomie et une réactivité maximales, avec notre support pour l'installation, la formation et le suivi qualité.",
@@ -141,9 +141,9 @@ export const texts = {
       "modeling_title": "Modélisations et anticipations",
       "sampling_advice_description": "Description à compléter...",
       "sampling_advice_title": "Conseil et solutions pour faciliter les prélèvements",
-      "sampling_description": "La qualité de l'analyse commence par un prélèvement pertinent. Nous fournissons ou recommandons les outils et process de prélèvement les mieux adaptés à votre matrice et à vos objectifs.\r\n\r\nEn particulier pour les applications qui utilisent des matrices eaux dans des milieux dynamiques (réseaux d'eaux usées sous circulation, sorties de bâtiments, cours d'eau, mer,...), nous avons développé des préleveurs automatiques  adaptés aux prélèvements en continu d'eaux dans ces contextes difficiles, et des dispositifs spécifiques pour garantir l'intégrité de vos échantillons.",
+      "sampling_description": "La qualité de l'analyse commence par un prélèvement pertinent. Nous fournissons ou recommandons les outils et process de prélèvement les mieux adaptés à votre matrice et à vos objectifs.\n\nEn particulier pour les applications qui utilisent des matrices eaux dans des milieux dynamiques (réseaux d'eaux usées sous circulation, sorties de bâtiments, cours d'eau, mer,...), nous avons développé des préleveurs automatiques  adaptés aux prélèvements en continu d'eaux dans ces contextes difficiles, et des dispositifs spécifiques pour garantir l'intégrité de vos échantillons.",
       "sampling_title": "Outils de prélèvement adaptés",
-      "specific_description": "Vos besoins sont uniques ? Nous pouvons combiner plusieurs méthodes d'analyses catalogue ou adapter nos protocoles pour répondre précisément à vos problématiques.\r\n\r\nLa combinaison de méthodes nécessite une étape de validation technique impliquant des analyses supplémentaires (réplicas). La tarification est donc établie sur mesure, prenant en compte le type d'échantillon, le résultat attendu, les méthodes unitaires utilisées et les analyses de validation nécessaires.",
+      "specific_description": "Vos besoins sont uniques ? Nous pouvons combiner plusieurs méthodes d'analyses catalogue ou adapter nos protocoles pour répondre précisément à vos problématiques.\n\nLa combinaison de méthodes nécessite une étape de validation technique impliquant des analyses supplémentaires (réplicas). La tarification est donc établie sur mesure, prenant en compte le type d'échantillon, le résultat attendu, les méthodes unitaires utilisées et les analyses de validation nécessaires.",
       "specific_title": "Combinaisons spécifiques : Flexibilité sur mesure",
       "thresholds_description": "Description à compléter...",
       "thresholds_title": "Définitions de seuils pour faciliter les prises de décision",
@@ -231,7 +231,7 @@ export const texts = {
           "description": "Consultez notre catalogue d'analyses pour les principaux pathogènes du gazon. Nous pouvons combiner des analyses pour un profil complet ou rechercher des pathogènes spécifiques sur demande.",
           "title": "Analyses Catalogue et Combinaisons Spécifiques"
         },
-        "catchphrase": "En charge de l'entretien de gazons sportifs (clubs, collectivités, distributeurs), vous faites face à à la diffusion de la Pyriculariose qui menace vos pelouses, tandis que la loi Labbé supprime l'usage des produits phytosanitaires de synthèse.\r\nComment répondre à ces nouveaux défis de manière efficace et économique ?",
+        "catchphrase": "En charge de l'entretien de gazons sportifs (clubs, collectivités, distributeurs), vous faites face à à la diffusion de la Pyriculariose qui menace vos pelouses, tandis que la loi Labbé supprime l'usage des produits phytosanitaires de synthèse.\nComment répondre à ces nouveaux défis de manière efficace et économique ?",
         "cta": {
           "diagbox": "Découvrir DiagBox® Gazon"
         },
@@ -243,11 +243,11 @@ export const texts = {
           "description": "Le kit clé-en-main pour prélever facilement gazon, racines ou substrat et obtenir en 48h un diagnostic précis des pathogènes présents. Anticipez les traitements et optimisez la santé de vos terrains.",
           "title": "DiagBox® Gazon"
         },
-        "intro": "IAGE aide à préserver la qualité de vos gazons et à réduire vos coûts d'entretien grâce :\r\n    - à ses services de détection précoce et précise des champignons responsables des maladies du gazon\r\n    - à ses recommandations et outils de suivis adaptés à votre situation et à vos besoins",
+        "intro": "IAGE aide à préserver la qualité de vos gazons et à réduire vos coûts d'entretien grâce :\n    - à ses services de détection précoce et précise des champignons responsables des maladies du gazon\n    - à ses recommandations et outils de suivis adaptés à votre situation et à vos besoins",
         "services": {
           "title": "Vous vous posez des questions sur la santé de vos gazons, voici nos solutions :"
         },
-        "perspective_text": "Vous faites face à de nouveaux défis économiques et environnementaux : depuis 2016, **la pyriculariose** élargit sa prolifération en France. Cette maladie du gazon, pour laquelle il n'y a **pas encore de traitement**, peut détruire un terrain en quelques semaines, et peux conduire de ce fait à des remplacements de terrains très coûteux. En parallèle, vis à vis des autres pathogènes, la loi Labbé, adoptée en 2014, **interdit l'usage des produits phytosanitaires de synthèse sur les pelouses sportives naturelles** depuis le 1er janvier, ce qui réduit les produits de traitement disponibles et vous impose de répondre aux risques à travers  de nouvelles pratiques. Comment répondre à ces défis d'une manière économiquement supportable ?\r\n\r\nLa clé d'une réponse efficace à ces deux problématiques : la **détection très précoce des pathogènes**, pour permettre des traitements localisés, ou limiter les besoins de remplacement des gazons. Encore faut-il pouvoir non seulement détecter de manière précise et précoce, encore faut-il aussi pouvoir le faire dans tous les compartiments : **les feuilles, les racines, les sols**. A défaut de quoi, si le pathogène a pu s'installer dans le sol, le seul remplacement de la pelouse ne conduira qu'à devoir le refaire de manière répétée !\r\n\r\nIAGE, à partir de sa technologie de mesure, de ses propres innovations et en partenariat avec plusieurs partenaires académiques, a mis au point **un ensemble de solutions de détection, d'interprétation et de conseils** pour répondre à tous les cas de figure des exploitants de gazons sportifs. En travaillant sur le terrain avec ses premiers clients, IAGE a construit des **solutions clefs en main**, facilement mises en oeuvre par les exploitants, pour leur permettre de conserver dans la durée un gazon performant dans le plein respect de leurs objectifs environnementaux et économiques.\r\n\r\nGrâce à ces études et applications engagées **depuis 2022, IAGE a développé une expertise reconnue** sur l'apparition des pathogènes et maladies du gazon, sur la manière d'évaluer la situation d'un terrain, et sur les solutions les mieux adaptées pour **anticiper les risques**.\r\n\r\nQue vous ayez un problème ponctuel, ou que vous souhaitiez mettre en place un suivi en continu de votre gazon, IAGE a une solution pour vous : **explorez nos solutions** ou **contactez-nous pour une analyses spécifique de vos besoins**."
+        "perspective_text": "Vous faites face à de nouveaux défis économiques et environnementaux : depuis 2016, **la pyriculariose** élargit sa prolifération en France. Cette maladie du gazon, pour laquelle il n'y a **pas encore de traitement**, peut détruire un terrain en quelques semaines, et peux conduire de ce fait à des remplacements de terrains très coûteux. En parallèle, vis à vis des autres pathogènes, la loi Labbé, adoptée en 2014, **interdit l'usage des produits phytosanitaires de synthèse sur les pelouses sportives naturelles** depuis le 1er janvier, ce qui réduit les produits de traitement disponibles et vous impose de répondre aux risques à travers  de nouvelles pratiques. Comment répondre à ces défis d'une manière économiquement supportable ?\n\nLa clé d'une réponse efficace à ces deux problématiques : la **détection très précoce des pathogènes**, pour permettre des traitements localisés, ou limiter les besoins de remplacement des gazons. Encore faut-il pouvoir non seulement détecter de manière précise et précoce, encore faut-il aussi pouvoir le faire dans tous les compartiments : **les feuilles, les racines, les sols**. A défaut de quoi, si le pathogène a pu s'installer dans le sol, le seul remplacement de la pelouse ne conduira qu'à devoir le refaire de manière répétée !\n\nIAGE, à partir de sa technologie de mesure, de ses propres innovations et en partenariat avec plusieurs partenaires académiques, a mis au point **un ensemble de solutions de détection, d'interprétation et de conseils** pour répondre à tous les cas de figure des exploitants de gazons sportifs. En travaillant sur le terrain avec ses premiers clients, IAGE a construit des **solutions clefs en main**, facilement mises en oeuvre par les exploitants, pour leur permettre de conserver dans la durée un gazon performant dans le plein respect de leurs objectifs environnementaux et économiques.\n\nGrâce à ces études et applications engagées **depuis 2022, IAGE a développé une expertise reconnue** sur l'apparition des pathogènes et maladies du gazon, sur la manière d'évaluer la situation d'un terrain, et sur les solutions les mieux adaptées pour **anticiper les risques**.\n\nQue vous ayez un problème ponctuel, ou que vous souhaitiez mettre en place un suivi en continu de votre gazon, IAGE a une solution pour vous : **explorez nos solutions** ou **contactez-nous pour une analyses spécifique de vos besoins**."
       },
       "05": {
         "catalog": {
@@ -379,7 +379,7 @@ export const texts = {
         "title": "Idéal pour"
       },
       "kit_content": {
-        "text": "Matériel de prélèvement\r\nInstructions d'utilisation simples\r\nEmballage sécurisé avec transport inclus\r\nAnalyse dPCR en laboratoire",
+        "text": "Matériel de prélèvement\nInstructions d'utilisation simples\nEmballage sécurisé avec transport inclus\nAnalyse dPCR en laboratoire",
         "title": "Contenu d'un kit type"
       },
       "kits": {
@@ -432,7 +432,7 @@ export const texts = {
           "targets": "Combine les cibles des kits PF000020 (Déchets Tonte - Diagnostic) et PF000048 (Racine - Diagnostic)"
         },
         "PF000050": {
-          "name": "Pathogènes du gazon - Accompagnement plaquage",
+          "name": "Pathogènes du gazon – Etat global ou Accompagnement plaquage",
           "targets": "Combine les cibles des kits PF000020 (Déchets Tonte - Diagnostic), PF000047 (Substrat - Diagnostic) et PF000048 (Racine - Diagnostic)"
         }
       },
@@ -510,13 +510,19 @@ export const texts = {
         "q1_sub5_PF000047": "pour contrôler l'état du sol",
         "q2_sub1_PF000033": "pour analyser la présence des pathogènes d'été sur un gazon symptomatique",
         "q2_sub1_PF000035": "pour une analyse à large spectre d'un gazon symptomatique",
-        "q3_PF000050": "Pour sécuriser un nouveau plaquage (sol + racines + gazon)",
+        "q3_PF000050": "Pour un état de santé des trois compartiments (sol + racines + gazon) et sécuriser un nouveau plaquage",
         "q4_PF000049": "<b>Suivi conjoint racines et partie aérienne</b>, pour vérifier efficacement l'effet de traitements et/ou pouvoir réagir au plus tôt aux risques de contamination",
         "q4_PF000050": "<b>Accompagnement plaquage</b> : un contrôle complet pour maitriser tous les risques : identifier des pathogènes éventuels dans le substrat avant pose, et réduire les risques d'un apport de pathogènes dans le nouveau plaquage",
         "reco_PF000015": "Pour un diagnostic global de tous les pathogènes du gazon (lingette)",
         "reco_PF000020": "Pour quantifier précisément le risque principal et les pathogènes secondaires (déchets de tonte)",
         "reco_PF000011": "Pour cibler uniquement la pyriculariose (lingette)",
-        "reco_PF000016": "Pour quantifier la pyriculariose (déchets de tonte)"
+        "reco_PF000016": "Pour quantifier la pyriculariose (déchets de tonte)",
+        "reco_PF000018": "Pour un contrôle ciblé sur des portions du gazon en été",
+        "reco_PF000019": "Pour un contrôle ciblé sur des portions du gazon en hivers",
+        "reco_PF000047": "Pour contrôler l'état du sol (substrat)",
+        "reco_PF000048": "Pour contrôler l'état des racines",
+        "reco_PF000049": "Pour un suivi conjoint racines et partie aérienne",
+        "reco_PF000050": "Pour un état de santé des trois compartiments (sol + racines + gazon) et sécuriser un nouveau plaquage"
       },
       "racine": {
         "catchphrase": "Pensée pour aller chercher les réponses là où tout commence : dans les racines.",
@@ -583,7 +589,7 @@ export const texts = {
       "types": {
         "dechet": "Déchets de Tonte",
         "lingette": "Lingette",
-        "plaquage": "Accompagnement Plaquage",
+        "plaquage": "Etat de santé complet – Accompagnement Plaquage",
         "racine": "Racine",
         "racine_gazon": "Racine + Gazon",
         "sol": "Sol / Substrat",
@@ -596,51 +602,51 @@ export const texts = {
         },
         "qna-group-q1_sub1": {
           "recommendation_text": "Notre recommandation :",
-          "conclusion_text_prefix": "Même si votre inquiétude porte sur la pyriculariose, nous vous recommandons de faire un **audit** de l'état de santé **complet** de votre gazon, à travers un **diagnostic fin et global sur la présence ou l'absence de l'ensemble des pathogènes** potentiellement présents (Diagbox PF 00015). Ce diagnostic est rapide et simple à réaliser : il suffit de passer une lingette sur les lames de la tondeuse, nous l'envoyer avec l'enveloppe prépayée, et nous vous indiquerons tous les pathogènes présents. \r\n\r\n**En cas de détection positive**, nous vous recommandons vivement de passer à une analyse sur les déchets de tonte (PF000020) qui permettra la **quantification du pathogène principal et du ou des pathogènes secondaires**. Nous serons alors en mesure d'évaluer l'importance du risque pour votre gazon, et de vous apporter des **conseil ciblés** sur les mesures à envisager.\r\n\r\nVous pouvez bien entendu **choisir de ne tester que la présence de la Pyriculariose**, si c'est le seul risque que vous voulez évaluer (avec les Diagbox de diagnostic PF00011 et quantification PF 00016). S'il s'avère présent, nous vous apporterons des conseils sur **des mesures adaptées à votre situation** à envisager contre ce pathogène.",
+          "conclusion_text_prefix": "Vous pouvez obtenir très rapidement la **confirmation de l'absence ou de la présence de la pyriculariose** grâce à notre kit de **diagnostic** dédié : Diagbox PF00011. Ce diagnostic est rapide et simple à réaliser : il suffit de passer une lingette sur les lames de la tondeuse, nous l'envoyer avec l'enveloppe prépayée, pour obtenir le résultat en 48h. \n\n**S'il s'avère positif**, nous vous recommanderons alors de **quantifier** l'importance de la présence du pathogène par une analyse sur les déchets de tonte (Diagbox PF 00016). En fonction des niveaux atteints, nous pourrons vous apporter  des conseils sur **des mesures adaptées à votre situation** à envisager contre ce pathogène.\n\nSi vous souhaitez une couverture plus large des risques, vous pouvez opter pour un **audit** de l'état de santé **complet** de votre gazon, à travers un **diagnostic fin et global sur la présence ou l'absence de l'ensemble des pathogènes** potentiellement présents (Diagbox PF 00015). En fonction de son résultat, vous pourrez passer à une quantification sur les déchets de tonte de la pyriculariose seule (Diagbox PF 00016), ou de l'ensemble des pathogènes présents (Diagbox PF000020) pour obtenir la **quantification du pathogène principal et du ou des pathogènes secondaires**. Nous serons alors en mesure d'évaluer l'importance des risques pour votre gazon, et de vous apporter des **conseil ciblés** sur les mesures à envisager.",
           "conclusion_text_suffix": "Les DIAGBOX® recommandées :"
         },
         "qna-group-q1_sub2": {
-          "recommendation_text": "(Texte de recommandation pour Kits Diagbox : Contrôle Pathogènes Courants (précoce) à compléter dans texts.csv)",
-          "conclusion_text_prefix": "(Texte de conclusion avant le lien pour Kits Diagbox : Contrôle Pathogènes Courants (précoce) à compléter)",
-          "conclusion_text_suffix": "(Texte de conclusion après le lien pour Kits Diagbox : Contrôle Pathogènes Courants (précoce) à compléter)."
+          "recommendation_text": "",
+          "conclusion_text_prefix": "",
+          "conclusion_text_suffix": ""
         },
         "qna-group-q1_sub3": {
-          "recommendation_text": "(Texte de recommandation pour Kits Diagbox : Contrôle Tous Pathogènes Habituels (précoce) à compléter dans texts.csv)",
-          "conclusion_text_prefix": "(Texte de conclusion avant le lien pour Kits Diagbox : Contrôle Tous Pathogènes Habituels (précoce) à compléter)",
-          "conclusion_text_suffix": "(Texte de conclusion après le lien pour Kits Diagbox : Contrôle Tous Pathogènes Habituels (précoce) à compléter)."
+          "recommendation_text": "",
+          "conclusion_text_prefix": "",
+          "conclusion_text_suffix": ""
         },
         "qna-group-q1_sub4": {
-          "recommendation_text": "(Texte de recommandation pour Kits Diagbox : Contrôle des Racines à compléter dans texts.csv)",
-          "conclusion_text_prefix": "(Texte de conclusion avant le lien pour Kits Diagbox : Contrôle des Racines à compléter)",
-          "conclusion_text_suffix": "(Texte de conclusion après le lien pour Kits Diagbox : Contrôle des Racines à compléter)."
+          "recommendation_text": "",
+          "conclusion_text_prefix": "",
+          "conclusion_text_suffix": ""
         },
         "qna-group-q1_sub5": {
-          "recommendation_text": "(Texte de recommandation pour Kits Diagbox : Contrôle du Sol à compléter dans texts.csv)",
-          "conclusion_text_prefix": "(Texte de conclusion avant le lien pour Kits Diagbox : Contrôle du Sol à compléter)",
-          "conclusion_text_suffix": "(Texte de conclusion après le lien pour Kits Diagbox : Contrôle du Sol à compléter)."
+          "recommendation_text": "",
+          "conclusion_text_prefix": "",
+          "conclusion_text_suffix": ""
         },
         "qna-group-q2_sub1": {
-          "recommendation_text": "(Texte de recommandation pour Kits Diagbox : Analyse sur Gazon Symptomatique à compléter dans texts.csv)",
-          "conclusion_text_prefix": "(Texte de conclusion avant le lien pour Kits Diagbox : Analyse sur Gazon Symptomatique à compléter)",
-          "conclusion_text_suffix": "(Texte de conclusion après le lien pour Kits Diagbox : Analyse sur Gazon Symptomatique à compléter)."
+          "recommendation_text": "Notre recommandation :",
+          "conclusion_text_prefix": "Pour une première approche rapide, vous pouvez faire un **diagnostic de présence** des principaux pathogènes présents dans votre gazon, avec la Diagbox PF 00015. Ce diagnostic est **rapide et simple** à réaliser : il suffit de passer une lingette sur les lames de la tondeuse, nous l'envoyer avec l'enveloppe prépayée, pour obtenir le résultat en 48h. Vous connaîtrez alors votre risque de court terme, et nous pourrons vous apporter à partir de là des conseils pour orienter vos actions.\n\nSi vous souhaitez au contraire tout de suite avoir une **évaluation globale de vos risques à court, moyens et long terme**, pour bâtir un vrai **plan de prévention**, nous recommandons de réaliser directement une **quantification des pathogènes dans chacun des compartiments** : feuilles, racines et sols, avec la Diagbox PF 00050.\n\nA partir de cet état, nous pourrons vous conseiller les actions à entreprendre, et mettre en place **un suivi** dans la durée pour **optimiser les apports de produits de traitement**.\n\nBien entendu, nous pouvons vous proposer des **approches intermédiaires adaptées à vos besoins et contraintes** : n'hésitez pas à nous contacter pour cela !",
+          "conclusion_text_suffix": "Les DIAGBOX® recommandées :"
         },
         "qna-group-q3": {
-          "recommendation_text": "(Texte de recommandation pour Kits Diagbox : Analyse Avant Nouveau Plaquage à compléter dans texts.csv)",
-          "conclusion_text_prefix": "(Texte de conclusion avant le lien pour Kits Diagbox : Analyse Avant Nouveau Plaquage à compléter)",
-          "conclusion_text_suffix": "(Texte de conclusion après le lien pour Kits Diagbox : Analyse Avant Nouveau Plaquage à compléter)."
+          "recommendation_text": "Notre recommandation :",
+          "conclusion_text_prefix": "Nous vous recommandons de réaliser **le plus rapidement possible** la quantification des pathogènes présents dans les feuilles des zones touchées. Pour cela, vous pouvez recourir aux Diagbox PF 0018 si la détection a lieu en été, ou PF 00019 en hivers. Pour encore **plus de réactivité et de facilité**, vous pouvez aussi **disposer à l'avance** de la Diagbox PF00020 qui couvre l'ensemble des pathogènes et que vous **utilisez dès que des symptômes apparaissent**.\n\n**Si plusieurs zone différentes sont déjà touchées**, nous recommandons de réaliser **un prélèvement (avec une Diagbox dédiée) différent pour chaque zone** : cela permettra de faire un diagnostic plus précis et plus complet.\n\nNous serons alors en mesure des vous accompagner pour mettre en place les traitements, et voir avec vous si des diagnostic des autres compartiments (racine, sols) sont nécessaires.",
+          "conclusion_text_suffix": "Les DIAGBOX® recommandées :"
         },
         "qna-group-q4_combined": {
-          "recommendation_text": "(Texte de recommandation pour Kits combinés à compléter dans texts.csv)",
-          "conclusion_text_prefix": "(Texte de conclusion avant le lien pour Kits combinés à compléter)",
-          "conclusion_text_suffix": "(Texte de conclusion après le lien pour Kits combinés à compléter)."
+          "recommendation_text": "Notre recommandation :",
+          "conclusion_text_prefix": "Nous recommandons de réaliser **un diagnostic des sols** avant tout nouveau plaquage, avec la Diagbox PF 00047 : les pathogènes présent dans les sols, même en faibles quantités, représentent un **risque de long terme** et peuvent conduire à la destruction prématurée de votre pelouse, ou au minimum à des **surcoûts d'entretien**. Les identifier et les quantifier nous permettra de vous accompagner dans la mise en place de traitement et d'un suivi. **Vous sécuriser ainsi votre investissement**.\n\nFort de notre expérience sur des cas concrets, nous recommandons également de **tester les plaquages livrés**, pour évaluer leur bon état (Diagbox PF 00049). Vous pouvez aussi demander à votre fournisseur de vous donner une preuve de ce bon état, par exemple avec un relevé des mesures réalisées par ses soins.\n\nSi vous optez pour la réalisation de l'ensemble des analyses par vous même, vous pouvez recourir à la Digabox PF 00050 qui **intègre les analyses des trois compartiments (sols + feuilles et racines)**.",
+          "conclusion_text_suffix": "Les DIAGBOX® recommandées :"
         }
       },
       "qna_bon_a_savoir": {
-        "q1": "La Pyriculariose est malheureusement une maladie pour laquelle **il n'existe pas encore de traitements** (début 2025). Une fois présente, elle peut s'étendre et détruire l'ensemble d'une pelouse en quelques semaines si les conditions s'y prêtent. La seule solution est alors un remplacement de la pelouse. Une **détection la plus précoce possible** est donc un atout majeur pour **réduire les risques et les coûts** pour l'exploitant : elle permet d'intervenir sur une portion réduite de la la pelouse, et d'éviter de plus que le pathogène ne s'incruste dans les sols.",
-        "q2": "À compléter : texte \"Bon à savoir\" pour la question 2 (planification traitements)",
-        "q3": "À compléter : texte \"Bon à savoir\" pour la question 3 (symptômes détectés)",
-        "q4": "À compléter : texte \"Bon à savoir\" pour la question 4 (nouveau gazon/plaquage)",
-        "q5": "À compléter : texte \"Bon à savoir\" pour la question 5 (autres questions)"
+        "q1": "La **Pyriculariose** est malheureusement une maladie pour laquelle **il n'existe pas encore de traitements**. Une fois présente, elle peut s'étendre et détruire l'ensemble d'une pelouse en quelques semaines si les conditions s'y prêtent. La seule solution est alors un remplacement de la pelouse. Une **détection la plus précoce possible** est donc un atout majeur pour **réduire les risques et les coûts** pour l'exploitant : elle permet d'intervenir sur une portion réduite de la la pelouse, et d'éviter de plus que le pathogène ne s'incruste dans les sols.",
+        "q2": "**La loi Labbé** de 2014 impose depuis le 1er janvier 2025 la **suppression des produits phytosanitaires de synthèse** pour le traitement des gazons sportifs. Cela **réduit le nombre de produits utilisables** et vous conduit peut être à revoir vos programmes de traitement. Dans ce contexte, pouvoir **anticiper au plus tôt avant la diffusion d'une maladie** apporte un avantage considérable pour protéger votre gazon au meilleur coût. Cela suppose un suivi des **risques de court ou moyen termes (feuilles et racines), mais aussi des risques à long terme (sol)**.",
+        "q3": "Quand une détérioration du gazon est détectée, cela indique un **niveau déjà important** du ou des pathogènes en cause. **Identifier au plus vite tous les agents responsables**, c'est pouvoir mettre en place les traitements adaptés avec le plus de chances de sauver la pelouse ou de limiter les coûts d'entretien.",
+        "q4": "Installer un nouveau plaquage représente un **investissement conséquent**. Or trop souvent, aucune évaluation de la santé des sols ni du gazon apportés n'est faite, et il arrive malheureusement que des pathogènes encore présents dans le sol, ou apportés par le plaquages, **amènent à des coûts d'entretiens élevés**, voir au pire ruinent la nouvelle pelouse. Une **vérification préalable de leur état de santé** serait pourtant une précaution élémentaire au regard de l'investissement réalisé.",
+        "q5": "Il y a en effet de nombreuses situations différentes ! Nous serons heureux de voir avec vous comment vous aider au mieux"
       }
     }
   },

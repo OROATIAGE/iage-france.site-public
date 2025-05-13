@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import { texts } from '../content/texts';
 import { FaChevronDown, FaChevronRight } from 'react-icons/fa'; // Icons for accordion
@@ -113,8 +113,30 @@ function GazonQnaAccordion({ onOpenKitGroup }) {
   const [openAccordion, setOpenAccordion] = useState(null); // State to track open section
   const navigate = useNavigate(); // Initialize navigate
 
+  // Ajout refs pour chaque question
+  const questionRefs = useRef({});
+  qnaData.forEach(item => {
+    if (!questionRefs.current[item.id]) {
+      questionRefs.current[item.id] = React.createRef();
+    }
+  });
+
   const handleToggle = (id) => {
-    setOpenAccordion(openAccordion === id ? null : id);
+    const isOpening = openAccordion !== id;
+    setOpenAccordion(isOpening ? id : null);
+    if (isOpening) {
+      // Scroll vers le header de la question avec un offset (ex: 80px)
+      setTimeout(() => {
+        const ref = questionRefs.current[id];
+        if (ref && ref.current) {
+          const rect = ref.current.getBoundingClientRect();
+          const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+          const offset = 80; // Ajuste cette valeur selon la hauteur de ton header sticky
+          const top = rect.top + scrollTop - offset;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      }, 100); // 100ms pour laisser le DOM se mettre à jour
+    }
   };
 
   const handleLinkClick = (e, target) => {
@@ -140,9 +162,13 @@ function GazonQnaAccordion({ onOpenKitGroup }) {
   return (
     <div id="gazon-qna-accordion" className="space-y-4 mb-12 md:mb-16">
       {qnaData.map((item) => (
-        <div key={item.id} className="border rounded-lg overflow-hidden shadow-sm bg-white dark:bg-gray-800 dark:border-gray-700">
+        <div
+          key={item.id}
+          className="border rounded-lg overflow-hidden shadow-sm bg-white dark:bg-gray-800 dark:border-gray-700"
+        >
           {/* Accordion Header */}
           <button
+            ref={questionRefs.current[item.id]}
             onClick={() => handleToggle(item.id)}
             className="w-full flex justify-between items-center p-4 text-left text-lg font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
           >
@@ -195,15 +221,50 @@ function GazonQnaAccordion({ onOpenKitGroup }) {
                     {getRecommendationText(`${item.recommendationKey}.conclusion_text_suffix`)}
                   </div>
                   {/* Encarts des kits recommandés dans l'ordre demandé */}
-                  <KitDetailCard kitRef="PF000015" introKey="qna_intro.reco_PF000015" />
-                  <KitDetailCard kitRef="PF000020" introKey="qna_intro.reco_PF000020" />
-                  <KitDetailCard kitRef="PF000011" introKey="qna_intro.reco_PF000011" />
-                  <KitDetailCard kitRef="PF000016" introKey="qna_intro.reco_PF000016" />
+                  {item.id === 'q1' && (
+                    <>
+                      <KitDetailCard kitRef="PF000011" introKey="qna_intro.reco_PF000011" />
+                      <KitDetailCard kitRef="PF000016" introKey="qna_intro.reco_PF000016" />
+                      <KitDetailCard kitRef="PF000015" introKey="qna_intro.reco_PF000015" />
+                      <KitDetailCard kitRef="PF000020" introKey="qna_intro.reco_PF000020" />
+                    </>
+                  )}
+                  {item.id === 'q2' && (
+                    <>
+                      <KitDetailCard kitRef="PF000015" introKey="qna_intro.reco_PF000015" />
+                      <KitDetailCard kitRef="PF000050" introKey="qna_intro.reco_PF000050" />
+                    </>
+                  )}
+                  {item.id === 'q3' && (
+                    <>
+                      <KitDetailCard kitRef="PF000018" introKey="qna_intro.reco_PF000018" />
+                      <KitDetailCard kitRef="PF000019" introKey="qna_intro.reco_PF000019" />
+                      <KitDetailCard kitRef="PF000020" introKey="qna_intro.reco_PF000020" />
+                    </>
+                  )}
+                  {item.id === 'q4' && (
+                    <>
+                      <KitDetailCard kitRef="PF000047" introKey="qna_intro.reco_PF000047" />
+                      <KitDetailCard kitRef="PF000049" introKey="qna_intro.reco_PF000049" />
+                      <KitDetailCard kitRef="PF000050" introKey="qna_intro.reco_PF000050" />
+                    </>
+                  )}
                 </div>
               )}
 
               {/* Contact Link */}
               {item.recommendationKey && (
+                <div className="mt-4 text-center">
+                  <a
+                    href="/contact"
+                    onClick={(e) => handleLinkClick(e, '/contact')}
+                    className="inline-block px-6 py-2 bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors"
+                  >
+                    {getRecommendationText('qna_reco.common.contact_link')}
+                  </a>
+                </div>
+              )}
+              {item.id === 'q5' && (
                 <div className="mt-4 text-center">
                   <a
                     href="/contact"
