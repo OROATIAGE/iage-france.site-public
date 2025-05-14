@@ -155,24 +155,29 @@ const Home = () => {
                   {/* Overlay dégradé en bas de l'image pour lisibilité */}
                   <div className="absolute left-0 right-0 bottom-0 h-1/2 bg-gradient-to-t from-black/50 via-black/10 to-transparent z-0 rounded-b-xl pointer-events-none" />
                   <div
-                    className={`absolute left-0 right-0 bottom-8 flex flex-col p-4 py-2 z-10 pointer-events-auto ${
-                      category.subdomains.length === 3 ? 'gap-12' : 'gap-5'
-                    }`}
+                    className="absolute left-0 right-0 bottom-8 flex flex-col p-4 py-2 z-10 pointer-events-auto gap-5 w-full"
                   >
-                    {category.subdomains.map((subdomain, idx, arr) => {
-                      const n = arr.length;
-                      let style = { width: '66%' };
-                      if (idx === 0) style.marginLeft = 0;
-                      else {
-                        const interval = (n - 1) * 2;
-                        style.marginLeft = `${(idx * 65) / interval}%`;
-                      }
+                    {category.subdomains.map((subdomain, idx) => {
+                      // Définir les classes d'escalier pour md+ (jusqu'à 4 éléments)
+                      const mlClasses = [
+                        'md:ml-0',
+                        'md:ml-8',
+                        'md:ml-16',
+                        'md:ml-24',
+                        'md:ml-32',
+                      ];
                       return (
                         <Link
                           key={subdomain.textKey}
                           to={subdomain.link}
-                          className="bg-white/60 backdrop-blur-sm text-primary font-bold px-3 py-1 rounded-full text-sm whitespace-normal break-words shadow transition-all duration-150 hover:bg-white hover:shadow-2xl hover:ring-4 hover:ring-primary/50 hover:-translate-y-0.5 cursor-pointer focus:bg-white focus:shadow-2xl focus:ring-4 focus:ring-primary/50 focus:-translate-y-0.5 focus:outline-none"
-                          style={style}
+                          className={`
+                            bg-white/40 backdrop-blur-sm text-primary font-bold px-3 py-1 rounded-full text-sm whitespace-normal break-words shadow transition-all duration-150
+                            w-full mx-auto
+                            md:w-2/3 ${mlClasses[idx] || ''}
+                            cursor-pointer
+                            focus:bg-white focus:shadow-2xl focus:ring-4 focus:ring-primary/50 focus:-translate-y-0.5 focus:outline-none
+                            md:hover:bg-white md:hover:shadow-2xl md:hover:ring-4 md:hover:ring-primary/50 md:hover:-translate-y-0.5
+                          `}
                         >
                           {texts.home.sectors[subdomain.textKey]}
                         </Link>
