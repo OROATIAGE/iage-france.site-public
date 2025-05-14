@@ -152,13 +152,13 @@ const Home = () => {
                     alt={texts.home.sectors[category.titleKey]}
                     className="w-full aspect-[16/9] object-cover"
                   />
-                  {/* Overlay dégradé en bas de l'image pour lisibilité */}
-                  <div className="absolute left-0 right-0 bottom-0 h-1/2 bg-gradient-to-t from-black/50 via-black/10 to-transparent z-0 rounded-b-xl pointer-events-none" />
+                  {/* Overlay dégradé en bas de l'image pour lisibilité (desktop uniquement) */}
+                  <div className="hidden md:block absolute left-0 right-0 bottom-0 h-1/2 bg-gradient-to-t from-black/50 via-black/10 to-transparent z-0 rounded-b-xl pointer-events-none" />
+                  {/* Overlays : sous l'image sur mobile, sur l'image en absolute sur desktop */}
                   <div
-                    className="absolute left-0 right-0 bottom-8 flex flex-col p-4 py-2 z-10 pointer-events-auto gap-5 w-full"
+                    className="flex flex-col gap-5 w-full mt-2 md:absolute md:left-0 md:right-0 md:bottom-8 md:p-4 md:py-2 md:z-10 md:pointer-events-auto md:mt-0"
                   >
                     {category.subdomains.map((subdomain, idx) => {
-                      // Définir les classes d'escalier pour md+ (jusqu'à 4 éléments)
                       const mlClasses = [
                         'md:ml-0',
                         'md:ml-8',
