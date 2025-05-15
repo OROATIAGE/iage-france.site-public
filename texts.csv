@@ -513,3 +513,11 @@ diagbox.gazon.qna_intro.reco_PF000047,DiagBox Gazon QNA Intros,Pour contrôler l
 diagbox.gazon.qna_intro.reco_PF000048,DiagBox Gazon QNA Intros,Pour contrôler l'état des racines
 diagbox.gazon.qna_intro.reco_PF000049,DiagBox Gazon QNA Intros,Pour un suivi conjoint racines et partie aérienne
 diagbox.gazon.qna_intro.reco_PF000050,DiagBox Gazon QNA Intros,Pour un état de santé des trois compartiments (sol + racines + gazon) ou sécuriser un nouveau plaquage
+home.sectors.mobile_nav_sante,Home (Secteurs),Santé
+home.sectors.mobile_nav_agriculture,Home (Secteurs),Agriculture
+home.sectors.mobile_nav_industrie,Home (Secteurs),Industrie
+home.sectors.mobile_nav_gazons,Home (Secteurs),Gazons
+home.sectors.mobile_nav_domaine1,Home (Secteurs),Santé
+home.sectors.mobile_nav_domaine2,Home (Secteurs),Agriculture
+home.sectors.mobile_nav_domaine3,Home (Secteurs),Industrie
+home.sectors.mobile_nav_domaine4,Home (Secteurs),Gazons

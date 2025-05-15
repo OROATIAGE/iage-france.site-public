@@ -1,6 +1,63 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { texts } from '../content/texts'
+import { useEffect, useState } from 'react'
+
+// --- Composant MobileDomainNav ---
+const domainIds = ['domaine1', 'domaine2', 'domaine3', 'domaine4'];
+const domainTitleIds = ['title-domaine1', 'title-domaine2', 'title-domaine3', 'title-domaine4'];
+const domainTextKeys = [
+  'mobile_nav_domaine1',
+  'mobile_nav_domaine2',
+  'mobile_nav_domaine3',
+  'mobile_nav_domaine4',
+];
+function MobileDomainNav({ texts }) {
+  const DOMAINS = domainIds.map((id, idx) => ({
+    id,
+    titleId: domainTitleIds[idx],
+    label: texts[domainTextKeys[idx]] || '',
+  }));
+  const [active, setActive] = useState(DOMAINS[0].id);
+  useEffect(() => {
+    const handleScroll = () => {
+      let found = DOMAINS[0].id;
+      for (const domain of DOMAINS) {
+        const el = document.getElementById(domain.id);
+        if (el) {
+          const rect = el.getBoundingClientRect();
+          if (rect.top <= 100) found = domain.id;
+        }
+      }
+      setActive(found);
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [DOMAINS]);
+  const handleClick = (id, titleId) => {
+    const el = document.getElementById(titleId);
+    if (el) {
+      const y = el.getBoundingClientRect().top + window.scrollY - 120;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+  };
+  return (
+    <nav className="fixed top-16 left-0 right-0 z-30 bg-white shadow md:hidden flex overflow-x-auto border-b">
+      {DOMAINS.map(domain => (
+        <button
+          key={domain.id}
+          onClick={() => handleClick(domain.id, domain.titleId)}
+          className={`flex-1 px-4 py-2 text-sm font-bold transition-colors
+            ${active === domain.id ? 'text-primary border-b-2 border-primary bg-primary/10' : 'text-gray-500'}
+          `}
+        >
+          {domain.label}
+        </button>
+      ))}
+    </nav>
+  );
+}
 
 const Home = () => {
   const sectors = [
@@ -83,8 +140,8 @@ const Home = () => {
       subdomains: [
         { textKey: 'subdomain_viticulture', link: '/sectors/05' },
         { textKey: 'subdomain_arboriculture', link: '/sectors/06' },
-        { textKey: 'subdomain_shellfish_farming', link: '/sectors/07' },
         { textKey: 'subdomain_poultry_farming', link: '/sectors/08' },
+        { textKey: 'subdomain_shellfish_farming', link: '/sectors/07' },
       ],
     },
     {
@@ -131,7 +188,8 @@ const Home = () => {
           </motion.div>
         </div>
       </section>
-
+      {/* Bandeau sticky mobile domaines */}
+      <MobileDomainNav texts={texts.home.sectors} />
       {/* New Problem Solving Categories Section - MODERN CARDS */}
       <section id="sectors-grid" className="py-20 bg-white dark:bg-gray-900 scroll-mt-20 md:scroll-mt-24">
         <div className="container">
@@ -139,10 +197,13 @@ const Home = () => {
             {texts.home.sectors.title}
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
-            {problemSolvingCategories.map(category => (
-              <div key={category.id} className="bg-white rounded-xl shadow-lg flex flex-col items-center overflow-hidden">
+            {problemSolvingCategories.map((category, idx) => (
+              <div key={category.id} id={domainIds[idx]} className="bg-white rounded-xl shadow-lg flex flex-col items-center overflow-hidden">
                 {/* Titre au-dessus de l'image */}
-                <div className="w-full bg-primary text-white text-lg font-bold text-center py-3 rounded-t-xl">
+                <div
+                  className="w-full bg-primary text-white text-lg font-bold text-center py-3 rounded-t-xl"
+                  id={domainTitleIds[idx]}
+                >
                   {texts.home.sectors[category.titleKey]}
                 </div>
                 {/* Image + boutons overlay sur l'image */}
@@ -158,7 +219,7 @@ const Home = () => {
                   <div
                     className="flex flex-col gap-5 w-full mt-2 md:absolute md:left-0 md:right-0 md:bottom-8 md:p-4 md:py-2 md:z-10 md:pointer-events-auto md:mt-0"
                   >
-                    {category.subdomains.map((subdomain, idx) => {
+                    {category.subdomains.map((subdomain, idx2) => {
                       const mlClasses = [
                         'md:ml-0',
                         'md:ml-8',
@@ -171,9 +232,9 @@ const Home = () => {
                           key={subdomain.textKey}
                           to={subdomain.link}
                           className={`
-                            bg-white/40 backdrop-blur-sm text-primary font-bold px-3 py-1 rounded-full text-sm whitespace-normal break-words shadow transition-all duration-150
+                            bg-white/40 md:bg-white/60 backdrop-blur-sm text-primary font-bold px-3 py-1 rounded-full text-sm whitespace-normal break-words shadow transition-all duration-150
                             w-full mx-auto
-                            md:w-2/3 ${mlClasses[idx] || ''}
+                            md:w-2/3 ${mlClasses[idx2] || ''}
                             cursor-pointer
                             focus:bg-white focus:shadow-2xl focus:ring-4 focus:ring-primary/50 focus:-translate-y-0.5 focus:outline-none
                             md:hover:bg-white md:hover:shadow-2xl md:hover:ring-4 md:hover:ring-primary/50 md:hover:-translate-y-0.5
