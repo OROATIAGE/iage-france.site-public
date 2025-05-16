@@ -319,7 +319,7 @@ function SectorPage() {
         className="container mx-auto px-4 py-12 md:py-16"
       >
         {/* --- Gazon Intro Section - Title and Direct Intro --- */}
-        <div className="bg-gradient-to-r from-primary/10 to-secondary/10 dark:from-primary/20 dark:to-secondary/20 p-8 rounded-lg mb-6 shadow-sm">
+        <div className="bg-gradient-to-r from-primary/10 to-secondary/10 dark:from-primary/20 dark:to-secondary/20 p-8 rounded-lg mb-6 shadow-sm md:max-w-3xl lg:max-w-4xl md:mx-auto">
           <h1 className="text-3xl md:text-4xl font-bold text-primary dark:text-secondary mb-4">{sectorName}</h1>
           {/* Directly show the 'intro' text after the title */}
           {
@@ -353,7 +353,7 @@ function SectorPage() {
 
         {/* --- Content from DiagboxGazonPage.jsx --- */}
         {/* --- Diagbox Hero Section (copied) --- */}
-        <div className="text-center mb-12 md:mb-16 mt-8"> {/* Added margin top */}
+        <div className="text-center mb-12 md:mb-16 mt-8 md:max-w-3xl lg:max-w-4xl md:mx-auto"> {/* Added margin top */}
           <h1 className="text-4xl md:text-5xl font-bold text-primary dark:text-secondary mb-4">
             {getDiagboxText('title')} {/* DIAGBOX® Gazon */}
           </h1>
@@ -363,7 +363,7 @@ function SectorPage() {
         </div>
 
         {/* --- Process Section (copied) --- */}
-        <section className="mb-12 md:mb-16 bg-gray-100 dark:bg-gray-800 p-8 rounded-lg shadow-sm">
+        <section className="mb-12 md:mb-16 bg-gray-100 dark:bg-gray-800 p-8 rounded-lg shadow-sm md:max-w-3xl lg:max-w-4xl md:mx-auto">
           <h2 className="text-2xl md:text-3xl font-semibold text-center text-gray-800 dark:text-gray-200 mb-8">
             {getDiagboxText('process.title')}
           </h2>
@@ -387,7 +387,7 @@ function SectorPage() {
         </section>
 
         {/* --- General Info Sections (copied) --- */}
-        <section className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 md:mb-16">
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 md:mb-16 md:max-w-3xl lg:max-w-4xl md:mx-auto">
           <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold mb-3 text-primary dark:text-secondary">{getDiagboxText('ideal_for.title')}</h3>
               <p className="text-gray-700 dark:text-gray-300 text-sm">{getDiagboxText('ideal_for.text')}</p>
@@ -402,7 +402,7 @@ function SectorPage() {
         {/* (SUPPRIMÉ) <div className="mt-8 md:mt-12 mb-8"> ... </div> et le bloc qnaKitGroups.map(...) */}
 
         {/* Price List Section remains */}
-        <section id="prices" className="mt-12 md:mt-16 pt-10 border-t border-gray-200 dark:border-gray-700 scroll-mt-20 md:scroll-mt-24">
+        <section id="prices" className="mt-12 md:mt-16 pt-10 border-t border-gray-200 dark:border-gray-700 scroll-mt-20 md:scroll-mt-24 md:max-w-3xl lg:max-w-4xl md:mx-auto">
             <h2 className="text-2xl md:text-3xl font-semibold text-center text-primary dark:text-gray-200 mb-8">
               {getDiagboxText('prices.title')}
             </h2>
@@ -462,7 +462,7 @@ function SectorPage() {
         </section>
 
         {/* --- Final CTA Section (copied) --- */}
-        <section className="mt-12 md:mt-16 text-center mb-12"> {/* Added margin bottom */}
+        <section className="mt-12 md:mt-16 text-center mb-12 md:max-w-3xl lg:max-w-4xl md:mx-auto"> {/* Added margin bottom */}
             <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
               {getDiagboxText('cta.text')}
             </p>
@@ -472,7 +472,7 @@ function SectorPage() {
         </section>
 
         {/* --- Add Catalog and Development Cards --- */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-12 md:my-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-12 md:my-16 md:max-w-3xl lg:max-w-4xl md:mx-auto">
           {/* Card 1: Catalogue */}
           <div className="card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
             <h3 className="text-xl font-bold text-primary dark:text-secondary mb-3">{getText(pageData, 'catalog.title')}</h3>
@@ -487,7 +487,7 @@ function SectorPage() {
         </div>
 
         {/* --- Original Return Button */}
-        <div className="text-center mt-12">
+        <div className="text-center mt-12 md:max-w-3xl lg:max-w-4xl md:mx-auto">
           <Link to="/" className="btn-secondary">
             {backButtonText}
           </Link>

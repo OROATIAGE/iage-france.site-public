@@ -67,9 +67,9 @@ export const texts = {
       "subdomain_arboriculture": "Arbres fruitiers",
       "subdomain_cemeteries": "Pelouse des cimetières",
       "subdomain_epidemiology": "Santé publique par les eaux usées, les sites naturels",
-      "subdomain_golf_courses": "gazon des golfs",
+      "subdomain_golf_courses": "Gazon des golfs",
       "subdomain_hospital_hygiene": "Hygiène des salles d'hôpital, d'EHPAD",
-      "subdomain_indoor_hygiene": "Hygiène intérieure (rats, punaises, mérule, moisissures,...)",
+      "subdomain_indoor_hygiene": "Hygiène intérieure\n(rats, punaises, mérule, moisissures,...)",
       "subdomain_methanizers": "Méthaniseurs",
       "subdomain_poultry_farming": "Elevages aviaires (grippe aviaire)",
       "subdomain_purification_systems": "Réseaux et Stations d'épuration",
@@ -471,13 +471,13 @@ export const texts = {
         }
       },
       "prices": {
-        "PF000011": "185,00€ **(à revoir pour être plus bas que le prix de la quantification)**",
-        "PF000013": "430,00€ **(à revoir pour être plus bas que le prix de la quantification)**",
-        "PF000015": "670,00€ **(à revoir pour être plus bas que le prix de la quantification)**",
-        "PF000016": "185,00€ **(à revoir pour être plus haut que le prix de l'identification, inclure un rabais si l'identification a été faite avant)**",
-        "PF000018": "430,00€ **(à revoir pour être plus haut que le prix de l'identification, inclure un rabais si l'identification a été faite avant)**",
+        "PF000011": "185,00€",
+        "PF000013": "430,00€",
+        "PF000015": "670,00€",
+        "PF000016": "185,00€",
+        "PF000018": "430,00€",
         "PF000019": "430,00€ ",
-        "PF000020": "670,00€ **(à revoir pour être plus bas que le prix de la quantification)**",
+        "PF000020": "670,00€",
         "PF000033": "640,00€",
         "PF000035": "1015,00€",
         "PF000047": "830,00€",
@@ -654,7 +654,7 @@ export const texts = {
         "q2": "**Depuis le 1er janvier 2025**, la loi Labbé de 2014 impose la **suppression des produits phytosanitaires de synthèse** pour le traitement des gazons sportifs. \n**Le nombre de produits utilisables est réduit** et vous avez peut être dû revoir vos programmes de traitement.\n**Chaque terrain est spécifique** : type et origine du gazon, sols, météo, usages,... autant de facteurs qui modifient les types de maladies qui peuvent toucher votre terrain et la façon dont elles peuvent évoluer. \nIAGE a développé une expérience concrète qui lui permet d'**adapter pour votre cas particulier ses conseils et l'usage de ses outils**, afin d'assurer un **suivi des risques de court ou moyen termes (feuilles et racines), et des risques à long terme (sol)** adaptés à votre situation et à votre budget.",
         "q3": "Une **détérioration visible** du gazon indique un **niveau déjà important** du ou des pathogènes en cause. \nDe plus, derrière l'agent principal qui peut souvent être identifié visuellement, des agents secondaires peuvent aussi être présents. Ils peuvent profiter du premier ou seront des facteurs aggravant en se développant à la place du premier si les traitements retenus ne sont pas adaptés.\nIAGE a défini des outils pour **identifier au plus vite tous les agents responsables**, et vous permettre de mettre en place les traitements adaptés avec le plus de chances de sauver la pelouse et de limiter vos coûts d'entretien.",
         "q4": "Installer un nouveau plaquage représente un **investissement conséquent**. \nL'absence d'évaluation de la santé des sols ou du gazon apportés peut permettre à des pathogènes présents dans le sol ou apportés par le plaquages de proliférer, **conduisant à des coûts d'entretiens élevés**, voir au pire à la ruine de la nouvelle pelouse. \nIAGE a défini des outils pour assurer une **vérification préalable des états de santé de chaque compartiment** (sol, racines, feuilles) pour réduire les risques au regard de l'investissement réalisé.\nCes analyses ont déjà été utilisées dans le cas d'un litige sur l'origine d'une dégradation après un plaquage.",
-        "q5": "Il y a en effet de nombreuses situations différentes ! Nous serons heureux de voir avec vous comment vous aider au mieux"
+        "q5": "**Chaque terrain est spécifique** : type et origine du gazon, sols, météo, usages,... autant de facteurs qui modifient les types de maladies qui peuvent toucher votre terrain et la façon dont elles peuvent évoluer. Vous avez aussi de votre côté des attentes ou des contraintes propres\nIl y a donc en effet de nombreuses situations différentes ! N'hésitez pas à **nous contacter**, nous serons heureux de voir avec vous comment vous aider au mieux"
       }
     }
   },

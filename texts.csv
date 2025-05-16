@@ -42,9 +42,10 @@ home.sectors.category_turf_parks_title,Home (Secteurs),Gazons naturels et parc
 home.sectors.subdomain_arboriculture,Home (Secteurs),Arbres fruitiers
 home.sectors.subdomain_cemeteries,Home (Secteurs),Pelouse des cimetières
 home.sectors.subdomain_epidemiology,Home (Secteurs),"Santé publique par les eaux usées, les sites naturels"
-home.sectors.subdomain_golf_courses,Home (Secteurs),gazon des golfs
+home.sectors.subdomain_golf_courses,Home (Secteurs),Gazon des golfs
 home.sectors.subdomain_hospital_hygiene,Home (Secteurs),"Hygiène des salles d'hôpital, d'EHPAD"
-home.sectors.subdomain_indoor_hygiene,Home (Secteurs),"Hygiène intérieure (rats, punaises, mérule, moisissures,...)"
+home.sectors.subdomain_indoor_hygiene,Home (Secteurs),"Hygiène intérieure
+(rats, punaises, mérule, moisissures,...)"
 home.sectors.subdomain_methanizers,Home (Secteurs),Méthaniseurs
 home.sectors.subdomain_poultry_farming,Home (Secteurs),Elevages aviaires (grippe aviaire)
 home.sectors.subdomain_purification_systems,Home (Secteurs),Réseaux et Stations d'épuration
@@ -285,13 +286,13 @@ diagbox.gazon.plaquage.why_use.point1,DiagBox Gazon,"Caractériser et quantifier
 diagbox.gazon.plaquage.why_use.point2,DiagBox Gazon,Évaluation préventive complète : Mesurer l'impact potentiel avant traitement et ajuster.
 diagbox.gazon.plaquage.why_use.point3,DiagBox Gazon,Analyse du rouleau avant plaquage : Anticiper les risques de détérioration post-pose et sécuriser l'investissement.
 diagbox.gazon.plaquage.why_use.title,DiagBox Gazon,Pourquoi utiliser la DIAGBOX® Accompagnement Plaquage ?
-diagbox.gazon.prices.PF000011,DiagBox Gazon,"185,00€ **(à revoir pour être plus bas que le prix de la quantification)**"
-diagbox.gazon.prices.PF000013,DiagBox Gazon,"430,00€ **(à revoir pour être plus bas que le prix de la quantification)**"
-diagbox.gazon.prices.PF000015,DiagBox Gazon,"670,00€ **(à revoir pour être plus bas que le prix de la quantification)**"
-diagbox.gazon.prices.PF000016,DiagBox Gazon,"185,00€ **(à revoir pour être plus haut que le prix de l'identification, inclure un rabais si l'identification a été faite avant)**"
-diagbox.gazon.prices.PF000018,DiagBox Gazon,"430,00€ **(à revoir pour être plus haut que le prix de l'identification, inclure un rabais si l'identification a été faite avant)**"
+diagbox.gazon.prices.PF000011,DiagBox Gazon,"185,00€"
+diagbox.gazon.prices.PF000013,DiagBox Gazon,"430,00€"
+diagbox.gazon.prices.PF000015,DiagBox Gazon,"670,00€"
+diagbox.gazon.prices.PF000016,DiagBox Gazon,"185,00€"
+diagbox.gazon.prices.PF000018,DiagBox Gazon,"430,00€"
 diagbox.gazon.prices.PF000019,DiagBox Gazon,"430,00€ "
-diagbox.gazon.prices.PF000020,DiagBox Gazon,"670,00€ **(à revoir pour être plus bas que le prix de la quantification)**"
+diagbox.gazon.prices.PF000020,DiagBox Gazon,"670,00€"
 diagbox.gazon.prices.PF000033,DiagBox Gazon,"640,00€"
 diagbox.gazon.prices.PF000035,DiagBox Gazon,"1015,00€"
 diagbox.gazon.prices.PF000047,DiagBox Gazon,"830,00€"
@@ -508,7 +509,8 @@ diagbox.gazon.qna_bon_a_savoir.q4,Diagbox Gazon QNA BonASavoir,"Installer un nou
 L'absence d'évaluation de la santé des sols ou du gazon apportés peut permettre à des pathogènes présents dans le sol ou apportés par le plaquages de proliférer, **conduisant à des coûts d'entretiens élevés**, voir au pire à la ruine de la nouvelle pelouse. 
 IAGE a défini des outils pour assurer une **vérification préalable des états de santé de chaque compartiment** (sol, racines, feuilles) pour réduire les risques au regard de l'investissement réalisé.
 Ces analyses ont déjà été utilisées dans le cas d'un litige sur l'origine d'une dégradation après un plaquage."
-diagbox.gazon.qna_bon_a_savoir.q5,Diagbox Gazon QNA BonASavoir,Il y a en effet de nombreuses situations différentes ! Nous serons heureux de voir avec vous comment vous aider au mieux
+diagbox.gazon.qna_bon_a_savoir.q5,Diagbox Gazon QNA BonASavoir,"**Chaque terrain est spécifique** : type et origine du gazon, sols, météo, usages,... autant de facteurs qui modifient les types de maladies qui peuvent toucher votre terrain et la façon dont elles peuvent évoluer. Vous avez aussi de votre côté des attentes ou des contraintes propres
+Il y a donc en effet de nombreuses situations différentes ! N'hésitez pas à **nous contacter**, nous serons heureux de voir avec vous comment vous aider au mieux"
 diagbox.gazon.qna_intro.reco_PF000015,Diagbox Gazon QNA Intros,Pour un diagnostic global de tous les pathogènes du gazon (lingette)
 diagbox.gazon.qna_intro.reco_PF000020,Diagbox Gazon QNA Intros,Pour quantifier précisément le risque principal et les pathogènes secondaires (déchets de tonte)
 diagbox.gazon.qna_intro.reco_PF000011,Diagbox Gazon QNA Intros,Pour cibler uniquement la pyriculariose (lingette)

@@ -5,48 +5,76 @@ import { FaChevronDown, FaChevronRight } from 'react-icons/fa'; // Icons for acc
 import { FaRegLightbulb } from 'react-icons/fa'; // Ajout de l'icône ampoule
 import TextWithBoldMarkdown from './TextWithBoldMarkdown'; // Import du composant de mise en forme
 import KitDetailCard from './KitDetailCard';
+import { getEnhancedKitData } from '../utils/kitDataHelpers'; // Import the main helper
 
 const qnaData = [
   {
     id: 'q1',
     titleKey: 'q1_title',
-    target: '#qna-group-q1_sub1',
-    subquestions: [],
     recommendationKey: 'qna_reco.qna-group-q1_sub1',
     bonASavoirKey: 'qna_bon_a_savoir.q1',
+    recommendedKitRefs: [ // Define recommended kits directly
+      { ref: 'PF000049', introKey: 'qna_intro.reco_PF000049' },
+      { ref: 'PF000011', introKey: 'qna_intro.reco_PF000011' },
+      { ref: 'PF000016', introKey: 'qna_intro.reco_PF000016' },
+    ],
   },
   {
     id: 'q2',
     titleKey: 'q2_title',
-    target: '#qna-group-q2_sub1',
-    subquestions: [],
     recommendationKey: 'qna_reco.qna-group-q2_sub1',
     bonASavoirKey: 'qna_bon_a_savoir.q2',
+    recommendedKitRefs: [
+      { ref: 'PF000049', introKey: 'qna_intro.reco_PF000049' },
+    ],
   },
   {
     id: 'q3',
-    titleKey: 'q3_title', 
-    target: '#qna-group-q3',
-    subquestions: [],
+    titleKey: 'q3_title',
     recommendationKey: 'qna_reco.qna-group-q3',
     bonASavoirKey: 'qna_bon_a_savoir.q3',
+    recommendedKitRefs: [
+      { ref: 'PF000018', introKey: 'qna_intro.reco_PF000018' },
+      { ref: 'PF000019', introKey: 'qna_intro.reco_PF000019' },
+      { ref: 'PF000020', introKey: 'qna_intro.reco_PF000020' },
+    ],
   },
   {
     id: 'q4',
     titleKey: 'q4_title',
-    target: '#qna-group-q4_combined',
-    subquestions: [],
     recommendationKey: 'qna_reco.qna-group-q4_combined',
     bonASavoirKey: 'qna_bon_a_savoir.q4',
+    recommendedKitRefs: [
+      { ref: 'PF000047', introKey: 'qna_intro.reco_PF000047' },
+      { ref: 'PF000049', introKey: 'qna_intro.reco_PF000049' },
+      { ref: 'PF000050', introKey: 'qna_intro.reco_PF000050' },
+    ],
   },
   {
     id: 'q5',
     titleKey: 'q5_title',
-    target: '/contact',
-    subquestions: [],
     bonASavoirKey: 'qna_bon_a_savoir.q5',
+    recommendedKitRefs: [], // No kits for this question, only contact link
   },
 ];
+
+// Define kitTypes and kitRefToSectionIdMap here for getEnhancedKitData
+// This can be moved to a shared location if used by more components extensively
+const kitTypes = [
+  { type: 'lingette', kits: ['PF000011', 'PF000013', 'PF000015'] },
+  { type: 'dechet', kits: ['PF000016', 'PF000018', 'PF000019', 'PF000020'] },
+  { type: 'sympto', kits: ['PF000033', 'PF000035'] },
+  { type: 'racine', kits: ['PF000048'] },
+  { type: 'sol', kits: ['PF000047'] },
+  { type: 'racine_gazon', kits: ['PF000049'] },
+  { type: 'plaquage', kits: ['PF000050'] }
+];
+const kitRefToSectionIdMap = {};
+kitTypes.forEach(typeInfo => {
+  typeInfo.kits.forEach(kitRef => {
+    kitRefToSectionIdMap[kitRef] = typeInfo.type;
+  });
+});
 
 // Helper to get text specifically for this component
 const getQnaText = (key) => texts.gazon?.qna?.[key] || '';
@@ -76,41 +104,9 @@ const getBonASavoirText = (key) => {
   return current;
 };
 
-// Helper pour afficher un encart de kit à partir de sa référence
-const renderKitCard = (kitRef) => {
-  // Accès aux textes
-  const getDiagboxText = (key, defaultValue = '') => {
-    const keys = key.split('.');
-    let current = texts.diagbox?.gazon;
-    for (const k of keys) {
-      if (current && typeof current === 'object' && k in current) {
-        current = current[k];
-      } else {
-        return defaultValue;
-      }
-    }
-    return typeof current === 'string' ? current.replace(/\\n/g, '\n') : current;
-  };
-  return (
-    <div key={kitRef} className="my-4 p-4 bg-white dark:bg-gray-700 rounded-lg shadow-sm border border-gray-200 dark:border-gray-600">
-      <div className="font-semibold text-primary dark:text-secondary mb-1 text-base">{getDiagboxText(`kits.${kitRef}.name`, kitRef)}</div>
-      <div className="text-gray-700 dark:text-gray-200 text-sm mb-1">
-        {getDiagboxText(`kits.${kitRef}.targets`, '') && (
-          <div><span className="font-semibold">Cibles&nbsp;:</span> {getDiagboxText(`kits.${kitRef}.targets`, '')}</div>
-        )}
-      </div>
-      <div className="text-gray-700 dark:text-gray-200 text-sm mb-1">
-        {getDiagboxText(`kits.${kitRef}.description`, '')}
-      </div>
-      <div className="text-gray-700 dark:text-gray-200 text-sm">
-        <span className="font-semibold">Prix indicatif HT&nbsp;:</span> {getDiagboxText(`prices.${kitRef}`, 'N/A')}
-      </div>
-    </div>
-  );
-};
-
 function GazonQnaAccordion({ onOpenKitGroup }) {
   const [openAccordion, setOpenAccordion] = useState(null); // State to track open section
+  const [openKitAccordions, setOpenKitAccordions] = useState({}); // State for kit accordions
   const navigate = useNavigate(); // Initialize navigate
 
   // Ajout refs pour chaque question
@@ -122,10 +118,28 @@ function GazonQnaAccordion({ onOpenKitGroup }) {
   });
 
   const handleToggle = (id) => {
-    const isOpening = openAccordion !== id;
-    setOpenAccordion(isOpening ? id : null);
-    if (isOpening) {
-      // Scroll vers le header de la question avec un offset (ex: 80px)
+    const previouslyOpenAccordionId = openAccordion; // Store the ID of the accordion that was open before this click
+    const isCurrentlyOpen = openAccordion === id;    // Is the clicked accordion the one that was already open?
+    const isOpeningNew = !isCurrentlyOpen;          // Are we trying to open this accordion (it wasn't open or a different one was)?
+
+    // If a new accordion is being opened, and there was a different one open before,
+    // close the kit details of the previously open accordion.
+    if (isOpeningNew && previouslyOpenAccordionId && previouslyOpenAccordionId !== id) {
+      setOpenKitAccordions(prev => ({ ...prev, [previouslyOpenAccordionId]: false }));
+    }
+
+    // Set the new state for the main accordion (open the clicked one, or close it if it was already open)
+    setOpenAccordion(isOpeningNew ? id : null);
+
+    // If we are explicitly closing the accordion that was just open (by clicking it again),
+    // also ensure its corresponding kit details accordion is closed.
+    // This handles the case where the user clicks the same accordion header to close it.
+    if (isCurrentlyOpen) { 
+      setOpenKitAccordions(prev => ({ ...prev, [id]: false }));
+    }
+
+    // Scroll logic for when a new main accordion is being opened
+    if (isOpeningNew) {
       setTimeout(() => {
         const ref = questionRefs.current[id];
         if (ref && ref.current) {
@@ -139,146 +153,174 @@ function GazonQnaAccordion({ onOpenKitGroup }) {
     }
   };
 
+  const handleToggleKitAccordion = (itemId) => {
+    setOpenKitAccordions(prev => ({ ...prev, [itemId]: !prev[itemId] }));
+  };
+
   const handleLinkClick = (e, target) => {
-    if (target.startsWith('#')) {
+    if (target?.startsWith('#')) { // Added optional chaining for target
       const targetId = target.replace('#', '');
       const element = document.getElementById(targetId);
       if (element) {
-         e.preventDefault(); 
-         element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-         if (onOpenKitGroup) {
-          onOpenKitGroup(targetId); 
-         }
+        e.preventDefault();
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        if (onOpenKitGroup) {
+          onOpenKitGroup(targetId);
+        }
       }
-    } else {
-      // For internal page links like '/contact'
+    } else if (target) { // Ensure target is not undefined
       e.preventDefault();
       navigate(target);
-      // Optionally close this Q&A accordion after click
-      // setOpenAccordion(null); 
     }
   };
 
   return (
     <div id="gazon-qna-accordion" className="space-y-4 mb-12 md:mb-16">
-      {qnaData.map((item) => (
-        <div
-          key={item.id}
-          className="border rounded-lg overflow-hidden shadow-sm bg-white dark:bg-gray-800 dark:border-gray-700"
-        >
-          {/* Accordion Header */}
-          <button
-            ref={questionRefs.current[item.id]}
-            onClick={() => handleToggle(item.id)}
-            className="w-full flex justify-between items-center p-4 text-left text-lg font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
+      {qnaData.map((item) => {
+        // Get data for all recommended kits for this Q&A item
+        const recommendedKitsData = item.recommendedKitRefs.map(kitInfo =>
+          getEnhancedKitData(kitInfo.ref, kitInfo.introKey, kitRefToSectionIdMap)
+        );
+
+        // Aggregate summary notes
+        let collectiveSumIndividual = null;
+        let collectiveSaving = null;
+        let hasAnyPythiumNote = false;
+        let pythiumNoteToDisplay = null;
+
+        recommendedKitsData.forEach(kit => {
+          if (kit.sumOfIndividualPricesText) collectiveSumIndividual = kit.sumOfIndividualPricesText; // Assuming only one kit in a group has this
+          if (kit.savingText) collectiveSaving = kit.savingText; // Assuming only one kit in a group has this
+          if (kit.hasPythiumNote && kit.pythiumNoteText) {
+            hasAnyPythiumNote = true;
+            pythiumNoteToDisplay = kit.pythiumNoteText; // Take the first one encountered
+          }
+        });
+
+        return (
+          <div
+            key={item.id}
+            className="border rounded-lg overflow-hidden shadow-sm bg-white dark:bg-gray-800 dark:border-gray-700 md:max-w-3xl lg:max-w-4xl md:mx-auto"
           >
-            <span>{getQnaText(item.titleKey)}</span>
-            <FaChevronDown className={`text-primary dark:text-secondary transform transition-transform duration-200 ${openAccordion === item.id ? 'rotate-180' : ''}`} />
-          </button>
+            {/* Accordion Header */}
+            <button
+              ref={questionRefs.current[item.id]}
+              onClick={() => handleToggle(item.id)}
+              className="w-full flex justify-between items-center p-4 text-left text-lg font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
+            >
+              <span>{getQnaText(item.titleKey)}</span>
+              <FaChevronDown className={`text-primary dark:text-secondary transform transition-transform duration-200 ${openAccordion === item.id ? 'rotate-180' : ''}`} />
+            </button>
 
-          {/* Accordion Content */}
-          {openAccordion === item.id && (
-            <div className="p-4 border-t bg-gray-50 dark:bg-gray-800/50 dark:border-gray-600">
-              {/* Bon à savoir */}
-              <div className="flex items-start gap-3 mb-4 p-3 bg-yellow-50 dark:bg-yellow-900/30 border-l-4 border-yellow-400 rounded">
-                <FaRegLightbulb className="text-yellow-500 text-2xl mt-1" />
-                <div>
-                  <div className="font-semibold text-yellow-700 dark:text-yellow-300 mb-1">Bon à savoir</div>
-                  <div className="text-yellow-800 dark:text-yellow-200 text-sm">
-                    <TextWithBoldMarkdown text={getBonASavoirText(item.bonASavoirKey)} />
+            {/* Accordion Content */}
+            {openAccordion === item.id && (
+              <div className="p-4 border-t bg-gray-50 dark:bg-gray-800/50 dark:border-gray-600">
+                {/* Bon à savoir */}
+                <div className="flex items-start gap-3 mb-4 p-3 bg-yellow-50 dark:bg-yellow-900/30 border-l-4 border-yellow-400 rounded md:max-w-3xl lg:max-w-4xl md:mx-auto">
+                  <FaRegLightbulb className="text-yellow-500 text-2xl mt-1" />
+                  <div>
+                    <div className="font-semibold text-yellow-700 dark:text-yellow-300 mb-1">Bon à savoir</div>
+                    <div className="text-yellow-800 dark:text-yellow-200 text-sm">
+                      <TextWithBoldMarkdown text={getBonASavoirText(item.bonASavoirKey)} />
+                    </div>
                   </div>
                 </div>
+
+                {/* Recommendations Section (Text Only) */}
+                {item.recommendationKey && (
+                  <div className="mt-4 p-4 bg-white dark:bg-gray-700 rounded-lg shadow-sm mb-4 md:max-w-3xl lg:max-w-4xl md:mx-auto">
+                    <h4 className="text-lg font-semibold text-primary dark:text-secondary mb-2">
+                      <TextWithBoldMarkdown text={getRecommendationText(`${item.recommendationKey}.recommendation_text`)} />
+                    </h4>
+                    <div className="w-16 h-1.5 bg-secondary mb-4 rounded-full"></div>
+                    <div className="prose dark:prose-invert w-full">
+                      <TextWithBoldMarkdown text={getRecommendationText(`${item.recommendationKey}.conclusion_text_prefix`)} />
+                    </div>
+                  </div>
+                )}
+
+                {/* Collapsible Kit Details Section */}
+                {item.recommendedKitRefs && item.recommendedKitRefs.length > 0 && item.recommendationKey && (
+                  <div className="mt-4 bg-white dark:bg-gray-700 rounded-lg shadow-sm md:max-w-3xl lg:max-w-4xl md:mx-auto">
+                    <button
+                      onClick={() => handleToggleKitAccordion(item.id)}
+                      className="w-full flex justify-between items-center p-3 text-left font-semibold text-secondary dark:text-secondary hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors rounded-t-lg"
+                    >
+                      <span>
+                        {getRecommendationText(`${item.recommendationKey}.conclusion_text_suffix`)}
+                      </span>
+                      <FaChevronDown className={`transform transition-transform duration-200 ${openKitAccordions[item.id] ? 'rotate-180' : ''}`} />
+                    </button>
+                    {openKitAccordions[item.id] && (
+                      <div className="p-4 border-t border-gray-200 dark:border-gray-600">
+                        {/* Desktop: Table View */}
+                        <div className="hidden md:block overflow-x-auto">
+                          <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700 table-fixed">
+                            <thead className="bg-gray-50 dark:bg-gray-700">
+                              <tr>
+                                <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider w-1/12">Référence</th>
+                                <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider w-1/12">Désignation</th>
+                                <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider w-1/12">Type de kit</th>
+                                <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider w-8/12">Pathogènes cibles</th>
+                                <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Prix Indicatif HT</th>
+                              </tr>
+                            </thead>
+                            <tbody className="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700">
+                              {recommendedKitsData.map((kitData) => (
+                                <tr key={kitData.kitRef}>
+                                  <td className="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-900 dark:text-gray-100 w-1/12">{kitData.kitRef}</td>
+                                  <td className="px-4 py-3 text-sm text-gray-600 dark:text-gray-300 w-1/12">{kitData.designation}</td>
+                                  <td className="px-4 py-3 text-sm text-gray-600 dark:text-gray-300 w-1/12">{kitData.typeDeKit}</td>
+                                  <td className="px-4 py-3 text-sm text-gray-600 dark:text-gray-300 w-8/12">{kitData.ciblesEffectives}</td>
+                                  <td className="px-4 py-3 whitespace-nowrap text-sm text-gray-600 dark:text-gray-300">{kitData.prixIndicatifHT}</td>
+                                </tr>
+                              ))}
+                            </tbody>
+                          </table>
+                        </div>
+
+                        {/* Mobile: Card View */}
+                        <div className="md:hidden">
+                          {recommendedKitsData.map((kitData) => (
+                            <KitDetailCard 
+                              key={kitData.kitRef} 
+                              kitRef={kitData.kitRef} // Pass kitRef down 
+                              introKey={item.recommendedKitRefs.find(k => k.ref === kitData.kitRef)?.introKey || ''} // Find original introKey
+                              kitRefToSectionIdMap={kitRefToSectionIdMap} // Pass the map
+                            />
+                          ))}
+                        </div>
+                        
+                        {/* Aggregated Summary Notes - Rendered after table/cards */}
+                        <div className="mt-4 space-y-1 text-sm">
+                            {hasAnyPythiumNote && pythiumNoteToDisplay && (
+                                <p className="italic text-gray-500 dark:text-gray-400 text-xs">
+                                    {pythiumNoteToDisplay}
+                                </p>
+                            )}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                )}
+
+                {/* Contact Link - Placed after both recommendation and kit sections */}
+                {(item.recommendationKey || item.id === 'q5') && (
+                  <div className="mt-6 text-center md:max-w-3xl lg:max-w-4xl md:mx-auto">
+                    <a
+                      href="/contact"
+                      onClick={(e) => handleLinkClick(e, '/contact')}
+                      className="inline-block px-6 py-2 bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors"
+                    >
+                      {getRecommendationText('qna_reco.common.contact_link')}
+                    </a>
+                  </div>
+                )}
               </div>
-
-              {/* Subquestions */}
-              {item.subquestions.length > 0 && (
-                <ul className="space-y-3 list-disc list-inside pl-4 mb-4">
-                  {item.subquestions.map((sub) => (
-                    <li key={sub.textKey}>
-                      <a
-                        href={sub.target}
-                        onClick={(e) => handleLinkClick(e, sub.target)}
-                        className="text-primary dark:text-secondary hover:underline hover:text-primary-dark dark:hover:text-secondary-light transition-colors"
-                      >
-                        {getQnaText(sub.textKey)}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              )}
-
-              {/* Recommendations */}
-              {item.recommendationKey && (
-                <div className="mt-4 p-4 bg-white dark:bg-gray-700 rounded-lg shadow-sm">
-                  <h4 className="text-lg font-semibold text-primary dark:text-secondary mb-2">
-                    <TextWithBoldMarkdown text={getRecommendationText(`${item.recommendationKey}.recommendation_text`)} />
-                  </h4>
-                  <div className="prose dark:prose-invert max-w-none mb-2">
-                    <TextWithBoldMarkdown text={getRecommendationText(`${item.recommendationKey}.conclusion_text_prefix`)} />
-                  </div>
-                  {/* Séparation visuelle */}
-                  <div className="my-4 font-semibold text-primary dark:text-secondary text-base">
-                    {getRecommendationText(`${item.recommendationKey}.conclusion_text_suffix`)}
-                  </div>
-                  {/* Encarts des kits recommandés dans l'ordre demandé */}
-                  {item.id === 'q1' && (
-                    <>
-                      <KitDetailCard kitRef="PF000011" introKey="qna_intro.reco_PF000011" />
-                      <KitDetailCard kitRef="PF000016" introKey="qna_intro.reco_PF000016" />
-                      <KitDetailCard kitRef="PF000015" introKey="qna_intro.reco_PF000015" />
-                      <KitDetailCard kitRef="PF000020" introKey="qna_intro.reco_PF000020" />
-                    </>
-                  )}
-                  {item.id === 'q2' && (
-                    <>
-                      <KitDetailCard kitRef="PF000015" introKey="qna_intro.reco_PF000015" />
-                      <KitDetailCard kitRef="PF000050" introKey="qna_intro.reco_PF000050" />
-                    </>
-                  )}
-                  {item.id === 'q3' && (
-                    <>
-                      <KitDetailCard kitRef="PF000018" introKey="qna_intro.reco_PF000018" />
-                      <KitDetailCard kitRef="PF000019" introKey="qna_intro.reco_PF000019" />
-                      <KitDetailCard kitRef="PF000020" introKey="qna_intro.reco_PF000020" />
-                    </>
-                  )}
-                  {item.id === 'q4' && (
-                    <>
-                      <KitDetailCard kitRef="PF000047" introKey="qna_intro.reco_PF000047" />
-                      <KitDetailCard kitRef="PF000049" introKey="qna_intro.reco_PF000049" />
-                      <KitDetailCard kitRef="PF000050" introKey="qna_intro.reco_PF000050" />
-                    </>
-                  )}
-                </div>
-              )}
-
-              {/* Contact Link */}
-              {item.recommendationKey && (
-                <div className="mt-4 text-center">
-                  <a
-                    href="/contact"
-                    onClick={(e) => handleLinkClick(e, '/contact')}
-                    className="inline-block px-6 py-2 bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors"
-                  >
-                    {getRecommendationText('qna_reco.common.contact_link')}
-                  </a>
-                </div>
-              )}
-              {item.id === 'q5' && (
-                <div className="mt-4 text-center">
-                  <a
-                    href="/contact"
-                    onClick={(e) => handleLinkClick(e, '/contact')}
-                    className="inline-block px-6 py-2 bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors"
-                  >
-                    {getRecommendationText('qna_reco.common.contact_link')}
-                  </a>
-                </div>
-              )}
-            </div>
-          )}
-        </div>
-      ))}
+            )}
+          </div>
+        );
+      })}
     </div>
   );
 }

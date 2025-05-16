@@ -1,5 +1,6 @@
 import React from 'react';
-import { texts } from '../content/texts';
+// import { texts } from '../content/texts'; // texts will be accessed via getEnhancedKitData
+import { getEnhancedKitData } from '../utils/kitDataHelpers'; // Import the new helper
 
 // Helper pour récupérer le texte d'un kit
 const getDiagboxText = (key, defaultValue = '') => {
@@ -77,77 +78,46 @@ const formatPriceNumber = (num) => {
   return num.toFixed(2).replace('.', ',') + ' €';
 };
 
-const KitDetailCard = ({ kitRef, introKey }) => {
-  const descriptiveTargetsText = getDiagboxText(`kits.${kitRef}.targets`, 'N/A');
-  let finalTargetsDisplayHtml = descriptiveTargetsText;
-  const resolvedTargetsSet = getFullyResolvedTargetsSet(kitRef, texts);
-  const resolvedTargetsArray = Array.from(resolvedTargetsSet).sort();
-  let sumOfIndividualPrices = 0;
-  let saving = 0;
-  let individualPricesText = null;
-  let savingText = null;
-  const combinedKitPriceString = getDiagboxText(`prices.${kitRef}`, 'N/A');
-  const combinedKitPrice = parsePriceString(combinedKitPriceString);
-  if (kitRef === 'PF000049') {
-    const componentRefs = ['PF000020', 'PF000048'];
-    componentRefs.forEach(ref => {
-      sumOfIndividualPrices += parsePriceString(getDiagboxText(`prices.${ref}`));
-    });
-  } else if (kitRef === 'PF000050') {
-    const componentRefs = ['PF000020', 'PF000047', 'PF000048'];
-    componentRefs.forEach(ref => {
-      sumOfIndividualPrices += parsePriceString(getDiagboxText(`prices.${ref}`));
-    });
+const KitDetailCard = ({ kitRef, introKey, kitRefToSectionIdMap }) => {
+  // Fetch all data using the new helper
+  // We need to pass kitRefToSectionIdMap to getEnhancedKitData
+  // This map should ideally be available globally or passed down from a higher component.
+  // For now, let's assume it might be undefined if not passed and handle it in getEnhancedKitData or here.
+  const kitData = getEnhancedKitData(kitRef, introKey, kitRefToSectionIdMap);
+
+  if (!kitData) {
+    return <div className="text-red-500">Erreur: Données du kit non trouvées pour {kitRef}.</div>;
   }
-  if ((kitRef === 'PF000049' || kitRef === 'PF000050') && sumOfIndividualPrices > 0 && combinedKitPrice > 0) {
-    saving = sumOfIndividualPrices - combinedKitPrice;
-    individualPricesText = `Prix total des kits individuels : ${formatPriceNumber(sumOfIndividualPrices)}`;
-    if (saving > 0) {
-      savingText = `Soit une économie de : ${formatPriceNumber(saving)}`;
-    }
-  }
-  if (kitRef === 'PF000049' || kitRef === 'PF000050') {
-    if (resolvedTargetsArray.length > 0) {
-      finalTargetsDisplayHtml = `${descriptiveTargetsText}. <br/><b>Cibles effectives&nbsp;:</b> ${resolvedTargetsArray.join(', ')}`;
-    }
-  } else if (descriptiveTargetsText.toLowerCase().startsWith('idem pf')) {
-    if (resolvedTargetsArray.length > 0) {
-        finalTargetsDisplayHtml = `${descriptiveTargetsText}. <br/><b>Cibles effectives&nbsp;:</b> ${resolvedTargetsArray.join(', ')}`;
-    }
-  } else {
-    if (resolvedTargetsArray.length > 0) {
-        finalTargetsDisplayHtml = resolvedTargetsArray.join(', ');
-    } else {
-        finalTargetsDisplayHtml = descriptiveTargetsText;
-    }
-  }
+
   return (
     <div className="bg-white dark:bg-gray-700 p-4 rounded-md shadow-sm my-4">
-      <p className="italic text-sm text-gray-600 dark:text-gray-400 mb-3 border-l-4 border-secondary/50 pl-3">
-        {getDiagboxText(introKey, `Intro pour ${kitRef}`)}
-      </p>
+      {kitData.introText && (
+        <p className="italic text-sm text-gray-600 dark:text-gray-400 mb-3 border-l-4 border-secondary/50 pl-3">
+          {kitData.introText}
+        </p>
+      )}
       <div className="space-y-1">
-        <p><strong>Référence:</strong> {kitRef}</p>
-        <p><strong>Désignation:</strong> {getDiagboxText(`kits.${kitRef}.name`, 'N/A')}</p>
-        <p><strong>Organismes Ciblés:</strong> <span dangerouslySetInnerHTML={{ __html: finalTargetsDisplayHtml }} /></p>
-        <p><strong>Prix Indicatif HT:</strong> {combinedKitPriceString}</p>
-        {individualPricesText && <p className="text-sm text-primary dark:text-gray-300">{individualPricesText}</p>}
-        {savingText && <p className="text-sm font-semibold text-green-600 dark:text-green-400">{savingText}</p>}
+        <p><strong>Référence:</strong> {kitData.kitRef}</p>
+        <p><strong>Désignation:</strong> {kitData.designation}</p>
+        {/* Display Cibles Effectives directly for clarity in card view */}
+        <p><strong>Organismes Ciblés:</strong> {kitData.ciblesEffectives || kitData.descriptiveTargetsText}</p>
+        <p><strong>Type de kit:</strong> {kitData.typeDeKit}</p>
+        <p><strong>Prix Indicatif HT:</strong> {kitData.prixIndicatifHT}</p>
       </div>
-      {(() => {
-        const targetsWithAsterisk = resolvedTargetsArray.filter(target => target.includes('*'));
-        if (targetsWithAsterisk.length > 0) {
-          const notePrefix = getDiagboxText('pythium_note_prefix', '* Pour : ');
-          const noteSuffix = getDiagboxText('pythium_note_suffix_detail', '. Le détail des 9 souches...');
-          const affectedTargetsString = targetsWithAsterisk.map(t => t.replace('*', '')).join(', ');
-          return (
-            <p className="mt-3 text-xs text-gray-500 dark:text-gray-400 italic">
-              {notePrefix}{affectedTargetsString}{noteSuffix}
-            </p>
-          );
-        }
-        return null;
-      })()}
+      {/* 
+        The following sections are now handled by the parent component (GazonQnaAccordion) 
+        for aggregated display under the table/cards list.
+
+        {kitData.sumOfIndividualPricesText && 
+          <p className="text-sm text-primary dark:text-gray-300">{kitData.sumOfIndividualPricesText}</p>}
+        {kitData.savingText && 
+          <p className="text-sm font-semibold text-green-600 dark:text-green-400">{kitData.savingText}</p>}
+        {kitData.pythiumNoteText && (
+          <p className="mt-3 text-xs text-gray-500 dark:text-gray-400 italic">
+            {kitData.pythiumNoteText}
+          </p>
+        )}
+      */}
     </div>
   );
 };

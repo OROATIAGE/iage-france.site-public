@@ -234,7 +234,7 @@ function Navbar() {
                 <div className="pl-3 space-y-1 border-l border-gray-300 dark:border-gray-600">
                   {item.dropdown.map((subItem) => (
                     <Link
-                      key={subItem.name || subItem.nameKey_mobile}
+                      key={subItem.name || subItem.nameKey}
                       to={item.isDomaines ? `/${subItem.hash}` : subItem.path}
                       className="text-primary dark:text-gray-300 hover:text-primary dark:hover:text-secondary block py-1 text-base font-medium whitespace-normal"
                       onClick={() => handleDropdownItemClick(item.isDomaines ? `/${subItem.hash}` : subItem.path, item.isDomaines)}
