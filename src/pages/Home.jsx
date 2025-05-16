@@ -196,54 +196,42 @@ const Home = () => {
           <h2 className="text-4xl font-bold text-center mb-16 text-primary dark:text-white">
             {texts.home.sectors.title}
           </h2>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 gap-8 md:gap-12 lg:gap-16">
             {problemSolvingCategories.map((category, idx) => (
-              <div key={category.id} id={domainIds[idx]} className="bg-white rounded-xl shadow-lg flex flex-col items-center overflow-hidden">
+              <div 
+                key={category.id} 
+                id={domainIds[idx]} 
+                className={`bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden w-full md:w-2/3 ${idx % 2 === 0 ? 'md:ml-[10%]' : 'md:ml-auto md:mr-[10%]'}`}
+              >
                 {/* Titre au-dessus de l'image */}
                 <div
-                  className="w-full bg-primary text-white text-lg font-bold text-center py-3 rounded-t-xl"
+                  className={`w-full bg-white dark:bg-gray-800 text-primary dark:text-secondary-light text-xl font-bold pt-4 pb-2 ${idx % 2 === 0 ? 'md:text-right md:pr-6 lg:pr-8' : 'md:text-left md:pl-6 lg:pl-8'}`}
                   id={domainTitleIds[idx]}
                 >
                   {texts.home.sectors[category.titleKey]}
                 </div>
-                {/* Image + boutons overlay sur l'image */}
-                <div className="relative w-full">
-                  <img
-                    src={category.imageSrc}
-                    alt={texts.home.sectors[category.titleKey]}
-                    className="w-full aspect-[16/9] object-cover"
-                  />
-                  {/* Overlay dégradé en bas de l'image pour lisibilité (desktop uniquement) */}
-                  <div className="hidden md:block absolute left-0 right-0 bottom-0 h-1/2 bg-gradient-to-t from-black/50 via-black/10 to-transparent z-0 rounded-b-xl pointer-events-none" />
-                  {/* Overlays : sous l'image sur mobile, sur l'image en absolute sur desktop */}
-                  <div
-                    className="flex flex-col gap-5 w-full mt-2 md:absolute md:left-0 md:right-0 md:bottom-8 md:p-4 md:py-2 md:z-10 md:pointer-events-auto md:mt-0"
-                  >
-                    {category.subdomains.map((subdomain, idx2) => {
-                      const mlClasses = [
-                        'md:ml-0',
-                        'md:ml-8',
-                        'md:ml-16',
-                        'md:ml-24',
-                        'md:ml-32',
-                      ];
-                      return (
-                        <Link
-                          key={subdomain.textKey}
-                          to={subdomain.link}
-                          className={`
-                            bg-white/40 md:bg-white/60 backdrop-blur-sm text-primary font-bold px-3 py-1 rounded-full text-sm whitespace-normal break-words shadow transition-all duration-150
-                            w-full mx-auto
-                            md:w-2/3 ${mlClasses[idx2] || ''}
-                            cursor-pointer
-                            focus:bg-white focus:shadow-2xl focus:ring-4 focus:ring-primary/50 focus:-translate-y-0.5 focus:outline-none
-                            md:hover:bg-white md:hover:shadow-2xl md:hover:ring-4 md:hover:ring-primary/50 md:hover:-translate-y-0.5
-                          `}
-                        >
-                          {texts.home.sectors[subdomain.textKey]}
-                        </Link>
-                      );
-                    })}
+                <div className={`w-16 h-1.5 bg-secondary mb-4 rounded-full ${idx % 2 === 0 ? 'md:ml-auto md:mr-6 lg:mr-8' : 'md:mr-auto md:ml-6 lg:ml-8'}`}></div>
+                {/* Conteneur pour image et boutons côte à côte */}
+                <div className={`flex flex-col ${idx % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
+                  {/* Conteneur Image */}
+                  <div className="w-full md:w-1/2 relative">
+                    <img
+                      src={category.imageSrc}
+                      alt={texts.home.sectors[category.titleKey]}
+                      className="w-full h-auto md:h-full object-cover aspect-video md:aspect-auto"
+                    />
+                  </div>
+                  {/* Conteneur Boutons */}
+                  <div className="w-full md:w-1/2 p-4 md:p-6 flex flex-col justify-center gap-y-3">
+                    {category.subdomains.map((subdomain) => (
+                      <Link
+                        key={subdomain.textKey}
+                        to={subdomain.link}
+                        className="block bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 text-primary dark:text-white font-semibold px-4 py-2.5 rounded-md text-sm text-center transition-colors duration-150 shadow-sm focus:outline-none focus:ring-2 focus:ring-primary/50"
+                      >
+                        {texts.home.sectors[subdomain.textKey]}
+                      </Link>
+                    ))}
                   </div>
                 </div>
               </div>

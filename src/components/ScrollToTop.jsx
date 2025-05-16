@@ -10,6 +10,9 @@ function usePrevious(value) {
   return ref.current;
 }
 
+// Define Navbar height (h-16 is 64px). Add some padding.
+const NAVBAR_OFFSET = 80; // 64px for navbar + 16px padding
+
 function ScrollToTop() {
   const location = useLocation();
   const prevLocation = usePrevious(location);
@@ -20,16 +23,17 @@ function ScrollToTop() {
       if (location.hash) {
         // If there's a hash, try scrolling to the element
         const id = location.hash.replace('#', '');
-        const element = document.getElementById(id);
-        if (element) {
-          // Use timeout to allow rendering after navigation
-          setTimeout(() => {
-             element.scrollIntoView({ behavior: 'auto', block: 'start' }); // Use auto for potentially faster jump
-          }, 100);
-        } else {
-          // Fallback if element not found immediately (e.g., lazy loading)
-          window.scrollTo(0, 0);
-        }
+        // Use a timeout to ensure the element is available after navigation and rendering
+        setTimeout(() => {
+          const element = document.getElementById(id);
+          if (element) {
+            const y = element.getBoundingClientRect().top + window.scrollY - NAVBAR_OFFSET;
+            window.scrollTo({ top: y, behavior: 'auto' }); // 'auto' for instant jump on page load
+          } else {
+            // Fallback if element not found, scroll to top
+            window.scrollTo(0, 0);
+          }
+        }, 100); // Delay might need adjustment based on page complexity
       } else {
         // If no hash, scroll to top
         window.scrollTo(0, 0);
