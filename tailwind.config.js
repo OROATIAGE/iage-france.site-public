@@ -12,6 +12,7 @@ export default {
         'primary-dark': '#002244',
         secondary: '#00A0E9',
         'secondary-dark': '#0080C9',
+        'secondary-light': '#7DD3FC', // Added lighter shade for secondary
         accent: '#FF6B00',
       },
       fontFamily: {

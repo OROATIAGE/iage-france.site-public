@@ -258,21 +258,21 @@ function GazonQnaAccordion({ onOpenKitGroup }) {
                           <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700 table-fixed">
                             <thead className="bg-gray-50 dark:bg-gray-700">
                               <tr>
-                                <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider w-1/12">Référence</th>
-                                <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider w-1/12">Désignation</th>
-                                <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider w-1/12">Type de kit</th>
-                                <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider w-8/12">Pathogènes cibles</th>
-                                <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Prix Indicatif HT</th>
+                                <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider w-2/12">Référence</th>
+                                <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider w-2/12">Désignation</th>
+                                <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider w-2/12">Type de kit</th>
+                                <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider w-5/12">Pathogènes cibles</th>
+                                <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider w-1/12">Prix Indicatif HT</th>
                               </tr>
                             </thead>
                             <tbody className="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700">
                               {recommendedKitsData.map((kitData) => (
                                 <tr key={kitData.kitRef}>
-                                  <td className="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-900 dark:text-gray-100 w-1/12">{kitData.kitRef}</td>
-                                  <td className="px-4 py-3 text-sm text-gray-600 dark:text-gray-300 w-1/12">{kitData.designation}</td>
-                                  <td className="px-4 py-3 text-sm text-gray-600 dark:text-gray-300 w-1/12">{kitData.typeDeKit}</td>
-                                  <td className="px-4 py-3 text-sm text-gray-600 dark:text-gray-300 w-8/12">{kitData.ciblesEffectives}</td>
-                                  <td className="px-4 py-3 whitespace-nowrap text-sm text-gray-600 dark:text-gray-300">{kitData.prixIndicatifHT}</td>
+                                  <td className="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-900 dark:text-gray-100 w-2/12">{kitData.kitRef}</td>
+                                  <td className="px-4 py-3 text-sm text-gray-600 dark:text-gray-300 w-2/12">{kitData.designation}</td>
+                                  <td className="px-4 py-3 text-sm text-gray-600 dark:text-gray-300 w-2/12">{kitData.typeDeKit}</td>
+                                  <td className="px-4 py-3 text-sm text-gray-600 dark:text-gray-300 w-5/12">{kitData.ciblesEffectives}</td>
+                                  <td className="px-4 py-3 whitespace-nowrap text-sm text-gray-600 dark:text-gray-300 w-1/12">{kitData.prixIndicatifHT}</td>
                                 </tr>
                               ))}
                             </tbody>

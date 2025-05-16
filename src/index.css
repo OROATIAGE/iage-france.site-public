@@ -57,7 +57,7 @@
   }
 
   h2 {
-    @apply text-2xl font-semibold text-gray-800 mb-4;
+    @apply text-2xl font-semibold text-primary dark:text-secondary-light mb-4; /* Default h2 en primary, dark mode en secondary-light */
   }
 }
 

@@ -6,6 +6,7 @@ import DiagboxGazonNav from '../components/DiagboxGazonNav';
 import { FaLeaf, FaVial, FaPaperPlane, FaChevronDown, FaChevronRight, FaAngleRight } from 'react-icons/fa';
 import GazonQnaAccordion from '../components/GazonQnaAccordion'; // Import the new component
 import { useState, useEffect } from 'react';
+import { getEnhancedKitData } from '../utils/kitDataHelpers'; // <-- IMPORT ADDED
 
 // Original getText helper for general sector page data
 const getText = (baseKey, path) => {
@@ -349,7 +350,7 @@ function SectorPage() {
         <GazonQnaAccordion onOpenKitGroup={setInitiallyOpenKitGroup} />
 
         {/* --- Diagbox Navigation --- */}
-        <DiagboxGazonNav onNavigateToQna={handleNavigateToQnaAndCollapseKits} />
+        {/* <DiagboxGazonNav onNavigateToQna={handleNavigateToQnaAndCollapseKits} /> */}
 
         {/* --- Content from DiagboxGazonPage.jsx --- */}
         {/* --- Diagbox Hero Section (copied) --- */}
@@ -410,48 +411,51 @@ function SectorPage() {
               {getDiagboxText('prices.info_link')}
             </p>
             <div className="overflow-x-auto md:overflow-visible">
-              <table className="min-w-full w-full divide-y divide-gray-200 dark:divide-gray-700 md:border dark:border-gray-600 shadow-sm md:rounded-lg responsive-kit-table">
+              <table className="min-w-full w-full divide-y divide-gray-200 dark:divide-gray-700 md:border dark:border-gray-600 shadow-sm md:rounded-lg responsive-kit-table table-fixed">
                 <thead className="bg-gray-50 dark:bg-gray-700 hidden md:table-header-group">
                   <tr>
-                    <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Référence</th>
-                    <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Désignation</th>
-                    <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
-                      {getDiagboxText('prices.type_header')}
-                    </th>
-                    <th scope="col" className="px-6 py-3 text-right text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Prix Indicatif HT</th>
+                    <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider w-2/12">Référence</th>
+                    <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider w-2/12">Désignation</th>
+                    <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider w-2/12">Type de kit</th>
+                    <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider w-5/12">Pathogènes cibles</th>
+                    <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider w-1/12">Prix Indicatif HT</th>
                   </tr>
                 </thead>
                 <tbody className="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700 flex flex-col md:table-row-group md:divide-y">
                   {priceList.map((kitRef) => {
-                    const typeId = kitRefToSectionIdMap[kitRef] ?? '';
-                    const typeText = getDiagboxText(`types.${typeId}`) || typeId;
+                    // Fetch enhanced data for each kit in the price list
+                    const kitData = getEnhancedKitData(kitRef, null, kitRefToSectionIdMap);
                     return (
                       <tr key={kitRef} className="block md:table-row border-b last:border-b-0 md:border-none dark:border-gray-700 p-4 md:p-0">
                         <td 
                           data-label="Référence"
-                          className="block md:table-cell md:px-6 md:py-4 md:whitespace-nowrap text-sm font-medium text-primary dark:text-gray-100 responsive-cell"
+                          className="block md:table-cell md:px-4 md:py-3 md:whitespace-nowrap text-sm font-medium text-primary dark:text-gray-100 responsive-cell w-2/12"
                         >
-                          {kitRef}
+                          {kitData.kitRef}
                         </td>
                         <td 
                           data-label="Désignation"
-                          className="block md:table-cell md:px-6 md:py-4 md:whitespace-nowrap text-sm text-primary dark:text-gray-300 responsive-cell"
+                          className="block md:table-cell md:px-4 md:py-3 text-sm text-primary dark:text-gray-300 responsive-cell w-2/12"
                         >
-                          {/* Link removed, just display text */}
-                          {getDiagboxText(`kits.${kitRef}.name`)}
+                          {kitData.designation}
                         </td>
                         <td 
-                          data-label={getDiagboxText('prices.type_header', 'Type')}
-                          className="block md:table-cell md:px-6 md:py-4 md:whitespace-nowrap text-sm text-gray-500 dark:text-gray-400 responsive-cell"
+                          data-label="Type de kit"
+                          className="block md:table-cell md:px-4 md:py-3 text-sm text-gray-500 dark:text-gray-400 responsive-cell w-2/12"
                         >
-                           {/* Link removed, just display text */}
-                           {typeText}
+                           {kitData.typeDeKit}
+                        </td>
+                        <td 
+                          data-label="Pathogènes cibles"
+                          className="block md:table-cell md:px-4 md:py-3 text-sm text-gray-600 dark:text-gray-300 responsive-cell w-5/12"
+                        >
+                          {kitData.ciblesEffectives}
                         </td>
                         <td 
                           data-label="Prix Indicatif HT"
-                          className="block md:table-cell md:px-6 md:py-4 md:whitespace-nowrap text-sm text-gray-600 dark:text-gray-300 md:text-right responsive-cell"
+                          className="block md:table-cell md:px-4 md:py-3 md:whitespace-nowrap text-sm text-gray-600 dark:text-gray-300 md:text-right responsive-cell w-1/12"
                         >
-                          {getDiagboxText(`prices.${kitRef}`)}
+                          {kitData.prixIndicatifHT}
                         </td>
                       </tr>
                     );

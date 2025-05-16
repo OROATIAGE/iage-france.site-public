@@ -37,7 +37,6 @@ function Navbar() {
     { name: texts.services?.nav?.catalog || 'Catalogue', path: '/services#catalog' },
     { name: texts.services?.nav?.['specific-combinations'] || 'Combinaisons', path: '/services#specific-combinations' },
     { name: texts.services?.nav?.development || 'R&D', path: '/services#development' },
-    { name: texts.services?.nav?.diagbox || 'DiagBox®', path: '/services#diagbox' },
     { name: texts.services?.nav?.['sampling-advice'] || 'Conseil Prélèvement', path: '/services#sampling-advice' },
     { name: texts.services?.nav?.thresholds || 'Seuils Décisionnels', path: '/services#thresholds' },
     { name: texts.services?.nav?.['mobile-viz'] || 'Viz Mobilité', path: '/services#mobile-viz' },
@@ -55,20 +54,21 @@ function Navbar() {
   ];
 
   const navItems = [
-    { name: texts.navbar.home, path: '/' },
-    { name: texts.navbar.about, path: '/about' },
-    { 
-      name: texts.navbar.services.title,
-      path: '/services',
-      dropdown: servicesDropdownItems
-    },
-    {
+    { name: texts.navbar.home, path: '/' }, // Accueil
+    { // Domaines
       name: texts.navbar.sectors,
       path: '/',
       dropdown: domainDropdownItems,
       isDomaines: true
     },
-    { name: texts.navbar.contact, path: '/contact' },
+    { name: texts.navbar.services.dropdown.diagbox, path: '/diagbox' }, // Diagbox
+    { // Services
+      name: texts.navbar.services.title,
+      path: '/services',
+      dropdown: servicesDropdownItems
+    },
+    { name: texts.navbar.about, path: '/about' }, // À propos de nous
+    { name: texts.navbar.contact, path: '/contact' }, // Contact
   ]
 
   const handleServicesMouseEnter = () => {

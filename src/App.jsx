@@ -13,6 +13,7 @@ import DiagboxGazonPage from './pages/DiagboxGazonPage'
 // Import new pages
 import PrivacyPolicy from './pages/PrivacyPolicy' 
 import LegalNotice from './pages/LegalNotice'
+import DiagboxPage from './pages/DiagboxPage'
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
               {/* Add routes for new pages */}
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
               <Route path="/legal-notice" element={<LegalNotice />} />
+              <Route path="/diagbox" element={<DiagboxPage />} />
             </Routes>
           {/* </AnimatePresence> Mettre en commentaire temporairement */}
         </main>

@@ -6,7 +6,8 @@ export const texts = {
     "sectors": "Domaines",
     "services": {
       "dropdown": {
-        "all": "Voir tous les services"
+        "all": "Voir tous les services",
+        "diagbox": "Diagbox"
       },
       "title": "Services"
     }
@@ -610,7 +611,7 @@ export const texts = {
         },
         "qna-group-q1_sub1": {
           "recommendation_text": "Nos recommandations :",
-          "conclusion_text_prefix": "**Connaissez l'état réel de votre gazon** : faites un **diagnostic complet (feuilles et les racines)** de votre pelouse (Diagbox PF00049) : vous prenez connaissance de la présence éventuelle de la **pyriculariose**, et surtout des **autres champignons** présents qui pourraient profiter de vos traitements contre la pyriculariose pour prendre sa place et **s'étendre à leur tour**.\n\n**Mettez en place un plan simple de surveillance** : à partir des périodes de chaleur propices au développement de la pyriculariose (juin ou juillet selon la situation de votre stade), assurez un **suivi de détection précoce** de la pyriculariose (PF00011). Cette Diagbox est **très facile d'emploi** : vous passez une lingette sur les lames de la tondeuse après tonte, vous nous l'expédiez avec l'enveloppe prépayée et vous avec le résultat 48h après. Assurez cette surveillance **au minimum une fois par semaine**.\n\n**Mettez en place un suivi renforcé si nécessaire**, avec deux mesures par semaine dans les régions à risque : les premiers signes de la pyriculariose apparaissent en effet de l'ordre de 3 jours après un résultat positif de notre Digabox : **le suivi rapproché vous permet d'intervenir quand il est encore temps**. \n\n**Surveillez l'efficacité des vos traitements** : vous mettez  en œuvre les traitements **dès que la mesure est positive**, sur la zone identifiée, généralement en plusieurs fois. Vous vérifiez l'effet de chaque traitement avec la Diagbox PF00016 qui permet de quantifier la pression du pathogène et sa décroissance au fur et à mesure que les traitements agissent.\n\nNous vous accompagnons à chaque étape, en particulier dans la mise en place de **traitement de prévention contre les autres pathogènes présents** identifiés lors du diagnostics. L'audit sur les racines permet alors de calibrer les traitements à prévoir de manière pertinente.",
+          "conclusion_text_prefix": "**Connaissez l'état réel de votre gazon** : faites un **diagnostic complet (feuilles et les racines)** de votre pelouse (Diagbox PF00049) : vous prenez connaissance de la présence éventuelle de la **pyriculariose**, et surtout des **autres champignons** présents qui pourraient profiter de vos traitements contre la pyriculariose pour prendre sa place et **s'étendre à leur tour**.\n\n**Mettez en place un plan simple de surveillance** : à partir des périodes de chaleur propices au développement de la pyriculariose (juin ou juillet selon la situation de votre stade), assurez un **suivi de détection précoce** de la pyriculariose (PF00011). Cette Diagbox est **très facile d'emploi** : vous passez une lingette sur les lames de la tondeuse après tonte, vous nous l'expédiez avec l'enveloppe prépayée et vous avec le résultat 48h après. Assurez cette surveillance **au minimum une fois par semaine**.\n\n**Mettez en place un suivi renforcé si nécessaire**, avec deux mesures par semaine dans les régions à risque : les premiers signes de la pyriculariose apparaissent en effet de l'ordre de 3 jours après un résultat positif de notre Digabox : **le suivi rapproché vous permet d'intervenir quand il est encore temps**. \n\n**Surveillez l'efficacité des vos traitements** : vous mettez  en œuvre les traitements **dès que la mesure est positive**, sur la zone identifiée, généralement en plusieurs fois. Vous vérifiez l'effet de chaque traitement avec la Diagbox PF00016 qui permet de quantifier la pression du pathogène et sa décroissance au fur et à mesure que les traitements agissent.\n\nNous vous accompagnons à chaque étape, en particulier dans la mise en place de **traitement de prévention contre les autres pathogènes présents** identifiés lors du diagnostics. L'audit sur les racines permet alors de calibrer les traitements à prévoir de manière pertinente.",
           "conclusion_text_suffix": "Spécifications techniques et prix des Diagbox recommandées"
         },
         "qna-group-q1_sub2": {
@@ -635,17 +636,17 @@ export const texts = {
         },
         "qna-group-q2_sub1": {
           "recommendation_text": "Nos recommandations :",
-          "conclusion_text_prefix": "**Connaissez l'état réel de votre gazon** : faites un **diagnostic complet (feuilles et les racines)** de votre pelouse (Diagbox PF00049) pour identifier vos risques à court et moyen terme.\n\nDéfinissez avec nous **un plan de suivi**, adapté à votre situation et à votre budget : en fonction des pathogènes identifiés et des caractéristiques de votre stade, nous vous conseillons sur les actions à entreprendre, et nous vous accompagnons pour les mettre en place dans la durée, avec des **outils de visualisation des résultats** pour optimiser les apports de produits de traitement.\n\n**Vous maîtrisez vos risques et réduisez vos coûts d'entretien dans la durée**.",
+          "conclusion_text_prefix": "**Connaissez l'état réel de votre gazon** : faites un **diagnostic complet (feuilles et les racines)** de votre pelouse (Diagbox PF00049) pour identifier vos risques à court et moyen terme.\n\nDéfinissez avec nous **un plan de suivi**, adapté à votre situation et à votre budget : en fonction des pathogènes identifiés et des caractéristiques de votre stade, nous vous conseillons sur les actions à entreprendre, et nous vous accompagnons pour les mettre en place dans la durée, avec des **outils de visualisation des résultats** pour optimiser les apports de produits de traitement.\n\n**Vous maîtrisez vos risques et réduisez vos coûts d'entretien dans la durée**.",
           "conclusion_text_suffix": "Spécifications techniques et prix des Diagbox recommandées"
         },
         "qna-group-q3": {
           "recommendation_text": "Nos recommandations :",
-          "conclusion_text_prefix": "Réalisez **le plus rapidement possible** la quantification des pathogènes présents en nous envoyant des feuilles des zones touchées. Pour cela, utilisez la Diagbox PF00018 si l'apparition des symptômes a lieu en été, ou PF 00019 en hivers. \n\nPour encore **plus de réactivité et de facilité, disposez dans vos stocks ** de la Diagbox PF00020 qui couvre l'ensemble des pathogènes : **utilisez-la dès que des symptômes apparaissent**.\n\n**Si plusieurs zone différentes sont déjà touchées**, réalisez de préférence **un prélèvement différent pour chaque zone** avec les Diagbox retenues: vous disposerz d'un diagnostic pour chaque endroit touché et vous pourrez aller vers des solutions encore plus adaptées.\n\nNous vous accompagnons dans le suivi des traitements, et pour voir avec vous si des diagnostics des autres compartiments (racine, sols) sont nécessaires.",
+          "conclusion_text_prefix": "Réalisez **le plus rapidement possible** la quantification des pathogènes présents en nous envoyant des feuilles des zones touchées. Pour cela, utilisez la Diagbox PF00018 si l'apparition des symptômes a lieu en été, ou PF 00019 en hivers. \n\nPour encore **plus de réactivité et de facilité, disposez dans vos stocks ** de la Diagbox PF00020 qui couvre l'ensemble des pathogènes : **utilisez-la dès que des symptômes apparaissent**.\n\n**Si plusieurs zone différentes sont déjà touchées**, réalisez de préférence **un prélèvement différent pour chaque zone** avec les Diagbox retenues: vous disposerz d'un diagnostic pour chaque endroit touché et vous pourrez aller vers des solutions encore plus adaptées.\n\nNous vous accompagnons dans le suivi des traitements, et pour voir avec vous si des diagnostics des autres compartiments (racine, sols) sont nécessaires.",
           "conclusion_text_suffix": "Spécifications techniques et prix des Diagbox recommandées"
         },
         "qna-group-q4_combined": {
           "recommendation_text": "Nos recommandations :",
-          "conclusion_text_prefix": "Réalisez **un diagnostic des sols** avant tout nouveau plaquage, avec la Diagbox PF 00047 : les pathogènes présents dans les sols, même en faibles quantités, représentent un **risque de long terme** et peuvent conduire à la destruction prématurée de votre pelouse, ou à des **surcoûts d'entretien**. Nous vous accompagnerons ensuite au besoin dans le suivi des traitements et de l'état de santé du sol. \n\nVous voulez encore mieux sécuriser votre investissement ? **Testez également les plaquages livrés**, pour évaluer leur bon état (Diagbox PF 00049), ou demandez à votre fournisseur une preuve de ce bon état, par exemple avec un relevé de mesures réalisées par ses soins.\n\nPour la réalisation de l'ensemble des analyses par vous même, utilisez la Digabox PF 00050 qui **intègre les analyses des trois compartiments (sols + feuilles et racines)** à un prix réduit.",
+          "conclusion_text_prefix": "Réalisez **un diagnostic des sols** avant tout nouveau plaquage, avec la Diagbox PF 00047 : les pathogènes présents dans les sols, même en faibles quantités, représentent un **risque de long terme** et peuvent conduire à la destruction prématurée de votre pelouse, ou à des **surcoûts d'entretien**. Nous vous accompagnerons ensuite au besoin dans le suivi des traitements et de l'état de santé du sol. \n\nVous voulez encore mieux sécuriser votre investissement ? **Testez également les plaquages livrés**, pour évaluer leur bon état (Diagbox PF 00049), ou demandez à votre fournisseur une preuve de ce bon état, par exemple avec un relevé de mesures réalisées par ses soins.\n\nPour la réalisation de l'ensemble des analyses par vous même, utilisez la Digabox PF 00050 qui **intègre les analyses des trois compartiments (sols + feuilles et racines)** à un prix réduit.",
           "conclusion_text_suffix": "Spécifications techniques et prix des Diagbox recommandées"
         }
       },
@@ -654,8 +655,21 @@ export const texts = {
         "q2": "**Depuis le 1er janvier 2025**, la loi Labbé de 2014 impose la **suppression des produits phytosanitaires de synthèse** pour le traitement des gazons sportifs. \n**Le nombre de produits utilisables est réduit** et vous avez peut être dû revoir vos programmes de traitement.\n**Chaque terrain est spécifique** : type et origine du gazon, sols, météo, usages,... autant de facteurs qui modifient les types de maladies qui peuvent toucher votre terrain et la façon dont elles peuvent évoluer. \nIAGE a développé une expérience concrète qui lui permet d'**adapter pour votre cas particulier ses conseils et l'usage de ses outils**, afin d'assurer un **suivi des risques de court ou moyen termes (feuilles et racines), et des risques à long terme (sol)** adaptés à votre situation et à votre budget.",
         "q3": "Une **détérioration visible** du gazon indique un **niveau déjà important** du ou des pathogènes en cause. \nDe plus, derrière l'agent principal qui peut souvent être identifié visuellement, des agents secondaires peuvent aussi être présents. Ils peuvent profiter du premier ou seront des facteurs aggravant en se développant à la place du premier si les traitements retenus ne sont pas adaptés.\nIAGE a défini des outils pour **identifier au plus vite tous les agents responsables**, et vous permettre de mettre en place les traitements adaptés avec le plus de chances de sauver la pelouse et de limiter vos coûts d'entretien.",
         "q4": "Installer un nouveau plaquage représente un **investissement conséquent**. \nL'absence d'évaluation de la santé des sols ou du gazon apportés peut permettre à des pathogènes présents dans le sol ou apportés par le plaquages de proliférer, **conduisant à des coûts d'entretiens élevés**, voir au pire à la ruine de la nouvelle pelouse. \nIAGE a défini des outils pour assurer une **vérification préalable des états de santé de chaque compartiment** (sol, racines, feuilles) pour réduire les risques au regard de l'investissement réalisé.\nCes analyses ont déjà été utilisées dans le cas d'un litige sur l'origine d'une dégradation après un plaquage.",
-        "q5": "**Chaque terrain est spécifique** : type et origine du gazon, sols, météo, usages,... autant de facteurs qui modifient les types de maladies qui peuvent toucher votre terrain et la façon dont elles peuvent évoluer. Vous avez aussi de votre côté des attentes ou des contraintes propres\nIl y a donc en effet de nombreuses situations différentes ! N'hésitez pas à **nous contacter**, nous serons heureux de voir avec vous comment vous aider au mieux"
+        "q5": "**Chaque terrain est spécifique** : type et origine du gazon, sols, météo, usages,... autant de facteurs qui modifient les types de maladies qui peuvent toucher votre terrain et la façon dont elles peuvent évoluer. Vous avez aussi de votre côté des attentes ou des contraintes propres\nIl y a donc en effet de nombreuses situations différentes ! N'hésitez pas à **nous contacter**, nous serons heureux de voir avec vous comment vous aider au mieux"
       }
+    },
+    "mainpage": {
+      "title": "Les DiagBox® IAGE",
+      "intro": "Découvrez nos solutions de diagnostic rapide et autonome",
+      "simple_title": "Un processus simple et rapide",
+      "simple_step_open": "1. Ouvrez votre kit DiagBox®",
+      "simple_step_sample": "2. Prélevez votre échantillon facilement grâce au matériel fourni et au protocole clair",
+      "simple_step_scan": "3. Scannez le QR code unique pour enregistrer votre échantillon",
+      "simple_step_send": "4. Envoyez-le au laboratoire avec l'enveloppe pré-affranchie",
+      "simple_step_results": "5. Obtenez vos résultats d'analyse précis sous 48h à 72h",
+      "list_title": "Notre gamme de DiagBox® par domaine d'activité",
+      "kits_coming_soon": "Les kits DiagBox® pour ce secteur seront bientôt disponibles. Contactez-nous pour en savoir plus.",
+      "view_gazon_kits_button": "Découvrir les DiagBox® Gazon"
     }
   },
   "gazon": {
@@ -748,5 +762,10 @@ export const texts = {
     "services": "Services",
     "subtitle": "Ingéniérie et Analyse en Génétique Environnementale",
     "title": "IAGE"
+  },
+  "diagbox_poultry": {
+    "page": {
+      "cta_button": "Protéger mon élevage avec DiagBox®"
+    }
   }
 };
