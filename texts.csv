@@ -84,6 +84,7 @@ services.nav.sampling-advice,Services Nav,Optimiser les prélèvements,[EN] Opti
 services.nav.sampling-tools,Services Nav,Préleveurs d'eaux,[EN] Préleveurs d'eaux
 services.nav.specific-combinations,Services Nav,Combinaisons sur mesure,[EN] Combinaisons sur mesure
 services.nav.thresholds,Services Nav,Seuils décisionnels,[EN] Seuils décisionnels
+services.nav.question,Services Nav,Simplement poser une question,[EN] Just ask a question
 services.page.back_to_sectors_link_text,Services (Page),Voir nos domaines d'activité,[EN] Voir nos domaines d'activité
 services.page.back_to_sectors_title,Services (Page),Explorer nos domaines d'application,[EN] Explorer nos domaines d'application
 services.page.catalog_description,Services (Page),"Nous proposons un large catalogue d'analyses standardisées, validées et optimisées pour différents types de matrices (eaux, sols, air, surfaces, etc.). Ces analyses couvrent la détection et la quantification de nombreux micro-organismes (virus, bactéries, champignons) et paramètres spécifiques.

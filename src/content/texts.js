@@ -132,7 +132,8 @@ export const texts = {
         "sampling-advice": "Optimiser les prélèvements",
         "sampling-tools": "Préleveurs d'eaux",
         "specific-combinations": "Combinaisons sur mesure",
-        "thresholds": "Seuils décisionnels"
+        "thresholds": "Seuils décisionnels",
+        "question": "Simplement poser une question"
       },
       "page": {
         "back_to_sectors_link_text": "Voir nos domaines d'activité",
@@ -1001,7 +1002,8 @@ export const texts = {
         "sampling-advice": "[EN] Optimiser les prélèvements",
         "sampling-tools": "[EN] Préleveurs d'eaux",
         "specific-combinations": "[EN] Combinaisons sur mesure",
-        "thresholds": "[EN] Seuils décisionnels"
+        "thresholds": "[EN] Seuils décisionnels",
+        "question": "[EN] Just ask a question"
       },
       "page": {
         "back_to_sectors_link_text": "[EN] Voir nos domaines d'activité",

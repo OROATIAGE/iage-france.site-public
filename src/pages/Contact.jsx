@@ -66,7 +66,8 @@ const services = [
   { id: 'mobile-viz', name: 'Visualisation mobile' },
   { id: 'modeling', name: 'Modélisation' },
   { id: 'sampling-tools', name: 'Outils de prélèvement' },
-  { id: 'local-labs', name: 'Laboratoires locaux' }
+  { id: 'local-labs', name: 'Laboratoires locaux' },
+  { id: 'question', name: 'Simplement poser une question' }
 ];
 
 const Contact = () => {
