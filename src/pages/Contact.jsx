@@ -84,6 +84,7 @@ const Contact = () => {
     phone: '',
     phoneCountry: 'fr',
     contactPreference: '',
+    preferredDate: '',
     preferredTime: '',
     message: '',
     gdprConsent: false,
@@ -182,6 +183,7 @@ const Contact = () => {
         sector: formData.sector ? getText(`home.sectors.${formData.sector}`) : 'Non spécifié',
         service: formData.service ? getText(`services.nav.${formData.service}`, formData.service) : 'Non spécifié',
         contactPreference: formData.contactPreference ? getText(`contact.form.preference.${formData.contactPreference}`, formData.contactPreference) : 'Non spécifié',
+        preferredDate: formData.preferredDate ? formData.preferredDate.split('T')[0] : '',
         preferredTime: formData.preferredTime ? getText(`contact.form.time.${formData.preferredTime}`, formData.preferredTime) : '',
         language: language,
         'g-recaptcha-response': recaptchaValue
@@ -218,6 +220,7 @@ const Contact = () => {
         phone: '',
         phoneCountry: 'fr',
         contactPreference: '',
+        preferredDate: '',
         preferredTime: '',
         message: '',
         gdprConsent: false,
@@ -312,7 +315,7 @@ const Contact = () => {
                 required
                 value={formData.message}
                 onChange={handleChange}
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-gray-700 dark:border-gray-600 dark:text-white caret-primary dark:caret-white px-3 py-2"
               />
             </div>
 
@@ -340,22 +343,39 @@ const Contact = () => {
 
             {/* Créneau horaire préféré (conditionnel) */}
             {needsTimeSlot(formData.contactPreference) && (
-              <div>
-                <label htmlFor="preferredTime" className="block text-sm font-medium text-primary dark:text-gray-300">
-                  {getText('contact.form.preferred_time', 'Demi-journée préférable')} <span className="text-red-500">*</span>
-                </label>
-                <select
-                  id="preferredTime"
-                  name="preferredTime"
-                  required
-                  value={formData.preferredTime}
-                  onChange={handleChange}
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-gray-700 dark:border-gray-600 dark:text-white"
-                >
-                  <option value="">{getText('contact.form.select_time', 'Sélectionnez votre préférence')}</option>
-                  <option value="morning">{getText('contact.form.time.morning', 'Matin')}</option>
-                  <option value="afternoon">{getText('contact.form.time.afternoon', 'Après-midi')}</option>
-                </select>
+              <div className="space-y-4">
+                <div>
+                  <label htmlFor="preferredDate" className="block text-sm font-medium text-primary dark:text-gray-300">
+                    {getText('contact.form.preferred_date', 'Date souhaitée')} <span className="text-red-500">*</span>
+                  </label>
+                  <input
+                    type="date"
+                    id="preferredDate"
+                    name="preferredDate"
+                    required
+                    value={formData.preferredDate}
+                    onChange={handleChange}
+                    min={new Date().toISOString().split('T')[0]}
+                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="preferredTime" className="block text-sm font-medium text-primary dark:text-gray-300">
+                    {getText('contact.form.preferred_time', 'Créneau horaire préféré')} <span className="text-red-500">*</span>
+                  </label>
+                  <select
+                    id="preferredTime"
+                    name="preferredTime"
+                    required
+                    value={formData.preferredTime}
+                    onChange={handleChange}
+                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+                  >
+                    <option value="">{getText('contact.form.select_time', 'Sélectionnez votre préférence')}</option>
+                    <option value="morning">{getText('contact.form.time.morning', 'Matin')}</option>
+                    <option value="afternoon">{getText('contact.form.time.afternoon', 'Après-midi')}</option>
+                  </select>
+                </div>
               </div>
             )}
 
@@ -453,17 +473,20 @@ const Contact = () => {
                     id: 'phone',
                     name: 'phone',
                     required: true,
-                    className: "w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+                    className: "w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-gray-700 dark:border-gray-600 dark:text-white pl-12"
                   }}
                   containerClass="phone-input-container"
                   buttonClass="phone-input-button dark:bg-gray-600 dark:border-gray-500"
                   dropdownClass="phone-input-dropdown dark:bg-gray-700 dark:text-white"
                   placeholder={getText('contact.form.phone_placeholder', 'Ex: 06 12 34 56 78')}
                   specialLabel=""
+                  displayFormat="### ### ### ###"
+                  disableCountryCode={true}
+                  enableAreaCodes={false}
+                  autoFormat={true}
+                  prefix=""
+                  preserveOrder={['input']}
                 />
-                <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
-                  {getText('contact.form.phone_format', 'Format: 06 12 34 56 78')}
-                </p>
               </div>
             </div>
 

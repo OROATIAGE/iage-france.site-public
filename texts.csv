@@ -682,6 +682,7 @@ contact.form.gdpr_consent,Contact Form,"En soumettant ce formulaire, j'accepte q
 contact.form.gdpr_required,Contact Form,Veuillez accepter la politique de confidentialité pour continuer.,[EN] Please accept the privacy policy to continue.
 contact.form.privacy_policy,Contact Form,politique de confidentialité,[EN] privacy policy
 contact.form.phone_placeholder,Contact Form,Ex: 06 12 34 56 78,[EN] Ex: 06 12 34 56 78
+contact.form.phone_format,Contact Form,Entrez votre numéro avec le 0 initial (Ex: 06 12 34 56 78),[EN] Enter your number starting with 0 (Ex: 06 12 34 56 78)
 contact.form.phone_format,Contact Form,Format: 06 12 34 56 78,[EN] Format: 06 12 34 56 78
 contact.form.success,Contact Form,Votre message a été envoyé avec succès. Nous vous contacterons bientôt.,[EN] Your message has been sent successfully. We will contact you soon.
 contact.form.error,Contact Form,Une erreur est survenue lors de l'envoi du formulaire. Veuillez réessayer.,[EN] An error occurred while sending the form. Please try again.

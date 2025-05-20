@@ -740,6 +740,8 @@ export const texts = {
         "select_service": "Sélectionnez un service",
         "contact_preference": "Mode de réponse souhaité",
         "select_contact_preference": "Sélectionnez le mode de réponse souhaité",
+        "preferred_date": "Date souhaitée",
+        "preferred_time": "Créneau horaire préféré",
         "preferred_time": "Demi-journée préférable",
         "select_time": "Sélectionnez votre préférence",
         "time": {
