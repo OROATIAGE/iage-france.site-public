@@ -1,15 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { texts } from '../content/texts';
+import { useLanguage } from '../context/LanguageContext';
+import { getTextByLanguage } from '../utils/textHelpers';
 
-// Helper to get domain/sector titles from texts.home.sectors
-const getHomeSectorText = (key, defaultValue = '') => {
-  return texts.home?.sectors?.[key] || defaultValue || key;
-};
-
-function DiagboxDomainNav({ domains }) { // domains will be diagboxDomainData from DiagboxPage
+function DiagboxDomainNav({ domains }) {
+  const { language } = useLanguage();
   const [isVisible, setIsVisible] = useState(false);
   const [activeDomain, setActiveDomain] = useState(null);
-  const navRef = useRef(null); // This ref will now be for the inner scrolling container
+  const navRef = useRef(null);
   const itemRefs = useRef({});
 
   useEffect(() => {
@@ -20,47 +17,40 @@ function DiagboxDomainNav({ domains }) { // domains will be diagboxDomainData fr
     });
 
     const handleScrollVisibility = () => {
-      const heroSection = document.querySelector('.container > div:first-child'); 
-      let threshold = 200; 
-      if (heroSection) {
-        threshold = heroSection.getBoundingClientRect().bottom + window.scrollY - 50; 
-      }
-      
-      if (window.scrollY > threshold) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-        setActiveDomain(null); // Clear active domain when nav is not visible
+      const introSection = document.getElementById('diagbox-intro');
+      if (introSection) {
+        const rect = introSection.getBoundingClientRect();
+        setIsVisible(rect.bottom < 0);
       }
     };
 
-    // Observer pour détecter quelle section est visible
+    window.addEventListener('scroll', handleScrollVisibility);
+    handleScrollVisibility();
+
     const observerOptions = {
       root: null,
-      rootMargin: '-125px 0px 0px 0px', // Detect when element top is 125px from viewport top
-      threshold: 0.01 
+      rootMargin: '-80px 0px -40% 0px',
+      threshold: [0, 0.4, 0.6, 0.8]
     };
 
     const observerCallback = (entries) => {
-      let topmostIntersectingId = null;
-      let minTopValue = Infinity;
+      let maxVisibility = 0;
+      let mostVisibleId = null;
 
       entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const entryTop = entry.boundingClientRect.top;
-          if (entryTop < minTopValue) {
-            minTopValue = entryTop;
-            topmostIntersectingId = entry.target.id;
-          }
+        const intersectionRatio = entry.intersectionRatio;
+        const boundingRect = entry.boundingClientRect;
+        const isAboveMiddle = boundingRect.top < window.innerHeight / 2;
+
+        if (isAboveMiddle && intersectionRatio > maxVisibility) {
+          maxVisibility = intersectionRatio;
+          mostVisibleId = entry.target.id;
         }
       });
 
-      if (topmostIntersectingId) {
-        setActiveDomain(topmostIntersectingId);
+      if (mostVisibleId && maxVisibility > 0.4) {
+        setActiveDomain(mostVisibleId);
       }
-      // If no specific intersecting element is found to be the topmost, 
-      // activeDomain retains its current value, which might be null if nav just became visible
-      // or the last active one if scrolling within sections.
     };
 
     const observer = new IntersectionObserver(observerCallback, observerOptions);
@@ -71,9 +61,6 @@ function DiagboxDomainNav({ domains }) { // domains will be diagboxDomainData fr
         observer.observe(element);
       }
     });
-
-    window.addEventListener('scroll', handleScrollVisibility, { passive: true });
-    handleScrollVisibility(); // Initial check
 
     return () => {
       window.removeEventListener('scroll', handleScrollVisibility);
@@ -90,7 +77,7 @@ function DiagboxDomainNav({ domains }) { // domains will be diagboxDomainData fr
   useEffect(() => {
     if (activeDomain && itemRefs.current[activeDomain]?.current && navRef.current) {
       const activeItemElement = itemRefs.current[activeDomain].current;
-      const navElement = navRef.current; // This is now the inner scrolling nav
+      const navElement = navRef.current;
       const navRect = navElement.getBoundingClientRect();
       const itemRect = activeItemElement.getBoundingClientRect();
       
@@ -104,61 +91,45 @@ function DiagboxDomainNav({ domains }) { // domains will be diagboxDomainData fr
   }, [activeDomain]);
 
   const handleLinkClick = (e, domainKey) => {
-    e.preventDefault(); 
-    // setActiveDomain(domainKey); // Don't set immediately
+    e.preventDefault();
     const element = document.getElementById(domainKey);
     if (element) {
-      const yOffset = -130;
-      const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      const navHeight = 120; // Augmentation du décalage pour tenir compte de la hauteur totale du header + nav + marge
+      const y = element.getBoundingClientRect().top + window.scrollY - navHeight;
       window.scrollTo({ top: y, behavior: 'smooth' });
-
-      // After a delay (to allow smooth scroll to largely finish),
-      // explicitly set the active domain to the one that was clicked.
-      setTimeout(() => {
-        setActiveDomain(domainKey);
-      }, 350); // Adjust timeout if necessary (300-400ms is often good for smooth scrolls)
     }
   };
 
-  if (!isVisible || !domains || domains.length === 0) {
+  if (!domains || domains.length === 0 || !isVisible) {
     return null;
   }
 
   return (
-    <nav 
-      ref={navRef}
-      className="sticky top-16 md:top-[70px] z-30 bg-white dark:bg-gray-900 shadow-md border-b dark:border-gray-700 md:max-w-3xl lg:max-w-4xl mx-auto overflow-x-auto whitespace-nowrap scrollbar-hide py-2 px-4 flex rounded-b-lg"
-      style={{ 
-        msOverflowStyle: 'none',
-        scrollbarWidth: 'none',
-        WebkitOverflowScrolling: 'touch',
-      }}
-    >
-      <style>{`.scrollbar-hide::-webkit-scrollbar { display: none; }`}</style>
-      {/* Inner div for flex items to correctly handle whitespace-nowrap with scrolling when justify-center is on parent */}
-      <div className="flex items-center">
-        {domains.map((domain) => {
-          const isActive = activeDomain === domain.domainKey;
-          const text = getHomeSectorText(domain.domainKey);
-          
-          const baseClasses = "inline-block px-4 py-2 rounded-full text-sm font-medium mr-2 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-1 dark:focus:ring-offset-gray-900 text-center";
-          const activeClasses = "bg-primary/10 dark:bg-primary/20 text-primary dark:text-secondary-light ring-2 ring-primary/50 dark:ring-secondary-light/50";
-          const inactiveClasses = "bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 hover:text-primary dark:hover:text-secondary-light focus:ring-primary/30 dark:focus:ring-secondary-light/30";
-
-          return (
-            <a
-              key={domain.domainKey}
-              ref={itemRefs.current[domain.domainKey]}
-              href={`#${domain.domainKey}`}
-              className={`flex-1 ${baseClasses} ${isActive ? activeClasses : inactiveClasses}`}
-              onClick={(e) => handleLinkClick(e, domain.domainKey)}
-            >
-              {text}
-            </a>
-          );
-        })}
+    <div className="fixed top-[68px] left-0 right-0 z-30 transition-opacity duration-300" style={{ opacity: isVisible ? 1 : 0 }}>
+      <div className="max-w-4xl mx-auto px-4">
+        <div className="bg-white rounded-b-lg shadow-md">
+          <div ref={navRef} className="overflow-x-auto no-scrollbar py-2">
+            <div className="flex space-x-4 min-w-max px-4">
+              {domains.map((domain) => (
+                <a
+                  key={domain.domainKey}
+                  ref={itemRefs.current[domain.domainKey]}
+                  href={`#${domain.domainKey}`}
+                  onClick={(e) => handleLinkClick(e, domain.domainKey)}
+                  className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors whitespace-nowrap
+                    ${activeDomain === domain.domainKey
+                      ? 'bg-[#f0f4fa] text-[#003366] border border-[#c9d6e3]'
+                      : 'bg-gray-50 text-gray-500 border border-gray-200 hover:bg-gray-100 hover:text-gray-700 hover:border-gray-300'
+                    }`}
+                >
+                  {getTextByLanguage(`home.sectors.${domain.domainKey}`, language)}
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
-    </nav>
+    </div>
   );
 }
 

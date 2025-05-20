@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 // import { AnimatePresence } from 'framer-motion' // Mettre en commentaire temporairement
+import { LanguageProvider } from './context/LanguageContext'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './pages/Home'
@@ -9,38 +10,57 @@ import Sectors from './pages/Sectors'
 import About from './pages/About'
 import SectorPage from './pages/SectorPage'
 import ScrollToTop from './components/ScrollToTop'
-import DiagboxGazonPage from './pages/DiagboxGazonPage'
+import { DiagboxGazonPage } from './pages/DiagboxGazonPage'
 // Import new pages
 import PrivacyPolicy from './pages/PrivacyPolicy' 
 import LegalNotice from './pages/LegalNotice'
 import DiagboxPage from './pages/DiagboxPage'
+import Sector09Page from './pages/Sector09Page'
+import Sector10Page from './pages/Sector10Page'
 
 function App() {
   return (
-    <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
-      <ScrollToTop />
-      <div className="flex flex-col min-h-screen">
-        <Navbar />
-        <main className="flex-grow pt-16">
-          {/* <AnimatePresence mode="wait"> Mettre en commentaire temporairement */}
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/services" element={<Services />} />
-              <Route path="/services/diagbox/04" element={<DiagboxGazonPage />} />
-              <Route path="/sectors" element={<Sectors />} />
-              <Route path="/sectors/:sectorId" element={<SectorPage />} />
-              <Route path="/contact" element={<Contact />} />
-              {/* Add routes for new pages */}
-              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-              <Route path="/legal-notice" element={<LegalNotice />} />
-              <Route path="/diagbox" element={<DiagboxPage />} />
-            </Routes>
-          {/* </AnimatePresence> Mettre en commentaire temporairement */}
-        </main>
-        <Footer />
-      </div>
-    </Router>
+    <LanguageProvider>
+      <Router>
+        <ScrollToTop />
+        <div className="flex flex-col min-h-screen">
+          <Navbar />
+          <main className="flex-grow pt-16">
+            {/* <AnimatePresence mode="wait"> Mettre en commentaire temporairement */}
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/:lang" element={<Home />} />
+                <Route path="/:lang/about" element={<About />} />
+                <Route path="/:lang/services" element={<Services />} />
+                <Route path="/:lang/services/diagbox/04" element={<DiagboxGazonPage />} />
+                <Route path="/:lang/sectors" element={<Sectors />} />
+                <Route path="/:lang/sectors/:sectorId" element={<SectorPage />} />
+                <Route path="/:lang/sectors/09" element={<Sector09Page />} />
+                <Route path="/:lang/sectors/10" element={<Sector10Page />} />
+                <Route path="/:lang/contact" element={<Contact />} />
+                <Route path="/:lang/privacy-policy" element={<PrivacyPolicy />} />
+                <Route path="/:lang/legal-notice" element={<LegalNotice />} />
+                <Route path="/:lang/diagbox" element={<DiagboxPage />} />
+                {/* Routes sans langue pour la rétrocompatibilité */}
+                <Route path="/about" element={<About />} />
+                <Route path="/services" element={<Services />} />
+                <Route path="/services/diagbox/04" element={<DiagboxGazonPage />} />
+                <Route path="/sectors" element={<Sectors />} />
+                <Route path="/sectors/:sectorId" element={<SectorPage />} />
+                <Route path="/sectors/09" element={<Sector09Page />} />
+                <Route path="/sectors/10" element={<Sector10Page />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+                <Route path="/legal-notice" element={<LegalNotice />} />
+                <Route path="/diagbox" element={<DiagboxPage />} />
+              </Routes>
+            {/* </AnimatePresence> Mettre en commentaire temporairement */}
+          </main>
+          <Footer />
+          <ScrollToTop />
+        </div>
+      </Router>
+    </LanguageProvider>
   )
 }
 

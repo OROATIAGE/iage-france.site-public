@@ -3,22 +3,20 @@ import { Link } from 'react-router-dom';
 import { texts } from '../content/texts';
 import { FaLeaf, FaVial, FaPaperPlane } from 'react-icons/fa'; // Exemple d'icônes
 import DiagboxGazonNav from '../components/DiagboxGazonNav';
+import { useLanguage } from '../context/LanguageContext';
 
-// Helper function pour récupérer les textes (suppose une structure texts.diagbox.gazon...)
+// Helper function to get texts for this page
 const getText = (key, defaultValue = '') => {
+  const { language } = useLanguage();
   const keys = key.split('.');
-  let current = texts.diagbox?.gazon;
+  let current = texts[language];
   for (const k of keys) {
     if (current && typeof current === 'object' && k in current) {
       current = current[k];
     } else {
-      // console.warn(`Texte manquant pour diagbox.gazon.${key}`);
+      console.warn(`Texte manquant pour la clé: ${key}`);
       return defaultValue;
     }
-  }
-  // Gérer les retours à la ligne pour les descriptions, etc.
-  if (typeof current === 'string') {
-    return current.replace(/\\n/g, '\n'); 
   }
   return current;
 };
@@ -61,7 +59,16 @@ const priceList = [
   'PF000050'
 ];
 
-function DiagboxGazonPage() {
+// Data for the "Simple à utiliser" steps
+const simpleSteps = [
+  { key: "process.step1", icon: "/assets/icons/box.svg", alt: "Ouvrir le kit" },
+  { key: "process.step2", icon: "/assets/icons/test-tube.svg", alt: "Prélever l'échantillon" },
+  { key: "process.step3", icon: "/assets/icons/qr-code.svg", alt: "Scanner le QR code" },
+  { key: "process.step4", icon: "/assets/icons/delivery-truck.svg", alt: "Envoyer au laboratoire" },
+  { key: "process.step5", icon: "/assets/icons/chart.svg", alt: "Obtenir les résultats" }
+];
+
+export function DiagboxGazonPage() {
 
   // Créer le mapping Ref -> ID de section
   const kitRefToSectionIdMap = {};
@@ -83,36 +90,38 @@ function DiagboxGazonPage() {
       {/* --- Hero Section --- */}
       <div className="text-center mb-12 md:mb-16">
         <h1 className="text-4xl md:text-5xl font-bold text-primary dark:text-secondary mb-4">
-          {getText('title')}
+          {getText('diagbox.title')}
         </h1>
         <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-          {getText('subtitle')}
+          {getText('diagbox.subtitle')}
         </p>
       </div>
 
       {/* --- Process Section --- */}
       <section className="mb-12 md:mb-16 bg-gray-100 dark:bg-gray-800 p-8 rounded-lg shadow-sm">
         <h2 className="text-2xl md:text-3xl font-semibold text-center text-gray-800 dark:text-gray-200 mb-8">
-          {getText('process.title')}
+          {getText('diagbox.process.title')}
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-          {/* Step 1 */}
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-8 text-center">
           <div className="flex flex-col items-center">
-            <FaLeaf className="text-4xl text-secondary mb-3" />
-            <h3 className="text-lg font-semibold mb-2 dark:text-white">{getText('process.step1.title')}</h3>
-            <p className="text-gray-600 dark:text-gray-400">{getText('process.step1.text')}</p>
+            <img src="/assets/icons/box.svg" alt="Ouvrir le kit" className="w-12 h-12 mb-3" />
+            <p className="text-gray-600 dark:text-gray-400">{getText('diagbox.process.step1.text')}</p>
           </div>
-          {/* Step 2 */}
           <div className="flex flex-col items-center">
-            <FaVial className="text-4xl text-secondary mb-3" /> {/* Placeholder icon */} 
-            <h3 className="text-lg font-semibold mb-2 dark:text-white">{getText('process.step2.title')}</h3>
-            <p className="text-gray-600 dark:text-gray-400">{getText('process.step2.text')}</p>
+            <img src="/assets/icons/test-tube.svg" alt="Prélever l'échantillon" className="w-12 h-12 mb-3" />
+            <p className="text-gray-600 dark:text-gray-400">{getText('diagbox.process.step2.text')}</p>
           </div>
-          {/* Step 3 */}
           <div className="flex flex-col items-center">
-            <FaPaperPlane className="text-4xl text-secondary mb-3" />
-            <h3 className="text-lg font-semibold mb-2 dark:text-white">{getText('process.step3.title')}</h3>
-            <p className="text-gray-600 dark:text-gray-400">{getText('process.step3.text')}</p>
+            <img src="/assets/icons/qr-code.svg" alt="Scanner le QR code" className="w-12 h-12 mb-3" />
+            <p className="text-gray-600 dark:text-gray-400">{getText('diagbox.process.step3.text')}</p>
+          </div>
+          <div className="flex flex-col items-center">
+            <img src="/assets/icons/delivery-truck.svg" alt="Envoyer au laboratoire" className="w-12 h-12 mb-3" />
+            <p className="text-gray-600 dark:text-gray-400">{getText('diagbox.process.step4.text')}</p>
+          </div>
+          <div className="flex flex-col items-center">
+            <img src="/assets/icons/chart.svg" alt="Obtenir les résultats" className="w-12 h-12 mb-3" />
+            <p className="text-gray-600 dark:text-gray-400">{getText('diagbox.process.step5.text')}</p>
           </div>
         </div>
       </section>
@@ -120,7 +129,7 @@ function DiagboxGazonPage() {
       {/* --- General Info Sections --- */}
       <section className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 md:mb-16">
         <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
-            <h3 className="text-xl font-semibold mb-3 text-primary dark:text-secondary">{getText('ideal_for.title')}</h3>
+            <h3 className="text-xl font-bold mb-3 text-primary dark:text-secondary">{getText('ideal_for.title')}</h3>
             <p className="text-gray-700 dark:text-gray-300 text-sm">{getText('ideal_for.text')}</p>
         </div>
          <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
@@ -229,12 +238,9 @@ function DiagboxGazonPage() {
 
       {/* --- Price List Section --- */}
       <section id="prices" className="mt-12 md:mt-16 pt-10 border-t border-gray-200 dark:border-gray-700 scroll-mt-20 md:scroll-mt-24">
-          <h2 className="text-2xl md:text-3xl font-semibold text-center text-gray-800 dark:text-gray-200 mb-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-800 dark:text-gray-200 mb-8">
             {getText('prices.title')}
           </h2>
-          <p className="text-center text-sm text-gray-500 dark:text-gray-400 -mt-4 mb-6">
-            {getText('prices.info_link')}
-          </p>
           {/* Responsive Table Container */}
           <div className="overflow-x-auto md:overflow-visible">
             {/* Add responsive classes and data labels */}
@@ -308,8 +314,13 @@ function DiagboxGazonPage() {
           </Link>
       </section>
 
+      {/* Back to Domains Button */}
+      <div className="max-w-4xl mx-auto px-4 text-center mt-16 mb-12">
+        <Link to="/sectors" className="inline-block bg-[#52c6dd] dark:bg-blue-700 py-3 px-6 rounded-lg text-white hover:text-white/90 dark:text-white dark:hover:text-white/90 font-medium">
+          {getText('sectors.back_to_list')}
+        </Link>
+      </div>
+
     </motion.div>
   );
-}
-
-export default DiagboxGazonPage; 
+} 

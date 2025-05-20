@@ -1,14 +1,16 @@
 import { motion } from 'framer-motion';
 import { Link, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
-import { texts } from '../content/texts'; // Import des textes
+import { useLanguage } from '../context/LanguageContext';
+import { getTextByLanguage } from '../utils/textHelpers';
 import ServicesNav from '../components/ServicesNav';
 
 function Services() {
   const location = useLocation();
+  const { language } = useLanguage();
 
   // Fonction pour récupérer les textes de manière sûre
-  const getPageText = (key) => texts.services?.page?.[key] || '';
+  const getPageText = (key, defaultValue = '') => getTextByLanguage(`services.page.${key}`, language, defaultValue);
 
   // NOUVELLE structure de données par catégorie
   const categoriesData = [
@@ -60,68 +62,62 @@ function Services() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="container mx-auto px-4 py-12 md:py-16"
     >
       <ServicesNav />
 
-      <h1 className="text-4xl md:text-5xl font-bold text-primary dark:text-secondary mb-6 text-center">
-        {getPageText('title')}
-      </h1>
-      <p className="text-lg md:text-xl text-primary dark:text-gray-300 mb-12 md:mb-16 text-center max-w-3xl mx-auto">
-        {getPageText('intro')}
-      </p>
+      <div className="max-w-4xl mx-auto px-4">
+        <h1 className="text-4xl md:text-5xl font-bold text-primary dark:text-secondary mb-6 text-center">
+          {getPageText('title', 'Nos services')}
+        </h1>
+        <p className="text-lg md:text-xl text-primary dark:text-gray-300 mb-12 md:mb-16 text-center max-w-3xl mx-auto">
+          {getPageText('intro')}
+        </p>
 
-      {/* Boucle sur les catégories */}
-      <div className="space-y-16 md:space-y-20">
-        {categoriesData.map((category, categoryIndex) => {
-          // Define category ID based on index or title key
-          let categoryId = '';
-          if (category.categoryTitleKey === 'category1_title') categoryId = 'category-analyses';
-          else if (category.categoryTitleKey === 'category2_title') categoryId = 'category-diagbox-conseil';
-          else if (category.categoryTitleKey === 'category3_title') categoryId = 'category-equipements';
+        {/* Boucle sur les catégories */}
+        <div className="space-y-16 md:space-y-20">
+          {categoriesData.map((category, categoryIndex) => {
+            // Define category ID based on index or title key
+            let categoryId = '';
+            if (category.categoryTitleKey === 'category1_title') categoryId = 'category-analyses';
+            else if (category.categoryTitleKey === 'category2_title') categoryId = 'category-diagbox-conseil';
+            else if (category.categoryTitleKey === 'category3_title') categoryId = 'category-equipements';
 
-          return (
-            <div key={category.categoryTitleKey} id={categoryId} className="scroll-mt-24"> {/* Added ID and scroll-margin */}
-              {/* Titre de la catégorie */}
-              <h2 className="text-3xl md:text-4xl font-semibold text-primary dark:text-secondary mb-8 border-b-2 border-primary/30 dark:border-secondary/30 pb-3">
-                {getPageText(category.categoryTitleKey)}
-              </h2>
-              {/* Boucle sur les services DANS la catégorie */}
-              <div className="space-y-10 md:space-y-12 pl-4"> {/* Ajout de padding pour les services sous la catégorie */}
-                {category.services.map((service) => (
-                  <section key={service.id} id={service.id} className="scroll-mt-28 md:scroll-mt-32"> {/* Increased scroll margin top further */}
-                    {/* Titre du service */}
-                    <h3 className="text-2xl md:text-3xl font-semibold text-primary dark:text-gray-200 mb-4 border-l-4 border-secondary pl-4">
-                      {getPageText(service.titleKey)}
-                    </h3>
-                    {/* Description du service */}
-                    <p className="text-primary dark:text-gray-300 text-lg leading-relaxed whitespace-pre-line ml-6"> {/* Léger retrait pour la description */}
-                      {getPageText(service.descriptionKey)}
-                    </p>
-                  </section>
-                ))}
+            return (
+              <div key={category.categoryTitleKey} id={categoryId} className="scroll-mt-32">
+                {/* Titre de la catégorie */}
+                <h2 className="text-3xl md:text-4xl font-semibold text-primary dark:text-secondary mb-8 border-b-2 border-primary/30 dark:border-secondary/30 pb-3">
+                  {getPageText(category.categoryTitleKey)}
+                </h2>
+                {/* Boucle sur les services DANS la catégorie */}
+                <div className="space-y-10 md:space-y-12 pl-4">
+                  {category.services.map((service) => (
+                    <section key={service.id} id={service.id} className="scroll-mt-32">
+                      {/* Titre du service */}
+                      <h3 className="text-2xl md:text-3xl font-semibold text-primary dark:text-gray-200 mb-4 border-l-4 border-secondary pl-4">
+                        {getPageText(service.titleKey)}
+                      </h3>
+                      {/* Description du service */}
+                      <p className="text-primary dark:text-gray-300 text-lg leading-relaxed whitespace-pre-line ml-6">
+                        {getPageText(service.descriptionKey)}
+                      </p>
+                    </section>
+                  ))}
+                </div>
               </div>
-            </div>
-          );
-        })}
-      </div>
+            );
+          })}
+        </div>
 
-      {/* Section Retour aux Secteurs - Modified */}
-      <section className="mt-16 md:mt-20 pt-10 border-t border-gray-200 dark:border-gray-700 text-center">
-        <Link 
-          to="/#sectors-grid" 
-        > 
-          <h2 className="text-2xl md:text-3xl font-semibold text-primary dark:text-gray-200 mb-6 hover:text-primary dark:hover:text-secondary transition-colors duration-200 inline-block underline hover:underline"> 
-            {getPageText('back_to_sectors_title')}
-          </h2>
-        </Link>
-        {/* Removed the redundant button */}
-        {/* 
-        <Link to="/#sectors-grid" className="btn-primary">
-          {getPageText('back_to_sectors_link_text')}
-        </Link>
-        */}
-      </section>
+        {/* Section Retour aux Secteurs - Modified */}
+        <section className="mt-16 md:mt-20 pt-10 pb-20 border-t border-gray-200 dark:border-gray-700 text-center">
+          <Link 
+            to="/#sectors-grid" 
+            className="inline-block bg-[#52c6dd] dark:bg-blue-700 py-3 px-6 rounded-lg text-white hover:text-white/90 dark:text-white dark:hover:text-white/90 font-medium"
+          > 
+            {getPageText('back_to_sectors_link_text', 'Retour aux domaines')}
+          </Link>
+        </section>
+      </div>
     </motion.div>
   );
 }

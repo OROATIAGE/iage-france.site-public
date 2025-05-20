@@ -1,10 +1,13 @@
 import { motion } from 'framer-motion';
-import { texts } from '../content/texts'; // Import des textes
+import { useLanguage } from '../context/LanguageContext';
+import { getTextByLanguage } from '../utils/textHelpers';
 
 function About() {
-  // Helper to get text safely
+  const { language } = useLanguage();
+
+  // Helper to get text safely with current language
   const getText = (key, defaultValue = '') => {
-    return texts.about?.page?.[key] || defaultValue;
+    return getTextByLanguage(`about.page.${key}`, language, defaultValue);
   };
 
   return (
@@ -14,7 +17,7 @@ function About() {
       exit={{ opacity: 0 }}
       className="container mx-auto px-4 py-8"
     >
-      <h1 className="text-4xl font-bold mb-8">{texts.about.title}</h1>
+      <h1 className="text-4xl font-bold mb-8">{getTextByLanguage('about.title', language)}</h1>
       <div className="prose lg:prose-xl max-w-none dark:prose-invert">
         <p>
           {getText('intro1')}

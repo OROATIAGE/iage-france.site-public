@@ -3,18 +3,23 @@ import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { logos } from "../assets/logo"
 import ThemeSwitcher from "./ThemeSwitcher"
 import { texts } from '../content/texts'
+import LanguageSwitcher from './LanguageSwitcher'
+import { useLanguage } from '../context/LanguageContext'
+import { getTextByLanguage } from '../utils/textHelpers'
 
 function useIsDark() {
-  const [isDark, setIsDark] = useState(() =>
-    document.documentElement.classList.contains("dark")
-  );
+  const [isDark, setIsDark] = useState(false);
+
   useEffect(() => {
-    const observer = new MutationObserver(() => {
-      setIsDark(document.documentElement.classList.contains("dark"));
-    });
-    observer.observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
-    return () => observer.disconnect();
+    const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    setIsDark(darkModeMediaQuery.matches);
+
+    const handleChange = (e) => setIsDark(e.matches);
+    darkModeMediaQuery.addEventListener('change', handleChange);
+
+    return () => darkModeMediaQuery.removeEventListener('change', handleChange);
   }, []);
+
   return isDark;
 }
 
@@ -27,22 +32,23 @@ function Navbar() {
   const isDark = useIsDark()
   const location = useLocation();
   const navigate = useNavigate();
+  const { language } = useLanguage();
 
   // Define Navbar height (h-16 is 64px). Add some padding.
   const NAVBAR_OFFSET = 80; // 64px for navbar + 16px padding
 
   // Updated list of all services for the dropdown
   const servicesDropdownItems = [
-    { name: texts.navbar.services.dropdown.all, path: '/services' }, // Voir tous les services
-    { name: texts.services?.nav?.catalog || 'Catalogue', path: '/services#catalog' },
-    { name: texts.services?.nav?.['specific-combinations'] || 'Combinaisons', path: '/services#specific-combinations' },
-    { name: texts.services?.nav?.development || 'R&D', path: '/services#development' },
-    { name: texts.services?.nav?.['sampling-advice'] || 'Conseil Prélèvement', path: '/services#sampling-advice' },
-    { name: texts.services?.nav?.thresholds || 'Seuils Décisionnels', path: '/services#thresholds' },
-    { name: texts.services?.nav?.['mobile-viz'] || 'Viz Mobilité', path: '/services#mobile-viz' },
-    { name: texts.services?.nav?.modeling || 'Modélisation', path: '/services#modeling' },
-    { name: texts.services?.nav?.['sampling-tools'] || 'Préleveurs', path: '/services#sampling-tools' },
-    { name: texts.services?.nav?.['local-labs'] || 'Labos Locaux', path: '/services#local-labs' },
+    { name: getTextByLanguage('navbar.services.dropdown.all', language), path: '/services' },
+    { name: getTextByLanguage('services.nav.catalog', language), path: '/services#catalog' },
+    { name: getTextByLanguage('services.nav.specific-combinations', language), path: '/services#specific-combinations' },
+    { name: getTextByLanguage('services.nav.development', language), path: '/services#development' },
+    { name: getTextByLanguage('services.nav.sampling-advice', language), path: '/services#sampling-advice' },
+    { name: getTextByLanguage('services.nav.thresholds', language), path: '/services#thresholds' },
+    { name: getTextByLanguage('services.nav.mobile-viz', language), path: '/services#mobile-viz' },
+    { name: getTextByLanguage('services.nav.modeling', language), path: '/services#modeling' },
+    { name: getTextByLanguage('services.nav.sampling-tools', language), path: '/services#sampling-tools' },
+    { name: getTextByLanguage('services.nav.local-labs', language), path: '/services#local-labs' },
   ];
 
   // Data for the Domaines dropdown
@@ -54,21 +60,21 @@ function Navbar() {
   ];
 
   const navItems = [
-    { name: texts.navbar.home, path: '/' }, // Accueil
-    { // Domaines
-      name: texts.navbar.sectors,
+    { name: getTextByLanguage('navbar.home', language), path: '/' },
+    {
+      name: getTextByLanguage('navbar.sectors', language),
       path: '/',
       dropdown: domainDropdownItems,
       isDomaines: true
     },
-    { name: texts.navbar.services.dropdown.diagbox, path: '/diagbox' }, // Diagbox
-    { // Services
-      name: texts.navbar.services.title,
+    { name: getTextByLanguage('navbar.services.dropdown.diagbox', language), path: '/diagbox' },
+    {
+      name: getTextByLanguage('navbar.services.title', language),
       path: '/services',
       dropdown: servicesDropdownItems
     },
-    { name: texts.navbar.about, path: '/about' }, // À propos de nous
-    { name: texts.navbar.contact, path: '/contact' }, // Contact
+    { name: getTextByLanguage('navbar.about', language), path: '/about' },
+    { name: getTextByLanguage('navbar.contact', language), path: '/contact' },
   ]
 
   const handleServicesMouseEnter = () => {
@@ -180,7 +186,7 @@ function Navbar() {
                             className="block px-4 py-2 text-sm text-primary dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-primary dark:hover:text-secondary whitespace-normal"
                             onClick={() => handleDropdownItemClick(item.isDomaines ? `/${subItem.hash}` : subItem.path, item.isDomaines)}
                           >
-                            {item.isDomaines ? (texts.home.sectors[subItem.nameKey] || subItem.nameKey) : subItem.name}
+                            {item.isDomaines ? getTextByLanguage(`home.sectors.${subItem.nameKey}`, language) : subItem.name}
                           </Link>
                         ))}
                       </div>
@@ -200,11 +206,13 @@ function Navbar() {
               }
             })}
             <ThemeSwitcher />
+            <LanguageSwitcher />
           </div>
 
           {/* Mobile menu button */}
           <div className="sm:hidden flex items-center">
             <ThemeSwitcher />
+            <LanguageSwitcher />
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-primary hover:bg-gray-50 dark:text-gray-300 dark:hover:text-secondary"
@@ -239,7 +247,7 @@ function Navbar() {
                       className="text-primary dark:text-gray-300 hover:text-primary dark:hover:text-secondary block py-1 text-base font-medium whitespace-normal"
                       onClick={() => handleDropdownItemClick(item.isDomaines ? `/${subItem.hash}` : subItem.path, item.isDomaines)}
                     >
-                      {item.isDomaines ? (texts.home.sectors[subItem.nameKey] || subItem.nameKey) : subItem.name}
+                      {item.isDomaines ? getTextByLanguage(`home.sectors.${subItem.nameKey}`, language) : subItem.name}
                     </Link>
                   ))}
                 </div>

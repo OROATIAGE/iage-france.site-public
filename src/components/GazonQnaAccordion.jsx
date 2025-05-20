@@ -4,57 +4,53 @@ import { texts } from '../content/texts';
 import { FaChevronDown, FaChevronRight } from 'react-icons/fa'; // Icons for accordion
 import { FaRegLightbulb } from 'react-icons/fa'; // Ajout de l'icône ampoule
 import TextWithBoldMarkdown from './TextWithBoldMarkdown'; // Import du composant de mise en forme
-import KitDetailCard from './KitDetailCard';
+import DiagboxKitTable from './DiagboxKitTable';
 import { getEnhancedKitData } from '../utils/kitDataHelpers'; // Import the main helper
+import { useLanguage } from '../context/LanguageContext';
 
 const qnaData = [
   {
     id: 'q1',
-    titleKey: 'q1_title',
-    recommendationKey: 'qna_reco.qna-group-q1_sub1',
-    bonASavoirKey: 'qna_bon_a_savoir.q1',
-    recommendedKitRefs: [ // Define recommended kits directly
-      { ref: 'PF000049', introKey: 'qna_intro.reco_PF000049' },
-      { ref: 'PF000011', introKey: 'qna_intro.reco_PF000011' },
-      { ref: 'PF000016', introKey: 'qna_intro.reco_PF000016' },
+    titleKey: 'gazon.qna.q1_title',
+    recommendationKey: 'diagbox.gazon.qna_reco.qna-group-q1_sub1',
+    bonASavoirKey: 'diagbox.gazon.qna_bon_a_savoir.q1',
+    recommendedKitRefs: [
+      { ref: 'PF000049', introKey: 'diagbox.gazon.qna_intro.reco_PF000049' },
+      { ref: 'PF000011', introKey: 'diagbox.gazon.qna_intro.reco_PF000011' },
+      { ref: 'PF000016', introKey: 'diagbox.gazon.qna_intro.reco_PF000016' },
     ],
   },
   {
     id: 'q2',
-    titleKey: 'q2_title',
-    recommendationKey: 'qna_reco.qna-group-q2_sub1',
-    bonASavoirKey: 'qna_bon_a_savoir.q2',
+    titleKey: 'gazon.qna.q2_title',
+    recommendationKey: 'diagbox.gazon.qna_reco.qna-group-q2_sub1',
+    bonASavoirKey: 'diagbox.gazon.qna_bon_a_savoir.q2',
     recommendedKitRefs: [
-      { ref: 'PF000049', introKey: 'qna_intro.reco_PF000049' },
+      { ref: 'PF000049', introKey: 'diagbox.gazon.qna_intro.reco_PF000049' },
     ],
   },
   {
     id: 'q3',
-    titleKey: 'q3_title',
-    recommendationKey: 'qna_reco.qna-group-q3',
-    bonASavoirKey: 'qna_bon_a_savoir.q3',
+    titleKey: 'gazon.qna.q3_title',
+    recommendationKey: 'diagbox.gazon.qna_reco.qna-group-q3',
+    bonASavoirKey: 'diagbox.gazon.qna_bon_a_savoir.q3',
     recommendedKitRefs: [
-      { ref: 'PF000018', introKey: 'qna_intro.reco_PF000018' },
-      { ref: 'PF000019', introKey: 'qna_intro.reco_PF000019' },
-      { ref: 'PF000020', introKey: 'qna_intro.reco_PF000020' },
+      { ref: 'PF000018', introKey: 'diagbox.gazon.qna_intro.reco_PF000018' },
     ],
   },
   {
     id: 'q4',
-    titleKey: 'q4_title',
-    recommendationKey: 'qna_reco.qna-group-q4_combined',
-    bonASavoirKey: 'qna_bon_a_savoir.q4',
+    titleKey: 'gazon.qna.q4_title',
+    recommendationKey: 'diagbox.gazon.qna_reco.qna-group-q4_combined',
+    bonASavoirKey: 'diagbox.gazon.qna_bon_a_savoir.q4',
     recommendedKitRefs: [
-      { ref: 'PF000047', introKey: 'qna_intro.reco_PF000047' },
-      { ref: 'PF000049', introKey: 'qna_intro.reco_PF000049' },
-      { ref: 'PF000050', introKey: 'qna_intro.reco_PF000050' },
+      { ref: 'PF000049', introKey: 'diagbox.gazon.qna_intro.reco_PF000049' },
     ],
   },
   {
     id: 'q5',
-    titleKey: 'q5_title',
-    bonASavoirKey: 'qna_bon_a_savoir.q5',
-    recommendedKitRefs: [], // No kits for this question, only contact link
+    titleKey: 'gazon.qna.q5_title',
+    bonASavoirKey: 'diagbox.gazon.qna_bon_a_savoir.q5',
   },
 ];
 
@@ -76,11 +72,10 @@ kitTypes.forEach(typeInfo => {
   });
 });
 
-// Helper to get text specifically for this component
-const getQnaText = (key) => texts.gazon?.qna?.[key] || '';
-const getRecommendationText = (key) => {
+// Helper to get general text from any path
+const getGeneralText = (key, language) => {
   const keys = key.split('.');
-  let current = texts.diagbox?.gazon;
+  let current = texts[language];
   for (const k of keys) {
     if (current && typeof current === 'object' && k in current) {
       current = current[k];
@@ -90,21 +85,58 @@ const getRecommendationText = (key) => {
   }
   return current;
 };
-// Helper to get Bon à savoir text for each question
-const getBonASavoirText = (key) => {
+
+// Helper to get text specifically for this component
+const getQnaText = (key, language) => {
   const keys = key.split('.');
-  let current = texts.diagbox?.gazon;
+  let current = texts[language];
   for (const k of keys) {
     if (current && typeof current === 'object' && k in current) {
       current = current[k];
     } else {
-      return "Ici, vous pouvez ajouter une information utile, un conseil ou une astuce en lien avec la question posée.";
+      return '';
+    }
+  }
+  return current;
+};
+
+const getRecommendationText = (key, language) => {
+  const keys = key.split('.');
+  let current = texts[language];
+  for (const k of keys) {
+    if (current && typeof current === 'object' && k in current) {
+      current = current[k];
+    } else {
+      return {
+        recommendation: '',
+        conclusionPrefix: '',
+        conclusionSuffix: ''
+      };
+    }
+  }
+  return {
+    recommendation: current.recommendation_text || '',
+    conclusionPrefix: current.conclusion_text_prefix || '',
+    conclusionSuffix: current.conclusion_text_suffix || ''
+  };
+};
+
+// Helper to get Bon à savoir text for each question
+const getBonASavoirText = (key, language) => {
+  const keys = key.split('.');
+  let current = texts[language];
+  for (const k of keys) {
+    if (current && typeof current === 'object' && k in current) {
+      current = current[k];
+    } else {
+      return '';
     }
   }
   return current;
 };
 
 function GazonQnaAccordion({ onOpenKitGroup }) {
+  const { language } = useLanguage();
   const [openAccordion, setOpenAccordion] = useState(null); // State to track open section
   const [openKitAccordions, setOpenKitAccordions] = useState({}); // State for kit accordions
   const navigate = useNavigate(); // Initialize navigate
@@ -158,18 +190,13 @@ function GazonQnaAccordion({ onOpenKitGroup }) {
   };
 
   const handleLinkClick = (e, target) => {
-    if (target?.startsWith('#')) { // Added optional chaining for target
-      const targetId = target.replace('#', '');
-      const element = document.getElementById(targetId);
+    e.preventDefault();
+    if (target.startsWith('#')) {
+      const element = document.querySelector(target);
       if (element) {
-        e.preventDefault();
-        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        if (onOpenKitGroup) {
-          onOpenKitGroup(targetId);
-        }
+        element.scrollIntoView({ behavior: 'smooth' });
       }
-    } else if (target) { // Ensure target is not undefined
-      e.preventDefault();
+    } else {
       navigate(target);
     }
   };
@@ -178,9 +205,11 @@ function GazonQnaAccordion({ onOpenKitGroup }) {
     <div id="gazon-qna-accordion" className="space-y-4 mb-12 md:mb-16">
       {qnaData.map((item) => {
         // Get data for all recommended kits for this Q&A item
-        const recommendedKitsData = item.recommendedKitRefs.map(kitInfo =>
+        const recommendedKitsData = item.recommendedKitRefs ? item.recommendedKitRefs.map(kitInfo =>
           getEnhancedKitData(kitInfo.ref, kitInfo.introKey, kitRefToSectionIdMap)
-        );
+        ) : [];
+
+        const recommendationTexts = item.recommendationKey ? getRecommendationText(item.recommendationKey, language) : null;
 
         // Aggregate summary notes
         let collectiveSumIndividual = null;
@@ -189,11 +218,11 @@ function GazonQnaAccordion({ onOpenKitGroup }) {
         let pythiumNoteToDisplay = null;
 
         recommendedKitsData.forEach(kit => {
-          if (kit.sumOfIndividualPricesText) collectiveSumIndividual = kit.sumOfIndividualPricesText; // Assuming only one kit in a group has this
-          if (kit.savingText) collectiveSaving = kit.savingText; // Assuming only one kit in a group has this
+          if (kit.sumOfIndividualPricesText) collectiveSumIndividual = kit.sumOfIndividualPricesText;
+          if (kit.savingText) collectiveSaving = kit.savingText;
           if (kit.hasPythiumNote && kit.pythiumNoteText) {
             hasAnyPythiumNote = true;
-            pythiumNoteToDisplay = kit.pythiumNoteText; // Take the first one encountered
+            pythiumNoteToDisplay = kit.pythiumNoteText;
           }
         });
 
@@ -208,7 +237,7 @@ function GazonQnaAccordion({ onOpenKitGroup }) {
               onClick={() => handleToggle(item.id)}
               className="w-full flex justify-between items-center p-4 text-left text-lg font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
             >
-              <span>{getQnaText(item.titleKey)}</span>
+              <span>{getQnaText(item.titleKey, language)}</span>
               <FaChevronDown className={`text-primary dark:text-secondary transform transition-transform duration-200 ${openAccordion === item.id ? 'rotate-180' : ''}`} />
             </button>
 
@@ -221,86 +250,41 @@ function GazonQnaAccordion({ onOpenKitGroup }) {
                   <div>
                     <div className="font-semibold text-yellow-700 dark:text-yellow-300 mb-1">Bon à savoir</div>
                     <div className="text-yellow-800 dark:text-yellow-200 text-sm">
-                      <TextWithBoldMarkdown text={getBonASavoirText(item.bonASavoirKey)} />
+                      <TextWithBoldMarkdown text={getBonASavoirText(item.bonASavoirKey, language)} />
                     </div>
                   </div>
                 </div>
 
                 {/* Recommendations Section (Text Only) */}
-                {item.recommendationKey && (
+                {recommendationTexts && (
                   <div className="mt-4 p-4 bg-white dark:bg-gray-700 rounded-lg shadow-sm mb-4 md:max-w-3xl lg:max-w-4xl md:mx-auto">
                     <h4 className="text-lg font-semibold text-primary dark:text-secondary mb-2">
-                      <TextWithBoldMarkdown text={getRecommendationText(`${item.recommendationKey}.recommendation_text`)} />
+                      <TextWithBoldMarkdown text={recommendationTexts.recommendation} />
                     </h4>
                     <div className="w-16 h-1.5 bg-secondary mb-4 rounded-full"></div>
                     <div className="prose dark:prose-invert w-full">
-                      <TextWithBoldMarkdown text={getRecommendationText(`${item.recommendationKey}.conclusion_text_prefix`)} />
+                      <TextWithBoldMarkdown text={recommendationTexts.conclusionPrefix} />
                     </div>
                   </div>
                 )}
 
-                {/* Collapsible Kit Details Section */}
-                {item.recommendedKitRefs && item.recommendedKitRefs.length > 0 && item.recommendationKey && (
-                  <div className="mt-4 bg-white dark:bg-gray-700 rounded-lg shadow-sm md:max-w-3xl lg:max-w-4xl md:mx-auto">
-                    <button
-                      onClick={() => handleToggleKitAccordion(item.id)}
-                      className="w-full flex justify-between items-center p-3 text-left font-semibold text-secondary dark:text-secondary hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors rounded-t-lg"
-                    >
-                      <span>
-                        {getRecommendationText(`${item.recommendationKey}.conclusion_text_suffix`)}
-                      </span>
-                      <FaChevronDown className={`transform transition-transform duration-200 ${openKitAccordions[item.id] ? 'rotate-180' : ''}`} />
-                    </button>
-                    {openKitAccordions[item.id] && (
-                      <div className="p-4 border-t border-gray-200 dark:border-gray-600">
-                        {/* Desktop: Table View */}
-                        <div className="hidden md:block overflow-x-auto">
-                          <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700 table-fixed">
-                            <thead className="bg-gray-50 dark:bg-gray-700">
-                              <tr>
-                                <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider w-2/12">Référence</th>
-                                <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider w-2/12">Désignation</th>
-                                <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider w-2/12">Type de kit</th>
-                                <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider w-5/12">Pathogènes cibles</th>
-                                <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider w-1/12">Prix Indicatif HT</th>
-                              </tr>
-                            </thead>
-                            <tbody className="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700">
-                              {recommendedKitsData.map((kitData) => (
-                                <tr key={kitData.kitRef}>
-                                  <td className="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-900 dark:text-gray-100 w-2/12">{kitData.kitRef}</td>
-                                  <td className="px-4 py-3 text-sm text-gray-600 dark:text-gray-300 w-2/12">{kitData.designation}</td>
-                                  <td className="px-4 py-3 text-sm text-gray-600 dark:text-gray-300 w-2/12">{kitData.typeDeKit}</td>
-                                  <td className="px-4 py-3 text-sm text-gray-600 dark:text-gray-300 w-5/12">{kitData.ciblesEffectives}</td>
-                                  <td className="px-4 py-3 whitespace-nowrap text-sm text-gray-600 dark:text-gray-300 w-1/12">{kitData.prixIndicatifHT}</td>
-                                </tr>
-                              ))}
-                            </tbody>
-                          </table>
-                        </div>
+                {/* Conclusion text if exists */}
+                {recommendationTexts && (
+                  <div className="mt-4 p-4 bg-white dark:bg-gray-700 rounded-lg shadow-sm mb-4 md:max-w-3xl lg:max-w-4xl md:mx-auto">
+                    <div className="w-16 h-1.5 bg-secondary mb-4 rounded-full"></div>
+                    <div className="prose dark:prose-invert w-full">
+                      <TextWithBoldMarkdown text={recommendationTexts.conclusionSuffix} />
+                    </div>
+                  </div>
+                )}
 
-                        {/* Mobile: Card View */}
-                        <div className="md:hidden">
-                          {recommendedKitsData.map((kitData) => (
-                            <KitDetailCard 
-                              key={kitData.kitRef} 
-                              kitRef={kitData.kitRef} // Pass kitRef down 
-                              introKey={item.recommendedKitRefs.find(k => k.ref === kitData.kitRef)?.introKey || ''} // Find original introKey
-                              kitRefToSectionIdMap={kitRefToSectionIdMap} // Pass the map
-                            />
-                          ))}
-                        </div>
-                        
-                        {/* Aggregated Summary Notes - Rendered after table/cards */}
-                        <div className="mt-4 space-y-1 text-sm">
-                            {hasAnyPythiumNote && pythiumNoteToDisplay && (
-                                <p className="italic text-gray-500 dark:text-gray-400 text-xs">
-                                    {pythiumNoteToDisplay}
-                                </p>
-                            )}
-                        </div>
-                      </div>
-                    )}
+                {/* Kit recommendations section */}
+                {item.recommendedKitRefs && (
+                  <div>
+                    <DiagboxKitTable 
+                      kitList={item.recommendedKitRefs.map(kit => kit.ref)}
+                      kitRefToSectionIdMap={kitRefToSectionIdMap}
+                    />
                   </div>
                 )}
 
@@ -312,7 +296,7 @@ function GazonQnaAccordion({ onOpenKitGroup }) {
                       onClick={(e) => handleLinkClick(e, '/contact')}
                       className="inline-block px-6 py-2 bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors"
                     >
-                      {getRecommendationText('qna_reco.common.contact_link')}
+                      {getGeneralText('home.hero.cta', language)}
                     </a>
                   </div>
                 )}

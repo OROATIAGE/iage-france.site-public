@@ -1,25 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { texts } from '../content/texts';
-
-// Helper function pour récupérer n'importe quel texte via sa clé
-const getText = (keyString, defaultValue = '') => {
-  const keys = keyString.split('.');
-  let current = texts;
-  try {
-    for (const k of keys) {
-      if (current && typeof current === 'object' && k in current) {
-        current = current[k];
-      } else {
-        // console.warn(`Texte manquant pour ${keyString}`);
-        return defaultValue;
-      }
-    }
-    return typeof current === 'string' ? current : defaultValue;
-  } catch (e) {
-    // console.warn(`Erreur lors de la récupération de ${keyString}`);
-    return defaultValue;
-  }
-};
+import { useLanguage } from '../context/LanguageContext';
+import { getTextByLanguage } from '../utils/textHelpers';
 
 // UPDATED sections list to include all individual services
 const sections = [
@@ -40,9 +21,10 @@ function ServicesNav() {
   const [activeSection, setActiveSection] = useState(null);
   const navRef = useRef(null); 
   const itemRefs = useRef({}); 
+  const { language } = useLanguage();
 
   // Fonction pour générer la clé de texte pour la nav
-  const getNavTextKey = (sectionId) => `services.nav.${sectionId}`;
+  const getNavText = (sectionId) => getTextByLanguage(`services.nav.${sectionId}`, language, sectionId);
 
   useEffect(() => {
     // Initialiser les refs pour les items
@@ -121,48 +103,50 @@ function ServicesNav() {
     }
   }, [activeSection]);
 
-
   if (!isVisible) {
     return null;
   }
 
   return (
-    <nav 
-      ref={navRef}
-      className="sticky top-16 md:top-[70px] z-40 bg-white dark:bg-gray-900 shadow-md overflow-x-auto whitespace-nowrap scrollbar-hide py-2 px-4 border-b dark:border-gray-700"
-      style={{ 
-        msOverflowStyle: 'none',
-        scrollbarWidth: 'none',
-        WebkitOverflowScrolling: 'touch',
-      }}
-    >
-        <style>{`.scrollbar-hide::-webkit-scrollbar { display: none; }`}</style>
-      {sections.map((section) => {
-        const isActive = activeSection === section.id;
-        // Construire la clé et récupérer le texte depuis texts.js
-        const navTextKey = getNavTextKey(section.id);
-        const text = getText(navTextKey, section.id); // Fallback sur l'ID si texte non trouvé
-        
-        // Styles des boutons (inchangés)
-        const baseClasses = "inline-block px-4 py-2 rounded-full text-sm font-medium mr-2 transition-all duration-300";
-        const activeClasses = "bg-secondary/20 dark:bg-secondary/30 text-secondary dark:text-secondary-light ring-2 ring-secondary/50";
-        const inactiveClasses = "bg-secondary/5 dark:bg-secondary/10 text-secondary/80 dark:text-secondary-light/80 hover:bg-secondary/10 dark:hover:bg-secondary/20";
-
-        return (
-          <a
-            key={section.id}
-            ref={itemRefs.current[section.id]} 
-            href={`#${section.id}`}
-            className={`${baseClasses} ${isActive ? activeClasses : inactiveClasses}`}
-            onClick={(e) => {
-              setActiveSection(section.id); 
-            }}
-          >
-            {text}
-          </a>
-        );
-      })}
-    </nav>
+    <div className="fixed top-[68px] left-0 right-0 z-30">
+      <div className="max-w-4xl mx-auto px-4">
+        <div className="bg-white dark:bg-gray-900 rounded-lg shadow-md">
+          <div ref={navRef} className="overflow-x-auto no-scrollbar py-2 px-4">
+            <div className="flex space-x-4 min-w-max">
+              {sections.map((section) => {
+                const isActive = activeSection === section.id;
+                const text = getNavText(section.id);
+                
+                return (
+                  <a
+                    key={section.id}
+                    ref={itemRefs.current[section.id]} 
+                    href={`#${section.id}`}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      const element = document.getElementById(section.id);
+                      if (element) {
+                        const navHeight = 120; // Hauteur de la navbar + barre de navigation + marge
+                        const y = element.getBoundingClientRect().top + window.scrollY - navHeight;
+                        window.scrollTo({ top: y, behavior: 'smooth' });
+                      }
+                      setActiveSection(section.id); 
+                    }}
+                    className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors whitespace-nowrap
+                      ${isActive
+                        ? 'bg-[#f0f4fa] text-[#003366] border border-[#c9d6e3]'
+                        : 'bg-gray-50 text-gray-500 border border-gray-200 hover:bg-gray-100 hover:text-gray-700 hover:border-gray-300'
+                      }`}
+                  >
+                    {text}
+                  </a>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
 

@@ -1,39 +1,26 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { FaChevronDown, FaChevronRight } from 'react-icons/fa';
-import { texts } from '../content/texts'; // Assuming texts.js is in src/content
-import { getEnhancedKitData } from '../utils/kitDataHelpers'; // Added for Gazon table
-import DiagboxDomainNav from '../components/DiagboxDomainNav'; // Import the new Nav component
+import { useLanguage } from '../context/LanguageContext';
+import { getTextByLanguage } from '../utils/textHelpers';
+import { getEnhancedKitData } from '../utils/kitDataHelpers';
+import DiagboxDomainNav from '../components/DiagboxDomainNav';
+import DiagboxKitTable from '../components/DiagboxKitTable';
 
 // Helper function to get texts for this page
 const getPageText = (key, defaultValue = '') => {
-  const fullKey = `diagbox.mainpage.${key}`;
-  const keys = fullKey.split('.');
-  let current = texts;
-  try {
-    for (const k of keys) {
-      if (current && typeof current === 'object' && k in current) {
-        current = current[k];
-      } else {
-        console.warn(`Text missing for ${fullKey}`);
-        return defaultValue;
-      }
-    }
-    return typeof current === 'string' ? current.replace(/\\n/g, '\n') : (current || defaultValue);
-  } catch (e) {
-    console.warn(`Error retrieving text for ${fullKey}:`, e);
-    return defaultValue;
-  }
+  const { language } = useLanguage();
+  return getTextByLanguage(`diagbox.${key}`, language, defaultValue);
 };
 
 // Data for the "Simple à utiliser" steps
 const simpleSteps = [
-  { key: 'simple_step_open', icon: '📦' }, // Placeholder icons
-  { key: 'simple_step_sample', icon: '🧪' },
-  { key: 'simple_step_scan', icon: '📱' },
-  { key: 'simple_step_send', icon: '🚚' },
-  { key: 'simple_step_results', icon: '📊' },
+  { key: "process.step1", icon: "./assets/icons/box.svg", alt: "Ouvrir le kit" },
+  { key: "process.step2", icon: "./assets/icons/test-tube.svg", alt: "Prélever l'échantillon" },
+  { key: "process.step3", icon: "./assets/icons/qr-code.svg", alt: "Scanner le QR code" },
+  { key: "process.step4", icon: "./assets/icons/delivery-truck.svg", alt: "Envoyer au laboratoire" },
+  { key: "process.step5", icon: "./assets/icons/chart.svg", alt: "Obtenir les résultats" }
 ];
 
 // --- Data for Diagbox List Section ---
@@ -93,33 +80,53 @@ const diagboxDomainData = [
     domainKey: 'category_turf_parks_title', // Domain: Gazons naturels et parc
     sectors: [
       { sectorKey: 'subdomain_sports_turf', id: '04' }, // Gazons des stade - Will show table
-      { sectorKey: 'subdomain_golf_courses', id: '04_golf' }, // ID indicates it might share sector 04 page, but for Diagbox list, treat as distinct for now
-      { sectorKey: 'subdomain_cemeteries', id: '04_cemetery' }, // Same as above
+      { sectorKey: 'subdomain_golf_courses', id: '09' }, // Golf courses now point to sector 09
+      { sectorKey: 'subdomain_cemeteries', id: '10' }, // Cemeteries now point to sector 10
     ],
   },
 ];
 
 // Helper to get domain/sector titles from texts.home.sectors
 const getHomeSectorText = (key, defaultValue = '') => {
-  return texts.home?.sectors?.[key] || defaultValue || key;
+  const { language } = useLanguage();
+  return getTextByLanguage(`home.sectors.${key}`, language, defaultValue);
 };
 
 // Helper to get texts from texts.diagbox.gazon (for Gazon table)
 const getDiagboxGazonText = (key, defaultValue = '') => {
-  const keys = key.split('.');
-  let current = texts.diagbox?.gazon;
-  for (const k of keys) {
-    if (current && typeof current === 'object' && k in current) {
-      current = current[k];
-    } else {
-      return defaultValue;
-    }
-  }
-  return typeof current === 'string' ? current.replace(/\\n/g, '\\n') : (current || defaultValue);
+  const { language } = useLanguage();
+  return getTextByLanguage(`diagbox.gazon.${key}`, language, defaultValue);
 };
 
 function DiagboxPage() {
+  const { language } = useLanguage();
   const [openSectorKey, setOpenSectorKey] = useState(null);
+  const gazonSectionRef = useRef(null);
+
+  useEffect(() => {
+    if (!gazonSectionRef.current || !openSectorKey) return;
+
+    const observerOptions = {
+      root: null,
+      rootMargin: '-50% 0px -50% 0px', // Déclenche quand plus de 50% de l'élément est hors de vue
+      threshold: 0
+    };
+
+    const observerCallback = (entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting && openSectorKey === 'subdomain_sports_turf') {
+          setOpenSectorKey(null);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+    observer.observe(gazonSectionRef.current);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, [openSectorKey]);
 
   const handleSectorToggle = (sectorKey) => {
     setOpenSectorKey(openSectorKey === sectorKey ? null : sectorKey);
@@ -130,132 +137,106 @@ function DiagboxPage() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="container mx-auto px-4 py-12 md:py-16"
     >
-      {/* Page Title and Intro */}
-      <div className="text-center mb-12 md:mb-16">
-        <h1 className="text-4xl md:text-5xl font-bold text-primary dark:text-secondary mb-4">
-          {getPageText('title', 'Les DiagBox® IAGE')}
-        </h1>
-        <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 md:max-w-3xl lg:max-w-4xl mx-auto">
-          {getPageText('intro', 'Découvrez nos solutions de diagnostic rapide et autonome.')}
-        </p>
-      </div>
+      <div className="max-w-4xl mx-auto px-4">
+        {/* Page Title and Intro */}
+        <div id="diagbox-intro" className="text-center mb-12 md:mb-16 pt-[120px]">
+          <h1 className="text-4xl md:text-5xl font-bold text-primary dark:text-secondary mb-4">
+            {getTextByLanguage('diagbox.mainpage.title', language, 'Les DiagBox® IAGE')}
+          </h1>
+          <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300">
+            {getTextByLanguage('diagbox.mainpage.intro', language, 'Découvrez nos solutions de diagnostic rapide et autonome.')}
+          </p>
+        </div>
 
-      {/* Domain Navigation */}
-      <DiagboxDomainNav domains={diagboxDomainData} />
+        {/* Domain Navigation */}
+        <DiagboxDomainNav domains={diagboxDomainData} />
 
-      {/* Section 1: Simple à utiliser */}
-      <section className="mb-16 md:mb-20 py-12 bg-gray-50 dark:bg-gray-800 rounded-lg shadow-lg">
-        <div className="container">
-          <div className="md:max-w-3xl lg:max-w-4xl mx-auto">
+        {/* Section 1: Simple à utiliser */}
+        <section className="mb-16 md:mb-20 py-12 bg-gray-50 dark:bg-gray-800 rounded-lg shadow-lg">
+          <div className="mx-auto">
             <h2 className="text-3xl font-semibold text-center text-primary dark:text-white mb-10">
-              {getPageText('simple_title', 'Un processus simple et rapide')}
+              {getPageText('process.title', 'Un processus simple et rapide')}
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 text-center">
               {simpleSteps.map((step, index) => (
                 <div key={step.key} className="flex flex-col items-center p-4">
-                  <div className="text-5xl mb-3 text-secondary">{step.icon}</div>
+                  <div className="w-12 h-12 mb-3 text-primary dark:text-secondary">
+                    <img src={step.icon} alt={step.alt} className="w-full h-full" />
+                  </div>
                   <p className="text-md font-medium text-gray-700 dark:text-gray-300">
-                    {getPageText(step.key, `Étape ${index + 1}`)}
+                    {getPageText(`${step.key}.text`)}
                   </p>
                 </div>
               ))}
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Section 2: Liste des diagbox */}
-      <section className="mb-16 md:mb-20">
-        <h2 className="text-3xl font-semibold text-center text-primary dark:text-white mb-10">
-          {getPageText('list_title', 'Notre gamme de DiagBox® par domaine d\'activité')}
-        </h2>
-        
-        <div className="space-y-12 md:max-w-3xl lg:max-w-4xl mx-auto">
-          {diagboxDomainData.map((domain) => (
-            <div key={domain.domainKey} id={domain.domainKey} className="py-8 px-4 md:px-0 scroll-mt-20 md:scroll-mt-24">
-              <h3 className="text-2xl md:text-3xl font-bold text-left text-primary dark:text-secondary mb-2">
-                {getHomeSectorText(domain.domainKey)}
-              </h3>
-              <div className="w-16 h-1.5 bg-secondary mb-6 rounded-full"></div>
-              <div className="space-y-8 mx-auto">
-                {domain.sectors.map((sector) => (
-                  <div key={sector.sectorKey} className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
-                    {sector.sectorKey === 'subdomain_sports_turf' ? (
-                      // Accordion for Gazons des stade
-                      <>
-                        <button 
-                          onClick={() => handleSectorToggle(sector.sectorKey)}
-                          className="w-full flex justify-between items-center text-left text-xl font-semibold text-primary dark:text-gray-200 mb-4 focus:outline-none"
-                        >
-                          <span>{getHomeSectorText(sector.sectorKey)}</span>
-                          {openSectorKey === sector.sectorKey ? <FaChevronDown className="text-primary dark:text-gray-400" /> : <FaChevronRight className="text-primary dark:text-gray-400" />}
-                        </button>
-                        {openSectorKey === sector.sectorKey && (
-                          <div className="overflow-x-auto">
-                            <table className="min-w-full w-full divide-y divide-gray-200 dark:divide-gray-700 responsive-kit-table table-fixed">
-                              <thead className="bg-gray-50 dark:bg-gray-700 hidden md:table-header-group">
-                                <tr>
-                                  <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider w-1/12">Réf.</th>
-                                  <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider w-3/12">Désignation</th>
-                                  <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider w-2/12">Type</th>
-                                  <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider w-5/12">Cibles</th>
-                                  <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider w-1/12">Prix HT</th>
-                                </tr>
-                              </thead>
-                              <tbody className="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700 flex flex-col md:table-row-group md:divide-y">
-                                {priceListForGazon.map((kitRef) => {
-                                  const kitData = getEnhancedKitData(kitRef, null, kitRefToSectionIdMapForGazon);
-                                  return (
-                                    <tr key={kitRef} className="block md:table-row border-b last:border-b-0 md:border-none dark:border-gray-700 p-4 md:p-0">
-                                      <td data-label="Réf." className="block md:table-cell md:px-4 md:py-3 md:whitespace-nowrap text-sm font-medium text-gray-900 dark:text-gray-100 responsive-cell w-1/12">
-                                        {kitData.kitRef}
-                                      </td>
-                                      <td data-label="Désignation" className="block md:table-cell md:px-4 md:py-3 text-sm text-gray-600 dark:text-gray-300 responsive-cell w-3/12">
-                                        {kitData.designation}
-                                      </td>
-                                      <td data-label="Type" className="block md:table-cell md:px-4 md:py-3 text-sm text-gray-500 dark:text-gray-400 responsive-cell w-2/12">
-                                        {kitData.typeDeKit}
-                                      </td>
-                                      <td data-label="Cibles" className="block md:table-cell md:px-4 md:py-3 text-sm text-gray-600 dark:text-gray-300 responsive-cell w-5/12">
-                                        {kitData.ciblesEffectives}
-                                      </td>
-                                      <td data-label="Prix HT" className="block md:table-cell md:px-4 md:py-3 md:whitespace-nowrap text-sm text-gray-600 dark:text-gray-300 md:text-right responsive-cell w-1/12">
-                                        {kitData.prixIndicatifHT}
-                                      </td>
-                                    </tr>
-                                  );
-                                })}
-                              </tbody>
-                            </table>
-                            {priceListForGazon.some(ref => getEnhancedKitData(ref, null, kitRefToSectionIdMapForGazon).hasPythiumNote) && (
-                              <p className="mt-3 text-xs text-gray-500 dark:text-gray-400 italic">
-                                {priceListForGazon.find(ref => getEnhancedKitData(ref, null, kitRefToSectionIdMapForGazon).hasPythiumNote)?.pythiumNoteText}
-                              </p>
-                            )}
-                          </div>
-                        )}
-                      </>
-                    ) : (
-                      // Static display for other sectors
-                      <>
-                        <h4 className="text-xl font-semibold text-primary dark:text-gray-200 mb-4">
-                          {getHomeSectorText(sector.sectorKey)}
-                        </h4>
-                        <p className="text-gray-600 dark:text-gray-400">
-                          {getPageText('kits_coming_soon', 'Les kits DiagBox® pour ce secteur seront bientôt disponibles. Contactez-nous pour en savoir plus.')}
-                        </p>
-                      </>
-                    )}
-                  </div>
-                ))}
+        {/* Section 2: Liste des diagbox */}
+        <section className="mb-16 md:mb-20">
+          <h2 className="text-3xl font-semibold text-center text-primary dark:text-white mb-10">
+            {getTextByLanguage('diagbox.mainpage.list_title', language, 'Notre gamme de DiagBox® par domaine d\'activité')}
+          </h2>
+          
+          <div className="space-y-8">
+            {diagboxDomainData.map((domain) => (
+              <div key={domain.domainKey} id={domain.domainKey} className="py-4 mt-8 scroll-mt-40">
+                <h3 className="text-2xl md:text-3xl font-bold text-left text-primary dark:text-secondary mb-2">
+                  {getTextByLanguage(`home.sectors.${domain.domainKey}`, language)}
+                </h3>
+                <div className="w-16 h-1.5 bg-secondary mb-6 rounded-full"></div>
+                <div className="space-y-8">
+                  {domain.sectors.map((sector) => (
+                    <div 
+                      key={sector.sectorKey} 
+                      className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md"
+                      ref={sector.sectorKey === 'subdomain_sports_turf' ? gazonSectionRef : null}
+                    >
+                      {sector.sectorKey === 'subdomain_sports_turf' ? (
+                        <>
+                          <button 
+                            onClick={() => handleSectorToggle(sector.sectorKey)}
+                            className="w-full flex justify-between items-center text-left text-xl font-semibold text-primary dark:text-gray-200 mb-4 focus:outline-none"
+                          >
+                            <span>{getTextByLanguage(`home.sectors.${sector.sectorKey}`, language)}</span>
+                            {openSectorKey === sector.sectorKey ? <FaChevronDown className="text-primary dark:text-gray-400" /> : <FaChevronRight className="text-primary dark:text-gray-400" />}
+                          </button>
+                          {openSectorKey === sector.sectorKey && (
+                            <DiagboxKitTable 
+                              kitList={priceListForGazon}
+                              kitRefToSectionIdMap={kitRefToSectionIdMapForGazon}
+                            />
+                          )}
+                        </>
+                      ) : (
+                        <>
+                          <h4 className="text-xl font-semibold text-primary dark:text-gray-200 mb-4">
+                            {getTextByLanguage(`home.sectors.${sector.sectorKey}`, language)}
+                          </h4>
+                          <p className="text-gray-600 dark:text-gray-300">
+                            {getTextByLanguage('diagbox.coming_soon', language, 'Les kits DiagBox® pour ce secteur seront bientôt disponibles. Contactez-nous pour en savoir plus.')}
+                          </p>
+                        </>
+                      )}
+                    </div>
+                  ))}
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
-      </section>
+            ))}
+          </div>
+        </section>
+      </div>
 
+      {/* Section CTA */}
+      <div className="max-w-4xl mx-auto px-4 text-center -mt-4 mb-12">
+        <p className="text-lg text-gray-700 dark:text-gray-300 mb-4">
+          {getTextByLanguage('diagbox.gazon.cta.text', language)}
+        </p>
+        <Link to="/contact" className="inline-block px-6 py-3 bg-primary hover:bg-primary-dark text-white font-medium rounded-lg transition-colors">
+          {getTextByLanguage('diagbox.gazon.cta.button', language)}
+        </Link>
+      </div>
     </motion.div>
   );
 }

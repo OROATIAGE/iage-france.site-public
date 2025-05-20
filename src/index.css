@@ -106,6 +106,35 @@
       /* @apply border-r border-gray-200 dark:border-gray-700 mr-2; */
     }
   }
+
+  /* Styles pour le composant de téléphone */
+  .phone-input-container {
+    @apply w-full;
+  }
+
+  .phone-input-container .form-control {
+    @apply w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-gray-700 dark:border-gray-600 dark:text-white pl-[52px] !important;
+  }
+
+  .phone-input-container .flag-dropdown {
+    @apply bg-white dark:bg-gray-700 border-gray-300 dark:border-gray-600 rounded-l-md hover:bg-gray-50 dark:hover:bg-gray-600 !important;
+  }
+
+  .phone-input-container .selected-flag {
+    @apply bg-transparent hover:bg-gray-50 dark:hover:bg-gray-600 rounded-l-md !important;
+  }
+
+  .phone-input-dropdown {
+    @apply bg-white dark:bg-gray-700 text-gray-900 dark:text-white border-gray-300 dark:border-gray-600 !important;
+  }
+
+  .phone-input-dropdown .country {
+    @apply hover:bg-gray-100 dark:hover:bg-gray-600 !important;
+  }
+
+  .phone-input-dropdown .country.highlight {
+    @apply bg-gray-100 dark:bg-gray-600 !important;
+  }
 }
 
 /* Animations */
@@ -125,4 +154,15 @@
 .fade-exit-active {
   opacity: 0;
   transition: opacity 300ms ease-in;
+} 
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 } 

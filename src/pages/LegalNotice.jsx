@@ -1,54 +1,33 @@
 import { motion } from 'framer-motion';
-import { texts } from '../content/texts'; // Import texts
-
-// Helper function to safely get text from the nested structure
-const getText = (key, defaultValue = '') => {
-  const keys = key.split('.');
-  let current = texts.legal; // Start search within the 'legal' section
-  try {
-    for (const k of keys) {
-      if (current && typeof current === 'object' && k in current) {
-        current = current[k];
-      } else {
-        // console.warn(`Texte manquant pour legal.${key}`);
-        return defaultValue;
-      }
-    }
-    // Handle potential newlines stored as \n in the JSON
-    return typeof current === 'string' ? current.replace(/\\n/g, '\n') : defaultValue;
-  } catch (e) {
-    // console.warn(`Erreur lors de la récupération de legal.${key}`);
-    return defaultValue;
-  }
-};
+import { useLanguage } from '../context/LanguageContext';
+import { getTextByLanguage } from '../utils/textHelpers';
 
 function LegalNotice() {
+  const { language } = useLanguage();
+  const getText = (key, defaultValue = '') => getTextByLanguage(`legal.${key}`, language, defaultValue);
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="container mx-auto px-4 py-12 md:py-16" // Added more padding
+      className="container mx-auto px-4 py-12 md:py-16"
     >
       <h1 className="text-4xl font-bold mb-8">{getText('title', 'Mentions légales')}</h1>
-      <div className="prose lg:prose-xl max-w-none dark:prose-invert space-y-6"> {/* Added space-y */}
+      <div className="prose lg:prose-xl max-w-none dark:prose-invert space-y-6">
 
         {/* Section 1: Éditeur du site */}
         <section>
           <h2>{getText('section1_title')}</h2>
-          <p>{getText('section1_intro')}</p>
+          <p>{getText('section1_company_name')}</p>
           <p>
-            <strong>{getText('section1_company_name')}</strong><br />
-            {getText('section1_company_details')}<br />
+            <strong>{getText('section1_company_details')}</strong><br />
             <strong>Siège social :</strong> {getText('section1_address1')}<br />
-            {/* Optional: Display Paris office if needed */}
-            {/* <strong>Bureau Paris :</strong> {getText('section1_address2')}<br /> */}
             <strong>RCS :</strong> {getText('section1_rcs')}<br />
             <strong>N° TVA intracommunautaire :</strong> {getText('section1_vat')}<br />
           </p>
           <p>
-            <strong>{getText('section1_director_intro')}</strong><br />
-            {getText('section1_director_details')}
+            <strong>{getText('section1_director_intro')}</strong>
           </p>
           <p>
             <strong>{getText('section1_contact_intro')}</strong><br />
@@ -102,11 +81,6 @@ function LegalNotice() {
           <p>{getText('section5_content1')}</p>
           <p>{getText('section5_content2')}</p>
           <p>{getText('section5_types_intro')}</p>
-          <ul>
-            <li>{getText('section5_type1')}</li>
-            <li>{getText('section5_type2')}</li>
-            {getText('section5_type3') && <li>{getText('section5_type3')}</li>} {/* Conditionally render if type3 exists */}
-          </ul>
         </section>
 
         {/* Section 6: Responsabilités */}

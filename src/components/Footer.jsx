@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom'
 import { logos } from "../assets/logo"
 import { useState, useEffect } from "react"
-import { texts } from '../content/texts'
+import { useLanguage } from '../context/LanguageContext'
+import { getTextByLanguage } from '../utils/textHelpers'
 
 function useIsDark() {
   const [isDark, setIsDark] = useState(() =>
@@ -18,69 +19,99 @@ function useIsDark() {
 }
 
 function Footer() {
+  const { language } = useLanguage();
+  const getText = (key, defaultValue = '') => getTextByLanguage(key, language, defaultValue);
   const isDark = useIsDark()
   const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-gray-800 text-white dark:bg-black dark:text-gray-100">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div>
-            <img src={isDark ? logos.symbol.white : logos.symbol.blue} alt="Logo IAGE" className="h-10 mb-2" style={{ maxWidth: 60 }} />
-            <h3 className="text-lg font-semibold mb-4">{texts.footer.title}</h3>
-            <p className="text-gray-300">
-              {texts.footer.subtitle}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          {/* Company Info */}
+          <div className="flex flex-col items-center md:items-start">
+            <img 
+              src={isDark ? logos.symbol.white : logos.symbol.blue} 
+              alt="Logo IAGE" 
+              className="h-12 mb-3" 
+              style={{ maxWidth: 72 }} 
+            />
+            <h3 className="text-2xl font-bold mb-4">
+              {getText('footer.title')}
+            </h3>
+            <p className="text-lg text-gray-300 dark:text-gray-400 text-center md:text-left">
+              {getText('footer.subtitle')}
             </p>
           </div>
+
+          {/* Navigation Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">{texts.footer.navigation}</h3>
-            <ul className="space-y-2">
+            <h3 className="text-xl font-semibold mb-4 text-center md:text-left">
+              {getText('footer.navigation')}
+            </h3>
+            <ul className="space-y-2 text-center md:text-left">
               <li>
-                <Link to="/" className="text-gray-300 hover:text-white">
-                  {texts.footer.home}
+                <Link to="/" className="text-gray-300 hover:text-white dark:text-gray-400 dark:hover:text-white transition-colors">
+                  {getText('footer.home')}
                 </Link>
               </li>
               <li>
-                <Link to="/services" className="text-gray-300 hover:text-white">
-                  {texts.footer.services}
+                <Link to="/#sectors-grid" className="text-gray-300 hover:text-white dark:text-gray-400 dark:hover:text-white transition-colors">
+                  {getText('footer.sectors')}
                 </Link>
               </li>
               <li>
-                <Link 
-                  to="/#sectors-grid" 
-                  className="text-gray-300 hover:text-white dark:text-gray-400 dark:hover:text-white"
-                  onClick={() => {
-                    const element = document.getElementById('sectors-grid');
-                    if (element) {
-                      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    }
-                  }}
-                >
-                  {texts.footer.sectors}
+                <Link to="/services" className="text-gray-300 hover:text-white dark:text-gray-400 dark:hover:text-white transition-colors">
+                  {getText('footer.services')}
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="text-gray-300 hover:text-white">
-                  {texts.footer.contact}
+                <Link to="/contact" className="text-gray-300 hover:text-white dark:text-gray-400 dark:hover:text-white transition-colors">
+                  {getText('footer.contact')}
                 </Link>
               </li>
             </ul>
           </div>
+
+          {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">{texts.footer.contactTitle}</h3>
-            <p className="text-gray-300">{texts.footer.email}</p>
+            <h3 className="text-xl font-semibold mb-4 text-center md:text-left">
+              {getText('footer.contactTitle')}
+            </h3>
+            <ul className="space-y-2 text-center md:text-left">
+              <li>
+                <a 
+                  href={`mailto:${getText('legal.section1_contact_email')}`}
+                  className="text-gray-300 hover:text-white dark:text-gray-400 dark:hover:text-white transition-colors"
+                >
+                  {getText('footer.email')}
+                </a>
+              </li>
+              <li className="text-gray-300 dark:text-gray-400">
+                {getText('legal.section1_contact_phone')}
+              </li>
+              <li className="text-gray-300 dark:text-gray-400">
+                {getText('legal.section1_address1')}
+              </li>
+            </ul>
           </div>
         </div>
-        <div className="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400 text-sm">
-          <p className="mb-2">{texts.footer.copyright.replace('{année}', currentYear)}</p>
-          <div className="flex justify-center space-x-4">
-            <Link to="/privacy-policy" className="hover:text-white transition-colors">
-              {texts.footer?.privacy || 'Politique de confidentialité'}
-            </Link>
-            <span aria-hidden="true">|</span>
-            <Link to="/legal-notice" className="hover:text-white transition-colors">
-              {texts.footer?.legal || 'Mentions légales'}
-            </Link>
+
+        {/* Copyright and Legal Links */}
+        <div className="pt-8 border-t border-gray-700 dark:border-gray-800">
+          <div className="text-center text-sm space-y-2">
+            <div className="text-gray-400 dark:text-gray-500">
+              {getText('footer.copyright').replace('{année}', currentYear)}
+            </div>
+            <div className="text-gray-400 dark:text-gray-500 space-x-4">
+              <Link to="/legal-notice" className="hover:text-white transition-colors">
+                {getText('footer.legal')}
+              </Link>
+              <span className="text-gray-600 dark:text-gray-400">|</span>
+              <Link to="/privacy-policy" className="hover:text-white transition-colors">
+                {getText('footer.privacy')}
+              </Link>
+            </div>
           </div>
         </div>
       </div>
