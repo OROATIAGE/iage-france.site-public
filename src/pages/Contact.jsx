@@ -10,6 +10,7 @@ import { Link } from 'react-router-dom'
 import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
 import ReCAPTCHA from 'react-google-recaptcha'
+import PrivacyPolicyModal from '../components/PrivacyPolicyModal'
 
 // Fix for Leaflet default icon
 delete L.Icon.Default.prototype._getIconUrl
@@ -72,6 +73,8 @@ const Contact = () => {
   const { language } = useLanguage();
   const getText = (key, defaultValue = '') => getTextByLanguage(key, language, defaultValue);
   const recaptchaRef = useRef(null);
+  const [isLoadingCity, setIsLoadingCity] = useState(false);
+  const [isPrivacyPolicyOpen, setIsPrivacyPolicyOpen] = useState(false);
 
   const [formData, setFormData] = useState({
     sector: '',
@@ -89,6 +92,10 @@ const Contact = () => {
     message: '',
     gdprConsent: false,
     honeypot: '',
+    country: 'France',
+    street: '',
+    postalCode: '',
+    city: '',
   })
 
   const contactPreferences = [
@@ -108,6 +115,23 @@ const Contact = () => {
       [name]: type === 'checkbox' ? checked : value,
       ...(name === 'contactPreference' && !needsTimeSlot(value) && { preferredTime: '' }),
     }))
+
+    // Auto-complétion de la ville pour la France
+    if (name === 'postalCode' && formData.country === 'France' && value.length === 5) {
+      setIsLoadingCity(true);
+      fetch(`https://api-adresse.data.gouv.fr/search/?q=${value}&type=municipality&limit=1`)
+        .then(response => response.json())
+        .then(data => {
+          if (data.features && data.features.length > 0) {
+            setFormData(prev => ({
+              ...prev,
+              city: data.features[0].properties.city
+            }))
+          }
+        })
+        .catch(error => console.error('Erreur lors de la récupération de la ville:', error))
+        .finally(() => setIsLoadingCity(false))
+    }
   }
 
   // Nouveau gestionnaire pour le champ téléphone
@@ -224,7 +248,11 @@ const Contact = () => {
         preferredTime: '',
         message: '',
         gdprConsent: false,
-        honeypot: ''
+        honeypot: '',
+        country: 'France',
+        street: '',
+        postalCode: '',
+        city: '',
       });
       recaptchaRef.current.reset();
 
@@ -237,6 +265,34 @@ const Contact = () => {
       // Reset reCAPTCHA en cas d'erreur
       recaptchaRef.current.reset();
     }
+  };
+
+  // Liste des pays (les plus courants en premier)
+  const countries = [
+    'France',
+    'Belgique',
+    'Suisse',
+    'Luxembourg',
+    'Allemagne',
+    'Espagne',
+    'Italie',
+    'Royaume-Uni',
+    'Pays-Bas',
+    'Portugal',
+    // Ajoutez d'autres pays si nécessaire
+  ].sort((a, b) => a === 'France' ? -1 : b === 'France' ? 1 : a.localeCompare(b));
+
+  // Coordonnées de IAGE à Montpellier
+  const iageLocation = {
+    lat: 43.6167,
+    lng: 3.8833,
+    address: "335 rue Louis Lépine – 34000 Montpellier"
+  };
+
+  // Centre de la France pour la vue initiale
+  const franceCenter = {
+    lat: 46.603354,
+    lng: 1.888334
   };
 
   return (
@@ -263,7 +319,7 @@ const Contact = () => {
                 required
                 value={formData.sector}
                 onChange={handleChange}
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-gray-700 dark:border-gray-600 dark:text-white px-3 py-2"
               >
                 <option value="">{getText('contact.form.select_sector', 'Sélectionnez un secteur')}</option>
                 {sectors.map((category) => (
@@ -292,7 +348,7 @@ const Contact = () => {
                 required
                 value={formData.service}
                 onChange={handleChange}
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-gray-700 dark:border-gray-600 dark:text-white px-3 py-2"
               >
                 <option value="">{getText('contact.form.select_service', 'Sélectionnez un service')}</option>
                 {services.map((service) => (
@@ -315,7 +371,7 @@ const Contact = () => {
                 required
                 value={formData.message}
                 onChange={handleChange}
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-gray-700 dark:border-gray-600 dark:text-white caret-primary dark:caret-white px-3 py-2"
+                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-gray-700 dark:border-gray-600 dark:text-white px-3 py-2"
               />
             </div>
 
@@ -330,7 +386,7 @@ const Contact = () => {
                 required
                 value={formData.contactPreference}
                 onChange={handleChange}
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-gray-700 dark:border-gray-600 dark:text-white px-3 py-2"
               >
                 <option value="">{getText('contact.form.select_contact_preference', 'Sélectionnez le mode de réponse souhaité')}</option>
                 {contactPreferences.map((pref) => (
@@ -356,7 +412,7 @@ const Contact = () => {
                     value={formData.preferredDate}
                     onChange={handleChange}
                     min={new Date().toISOString().split('T')[0]}
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-gray-700 dark:border-gray-600 dark:text-white px-3 py-2"
                   />
                 </div>
                 <div>
@@ -369,7 +425,7 @@ const Contact = () => {
                     required
                     value={formData.preferredTime}
                     onChange={handleChange}
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-gray-700 dark:border-gray-600 dark:text-white px-3 py-2"
                   >
                     <option value="">{getText('contact.form.select_time', 'Sélectionnez votre préférence')}</option>
                     <option value="morning">{getText('contact.form.time.morning', 'Matin')}</option>
@@ -391,7 +447,7 @@ const Contact = () => {
                 required
                 value={formData.lastName}
                 onChange={handleChange}
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-gray-700 dark:border-gray-600 dark:text-white px-3 py-2"
               />
             </div>
 
@@ -407,7 +463,7 @@ const Contact = () => {
                 required
                 value={formData.firstName}
                 onChange={handleChange}
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-gray-700 dark:border-gray-600 dark:text-white px-3 py-2"
               />
             </div>
 
@@ -423,7 +479,7 @@ const Contact = () => {
                 name="jobTitle"
                 value={formData.jobTitle}
                 onChange={handleChange}
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-gray-700 dark:border-gray-600 dark:text-white px-3 py-2"
               />
             </div>
 
@@ -439,7 +495,7 @@ const Contact = () => {
                 required
                 value={formData.company}
                 onChange={handleChange}
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-gray-700 dark:border-gray-600 dark:text-white px-3 py-2"
               />
             </div>
 
@@ -455,7 +511,7 @@ const Contact = () => {
                 required
                 value={formData.email}
                 onChange={handleChange}
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-gray-700 dark:border-gray-600 dark:text-white px-3 py-2"
               />
             </div>
 
@@ -473,7 +529,7 @@ const Contact = () => {
                     id: 'phone',
                     name: 'phone',
                     required: true,
-                    className: "w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-gray-700 dark:border-gray-600 dark:text-white pl-12"
+                    className: "w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-gray-700 dark:border-gray-600 dark:text-white pl-12 pr-3 py-2"
                   }}
                   containerClass="phone-input-container"
                   buttonClass="phone-input-button dark:bg-gray-600 dark:border-gray-500"
@@ -487,6 +543,84 @@ const Contact = () => {
                   prefix=""
                   preserveOrder={['input']}
                 />
+              </div>
+            </div>
+
+                          {/* Adresse (optionnelle) */}
+              <div className="space-y-4">
+                <h3 className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                  {getText('contact.form.address.title', 'Adresse')}
+                  <span className="text-gray-500 dark:text-gray-400 text-xs ml-1">({getText('contact.form.address.optional', 'optionnel - utile pour recevoir plus rapidement vos produits')})</span>
+                </h3>
+              
+              {/* Pays */}
+              <div>
+                <label htmlFor="country" className="block text-sm font-medium text-primary dark:text-gray-300">
+                  {getText('contact.form.address.country', 'Pays')}
+                </label>
+                <select
+                  id="country"
+                  name="country"
+                  value={formData.country}
+                  onChange={handleChange}
+                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-gray-700 dark:border-gray-600 dark:text-white px-3 py-2"
+                >
+                  {countries.map((country) => (
+                    <option key={country} value={country}>
+                      {country}
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              {/* Adresse */}
+              <div className="space-y-4">
+                <div>
+                  <label htmlFor="street" className="block text-sm font-medium text-primary dark:text-gray-300">
+                    {getText('contact.form.address.street')}
+                  </label>
+                  <input
+                    type="text"
+                    id="street"
+                    name="street"
+                    value={formData.street}
+                    onChange={handleChange}
+                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-gray-700 dark:border-gray-600 dark:text-white px-3 py-2"
+                  />
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <div>
+                    <label htmlFor="postalCode" className="block text-sm font-medium text-primary dark:text-gray-300">
+                      {getText('contact.form.address.postal_code')}
+                    </label>
+                    <input
+                      type="text"
+                      id="postalCode"
+                      name="postalCode"
+                      value={formData.postalCode}
+                      onChange={handleChange}
+                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-gray-700 dark:border-gray-600 dark:text-white px-3 py-2"
+                    />
+                    {formData.country === 'France' && (
+                      <p className="mt-1 text-xs text-gray-500 dark:text-gray-400">
+                        {isLoadingCity ? getText('contact.form.address.city_loading', 'Recherche de la ville...') : getText('contact.form.address.city_help', 'Saisissez un code postal pour compléter automatiquement la ville')}
+                      </p>
+                    )}
+                  </div>
+                  <div className="md:col-span-2">
+                    <label htmlFor="city" className="block text-sm font-medium text-primary dark:text-gray-300">
+                      {getText('contact.form.address.city')}
+                    </label>
+                    <input
+                      type="text"
+                      id="city"
+                      name="city"
+                      value={formData.city}
+                      onChange={handleChange}
+                      className={`mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-gray-700 dark:border-gray-600 dark:text-white px-3 py-2 ${isLoadingCity ? 'animate-pulse' : ''}`}
+                    />
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -509,7 +643,7 @@ const Contact = () => {
               onChange={(value) => console.log("reCAPTCHA value:", value)}
             />
 
-            {/* RGPD Consent */}
+            {/* RGPD Consent - Modification du lien pour ouvrir le modal */}
             <div className="flex items-start space-x-2">
               <input
                 type="checkbox"
@@ -523,9 +657,15 @@ const Contact = () => {
               <label htmlFor="gdprConsent" className="text-sm text-gray-600 dark:text-gray-400">
                 {getText('contact.form.gdpr_consent')}
                 {' '}
-                <Link to="/privacy-policy" className="underline text-primary hover:text-primary-dark">
+                <button
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setIsPrivacyPolicyOpen(true);
+                  }}
+                  className="underline text-primary hover:text-primary-dark"
+                >
                   {getText('contact.form.privacy_policy')}
-                </Link>
+                </button>
                 .
               </label>
             </div>
@@ -545,7 +685,7 @@ const Contact = () => {
         {/* Contact Information */}
         <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
           <h2 className="text-2xl font-bold mb-6">{getText('contact.info.title', 'Nos coordonnées')}</h2>
-          <div className="space-y-4">
+          <div className="space-y-4 mb-6">
             <p>
               <strong>{getText('legal.section1_company_name')}</strong>
             </p>
@@ -564,8 +704,43 @@ const Contact = () => {
               </a>
             </p>
           </div>
+
+          {/* Carte */}
+          <div className="h-[300px] w-full rounded-lg overflow-hidden">
+            <MapContainer
+              center={[iageLocation.lat, iageLocation.lng]}
+              zoom={4}
+              scrollWheelZoom={false}
+              className="h-full w-full"
+              attributionControl={true}
+              zoomControl={true}
+              doubleClickZoom={true}
+              dragging={true}
+              keyboard={true}
+              touchZoom={true}
+            >
+              <TileLayer
+                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              />
+              <Marker position={[iageLocation.lat, iageLocation.lng]}>
+                <Popup>
+                  <div className="text-sm">
+                    <strong>IAGE</strong><br />
+                    {iageLocation.address}
+                  </div>
+                </Popup>
+              </Marker>
+            </MapContainer>
+          </div>
         </div>
       </div>
+
+      {/* Modal de politique de confidentialité */}
+      <PrivacyPolicyModal
+        isOpen={isPrivacyPolicyOpen}
+        onClose={() => setIsPrivacyPolicyOpen(false)}
+      />
     </motion.div>
   )
 }

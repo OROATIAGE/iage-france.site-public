@@ -476,6 +476,73 @@ legal.section6_title,Legal Page,6. Responsabilités,[EN] 6. Responsabilités
 legal.title,Legal Page,Mentions légales,[EN] Mentions légales
 privacy.content,Privacy Page,Contenu de la politique de confidentialité à ajouter...,[EN] Contenu de la politique de confidentialité à ajouter...
 privacy.title,Privacy Page,Politique de confidentialité,[EN] Politique de confidentialité
+privacy.intro,Privacy,"Cette politique de confidentialité décrit comment IAGE collecte, utilise et protège vos données personnelles lorsque vous utilisez notre site web et nos services.","[EN] This privacy policy describes how IAGE collects, uses, and protects your personal data when you use our website and services."
+privacy.data_collection.title,Privacy,Données collectées,[EN] Data Collection
+privacy.data_collection.text,Privacy,"Nous collectons les informations que vous nous fournissez volontairement via notre formulaire de contact, notamment :
+- Nom et prénom
+- Fonction (optionnel)
+- Entreprise
+- Adresse email
+- Numéro de téléphone
+- Adresse postale (optionnel)
+- Secteur d'activité et service d'intérêt
+- Préférences de contact
+- Message","[EN] We collect information that you voluntarily provide through our contact form, including:
+- First and last name
+- Job title (optional)
+- Company
+- Email address
+- Phone number
+- Postal address (optional)
+- Industry sector and service of interest
+- Contact preferences
+- Message"
+privacy.data_use.title,Privacy,Utilisation des données,[EN] Data Use
+privacy.data_use.text,Privacy,"Nous utilisons vos données personnelles pour :
+- Répondre à vos demandes de contact
+- Vous fournir les informations demandées sur nos services
+- Gérer notre relation commerciale
+- Améliorer nos services et communications
+- Respecter nos obligations légales","[EN] We use your personal data to:
+- Respond to your contact requests
+- Provide requested information about our services
+- Manage our business relationship
+- Improve our services and communications
+- Comply with legal obligations"
+privacy.data_protection.title,Privacy,Protection des données,[EN] Data Protection
+privacy.data_protection.text,Privacy,"Nous mettons en œuvre des mesures de sécurité appropriées pour protéger vos données contre tout accès, modification, divulgation ou destruction non autorisés. Vos données sont stockées sur des serveurs sécurisés et ne sont accessibles qu'au personnel autorisé.","[EN] We implement appropriate security measures to protect your data against unauthorized access, modification, disclosure, or destruction. Your data is stored on secure servers and is only accessible to authorized personnel."
+privacy.data_retention.title,Privacy,Conservation des données,[EN] Data Retention
+privacy.data_retention.text,Privacy,"Nous conservons vos données personnelles aussi longtemps que nécessaire pour :
+- Répondre à vos demandes
+- Maintenir notre relation commerciale
+- Respecter nos obligations légales
+- Résoudre d'éventuels litiges","[EN] We retain your personal data for as long as necessary to:
+- Respond to your requests
+- Maintain our business relationship
+- Comply with legal obligations
+- Resolve potential disputes"
+privacy.cookies.title,Privacy,Utilisation des cookies,[EN] Cookie Usage
+privacy.cookies.text,Privacy,"Notre site utilise des cookies essentiels pour son fonctionnement et des cookies analytiques pour améliorer votre expérience. Vous pouvez contrôler l'utilisation des cookies non essentiels via les paramètres de votre navigateur.","[EN] Our website uses essential cookies for its operation and analytical cookies to improve your experience. You can control the use of non-essential cookies through your browser settings."
+privacy.rights.title,Privacy,Vos droits,[EN] Your Rights
+privacy.rights.text,Privacy,"Conformément au RGPD, vous disposez des droits suivants :
+- Accès à vos données personnelles
+- Rectification de vos données
+- Effacement de vos données
+- Opposition au traitement
+- Portabilité des données
+- Retrait du consentement
+- Limitation du traitement","[EN] Under GDPR, you have the following rights:
+- Access to your personal data
+- Rectification of your data
+- Erasure of your data
+- Opposition to processing
+- Data portability
+- Withdrawal of consent
+- Restriction of processing"
+privacy.contact.title,Privacy,Nous contacter,[EN] Contact Us
+privacy.contact.text,Privacy,"Pour toute question concernant cette politique de confidentialité ou pour exercer vos droits, contactez-nous à l'adresse email indiquée sur notre page Contact.","[EN] For any questions about this privacy policy or to exercise your rights, please contact us at the email address shown on our Contact page."
+privacy.updates.title,Privacy,Mises à jour,[EN] Updates
+privacy.updates.text,Privacy,"Nous nous réservons le droit de mettre à jour cette politique de confidentialité à tout moment. Les modifications seront publiées sur cette page avec la date de dernière mise à jour.","[EN] We reserve the right to update this privacy policy at any time. Changes will be posted on this page with the last update date."
 footer.contact,Footer,Contact,[EN] Contact
 footer.contactTitle,Footer,Contact,[EN] Contact
 footer.copyright,Footer,© {année} IAGE. Tous droits réservés.,[EN] © {année} IAGE. Tous droits réservés.
@@ -664,7 +731,7 @@ contact.form.email,Contact Form,Email,[EN] Email
 contact.form.message,Contact Form,Votre message,[EN] Your message
 contact.form.phone,Contact Form,Téléphone,[EN] Phone
 contact.form.submit,Contact Form,Envoyer,[EN] Submit
-contact.form.optional,Contact Form,optionnel,[EN] optional
+contact.form.optional,Contact Form,optionnel - utile pour recevoir plus rapidement vos produits,[EN] optional - useful for faster product delivery
 contact.form.sector,Contact Form,Secteur d'intérêt,[EN] Sector of Interest
 contact.form.select_sector,Contact Form,Sélectionnez un secteur,[EN] Select a sector
 contact.form.service,Contact Form,Service souhaité,[EN] Desired Service
@@ -686,3 +753,12 @@ contact.form.phone_format,Contact Form,Entrez votre numéro avec le 0 initial (E
 contact.form.phone_format,Contact Form,Format: 06 12 34 56 78,[EN] Format: 06 12 34 56 78
 contact.form.success,Contact Form,Votre message a été envoyé avec succès. Nous vous contacterons bientôt.,[EN] Your message has been sent successfully. We will contact you soon.
 contact.form.error,Contact Form,Une erreur est survenue lors de l'envoi du formulaire. Veuillez réessayer.,[EN] An error occurred while sending the form. Please try again.
+contact.form.address.title,Contact Form,Adresse,[EN] Address
+contact.form.address.street,Contact Form,Numéro et voie,[EN] Street number and name
+contact.form.address.postal_code,Contact Form,Code postal,[EN] Postal Code
+contact.form.address.city,Contact Form,Ville,[EN] City
+contact.form.address.country,Contact Form,Pays,[EN] Country
+contact.form.optional,Contact (Form),optionnel,[EN] optional
+contact.form.address.optional,Contact (Form),optionnel - utile pour recevoir plus rapidement vos produits,[EN] optional - useful for faster product delivery
+contact.form.address.city_loading,Contact (Form),Recherche de la ville...,[EN] Searching for city...
+contact.form.address.city_help,Contact (Form),Saisissez un code postal pour compléter automatiquement la ville,[EN] Enter a postal code to automatically complete the city

@@ -740,8 +740,6 @@ export const texts = {
         "select_service": "Sélectionnez un service",
         "contact_preference": "Mode de réponse souhaité",
         "select_contact_preference": "Sélectionnez le mode de réponse souhaité",
-        "preferred_date": "Date souhaitée",
-        "preferred_time": "Créneau horaire préféré",
         "preferred_time": "Demi-journée préférable",
         "select_time": "Sélectionnez votre préférence",
         "time": {
@@ -759,7 +757,17 @@ export const texts = {
         "phone_placeholder": "Ex: 06 12 34 56 78",
         "phone_format": "Format: 06 12 34 56 78",
         "success": "Votre message a été envoyé avec succès. Nous vous contacterons bientôt.",
-        "error": "Une erreur est survenue lors de l'envoi du formulaire. Veuillez réessayer."
+        "error": "Une erreur est survenue lors de l'envoi du formulaire. Veuillez réessayer.",
+        "address": {
+          "title": "Adresse",
+          "street": "Numéro et voie",
+          "postal_code": "Code postal",
+          "city": "Ville",
+          "country": "Pays",
+          "optional": "optionnel - utile pour recevoir plus rapidement vos produits",
+          "city_loading": "Recherche de la ville...",
+          "city_help": "Saisissez un code postal pour compléter automatiquement la ville"
+        }
       },
       "title": "Contact"
     },
@@ -805,7 +813,40 @@ export const texts = {
     },
     "privacy": {
       "content": "Contenu de la politique de confidentialité à ajouter...",
-      "title": "Politique de confidentialité"
+      "title": "Politique de confidentialité",
+      "intro": "Cette politique de confidentialité décrit comment IAGE collecte, utilise et protège vos données personnelles lorsque vous utilisez notre site web et nos services.",
+      "data_collection": {
+        "title": "Données collectées",
+        "text": "Nous collectons les informations que vous nous fournissez volontairement via notre formulaire de contact, notamment :\n- Nom et prénom\n- Fonction (optionnel)\n- Entreprise\n- Adresse email\n- Numéro de téléphone\n- Adresse postale (optionnel)\n- Secteur d'activité et service d'intérêt\n- Préférences de contact\n- Message"
+      },
+      "data_use": {
+        "title": "Utilisation des données",
+        "text": "Nous utilisons vos données personnelles pour :\n- Répondre à vos demandes de contact\n- Vous fournir les informations demandées sur nos services\n- Gérer notre relation commerciale\n- Améliorer nos services et communications\n- Respecter nos obligations légales"
+      },
+      "data_protection": {
+        "title": "Protection des données",
+        "text": "Nous mettons en œuvre des mesures de sécurité appropriées pour protéger vos données contre tout accès, modification, divulgation ou destruction non autorisés. Vos données sont stockées sur des serveurs sécurisés et ne sont accessibles qu'au personnel autorisé."
+      },
+      "data_retention": {
+        "title": "Conservation des données",
+        "text": "Nous conservons vos données personnelles aussi longtemps que nécessaire pour :\n- Répondre à vos demandes\n- Maintenir notre relation commerciale\n- Respecter nos obligations légales\n- Résoudre d'éventuels litiges"
+      },
+      "cookies": {
+        "title": "Utilisation des cookies",
+        "text": "Notre site utilise des cookies essentiels pour son fonctionnement et des cookies analytiques pour améliorer votre expérience. Vous pouvez contrôler l'utilisation des cookies non essentiels via les paramètres de votre navigateur."
+      },
+      "rights": {
+        "title": "Vos droits",
+        "text": "Conformément au RGPD, vous disposez des droits suivants :\n- Accès à vos données personnelles\n- Rectification de vos données\n- Effacement de vos données\n- Opposition au traitement\n- Portabilité des données\n- Retrait du consentement\n- Limitation du traitement"
+      },
+      "contact": {
+        "title": "Nous contacter",
+        "text": "Pour toute question concernant cette politique de confidentialité ou pour exercer vos droits, contactez-nous à l'adresse email indiquée sur notre page Contact."
+      },
+      "updates": {
+        "title": "Mises à jour",
+        "text": "Nous nous réservons le droit de mettre à jour cette politique de confidentialité à tout moment. Les modifications seront publiées sur cette page avec la date de dernière mise à jour."
+      }
     },
     "footer": {
       "contact": "Contact",
@@ -1585,7 +1626,17 @@ export const texts = {
         "phone_placeholder": "[EN] Ex: 06 12 34 56 78",
         "phone_format": "[EN] Format: 06 12 34 56 78",
         "success": "[EN] Your message has been sent successfully. We will contact you soon.",
-        "error": "[EN] An error occurred while sending the form. Please try again."
+        "error": "[EN] An error occurred while sending the form. Please try again.",
+        "address": {
+          "title": "[EN] Address",
+          "street": "[EN] Street number and name",
+          "postal_code": "[EN] Postal Code",
+          "city": "[EN] City",
+          "country": "[EN] Country",
+          "optional": "[EN] optional - useful for faster product delivery",
+          "city_loading": "[EN] Searching for city...",
+          "city_help": "[EN] Enter a postal code to automatically complete the city"
+        }
       },
       "title": "[EN] Contact"
     },
@@ -1631,7 +1682,40 @@ export const texts = {
     },
     "privacy": {
       "content": "[EN] Contenu de la politique de confidentialité à ajouter...",
-      "title": "[EN] Politique de confidentialité"
+      "title": "[EN] Politique de confidentialité",
+      "intro": "[EN] This privacy policy describes how IAGE collects, uses, and protects your personal data when you use our website and services.",
+      "data_collection": {
+        "title": "[EN] Data Collection",
+        "text": "[EN] We collect information that you voluntarily provide through our contact form, including:\n- First and last name\n- Job title (optional)\n- Company\n- Email address\n- Phone number\n- Postal address (optional)\n- Industry sector and service of interest\n- Contact preferences\n- Message"
+      },
+      "data_use": {
+        "title": "[EN] Data Use",
+        "text": "[EN] We use your personal data to:\n- Respond to your contact requests\n- Provide requested information about our services\n- Manage our business relationship\n- Improve our services and communications\n- Comply with legal obligations"
+      },
+      "data_protection": {
+        "title": "[EN] Data Protection",
+        "text": "[EN] We implement appropriate security measures to protect your data against unauthorized access, modification, disclosure, or destruction. Your data is stored on secure servers and is only accessible to authorized personnel."
+      },
+      "data_retention": {
+        "title": "[EN] Data Retention",
+        "text": "[EN] We retain your personal data for as long as necessary to:\n- Respond to your requests\n- Maintain our business relationship\n- Comply with legal obligations\n- Resolve potential disputes"
+      },
+      "cookies": {
+        "title": "[EN] Cookie Usage",
+        "text": "[EN] Our website uses essential cookies for its operation and analytical cookies to improve your experience. You can control the use of non-essential cookies through your browser settings."
+      },
+      "rights": {
+        "title": "[EN] Your Rights",
+        "text": "[EN] Under GDPR, you have the following rights:\n- Access to your personal data\n- Rectification of your data\n- Erasure of your data\n- Opposition to processing\n- Data portability\n- Withdrawal of consent\n- Restriction of processing"
+      },
+      "contact": {
+        "title": "[EN] Contact Us",
+        "text": "[EN] For any questions about this privacy policy or to exercise your rights, please contact us at the email address shown on our Contact page."
+      },
+      "updates": {
+        "title": "[EN] Updates",
+        "text": "[EN] We reserve the right to update this privacy policy at any time. Changes will be posted on this page with the last update date."
+      }
     },
     "footer": {
       "contact": "[EN] Contact",
