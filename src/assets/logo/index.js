@@ -2,6 +2,7 @@ export const logos = {
   primary: {
     horizontal: "/assets/logo/IAGE-LOGO-H-CMJN.svg",
     vertical: "/assets/logo/IAGE-LOGO-V-CMJN.svg",
+    horizontalWhite: "/assets/logo/IAGE_LOGO_H_BLANC_BLEU C_CMJN.svg"
   },
   symbol: {
     blue: "/assets/logo/IAGE-SYMBOL-CMJN.svg",
