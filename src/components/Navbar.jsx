@@ -135,31 +135,22 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-white fixed w-full top-0 z-50 dark:bg-gray-900">
-      {/* Logo Container - Isolé avec son propre z-index */}
-      <div className="absolute left-4 sm:left-6 lg:left-8 top-0 h-16 z-[51] bg-white dark:bg-gray-900">
-        <div className="w-[160px] h-16 flex items-center">
-          <Link to="/" className="block w-[160px] h-8">
-            <img 
-              src={isDark ? logos.symbol.white : logos.primary.horizontal} 
-              alt="Logo IAGE" 
-              className="w-[160px] h-8 object-contain"
-              loading="eager"
-              style={{
-                display: 'block',
-                width: '160px',
-                height: '32px'
-              }}
-            />
-          </Link>
-        </div>
-      </div>
-
-      {/* Main Navigation Container */}
+    <nav className="bg-white fixed w-full top-0 z-50 dark:bg-gray-900 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
-          {/* Logo Spacer */}
-          <div className="w-[160px] h-16 flex-shrink-0"></div>
+          {/* Logo Container */}
+          <div className="flex-none w-[160px] h-16 flex items-center">
+            <Link to="/" className="block">
+              <img 
+                src={isDark ? logos.symbol.white : logos.primary.horizontal} 
+                alt="Logo IAGE" 
+                width="160"
+                height="32"
+                className="w-[160px] h-8"
+                loading="eager"
+              />
+            </Link>
+          </div>
 
           {/* Desktop menu */}
           <div className="hidden lg:flex lg:items-center lg:space-x-4 xl:space-x-8">
