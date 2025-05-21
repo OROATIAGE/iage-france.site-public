@@ -8,7 +8,7 @@ export const texts = {
       "services": {
         "dropdown": {
           "all": "Voir tous les services",
-          "diagbox": "Diagbox"
+          "diagbox": "Diagbox®"
         },
         "title": "Services"
       },
@@ -131,7 +131,7 @@ export const texts = {
       "nav": {
         "catalog": "Catalogue des analyses",
         "development": "R&D",
-        "diagbox": "DiagBox®",
+        "diagbox": "Diagbox®",
         "local-labs": "Laboratoires locaux",
         "mobile-viz": "Visualisations en mobilité",
         "modeling": "Modélisations et anticipations",
@@ -152,7 +152,7 @@ export const texts = {
         "development_description": "Face à des enjeux émergents (virus, bactéries), pour intégrer une analyse spécifique dans un projet de recherche ou pour un POC (Proof Of Concept) répondant à un appel d'offres, IAGE s'engage dans le développement et la validation de nouvelles méthodes d'analyse.\r\n\r\nNotre processus débute par une étude de faisabilité (étude bibliographique, design, matrice, critères d'efficacité attendus, ressources humaines). L'offre de prix, validée par nos directions scientifique, recherche et commerciale, reflète ce travail de R&D (temps expert, achats spécifiques). L'intégration d'analyses catalogue existantes au sein du développement peut permettre d'optimiser les coûts.\r\n\r\nC'est une approche partenariale pour innover ensemble.",
         "development_title": "Développement de nouvelles méthodes : Innovation et R&D",
         "diagbox_description": "Nos kits DiagBox® sont des solutions clé-en-main pour des analyses rapides (résultats en 48h) et autonomes.\r\n\r\nChaque kit inclut le matériel de prélèvement adapté, le transport et l'analyse en laboratoire. \r\n\r\nFaciles à stocker et à utiliser, ils sont idéaux pour le contrôle qualité régulier, le suivi ou la confirmation rapide d'une suspicion (ex: pathogènes gazon, qualité de l'air intérieur, nuisibles).",
-        "diagbox_title": "DiagBox® : Simplicité et Rapidité",
+        "diagbox_title": "Diagbox® : Simplicité et Rapidité",
         "intro": "Découvrez comment IAGE répond à vos besoins spécifiques et vous aide dans vos prises de décision opérationnelles grâce à une gamme complète d'analyses, de services et de produits",
         "local_labs_description": "Pour des besoins récurrents, des volumes importants ou une nécessité de résultats ultra-rapides, nous pouvons étudier la mise en place de laboratoires d'analyse locaux, spécialisés et dédiés à votre activité. Cette solution offre une autonomie et une réactivité maximales, avec notre support pour l'installation, la formation et le suivi qualité.",
         "local_labs_title": "Laboratoires locaux spécialisés et dédiés",
@@ -697,7 +697,8 @@ export const texts = {
           "q3": "Une **détérioration visible** du gazon indique un **niveau déjà important** du ou des pathogènes en cause. \r\nDe plus, derrière l'agent principal qui peut souvent être identifié visuellement, des agents secondaires peuvent aussi être présents. Ils peuvent profiter du premier ou seront des facteurs aggravant en se développant à la place du premier si les traitements retenus ne sont pas adaptés.\r\nIAGE a défini des outils pour **identifier au plus vite tous les agents responsables**, et vous permettre de mettre en place les traitements adaptés avec le plus de chances de sauver la pelouse et de limiter vos coûts d'entretien.",
           "q4": "Installer un nouveau plaquage représente un **investissement conséquent**. \r\nL'absence d'évaluation de la santé des sols ou du gazon apportés peut permettre à des pathogènes présents dans le sol ou apportés par le plaquages de proliférer, **conduisant à des coûts d'entretiens élevés**, voir au pire à la ruine de la nouvelle pelouse. \r\nIAGE a défini des outils pour assurer une **vérification préalable des états de santé de chaque compartiment** (sol, racines, feuilles) pour réduire les risques au regard de l'investissement réalisé.\r\nCes analyses ont déjà été utilisées dans le cas d'un litige sur l'origine d'une dégradation après un plaquage.",
           "q5": "**Chaque terrain est spécifique** : type et origine du gazon, sols, météo, usages,... autant de facteurs qui modifient les types de maladies qui peuvent toucher votre terrain et la façon dont elles peuvent évoluer. Vous avez aussi de votre côté des attentes ou des contraintes propres\r\nIl y a donc en effet de nombreuses situations différentes ! N'hésitez pas à **nous contacter**, nous serons heureux de voir avec vous comment vous aider au mieux"
-        }
+        },
+        "bon_a_savoir_title": "Bon à savoir"
       },
       "mainpage": {
         "title": "Les DiagBox® IAGE"
@@ -1069,7 +1070,7 @@ export const texts = {
       "nav": {
         "catalog": "Catalog of analyses",
         "development": "R&D",
-        "diagbox": "DiagBox®",
+        "diagbox": "Diagbox®",
         "local-labs": "Local laboratories",
         "mobile-viz": "Mobile Visualizations",
         "modeling": "Modeling and anticipations",
@@ -1090,7 +1091,7 @@ export const texts = {
         "development_description": "Faced with emerging challenges (viruses, bacteria), to integrate a specific analysis into a research project or for a POC (Proof Of Concept) responding to a call for tenders, IAGE is committed to the development and validation of new analysis methods.\r\n\r\nOur process begins with a feasibility study (bibliographic study, design, matrix, expected effectiveness criteria, human resources). The price offer, validated by our scientific, research, and sales departments, reflects this R&D work (expert time, consumables). Integrating existing analysis can optimise costs.\r\n\r\nIt is a partnership approach to innovate together.",
         "development_title": "Development of new methods: Innovation and R&D",
         "diagbox_description": "Our DiagBox® kits are turnkey solutions for rapid (results within 48 hours) and autonomous analyses.\r\n\r\nEach kit includes the appropriate sampling equipment, transport and laboratory analysis.\r\n\r\nEasy to store and use, they are ideal for regular quality control, monitoring or rapid confirmation of a suspicion (e.g. lawn pathogens, indoor air quality, pests).",
-        "diagbox_title": "DiagBox®: Simplicity and Speed",
+        "diagbox_title": "Diagbox®: Simplicity and Speed",
         "intro": "Discover how IAGE meets your specific needs and supports your operational decision-making through a complete range of analyses, services and products.",
         "local_labs_description": "For recurring needs, large volumes, or the need for ultra-fast results, we can explore the establishment of local, specialized analysis laboratories dedicated to your business. This solution offers maximum autonomy and responsiveness, with our support for",
         "local_labs_title": "Specialized and dedicated local laboratories",
@@ -1635,7 +1636,8 @@ export const texts = {
           "q3": "**Visible deterioration** of the lawn indicates an **already significant level** of the pathogen(s) in question.\r\nFurthermore, behind the primary agent, which can often be identified visually, secondary agents may also be present. They may take advantage of the primary agent or become aggravating factors by developing in place of the primary agent if the chosen treat\r\nIAGE has developed tools to **identify all the responsible agents as quickly as possible**, and allow you to implement the appropriate treatments with the best chance of saving your lawn and limiting your maintenance costs.",
           "q4": "Installing new veneer is a **significant investment**.\r\nFailure to assess the health of the soil or turf brought in can allow pathogens present in the soil or brought in by the paving to proliferate, **leading to high maintenance costs**, or at worst to the ruin of the new lawn.\r\nIAGE has defined tools to ensure a **prior verification of the health status of each compartment** (soil, roots, leaves) to reduce risks with regard to the investment made.\r\nThese analyses have already been used in the case of a dispute over the origin of degradation after a tackle.",
           "q5": "**Each pitch is unique**: type and origin of the grass, soil, weather, usage, etc., all factors that affect the types of diseases that can affect your pitch and how they can develop. You also have your own expectations and constraints.\r\nSo there are indeed many different situations! Don't hesitate to **contact us**, we will be happy to see how we can best help you."
-        }
+        },
+        "bon_a_savoir_title": "Good to know"
       },
       "mainpage": {
         "title": "IAGE's DiagBox®"

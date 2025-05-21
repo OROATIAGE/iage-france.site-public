@@ -4,7 +4,7 @@ navbar.contact;Navbar;Contact;Contact
 navbar.home;Navbar;Accueil;Welcome
 navbar.sectors;Navbar;Domaines;Domains
 navbar.services.dropdown.all;Navbar;Voir tous les services;See all services
-navbar.services.dropdown.diagbox;Navbar;Diagbox;Diagbox®
+navbar.services.dropdown.diagbox;Navbar;Diagbox®;Diagbox®
 navbar.services.title;Navbar;Services;Services
 navbar.news.title;Navbar;Actualités;News
 navbar.news.press;Navbar;Presse;Press
@@ -80,7 +80,7 @@ about.page.strength_title;About Page;Notre force : Rendre l'expertise scientifiq
 about.title;About;À propos de nous;About Us
 services.nav.catalog;Services Nav;Catalogue des analyses;Catalog of analyses
 services.nav.development;Services Nav;R&D;R&D
-services.nav.diagbox;Services Nav;DiagBox®;DiagBox®
+services.nav.diagbox;Services Nav;Diagbox®;Diagbox®
 services.nav.local-labs;Services Nav;Laboratoires locaux;Local laboratories
 services.nav.mobile-viz;Services Nav;Visualisations en mobilité;Mobile Visualizations
 services.nav.modeling;Services Nav;Modélisations et anticipations;Modeling and anticipations
@@ -123,7 +123,7 @@ Faciles à stocker et à utiliser, ils sont idéaux pour le contrôle qualité r
 Each kit includes the appropriate sampling equipment, transport and laboratory analysis.
 
 Easy to store and use, they are ideal for regular quality control, monitoring or rapid confirmation of a suspicion (e.g. lawn pathogens, indoor air quality, pests)."
-services.page.diagbox_title;Services (Page);DiagBox® : Simplicité et Rapidité;DiagBox®: Simplicity and Speed
+services.page.diagbox_title;Services (Page);Diagbox® : Simplicité et Rapidité;Diagbox®: Simplicity and Speed
 services.page.intro;Services (Page);Découvrez comment IAGE répond à vos besoins spécifiques et vous aide dans vos prises de décision opérationnelles grâce à une gamme complète d'analyses, de services et de produits;Discover how IAGE meets your specific needs and supports your operational decision-making through a complete range of analyses, services and products.
 services.page.local_labs_description;Services (Page);Pour des besoins récurrents, des volumes importants ou une nécessité de résultats ultra-rapides, nous pouvons étudier la mise en place de laboratoires d'analyse locaux, spécialisés et dédiés à votre activité. Cette solution offre une autonomie et une réactivité maximales, avec notre support pour l'installation, la formation et le suivi qualité.;For recurring needs, large volumes, or the need for ultra-fast results, we can explore the establishment of local, specialized analysis laboratories dedicated to your business. This solution offers maximum autonomy and responsiveness, with our support for
 services.page.local_labs_title;Services (Page);Laboratoires locaux spécialisés et dédiés;Specialized and dedicated local laboratories
@@ -780,7 +780,7 @@ press.press_releases.coming_soon;Press;Les communiqués de presse seront bientô
 press.contact.title;Press;Contact Presse;Press Contact
 press.contact.description;Press;Pour toute demande presse, merci de contacter :;For any press inquiries, please contact:
 press.contact.name;Press;Service Communication IAGE;IAGE Communication Department
-
+;;;
 testimonials.title;Testimonials;Ils nous font confiance;They trust us
 testimonials.intro;Testimonials;Découvrez les retours d'expérience de nos clients et partenaires.;Discover our clients and partners' testimonials.
 testimonials.partners.title;Testimonials;Nos Partenaires;Our Partners
@@ -791,7 +791,7 @@ testimonials.key_figures.title;Testimonials;Chiffres Clés;Key Figures
 testimonials.key_figures.clients;Testimonials;Clients satisfaits;Satisfied clients
 testimonials.key_figures.years;Testimonials;Années d'expertise;Years of expertise
 testimonials.key_figures.satisfaction;Testimonials;Taux de satisfaction;Satisfaction rate
-
+;;;
 events.title;Events;Événements;Events
 events.intro;Events;Retrouvez-nous lors des événements à venir et découvrez nos dernières actualités.;Join us at upcoming events and discover our latest news.
 events.upcoming.title;Events;Événements à venir;Upcoming Events
@@ -802,3 +802,4 @@ events.newsletter.title;Events;Restez informé;Stay informed
 events.newsletter.description;Events;Inscrivez-vous à notre newsletter pour ne manquer aucun événement.;Subscribe to our newsletter to stay updated about our events.
 events.newsletter.placeholder;Events;Votre adresse email;Your email address
 events.newsletter.button;Events;S'inscrire;Subscribe
+diagbox.gazon.bon_a_savoir_title;Diagbox Gazon;Bon à savoir;Good to know

@@ -7,6 +7,7 @@ import TextWithBoldMarkdown from './TextWithBoldMarkdown'; // Import du composan
 import DiagboxKitTable from './DiagboxKitTable';
 import { getEnhancedKitData } from '../utils/kitDataHelpers'; // Import the main helper
 import { useLanguage } from '../context/LanguageContext';
+import { getTextByLanguage } from '../utils/textHelpers';
 
 const qnaData = [
   {
@@ -72,7 +73,7 @@ kitTypes.forEach(typeInfo => {
   });
 });
 
-// Helper to get general text from any path
+// Helper to get text from any path
 const getGeneralText = (key, language) => {
   const keys = key.split('.');
   let current = texts[language];
@@ -237,7 +238,7 @@ function GazonQnaAccordion({ onOpenKitGroup }) {
               onClick={() => handleToggle(item.id)}
               className="w-full flex justify-between items-center p-4 text-left text-lg font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
             >
-              <span>{getQnaText(item.titleKey, language)}</span>
+              <span>{getTextByLanguage(item.titleKey, language)}</span>
               <FaChevronDown className={`text-primary dark:text-secondary transform transition-transform duration-200 ${openAccordion === item.id ? 'rotate-180' : ''}`} />
             </button>
 
@@ -246,10 +247,12 @@ function GazonQnaAccordion({ onOpenKitGroup }) {
               <div className="p-4 border-t bg-gray-50 dark:bg-gray-800/50 dark:border-gray-600">
                 {/* Bon à savoir */}
                 <div className="flex items-start gap-3 mb-4 p-3 bg-yellow-50 dark:bg-yellow-900/30 border-l-4 border-yellow-400 rounded md:max-w-3xl lg:max-w-4xl md:mx-auto">
-                  <FaRegLightbulb className="text-yellow-500 text-2xl mt-1" />
+                  <div className="flex-shrink-0 text-yellow-500 dark:text-yellow-400">
+                    <FaRegLightbulb className="w-5 h-5" />
+                  </div>
                   <div>
-                    <div className="font-semibold text-yellow-700 dark:text-yellow-300 mb-1">Bon à savoir</div>
-                    <div className="text-yellow-800 dark:text-yellow-200 text-sm">
+                    <div className="font-semibold mb-1 text-[#996515] dark:text-gray-300">{getGeneralText('diagbox.gazon.bon_a_savoir_title', language)}</div>
+                    <div className="text-sm text-[#8B4513] dark:text-gray-300">
                       <TextWithBoldMarkdown text={getBonASavoirText(item.bonASavoirKey, language)} />
                     </div>
                   </div>
