@@ -138,25 +138,16 @@ function Navbar() {
     <nav className="bg-white fixed w-full top-0 z-50 dark:bg-gray-900 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
-          {/* Logo simplifié */}
-          <div className="w-[160px] flex-none">
-            <Link to="/" className="block h-full flex items-center">
-              <div className="relative w-[160px] h-8">
-                <img 
-                  src={isDark ? logos.symbol.white : logos.primary.horizontal} 
-                  alt="Logo IAGE" 
-                  className="w-[160px] h-8 object-contain"
-                  style={{
-                    position: 'absolute',
-                    top: 0,
-                    left: 0,
-                    width: '100%',
-                    height: '100%',
-                  }}
-                />
-              </div>
-            </Link>
-          </div>
+          {/* Logo très simplifié */}
+          <Link to="/" className="flex items-center flex-shrink-0">
+            <img 
+              src={isDark ? logos.symbol.white : logos.primary.horizontal} 
+              alt="Logo IAGE" 
+              width="160"
+              height="32"
+              className="h-8"
+            />
+          </Link>
 
           {/* Desktop menu */}
           <div className="hidden lg:flex lg:items-center lg:space-x-4 xl:space-x-8">

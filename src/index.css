@@ -171,13 +171,6 @@
 @supports (-webkit-touch-callout: none) {
   .fixed {
     position: fixed;
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-  }
-  
-  img {
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
   }
 }
 
