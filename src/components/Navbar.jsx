@@ -29,25 +29,10 @@ function Navbar() {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isDomainesOpen, setIsDomainesOpen] = useState(false);
   const [isNewsOpen, setIsNewsOpen] = useState(false);
-  const [isNavReady, setIsNavReady] = useState(false);
-  const [isLogoLoaded, setIsLogoLoaded] = useState(false);
   const isDark = useIsDark()
   const location = useLocation();
   const navigate = useNavigate();
   const { language } = useLanguage();
-
-  useEffect(() => {
-    // Attendre que la navbar soit chargée avant d'afficher le logo
-    const navTimer = setTimeout(() => {
-      setIsNavReady(true);
-      // Ajouter un délai supplémentaire pour le logo
-      const logoTimer = setTimeout(() => {
-        setIsLogoLoaded(true);
-      }, 200);
-      return () => clearTimeout(logoTimer);
-    }, 100);
-    return () => clearTimeout(navTimer);
-  }, []);
 
   // Define Navbar height (h-16 is 64px) + padding + shadow
   const NAVBAR_OFFSET = location.pathname === '/' ? 80 : 140;
@@ -153,23 +138,21 @@ function Navbar() {
     <nav className="bg-white fixed w-full top-0 z-50 dark:bg-gray-900 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
-          {/* Logo avec animation de chargement */}
-          <div className={`w-[160px] flex-none ${isNavReady ? 'visible' : 'invisible'} ${isLogoLoaded ? 'logo-loaded' : 'opacity-0'}`}>
+          {/* Logo simplifié */}
+          <div className="w-[160px] flex-none">
             <Link to="/" className="block h-full flex items-center">
               <div className="relative w-[160px] h-8">
                 <img 
                   src={isDark ? logos.symbol.white : logos.primary.horizontal} 
                   alt="Logo IAGE" 
-                  className="w-[160px] h-8"
+                  className="w-[160px] h-8 object-contain"
                   style={{
                     position: 'absolute',
                     top: 0,
                     left: 0,
                     width: '100%',
                     height: '100%',
-                    objectFit: 'contain'
                   }}
-                  onLoad={() => setIsLogoLoaded(true)}
                 />
               </div>
             </Link>
