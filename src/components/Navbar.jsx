@@ -135,22 +135,31 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-white shadow-lg fixed w-full top-0 z-50 dark:bg-gray-900 dark:shadow-xl">
+    <nav className="bg-white fixed w-full top-0 z-50 dark:bg-gray-900">
+      {/* Logo Container - Isolé avec son propre z-index */}
+      <div className="absolute left-4 sm:left-6 lg:left-8 top-0 h-16 z-[51] bg-white dark:bg-gray-900">
+        <div className="w-[160px] h-16 flex items-center">
+          <Link to="/" className="block w-[160px] h-8">
+            <img 
+              src={isDark ? logos.symbol.white : logos.primary.horizontal} 
+              alt="Logo IAGE" 
+              className="w-[160px] h-8 object-contain"
+              loading="eager"
+              style={{
+                display: 'block',
+                width: '160px',
+                height: '32px'
+              }}
+            />
+          </Link>
+        </div>
+      </div>
+
+      {/* Main Navigation Container */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
-          {/* Logo - Structure simplifiée et plus robuste pour iOS */}
-          <div className="w-[160px] h-16 flex-shrink-0">
-            <Link to="/" className="h-full flex items-center">
-              <div className="w-[160px] h-8 relative">
-                <img 
-                  src={isDark ? logos.symbol.white : logos.primary.horizontal} 
-                  alt="Logo IAGE" 
-                  className="absolute inset-0 w-full h-full"
-                  style={{ maxWidth: '100%', maxHeight: '100%' }}
-                />
-              </div>
-            </Link>
-          </div>
+          {/* Logo Spacer */}
+          <div className="w-[160px] h-16 flex-shrink-0"></div>
 
           {/* Desktop menu */}
           <div className="hidden lg:flex lg:items-center lg:space-x-4 xl:space-x-8">
