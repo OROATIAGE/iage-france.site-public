@@ -94,7 +94,7 @@ function DiagboxDomainNav({ domains }) {
     e.preventDefault();
     const element = document.getElementById(domainKey);
     if (element) {
-      const navHeight = 120; // Augmentation du décalage pour tenir compte de la hauteur totale du header + nav + marge
+      const navHeight = 160; // Augmentation à 160px pour correspondre à la marge des sections
       const y = element.getBoundingClientRect().top + window.scrollY - navHeight;
       window.scrollTo({ top: y, behavior: 'smooth' });
     }

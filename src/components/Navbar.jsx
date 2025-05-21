@@ -139,12 +139,12 @@ function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           {/* Logo - Toujours visible avec une largeur fixe */}
-          <div className="flex-none w-[160px] flex items-center">
-            <Link to="/" className="block">
+          <div className="flex-none w-[160px] flex items-center relative">
+            <Link to="/" className="block w-full">
               <img 
                 src={isDark ? logos.symbol.white : logos.primary.horizontal} 
                 alt="Logo IAGE" 
-                className="h-8 w-auto object-contain"
+                className="h-8 w-[160px] flex-shrink-0 object-contain"
               />
             </Link>
           </div>

@@ -181,7 +181,7 @@ function DiagboxPage() {
           
           <div className="space-y-8">
             {diagboxDomainData.map((domain) => (
-              <div key={domain.domainKey} id={domain.domainKey} className="py-4 mt-8 scroll-mt-[140px]">
+              <div key={domain.domainKey} id={domain.domainKey} className="py-4 mt-8 scroll-mt-[160px]">
                 <h3 className="text-2xl md:text-3xl font-bold text-left text-primary dark:text-secondary mb-2">
                   {getTextByLanguage(`home.sectors.${domain.domainKey}`, language)}
                 </h3>
