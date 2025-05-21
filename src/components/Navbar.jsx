@@ -118,15 +118,21 @@ function Navbar() {
     }
     setIsOpen(false);
 
-    const hash = path.includes('#') ? path.substring(path.indexOf('#')) : null;
-    const basePath = path.includes('#') ? path.substring(0, path.indexOf('#')) : path;
+    // Normaliser le chemin
+    const normalizedPath = path.startsWith('/') ? path : `/${path}`;
+    
+    // Gérer les ancres et les chemins
+    const hash = normalizedPath.includes('#') ? normalizedPath.substring(normalizedPath.indexOf('#')) : null;
+    const basePath = normalizedPath.includes('#') ? normalizedPath.substring(0, normalizedPath.indexOf('#')) : normalizedPath;
 
     if (location.pathname === basePath && hash) {
+      // Si on est déjà sur la bonne page, juste scroller vers l'ancre
       scrollToElement(hash.substring(1));
     } else {
-      navigate(path);
+      // Naviguer vers la nouvelle page
+      navigate(basePath);
       if (hash) {
-        // Add a longer delay when navigating to a new page
+        // Attendre que la page soit chargée avant de scroller
         setTimeout(() => {
           scrollToElement(hash.substring(1));
         }, 300);
@@ -222,7 +228,7 @@ function Navbar() {
             </div>
           </div>
 
-          {/* Mobile/Tablet menu button and controls */}
+          {/* Mobile menu button */}
           <div className="flex lg:hidden items-center space-x-2">
             <ThemeSwitcher />
             <LanguageSwitcher />
@@ -242,6 +248,131 @@ function Navbar() {
               )}
             </button>
           </div>
+        </div>
+      </div>
+
+      {/* Mobile menu panel */}
+      <div 
+        className={`${isOpen ? 'block' : 'hidden'} lg:hidden fixed right-0 top-16 w-64 bg-white dark:bg-gray-900 shadow-lg rounded-bl-lg z-50 max-h-[calc(100vh-4rem)] overflow-y-auto`}
+        style={{ maxHeight: 'calc(100vh - 4rem)' }}
+      >
+        <div className="px-2 pt-2 pb-3 space-y-1">
+          {/* 1. Accueil */}
+          <Link
+            to="/"
+            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50 dark:text-gray-300 dark:hover:text-secondary dark:hover:bg-gray-800"
+            onClick={() => setIsOpen(false)}
+          >
+            {getTextByLanguage('navbar.home', language)}
+          </Link>
+
+          {/* 2. Domaines */}
+          <div className="relative">
+            <button
+              onClick={() => setIsDomainesOpen(!isDomainesOpen)}
+              className="w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50 dark:text-gray-300 dark:hover:text-secondary dark:hover:bg-gray-800 flex justify-between items-center"
+            >
+              {getTextByLanguage('navbar.sectors', language)}
+              <svg className={`${isDomainesOpen ? 'transform rotate-180' : ''} w-4 h-4 ml-2`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            {isDomainesOpen && (
+              <div className="px-4 py-2 space-y-1">
+                {domainDropdownItems.map((domaine) => (
+                  <Link
+                    key={domaine.nameKey}
+                    to={`/${domaine.hash}`}
+                    className="block px-3 py-2 rounded-md text-sm text-gray-600 hover:text-primary hover:bg-gray-50 dark:text-gray-400 dark:hover:text-secondary dark:hover:bg-gray-800"
+                    onClick={() => { setIsDomainesOpen(false); setIsOpen(false); }}
+                  >
+                    {getTextByLanguage(`home.sectors.${domaine.nameKey}`, language)}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+
+          {/* 3. DiagBox */}
+          <Link
+            to="/diagbox"
+            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50 dark:text-gray-300 dark:hover:text-secondary dark:hover:bg-gray-800"
+            onClick={() => setIsOpen(false)}
+          >
+            DiagBox
+          </Link>
+
+          {/* 4. Services */}
+          <div className="relative">
+            <button
+              onClick={() => setIsServicesOpen(!isServicesOpen)}
+              className="w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50 dark:text-gray-300 dark:hover:text-secondary dark:hover:bg-gray-800 flex justify-between items-center"
+            >
+              {getTextByLanguage('navbar.services.title', language)}
+              <svg className={`${isServicesOpen ? 'transform rotate-180' : ''} w-4 h-4 ml-2`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            {isServicesOpen && (
+              <div className="px-4 py-2 space-y-1">
+                {servicesDropdownItems.map((service) => (
+                  <Link
+                    key={service.path}
+                    to={service.path}
+                    className="block px-3 py-2 rounded-md text-sm text-gray-600 hover:text-primary hover:bg-gray-50 dark:text-gray-400 dark:hover:text-secondary dark:hover:bg-gray-800"
+                    onClick={() => { setIsServicesOpen(false); setIsOpen(false); }}
+                  >
+                    {service.name}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+
+          {/* 5. Actualités */}
+          <div className="relative">
+            <button
+              onClick={() => setIsNewsOpen(!isNewsOpen)}
+              className="w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50 dark:text-gray-300 dark:hover:text-secondary dark:hover:bg-gray-800 flex justify-between items-center"
+            >
+              {getTextByLanguage('navbar.news.title', language)}
+              <svg className={`${isNewsOpen ? 'transform rotate-180' : ''} w-4 h-4 ml-2`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            {isNewsOpen && (
+              <div className="px-4 py-2 space-y-1">
+                {newsDropdownItems.map((news) => (
+                  <Link
+                    key={news.name}
+                    to={news.path}
+                    className="block px-3 py-2 rounded-md text-sm text-gray-600 hover:text-primary hover:bg-gray-50 dark:text-gray-400 dark:hover:text-secondary dark:hover:bg-gray-800"
+                    onClick={() => { setIsNewsOpen(false); setIsOpen(false); }}
+                  >
+                    {news.name}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+
+          {/* 6. À propos de nous */}
+          <Link
+            to="/about"
+            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50 dark:text-gray-300 dark:hover:text-secondary dark:hover:bg-gray-800"
+            onClick={() => setIsOpen(false)}
+          >
+            {getTextByLanguage('navbar.about', language)}
+          </Link>
+
+          {/* 7. Contact */}
+          <Link
+            to="/contact"
+            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50 dark:text-gray-300 dark:hover:text-secondary dark:hover:bg-gray-800"
+            onClick={() => setIsOpen(false)}
+          >
+            {getTextByLanguage('navbar.contact', language)}
+          </Link>
         </div>
       </div>
     </nav>

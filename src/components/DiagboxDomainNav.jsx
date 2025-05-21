@@ -94,7 +94,7 @@ function DiagboxDomainNav({ domains }) {
     e.preventDefault();
     const element = document.getElementById(domainKey);
     if (element) {
-      const navHeight = 160; // Augmentation à 160px pour correspondre à la marge des sections
+      const navHeight = 160; // 160px pour correspondre à la marge des sections
       const y = element.getBoundingClientRect().top + window.scrollY - navHeight;
       window.scrollTo({ top: y, behavior: 'smooth' });
     }
@@ -107,7 +107,7 @@ function DiagboxDomainNav({ domains }) {
   return (
     <div className="fixed top-[68px] left-0 right-0 z-30 transition-opacity duration-300" style={{ opacity: isVisible ? 1 : 0 }}>
       <div className="max-w-4xl mx-auto px-4">
-        <div className="bg-white rounded-b-lg shadow-md">
+        <div className="bg-white dark:bg-gray-800 rounded-b-lg shadow-md">
           <div ref={navRef} className="overflow-x-auto no-scrollbar py-2">
             <div className="flex space-x-4 min-w-max px-4">
               {domains.map((domain) => (
