@@ -138,14 +138,13 @@ function Navbar() {
     <nav className="bg-white shadow-lg fixed w-full top-0 z-50 dark:bg-gray-900 dark:shadow-xl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
-          {/* Logo - Toujours visible */}
-          <div className="flex-shrink-0 flex items-center">
-            <Link to="/" className="flex items-center">
+          {/* Logo - Toujours visible avec une largeur fixe */}
+          <div className="flex-none w-[160px] flex items-center">
+            <Link to="/" className="block">
               <img 
                 src={isDark ? logos.symbol.white : logos.primary.horizontal} 
                 alt="Logo IAGE" 
-                className="h-8 w-auto"
-                style={{ minWidth: '100px', maxWidth: '160px' }}
+                className="h-8 w-auto object-contain"
               />
             </Link>
           </div>
