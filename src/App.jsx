@@ -27,8 +27,10 @@ function App() {
       <Router>
         <ScrollToTop />
         <div className="flex flex-col min-h-screen">
-          <Navbar />
-          <main className="flex-grow pt-16">
+          <div className="fixed top-0 left-0 right-0 z-50 bg-white dark:bg-gray-900">
+            <Navbar />
+          </div>
+          <main className="flex-grow pt-16 relative">
             {/* <AnimatePresence mode="wait"> Mettre en commentaire temporairement */}
               <Routes>
                 <Route path="/" element={<Home />} />

@@ -139,12 +139,19 @@ function Navbar() {
       {/* Logo Container - Complètement indépendant */}
       <div className="fixed top-0 left-0 z-[100] p-4">
         <Link to="/" className="block">
-          <div className="relative w-[160px] h-8 bg-white dark:bg-gray-900">
+          <div className="relative w-[160px] h-8">
             <img 
               src={isDark ? logos.symbol.white : logos.primary.horizontal} 
               alt="Logo IAGE" 
-              className="w-full h-full object-contain"
-              loading="eager"
+              className="w-[160px] h-8"
+              style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                width: '100%',
+                height: '100%',
+                objectFit: 'contain'
+              }}
             />
           </div>
         </Link>
