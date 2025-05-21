@@ -138,14 +138,20 @@ function Navbar() {
     <nav className="bg-white shadow-lg fixed w-full top-0 z-50 dark:bg-gray-900 dark:shadow-xl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
-          <div className="flex">
-            <Link to="/" className="flex-shrink-0 flex items-center">
-              <img src={isDark ? logos.symbol.white : logos.primary.horizontal} alt="Logo IAGE" className="h-8" style={{ maxWidth: 160 }} />
+          {/* Logo - Toujours visible */}
+          <div className="flex-shrink-0 flex items-center">
+            <Link to="/" className="flex items-center">
+              <img 
+                src={isDark ? logos.symbol.white : logos.primary.horizontal} 
+                alt="Logo IAGE" 
+                className="h-8 w-auto"
+                style={{ minWidth: '100px', maxWidth: '160px' }}
+              />
             </Link>
           </div>
 
           {/* Desktop menu */}
-          <div className="hidden sm:flex sm:items-center sm:space-x-8">
+          <div className="hidden lg:flex lg:items-center lg:space-x-4 xl:space-x-8">
             {navItems.map((item) => {
               if (item.dropdown) {
                 let isOpen;
@@ -170,7 +176,7 @@ function Navbar() {
                   >
                     <Link
                       to={item.path}
-                      className="text-primary dark:text-gray-100 hover:text-primary dark:hover:text-secondary px-3 py-2 text-sm font-medium border-b-2 border-transparent hover:border-primary dark:hover:border-secondary transition-colors flex items-center"
+                      className="text-primary dark:text-gray-100 hover:text-primary dark:hover:text-secondary px-2 xl:px-3 py-2 text-sm font-medium border-b-2 border-transparent hover:border-primary dark:hover:border-secondary transition-colors flex items-center whitespace-nowrap"
                       onClick={(e) => {
                         if (item.isDomaines && item.path === '/' && location.pathname === '/') {
                           e.preventDefault();
@@ -204,19 +210,21 @@ function Navbar() {
                   <Link
                     key={item.name}
                     to={item.path}
-                    className="text-primary dark:text-gray-100 hover:text-primary dark:hover:text-secondary px-3 py-2 text-sm font-medium border-b-2 border-transparent hover:border-primary dark:hover:border-secondary transition-colors"
+                    className="text-primary dark:text-gray-100 hover:text-primary dark:hover:text-secondary px-2 xl:px-3 py-2 text-sm font-medium border-b-2 border-transparent hover:border-primary dark:hover:border-secondary transition-colors whitespace-nowrap"
                   >
                     {item.name}
                   </Link>
                 );
               }
             })}
-            <ThemeSwitcher />
-            <LanguageSwitcher />
+            <div className="flex items-center space-x-2">
+              <ThemeSwitcher />
+              <LanguageSwitcher />
+            </div>
           </div>
 
-          {/* Mobile menu button */}
-          <div className="sm:hidden flex items-center">
+          {/* Mobile/Tablet menu button and controls */}
+          <div className="flex lg:hidden items-center space-x-2">
             <ThemeSwitcher />
             <LanguageSwitcher />
             <button
@@ -239,7 +247,7 @@ function Navbar() {
       </div>
 
       {/* Mobile menu */}
-      <div className={`sm:hidden ${isOpen ? 'block' : 'hidden'}`}>
+      <div className={`lg:hidden ${isOpen ? 'block' : 'hidden'}`}>
         <div className="pt-2 pb-3 space-y-1">
           {navItems.map((item) => (
             <Link
