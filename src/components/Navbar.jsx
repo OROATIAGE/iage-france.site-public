@@ -29,10 +29,25 @@ function Navbar() {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isDomainesOpen, setIsDomainesOpen] = useState(false);
   const [isNewsOpen, setIsNewsOpen] = useState(false);
+  const [isNavReady, setIsNavReady] = useState(false);
+  const [isLogoLoaded, setIsLogoLoaded] = useState(false);
   const isDark = useIsDark()
   const location = useLocation();
   const navigate = useNavigate();
   const { language } = useLanguage();
+
+  useEffect(() => {
+    // Attendre que la navbar soit chargée avant d'afficher le logo
+    const navTimer = setTimeout(() => {
+      setIsNavReady(true);
+      // Ajouter un délai supplémentaire pour le logo
+      const logoTimer = setTimeout(() => {
+        setIsLogoLoaded(true);
+      }, 200);
+      return () => clearTimeout(logoTimer);
+    }, 100);
+    return () => clearTimeout(navTimer);
+  }, []);
 
   // Define Navbar height (h-16 is 64px) + padding + shadow
   const NAVBAR_OFFSET = location.pathname === '/' ? 80 : 140;
@@ -135,148 +150,127 @@ function Navbar() {
   };
 
   return (
-    <>
-      {/* Logo Container - Complètement indépendant */}
-      <div className="fixed top-0 left-0 z-[100] p-4">
-        <Link to="/" className="block">
-          <div className="relative w-[160px] h-8">
-            <img 
-              src={isDark ? logos.symbol.white : logos.primary.horizontal} 
-              alt="Logo IAGE" 
-              className="w-[160px] h-8"
-              style={{
-                position: 'absolute',
-                top: 0,
-                left: 0,
-                width: '100%',
-                height: '100%',
-                objectFit: 'contain'
-              }}
-            />
+    <nav className="bg-white fixed w-full top-0 z-50 dark:bg-gray-900 shadow-lg">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between h-16">
+          {/* Logo avec animation de chargement */}
+          <div className={`w-[160px] flex-none ${isNavReady ? 'visible' : 'invisible'} ${isLogoLoaded ? 'logo-loaded' : 'opacity-0'}`}>
+            <Link to="/" className="block h-full flex items-center">
+              <div className="relative w-[160px] h-8">
+                <img 
+                  src={isDark ? logos.symbol.white : logos.primary.horizontal} 
+                  alt="Logo IAGE" 
+                  className="w-[160px] h-8"
+                  style={{
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'contain'
+                  }}
+                  onLoad={() => setIsLogoLoaded(true)}
+                />
+              </div>
+            </Link>
           </div>
-        </Link>
-      </div>
 
-      {/* Navigation */}
-      <nav className="bg-white fixed w-full top-0 z-50 dark:bg-gray-900 shadow-lg">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between h-16">
-            {/* Logo Spacer */}
-            <div className="w-[160px] flex-none"></div>
+          {/* Desktop menu */}
+          <div className="hidden lg:flex lg:items-center lg:space-x-4 xl:space-x-8">
+            {navItems.map((item) => {
+              if (item.dropdown) {
+                let isOpen;
+                if (item.isDomaines) isOpen = isDomainesOpen;
+                else if (item.isServices) isOpen = isServicesOpen;
+                else if (item.isNews) isOpen = isNewsOpen;
 
-            {/* Desktop menu */}
-            <div className="hidden lg:flex lg:items-center lg:space-x-4 xl:space-x-8">
-              {navItems.map((item) => {
-                if (item.dropdown) {
-                  let isOpen;
-                  if (item.isDomaines) isOpen = isDomainesOpen;
-                  else if (item.isServices) isOpen = isServicesOpen;
-                  else if (item.isNews) isOpen = isNewsOpen;
-
-                  return (
-                    <div
-                      key={item.name}
-                      className="relative"
-                      onMouseEnter={() => {
-                        if (item.isDomaines) setIsDomainesOpen(true);
-                        else if (item.isServices) setIsServicesOpen(true);
-                        else if (item.isNews) setIsNewsOpen(true);
-                      }}
-                      onMouseLeave={() => {
-                        if (item.isDomaines) setIsDomainesOpen(false);
-                        else if (item.isServices) setIsServicesOpen(false);
-                        else if (item.isNews) setIsNewsOpen(false);
-                      }}
-                    >
-                      <Link
-                        to={item.path}
-                        className="text-primary dark:text-gray-100 hover:text-primary dark:hover:text-secondary px-2 xl:px-3 py-2 text-sm font-medium border-b-2 border-transparent hover:border-primary dark:hover:border-secondary transition-colors flex items-center whitespace-nowrap"
-                        onClick={(e) => {
-                          if (item.isDomaines && item.path === '/' && location.pathname === '/') {
-                            e.preventDefault();
-                          }
-                        }}
-                      >
-                        {item.name}
-                        <FaChevronDown className={`ml-1 transition-transform duration-200 ${isOpen ? 'transform rotate-180' : ''}`} />
-                      </Link>
-                      {isOpen && (
-                        <div className="absolute left-0 mt-1 w-56 rounded-md shadow-lg bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5 py-1 z-50">
-                          {item.dropdown.map((subItem) => (
-                            <Link
-                              key={subItem.name || subItem.nameKey}
-                              to={item.isDomaines ? `/${subItem.hash}` : subItem.path}
-                              className="block px-4 py-2 text-sm text-primary dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-primary dark:hover:text-secondary whitespace-normal"
-                              onClick={() => handleDropdownItemClick(
-                                item.isDomaines ? `/${subItem.hash}` : subItem.path,
-                                item.isDomaines ? 'domaines' : item.isServices ? 'services' : 'news'
-                              )}
-                            >
-                              {item.isDomaines ? getTextByLanguage(`home.sectors.${subItem.nameKey}`, language) : subItem.name}
-                            </Link>
-                          ))}
-                        </div>
-                      )}
-                    </div>
-                  );
-                } else {
-                  return (
+                return (
+                  <div
+                    key={item.name}
+                    className="relative"
+                    onMouseEnter={() => {
+                      if (item.isDomaines) setIsDomainesOpen(true);
+                      else if (item.isServices) setIsServicesOpen(true);
+                      else if (item.isNews) setIsNewsOpen(true);
+                    }}
+                    onMouseLeave={() => {
+                      if (item.isDomaines) setIsDomainesOpen(false);
+                      else if (item.isServices) setIsServicesOpen(false);
+                      else if (item.isNews) setIsNewsOpen(false);
+                    }}
+                  >
                     <Link
-                      key={item.name}
                       to={item.path}
-                      className="text-primary dark:text-gray-100 hover:text-primary dark:hover:text-secondary px-2 xl:px-3 py-2 text-sm font-medium border-b-2 border-transparent hover:border-primary dark:hover:border-secondary transition-colors whitespace-nowrap"
+                      className="text-primary dark:text-gray-100 hover:text-primary dark:hover:text-secondary px-2 xl:px-3 py-2 text-sm font-medium border-b-2 border-transparent hover:border-primary dark:hover:border-secondary transition-colors flex items-center whitespace-nowrap"
+                      onClick={(e) => {
+                        if (item.isDomaines && item.path === '/' && location.pathname === '/') {
+                          e.preventDefault();
+                        }
+                      }}
                     >
                       {item.name}
+                      <FaChevronDown className={`ml-1 transition-transform duration-200 ${isOpen ? 'transform rotate-180' : ''}`} />
                     </Link>
-                  );
-                }
-              })}
-              <div className="flex items-center space-x-2">
-                <ThemeSwitcher />
-                <LanguageSwitcher />
-              </div>
-            </div>
-
-            {/* Mobile/Tablet menu button and controls */}
-            <div className="flex lg:hidden items-center space-x-2">
+                    {isOpen && (
+                      <div className="absolute left-0 mt-1 w-56 rounded-md shadow-lg bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5 py-1 z-50">
+                        {item.dropdown.map((subItem) => (
+                          <Link
+                            key={subItem.name || subItem.nameKey}
+                            to={item.isDomaines ? `/${subItem.hash}` : subItem.path}
+                            className="block px-4 py-2 text-sm text-primary dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-primary dark:hover:text-secondary whitespace-normal"
+                            onClick={() => handleDropdownItemClick(
+                              item.isDomaines ? `/${subItem.hash}` : subItem.path,
+                              item.isDomaines ? 'domaines' : item.isServices ? 'services' : 'news'
+                            )}
+                          >
+                            {item.isDomaines ? getTextByLanguage(`home.sectors.${subItem.nameKey}`, language) : subItem.name}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                );
+              } else {
+                return (
+                  <Link
+                    key={item.name}
+                    to={item.path}
+                    className="text-primary dark:text-gray-100 hover:text-primary dark:hover:text-secondary px-2 xl:px-3 py-2 text-sm font-medium border-b-2 border-transparent hover:border-primary dark:hover:border-secondary transition-colors whitespace-nowrap"
+                  >
+                    {item.name}
+                  </Link>
+                );
+              }
+            })}
+            <div className="flex items-center space-x-2">
               <ThemeSwitcher />
               <LanguageSwitcher />
-              <button
-                onClick={() => setIsOpen(!isOpen)}
-                className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-primary hover:bg-gray-50 dark:text-gray-300 dark:hover:text-secondary"
-              >
-                <span className="sr-only">Ouvrir le menu</span>
-                {!isOpen ? (
-                  <svg className="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                  </svg>
-                ) : (
-                  <svg className="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                )}
-              </button>
             </div>
           </div>
-        </div>
-      </nav>
 
-      {/* Mobile menu */}
-      <div className={`lg:hidden ${isOpen ? 'block' : 'hidden'}`}>
-        <div className="pt-2 pb-3 space-y-1">
-          {navItems.map((item) => (
-            <Link
-              key={item.name}
-              to={item.path}
-              className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50 dark:text-gray-300 dark:hover:text-secondary"
-              onClick={() => setIsOpen(false)}
+          {/* Mobile/Tablet menu button and controls */}
+          <div className="flex lg:hidden items-center space-x-2">
+            <ThemeSwitcher />
+            <LanguageSwitcher />
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-primary hover:bg-gray-50 dark:text-gray-300 dark:hover:text-secondary"
             >
-              {item.name}
-            </Link>
-          ))}
+              <span className="sr-only">Ouvrir le menu</span>
+              {!isOpen ? (
+                <svg className="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              ) : (
+                <svg className="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              )}
+            </button>
+          </div>
         </div>
       </div>
-    </>
+    </nav>
   );
 }
 
