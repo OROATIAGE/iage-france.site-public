@@ -62,6 +62,7 @@ function Services() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
+      className="container mx-auto px-4 py-12 md:py-16"
     >
       <ServicesNav />
 
@@ -83,7 +84,7 @@ function Services() {
             else if (category.categoryTitleKey === 'category3_title') categoryId = 'category-equipements';
 
             return (
-              <div key={category.categoryTitleKey} id={categoryId} className="scroll-mt-32">
+              <div key={category.categoryTitleKey} id={categoryId} className="scroll-mt-[140px]">
                 {/* Titre de la catégorie */}
                 <h2 className="text-3xl md:text-4xl font-semibold text-primary dark:text-secondary mb-8 border-b-2 border-primary/30 dark:border-secondary/30 pb-3">
                   {getPageText(category.categoryTitleKey)}
@@ -91,7 +92,7 @@ function Services() {
                 {/* Boucle sur les services DANS la catégorie */}
                 <div className="space-y-10 md:space-y-12 pl-4">
                   {category.services.map((service) => (
-                    <section key={service.id} id={service.id} className="scroll-mt-32">
+                    <section key={service.id} id={service.id} className="scroll-mt-[140px]">
                       {/* Titre du service */}
                       <h3 className="text-2xl md:text-3xl font-semibold text-primary dark:text-gray-200 mb-4 border-l-4 border-secondary pl-4">
                         {getPageText(service.titleKey)}

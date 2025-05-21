@@ -11,7 +11,7 @@ function usePrevious(value) {
 }
 
 // Define Navbar height (h-16 is 64px). Add some padding.
-const NAVBAR_OFFSET = 80; // 64px for navbar + 16px padding
+const NAVBAR_OFFSET = 140; // Navbar height (64px) + padding + shadow + extra margin
 
 function ScrollToTop() {
   const location = useLocation();

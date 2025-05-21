@@ -66,6 +66,21 @@ function Footer() {
                 </Link>
               </li>
               <li>
+                <Link to="/news/press" className="text-gray-300 hover:text-white dark:text-gray-400 dark:hover:text-white transition-colors">
+                  {getText('footer.news.press', 'Presse')}
+                </Link>
+              </li>
+              <li>
+                <Link to="/news/testimonials" className="text-gray-300 hover:text-white dark:text-gray-400 dark:hover:text-white transition-colors">
+                  {getText('footer.news.testimonials', 'Ils nous font confiance')}
+                </Link>
+              </li>
+              <li>
+                <Link to="/news/events" className="text-gray-300 hover:text-white dark:text-gray-400 dark:hover:text-white transition-colors">
+                  {getText('footer.news.events', 'Événements')}
+                </Link>
+              </li>
+              <li>
                 <Link to="/contact" className="text-gray-300 hover:text-white dark:text-gray-400 dark:hover:text-white transition-colors">
                   {getText('footer.contact')}
                 </Link>

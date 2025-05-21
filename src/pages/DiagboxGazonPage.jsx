@@ -237,7 +237,7 @@ export function DiagboxGazonPage() {
       </div>
 
       {/* --- Price List Section --- */}
-      <section id="prices" className="mt-12 md:mt-16 pt-10 border-t border-gray-200 dark:border-gray-700 scroll-mt-20 md:scroll-mt-24">
+      <section id="prices" className="mt-12 md:mt-16 pt-10 border-t border-gray-200 dark:border-gray-700 scroll-mt-[140px]">
           <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-800 dark:text-gray-200 mb-8">
             {getText('prices.title')}
           </h2>

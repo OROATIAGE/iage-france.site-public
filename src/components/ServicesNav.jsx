@@ -126,7 +126,7 @@ function ServicesNav() {
                       e.preventDefault();
                       const element = document.getElementById(section.id);
                       if (element) {
-                        const navHeight = 120; // Hauteur de la navbar + barre de navigation + marge
+                        const navHeight = 140; // Hauteur de la navbar + barre de navigation + marge
                         const y = element.getBoundingClientRect().top + window.scrollY - navHeight;
                         window.scrollTo({ top: y, behavior: 'smooth' });
                       }

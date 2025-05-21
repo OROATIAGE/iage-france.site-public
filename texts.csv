@@ -6,6 +6,10 @@ navbar.sectors;Navbar;Domaines;Domains
 navbar.services.dropdown.all;Navbar;Voir tous les services;See all services
 navbar.services.dropdown.diagbox;Navbar;Diagbox;Diagbox®
 navbar.services.title;Navbar;Services;Services
+navbar.news.title;Navbar;Actualités;News
+navbar.news.press;Navbar;Presse;Press
+navbar.news.testimonials;Navbar;Ils nous font confiance;They trust us
+navbar.news.events;Navbar;Événements;Events
 home.cta.button;Home (CTA);Prendre contact;Get in touch
 home.cta.subtitle;Home (CTA);Contactez-nous pour discuter de vos besoins et découvrir comment nous pouvons vous aider.;Contact us to discuss your needs and find out how we can help.
 home.cta.title;Home (CTA);Prêt à commencer ?;Ready to get started?
@@ -298,7 +302,7 @@ diagbox.gazon.group_title.q1_sub5;Diagbox Group Titles;Kits Diagbox : Contrôle 
 diagbox.gazon.group_title.q2_sub1;Diagbox Group Titles;Kits Diagbox : Analyse sur Gazon Symptomatique;Diagbox Kits: Symptomatic Lawn Analysis
 diagbox.gazon.group_title.q3;Diagbox Group Titles;Kits Diagbox : Analyse Avant Nouveau Plaquage;Diagbox Kits: Analysis Before New Plating
 diagbox.gazon.group_title.q4_combined;Diagbox Group Titles;Kits combinés;Combination kits
-diagbox.gazon.ideal_for.text;DiagBox Gazon;Terrain de football – Terrain de rugby –  Hippodrome – Terrain de cricket – Terrain de polo – Stade multisports;Football pitch – Rugby pitch – Racecourse – Cricket pitch – Polo pitch – Multi-sports stadium
+diagbox.gazon.ideal_for.text;DiagBox Gazon;Terrain de football – Terrain de rugby – Hippodrome – Terrain de cricket – Terrain de polo – Stade multisports;Football pitch – Rugby pitch – Racecourse – Cricket pitch – Polo pitch – Multi-sports stadium
 diagbox.gazon.ideal_for.title;DiagBox Gazon;Idéal pour;Ideal for
 diagbox.gazon.kit_content.text;DiagBox Gazon;"Matériel de prélèvement
 Instructions d'utilisation simples
@@ -356,11 +360,11 @@ diagbox.gazon.prices.PF000018;DiagBox Gazon;430,00€;430,00 €
 diagbox.gazon.prices.PF000019;DiagBox Gazon;430,00€ ;430,00 €
 diagbox.gazon.prices.PF000020;DiagBox Gazon;670,00€;670,00 €
 diagbox.gazon.prices.PF000033;DiagBox Gazon;640,00€;640,00 €
-diagbox.gazon.prices.PF000035;DiagBox Gazon;1015,00€;1 015,00 €
+diagbox.gazon.prices.PF000035;DiagBox Gazon;1015,00€;1 015,00 €
 diagbox.gazon.prices.PF000047;DiagBox Gazon;830,00€;830,00 €
-diagbox.gazon.prices.PF000048;DiagBox Gazon;1015,00€;1 015,00 €
-diagbox.gazon.prices.PF000049;DiagBox Gazon;1340,00€;1 340,00 €
-diagbox.gazon.prices.PF000050;DiagBox Gazon;2140,00€;2 140,00 €
+diagbox.gazon.prices.PF000048;DiagBox Gazon;1015,00€;1 015,00 €
+diagbox.gazon.prices.PF000049;DiagBox Gazon;1340,00€;1 340,00 €
+diagbox.gazon.prices.PF000050;DiagBox Gazon;2140,00€;2 140,00 €
 diagbox.gazon.prices.info_link;DiagBox Gazon;(Cliquez sur une désignation ou un type de kit pour voir sa description);(Click on a designation or kit type to see its description)
 diagbox.gazon.prices.title;DiagBox Gazon;DIAGBOX® Gazon - Liste des prix (Indicatifs HT);DIAGBOX® Lawn - Price list (Excluding VAT)
 diagbox.gazon.prices.type_header;DiagBox Gazon;Type de Kit;Kit Type
@@ -430,12 +434,12 @@ gazon.qna.q1_sub2;Gazon Q&A;Si vous avez un doute sur la nature du risque, vous 
 gazon.qna.q1_sub3;Gazon Q&A;Comment m'assurer que mon gazon n'est (plus) touché par aucun des pathogènes habituels;How can I make sure my lawn is (no longer) affected by any of the usual pathogens?
 gazon.qna.q1_sub4;Gazon Q&A;Comment m'assurer que les racines ne sont pas (ou plus) non plus touchées ?;How can I make sure that the roots are not (or are no longer) affected either?
 gazon.qna.q1_sub5;Gazon Q&A;Comment m'assurer que le sol n'est pas (ou plus) touché ?;How can I be sure that the ground is not (or is no longer) touched?
-gazon.qna.q1_title;Gazon Q&A;La pyriculariose circule dans ma région, que dois-je faire ?;Pyriculariosis is circulating in my area, what should I do?
+gazon.qna.q1_title;Gazon Q&A;La pyriculariose circule dans ma région, que dois-je faire ?;Pyriculariosis is circulating in my area, what should I do?
 gazon.qna.q2_sub1;Gazon Q&A;Comment caractériser le pathogène principal et les pathogènes secondaires présents pour savoir comment réagir ?;How to characterize the main pathogen and the secondary pathogens present to know how to react?
 gazon.qna.q2_sub2;Gazon Q&A;Comment savoir si mes racines sont touchées ?;How do I know if my roots are affected?
 gazon.qna.q2_sub3;Gazon Q&A;Comment savoir si mon sol est touché ?;How do I know if my soil is affected?
 gazon.qna.q2_title;Gazon Q&A;Je ne vois pas de symptômes, mais je veux des conseils pour planifier mes traitements;I don't see any symptoms, but I want advice on planning my treatments
-gazon.qna.q3_title;Gazon Q&A;J'ai détecté des symptômes, comment agir avec pertinence ?;I have detected symptoms, how can I act appropriately?
+gazon.qna.q3_title;Gazon Q&A;J'ai détecté des symptômes, comment agir avec pertinence ?;I have detected symptoms, how can I act appropriately?
 gazon.qna.q4_title;Gazon Q&A;Je vais poser un nouveau gazon (plaquage), comment réduire les risques à moyen-long terme ?;I am going to lay new turf (paving), how can I reduce the risks in the medium to long term?
 gazon.qna.q5_title;Gazon Q&A;J'ai d'autres questions;I have other questions
 contact.form.company;Contact;Entreprise;Company
@@ -578,17 +582,13 @@ diagbox.gazon.qna_reco.qna-group-q1_sub1.conclusion_text_prefix;Diagbox Gazon QN
 
 **3. Mettez en place un suivi renforcé si nécessaire**, avec deux mesures par semaine dans les régions à risque : les premiers signes de la pyriculariose apparaissent en effet de l'ordre de 3 jours après un résultat positif de notre Digabox : **le suivi rapproché vous permet d'intervenir quand il est encore temps**. 
 
-**4. Surveillez l'efficacité des vos traitements** : vous mettez  en œuvre les traitements **dès que la mesure est positive**, sur la zone identifiée, généralement en plusieurs fois. Vous vérifiez l'effet de chaque traitement avec la Diagbox PF00016 qui permet de quantifier la pression du pathogène et sa décroissance au fur et à mesure que les traitements agissent.
+**4. Surveillez l'efficacité des vos traitements** : vous mettez  en œuvre les traitements **dès que la mesure est positive**, sur la zone identifiée, généralement en plusieurs fois. Vous vérifiez l'effet de chaque traitement avec la Diagbox PF00016 qui permet de quantifier la pression du pathogène et sa décroissance au fur et à mesure que les traitements agissent.";"**1. Know the real state of your lawn**: carry out a **complete diagnosis (leaves and roots)** of your lawn (Diagbox PF00049): you become aware of the possible presence of **pyriculariosis**, and especially of the **other fungi** present which could take adv
 
-Nous vous accompagnons à chaque étape, en particulier dans la mise en place de **traitement de prévention contre les autres pathogènes présents** identifiés lors du diagnostics. L'audit sur les racines permet alors de calibrer les traitements à prévoir de manière pertinente.";"**1. Know the real state of your lawn**: carry out a **complete diagnosis (leaves and roots)** of your lawn (Diagbox PF00049): you become aware of the possible presence of **pyriculariosis**, and especially of the **other fungi** present which could take adv
+**2. Set up a simple monitoring plan**: starting from the hot periods conducive to the development of pyriculariosis (June or July depending on the situation of your stadium), ensure an **early detection monitoring** of pyriculariosis (PF00011). This Diagbox is **very easy to use**: you wipe the mower blades after mowing, you send it to us with the prepaid envelope and you will have the result 48 hours later. Carry out this monitoring **at least once a week**.
 
-**2. Set up a simple monitoring plan**: starting from the hot periods conducive to the development of pyriculariosis (June or July depending on the situation of your stadium), ensure an **early detection monitoring** of pyriculariosis (PF00011). This Diagbox
+**3. Set up enhanced monitoring if necessary**, with two measurements per week in at-risk regions: the first signs of pyriculariosis appear around 3 days after a positive result from our Digabox: **close monitoring allows you to intervene while there is stil time**.
 
-**3. Set up enhanced monitoring if necessary**, with two measurements per week in at-risk regions: the first signs of pyriculariosis appear around 3 days after a positive result from our Digabox: **close monitoring allows you to intervene while there is stil
-
-**4. Monitor the effectiveness of your treatments**: you implement the treatments **as soon as the measurement is positive**, on the identified area, generally in several stages. You check the effect of each treatment with the Diagbox PF00016 which allows yo
-
-We support you every step of the way, particularly in implementing **preventative treatments against other pathogens present** identified"
+**4. Monitor the effectiveness of your treatments**: you implement the treatments **as soon as the measurement is positive**, on the identified area, generally in several stages. You check the effect of each treatment with the Diagbox PF00016 which allows the pathogen pressure and its decrease to be quantified as the treatments take effect."
 diagbox.gazon.qna_reco.qna-group-q1_sub1.conclusion_text_suffix;Diagbox Gazon QNA Reco;Spécifications techniques et prix des Diagbox recommandées;Technical specifications and prices of recommended Diagboxes
 diagbox.gazon.qna_reco.qna-group-q1_sub2.recommendation_text;Diagbox Gazon QNA Reco;;
 diagbox.gazon.qna_reco.qna-group-q1_sub2.conclusion_text_prefix;Diagbox Gazon QNA Reco;;
@@ -605,28 +605,20 @@ diagbox.gazon.qna_reco.qna-group-q1_sub5.conclusion_text_suffix;Diagbox Gazon QN
 diagbox.gazon.qna_reco.qna-group-q2_sub1.recommendation_text;Diagbox Gazon QNA Reco;Nos recommandations :;Our recommendations:
 diagbox.gazon.qna_reco.qna-group-q2_sub1.conclusion_text_prefix;Diagbox Gazon QNA Reco;"**1. Connaissez l'état réel de votre gazon** : faites un **diagnostic complet (feuilles et les racines)** de votre pelouse (Diagbox PF00049) pour identifier vos risques à court et moyen terme.
 
-2. Définissez avec nous **un plan de suivi**, adapté à votre situation et à votre budget : en fonction des pathogènes identifiés et des caractéristiques de votre stade, nous vous conseillons sur les actions à entreprendre, et nous vous accompagnons pour les mettre en place dans la durée, avec des **outils de visualisation des résultats** pour optimiser les apports de produits de traitement.
+2. Définissez avec nous **un plan de suivi**, adapté à votre situation et à votre budget : en fonction des pathogènes identifiés et des caractéristiques de votre stade, nous vous conseillons sur les actions à entreprendre";"**1. Know the real condition of your lawn**: carry out a **complete diagnosis (leaves and roots)** of your lawn (Diagbox PF00049) to identify your short and medium term risks.
 
-**Vous maîtrisez vos risques et réduisez vos coûts d'entretien dans la durée**.";"**1. Know the real condition of your lawn**: carry out a **complete diagnosis (leaves and roots)** of your lawn (Diagbox PF00049) to identify your short and medium term risks.
-
-2. Define with us **a monitoring plan**, adapted to your situation and your budget: depending on the pathogens identified and the characteristics of your stadium, we advise you on the actions to be taken, and we support you in implementing them over time, wi
-
-**You control your risks and reduce your maintenance costs over time**."
+2. Define with us **a monitoring plan**, adapted to your situation and your budget: depending on the pathogens identified and the characteristics of your stadium, we advise you on the actions to be taken."
 diagbox.gazon.qna_reco.qna-group-q2_sub1.conclusion_text_suffix;Diagbox Gazon QNA Reco;Spécifications techniques et prix des Diagbox recommandées;Technical specifications and prices of recommended Diagboxes
 diagbox.gazon.qna_reco.qna-group-q3.recommendation_text;Diagbox Gazon QNA Reco;Nos recommandations :;Our recommendations:
 diagbox.gazon.qna_reco.qna-group-q3.conclusion_text_prefix;Diagbox Gazon QNA Reco;"1. Réalisez **le plus rapidement possible** la quantification des pathogènes présents en nous envoyant des feuilles des zones touchées. Pour cela, utilisez la Diagbox PF00018 si l'apparition des symptômes a lieu en été, ou PF 00019 en hivers. 
 
 2. Pour encore **plus de réactivité et de facilité, disposez dans vos stocks ** de la Diagbox PF00020 qui couvre l'ensemble des pathogènes : **utilisez-la dès que des symptômes apparaissent**.
 
-3. **Si plusieurs zone différentes sont déjà touchées**, réalisez de préférence **un prélèvement différent pour chaque zone** avec les Diagbox retenues: vous disposerz d'un diagnostic pour chaque endroit touché et vous pourrez aller vers des solutions encore plus adaptées.
-
-Nous vous accompagnons dans le suivi des traitements, et pour voir avec vous si des diagnostics des autres compartiments (racine, sols) sont nécessaires.";"1. **As soon as possible**, quantify the pathogens present by sending us sheets of the affected areas. To do this, use Diagbox PF00018 if symptoms appear in summer, or PF 00019 in winter.
+3. **Si plusieurs zone différentes sont déjà touchées**, réalisez de préférence **un prélèvement différent pour chaque zone** avec les Diagbox retenues: vous disposerez d'un diagnostic pour chaque endroit touché et vous pourrez aller vers des solutions encore plus adaptées.";"1. **As soon as possible**, quantify the pathogens present by sending us sheets of the affected areas. To do this, use Diagbox PF00018 if symptoms appear in summer, or PF 00019 in winter.
 
 2. For even more responsiveness and ease, have the Diagbox PF00020 in your stock, which covers all pathogens: use it as soon as symptoms appear.
 
-3. **If several different areas are already affected**, preferably take **a different sample for each area** with the Diagbox selected: you will have a diagnosis for each affected area and you will be able to move towards even more suitable solutions.
-
-We support you in monitoring treatments, and to see with you if diagnostics of other compartments (root, soil) are necessary."
+3. **If several different areas are already affected**, preferably take **a different sample for each area** with the Diagbox selected: you will have a diagnosis for each affected area and you will be able to move towards even more suitable solutions."
 diagbox.gazon.qna_reco.qna-group-q3.conclusion_text_suffix;Diagbox Gazon QNA Reco;Spécifications techniques et prix des Diagbox recommandées;Technical specifications and prices of recommended Diagboxes
 diagbox.gazon.qna_reco.qna-group-q4_combined.recommendation_text;Diagbox Gazon QNA Reco;Nos recommandations :;Our recommendations:
 diagbox.gazon.qna_reco.qna-group-q4_combined.conclusion_text_prefix;Diagbox Gazon QNA Reco;"1. Réalisez **un diagnostic des sols** avant tout nouveau plaquage, avec la Diagbox PF 00047 : les pathogènes présents dans les sols, même en faibles quantités, représentent un **risque de long terme** et peuvent conduire à la destruction.  Prématurée de votre pelouse, ou à des **surcoûts d'entretien**. Nous vous accompagnerons ensuite au besoin dans le suivi des traitements et de l'état de santé du sol. 
@@ -747,7 +739,7 @@ contact.form.phone;Contact Form;Téléphone;Phone
 contact.form.submit;Contact Form;Envoyer;Submit
 contact.form.optional;Contact Form;optionnel - utile pour recevoir plus rapidement vos produits;optional - useful for faster product delivery
 contact.form.sector;Contact Form;Secteur d'intérêt;Sector of Interest
-contact.form.select_sector;Contact Form;Sélectionnez un secteur;Select a sector
+contact.form.select_sector;Contact Form;Sélectionnez un domaine ou un secteur;Select a field or a sector
 contact.form.service;Contact Form;Service souhaité;Desired Service
 contact.form.select_service;Contact Form;Sélectionnez un service;Select a service
 contact.form.contact_preference;Contact Form;Mode de réponse souhaité;Preferred Contact Method
@@ -776,3 +768,37 @@ contact.form.optional;Contact (Form);optionnel;optional
 contact.form.address.optional;Contact (Form);optionnel - utile pour recevoir plus rapidement vos produits;optional - useful for faster product delivery
 contact.form.address.city_loading;Contact (Form);Recherche de la ville...;Searching for city...
 contact.form.address.city_help;Contact (Form);Saisissez un code postal pour compléter automatiquement la ville;(France : enter a postal code to automatically complete the city)
+diagbox.gazon.qna_reco.common.accompagnement_title;Diagbox Gazon;Nous vous accompagnons;We support you
+diagbox.gazon.qna_reco.q1.accompagnement_text;Diagbox Gazon;Nous vous accompagnons à chaque étape, en particulier dans la mise en place de **traitement de prévention contre les autres pathogènes présents** identifiés lors du diagnostics. L'audit sur les racines permet de calibrer les traitements à prévoir de manière pertinente.;We support you every step of the way, particularly in implementing **preventative treatments against other identified pathogens**. The root audit allows the appropriate treatments to be calibrated.
+diagbox.gazon.qna_reco.q2.accompagnement_text;Diagbox Gazon;Nous accompagnons votre suivi dans la durée, avec des **outils de visualisation des résultats** pour adapter et optimiser les apports de produits de traitement.;We support your long-term monitoring, with **results visualization tools** to adapt and optimize the intake of treatment products.
+diagbox.gazon.qna_reco.q3.accompagnement_text;Diagbox Gazon;Nous vous accompagnons dans le suivi des traitements, et pour voir avec vous si des diagnostics des autres compartiments (racine, sols) sont nécessaires.;We support you in monitoring treatments, and to see with you if diagnostics of other compartments (root, soil) are necessary. 
+diagbox.gazon.qna_reco.q4.accompagnement_text;Diagbox Gazon;Nous vous aidons à suivre l'évolution de la situation après la pose.;We help you monitor the situation after installation.
+contact.form.general_interest;Contact Form;Intérêt général;General interest
+press.title;Press;Espace Presse;Press Room
+press.press_releases.title;Press;Communiqués de presse;Press Releases
+press.press_releases.coming_soon;Press;Les communiqués de presse seront bientôt disponibles.;Press releases will be available soon.
+press.contact.title;Press;Contact Presse;Press Contact
+press.contact.description;Press;Pour toute demande presse, merci de contacter :;For any press inquiries, please contact:
+press.contact.name;Press;Service Communication IAGE;IAGE Communication Department
+
+testimonials.title;Testimonials;Ils nous font confiance;They trust us
+testimonials.intro;Testimonials;Découvrez les retours d'expérience de nos clients et partenaires.;Discover our clients and partners' testimonials.
+testimonials.partners.title;Testimonials;Nos Partenaires;Our Partners
+testimonials.partners.coming_soon;Testimonials;Liste des partenaires à venir;Partner list coming soon
+testimonials.testimonials.title;Testimonials;Témoignages;Testimonials
+testimonials.testimonials.coming_soon;Testimonials;Les témoignages de nos clients seront bientôt disponibles.;Client testimonials will be available soon.
+testimonials.key_figures.title;Testimonials;Chiffres Clés;Key Figures
+testimonials.key_figures.clients;Testimonials;Clients satisfaits;Satisfied clients
+testimonials.key_figures.years;Testimonials;Années d'expertise;Years of expertise
+testimonials.key_figures.satisfaction;Testimonials;Taux de satisfaction;Satisfaction rate
+
+events.title;Events;Événements;Events
+events.intro;Events;Retrouvez-nous lors des événements à venir et découvrez nos dernières actualités.;Join us at upcoming events and discover our latest news.
+events.upcoming.title;Events;Événements à venir;Upcoming Events
+events.upcoming.coming_soon;Events;Les prochains événements seront bientôt annoncés.;Upcoming events will be announced soon.
+events.past.title;Events;Événements passés;Past Events
+events.past.no_events;Events;Aucun événement passé à afficher pour le moment.;No past events to display at the moment.
+events.newsletter.title;Events;Restez informé;Stay informed
+events.newsletter.description;Events;Inscrivez-vous à notre newsletter pour ne manquer aucun événement.;Subscribe to our newsletter to stay updated about our events.
+events.newsletter.placeholder;Events;Votre adresse email;Your email address
+events.newsletter.button;Events;S'inscrire;Subscribe

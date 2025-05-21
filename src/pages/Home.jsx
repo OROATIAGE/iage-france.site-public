@@ -44,7 +44,7 @@ function MobileDomainNav({ texts }) {
   const handleClick = (id, titleId) => {
     const el = document.getElementById(titleId);
     if (el) {
-      const y = el.getBoundingClientRect().top + window.scrollY - 120;
+      const y = el.getBoundingClientRect().top + window.scrollY - 80;
       window.scrollTo({ top: y, behavior: 'smooth' });
     }
   };
@@ -217,7 +217,7 @@ const Home = () => {
       <MobileDomainNav texts={getText('home.sectors')} />
 
       {/* New Problem Solving Categories Section - MODERN CARDS */}
-      <section id="sectors-grid" className="py-20 bg-white dark:bg-gray-900 scroll-mt-20 md:scroll-mt-24">
+      <section id="sectors-grid" className="py-20 bg-white dark:bg-gray-900 scroll-mt-[80px]">
         <div className="container">
           <h2 className="text-4xl font-bold text-center mb-16 text-primary dark:text-white">
             {getText('home.sectors.title')}

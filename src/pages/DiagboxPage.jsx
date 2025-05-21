@@ -140,7 +140,7 @@ function DiagboxPage() {
     >
       <div className="max-w-4xl mx-auto px-4">
         {/* Page Title and Intro */}
-        <div id="diagbox-intro" className="text-center mb-12 md:mb-16 pt-[120px]">
+        <div id="diagbox-intro" className="text-center mb-12 md:mb-16 pt-[140px] scroll-mt-[140px]">
           <h1 className="text-4xl md:text-5xl font-bold text-primary dark:text-secondary mb-4">
             {getTextByLanguage('diagbox.mainpage.title', language, 'Les DiagBox® IAGE')}
           </h1>
@@ -181,7 +181,7 @@ function DiagboxPage() {
           
           <div className="space-y-8">
             {diagboxDomainData.map((domain) => (
-              <div key={domain.domainKey} id={domain.domainKey} className="py-4 mt-8 scroll-mt-40">
+              <div key={domain.domainKey} id={domain.domainKey} className="py-4 mt-8 scroll-mt-[140px]">
                 <h3 className="text-2xl md:text-3xl font-bold text-left text-primary dark:text-secondary mb-2">
                   {getTextByLanguage(`home.sectors.${domain.domainKey}`, language)}
                 </h3>

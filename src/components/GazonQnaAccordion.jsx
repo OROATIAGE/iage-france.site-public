@@ -268,6 +268,19 @@ function GazonQnaAccordion({ onOpenKitGroup }) {
                   </div>
                 )}
 
+                {/* Nous vous accompagnons Section */}
+                {recommendationTexts && item.id !== 'q5' && (
+                  <div className="mt-4 p-4 bg-white dark:bg-gray-700 rounded-lg shadow-sm mb-4 md:max-w-3xl lg:max-w-4xl md:mx-auto">
+                    <h4 className="text-lg font-semibold text-primary dark:text-secondary mb-2">
+                      {getGeneralText('diagbox.gazon.qna_reco.common.accompagnement_title', language)}
+                    </h4>
+                    <div className="w-16 h-1.5 bg-secondary mb-4 rounded-full"></div>
+                    <div className="prose dark:prose-invert w-full">
+                      <TextWithBoldMarkdown text={getGeneralText(`diagbox.gazon.qna_reco.${item.id}.accompagnement_text`, language)} />
+                    </div>
+                  </div>
+                )}
+
                 {/* Conclusion text if exists */}
                 {recommendationTexts && (
                   <div className="mt-4 p-4 bg-white dark:bg-gray-700 rounded-lg shadow-sm mb-4 md:max-w-3xl lg:max-w-4xl md:mx-auto">

@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react'
+import { useState, useRef, Fragment } from 'react'
 import { motion } from 'framer-motion'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import 'leaflet/dist/leaflet.css'
@@ -323,17 +323,20 @@ const Contact = () => {
                 className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-gray-700 dark:border-gray-600 dark:text-white px-3 py-2"
               >
                 <option value="">{getText('contact.form.select_sector', 'Sélectionnez un secteur')}</option>
+                <option value="general_interest" className="font-semibold">
+                  {getText('contact.form.general_interest')}
+                </option>
                 {sectors.map((category) => (
-                  <optgroup 
-                    key={category.category} 
-                    label={getText(`home.sectors.${category.category}`)}
-                  >
+                  <Fragment key={category.category}>
+                    <option value={category.category} className="font-semibold bg-gray-100 dark:bg-gray-600">
+                      {getText(`home.sectors.${category.category}`)}
+                    </option>
                     {category.subdomains.map((subdomain) => (
-                      <option key={subdomain} value={subdomain}>
+                      <option key={subdomain} value={subdomain} className="pl-4">
                         {getText(`home.sectors.${subdomain}`)}
                       </option>
                     ))}
-                  </optgroup>
+                  </Fragment>
                 ))}
               </select>
             </div>

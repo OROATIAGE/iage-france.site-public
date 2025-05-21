@@ -6,6 +6,7 @@ import { texts } from '../content/texts'
 import LanguageSwitcher from './LanguageSwitcher'
 import { useLanguage } from '../context/LanguageContext'
 import { getTextByLanguage } from '../utils/textHelpers'
+import { FaChevronDown } from 'react-icons/fa'
 
 function useIsDark() {
   const [isDark, setIsDark] = useState(false);
@@ -26,16 +27,15 @@ function useIsDark() {
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const [isServicesOpen, setIsServicesOpen] = useState(false);
-  const servicesTimeoutRef = useRef(null);
   const [isDomainesOpen, setIsDomainesOpen] = useState(false);
-  const domainesTimeoutRef = useRef(null);
+  const [isNewsOpen, setIsNewsOpen] = useState(false);
   const isDark = useIsDark()
   const location = useLocation();
   const navigate = useNavigate();
   const { language } = useLanguage();
 
-  // Define Navbar height (h-16 is 64px). Add some padding.
-  const NAVBAR_OFFSET = 80; // 64px for navbar + 16px padding
+  // Define Navbar height (h-16 is 64px) + padding + shadow
+  const NAVBAR_OFFSET = location.pathname === '/' ? 80 : 140;
 
   // Updated list of all services for the dropdown
   const servicesDropdownItems = [
@@ -59,6 +59,13 @@ function Navbar() {
     { nameKey: 'category_turf_parks_title', hash: '#title-domaine4' },
   ];
 
+  // News dropdown items
+  const newsDropdownItems = [
+    { name: getTextByLanguage('navbar.news.press', language), path: '/news/press' },
+    { name: getTextByLanguage('navbar.news.testimonials', language), path: '/news/testimonials' },
+    { name: getTextByLanguage('navbar.news.events', language), path: '/news/events' },
+  ];
+
   const navItems = [
     { name: getTextByLanguage('navbar.home', language), path: '/' },
     {
@@ -71,41 +78,43 @@ function Navbar() {
     {
       name: getTextByLanguage('navbar.services.title', language),
       path: '/services',
-      dropdown: servicesDropdownItems
+      dropdown: servicesDropdownItems,
+      isServices: true
+    },
+    {
+      name: getTextByLanguage('navbar.news.title', language),
+      path: '/news',
+      dropdown: newsDropdownItems,
+      isNews: true
     },
     { name: getTextByLanguage('navbar.about', language), path: '/about' },
     { name: getTextByLanguage('navbar.contact', language), path: '/contact' },
-  ]
+  ];
 
-  const handleServicesMouseEnter = () => {
-    clearTimeout(servicesTimeoutRef.current);
-    setIsServicesOpen(true);
+  const scrollToElement = (elementId) => {
+    const element = document.getElementById(elementId);
+    if (element) {
+      // Add a small delay to ensure the dropdown is closed
+      setTimeout(() => {
+        const offset = location.pathname === '/' ? 80 : 140;
+        const y = element.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      }, 100);
+    }
   };
 
-  const handleServicesMouseLeave = () => {
-    servicesTimeoutRef.current = setTimeout(() => {
-      setIsServicesOpen(false);
-    }, 200);
-  };
-
-  const handleDomainesMouseEnter = () => {
-    clearTimeout(domainesTimeoutRef.current);
-    setIsDomainesOpen(true);
-  };
-
-  const handleDomainesMouseLeave = () => {
-    domainesTimeoutRef.current = setTimeout(() => {
-      setIsDomainesOpen(false);
-    }, 200);
-  };
-
-  const handleDropdownItemClick = (path, isDomainesDropdown = false) => {
-    if (isDomainesDropdown) {
-      setIsDomainesOpen(false);
-      clearTimeout(domainesTimeoutRef.current);
-    } else {
-      setIsServicesOpen(false);
-      clearTimeout(servicesTimeoutRef.current);
+  const handleDropdownItemClick = (path, type) => {
+    // Fermer le menu déroulant correspondant
+    switch (type) {
+      case 'services':
+        setIsServicesOpen(false);
+        break;
+      case 'domaines':
+        setIsDomainesOpen(false);
+        break;
+      case 'news':
+        setIsNewsOpen(false);
+        break;
     }
     setIsOpen(false);
 
@@ -113,21 +122,14 @@ function Navbar() {
     const basePath = path.includes('#') ? path.substring(0, path.indexOf('#')) : path;
 
     if (location.pathname === basePath && hash) {
-      const element = document.getElementById(hash.substring(1));
-      if (element) {
-        const y = element.getBoundingClientRect().top + window.scrollY - NAVBAR_OFFSET;
-        window.scrollTo({ top: y, behavior: 'smooth' });
-      }
+      scrollToElement(hash.substring(1));
     } else {
       navigate(path);
       if (hash) {
+        // Add a longer delay when navigating to a new page
         setTimeout(() => {
-          const element = document.getElementById(hash.substring(1));
-          if (element) {
-            const y = element.getBoundingClientRect().top + window.scrollY - NAVBAR_OFFSET;
-            window.scrollTo({ top: y, behavior: 'smooth' });
-          }
-        }, 150); // Adjusted delay slightly, ensure it's enough for page load
+          scrollToElement(hash.substring(1));
+        }, 300);
       }
     }
   };
@@ -146,45 +148,49 @@ function Navbar() {
           <div className="hidden sm:flex sm:items-center sm:space-x-8">
             {navItems.map((item) => {
               if (item.dropdown) {
-                const isOpenState = item.isDomaines ? isDomainesOpen : isServicesOpen;
-                const handleMouseEnter = item.isDomaines ? handleDomainesMouseEnter : handleServicesMouseEnter;
-                const handleMouseLeave = item.isDomaines ? handleDomainesMouseLeave : handleServicesMouseLeave;
-                const dropdownItems = item.dropdown;
+                let isOpen;
+                if (item.isDomaines) isOpen = isDomainesOpen;
+                else if (item.isServices) isOpen = isServicesOpen;
+                else if (item.isNews) isOpen = isNewsOpen;
 
                 return (
                   <div
                     key={item.name}
                     className="relative"
-                    onMouseEnter={handleMouseEnter}
-                    onMouseLeave={handleMouseLeave}
+                    onMouseEnter={() => {
+                      if (item.isDomaines) setIsDomainesOpen(true);
+                      else if (item.isServices) setIsServicesOpen(true);
+                      else if (item.isNews) setIsNewsOpen(true);
+                    }}
+                    onMouseLeave={() => {
+                      if (item.isDomaines) setIsDomainesOpen(false);
+                      else if (item.isServices) setIsServicesOpen(false);
+                      else if (item.isNews) setIsNewsOpen(false);
+                    }}
                   >
                     <Link
                       to={item.path}
                       className="text-primary dark:text-gray-100 hover:text-primary dark:hover:text-secondary px-3 py-2 text-sm font-medium border-b-2 border-transparent hover:border-primary dark:hover:border-secondary transition-colors flex items-center"
                       onClick={(e) => {
                         if (item.isDomaines && item.path === '/' && location.pathname === '/') {
-                          
-                        } else if (item.path.includes('#') && location.pathname === item.path.substring(0, item.path.indexOf('#'))) {
-                            e.preventDefault();
-                            handleDropdownItemClick(item.path, item.isDomaines);
+                          e.preventDefault();
                         }
                       }}
                     >
                       {item.name}
-                      <svg className={`w-4 h-4 ml-1 transition-transform duration-200 ${isOpenState ? 'transform rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
+                      <FaChevronDown className={`ml-1 transition-transform duration-200 ${isOpen ? 'transform rotate-180' : ''}`} />
                     </Link>
-                    {isOpenState && (
-                      <div
-                        className={`absolute left-0 mt-1 ${item.isDomaines ? 'w-64' : 'w-56'} rounded-md shadow-lg bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5 py-1 z-50`}
-                        onMouseEnter={handleMouseEnter}
-                        onMouseLeave={handleMouseLeave}
-                      >
-                        {dropdownItems.map((subItem) => (
+                    {isOpen && (
+                      <div className="absolute left-0 mt-1 w-56 rounded-md shadow-lg bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5 py-1 z-50">
+                        {item.dropdown.map((subItem) => (
                           <Link
                             key={subItem.name || subItem.nameKey}
                             to={item.isDomaines ? `/${subItem.hash}` : subItem.path}
                             className="block px-4 py-2 text-sm text-primary dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-primary dark:hover:text-secondary whitespace-normal"
-                            onClick={() => handleDropdownItemClick(item.isDomaines ? `/${subItem.hash}` : subItem.path, item.isDomaines)}
+                            onClick={() => handleDropdownItemClick(
+                              item.isDomaines ? `/${subItem.hash}` : subItem.path,
+                              item.isDomaines ? 'domaines' : item.isServices ? 'services' : 'news'
+                            )}
                           >
                             {item.isDomaines ? getTextByLanguage(`home.sectors.${subItem.nameKey}`, language) : subItem.name}
                           </Link>
@@ -236,32 +242,14 @@ function Navbar() {
       <div className={`sm:hidden ${isOpen ? 'block' : 'hidden'}`}>
         <div className="pt-2 pb-3 space-y-1">
           {navItems.map((item) => (
-            item.dropdown ? (
-              <div key={`${item.name}-mobile`} className="px-3 py-2">
-                <span className="text-primary dark:text-gray-100 text-base font-medium block mb-1">{item.name}</span>
-                <div className="pl-3 space-y-1 border-l border-gray-300 dark:border-gray-600">
-                  {item.dropdown.map((subItem) => (
-                    <Link
-                      key={subItem.name || subItem.nameKey}
-                      to={item.isDomaines ? `/${subItem.hash}` : subItem.path}
-                      className="text-primary dark:text-gray-300 hover:text-primary dark:hover:text-secondary block py-1 text-base font-medium whitespace-normal"
-                      onClick={() => handleDropdownItemClick(item.isDomaines ? `/${subItem.hash}` : subItem.path, item.isDomaines)}
-                    >
-                      {item.isDomaines ? getTextByLanguage(`home.sectors.${subItem.nameKey}`, language) : subItem.name}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            ) : (
-              <Link
-                key={item.name}
-                to={item.path}
-                className="text-primary dark:text-gray-100 hover:text-primary dark:hover:text-secondary block px-3 py-2 text-base font-medium border-l-4 border-transparent hover:border-primary dark:hover:border-secondary transition-colors"
-                onClick={() => setIsOpen(false)}
-              >
-                {item.name}
-              </Link>
-            )
+            <Link
+              key={item.name}
+              to={item.path}
+              className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50 dark:text-gray-300 dark:hover:text-secondary"
+              onClick={() => setIsOpen(false)}
+            >
+              {item.name}
+            </Link>
           ))}
         </div>
       </div>
