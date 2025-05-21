@@ -167,12 +167,11 @@
   scrollbar-width: none;  /* Firefox */
 } 
 
-/* iOS specific fixes */
-@supports (-webkit-touch-callout: none) {
+/* @supports (-webkit-touch-callout: none) {
   .fixed {
     position: fixed;
   }
-}
+} */
 
 /* Logo loading animation */
 @keyframes fadeInLogo {

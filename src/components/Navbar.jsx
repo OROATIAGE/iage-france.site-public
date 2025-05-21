@@ -141,7 +141,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-white fixed w-full top-0 z-50 dark:bg-gray-900 shadow-lg">
+    <nav className="bg-white fixed w-full top-0 z-60 dark:bg-gray-900 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           {/* Logo très simplifié */}
@@ -152,6 +152,7 @@ function Navbar() {
               width="160"
               height="32"
               className="h-8"
+              style={{ background: 'white' }}
             />
           </Link>
 
@@ -253,7 +254,7 @@ function Navbar() {
 
       {/* Mobile menu panel */}
       <div 
-        className={`${isOpen ? 'block' : 'hidden'} lg:hidden fixed right-0 top-16 w-64 bg-white dark:bg-gray-900 shadow-lg rounded-bl-lg z-50 max-h-[calc(100vh-4rem)] overflow-y-auto`}
+        className={`${isOpen ? 'block' : 'hidden'} lg:hidden fixed right-0 top-16 w-64 bg-white dark:bg-gray-900 shadow-lg rounded-bl-lg z-40 max-h-[calc(100vh-4rem)] overflow-y-auto`}
         style={{ maxHeight: 'calc(100vh - 4rem)' }}
       >
         <div className="px-2 pt-2 pb-3 space-y-1">
