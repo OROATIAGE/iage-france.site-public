@@ -147,11 +147,18 @@ function Navbar() {
           {/* Logo très simplifié */}
           <Link to="/" className="flex items-center flex-shrink-0">
             <img 
-              src={isDark ? logos.primary.horizontalWhite : logos.primary.horizontal} 
+              src={logos.primary.horizontal}
               alt="Logo IAGE" 
               width="160"
               height="32"
-              className="h-8"
+              className="h-8 block dark:hidden"
+            />
+            <img 
+              src={logos.primary.horizontalWhite}
+              alt="Logo IAGE" 
+              width="160"
+              height="32"
+              className="h-8 hidden dark:block"
             />
           </Link>
 
