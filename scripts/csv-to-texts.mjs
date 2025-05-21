@@ -17,7 +17,7 @@ const csvContent = fs.readFileSync(inputCsvPath, 'utf-8');
 const records = parse(csvContent, {
   columns: true,
   skip_empty_lines: true,
-  delimiter: ',',
+  delimiter: ';',
 });
 
 // Initialize the texts object with language support

@@ -653,22 +653,22 @@ export const texts = {
           },
           "qna-group-q1_sub1": {
             "recommendation_text": "Nos recommandations :",
-            "conclusion_text_prefix": "**Connaissez l'état réel de votre gazon** : faites un **diagnostic complet (feuilles et les racines)** de votre pelouse (Diagbox PF00049) : vous prenez connaissance de la présence éventuelle de la **pyriculariose**, et surtout des **autres champignons** présents qui pourraient profiter de vos traitements contre la pyriculariose pour prendre sa place et **s'étendre à leur tour**.\n\n**Mettez en place un plan simple de surveillance** : à partir des périodes de chaleur propices au développement de la pyriculariose (juin ou juillet selon la situation de votre stade), assurez un **suivi de détection précoce** de la pyriculariose (PF00011). Cette Diagbox est **très facile d'emploi** : vous passez une lingette sur les lames de la tondeuse après tonte, vous nous l'expédiez avec l'enveloppe prépayée et vous avec le résultat 48h après. Assurez cette surveillance **au minimum une fois par semaine**.\n\n**Mettez en place un suivi renforcé si nécessaire**, avec deux mesures par semaine dans les régions à risque : les premiers signes de la pyriculariose apparaissent en effet de l'ordre de 3 jours après un résultat positif de notre Digabox : **le suivi rapproché vous permet d'intervenir quand il est encore temps**. \n\n**Surveillez l'efficacité des vos traitements** : vous mettez  en œuvre les traitements **dès que la mesure est positive**, sur la zone identifiée, généralement en plusieurs fois. Vous vérifiez l'effet de chaque traitement avec la Diagbox PF00016 qui permet de quantifier la pression du pathogène et sa décroissance au fur et à mesure que les traitements agissent.\n\nNous vous accompagnons à chaque étape, en particulier dans la mise en place de **traitement de prévention contre les autres pathogènes présents** identifiés lors du diagnostics. L'audit sur les racines permet alors de calibrer les traitements à prévoir de manière pertinente.",
+            "conclusion_text_prefix": "**1. Connaissez l'état réel de votre gazon** : faites un **diagnostic complet (feuilles et les racines)** de votre pelouse (Diagbox PF00049) : vous prenez connaissance de la présence éventuelle de la **pyriculariose**, et surtout des **autres champignons** présents qui pourraient profiter de vos traitements contre la pyriculariose pour prendre sa place et **s'étendre à leur tour**.\n\n**2. Mettez en place un plan simple de surveillance** : à partir des périodes de chaleur propices au développement de la pyriculariose (juin ou juillet selon la situation de votre stade), assurez un **suivi de détection précoce** de la pyriculariose (PF00011). Cette Diagbox est **très facile d'emploi** : vous passez une lingette sur les lames de la tondeuse après tonte, vous nous l'expédiez avec l'enveloppe prépayée et vous avec le résultat 48h après. Assurez cette surveillance **au minimum une fois par semaine**.\n\n**3. Mettez en place un suivi renforcé si nécessaire**, avec deux mesures par semaine dans les régions à risque : les premiers signes de la pyriculariose apparaissent en effet de l'ordre de 3 jours après un résultat positif de notre Digabox : **le suivi rapproché vous permet d'intervenir quand il est encore temps**. \n\n**4. Surveillez l'efficacité des vos traitements** : vous mettez  en œuvre les traitements **dès que la mesure est positive**, sur la zone identifiée, généralement en plusieurs fois. Vous vérifiez l'effet de chaque traitement avec la Diagbox PF00016 qui permet de quantifier la pression du pathogène et sa décroissance au fur et à mesure que les traitements agissent.\n\nNous vous accompagnons à chaque étape, en particulier dans la mise en place de **traitement de prévention contre les autres pathogènes présents** identifiés lors du diagnostics. L'audit sur les racines permet alors de calibrer les traitements à prévoir de manière pertinente.",
             "conclusion_text_suffix": "Spécifications techniques et prix des Diagbox recommandées"
           },
           "qna-group-q2_sub1": {
             "recommendation_text": "Nos recommandations :",
-            "conclusion_text_prefix": "**Connaissez l'état réel de votre gazon** : faites un **diagnostic complet (feuilles et les racines)** de votre pelouse (Diagbox PF00049) pour identifier vos risques à court et moyen terme.\n\nDéfinissez avec nous **un plan de suivi**, adapté à votre situation et à votre budget : en fonction des pathogènes identifiés et des caractéristiques de votre stade, nous vous conseillons sur les actions à entreprendre, et nous vous accompagnons pour les mettre en place dans la durée, avec des **outils de visualisation des résultats** pour optimiser les apports de produits de traitement.\n\n**Vous maîtrisez vos risques et réduisez vos coûts d'entretien dans la durée**.",
+            "conclusion_text_prefix": "**1. Connaissez l'état réel de votre gazon** : faites un **diagnostic complet (feuilles et les racines)** de votre pelouse (Diagbox PF00049) pour identifier vos risques à court et moyen terme.\n\n2. Définissez avec nous **un plan de suivi**, adapté à votre situation et à votre budget : en fonction des pathogènes identifiés et des caractéristiques de votre stade, nous vous conseillons sur les actions à entreprendre, et nous vous accompagnons pour les mettre en place dans la durée, avec des **outils de visualisation des résultats** pour optimiser les apports de produits de traitement.\n\n**Vous maîtrisez vos risques et réduisez vos coûts d'entretien dans la durée**.",
             "conclusion_text_suffix": "Spécifications techniques et prix des Diagbox recommandées"
           },
           "qna-group-q3": {
             "recommendation_text": "Nos recommandations :",
-            "conclusion_text_prefix": "Réalisez **le plus rapidement possible** la quantification des pathogènes présents en nous envoyant des feuilles des zones touchées. Pour cela, utilisez la Diagbox PF00018 si l'apparition des symptômes a lieu en été, ou PF 00019 en hivers. \n\nPour encore **plus de réactivité et de facilité, disposez dans vos stocks ** de la Diagbox PF00020 qui couvre l'ensemble des pathogènes : **utilisez-la dès que des symptômes apparaissent**.\n\n**Si plusieurs zone différentes sont déjà touchées**, réalisez de préférence **un prélèvement différent pour chaque zone** avec les Diagbox retenues: vous disposerz d'un diagnostic pour chaque endroit touché et vous pourrez aller vers des solutions encore plus adaptées.\n\nNous vous accompagnons dans le suivi des traitements, et pour voir avec vous si des diagnostics des autres compartiments (racine, sols) sont nécessaires.",
+            "conclusion_text_prefix": "1. Réalisez **le plus rapidement possible** la quantification des pathogènes présents en nous envoyant des feuilles des zones touchées. Pour cela, utilisez la Diagbox PF00018 si l'apparition des symptômes a lieu en été, ou PF 00019 en hivers. \n\n2. Pour encore **plus de réactivité et de facilité, disposez dans vos stocks ** de la Diagbox PF00020 qui couvre l'ensemble des pathogènes : **utilisez-la dès que des symptômes apparaissent**.\n\n3. **Si plusieurs zone différentes sont déjà touchées**, réalisez de préférence **un prélèvement différent pour chaque zone** avec les Diagbox retenues: vous disposerz d'un diagnostic pour chaque endroit touché et vous pourrez aller vers des solutions encore plus adaptées.\n\nNous vous accompagnons dans le suivi des traitements, et pour voir avec vous si des diagnostics des autres compartiments (racine, sols) sont nécessaires.",
             "conclusion_text_suffix": "Spécifications techniques et prix des Diagbox recommandées"
           },
           "qna-group-q4_combined": {
             "recommendation_text": "Nos recommandations :",
-            "conclusion_text_prefix": "Réalisez **un diagnostic des sols** avant tout nouveau plaquage, avec la Diagbox PF 00047 : les pathogènes présents dans les sols, même en faibles quantités, représentent un **risque de long terme** et peuvent conduire à la destruction prématurée de votre pelouse, ou à des **surcoûts d'entretien**. Nous vous accompagnerons ensuite au besoin dans le suivi des traitements et de l'état de santé du sol. \n\nVous voulez encore mieux sécuriser votre investissement ? **Testez également les plaquages livrés**, pour évaluer leur bon état (Diagbox PF 00049), ou demandez à votre fournisseur une preuve de ce bon état, par exemple avec un relevé de mesures réalisées par ses soins.\n\nPour la réalisation de l'ensemble des analyses par vous même, utilisez la Digabox PF 00050 qui **intègre les analyses des trois compartiments (sols + feuilles et racines)** à un prix réduit.",
+            "conclusion_text_prefix": "1. Réalisez **un diagnostic des sols** avant tout nouveau plaquage, avec la Diagbox PF 00047 : les pathogènes présents dans les sols, même en faibles quantités, représentent un **risque de long terme** et peuvent conduire à la destruction.  Prématurée de votre pelouse, ou à des **surcoûts d'entretien**. Nous vous accompagnerons ensuite au besoin dans le suivi des traitements et de l'état de santé du sol. \n\n2. Vous voulez encore mieux sécuriser votre investissement ? **Testez également les plaquages livrés**, pour évaluer leur bon état (Diagbox PF 00049), ou demandez à votre fournisseur une preuve de ce bon état, par exemple avec un relevé de mesures réalisées par ses soins.\n\nPour la réalisation de l'ensemble des analyses par vous même, utilisez la Digabox PF 00050 qui **intègre les analyses des trois compartiments (sols + feuilles et racines)** à un prix réduit.",
             "conclusion_text_suffix": "Spécifications techniques et prix des Diagbox recommandées"
           }
         },
@@ -871,871 +871,871 @@ export const texts = {
   },
   "en": {
     "navbar": {
-      "about": "[EN] À propos de nous",
-      "contact": "[EN] Contact",
-      "home": "[EN] Accueil",
-      "sectors": "[EN] Domaines",
+      "about": "About Us",
+      "contact": "Contact",
+      "home": "Welcome",
+      "sectors": "Domains",
       "services": {
         "dropdown": {
-          "all": "[EN] Voir tous les services",
-          "diagbox": "[EN] Diagbox"
+          "all": "See all services",
+          "diagbox": "Diagbox®"
         },
-        "title": "[EN] Services"
+        "title": "Services"
       }
     },
     "home": {
       "cta": {
-        "button": "[EN] Prendre contact",
-        "subtitle": "[EN] Contactez-nous pour discuter de vos besoins et découvrir comment nous pouvons vous aider.",
-        "title": "[EN] Prêt à commencer ?"
+        "button": "Get in touch",
+        "subtitle": "Contact us to discuss your needs and find out how we can help.",
+        "title": "Ready to get started?"
       },
       "hero": {
-        "card_title_agriculture": "[EN] Agriculture, élevage",
-        "card_title_health": "[EN] Santé publique, \nHygiène dans les bâtiments",
-        "card_title_industrial": "[EN] Fermentations agroalimentaire,\nTraitement des eaux – bio-énergie...",
-        "card_title_turf": "[EN] Gazons naturels professionnels, parcs, jardins",
-        "cta": "[EN] Contactez-nous",
-        "professional_intro": "[EN] Nos services pour vos secteurs d'activité :",
-        "subtitle": "[EN] Nous mettons notre expertise du vivant à votre service",
-        "title": "[EN] Voir l'invisible pour agir à temps "
+        "card_title_agriculture": "Agriculture, livestock",
+        "card_title_health": "Public health,\nHygiene in buildings",
+        "card_title_industrial": "Agri-food fermentation,\nWater treatment – bio-energy...",
+        "card_title_turf": "Professional natural lawns, parks, gardens",
+        "cta": "Contact us",
+        "professional_intro": "Our services for your sectors of activity:",
+        "subtitle": "We put our expertise  in the living world — powered by DNA and RNA science - at your service",
+        "title": "See the invisible to act in time"
       },
       "sectors": {
         "10": {
-          "description": "[EN] Cemetery lawn pathogen diagnostics and monitoring",
-          "name": "[EN] Cemetery Lawns"
+          "description": "Cemetery lawn pathogen diagnostics and monitoring",
+          "name": "Cemetery Lawns"
         },
         "01": {
-          "description": "[EN] Mesures de pathogènes dans les eaux usées \nPossibilité de Certification COFRAC",
-          "name": "[EN] Epidémiosurveillance (WES)"
+          "description": "Pathogen measurements in wastewater\nPossibility of COFRAC Certification",
+          "name": "Epidemiological surveillance (WES)"
         },
         "02": {
-          "description": "[EN] Mesures de contrôle de désinfection",
-          "name": "[EN] Hygiène hospitalière"
+          "description": "Disinfection control measures",
+          "name": "Hospital hygiene"
         },
         "03": {
-          "description": "[EN] Mesures de contrôle de la qualité de l'air, de présences de nuisibles",
-          "name": "[EN] Hygiène intérieure"
+          "description": "Air quality control measures, pest presence",
+          "name": "Indoor hygiene"
         },
         "04": {
-          "description": "[EN] Mesures de présence de pathogènes du gazon",
-          "name": "[EN] Gazons sportifs"
+          "description": "Measurements of the presence of turf pathogens",
+          "name": "Sports turf"
         },
         "05": {
-          "description": "[EN] Mesures de pathogènes ou de qualité du process",
-          "name": "[EN] Viti – Vini"
+          "description": "Pathogen or process quality measurements",
+          "name": "Viti – Vini"
         },
         "06": {
-          "description": "[EN] Mesure de pathogènes",
-          "name": "[EN] Arboriculture (Pomme)"
+          "description": "Pathogen measurement",
+          "name": "Arboriculture (Apple)"
         },
         "07": {
-          "description": "[EN] Mesure de contrôle contre la présence de pathogènes humains",
-          "name": "[EN] Conchyliculture"
+          "description": "Control measure against the presence of human pathogens",
+          "name": "Shellfish farming"
         },
         "08": {
-          "description": "[EN] Mesures de contrôle pathogènes aviaires",
-          "name": "[EN] Aviculture"
+          "description": "Avian pathogen control measures",
+          "name": "Poultry farming"
         },
-        "category_agriculture_livestock_title": "[EN] Agriculture et élevage",
-        "category_health_hygiene_title": "[EN] Santé publique et Hygiène intérieure",
-        "category_industrial_fermentation_title": "[EN] Procédés de traitement industriels",
-        "category_turf_parks_title": "[EN] Gazons naturels et parc",
-        "subdomain_arboriculture": "[EN] Arbres fruitiers",
-        "subdomain_cemeteries": "[EN] Pelouse des cimetières",
-        "subdomain_epidemiology": "[EN] Santé publique par les eaux usées, les sites naturels",
-        "subdomain_golf_courses": "[EN] Gazon des golfs",
-        "subdomain_hospital_hygiene": "[EN] Hygiène des salles d'hôpital, d'EHPAD",
-        "subdomain_indoor_hygiene": "[EN] Hygiène intérieure\n(rats, punaises, mérule, moisissures,...)",
-        "subdomain_methanizers": "[EN] Méthaniseurs",
-        "subdomain_poultry_farming": "[EN] Elevages aviaires (grippe aviaire)",
-        "subdomain_purification_systems": "[EN] Réseaux et Stations d'épuration",
-        "subdomain_shellfish_farming": "[EN] Huitres (norovirus)",
-        "subdomain_sports_turf": "[EN] Gazons des stades",
-        "subdomain_viticulture": "[EN] Vignes",
-        "subdomain_winemaking": "[EN] Vinification",
-        "title": "[EN] Vos enjeux, nos outils",
-        "mobile_nav_domaine1": "[EN] Santé",
-        "mobile_nav_domaine2": "[EN] Agriculture",
-        "mobile_nav_domaine3": "[EN] Industrie",
-        "mobile_nav_domaine4": "[EN] Gazons",
+        "category_agriculture_livestock_title": "Agriculture and livestock",
+        "category_health_hygiene_title": "Public Health and Indoor Hygiene",
+        "category_industrial_fermentation_title": "Industrial treatment processes",
+        "category_turf_parks_title": "Natural lawns and park",
+        "subdomain_arboriculture": "Fruit trees",
+        "subdomain_cemeteries": "Cemetery Lawn",
+        "subdomain_epidemiology": "Public health through wastewater, natural sites",
+        "subdomain_golf_courses": "Golf course lawns",
+        "subdomain_hospital_hygiene": "Hygiene of hospital and nursing home wards",
+        "subdomain_indoor_hygiene": "Indoor hygiene\n(rats, bedbugs, dry rot, mold, etc.)",
+        "subdomain_methanizers": "Methanizers",
+        "subdomain_poultry_farming": "Poultry farming (avian flu)",
+        "subdomain_purification_systems": "Networks and Sewage Treatment Plants",
+        "subdomain_shellfish_farming": "Oysters (norovirus)",
+        "subdomain_sports_turf": "Stadium lawns",
+        "subdomain_viticulture": "Vines",
+        "subdomain_winemaking": "Winemaking",
+        "title": "Your challenges, our tools",
+        "mobile_nav_domaine1": "Health",
+        "mobile_nav_domaine2": "Agriculture",
+        "mobile_nav_domaine3": "Industry",
+        "mobile_nav_domaine4": "Lawns",
         "09": {
-          "description": "[EN] Golf course turf pathogen diagnostics and green quality monitoring",
-          "name": "[EN] Golf Courses"
+          "description": "Golf course turf pathogen diagnostics and green quality monitoring",
+          "name": "Golf Courses"
         }
       },
       "services": {
         "0": {
-          "description": "[EN] Des analyses précises et fiables, sur catalogue ou à la demande, pour répondre à tous vos besoins",
-          "title": "[EN] Analyses de précisions"
+          "description": "Accurate and reliable analyses, from the catalog or on demand, to meet all your needs",
+          "title": "Precision analyses"
         },
         "1": {
-          "description": "[EN] Un accompagnement personnalisé pour accompagner vos prises de décisions",
-          "title": "[EN] Diagbox®, Conseils et Expertise"
+          "description": "Personalized support to help you make decisions",
+          "title": "Diagbox®, Advice and Expertise"
         },
         "2": {
-          "description": "[EN] Equiments spécialisés, laboratoires locaux, accompagnement technique, pour encore plus de réactivité",
-          "title": "[EN] Vous équiper et former vos équipes"
+          "description": " accompagnement technique",
+          "title": "Equip yourself and train your teams"
         },
-        "title": "[EN] Nos Services"
+        "title": "Our Services"
       }
     },
     "about": {
       "page": {
-        "ambition_text": "[EN] Là où d'autres interviennent trop tard, IAGE fait le choix de l'anticipation, de la prévention et de l'accompagnement sur mesure.",
-        "ambition_title": "[EN] Notre ambition : Voir l'invisible pour agir à temps.",
-        "conclusion": "[EN] Avec IAGE, la biologie devient un levier clair et fiable pour prendre des décisions rapides, pertinentes et durables.",
-        "intro1": "[EN] Fondée en 2017 à Montpellier, IAGE est spécialisée dans l'analyse biologique et environnementale.",
-        "intro2": "[EN] Nous proposons des services de diagnostics ultra-précoces, accessibles et dont les résultats aident aux prises de décision, pensés pour tous les acteurs du vivant.",
-        "strength_text": "[EN] Parce que nous connaissons les réalités de terrain — qu'il s'agisse de collectivités, exploitants ou industriels — nous avons transformé notre savoir-faire en solutions clefs en main : du prélèvement à l'analyse, jusqu'à la mise en œuvre de plans d'actions concrets.",
-        "strength_title": "[EN] Notre force : Rendre l'expertise scientifique simple et opérationnelle."
+        "ambition_text": "Where others intervene too late, IAGE chooses anticipation, prevention and tailor-made support.",
+        "ambition_title": "Our ambition: To see the invisible in order to act in time.",
+        "conclusion": "With IAGE, biology becomes a clear and reliable lever for making rapid, relevant and sustainable decisions.",
+        "intro1": "Founded in 2017 in Montpellier, IAGE specializes in biological and environmental analysis.",
+        "intro2": "We offer ultra-early, accessible diagnostic services whose results help with decision-making, designed for all stakeholders in the living world.",
+        "strength_text": "Because we understand the realities on the ground - whether for communities, operators or manufacturers - we have transformed our expertise into turnkey solutions: from sampling to analysis, right through to the implementation of concrete action plans.",
+        "strength_title": "Our strength: Making scientific expertise simple and operational."
       },
-      "title": "[EN] À propos de nous"
+      "title": "About Us"
     },
     "services": {
       "nav": {
-        "catalog": "[EN] Catalogue des analyses",
-        "development": "[EN] R&D",
-        "diagbox": "[EN] DiagBox®",
-        "local-labs": "[EN] Laboratoires locaux",
-        "mobile-viz": "[EN] Visualisations en mobilité",
-        "modeling": "[EN] Modélisations et anticipations",
-        "sampling-advice": "[EN] Optimiser les prélèvements",
-        "sampling-tools": "[EN] Préleveurs d'eaux",
-        "specific-combinations": "[EN] Combinaisons sur mesure",
-        "thresholds": "[EN] Seuils décisionnels",
-        "question": "[EN] Just ask a question"
+        "catalog": "Catalog of analyses",
+        "development": "R&D",
+        "diagbox": "DiagBox®",
+        "local-labs": "Local laboratories",
+        "mobile-viz": "Mobile Visualizations",
+        "modeling": "Modeling and anticipations",
+        "sampling-advice": "Optimize sampling",
+        "sampling-tools": "Water samplers",
+        "specific-combinations": "Tailor-made suits",
+        "thresholds": "Decision thresholds",
+        "question": "Just ask a question"
       },
       "page": {
-        "back_to_sectors_link_text": "[EN] Voir nos domaines d'activité",
-        "back_to_sectors_title": "[EN] Explorer nos domaines d'application",
-        "catalog_description": "[EN] Nous proposons un large catalogue d'analyses standardisées, validées et optimisées pour différents types de matrices (eaux, sols, air, surfaces, etc.). Ces analyses couvrent la détection et la quantification de nombreux micro-organismes (virus, bactéries, champignons) et paramètres spécifiques.\n\nToutes nos mesures de microbiologie – quantification d'ADN ou d'ARN – sont réalisées en digital PCR et à partir de procédés de préparations développés et optimisés par IAGE. Cela garanti leur précision, leur sensibilité et leur répétabilité. IAGE est à ce jour le seul laboratoire à proposer des analyses en digital PCR dans les eaux usées certifiées COFRAC\n\nConsultez notre catalogue pour trouver l'analyse adaptée à votre besoin.",
-        "catalog_title": "[EN] Analyses catalogue : Précision et Fiabilité",
-        "category1_title": "[EN] Analyses de précision",
-        "category2_title": "[EN] Diagbox® et Services pour l'aide à la décision",
-        "category3_title": "[EN] Équipements et laboratoires dédiés",
-        "development_description": "[EN] Face à des enjeux émergents (virus, bactéries), pour intégrer une analyse spécifique dans un projet de recherche ou pour un POC (Proof Of Concept) répondant à un appel d'offres, IAGE s'engage dans le développement et la validation de nouvelles méthodes d'analyse.\n\nNotre processus débute par une étude de faisabilité (étude bibliographique, design, matrice, critères d'efficacité attendus, ressources humaines). L'offre de prix, validée par nos directions scientifique, recherche et commerciale, reflète ce travail de R&D (temps expert, achats spécifiques). L'intégration d'analyses catalogue existantes au sein du développement peut permettre d'optimiser les coûts.\n\nC'est une approche partenariale pour innover ensemble.",
-        "development_title": "[EN] Développement de nouvelles méthodes : Innovation et R&D",
-        "diagbox_description": "[EN] Nos kits DiagBox® sont des solutions clé-en-main pour des analyses rapides (résultats en 48h) et autonomes.\n\nChaque kit inclut le matériel de prélèvement adapté, le transport et l'analyse en laboratoire. \n\nFaciles à stocker et à utiliser, ils sont idéaux pour le contrôle qualité régulier, le suivi ou la confirmation rapide d'une suspicion (ex: pathogènes gazon, qualité de l'air intérieur, nuisibles).",
-        "diagbox_title": "[EN] DiagBox® : Simplicité et Rapidité",
-        "intro": "[EN] Découvrez comment IAGE répond à vos besoins spécifiques et vous aide dans vos prises de décision opérationnelles grâce à une gamme complète d'analyses, de services et de produits",
-        "local_labs_description": "[EN] Pour des besoins récurrents, des volumes importants ou une nécessité de résultats ultra-rapides, nous pouvons étudier la mise en place de laboratoires d'analyse locaux, spécialisés et dédiés à votre activité. Cette solution offre une autonomie et une réactivité maximales, avec notre support pour l'installation, la formation et le suivi qualité.",
-        "local_labs_title": "[EN] Laboratoires locaux spécialisés et dédiés",
-        "mobile_viz_description": "[EN] Description à compléter...",
-        "mobile_viz_title": "[EN] Outils de représentation des résultats en mobilité",
-        "modeling_description": "[EN] Description à compléter...",
-        "modeling_title": "[EN] Modélisations et anticipations",
-        "sampling_advice_description": "[EN] Description à compléter...",
-        "sampling_advice_title": "[EN] Conseil et solutions pour faciliter les prélèvements",
-        "sampling_description": "[EN] La qualité de l'analyse commence par un prélèvement pertinent. Nous fournissons ou recommandons les outils et process de prélèvement les mieux adaptés à votre matrice et à vos objectifs.\n\nEn particulier pour les applications qui utilisent des matrices eaux dans des milieux dynamiques (réseaux d'eaux usées sous circulation, sorties de bâtiments, cours d'eau, mer,...), nous avons développé des préleveurs automatiques  adaptés aux prélèvements en continu d'eaux dans ces contextes difficiles, et des dispositifs spécifiques pour garantir l'intégrité de vos échantillons.",
-        "sampling_title": "[EN] Outils de prélèvement adaptés",
-        "specific_description": "[EN] Vos besoins sont uniques ? Nous pouvons combiner plusieurs méthodes d'analyses catalogue ou adapter nos protocoles pour répondre précisément à vos problématiques.\n\nLa combinaison de méthodes nécessite une étape de validation technique impliquant des analyses supplémentaires (réplicas). La tarification est donc établie sur mesure, prenant en compte le type d'échantillon, le résultat attendu, les méthodes unitaires utilisées et les analyses de validation nécessaires.",
-        "specific_title": "[EN] Combinaisons spécifiques : Flexibilité sur mesure",
-        "thresholds_description": "[EN] Description à compléter...",
-        "thresholds_title": "[EN] Définitions de seuils pour faciliter les prises de décision",
-        "title": "[EN] Nos Solutions et Services Analytiques"
+        "back_to_sectors_link_text": "See our areas of activity",
+        "back_to_sectors_title": "Explore our areas of application",
+        "catalog_description": "We offer a wide range of standardized, validated, and optimized analyses for different types of matrices (water, soil, air, surfaces, etc.). These analyses cover the detection and quantification of numerous microorganisms (viruses, bacteria, fungi) and specific parameters\n\nAll our microbiology measurements – DNA or RNA quantification – are carried out using digital PCR and preparation processes developed and optimized by IAGE. This guarantees their accuracy, sensitivity, and repeatability. IAGE is currently the only laboratory with COFRAC accreditation for waste water analysis.\n\nConsult our catalog to find the analysis adapted to your needs.",
+        "catalog_title": "Catalog Analyses: Accuracy and Reliability",
+        "category1_title": "Precision analyses",
+        "category2_title": "Diagbox® and Services for decision support",
+        "category3_title": "Dedicated equipment and laboratories",
+        "development_description": "Faced with emerging challenges (viruses, bacteria), to integrate a specific analysis into a research project or for a POC (Proof Of Concept) responding to a call for tenders, IAGE is committed to the development and validation of new analysis methods.\n\nOur process begins with a feasibility study (bibliographic study, design, matrix, expected effectiveness criteria, human resources). The price offer, validated by our scientific, research, and sales departments, reflects this R&D work (expert time, consumables). Integrating existing analysis can optimise costs.\n\nIt is a partnership approach to innovate together.",
+        "development_title": "Development of new methods: Innovation and R&D",
+        "diagbox_description": "Our DiagBox® kits are turnkey solutions for rapid (results within 48 hours) and autonomous analyses.\n\nEach kit includes the appropriate sampling equipment, transport and laboratory analysis.\n\nEasy to store and use, they are ideal for regular quality control, monitoring or rapid confirmation of a suspicion (e.g. lawn pathogens, indoor air quality, pests).",
+        "diagbox_title": "DiagBox®: Simplicity and Speed",
+        "intro": "Discover how IAGE meets your specific needs and supports your operational decision-making through a complete range of analyses, services and products.",
+        "local_labs_description": "For recurring needs, large volumes, or the need for ultra-fast results, we can explore the establishment of local, specialized analysis laboratories dedicated to your business. This solution offers maximum autonomy and responsiveness, with our support for",
+        "local_labs_title": "Specialized and dedicated local laboratories",
+        "mobile_viz_description": "Description to be completed...",
+        "mobile_viz_title": "Tools for representing mobility results",
+        "modeling_description": "Description to be completed...",
+        "modeling_title": "Modeling and anticipations",
+        "sampling_advice_description": "Description to be completed...",
+        "sampling_advice_title": "Advice and solutions to facilitate sampling",
+        "sampling_description": "Quality analysis begins with appropriate sampling. We provide or recommend the sampling tools and processes best suited to your matrix and objectives.\n\nParticularly for applications that use water matrices in dynamic environments (circulating wastewater networks, building outlets, waterways, sea, etc.), we have developed automatic samplers adapted to continuous water sampling in these difficult contexts,",
+        "sampling_title": "Suitable sampling tools",
+        "specific_description": "Are your needs unique? We can combine several catalog analysis methods or adapt our protocols to meet your specific needs.\n\nCombining methods requires a technical validation step involving additional analyses (replicates). Pricing is therefore tailored to the sample type, expected results, unit methods used, and required validation analyses.",
+        "specific_title": "Specific combinations: Tailor-made flexibility",
+        "thresholds_description": "Description to be completed...",
+        "thresholds_title": "Threshold definitions to facilitate decision-making",
+        "title": "Our Analytical Solutions and Services"
       },
-      "title": "[EN] Nos Services"
+      "title": "Our Services"
     },
     "sectors": {
       "common": {
-        "back_button": "[EN] Voir tous les domaines",
+        "back_button": "See all areas",
         "cta": {
-          "text": "[EN] To learn more about our DIAGBOX® or discuss with our team contact us.",
-          "button": "[EN] Contact an expert"
+          "text": "To learn more about our DIAGBOX® or discuss with our team contact us.",
+          "button": "Contact an expert"
         }
       },
       "page": {
         "10": {
           "catalog": {
-            "description": "[EN] Check our catalog of analyses for the main cemetery lawn pathogens. We can combine analyses for a complete profile or search for specific pathogens on request.",
-            "title": "[EN] Catalog Analyses and Specific Combinations"
+            "description": "Check our catalog of analyses for the main cemetery lawn pathogens. We can combine analyses for a complete profile or search for specific pathogens on request.",
+            "title": "[Catalog Analyses and Specific Combinations"
           },
-          "catchphrase": "[EN] In charge of cemetery lawn maintenance, you must ensure respectful quality while controlling your maintenance costs.",
+          "catchphrase": "In charge of cemetery lawn maintenance, you must ensure respectful quality while controlling your maintenance costs.",
           "cta": {
-            "diagbox": "[EN] Discover DiagBox® Cemetery"
+            "diagbox": "Discover DiagBox® Cemetery"
           },
           "development": {
-            "description": "[EN] In collaboration with cemetery managers and industry experts, we develop methods adapted to the specific constraints of these sensitive spaces.",
-            "title": "[EN] Development of New Methods"
+            "description": "In collaboration with cemetery managers and industry experts, we develop methods adapted to the specific constraints of these sensitive spaces.",
+            "title": "Development of New Methods"
           },
           "diagbox": {
-            "description": "[EN] The turnkey kit to easily sample turf, roots, or substrate and obtain a precise diagnosis of present pathogens within 48 hours. Optimize the maintenance of your cemetery lawns.",
-            "title": "[EN] DiagBox® Cemetery"
+            "description": "The turnkey kit to easily sample turf, roots, or substrate and obtain a precise diagnosis of present pathogens within 48 hours. Optimize the maintenance of your cemetery lawns.",
+            "title": "DiagBox® Cemetery"
           },
-          "intro": "[EN] IAGE helps maintain your cemetery lawn quality thanks to:\n    - Early detection of pathogens affecting lawns\n    - Recommendations adapted to cemetery constraints\n    - Optimization of maintenance interventions\n    - Respect for the premises and environmental standards",
+          "intro": "IAGE helps maintain your cemetery lawn quality thanks to:\n    - Early detection of pathogens affecting lawns\n    - Recommendations adapted to cemetery constraints\n    - Optimization of maintenance interventions\n    - Respect for the premises and environmental standards",
           "services": {
-            "title": "[EN] Questions about your cemetery lawn maintenance? Here are our solutions:"
+            "title": "Questions about your cemetery lawn maintenance? Here are our solutions:"
           }
         },
         "01": {
           "catalog": {
-            "description": "[EN] Choisissez parmi nos analyses standardisées (ex: SARS-CoV-2 dans les eaux usées) ou combinez plusieurs méthodes pour un suivi sur mesure de pathogènes spécifiques à vos problématiques.",
-            "title": "[EN] Analyses Catalogue et Combinaisons Spécifiques"
+            "description": "Choose from our standardized analyses (e.g.",
+            "title": "Catalog Analyses and Specific Combinations"
           },
-          "catchphrase": "[EN] Vous portez une responsabilité dans le suivi de la santé de la population locale, ou vous souhaitez contribuer à la prévention des épidémies :",
+          "catchphrase": "[EN] Vous portez une responsabilité dans le suivi de la santé de la population locale",
           "cta": {
-            "diagbox": "[EN] Découvrir DiagBox® WES"
+            "diagbox": "Discover DiagBox® WES"
           },
           "development": {
-            "description": "[EN] Nous innovons avec vous pour développer et valider des méthodes d'analyse pour de nouvelles cibles virales ou bactériennes, répondant aux enjeux émergents de santé publique.",
-            "title": "[EN] Développement de Nouvelles Méthodes"
+            "description": "[EN] Nous innovons avec vous pour développer et valider des méthodes d'analyse pour de nouvelles cibles virales ou bactériennes",
+            "title": "Development of New Methods"
           },
           "diagbox": {
-            "description": "[EN] Le kit clé-en-main pour une détection et quantification rapide (48h) et autonome des pathogènes (virus, bactéries) dans vos échantillons d'eau. Simple, efficace, et stockable sans contrainte.",
-            "title": "[EN] DiagBox® WES"
+            "description": " efficace",
+            "title": "DiagBox® WES"
           },
-          "intro": "[EN] IAGE vous accompagne avec des solutions d'analyse génomique précises et rapides pour l'épidémiosurveillance environnementale, notamment via l'analyse des eaux usées (Wastewater Based Epidemiology - WBE).",
+          "intro": "**IAGE supports you with precise and rapid genomic analysis solutions for environmental epidemiological surveillance, particularly through :** \n   - wastewater analysis (Wastewater Based Epidemiology – WBE).\n   - analysis in **other envrironmental matrices**, such as ponds for detection of arboviruses",
           "sampling": {
-            "description": "[EN] Nous proposons également des solutions pour le prélèvement en continu, particulièrement adaptées au suivi dynamique des matrices aqueuses.",
-            "title": "[EN] Prélèvement en continu"
+            "description": "[EN] Nous proposons également des solutions pour le prélèvement en continu",
+            "title": "Continuous sampling"
           },
           "services": {
-            "title": "[EN] Nos solutions adaptées à l'épidémiosurveillance :"
+            "title": "Our solutions adapted to epidemiological surveillance:"
           }
         },
         "02": {
           "catalog": {
-            "description": "[EN] Choisissez parmi nos analyses standardisées (ex: recherche de légionelles, staphylocoques dorés) ou combinez plusieurs méthodes pour un suivi sur mesure des points critiques de votre établissement.",
-            "title": "[EN] Analyses Catalogue et Combinaisons Spécifiques"
+            "description": "[EN] Choisissez parmi nos analyses standardisées (ex: recherche de légionelles",
+            "title": "Catalog Analyses and Specific Combinations"
           },
-          "catchphrase": "[EN] Vous êtes responsable de l'hygiène dans un établissement de santé ou une société de nettoyage spécialisée :",
+          "catchphrase": "You are responsible for hygiene in a healthcare establishment or a specialized cleaning company:",
           "cta": {
-            "diagbox": "[EN] Découvrir DiagBox® Hygiène"
+            "diagbox": "Discover DiagBox® Hygiene"
           },
           "development": {
-            "description": "[EN] Nous innovons avec vous pour développer et valider des méthodes d'analyse pour de nouvelles cibles pertinentes en milieu hospitalier (pathogènes émergents, biofilms) ou pour évaluer l'efficacité de nouveaux protocoles/produits de désinfection.",
-            "title": "[EN] Développement de Nouvelles Méthodes"
+            "description": "We innovate with you to develop and validate analysis methods for new relevant targets in hospital settings (emerging pathogens, biofilms) or to evaluate the effectiveness of new disinfection protocols/products.",
+            "title": "Development of New Methods"
           },
           "diagbox": {
-            "description": "[EN] Le kit clé-en-main pour une détection et quantification rapide (48h) et autonome de marqueurs microbiens (bactéries, moisissures) sur surfaces ou dans l'air après désinfection. Simple, efficace, et idéal pour vos contrôles qualité réguliers.",
-            "title": "[EN] DiagBox® Hygiène Hospitalière"
+            "description": "The turnkey kit for rapid (48h) and autonomous detection and quantification of microbial markers (bacteria, mold) on surfaces or in the air after disinfection. Simple, effective, and ideal for your regular quality controls.",
+            "title": "DiagBox® Hospital Hygiene"
           },
-          "intro": "[EN] IAGE vous accompagne avec des solutions d'analyse pour le contrôle de la désinfection, la validation de protocoles et la surveillance environnementale en milieu hospitalier, garantissant la sécurité des patients et du personnel.",
+          "intro": "**IAGE supports you with hospital testing solutions that ensure patient and staff safety:**\n   - disinfection control, protocol validation, and environmental monitoring\n   - comprehensive detection of antibacterial resistance",
           "services": {
-            "title": "[EN] Nos solutions adaptées à l'hygiène hospitalière :"
+            "title": "Our solutions adapted to hospital hygiene:"
           }
         },
         "03": {
           "catalog": {
-            "description": "[EN] Explorez nos analyses pour la qualité de l'air intérieur (QAI), l'identification d'allergènes ou la détection spécifique de nuisibles. Des combinaisons peuvent être étudiées pour des diagnostics complets.",
-            "title": "[EN] Analyses Catalogue et Combinaisons Spécifiques"
+            "description": "Explore our testing for indoor air quality (IAQ), allergen identification, or specific pest detection. Combinations can be considered for comprehensive diagnostics.",
+            "title": "Catalog Analyses and Specific Combinations"
           },
-          "catchphrase": "[EN] Vous gérez la qualité de l'air intérieur, l'entretien de locaux ou vous luttez contre les nuisibles (PCO) :",
+          "catchphrase": "You manage indoor air quality, premises maintenance or you fight against pests (PCO):",
           "cta": {
-            "diagbox": "[EN] Découvrir DiagBox® Intérieur"
+            "diagbox": "Discover DiagBox® Interior"
           },
           "development": {
-            "description": "[EN] Besoin d'une méthode spécifique pour un nouveau type de contaminant intérieur ou un nuisible particulier ? Nous développons des solutions d'analyse sur mesure en partenariat avec les formulateurs et les professionnels de l'hygiène.",
-            "title": "[EN] Développement de Nouvelles Méthodes"
+            "description": "Need a specific method for a new type of indoor contaminant or a particular pest? We develop customized analysis solutions in partnership with formulators and hygiene professionals.",
+            "title": "Development of New Methods"
           },
           "diagbox": {
-            "description": "[EN] Nos kits clé-en-main permettent une détection rapide (48h) et autonome de moisissures dans l'air ou de traces ADN de nuisibles (punaises de lit, rongeurs). Idéal pour un diagnostic rapide et ciblé.",
-            "title": "[EN] DiagBox® Qualité Intérieure & Nuisibles"
+            "description": "Our turnkey kits allow for rapid (48 hours) and autonomies detection of mold in the air or traces of pest DNA (bedbugs, rodents). Ideal for rapid and targeted diagnosis.",
+            "title": "DiagBox® Indoor Quality & Pests"
           },
-          "intro": "[EN] IAGE offre des outils d'analyse pour évaluer la qualité de l'air (moisissures), détecter la présence de nuisibles (punaises de lit, rongeurs) et valider l'efficacité des produits d'entretien.",
+          "intro": "**IAGE offers analysis tools to assess air quality and validate the effectiveness of cleaning products :**\n   - detection of mold\n   - detection of presence of pests (bedbugs, rodents)",
           "services": {
-            "title": "[EN] Nos solutions pour l'hygiène intérieure et publique :"
+            "title": "Our solutions for indoor and public hygiene:"
           }
         },
         "04": {
           "catalog": {
-            "description": "[EN] Consultez notre catalogue d'analyses pour les principaux pathogènes du gazon. Nous pouvons combiner des analyses pour un profil complet ou rechercher des pathogènes spécifiques sur demande.",
-            "title": "[EN] Analyses Catalogue et Combinaisons Spécifiques"
+            "description": "Check out our catalog of tests for major turf pathogens. We can combine tests for a complete profile or search for specific pathogens upon request.",
+            "title": "Catalog Analyses and Specific Combinations"
           },
-          "catchphrase": "[EN] En charge de l'entretien de gazons sportifs (clubs, collectivités, distributeurs), vous faites face à à la diffusion de la Pyriculariose qui menace vos pelouses, tandis que la loi Labbé supprime l'usage des produits phytosanitaires de synthèse.\nComment répondre à ces nouveaux défis de manière efficace et économique ?",
+          "catchphrase": "In charge of maintaining sports turf (clubs, communities, distributors), you are faced with the spread of Pyriculariosis which threatens your lawns, while the Labbé law eliminates the use of synthetic phytosanitary products.\nHow can we respond to these new challenges effectively and economically?",
           "cta": {
-            "diagbox": "[EN] Découvrir DiagBox® Gazon"
+            "diagbox": "Discover DiagBox® Lawn"
           },
           "development": {
-            "description": "[EN] En collaboration avec les instituts techniques, les distributeurs et les clubs, nous développons de nouvelles méthodes pour détecter des pathogènes émergents ou spécifiques à certaines conditions environnementales.",
-            "title": "[EN] Développement de Nouvelles Méthodes"
+            "description": "In collaboration with technical institutes, distributors and clubs, we are developing new methods to detect emerging pathogens or those specific to certain environmental conditions.",
+            "title": "Development of New Methods"
           },
           "diagbox": {
-            "description": "[EN] Le kit clé-en-main pour prélever facilement gazon, racines ou substrat et obtenir en 48h un diagnostic précis des pathogènes présents. Anticipez les traitements et optimisez la santé de vos terrains.",
-            "title": "[EN] DiagBox® Gazon"
+            "description": "The turnkey kit allows you to easily sample turf, roots, or substrate and obtain an accurate diagnosis of the pathogens present within 48",
+            "title": "DiagBox® Lawn"
           },
-          "intro": "[EN] IAGE aide à préserver la qualité de vos gazons et à réduire vos coûts d'entretien grâce :\n    - à ses services de détection précoce et précise des champignons responsables des maladies du gazon\n    - à ses recommandations et outils de suivis adaptés à votre situation et à vos besoins",
+          "intro": "**IAGE helps preserve the quality of your lawns and reduce your maintenance costs thanks to:**\n   - its services for **early and precise detection** of fungi responsible for lawn diseases\n   - to its **recommendations** and monitoring tools adapted to your situation and your needs",
           "services": {
-            "title": "[EN] Vous vous posez des questions sur la santé de vos gazons, voici nos solutions :"
+            "title": "[EN] Vous vous posez des questions sur la santé de vos gazons"
           },
-          "perspective_text": "[EN] Vous faites face à de nouveaux défis économiques et environnementaux : depuis 2016, **la pyriculariose** élargit sa prolifération en France. Cette maladie du gazon, pour laquelle il n'y a **pas encore de traitement**, peut détruire un terrain en quelques semaines, et peux conduire de ce fait à des remplacements de terrains très coûteux. En parallèle, vis à vis des autres pathogènes, la loi Labbé, adoptée en 2014, **interdit l'usage des produits phytosanitaires de synthèse sur les pelouses sportives naturelles** depuis le 1er janvier, ce qui réduit les produits de traitement disponibles et vous impose de répondre aux risques à travers  de nouvelles pratiques. Comment répondre à ces défis d'une manière économiquement supportable ?\n\nLa clé d'une réponse efficace à ces deux problématiques : la **détection très précoce des pathogènes**, pour permettre des traitements localisés, ou limiter les besoins de remplacement des gazons. Encore faut-il pouvoir non seulement détecter de manière précise et précoce, encore faut-il aussi pouvoir le faire dans tous les compartiments : **les feuilles, les racines, les sols**. A défaut de quoi, si le pathogène a pu s'installer dans le sol, le seul remplacement de la pelouse ne conduira qu'à devoir le refaire de manière répétée !\n\nIAGE, à partir de sa technologie de mesure, de ses propres innovations et en partenariat avec plusieurs partenaires académiques, a mis au point **un ensemble de solutions de détection, d'interprétation et de conseils** pour répondre à tous les cas de figure des exploitants de gazons sportifs. En travaillant sur le terrain avec ses premiers clients, IAGE a construit des **solutions clefs en main**, facilement mises en oeuvre par les exploitants, pour leur permettre de conserver dans la durée un gazon performant dans le plein respect de leurs objectifs environnementaux et économiques.\n\nGrâce à ces études et applications engagées **depuis 2022, IAGE a développé une expertise reconnue** sur l'apparition des pathogènes et maladies du gazon, sur la manière d'évaluer la situation d'un terrain, et sur les solutions les mieux adaptées pour **anticiper les risques**.\n\nQue vous ayez un problème ponctuel, ou que vous souhaitiez mettre en place un suivi en continu de votre gazon, IAGE a une solution pour vous : **explorez nos solutions** ou **contactez-nous pour une analyses spécifique de vos besoins**."
+          "perspective_text": "You are facing new economic and environmental challenges: since 2016, **pyriculariosis** has been spreading in France. This turf disease, for which there is **yet no treatment**, can destroy a pitch in a few weeks, and can therefore lead to very costly pi\n\nThe key to an effective response to these two issues: **very early detection of pathogens**, to enable localized treatments, or limit the need to replace lawns. It is also necessary to be able to not only detect them accurately and early, but also to be a\n\nIAGE, using its measurement technology, its own innovations, and in partnership with several academic partners, has developed a set of detection, interpretation, and advisory solutions to meet all the needs of sports turf operators. Working in the field w\n\nThanks to these studies and applications undertaken **since 2022, IAGE has developed recognized expertise** on the appearance of lawn pathogens and diseases, on how to assess the situation on a pitch, and on the best-suited solutions to **anticipate risks\n\nWhether you have a one-off problem or want to implement continuous monitoring of your lawn, IAGE has a solution for you: **explore our solutions** or **contact us for a specific analysis of your needs**."
         },
         "05": {
           "catalog": {
-            "description": "[EN] Notre catalogue couvre les principaux pathogènes (Esca, Eutypiose, Black Dead Arm) et micro-organismes d'intérêt (Brettanomyces). Des analyses combinées ou sur mesure sont possibles pour vos suivis spécifiques.",
-            "title": "[EN] Analyses Catalogue et Combinaisons Spécifiques"
+            "description": "Our catalog covers the main pathogens (Esca, Eutypa dieback, Black Dead Arm) and microorganisms of interest (Brettanomyces). Combined or customized analyses are available for your specific monitoring needs.",
+            "title": "Catalog Analyses and Specific Combinations"
           },
-          "catchphrase": "[EN] Vous êtes un acteur de la filière vitivinicole (technicien, coopérative, négoce, institut technique) :",
+          "catchphrase": "You are a player in the wine industry (technician, cooperative, trade, technical institute):",
           "cta": {
-            "diagbox": "[EN] Découvrir DiagBox® Vigne & Vin"
+            "diagbox": "Discover DiagBox® Vine & Wine"
           },
           "development": {
-            "description": "[EN] Nous collaborons avec les acteurs de la filière pour développer des méthodes de détection pour de nouveaux pathogènes, des indicateurs de qualité ou des suivis spécifiques liés à des itinéraires techniques innovants.",
-            "title": "[EN] Développement de Nouvelles Méthodes"
+            "description": "We collaborate with industry stakeholders to develop detection methods for new pathogens, quality indicators or specific monitoring linked to innovative technical routes.",
+            "title": "Development of New Methods"
           },
           "diagbox": {
-            "description": "[EN] Des kits clé-en-main pour un diagnostic rapide (48h) des pathogènes de la vigne ou pour le suivi des micro-organismes clés durant la vinification. Prélevez, envoyez, recevez vos résultats.",
-            "title": "[EN] DiagBox® Vigne & Vin"
+            "description": "Turnkey kits for rapid diagnosis (48 hours) of vine pathogens or for monitoring key microorganisms during winemaking. Take samples, send them, and receive your results.",
+            "title": "DiagBox® Vine & Wine"
           },
-          "intro": "[EN] IAGE fournit des outils d'analyse moléculaire pour le suivi sanitaire de la vigne (maladies du bois, mildiou, oïdium) et le contrôle qualité du processus de vinification (levures, bactéries).",
+          "intro": "**IAGE provides molecular analysis tools for :**\n   - monitoring **wineyard** health (wood diseases, mildew, powdery mildew)\n   – quality control of the **winemaking process** (yeasts, bacteria).",
           "services": {
-            "title": "[EN] Nos solutions pour la viticulture et la vinification :"
+            "title": "Our solutions for wineyards and winemaking:"
           }
         },
         "06": {
           "catalog": {
-            "description": "[EN] Consultez nos analyses pour les pathogènes clés de la pomme en verger et en conservation. Des analyses combinées peuvent être réalisées pour un bilan sanitaire complet.",
-            "title": "[EN] Analyses Catalogue et Combinaisons Spécifiques"
+            "description": "Check out our testing for key apple pathogens in the orchard and in storage. Combined testing can be performed for a comprehensive health assessment.",
+            "title": "Catalog Analyses and Specific Combinations"
           },
-          "catchphrase": "[EN] Vous êtes un professionnel de la filière pomme (station de conservation, coopérative, technicien, négoce) :",
+          "catchphrase": "You are a professional in the apple industry (conservation station, cooperative, technician, trade):",
           "cta": {
-            "diagbox": "[EN] Découvrir DiagBox® Arbo Pomme"
+            "diagbox": "Discover DiagBox® Arbo Apple"
           },
           "development": {
-            "description": "[EN] En lien avec les instituts techniques et les organisations professionnelles, nous développons des méthodes pour de nouvelles menaces sanitaires ou pour des suivis spécifiques liés à de nouvelles variétés ou pratiques culturales.",
-            "title": "[EN] Développement de Nouvelles Méthodes"
+            "description": "In conjunction with technical institutes and professional organizations, we develop methods for new health threats or for specific monitoring linked to new varieties or cultivation practices.",
+            "title": "Development of New Methods"
           },
           "diagbox": {
-            "description": "[EN] Le kit clé-en-main pour détecter rapidement (48h) les principaux pathogènes responsables des maladies de conservation (ex: Gloeosporium) ou présents dans le verger. Anticipez les risques et adaptez vos stratégies.",
-            "title": "[EN] DiagBox® Arbo Pomme"
+            "description": "The turnkey kit for rapid detection (within 48 hours) of the main pathogens responsible for storage diseases (e.g.",
+            "title": "DiagBox® Arbo Apple"
           },
-          "intro": "[EN] IAGE propose des analyses pour la détection précoce des maladies de conservation et des pathogènes affectant les vergers de pommiers, afin d'optimiser la qualité et réduire les pertes.",
+          "intro": "**IAGE offers analyses in order to optimize quality and reduce losses, through the early detection of :**\n   - pathogens affecting apple **orchards**,\n   - **storage diseases** in order to optimize quality and reduce losses.",
           "services": {
-            "title": "[EN] Nos solutions pour l'arboriculture (pomme) :"
+            "title": "Our solutions for arboriculture (apple):"
           }
         },
         "07": {
           "catalog": {
-            "description": "[EN] Notre catalogue inclut les analyses réglementaires et de suivi pour les principaux indicateurs et pathogènes. Des combinaisons sur mesure sont possibles pour des plans de surveillance spécifiques.",
-            "title": "[EN] Analyses Catalogue et Combinaisons Spécifiques"
+            "description": "Our catalog includes regulatory and monitoring analyses for key indicators and pathogens. Customized combinations are available for specific monitoring plans.",
+            "title": "Catalog Analyses and Specific Combinations"
           },
-          "catchphrase": "[EN] Vous êtes un acteur de la conchyliculture (ostréiculteur, institut, collectivité) soucieux de la qualité sanitaire :",
+          "catchphrase": "You are a shellfish farming player (oyster farmer, institute, community) concerned about health quality:",
           "cta": {
-            "diagbox": "[EN] Découvrir DiagBox® Conchyliculture"
+            "diagbox": "Discover DiagBox® Shellfish Farming"
           },
           "development": {
-            "description": "[EN] En collaboration avec les instituts et les professionnels, nous développons de nouvelles méthodes pour la détection de pathogènes émergents, de toxines algales ou pour améliorer la rapidité et la sensibilité des analyses.",
-            "title": "[EN] Développement de Nouvelles Méthodes"
+            "description": "In collaboration with institutes and professionals, we are developing new methods for the detection of emerging pathogens, algal toxins or to improve the speed and sensitivity of analyses.",
+            "title": "Development of New Methods"
           },
           "diagbox": {
-            "description": "[EN] Le kit clé-en-main pour une surveillance rapide (48h) et autonome de la qualité de l'eau ou la recherche de pathogènes spécifiques (ex: Norovirus, Vibrio). Simple, fiable et adapté à vos autocontrôles.",
-            "title": "[EN] DiagBox® Conchyliculture"
+            "description": "The turnkey kit for rapid (48h) and autonomous monitoring of water quality or the search for specific pathogens (e.g., Norovirus, Vibrio). Simple, reliable, and suitable for your self-monitoring.",
+            "title": "DiagBox® Shellfish Farming"
           },
-          "intro": "[EN] IAGE offre des solutions d'analyse rapide pour le contrôle de la qualité microbiologique des eaux conchylicoles et la détection de pathogènes humains (virus, bactéries) pouvant affecter les coquillages.",
+          "intro": "**IAGE offers rapid analysis solutions for monitoring :**\n   - the microbiological quality of shellfish waters\n   - detecting **human pathogens** (viruses, bacteria) that can affect shellfish.",
           "sampling": {
-            "description": "[EN] Nous proposons également des solutions pour le prélèvement en continu des eaux, permettant un suivi dynamique et réactif de la qualité microbiologique.",
-            "title": "[EN] Prélèvement en continu"
+            "description": "[EN] Nous proposons également des solutions pour le prélèvement en continu des eaux",
+            "title": "Continuous sampling"
           },
           "services": {
-            "title": "[EN] Nos solutions pour la conchyliculture :"
+            "title": "Our solutions for shellfish farming:"
           }
         },
         "08": {
           "catalog": {
-            "description": "[EN] Consultez notre catalogue pour les analyses des pathogènes aviaires majeurs. Nous proposons des combinaisons pour des suivis multi-pathogènes ou des analyses spécifiques sur demande.",
-            "title": "[EN] Analyses Catalogue et Combinaisons Spécifiques"
+            "description": "Consult our catalog for analyses of major avian pathogens. We offer combinations for multi-pathogen monitoring or specific analyses upon request.",
+            "title": "Catalog Analyses and Specific Combinations"
           },
-          "catchphrase": "[EN] Vous êtes un acteur de la filière avicole (industrie agroalimentaire, coopérative, institut) visant la maîtrise sanitaire :",
+          "catchphrase": "You are a player in the poultry sector (food industry, cooperative, institute) aiming for health control:",
           "cta": {
-            "diagbox": "[EN] Découvrir DiagBox® Aviculture"
+            "diagbox": "Discover DiagBox® poultry sector"
           },
           "development": {
-            "description": "[EN] Nous travaillons avec les instituts de recherche et les acteurs de la filière pour développer des méthodes innovantes pour de nouveaux pathogènes, le typage rapide de souches ou l'évaluation de stratégies de contrôle.",
-            "title": "[EN] Développement de Nouvelles Méthodes"
+            "description": "We work with research institutes and industry stakeholders to develop innovative methods for new pathogens, rapid strain typing and the evaluation of control strategies.",
+            "title": "Development of New Methods"
           },
           "diagbox": {
-            "description": "[EN] Le kit clé-en-main pour une détection rapide (48h) et fiable des pathogènes cibles directement à partir de prélèvements environnementaux (chiffonnettes, poussières) ou d'échantillons biologiques. Un outil essentiel pour vos plans de contrôle.",
-            "title": "[EN] DiagBox® Aviculture"
+            "description": "The turnkey kit for rapid (48 hours) and reliable detection of target pathogens directly from environmental samples (wipes, dust) or biological samples. An essential tool for your control plans.",
+            "title": "DiagBox® Poultry"
           },
-          "intro": "[EN] IAGE fournit des outils d'analyse moléculaire pour la détection et le suivi des principaux pathogènes aviaires (Salmonella, Campylobacter, virus Influenza) dans les élevages et l'environnement.",
+          "intro": "**IAGE provides molecular analysis tools for :**\n   - the detection and monitoring of major avian pathogens (Salmonella, Campylobacter, Influenza virus) in farms and the environment.",
           "services": {
-            "title": "[EN] Nos solutions pour la filière avicole :"
+            "title": "Our solutions for the poultry industry:"
           }
         },
         "09": {
           "catalog": {
-            "description": "[EN] Check our catalog of analyses for the main golf course turf pathogens. We can combine analyses for a complete profile or search for specific pathogens on request.",
-            "title": "[EN] Catalog Analyses and Specific Combinations"
+            "description": "Check our catalog of analyses for the main golf course turf pathogens. We can combine analyses for a complete profile or search for specific pathogens on request.",
+            "title": "Catalog Analyses and Specific Combinations"
           },
-          "catchphrase": "[EN] In charge of golf course maintenance, you must maintain optimal quality while complying with new environmental regulations.",
+          "catchphrase": "In charge of golf course maintenance, you must maintain optimal quality while complying with new environmental regulations.",
           "cta": {
-            "diagbox": "[EN] Discover DiagBox® Golf"
+            "diagbox": "Discover DiagBox® Golf"
           },
           "development": {
-            "description": "[EN] In collaboration with golf clubs and industry experts, we develop new methods to detect emerging pathogens specific to golf course conditions.",
-            "title": "[EN] Development of New Methods"
+            "description": "In collaboration with golf clubs and industry experts, we develop new methods to detect emerging pathogens specific to golf course conditions.",
+            "title": "Development of New Methods"
           },
           "diagbox": {
-            "description": "[EN] The turnkey kit to easily sample turf, roots, or substrate and obtain a precise diagnosis of present pathogens within 48 hours. Anticipate treatments and optimize the health of your greens and fairways.",
-            "title": "[EN] DiagBox® Golf"
+            "description": "The turnkey kit to easily sample turf, roots, or substrate and obtain a precise diagnosis of present pathogens within 48 hours. Anticipate treatments and optimize the health of your greens and fairways.",
+            "title": "DiagBox® Golf"
           },
-          "intro": "[EN] IAGE helps preserve your golf course turf quality and reduce maintenance costs thanks to:\n    - Early detection services and precise identification of fungi responsible for turf diseases\n    - Recommendations and monitoring tools adapted to golf course specificities\n    - Rapid diagnosis of pathogens for targeted intervention\n    - Optimization of your preventive and curative treatments",
+          "intro": "**IAGE helps preserve your golf course turf quality and reduce maintenance costs thanks to:**\n    - **Early detection** services and precise identification of fungi responsible for turf diseases\n    - **Recommendations** and monitoring tools adapted to golf course specificities\n    - **Rapid diagnosis** of pathogens for targeted intervention\n    - **Optimization** of your preventive and curative treatments",
           "services": {
-            "title": "[EN] Questions about your golf course turf health? Here are our solutions:"
+            "title": "Questions about your golf course turf health? Here are our solutions:"
           }
         }
       },
-      "title": "[EN] Nos domaines d'activité"
+      "title": "Our areas of activity"
     },
     "diagbox": {
       "gazon": {
-        "button_hide_all_kits": "[EN] Masquer tous les groupes de kits",
-        "button_show_all_kits": "[EN] Afficher tous les groupes de kits",
+        "button_hide_all_kits": "Hide all kit groups",
+        "button_show_all_kits": "Show all kit groups",
         "cta": {
-          "button": "[EN] Contacter un expert",
-          "text": "[EN] Pour en savoir plus sur nos DIAGBOX® ou échanger avec notre équipe, contactez-nous."
+          "button": "Contact an expert",
+          "text": "To learn more about our DIAGBOX® or to speak with our team, contact us."
         },
         "dechet": {
-          "catchphrase": "[EN] Des kits pour détecter les pathogènes là où ils se cachent, avant qu'ils n'affectent votre pelouse.",
-          "description": "[EN] Les DIAGBOX® Déchets de tonte sont des kits de prélèvement simples d'utilisation conçus pour détecter et quantifier la présence des pathogènes ciblés. Les résultats obtenus vous permettent de mettre en place des solutions de protection et un suivi de leur efficacité. Grâce à ces données précises, vous pouvez intervenir avant même l'apparition des symptômes pour empêcher que des maladies ne s'installent sur votre gazon. Ces DIAGBOX® offrent une solution efficace pour instaurer un suivi régulier.",
+          "catchphrase": "Kits to detect pathogens where they hide, before they affect your lawn.",
+          "description": "DIAGBOX® Grass Clippings are easy-to-use sampling kits designed to detect and quantify the presence of targeted pathogens. The results obtained allow you to implement protective solutions and monitor their effectiveness. Thanks to this precise data, you c",
           "kits": {
-            "title": "[EN] Kits disponibles (Prélèvement Déchets de Tonte)"
+            "title": "Kits available (Grass cutting collection)"
           },
           "why_use": {
-            "point1": "[EN] Caractériser et quantifier votre risque : Identifier les pathogènes avant symptômes, évaluer le risque.",
-            "point2": "[EN] Évaluation de l'efficacité des traitements sur la durée : Suivre l'évolution post-traitement, ajuster la stratégie.",
-            "title": "[EN] Pourquoi utiliser la DIAGBOX® Déchets de tonte ?"
+            "point1": "Characterize and quantify your risk: Identify pathogens before symptoms, assess risk.",
+            "point2": "Evaluation of the effectiveness of treatments over time: Monitor post-treatment progress, adjust the strategy.",
+            "title": "Why use the DIAGBOX® Grass clippings?"
           }
         },
         "group_title": {
-          "q1_sub1": "[EN] Kits Diagbox : Contrôle Pyriculariose (précoce)",
-          "q1_sub2": "[EN] Kits Diagbox : Contrôle Pathogènes Courants (précoce)",
-          "q1_sub3": "[EN] Kits Diagbox : Contrôle Tous Pathogènes Habituels (précoce)",
-          "q1_sub4": "[EN] Kits Diagbox : Contrôle des Racines",
-          "q1_sub5": "[EN] Kits Diagbox : Contrôle du Sol",
-          "q2_sub1": "[EN] Kits Diagbox : Analyse sur Gazon Symptomatique",
-          "q3": "[EN] Kits Diagbox : Analyse Avant Nouveau Plaquage",
-          "q4_combined": "[EN] Kits combinés"
+          "q1_sub1": "Diagbox Kits: Pyriculariosis Control (early)",
+          "q1_sub2": "Diagbox Kits: Common Pathogen Control (early)",
+          "q1_sub3": "Diagbox Kits: Control of All Common Pathogens (early)",
+          "q1_sub4": "Diagbox Kits: Root Control",
+          "q1_sub5": "Diagbox Kits: Ground Control",
+          "q2_sub1": "Diagbox Kits: Symptomatic Lawn Analysis",
+          "q3": "Diagbox Kits: Analysis Before New Plating",
+          "q4_combined": "Combination kits"
         },
         "ideal_for": {
-          "text": "[EN] Terrain de football – Terrain de rugby –  Hippodrome – Terrain de cricket – Terrain de polo – Stade multisports",
-          "title": "[EN] Idéal pour"
+          "text": "Football pitch – Rugby pitch – Racecourse – Cricket pitch – Polo pitch – Multi-sports stadium",
+          "title": "Ideal for"
         },
         "kit_content": {
-          "text": "[EN] Matériel de prélèvement\nInstructions d'utilisation simples\nEmballage sécurisé avec transport inclus\nAnalyse dPCR en laboratoire",
-          "title": "[EN] Contenu d'un kit type"
+          "text": "Sampling equipment\nSimple operating instructions\nSecure packaging with transport included\nPCR analysis in the laboratory",
+          "title": "Contents of a standard kit"
         },
         "kits": {
           "PF000011": {
-            "name": "[EN] Pyriculariose - Lingette",
-            "targets": "[EN] Pyricularia Oryzae - Pyriculariose"
+            "name": "Pyriculariosis",
+            "targets": "Pyricularia Oryzae - Pyriculariosis"
           },
           "PF000013": {
-            "name": "[EN] Pathogènes du gazon - Estival - Lingette",
-            "targets": "[EN] Pyricularia oryzae, Athelia rolfsii, Clarireedia jacksonii/homoeocarpa, Complexe helminthosporiose, 9 souches Pythium Blight*"
+            "name": "Lawn Pathogens – Summer",
+            "targets": "Pyricularia oryzae, Athelia rolfsii, Clarireedia jacksonii/homoeocarpa, Helminthosporiosis complex, 9 strains Pythium Blight*"
           },
           "PF000015": {
-            "name": "[EN] Pathogène du gazon - Diagnostic - Lingette",
-            "targets": "[EN] Idem PF000013 + Colletotrichum graminicola, Microdochium nivale, Leptosphaerulina trifolii, Rhizoctonia solani"
+            "name": "Lawn Pathogen – Diagnosis",
+            "targets": "Same as PF000013 + Colletotrichum graminicola, Microdochium nivale, Leptosphaerulina trifolii, Rhizoctonia solani"
           },
           "PF000016": {
-            "name": "[EN] Pyriculariose - Déchets de tonte",
-            "targets": "[EN] Pyricularia Oryzae - Pyriculariose"
+            "name": "Pyriculariosis",
+            "targets": "Pyricularia Oryzae - Pyriculariosis"
           },
           "PF000018": {
-            "name": "[EN] Pathogènes du gazon - Estival - Déchets de tonte (#1)",
-            "targets": "[EN] Pyricularia oryzae, Athelia rolfsii, Clarireedia jacksonii/homoeocarpa, Complexe helminthosporiose, 9 souches Pythium Blight*"
+            "name": "Lawn Pathogens – Summer",
+            "targets": "Pyricularia oryzae, Athelia rolfsii, Clarireedia jacksonii/homoeocarpa, Helminthosporiosis complex, 9 strains Pythium Blight*"
           },
           "PF000019": {
-            "name": "[EN] Pathogènes du gazon - Hivernal - Déchets de tonte (#2)",
-            "targets": "[EN] Clarireedia jacksonii/homoeocarpa, Complexe helminthosporiose, Colletotrichum graminicola, Microdochium nivale, 9 souches Pythium Blight*"
+            "name": "Lawn Pathogens – Winter",
+            "targets": "Clarireedia jacksonii/homoeocarpa, Helminthosporiosis complex, Colletotrichum graminicola, Microdochium nivale, 9 strains Pythium Blight*"
           },
           "PF000020": {
-            "name": "[EN] Pathogènes du gazon - Diagnostic - Déchets de tonte",
-            "targets": "[EN] Pyricularia oryzae, Athelia rolfsii, Clarireedia jacksonii/homoeocarpa, Complexe helminthosporiose, Colletotrichum graminicola, Microdochium nivale, Leptosphaerulina trifolii, Rhizoctonia solani, 9 souches Pythium Blight*"
+            "name": "Lawn Pathogens – Diagnosis",
+            "targets": "Pyricularia oryzae, Athelia rolfsii, Clarireedia jacksonii/homoeocarpa, Helminthosporiosis complex, Colletotrichum graminicola, Microdochium nivale, Leptosphaerulina trifolii, Rhizoctonia solani, 9 strains Pythium Blight*"
           },
           "PF000033": {
-            "name": "[EN] Pathogènes du gazon - Estival - Caractérisation",
-            "targets": "[EN] Pyricularia oryzae, Athelia rolfsii, Clarireedia jacksonii/homoeocarpa, Complexe helminthosporiose, 9 souches Pythium Blight*"
+            "name": "Lawn pathogens – Summer",
+            "targets": "Pyricularia oryzae, Athelia rolfsii, Clarireedia jacksonii/homoeocarpa, Helminthosporiosis complex, 9 strains Pythium Blight*"
           },
           "PF000035": {
-            "name": "[EN] Pathogènes du gazon - Diagnostic - Caractérisation",
-            "targets": "[EN] Idem PF000033 + Colletotrichum graminicola, Microdochium nivale, Leptosphaerulina trifolii, Rhizoctonia solani"
+            "name": "Lawn pathogens – Diagnosis",
+            "targets": "Same as PF000033 + Colletotrichum graminicola, Microdochium nivale, Leptosphaerulina trifolii, Rhizoctonia solani"
           },
           "PF000047": {
-            "name": "[EN] Pathogènes du gazon - Diagnostic - Substrat",
-            "targets": "[EN] Pyricularia oryzae, Athelia rolfsii, Clarireedia jacksonii/homoeocarpa, Complexe helminthosporiose, Colletotrichum graminicola, Microdochium nivale, Leptosphaerulina trifolii, Rhizoctonia solani, 9 souches Pythium Blight*"
+            "name": "Lawn Pathogens – Diagnosis",
+            "targets": "Pyricularia oryzae, Athelia rolfsii, Clarireedia jacksonii/homoeocarpa, Helminthosporiosis complex, Colletotrichum graminicola, Microdochium nivale, Leptosphaerulina trifolii, Rhizoctonia solani, 9 strains Pythium Blight*"
           },
           "PF000048": {
-            "name": "[EN] Pathogènes du gazon - Diagnostic - Racine",
-            "targets": "[EN] Pyricularia oryzae, Athelia rolfsii, Clarireedia jacksonii/homoeocarpa, Complexe helminthosporiose, Colletotrichum graminicola, Microdochium nivale, Leptosphaerulina trifolii, Rhizoctonia solani, 9 souches Pythium Blight*"
+            "name": "Lawn Pathogens – Diagnosis",
+            "targets": "Pyricularia oryzae, Athelia rolfsii, Clarireedia jacksonii/homoeocarpa, Helminthosporiosis complex, Colletotrichum graminicola, Microdochium nivale, Leptosphaerulina trifolii, Rhizoctonia solani, 9 strains Pythium Blight*"
           },
           "PF000049": {
-            "name": "[EN] Pathogènes du gazon - Racine + Gazon",
-            "targets": "[EN] Combine les cibles des kits PF000020 (Déchets Tonte - Diagnostic) et PF000048 (Racine - Diagnostic)"
+            "name": "Lawn Pathogens",
+            "targets": "Combines the targets of kits PF000020 (Grassing Waste - Diagnostic) and PF000048 (Root - Diagnostic)"
           },
           "PF000050": {
-            "name": "[EN] Pathogènes du gazon – Etat global ou Accompagnement plaquage",
-            "targets": "[EN] Combine les cibles des kits PF000020 (Déchets Tonte - Diagnostic), PF000047 (Substrat - Diagnostic) et PF000048 (Racine - Diagnostic)"
+            "name": "Lawn pathogens",
+            "targets": "Combines the targets of kits PF000020 (Clipping Waste - Diagnostic), PF000047 (Substrate - Diagnostic) and PF000048 (Root – Diagnostic)"
           }
         },
         "lingette": {
-          "catchphrase": "[EN] Un kit pensé pour celles et ceux qui veulent agir dès les premiers signes.",
-          "description": "[EN] Les DIAGBOX® Lingette sont des kits de prélèvement simples d'utilisation, conçus pour détecter la présence des pathogènes ciblés. Une seule lingette permet d'obtenir une vue d'ensemble de la zone tondue et de repérer l'apparition précoce des agents pathogènes sur votre pelouse. Vous pouvez ainsi appliquer rapidement les traitements adaptés. Ces DIAGBOX® offrent une solution efficace pour instaurer un suivi régulier.",
+          "catchphrase": "A kit designed for those who want to act at the first signs.",
+          "description": "DIAGBOX® Wipes are easy-to-use sampling kits designed to detect the presence of targeted pathogens. A single wipe provides an overview of the mowed area and helps identify the early appearance of pathogens on your lawn. This allows you to quickly apply ap",
           "kits": {
-            "title": "[EN] Kits disponibles (Prélèvement Lingette)"
+            "title": "Kits available (Wipe Collection)"
           },
           "why_use": {
-            "point1": "[EN] Identifier votre risque : Détecter la pyriculariose dans votre gazon.",
-            "point2": "[EN] Un prélèvement représentatif et rapide à la fin de votre tonte : Facile d'utilisation (passer la lingette sur les lames en quelques minutes), résultats représentifs de l'ensemble de la zone tondue.",
-            "title": "[EN] Pourquoi utiliser la DIAGBOX® Lingette ?"
+            "point1": "Identify your risk: Detect blast in your lawn.",
+            "point2": "A representative and rapid sample at the end of your mowing: Easy to use (pass the wipe over the blades in a few minutes), results representative of the entire mown area.",
+            "title": "Why use the DIAGBOX® Wipe?"
           }
         },
-        "link_to_prices": "[EN] Voir les prix",
+        "link_to_prices": "See prices",
         "plaquage": {
-          "catchphrase": "[EN] Pour éviter les mauvaises surprises… même quand tout semble parfait.",
-          "description": "[EN] Les DIAGBOX® Accompagnement Plaquage sont conçus pour analyser les trois composantes clés de votre future pelouse : le substrat de l'ancienne pelouse, les racines et les parties aériennes des rouleaux de gazon avant plaquage. Vous bénéficiez ainsi d'un état sanitaire complet pour sécuriser votre implantation. Rappel : Combine les kits Sol/Substrat (PF000047), Racine (PF000048) et Déchets de tonte (PF000020).",
+          "catchphrase": "To avoid unpleasant surprises… even when everything seems perfect.",
+          "description": "The DIAGBOX® Soiling Support Kits are designed to analyze the three key components of your future lawn: the substrate of the old lawn, the roots, and the aerial parts of the turf rolls before sowing. This gives you a complete health assessment to secure y",
           "kits": {
-            "title": "[EN] Offre d'accompagnement disponible"
+            "title": "Support offer available"
           },
           "why_use": {
-            "point1": "[EN] Caractériser et quantifier le risque total : Identifier les pathogènes dans substrat, racines ET gazon avant pose.",
-            "point2": "[EN] Évaluation préventive complète : Mesurer l'impact potentiel avant traitement et ajuster.",
-            "point3": "[EN] Analyse du rouleau avant plaquage : Anticiper les risques de détérioration post-pose et sécuriser l'investissement.",
-            "title": "[EN] Pourquoi utiliser la DIAGBOX® Accompagnement Plaquage ?"
+            "point1": "Characterize and quantify the total risk: Identify pathogens in the substrate, roots AND turf before laying.",
+            "point2": "Comprehensive preventive assessment: Measure the potential impact before treatment and adjust.",
+            "point3": "Analysis of the roll before plating: Anticipate the risks of post-installation deterioration and secure the investment.",
+            "title": "Why use DIAGBOX® Plating Support?"
           }
         },
         "prices": {
-          "PF000011": "[EN] 185,00€",
-          "PF000013": "[EN] 430,00€",
-          "PF000015": "[EN] 670,00€",
-          "PF000016": "[EN] 185,00€",
-          "PF000018": "[EN] 430,00€",
-          "PF000019": "[EN] 430,00€ ",
-          "PF000020": "[EN] 670,00€",
-          "PF000033": "[EN] 640,00€",
-          "PF000035": "[EN] 1015,00€",
-          "PF000047": "[EN] 830,00€",
-          "PF000048": "[EN] 1015,00€",
-          "PF000049": "[EN] 1340,00€",
-          "PF000050": "[EN] 2140,00€",
-          "info_link": "[EN] (Cliquez sur une désignation ou un type de kit pour voir sa description)",
-          "title": "[EN] DIAGBOX® Gazon - Liste des prix (Indicatifs HT)",
-          "type_header": "[EN] Type de Kit"
+          "PF000011": "185,00 €",
+          "PF000013": "430,00 €",
+          "PF000015": "670,00 €",
+          "PF000016": "185,00 €",
+          "PF000018": "430,00 €",
+          "PF000019": "430,00 €",
+          "PF000020": "670,00 €",
+          "PF000033": "640,00 €",
+          "PF000035": "1 015,00 €",
+          "PF000047": "830,00 €",
+          "PF000048": "1 015,00 €",
+          "PF000049": "1 340,00 €",
+          "PF000050": "2 140,00 €",
+          "info_link": "(Click on a designation or kit type to see its description)",
+          "title": "DIAGBOX® Lawn - Price list (Excluding VAT)",
+          "type_header": "Kit Type"
         },
         "process": {
-          "title": "[EN] DIAGBOX® : L'analyse de précision, en toute simplicité"
+          "title": "DIAGBOX®: Precision analysis, made simple"
         },
-        "pythium_note": "[EN] *9 souches pathogènes de Pythium Blight : Pythium aphanidermatum, P. arrhenomanes, P. aristosporum, P. torulosum, P. graminicola, P. tardicrescens, P. periilum, P. catenulatum",
-        "pythium_note_prefix": "[EN] * ",
-        "pythium_note_suffix_detail": "[EN] : Pythium aphanidermatum, P. arrhenomanes, P. aristosporum, P. torulosum, P. graminicola, P. tardicrescens, P. periilum, P. catenulatum.",
+        "pythium_note": "*9 pathogenic strains of Pythium Blight: Pythium aphanidermatum, P. arrhenomanes, P. aristosporum, P. torulosum, P. graminicola, P. tardicrescens, P. periilum, P. catenulatum",
+        "pythium_note_prefix": "*",
+        "pythium_note_suffix_detail": ": Pythium aphanidermatum, P. arrhenomanes, P. aristosporum, P. torulosum, P. graminicola, P. tardicrescens, P. periilum, P. catenulatum.",
         "qna_intro": {
-          "q1_sub1_PF000011": "[EN] pour un contrôle rapide sur toute l'étendue du gazon",
-          "q1_sub1_PF000016": "[EN] pour un contrôle ciblé sur des portions du gazon",
-          "q1_sub2_PF000013": "[EN] pour un contrôle rapide sur toute l'étendue du gazon",
-          "q1_sub2_PF000018": "[EN] pour un contrôle ciblé sur des portions du gazon en été",
-          "q1_sub2_PF000019": "[EN] pour un contrôle ciblé sur des portions du gazon en hivers",
-          "q1_sub3_PF000015": "[EN] pour un contrôle rapide sur toute l'étendue du gazon",
-          "q1_sub3_PF000020": "[EN] pour un contrôle ciblé sur des portions du gazon",
-          "q1_sub4_PF000048": "[EN] pour contrôler l'état des racines",
-          "q1_sub5_PF000047": "[EN] pour contrôler l'état du sol",
-          "q2_sub1_PF000033": "[EN] pour analyser la présence des pathogènes d'été sur un gazon symptomatique",
-          "q2_sub1_PF000035": "[EN] pour une analyse à large spectre d'un gazon symptomatique",
-          "q3_PF000050": "[EN] Pour un état de santé des trois compartiments (sol + racines + gazon) et sécuriser un nouveau plaquage",
-          "q4_PF000049": "[EN] <b>Suivi conjoint racines et partie aérienne</b>, pour vérifier efficacement l'effet de traitements et/ou pouvoir réagir au plus tôt aux risques de contamination",
-          "q4_PF000050": "[EN] <b>Accompagnement plaquage</b> : un contrôle complet pour maitriser tous les risques : identifier des pathogènes éventuels dans le substrat avant pose, et réduire les risques d'un apport de pathogènes dans le nouveau plaquage",
-          "reco_PF000015": "[EN] Pour un diagnostic global de tous les pathogènes du gazon (lingette)",
-          "reco_PF000020": "[EN] Pour quantifier précisément le risque principal et les pathogènes secondaires (déchets de tonte)",
-          "reco_PF000011": "[EN] Pour cibler uniquement la pyriculariose (lingette)",
-          "reco_PF000016": "[EN] Pour quantifier la pyriculariose (déchets de tonte)",
-          "reco_PF000018": "[EN] Pour un contrôle ciblé sur des portions du gazon en été",
-          "reco_PF000019": "[EN] Pour un contrôle ciblé sur des portions du gazon en hivers",
-          "reco_PF000047": "[EN] Pour contrôler l'état du sol (substrat)",
-          "reco_PF000048": "[EN] Pour contrôler l'état des racines",
-          "reco_PF000049": "[EN] Pour un suivi conjoint racines et partie aérienne",
-          "reco_PF000050": "[EN] Pour un état de santé des trois compartiments (sol + racines + gazon) ou sécuriser un nouveau plaquage"
+          "q1_sub1_PF000011": "for quick control over the entire lawn area",
+          "q1_sub1_PF000016": "for targeted control on portions of the lawn",
+          "q1_sub2_PF000013": "for quick control over the entire lawn area",
+          "q1_sub2_PF000018": "for targeted control on sections of the lawn in summer",
+          "q1_sub2_PF000019": "for targeted control on sections of the lawn in winter",
+          "q1_sub3_PF000015": "for quick control over the entire lawn area",
+          "q1_sub3_PF000020": "for targeted control on portions of the lawn",
+          "q1_sub4_PF000048": "to check the condition of the roots",
+          "q1_sub5_PF000047": "to check the condition of the soil",
+          "q2_sub1_PF000033": "to analyze the presence of summer pathogens on symptomatic lawns",
+          "q2_sub1_PF000035": "for a broad spectrum analysis of a symptomatic lawn",
+          "q3_PF000050": "For a healthy state of the three compartments (soil + roots + grass) and to secure a new plating",
+          "q4_PF000049": "<b>Joint monitoring of roots and aerial parts</b>, to effectively check the effect of treatments and/or to be able to react as quickly as possible to risks of contamination",
+          "q4_PF000050": "<b>Veneering support</b>: a complete check to control all risks: identify potential pathogens in the substrate before installation, and reduce the risks of introducing pathogens into the new veneer",
+          "reco_PF000015": "For a comprehensive diagnosis of all lawn pathogens (wipe)",
+          "reco_PF000020": "To precisely quantify the main risk and secondary pathogens (grass cuttings)",
+          "reco_PF000011": "To target only pyriculariosis (wipe)",
+          "reco_PF000016": "To quantify pyriculariosis (grass cuttings)",
+          "reco_PF000018": "For targeted control on sections of the lawn in summer",
+          "reco_PF000019": "For targeted control on sections of the lawn in winter",
+          "reco_PF000047": "To check the condition of the soil (substrate)",
+          "reco_PF000048": "To check the condition of the roots",
+          "reco_PF000049": "For joint monitoring of roots and aerial part",
+          "reco_PF000050": "For a health condition of the three compartments (soil + roots + grass) or to secure a new plating"
         },
         "racine": {
-          "catchphrase": "[EN] Pensée pour aller chercher les réponses là où tout commence : dans les racines.",
-          "description": "[EN] Les DIAGBOX® Racine sont conçus pour analyser le système racinaire. Ces analyses permettent d'identifier et de quantifier les pathogènes présents dans les racines avant l'apparition des symptômes visibles sur la partie aérienne. Vous pouvez ainsi évaluer le risque, suivre l'évolution de la pression pathogène et mesurer l'impact des traitements racinaires (biocontrôle, biostimulants).",
+          "catchphrase": "Designed to seek answers where it all begins: in the roots.",
+          "description": "DIAGBOX® Racine are designed to analyze the root system. These analyses allow you to identify and quantify pathogens present in the roots before the appearance of visible symptoms on the aerial part. You can thus assess the risk, monitor the evolution of ",
           "kits": {
-            "title": "[EN] Kits disponibles (Prélèvement Racine)"
+            "title": "Kits available (Root Collection)"
           },
           "why_use": {
-            "point1": "[EN] Caractériser et quantifier votre risque : Détecter les pathogènes dans les racines avant symptômes, évaluer le risque.",
-            "point2": "[EN] Évaluation de l'efficacité des traitements sur la durée : Mesurer l'impact des produits sur les pathogènes racinaires, ajuster la stratégie.",
-            "title": "[EN] Pourquoi utiliser la DIAGBOX® Racine ?"
+            "point1": "Characterize and quantify your risk: Detect pathogens in roots before symptoms, assess the risk.",
+            "point2": "Evaluation of the effectiveness of treatments over time: Measure the impact of products on root pathogens, adjust the strategy.",
+            "title": "Why use DIAGBOX® Root?"
           }
         },
         "racine_gazon": {
-          "catchphrase": "[EN] Parce que gérer le risque, c'est aussi savoir observer au-dessus et en-dessous.",
-          "description": "[EN] Les DIAGBOX® Racine & Gazon sont des kits conçus pour analyser conjointement les racines et les parties aériennes (via déchets de tonte). Cette double approche permet d'évaluer la présence de pathogènes à différents niveaux de la plante. Vous obtenez une vision globale de l'état sanitaire de votre pelouse. Rappel : Cette offre regroupe les kits Racine (PF000048) et Déchets de tonte (PF000020).",
+          "catchphrase": "Because managing risk also means knowing how to look above and below.",
+          "description": "The DIAGBOX® Root & Lawn kits are designed to jointly analyze roots and aerial parts (via grass clippings). This dual approach allows you to assess the presence of pathogens at different levels of the plant. You get a global view of the health of your law",
           "kits": {
-            "title": "[EN] Kit combiné disponible"
+            "title": "Combination kit available"
           },
           "why_use": {
-            "point1": "[EN] Caractériser et quantifier votre risque global : Identifier les pathogènes sur gazon ET racines avant symptômes.",
-            "point2": "[EN] Évaluation complète de l'efficacité des traitements : Suivre l'évolution post-intervention sur les deux compartiments.",
-            "point3": "[EN] Suivi annuel complet : Contrôler l'efficacité des actions (biocontrôle, biostimulation) et surveiller la pression pathogène globale.",
-            "title": "[EN] Pourquoi utiliser la DIAGBOX® Racine + Gazon ?"
+            "point1": "Characterize and quantify your overall risk: Identify pathogens on lawns AND roots before symptoms.",
+            "point2": "Complete evaluation of treatment effectiveness: Monitor post-intervention progress in both compartments.",
+            "point3": "Complete annual monitoring: Check the effectiveness of actions (biocontrol, biostimulation) and monitor overall pathogen pressure.",
+            "title": "Why use the DIAGBOX® Root + Lawn?"
           }
         },
         "sol": {
-          "catchphrase": "[EN] Parce que votre future pelouse mérite un sol sain pour bien démarrer.",
-          "description": "[EN] Les DIAGBOX® Sol/Substrat sont des kits de prélèvement simples d'utilisation conçus pour analyser le sol situé sous le système racinaire de votre gazon. Ces analyses permettent d'identifier et de quantifier les pathogènes encore présents dans le substrat avant le plaquage. Vous anticipez ainsi les risques de contamination de votre future pelouse, et mettez en place des mesures préventives adaptées.",
+          "catchphrase": "Because your future lawn deserves healthy soil to get off to a good start.",
+          "description": "DIAGBOX® Soil/Substrate are easy-to-use sampling kits designed to analyze the soil beneath your lawn's root system. These analyses allow you to identify and quantify pathogens still present in the substrate before planting. This allows you to anticipate t",
           "kits": {
-            "title": "[EN] Kits disponibles (Prélèvement Sol / Substrat)"
+            "title": "Kits available (Soil / Substrate Sampling)"
           },
           "why_use": {
-            "point1": "[EN] Caractériser et quantifier votre risque : Détecter les pathogènes dans le sol avant symptômes.",
-            "point2": "[EN] Diagnostic avant la pose : Vérifier l'absence de pathogènes résiduels avant un nouveau plaquage.",
-            "title": "[EN] Pourquoi utiliser la DIAGBOX® Sol / Substrat ?"
+            "point1": "Characterize and quantify your risk: Detect pathogens in the soil before symptoms appear.",
+            "point2": "Pre-placement diagnosis: Check for residual pathogens before re-plating.",
+            "title": "Why use the DIAGBOX® Soil / Substrate?"
           }
         },
-        "subtitle": "[EN] Des approches complètes pour comprendre et prévenir les risques biologiques sur le gazon",
+        "subtitle": "Comprehensive approaches to understanding and preventing biological risks on turf",
         "sympto": {
-          "catchphrase": "[EN] Pour celles et ceux qui veulent comprendre l'origine des symptômes, pas seulement les masquer.",
-          "description": "[EN] Les DIAGBOX® Gazon symptomatique sont des kits de prélèvement simples d'utilisation conçus pour prélever des échantillons de gazon présentant des symptômes. Grâce aux analyses associées, vous obtenez des résultats précis qui permettent de caractériser et quantifier les pathogènes responsables. Ces résultats vous fournissent une vue d'ensemble sur le pathogène principal et les pathogènes secondaires, afin de guider votre stratégie de traitement de manière globale et efficace, sans se limiter à la maladie principale.",
+          "catchphrase": "For those who want to understand the origin of symptoms, not just mask them.",
+          "description": "DIAGBOX® Symptomatic Turf are easy-to-use sampling kits designed to collect samples from symptomatic turf. The associated analyses provide accurate results that characterize and quantify the causative pathogens. These results provide you with an overview ",
           "kits": {
-            "title": "[EN] Kits disponibles (Prélèvement Gazon Symptomatique)"
+            "title": "Kits available (Symptomatic Lawn Sampling)"
           },
           "why_use": {
-            "point1": "[EN] Caractériser et quantifier les pathogènes présents : Identifier le pathogène principal, prendre en compte les pathogènes secondaires.",
-            "title": "[EN] Pourquoi utiliser la DIAGBOX® Gazon Symptomatique ?"
+            "point1": "Characterize and quantify the pathogens present: Identify the main pathogen, take into account secondary pathogens.",
+            "title": "Why use the DIAGBOX® Symptomatic Lawn?"
           }
         },
-        "title": "[EN] DIAGBOX® Gazon",
+        "title": "DIAGBOX® Lawn",
         "toc": {
-          "dechet_link": "[EN] Déchets de Tonte (Détection précoce)",
-          "lingette_link": "[EN] Lingette (Action précoce)",
-          "plaquage_link": "[EN] Accompagnement Plaquage (Sécurisation)",
-          "prices_link": "[EN] Voir les prix",
-          "questions_link": "[EN] Retour aux Questions",
-          "racine_gazon_link": "[EN] Racine + Gazon (Vision globale)",
-          "racine_link": "[EN] Racine (Diagnostic profond)",
-          "sol_link": "[EN] Sol / Substrat (Avant plaquage)",
-          "sympto_link": "[EN] Gazon Symptomatique (Diagnostic)",
-          "title": "[EN] Accès rapide aux types de kits :"
+          "dechet_link": "Grass Cuttings (Early Detection)",
+          "lingette_link": "Wipe (Early Action)",
+          "plaquage_link": "Support for Plating (Securing)",
+          "prices_link": "See prices",
+          "questions_link": "Back to Questions",
+          "racine_gazon_link": "Root + Grass (Global Vision)",
+          "racine_link": "Root (Deep Diagnosis)",
+          "sol_link": "Soil / Substrate (Before plating)",
+          "sympto_link": "Symptomatic Lawn (Diagnosis)",
+          "title": "Quick access to kit types:"
         },
         "types": {
-          "dechet": "[EN] Déchets de Tonte",
-          "lingette": "[EN] Lingette",
-          "plaquage": "[EN] Etat de santé complet – Accompagnement Plaquage",
-          "racine": "[EN] Racine",
-          "racine_gazon": "[EN] Racine + Gazon",
-          "sol": "[EN] Sol / Substrat",
-          "sympto": "[EN] Gazon Symptomatique"
+          "dechet": "Grass cuttings",
+          "lingette": "Wipe",
+          "plaquage": "Full Health Status – Plating Support",
+          "racine": "Root",
+          "racine_gazon": "Root + Grass",
+          "sol": "Soil / Substrate",
+          "sympto": "Symptomatic Lawn"
         },
         "qna_reco": {
           "common": {
-            "recommendation_title": "[EN] Notre recommandation :",
-            "contact_link": "[EN] Contactez-nous"
+            "recommendation_title": "Our recommendation:",
+            "contact_link": "Contact us"
           },
           "qna-group-q1_sub1": {
-            "recommendation_text": "[EN] Nos recommandations :",
-            "conclusion_text_prefix": "[EN] **Connaissez l'état réel de votre gazon** : faites un **diagnostic complet (feuilles et les racines)** de votre pelouse (Diagbox PF00049) : vous prenez connaissance de la présence éventuelle de la **pyriculariose**, et surtout des **autres champignons** présents qui pourraient profiter de vos traitements contre la pyriculariose pour prendre sa place et **s'étendre à leur tour**.\n\n**Mettez en place un plan simple de surveillance** : à partir des périodes de chaleur propices au développement de la pyriculariose (juin ou juillet selon la situation de votre stade), assurez un **suivi de détection précoce** de la pyriculariose (PF00011). Cette Diagbox est **très facile d'emploi** : vous passez une lingette sur les lames de la tondeuse après tonte, vous nous l'expédiez avec l'enveloppe prépayée et vous avec le résultat 48h après. Assurez cette surveillance **au minimum une fois par semaine**.\n\n**Mettez en place un suivi renforcé si nécessaire**, avec deux mesures par semaine dans les régions à risque : les premiers signes de la pyriculariose apparaissent en effet de l'ordre de 3 jours après un résultat positif de notre Digabox : **le suivi rapproché vous permet d'intervenir quand il est encore temps**. \n\n**Surveillez l'efficacité des vos traitements** : vous mettez  en œuvre les traitements **dès que la mesure est positive**, sur la zone identifiée, généralement en plusieurs fois. Vous vérifiez l'effet de chaque traitement avec la Diagbox PF00016 qui permet de quantifier la pression du pathogène et sa décroissance au fur et à mesure que les traitements agissent.\n\nNous vous accompagnons à chaque étape, en particulier dans la mise en place de **traitement de prévention contre les autres pathogènes présents** identifiés lors du diagnostics. L'audit sur les racines permet alors de calibrer les traitements à prévoir de manière pertinente.",
-            "conclusion_text_suffix": "[EN] Spécifications techniques et prix des Diagbox recommandées"
+            "recommendation_text": "Our recommendations:",
+            "conclusion_text_prefix": "**1. Know the real state of your lawn**: carry out a **complete diagnosis (leaves and roots)** of your lawn (Diagbox PF00049): you become aware of the possible presence of **pyriculariosis**, and especially of the **other fungi** present which could take adv\n\n**2. Set up a simple monitoring plan**: starting from the hot periods conducive to the development of pyriculariosis (June or July depending on the situation of your stadium), ensure an **early detection monitoring** of pyriculariosis (PF00011). This Diagbox\n\n**3. Set up enhanced monitoring if necessary**, with two measurements per week in at-risk regions: the first signs of pyriculariosis appear around 3 days after a positive result from our Digabox: **close monitoring allows you to intervene while there is stil\n\n**4. Monitor the effectiveness of your treatments**: you implement the treatments **as soon as the measurement is positive**, on the identified area, generally in several stages. You check the effect of each treatment with the Diagbox PF00016 which allows yo\n\nWe support you every step of the way, particularly in implementing **preventative treatments against other pathogens present** identified",
+            "conclusion_text_suffix": "Technical specifications and prices of recommended Diagboxes"
           },
           "qna-group-q2_sub1": {
-            "recommendation_text": "[EN] Nos recommandations :",
-            "conclusion_text_prefix": "[EN] **Connaissez l'état réel de votre gazon** : faites un **diagnostic complet (feuilles et les racines)** de votre pelouse (Diagbox PF00049) pour identifier vos risques à court et moyen terme.\n\nDéfinissez avec nous **un plan de suivi**, adapté à votre situation et à votre budget : en fonction des pathogènes identifiés et des caractéristiques de votre stade, nous vous conseillons sur les actions à entreprendre, et nous vous accompagnons pour les mettre en place dans la durée, avec des **outils de visualisation des résultats** pour optimiser les apports de produits de traitement.\n\n**Vous maîtrisez vos risques et réduisez vos coûts d'entretien dans la durée**.",
-            "conclusion_text_suffix": "[EN] Spécifications techniques et prix des Diagbox recommandées"
+            "recommendation_text": "Our recommendations:",
+            "conclusion_text_prefix": "**1. Know the real condition of your lawn**: carry out a **complete diagnosis (leaves and roots)** of your lawn (Diagbox PF00049) to identify your short and medium term risks.\n\n2. Define with us **a monitoring plan**, adapted to your situation and your budget: depending on the pathogens identified and the characteristics of your stadium, we advise you on the actions to be taken, and we support you in implementing them over time, wi\n\n**You control your risks and reduce your maintenance costs over time**.",
+            "conclusion_text_suffix": "Technical specifications and prices of recommended Diagboxes"
           },
           "qna-group-q3": {
-            "recommendation_text": "[EN] Nos recommandations :",
-            "conclusion_text_prefix": "[EN] Réalisez **le plus rapidement possible** la quantification des pathogènes présents en nous envoyant des feuilles des zones touchées. Pour cela, utilisez la Diagbox PF00018 si l'apparition des symptômes a lieu en été, ou PF 00019 en hivers. \n\nPour encore **plus de réactivité et de facilité, disposez dans vos stocks ** de la Diagbox PF00020 qui couvre l'ensemble des pathogènes : **utilisez-la dès que des symptômes apparaissent**.\n\n**Si plusieurs zone différentes sont déjà touchées**, réalisez de préférence **un prélèvement différent pour chaque zone** avec les Diagbox retenues: vous disposerz d'un diagnostic pour chaque endroit touché et vous pourrez aller vers des solutions encore plus adaptées.\n\nNous vous accompagnons dans le suivi des traitements, et pour voir avec vous si des diagnostics des autres compartiments (racine, sols) sont nécessaires.",
-            "conclusion_text_suffix": "[EN] Spécifications techniques et prix des Diagbox recommandées"
+            "recommendation_text": "Our recommendations:",
+            "conclusion_text_prefix": "1. **As soon as possible**, quantify the pathogens present by sending us sheets of the affected areas. To do this, use Diagbox PF00018 if symptoms appear in summer, or PF 00019 in winter.\n\n2. For even more responsiveness and ease, have the Diagbox PF00020 in your stock, which covers all pathogens: use it as soon as symptoms appear.\n\n3. **If several different areas are already affected**, preferably take **a different sample for each area** with the Diagbox selected: you will have a diagnosis for each affected area and you will be able to move towards even more suitable solutions.\n\nWe support you in monitoring treatments, and to see with you if diagnostics of other compartments (root, soil) are necessary.",
+            "conclusion_text_suffix": "Technical specifications and prices of recommended Diagboxes"
           },
           "qna-group-q4_combined": {
-            "recommendation_text": "[EN] Nos recommandations :",
-            "conclusion_text_prefix": "[EN] Réalisez **un diagnostic des sols** avant tout nouveau plaquage, avec la Diagbox PF 00047 : les pathogènes présents dans les sols, même en faibles quantités, représentent un **risque de long terme** et peuvent conduire à la destruction prématurée de votre pelouse, ou à des **surcoûts d'entretien**. Nous vous accompagnerons ensuite au besoin dans le suivi des traitements et de l'état de santé du sol. \n\nVous voulez encore mieux sécuriser votre investissement ? **Testez également les plaquages livrés**, pour évaluer leur bon état (Diagbox PF 00049), ou demandez à votre fournisseur une preuve de ce bon état, par exemple avec un relevé de mesures réalisées par ses soins.\n\nPour la réalisation de l'ensemble des analyses par vous même, utilisez la Digabox PF 00050 qui **intègre les analyses des trois compartiments (sols + feuilles et racines)** à un prix réduit.",
-            "conclusion_text_suffix": "[EN] Spécifications techniques et prix des Diagbox recommandées"
+            "recommendation_text": "Our recommendations:",
+            "conclusion_text_prefix": "1. Carry out a **soil diagnosis** before any new sowing, with the Diagbox PF 00047: pathogens present in the soil, even in small quantities, represent a **long-term risk** and can lead to the premature destruction of your lawn, or to **additional maintenance\n\n2. You want to further secure your investment? **Also test the delivered veneers** to assess their good condition (Diagbox PF 00049), or ask your supplier for proof of this good condition, for example with a record of measurements taken by them.\n\nTo carry out all the analyses yourself, use the Digabox PF 00050 which **integrates the analyses of the three compartments (soil + leaves and roots)** at a reduced price.",
+            "conclusion_text_suffix": "Technical specifications and prices of recommended Diagboxes"
           }
         },
         "qna_bon_a_savoir": {
-          "q1": "[EN] La **Pyriculariose** est malheureusement une maladie pour laquelle **il n'existe pas de traitement vraiment efficace quand elle est déjà bien installée**. \nQuand ses atteintes commencent à être visibles, la maladie a toutes les chances de s'étendre malgré les traitements et de détruire une pelouse en quelques jours si les conditions sont favorables. \nEn revanche, une **action très précoce** a de fortes chances **d'enrayer son développement**.\nIAGE a défini des outils de **détection précoce** pour vous permettre **d'intervenir à un stade où la maladie peut être efficacement combattue**. ",
-          "q2": "[EN] **Depuis le 1er janvier 2025**, la loi Labbé de 2014 impose la **suppression des produits phytosanitaires de synthèse** pour le traitement des gazons sportifs. \n**Le nombre de produits utilisables est réduit** et vous avez peut être dû revoir vos programmes de traitement.\n**Chaque terrain est spécifique** : type et origine du gazon, sols, météo, usages,... autant de facteurs qui modifient les types de maladies qui peuvent toucher votre terrain et la façon dont elles peuvent évoluer. \nIAGE a développé une expérience concrète qui lui permet d'**adapter pour votre cas particulier ses conseils et l'usage de ses outils**, afin d'assurer un **suivi des risques de court ou moyen termes (feuilles et racines), et des risques à long terme (sol)** adaptés à votre situation et à votre budget.",
-          "q3": "[EN] Une **détérioration visible** du gazon indique un **niveau déjà important** du ou des pathogènes en cause. \nDe plus, derrière l'agent principal qui peut souvent être identifié visuellement, des agents secondaires peuvent aussi être présents. Ils peuvent profiter du premier ou seront des facteurs aggravant en se développant à la place du premier si les traitements retenus ne sont pas adaptés.\nIAGE a défini des outils pour **identifier au plus vite tous les agents responsables**, et vous permettre de mettre en place les traitements adaptés avec le plus de chances de sauver la pelouse et de limiter vos coûts d'entretien.",
-          "q4": "[EN] Installer un nouveau plaquage représente un **investissement conséquent**. \nL'absence d'évaluation de la santé des sols ou du gazon apportés peut permettre à des pathogènes présents dans le sol ou apportés par le plaquages de proliférer, **conduisant à des coûts d'entretiens élevés**, voir au pire à la ruine de la nouvelle pelouse. \nIAGE a défini des outils pour assurer une **vérification préalable des états de santé de chaque compartiment** (sol, racines, feuilles) pour réduire les risques au regard de l'investissement réalisé.\nCes analyses ont déjà été utilisées dans le cas d'un litige sur l'origine d'une dégradation après un plaquage.",
-          "q5": "[EN] **Chaque terrain est spécifique** : type et origine du gazon, sols, météo, usages,... autant de facteurs qui modifient les types de maladies qui peuvent toucher votre terrain et la façon dont elles peuvent évoluer. Vous avez aussi de votre côté des attentes ou des contraintes propres\nIl y a donc en effet de nombreuses situations différentes ! N'hésitez pas à **nous contacter**, nous serons heureux de voir avec vous comment vous aider au mieux"
+          "q1": "**Pyriculariasis** is unfortunately a disease for which **there is no truly effective treatment once it has already become established**.\nWhen its attacks begin to be visible, the disease has every chance of spreading despite treatments and destroying a lawn in a few days if conditions are favorable.\nOn the other hand, **very early action** has a strong chance of **stopping its development**.\nIAGE has defined **early detection** tools to enable you to **intervene at a stage where the disease can be effectively combated**.",
+          "q2": "**Since January 1, 2025**, the Labbé law of 2014 requires the **elimination of synthetic phytosanitary products** for the treatment of sports turf.\n**The number of usable products is reduced** and you may have had to review your treatment programs.\n**Each pitch is specific**: type and origin of the grass, soil, weather, uses, etc. so many factors that modify the types of diseases that can affect your pitch and the way in which they can develop.\nIAGE has developed concrete experience that allows it to **adapt its advice and the use of its tools to your specific case**, in order to ensure **monitoring of short or medium-term risks (leaves and roots), and long-term risks (soil)** adapted to your si",
+          "q3": "**Visible deterioration** of the lawn indicates an **already significant level** of the pathogen(s) in question.\nFurthermore, behind the primary agent, which can often be identified visually, secondary agents may also be present. They may take advantage of the primary agent or become aggravating factors by developing in place of the primary agent if the chosen treat\nIAGE has developed tools to **identify all the responsible agents as quickly as possible**, and allow you to implement the appropriate treatments with the best chance of saving your lawn and limiting your maintenance costs.",
+          "q4": "Installing new veneer is a **significant investment**.\nFailure to assess the health of the soil or turf brought in can allow pathogens present in the soil or brought in by the paving to proliferate, **leading to high maintenance costs**, or at worst to the ruin of the new lawn.\nIAGE has defined tools to ensure a **prior verification of the health status of each compartment** (soil, roots, leaves) to reduce risks with regard to the investment made.\nThese analyses have already been used in the case of a dispute over the origin of degradation after a tackle.",
+          "q5": "**Each pitch is unique**: type and origin of the grass, soil, weather, usage, etc., all factors that affect the types of diseases that can affect your pitch and how they can develop. You also have your own expectations and constraints.\nSo there are indeed many different situations! Don't hesitate to **contact us**, we will be happy to see how we can best help you."
         }
       },
       "mainpage": {
-        "title": "[EN] Les DiagBox® IAGE"
+        "title": "IAGE's DiagBox®"
       },
       "process": {
         "step1": {
-          "text": "[EN] Collect your sample following the instructions in the notice",
-          "title": "[EN] Step 1"
+          "text": "1. Open your DiagBox® and find the notice instructions",
+          "title": "Step 1"
         },
         "step2": {
-          "text": "[EN] Register via the link in the notice",
-          "title": "[EN] Step 2"
+          "text": "2. Collect your sample following the instructions in the notice",
+          "title": "Step 2"
         },
         "step3": {
-          "text": "[EN] Send your sample and receive your analysis results 48 hours after receipt by the IAGE laboratory",
-          "title": "Envoyez votre échantillon et vous recevrez vos résultats d'analyse 48h après sa réception par le laboratoire IAGE"
+          "text": "3. Register via the link in the notice",
+          "title": "Step 3"
         },
         "step4": {
-          "text": "[EN] Send your sample to the laboratory",
-          "title": "[EN] Step 4"
+          "text": "4. Send your sample and receive your analysis results 48 hours after receipt by the IAGE laboratory",
+          "title": "Step 4"
         },
         "step5": {
-          "text": "[EN] Receive your results within 48 hours",
-          "title": "[EN] Step 5"
+          "text": "5. Receive your results within 48 hours after receipt by IAGE laboratory",
+          "title": "Step 5"
         }
       }
     },
     "gazon": {
       "qna": {
-        "q1_sub1": "[EN] Si la pyriculariose est la maladie la plus répandue dans votre région, ou si vous savez déjà que c'est le principal risque, vous pouvez faire une mesure uniquement sur cette cible, pour un coût très limité",
-        "q1_sub2": "[EN] Si vous avez un doute sur la nature du risque, vous pouvez opter pour une analyse plus large sur des pathogènes ciblés",
-        "q1_sub3": "[EN] Comment m'assurer que mon gazon n'est (plus) touché par aucun des pathogènes habituels",
-        "q1_sub4": "[EN] Comment m'assurer que les racines ne sont pas (ou plus) non plus touchées ?",
-        "q1_sub5": "[EN] Comment m'assurer que le sol n'est pas (ou plus) touché ?",
-        "q1_title": "[EN] La pyriculariose circule dans ma région, que dois-je faire ?",
-        "q2_sub1": "[EN] Comment caractériser le pathogène principal et les pathogènes secondaires présents pour savoir comment réagir ?",
-        "q2_sub2": "[EN] Comment savoir si mes racines sont touchées ?",
-        "q2_sub3": "[EN] Comment savoir si mon sol est touché ?",
-        "q2_title": "[EN] Je ne vois pas de symptômes, mais je veux des conseils pour planifier mes traitements",
-        "q3_title": "[EN] J'ai détecté des symptômes, comment agir avec pertinence ?",
-        "q4_title": "[EN] Je vais poser un nouveau gazon (plaquage), comment réduire les risques à moyen-long terme ?",
-        "q5_title": "[EN] J'ai d'autres questions"
+        "q1_sub1": "If pyricularioset is the most common disease in your area, or you already know it is the main risk, you can measure only this target, at very limited cost.",
+        "q1_sub2": "If you have any doubts about the nature of the risk, you can opt for a broader analysis on targeted pathogens",
+        "q1_sub3": "How can I make sure my lawn is (no longer) affected by any of the usual pathogens?",
+        "q1_sub4": "How can I make sure that the roots are not (or are no longer) affected either?",
+        "q1_sub5": "How can I be sure that the ground is not (or is no longer) touched?",
+        "q1_title": "Pyriculariosis is circulating in my area, what should I do?",
+        "q2_sub1": "How to characterize the main pathogen and the secondary pathogens present to know how to react?",
+        "q2_sub2": "How do I know if my roots are affected?",
+        "q2_sub3": "How do I know if my soil is affected?",
+        "q2_title": "I don't see any symptoms, but I want advice on planning my treatments",
+        "q3_title": "I have detected symptoms, how can I act appropriately?",
+        "q4_title": "I am going to lay new turf (paving), how can I reduce the risks in the medium to long term?",
+        "q5_title": "I have other questions"
       }
     },
     "contact": {
       "form": {
-        "company": "[EN] Company",
-        "email": "[EN] Email",
-        "message": "[EN] Your message",
-        "name": "[EN] Nom",
-        "phone": "[EN] Phone",
-        "submit": "[EN] Submit",
-        "lastName": "[EN] Last Name",
-        "firstName": "[EN] First Name",
-        "job_title": "[EN] Job Title",
-        "optional": "[EN] optional",
-        "sector": "[EN] Sector of Interest",
-        "select_sector": "[EN] Select a sector",
-        "service": "[EN] Desired Service",
-        "select_service": "[EN] Select a service",
-        "contact_preference": "[EN] Preferred Contact Method",
-        "select_contact_preference": "[EN] Select your preferred contact method",
-        "preferred_time": "[EN] Preferred Time of Day",
-        "select_time": "[EN] Select your preference",
+        "company": "Company",
+        "email": "Email",
+        "message": "Your message",
+        "name": "Name",
+        "phone": "Phone",
+        "submit": "Submit",
+        "lastName": "Last Name",
+        "firstName": "First Name",
+        "job_title": "Job Title",
+        "optional": "optional",
+        "sector": "Sector of Interest",
+        "select_sector": "Select a sector",
+        "service": "Desired Service",
+        "select_service": "Select a service",
+        "contact_preference": "Preferred Contact Method",
+        "select_contact_preference": "Select your preferred contact method",
+        "preferred_time": "Preferred Time of Day",
+        "select_time": "Select your preference",
         "time": {
-          "morning": "[EN] Morning",
-          "afternoon": "[EN] Afternoon"
+          "morning": "Morning",
+          "afternoon": "Afternoon"
         },
         "preference": {
-          "email": "[EN] Email",
-          "phone": "[EN] Phone Call",
-          "video": "[EN] Video Conference"
+          "email": "Email",
+          "phone": "Phone Call",
+          "video": "Video Conference"
         },
-        "gdpr_consent": "[EN] By submitting this form, I agree that the information provided may be used in the context of the resulting business relationship and to contact me. I can exercise my rights to delete this data at any time in accordance with the",
-        "gdpr_required": "[EN] Please accept the privacy policy to continue.",
-        "privacy_policy": "[EN] privacy policy",
-        "phone_placeholder": "[EN] Ex: 06 12 34 56 78",
-        "phone_format": "[EN] Format: 06 12 34 56 78",
-        "success": "[EN] Your message has been sent successfully. We will contact you soon.",
-        "error": "[EN] An error occurred while sending the form. Please try again.",
+        "gdpr_consent": "By submitting this form, I agree that the information provided may be used in the context of the resulting business relationship and to contact me. I can exercise my rights to delete this data at any time in accordance with the",
+        "gdpr_required": "Please accept the privacy policy to continue.",
+        "privacy_policy": "privacy policy",
+        "phone_placeholder": "Ex: 06 12 34 56 78",
+        "phone_format": "Format: 06 12 34 56 78",
+        "success": "Your message has been sent successfully. We will contact you soon.",
+        "error": "An error occurred while sending the form. Please try again.",
         "address": {
-          "title": "[EN] Address",
-          "street": "[EN] Street number and name",
-          "postal_code": "[EN] Postal Code",
-          "city": "[EN] City",
-          "country": "[EN] Country",
-          "optional": "[EN] optional - useful for faster product delivery",
-          "city_loading": "[EN] Searching for city...",
-          "city_help": "[EN] Enter a postal code to automatically complete the city"
+          "title": "Address",
+          "street": "Street number and name",
+          "postal_code": "Postal Code",
+          "city": "City",
+          "country": "Country",
+          "optional": "optional - useful for faster product delivery",
+          "city_loading": "Searching for city...",
+          "city_help": "(France : enter a postal code to automatically complete the city)"
         }
       },
-      "title": "[EN] Contact"
+      "title": "Contact"
     },
     "legal": {
-      "section1_address1": "[EN] 335 rue Louis Lépine – 34000 Montpellier",
-      "section1_address2": "[EN] Bureau de IAGE Paris : 42 avenue Raymond Poincaré – 75116 Paris",
-      "section1_company_details": "[EN] SASU au capital de 190 700,00 €",
-      "section1_company_name": "[EN] Le présent site est édité par IAGE - Ingénierie et Analyse en Génétique Environnementale",
-      "section1_contact_email": "[EN] contact@iage-france.com",
-      "section1_contact_intro": "[EN] Contact :",
-      "section1_contact_phone": "[EN] (standard) 04 48 79 84 91",
-      "section1_director_intro": "[EN] Directeur de la publication : Monsieur Franz Durandet, Président",
-      "section1_rcs": "[EN] Immatriculée au Registre du Commerce et des Sociétés de Montpellier sous le numéro 828 570 168 00033",
-      "section1_title": "[EN] 1. Éditeur du site",
-      "section1_vat": "[EN] Numéro de TVA intracommunautaire : FR59828570168",
-      "section2_host_address": "[EN] 440 N Barranca Ave #4133 Covina - CA 91723 – USA",
-      "section2_host_name": "[EN] Vercel Inc.",
-      "section2_host_site": "[EN] Site : https://vercel.com",
-      "section2_intro": "[EN] Le site est hébergé par :",
-      "section2_title": "[EN] 2. Hébergement",
-      "section3_content1": "[EN] Tous les contenus présents sur ce site, incluant de façon non limitative les textes, images, graphismes, logos, icônes, vidéos, sons, logiciels, sont la propriété exclusive de la société IAGE ou sont utilisés avec l'autorisation de leurs auteurs.",
-      "section3_content2": "[EN] Toute reproduction, représentation, modification, publication, adaptation, totale ou partielle, des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite sauf autorisation écrite préalable de IAGE.",
-      "section3_title": "[EN] 3. Propriété intellectuelle",
-      "section4_cnil": "[EN] Vous pouvez également introduire une réclamation auprès de la CNIL : ",
-      "section4_contact_address": "[EN] ou par courrier à : 335 rue Louis Lépine – 34000 Montpellier",
-      "section4_contact_email": "[EN] contact@iage-france.com",
-      "section4_contact_name": "[EN] IAGE – Délégué à la protection des données",
-      "section4_content1": "[EN] Les informations collectées via les formulaires de contact sont enregistrées dans un fichier informatisé par IAGE pour répondre aux demandes de renseignements. Ces données sont traitées conformément au Règlement Général sur la Protection des Données (RGPD).",
-      "section4_duration": "[EN] 3 ans maximum",
-      "section4_purpose": "[EN] Gestion des demandes via le site",
-      "section4_recipient": "[EN] IAGE uniquement (aucune transmission à des tiers)",
-      "section4_responsible": "[EN] Monsieur Franz Durandet",
-      "section4_rights_intro": "[EN] Conformément aux dispositions des articles 39 et suivants de la loi « informatique et libertés » et du RGPD, vous disposez d'un droit d'accès, de rectification, d'opposition, de suppression et de portabilité de vos données personnelles. Pour exercer ces droits, vous pouvez contacter :",
-      "section4_title": "[EN] 4. Données personnelles",
-      "section5_content1": "[EN] Le site peut utiliser des cookies ou traceurs pour améliorer votre expérience de navigation, analyser le trafic ou proposer des contenus adaptés.",
-      "section5_content2": "[EN] Lors de votre première visite, si des Cookies sont effectivement présents, un bandeau vous informe de la présence de cookies et vous propose d'accepter ou de refuser leur utilisation. Vous pouvez à tout moment configurer vos préférences via les paramètres de votre navigateur.",
-      "section5_title": "[EN] 5. Cookies",
-      "section5_types_intro": "[EN] Types de cookies utilisés : aucun",
-      "section6_content1": "[EN] IAGE s'efforce de fournir sur ce site des informations aussi précises que possible. Toutefois, elle ne saurait être tenue responsable des omissions, inexactitudes ou carences dans la mise à jour, qu'elles soient de son fait ou du fait de tiers partenaires.",
-      "section6_content2": "[EN] L'utilisateur reconnaît utiliser les informations et outils disponibles sur le site sous sa responsabilité exclusive.",
-      "section6_title": "[EN] 6. Responsabilités",
-      "title": "[EN] Mentions légales"
+      "section1_address1": "335 rue Louis Lépine – 34000 Montpellier",
+      "section1_address2": "IAGE Paris office: 42 avenue Raymond Poincaré – 75116 Paris",
+      "section1_company_details": "SASU with capital of €190,700.00",
+      "section1_company_name": "This site is published by IAGE - Ingénierie et Analyse en Génétique Environnementale",
+      "section1_contact_email": "contact@iage-france.com",
+      "section1_contact_intro": "Contact :",
+      "section1_contact_phone": "(standard) 04 48 79 84 91",
+      "section1_director_intro": "Publication Director: Mr. Franz Durandet, President",
+      "section1_rcs": "Registered in the Montpellier Trade and Companies Register under number 828 570 168 00033",
+      "section1_title": "1. Site Editor",
+      "section1_vat": "Intra-community VAT number: FR59828570168",
+      "section2_host_address": "440 N Barranca Ave #4133 Covina - CA 91723 – USA",
+      "section2_host_name": "Vercel Inc.",
+      "section2_host_site": "Website: https://vercel.com",
+      "section2_intro": "The site is hosted by:",
+      "section2_title": "2. Accommodation",
+      "section3_content1": "All content on this site, including but not limited to text, images, graphics, logos, icons, videos, sounds, software, are the exclusive property of IAGE or are used with the authorization of their authors.",
+      "section3_content2": "Any reproduction, representation, modification, publication, adaptation, in whole or in part, of the elements of the site, whatever the means or process used, is prohibited without the prior written authorization of IAGE.",
+      "section3_title": "3. Intellectual property",
+      "section4_cnil": "You can also file a complaint with the CNIL:",
+      "section4_contact_address": "or by mail to: 335 rue Louis Lépine – 34000 Montpellier",
+      "section4_contact_email": "contact@iage-france.com",
+      "section4_contact_name": "IAGE – Data Protection Officer",
+      "section4_content1": "Information collected through contact forms is stored in a computerized file by IAGE to respond to inquiries. This data is processed in accordance with the General Data Protection Regulation (GDPR).",
+      "section4_duration": "years maximum",
+      "section4_purpose": "Managing requests via the site",
+      "section4_recipient": "IAGE only (no transmission to third parties)",
+      "section4_responsible": "Mr. Franz Durandet",
+      "section4_rights_intro": "In accordance with the provisions of Articles 39 et seq. of the French Data Protection Act and the GDPR, you have the right to access, rectify, oppose, delete, and transfer your personal data. To exercise these rights, you can contact:",
+      "section4_title": "4. Personal data",
+      "section5_content1": "The site may use cookies or trackers to improve your browsing experience, analyze traffic or offer adapted content.",
+      "section5_content2": "On your first visit, if cookies are present, a banner will inform you of the presence of cookies and offer you the option to accept or refuse their use. You can configure your preferences at any time via your browser settings.",
+      "section5_title": "5. Cookies",
+      "section5_types_intro": "Types of cookies used: none",
+      "section6_content1": "IAGE strives to provide information on this site that is as accurate as possible. However, it cannot be held responsible for omissions, inaccuracies, or deficiencies in updating, whether caused by itself or by third-party partners.",
+      "section6_content2": "The user acknowledges that he uses the information and tools available on the site under his sole responsibility.",
+      "section6_title": "6. Responsibilities",
+      "title": "Legal notices"
     },
     "privacy": {
-      "content": "[EN] Contenu de la politique de confidentialité à ajouter...",
-      "title": "[EN] Politique de confidentialité",
-      "intro": "[EN] This privacy policy describes how IAGE collects, uses, and protects your personal data when you use our website and services.",
+      "content": "Privacy Policy Content to be added...",
+      "title": "Privacy Policy",
+      "intro": "This privacy policy describes how IAGE collects, uses,and protects your personal data when you use our website and services.",
       "data_collection": {
-        "title": "[EN] Data Collection",
-        "text": "[EN] We collect information that you voluntarily provide through our contact form, including:\n- First and last name\n- Job title (optional)\n- Company\n- Email address\n- Phone number\n- Postal address (optional)\n- Industry sector and service of interest\n- Contact preferences\n- Message"
+        "title": "Data Collection",
+        "text": "We collect information that you voluntarily provide through our contact form, including:\n- First and last name\n- Job title (optional)\n- Company\n- Email address\n- Phone number\n- Postal address (optional)\n- Industry sector and service of interest\n- Contact preferences\n- Message"
       },
       "data_use": {
-        "title": "[EN] Data Use",
-        "text": "[EN] We use your personal data to:\n- Respond to your contact requests\n- Provide requested information about our services\n- Manage our business relationship\n- Improve our services and communications\n- Comply with legal obligations"
+        "title": "Data Use",
+        "text": "We use your personal data to:\n- Respond to your contact requests\n- Provide requested information about our services\n- Manage our business relationship\n- Improve our services and communications\n- Comply with legal obligations"
       },
       "data_protection": {
-        "title": "[EN] Data Protection",
-        "text": "[EN] We implement appropriate security measures to protect your data against unauthorized access, modification, disclosure, or destruction. Your data is stored on secure servers and is only accessible to authorized personnel."
+        "title": "Data Protection",
+        "text": "We implement appropriate security measures to protect your data against unauthorized access, modification, disclosure,or destruction. Your data is stored on secure servers and is only accessible to authorized personnel."
       },
       "data_retention": {
-        "title": "[EN] Data Retention",
-        "text": "[EN] We retain your personal data for as long as necessary to:\n- Respond to your requests\n- Maintain our business relationship\n- Comply with legal obligations\n- Resolve potential disputes"
+        "title": "Data Retention",
+        "text": "We retain your personal data for as long as necessary to:\n- Respond to your requests\n- Maintain our business relationship\n- Comply with legal obligations\n- Resolve potential disputes"
       },
       "cookies": {
-        "title": "[EN] Cookie Usage",
-        "text": "[EN] Our website uses essential cookies for its operation and analytical cookies to improve your experience. You can control the use of non-essential cookies through your browser settings."
+        "title": "Cookie Usage",
+        "text": "Our website uses essential cookies for its operation and analytical cookies to improve your experience. You can control the use of non-essential cookies through your browser settings."
       },
       "rights": {
-        "title": "[EN] Your Rights",
-        "text": "[EN] Under GDPR, you have the following rights:\n- Access to your personal data\n- Rectification of your data\n- Erasure of your data\n- Opposition to processing\n- Data portability\n- Withdrawal of consent\n- Restriction of processing"
+        "title": "Your Rights",
+        "text": "Under GDPR, you have the following rights:\n- Access to your personal data\n- Rectification of your data\n- Erasure of your data\n- Opposition to processing\n- Data portability\n- Withdrawal of consent\n- Restriction of processing"
       },
       "contact": {
-        "title": "[EN] Contact Us",
-        "text": "[EN] For any questions about this privacy policy or to exercise your rights, please contact us at the email address shown on our Contact page."
+        "title": "Contact us",
+        "text": "For any questions about this privacy policy or to exercise your rights, please contact us at the email address shown on our Contact page."
       },
       "updates": {
-        "title": "[EN] Updates",
-        "text": "[EN] We reserve the right to update this privacy policy at any time. Changes will be posted on this page with the last update date."
+        "title": "Updates",
+        "text": "We reserve the right to update this privacy policy at any time. Changes will be posted on this page with the last update date."
       }
     },
     "footer": {
-      "contact": "[EN] Contact",
-      "contactTitle": "[EN] Contact",
-      "copyright": "[EN] © {année} IAGE. Tous droits réservés.",
-      "email": "[EN] Email: contact@iage-france.com",
-      "home": "[EN] Accueil",
-      "legal": "[EN] Mentions légales",
-      "navigation": "[EN] Navigation",
-      "privacy": "[EN] Politique de confidentialité",
-      "sectors": "[EN] Domaines",
-      "services": "[EN] Services",
-      "subtitle": "[EN] Ingéniérie et Analyse en Génétique Environnementale",
-      "title": "[EN] IAGE"
+      "contact": "Contact",
+      "contactTitle": "Contact",
+      "copyright": "© {year} IAGE. All rights reserved.",
+      "email": "Email: contact@iage-france.com",
+      "home": "Welcome",
+      "legal": "Legal notices",
+      "navigation": "Navigation",
+      "privacy": "Privacy Policy",
+      "sectors": "Domains",
+      "services": "Services",
+      "subtitle": "Engineering and Analysis in Environmental Genetics",
+      "title": "IAGE"
     },
     "diagbox_poultry": {
       "page": {
-        "cta_button": "[EN] Protéger mon élevage avec DiagBox®"
+        "cta_button": "Protect my stock with DiagBox®"
       }
     }
   }

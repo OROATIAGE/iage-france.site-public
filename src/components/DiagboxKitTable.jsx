@@ -8,7 +8,30 @@ function DiagboxKitTable({ kitList, kitRefToSectionIdMap }) {
   // Vérifier si au moins un kit contient une étoile dans ses pathogènes cibles
   const hasPythiumNote = kitList.some(kitRef => {
     const targets = texts[language]?.diagbox?.gazon?.kits?.[kitRef]?.targets || '';
-    return targets.includes('*');
+    
+    // Check direct targets
+    if (targets.includes('*')) {
+      return true;
+    }
+
+    // Check referenced kits
+    if (targets.toLowerCase().startsWith('combine les cibles des kits')) {
+      const refPattern = /PF\d{6}/g;
+      const matches = targets.match(refPattern) || [];
+      return matches.some(ref => {
+        const refTargets = texts[language]?.diagbox?.gazon?.kits?.[ref]?.targets || '';
+        return refTargets.includes('*');
+      });
+    } else if (targets.toLowerCase().startsWith('idem')) {
+      const refPattern = /PF\d{6}/;
+      const match = targets.match(refPattern);
+      if (match) {
+        const refKitRef = match[0];
+        const refTargets = texts[language]?.diagbox?.gazon?.kits?.[refKitRef]?.targets || '';
+        return refTargets.includes('*');
+      }
+    }
+    return false;
   });
 
   // Fonction pour extraire les cibles uniques d'une chaîne de cibles
@@ -77,8 +100,8 @@ function DiagboxKitTable({ kitList, kitRefToSectionIdMap }) {
   };
 
   return (
-    <div className="w-full">
-      <table className="w-full divide-y divide-gray-200 dark:divide-gray-700 responsive-kit-table">
+    <div className="overflow-x-auto">
+      <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700 md:border dark:border-gray-600">
         <thead className="bg-gray-50 dark:bg-gray-700 hidden md:table-header-group">
           <tr>
             <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider w-[12%]">Réf.</th>
