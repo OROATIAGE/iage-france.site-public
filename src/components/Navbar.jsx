@@ -138,14 +138,17 @@ function Navbar() {
     <nav className="bg-white shadow-lg fixed w-full top-0 z-50 dark:bg-gray-900 dark:shadow-xl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
-          {/* Logo - Toujours visible avec une largeur fixe */}
-          <div className="flex-none w-[160px] flex items-center relative">
-            <Link to="/" className="block w-full">
-              <img 
-                src={isDark ? logos.symbol.white : logos.primary.horizontal} 
-                alt="Logo IAGE" 
-                className="h-8 w-[160px] flex-shrink-0 object-contain"
-              />
+          {/* Logo - Structure simplifiée et plus robuste pour iOS */}
+          <div className="w-[160px] h-16 flex-shrink-0">
+            <Link to="/" className="h-full flex items-center">
+              <div className="w-[160px] h-8 relative">
+                <img 
+                  src={isDark ? logos.symbol.white : logos.primary.horizontal} 
+                  alt="Logo IAGE" 
+                  className="absolute inset-0 w-full h-full"
+                  style={{ maxWidth: '100%', maxHeight: '100%' }}
+                />
+              </div>
             </Link>
           </div>
 
