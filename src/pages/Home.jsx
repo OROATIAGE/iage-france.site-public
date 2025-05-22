@@ -253,7 +253,7 @@ const Home = () => {
                       <Link
                         key={subdomain.textKey}
                         to={subdomain.link}
-                        className="block bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 text-primary dark:text-white font-semibold px-4 py-2.5 rounded-md text-sm text-center transition-colors duration-150 shadow-sm focus:outline-none focus:ring-2 focus:ring-primary/50"
+                        className="block bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 text-primary dark:text-white font-semibold px-4 py-2.5 rounded-md text-sm text-center transition-colors duration-150 shadow-sm focus:outline-none focus:ring-2 focus:ring-primary/50 border border-gray-300 dark:border-gray-600"
                       >
                         {getText(subdomain.textKey)}
                       </Link>
