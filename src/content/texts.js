@@ -790,7 +790,7 @@ export const texts = {
           "city_loading": "Recherche de la ville...",
           "city_help": "France : saisissez un code postal pour compléter automatiquement la ville"
         },
-        "general_interest": "Intérêt général"
+        "general_interest": "Tous domaines"
       },
       "title": "Contact"
     },
@@ -1670,7 +1670,7 @@ export const texts = {
           "title": "Step 3"
         },
         "step4": {
-          "text": "4. Send your sample and receive your analysis results 48 hours after receipt by the IAGE laboratory",
+          "text": "4. Send your sample with the pre-paid enveloppe",
           "title": "Step 4"
         },
         "step5": {
@@ -1743,7 +1743,7 @@ export const texts = {
           "city_loading": "Searching for city...",
           "city_help": "(France : enter a postal code to automatically complete the city)"
         },
-        "general_interest": "General interest"
+        "general_interest": "All domains"
       },
       "title": "Contact"
     },

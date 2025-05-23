@@ -683,7 +683,7 @@ diagbox.process.step2.text;Diagbox Process;2. Récoltez votre échantillon en su
 diagbox.process.step2.title;Diagbox Process;Step 2;Step 2
 diagbox.process.step3.text;Diagbox Process;3. Enregistrez-vous via le lien qui se trouve dans la notice;3. Register via the link in the notice
 diagbox.process.step3.title;Diagbox Process;Step 3;Step 3
-diagbox.process.step4.text;Diagbox Process;4. Envoyez votre échantillon avec l'enveloppe prépayée;4. Send your sample and receive your analysis results 48 hours after receipt by the IAGE laboratory
+diagbox.process.step4.text;Diagbox Process;4. Envoyez votre échantillon avec l'enveloppe prépayée;4. Send your sample with the pre-paid enveloppe
 diagbox.process.step4.title;Diagbox Process;Step 4;Step 4
 diagbox.process.step5.text;Diagbox Process;5. Recevrez vos résultats d'analyse 48h après sa réception par le laboratoire IAGE;5. Receive your results within 48 hours after receipt by IAGE laboratory
 diagbox.process.step5.title;Diagbox Process;Step 5;Step 5
@@ -773,7 +773,7 @@ diagbox.gazon.qna_reco.q1.accompagnement_text;Diagbox Gazon;Nous vous accompagno
 diagbox.gazon.qna_reco.q2.accompagnement_text;Diagbox Gazon;Nous accompagnons votre suivi dans la durée, avec des **outils de visualisation des résultats** pour adapter et optimiser les apports de produits de traitement.;We support your long-term monitoring, with **results visualization tools** to adapt and optimize the intake of treatment products.
 diagbox.gazon.qna_reco.q3.accompagnement_text;Diagbox Gazon;Nous vous accompagnons dans le suivi des traitements, et pour voir avec vous si des diagnostics des autres compartiments (racine, sols) sont nécessaires.;We support you in monitoring treatments, and to see with you if diagnostics of other compartments (root, soil) are necessary. 
 diagbox.gazon.qna_reco.q4.accompagnement_text;Diagbox Gazon;Nous vous aidons à suivre l'évolution de la situation après la pose.;We help you monitor the situation after installation.
-contact.form.general_interest;Contact Form;Intérêt général;General interest
+contact.form.general_interest;Contact Form;Tous domaines;All domains
 ;;;
 press.title;Press;Espace Presse;Press Room
 press.press_releases.title;Press;Communiqués de presse;Press Releases

@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
 import { getTextByLanguage } from '../utils/textHelpers';
 import DocumentSlider from '../components/DocumentSlider';
+import { documents, getDocumentsByDomain } from '../content/documents';
 
 function DocumentsPage() {
   const { language } = useLanguage();
@@ -12,35 +13,22 @@ function DocumentsPage() {
     {
       key: 'category_health_hygiene_title',
       folder: 'Santé_publique_et_hygiene',
-      documents: []
+      documents: getDocumentsByDomain('Santé_publique_et_hygiene') || []
     },
     {
       key: 'category_agriculture_livestock_title',
       folder: 'Agriculture_elevage',
-      documents: []
+      documents: getDocumentsByDomain('Agriculture_elevage') || []
     },
     {
       key: 'category_industrial_fermentation_title',
       folder: 'Traitements_industriels',
-      documents: []
+      documents: getDocumentsByDomain('Traitements_industriels') || []
     },
     {
       key: 'category_turf_parks_title',
       folder: 'Gazons',
-      documents: [
-        {
-          path: '/documents/Gazons/Plaquette_Gazon_V5.pdf',
-          title: getText('documents.turf.brochure', 'Plaquette Gazon')
-        },
-        {
-          path: '/documents/Gazons/Offre_Gazon_V5.pdf',
-          title: getText('documents.turf.offer', 'Offre Gazon')
-        },
-        {
-          path: '/documents/Gazons/Offre_Gazon_Diagbox_V5.pdf',
-          title: getText('documents.turf.diagbox', 'Offre DiagBox® Gazon')
-        }
-      ]
+      documents: getDocumentsByDomain('Gazons') || []
     }
   ];
 
@@ -66,13 +54,13 @@ function DocumentsPage() {
             <section key={domain.key} className="mb-16">
               <h2 className="text-2xl md:text-3xl font-bold text-primary dark:text-secondary mb-2">
                 {getText(`home.sectors.${domain.key}`)}
-          </h2>
+              </h2>
               <div className="w-16 h-1.5 bg-secondary mb-6 rounded-full"></div>
               
               <DocumentSlider documents={domain.documents} />
-        </section>
+            </section>
           ))}
-          </div>
+        </div>
       </div>
     </motion.div>
   );
