@@ -19,6 +19,9 @@ export const texts = {
         "events": "Événements"
       }
     },
+    "navigation": {
+      "documents": "Documents"
+    },
     "home": {
       "cta": {
         "button": "Prendre contact",
@@ -935,6 +938,18 @@ export const texts = {
         "description": "Inscrivez-vous à notre newsletter pour ne manquer aucun événement.",
         "placeholder": "Votre adresse email",
         "button": "S'inscrire"
+      }
+    },
+    "documents": {
+      "title": "Documents",
+      "intro": "Retrouvez ici tous nos documents et ressources.",
+      "no_documents": "Les documents seront bientôt disponibles.",
+      "download": "Télécharger",
+      "folder": {
+        "agriculture_elevage": "Agriculture et élevage",
+        "gazons": "Gazons",
+        "sante_publique_et_hygiene": "Santé publique et hygiène",
+        "traitements_industriels": "Traitements industriels"
       }
     }
   },
@@ -1874,6 +1889,18 @@ export const texts = {
         "description": "Subscribe to our newsletter to stay updated about our events.",
         "placeholder": "Your email address",
         "button": "Subscribe"
+      }
+    },
+    "documents": {
+      "title": "Documents",
+      "intro": "Find here all our documents and resources.",
+      "no_documents": "Documents will be available soon.",
+      "download": "Download",
+      "folder": {
+        "agriculture_elevage": "Agriculture and livestock",
+        "gazons": "Turf",
+        "sante_publique_et_hygiene": "Public health and hygiene",
+        "traitements_industriels": "Industrial treatments"
       }
     }
   }

@@ -36,7 +36,7 @@ function Footer() {
               className="h-12 mb-3" 
               style={{ maxWidth: 72 }} 
             />
-            <h3 className="text-2xl font-bold mb-4">
+            <h3 className="text-2xl font-bold mb-4 text-white dark:text-gray-100">
               {getText('footer.title')}
             </h3>
             <p className="text-lg text-gray-300 dark:text-gray-400 text-center md:text-left">
@@ -46,7 +46,7 @@ function Footer() {
 
           {/* Navigation Links */}
           <div>
-            <h3 className="text-xl font-semibold mb-4 text-center md:text-left">
+            <h3 className="text-xl font-semibold mb-4 text-white dark:text-gray-100">
               {getText('footer.navigation')}
             </h3>
             <ul className="space-y-2 text-center md:text-left">
@@ -56,8 +56,18 @@ function Footer() {
                 </Link>
               </li>
               <li>
+                <Link to="/about" className="text-gray-300 hover:text-white dark:text-gray-400 dark:hover:text-white transition-colors">
+                  {getText('footer.about')}
+                </Link>
+              </li>
+              <li>
                 <Link to="/#sectors-grid" className="text-gray-300 hover:text-white dark:text-gray-400 dark:hover:text-white transition-colors">
                   {getText('footer.sectors')}
+                </Link>
+              </li>
+              <li>
+                <Link to="/diagbox" className="text-gray-300 hover:text-white dark:text-gray-400 dark:hover:text-white transition-colors">
+                  DiagBox®
                 </Link>
               </li>
               <li>
@@ -66,18 +76,23 @@ function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/news/press" className="text-gray-300 hover:text-white dark:text-gray-400 dark:hover:text-white transition-colors">
-                  {getText('footer.news.press', 'Presse')}
+                <Link to="/press" className="text-gray-300 hover:text-white dark:text-gray-400 dark:hover:text-white transition-colors">
+                  {getText('press.title', 'Presse')}
                 </Link>
               </li>
               <li>
-                <Link to="/news/testimonials" className="text-gray-300 hover:text-white dark:text-gray-400 dark:hover:text-white transition-colors">
-                  {getText('footer.news.testimonials', 'Ils nous font confiance')}
+                <Link to="/testimonials" className="text-gray-300 hover:text-white dark:text-gray-400 dark:hover:text-white transition-colors">
+                  {getText('testimonials.title', 'Ils nous font confiance')}
                 </Link>
               </li>
               <li>
-                <Link to="/news/events" className="text-gray-300 hover:text-white dark:text-gray-400 dark:hover:text-white transition-colors">
-                  {getText('footer.news.events', 'Événements')}
+                <Link to="/events" className="text-gray-300 hover:text-white dark:text-gray-400 dark:hover:text-white transition-colors">
+                  {getText('events.title', 'Événements')}
+                </Link>
+              </li>
+              <li>
+                <Link to="/documents" className="text-gray-300 hover:text-white dark:text-gray-400 dark:hover:text-white transition-colors">
+                  {getText('navigation.documents')}
                 </Link>
               </li>
               <li>
@@ -90,7 +105,7 @@ function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-xl font-semibold mb-4 text-center md:text-left">
+            <h3 className="text-xl font-semibold mb-4 text-white dark:text-gray-100 text-center md:text-left">
               {getText('footer.contactTitle')}
             </h3>
             <ul className="space-y-2 text-center md:text-left">

@@ -774,6 +774,7 @@ diagbox.gazon.qna_reco.q2.accompagnement_text;Diagbox Gazon;Nous accompagnons vo
 diagbox.gazon.qna_reco.q3.accompagnement_text;Diagbox Gazon;Nous vous accompagnons dans le suivi des traitements, et pour voir avec vous si des diagnostics des autres compartiments (racine, sols) sont nécessaires.;We support you in monitoring treatments, and to see with you if diagnostics of other compartments (root, soil) are necessary. 
 diagbox.gazon.qna_reco.q4.accompagnement_text;Diagbox Gazon;Nous vous aidons à suivre l'évolution de la situation après la pose.;We help you monitor the situation after installation.
 contact.form.general_interest;Contact Form;Intérêt général;General interest
+;;;
 press.title;Press;Espace Presse;Press Room
 press.press_releases.title;Press;Communiqués de presse;Press Releases
 press.press_releases.coming_soon;Press;Les communiqués de presse seront bientôt disponibles.;Press releases will be available soon.
@@ -802,4 +803,14 @@ events.newsletter.title;Events;Restez informé;Stay informed
 events.newsletter.description;Events;Inscrivez-vous à notre newsletter pour ne manquer aucun événement.;Subscribe to our newsletter to stay updated about our events.
 events.newsletter.placeholder;Events;Votre adresse email;Your email address
 events.newsletter.button;Events;S'inscrire;Subscribe
+;;;
 diagbox.gazon.bon_a_savoir_title;Diagbox Gazon;Bon à savoir;Good to know
+;;;
+documents.title;Documents;Documents;Documents
+documents.intro;Documents;Retrouvez ici tous nos documents et ressources.;Find here all our documents and resources.
+documents.no_documents;Documents;Les documents seront bientôt disponibles.;Documents will be available soon.
+documents.download;Documents;Télécharger;Download
+documents.folder.agriculture_elevage;Documents;Agriculture et élevage;Agriculture and livestock
+documents.folder.gazons;Documents;Gazons;Turf
+documents.folder.sante_publique_et_hygiene;Documents;Santé publique et hygiène;Public health and hygiene
+documents.folder.traitements_industriels;Documents;Traitements industriels;Industrial treatments

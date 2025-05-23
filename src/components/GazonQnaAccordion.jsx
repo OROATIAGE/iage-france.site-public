@@ -151,25 +151,27 @@ function GazonQnaAccordion({ onOpenKitGroup }) {
   });
 
   const handleToggle = (id) => {
-    const previouslyOpenAccordionId = openAccordion; // Store the ID of the accordion that was open before this click
-    const isCurrentlyOpen = openAccordion === id;    // Is the clicked accordion the one that was already open?
-    const isOpeningNew = !isCurrentlyOpen;          // Are we trying to open this accordion (it wasn't open or a different one was)?
+    const isCurrentlyOpen = openAccordion === id;
+    const isOpeningNew = !isCurrentlyOpen;
 
-    // If a new accordion is being opened, and there was a different one open before,
-    // close the kit details of the previously open accordion.
-    if (isOpeningNew && previouslyOpenAccordionId && previouslyOpenAccordionId !== id) {
-      setOpenKitAccordions(prev => ({ ...prev, [previouslyOpenAccordionId]: false }));
+    // Si on ferme l'accordéon actuel ou si on en ouvre un nouveau, fermer l'accordéon des spécifications
+    if (!isOpeningNew || openAccordion !== null) {
+      setOpenKitAccordions(prev => {
+        const newState = { ...prev };
+        // Fermer l'accordéon des spécifications de l'accordéon qu'on ferme
+        if (!isOpeningNew) {
+          newState[id + '_conclusion'] = false;
+        }
+        // Si on ouvre un nouveau, fermer l'accordéon des spécifications de l'ancien
+        if (openAccordion !== null) {
+          newState[openAccordion + '_conclusion'] = false;
+        }
+        return newState;
+      });
     }
 
     // Set the new state for the main accordion (open the clicked one, or close it if it was already open)
     setOpenAccordion(isOpeningNew ? id : null);
-
-    // If we are explicitly closing the accordion that was just open (by clicking it again),
-    // also ensure its corresponding kit details accordion is closed.
-    // This handles the case where the user clicks the same accordion header to close it.
-    if (isCurrentlyOpen) { 
-      setOpenKitAccordions(prev => ({ ...prev, [id]: false }));
-    }
 
     // Scroll logic for when a new main accordion is being opened
     if (isOpeningNew) {
@@ -258,6 +260,42 @@ function GazonQnaAccordion({ onOpenKitGroup }) {
                   </div>
                 </div>
 
+                {/* Contact button for q5 only */}
+                {item.id === 'q5' && (
+                  <div className="mt-6 text-center">
+                    <a
+                      href="/contact"
+                      onClick={(e) => handleLinkClick(e, '/contact')}
+                      className="inline-block px-6 py-2 bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors"
+                    >
+                      {getGeneralText('home.hero.cta', language)}
+                    </a>
+                  </div>
+                )}
+
+                {/* Bon à savoir section */}
+                {item.id === 'qna-group-q4_combined' && (
+                  <div className="mt-4">
+                    <h4 className="text-lg font-semibold mb-2 text-gray-800 dark:text-gray-200">
+                      {getGeneralText('diagbox.gazon.qna_reco.common.bon_a_savoir', language)}
+                    </h4>
+                    <div className="prose dark:prose-invert">
+                      <TextWithBoldMarkdown text={getBonASavoirText(item.bonASavoirKey, language)} />
+                    </div>
+                    
+                    {/* Contact button for the last question */}
+                    <div className="mt-6 text-center">
+                      <a
+                        href="/contact"
+                        onClick={(e) => handleLinkClick(e, '/contact')}
+                        className="inline-block px-6 py-2 bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors"
+                      >
+                        {getGeneralText('home.hero.cta', language)}
+                      </a>
+                    </div>
+                  </div>
+                )}
+
                 {/* Recommendations Section (Text Only) */}
                 {recommendationTexts && (
                   <div className="mt-4 p-4 bg-white dark:bg-gray-700 rounded-lg shadow-sm mb-4 md:max-w-3xl lg:max-w-4xl md:mx-auto">
@@ -281,39 +319,49 @@ function GazonQnaAccordion({ onOpenKitGroup }) {
                     <div className="prose dark:prose-invert w-full">
                       <TextWithBoldMarkdown text={getGeneralText(`diagbox.gazon.qna_reco.${item.id}.accompagnement_text`, language)} />
                     </div>
+                    
+                    {/* Contact Link - Moved here */}
+                    {(item.recommendationKey || item.id === 'q5') && (
+                      <div className="mt-6 text-center">
+                        <a
+                          href="/contact"
+                          onClick={(e) => handleLinkClick(e, '/contact')}
+                          className="inline-block px-6 py-2 bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors"
+                        >
+                          {getGeneralText('home.hero.cta', language)}
+                        </a>
+                      </div>
+                    )}
                   </div>
                 )}
 
                 {/* Conclusion text if exists */}
                 {recommendationTexts && (
-                  <div className="mt-4 p-4 bg-white dark:bg-gray-700 rounded-lg shadow-sm mb-4 md:max-w-3xl lg:max-w-4xl md:mx-auto">
-                    <div className="w-16 h-1.5 bg-secondary mb-4 rounded-full"></div>
-                    <div className="prose dark:prose-invert w-full">
-                      <TextWithBoldMarkdown text={recommendationTexts.conclusionSuffix} />
-                    </div>
-                  </div>
-                )}
-
-                {/* Kit recommendations section */}
-                {item.recommendedKitRefs && (
-                  <div>
-                    <DiagboxKitTable 
-                      kitList={item.recommendedKitRefs.map(kit => kit.ref)}
-                      kitRefToSectionIdMap={kitRefToSectionIdMap}
-                    />
-                  </div>
-                )}
-
-                {/* Contact Link - Placed after both recommendation and kit sections */}
-                {(item.recommendationKey || item.id === 'q5') && (
-                  <div className="mt-6 text-center md:max-w-3xl lg:max-w-4xl md:mx-auto">
-                    <a
-                      href="/contact"
-                      onClick={(e) => handleLinkClick(e, '/contact')}
-                      className="inline-block px-6 py-2 bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors"
+                  <div className="mt-4">
+                    <button
+                      onClick={() => handleToggleKitAccordion(item.id + '_conclusion')}
+                      className="w-full flex flex-col p-4 text-left text-lg text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors bg-white dark:bg-gray-700 rounded-lg shadow-sm"
                     >
-                      {getGeneralText('home.hero.cta', language)}
-                    </a>
+                      <div className="flex justify-between items-center w-full mb-2">
+                        <span>{recommendationTexts.conclusionSuffix}</span>
+                        <FaChevronDown className={`text-primary dark:text-secondary transform transition-transform duration-200 ${openKitAccordions[item.id + '_conclusion'] ? 'rotate-180' : ''}`} />
+                      </div>
+                      <div className="w-16 h-1.5 bg-secondary rounded-full"></div>
+                    </button>
+                    
+                    {openKitAccordions[item.id + '_conclusion'] && (
+                      <div className="p-4 bg-white dark:bg-gray-700 rounded-lg shadow-sm mt-2">
+                        {/* Kit recommendations section */}
+                        {item.recommendedKitRefs && (
+                          <div>
+                            <DiagboxKitTable 
+                              kitList={item.recommendedKitRefs.map(kit => kit.ref)}
+                              kitRefToSectionIdMap={kitRefToSectionIdMap}
+                            />
+                          </div>
+                        )}
+                      </div>
+                    )}
                   </div>
                 )}
               </div>

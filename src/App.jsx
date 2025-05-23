@@ -20,6 +20,7 @@ import Sector10Page from './pages/Sector10Page'
 import PressPage from './pages/PressPage'
 import TestimonialsPage from './pages/TestimonialsPage'
 import EventsPage from './pages/EventsPage'
+import DocumentsPage from './pages/DocumentsPage'
 
 function App() {
   return (
@@ -46,9 +47,10 @@ function App() {
                 <Route path="/:lang/privacy-policy" element={<PrivacyPolicy />} />
                 <Route path="/:lang/legal-notice" element={<LegalNotice />} />
                 <Route path="/:lang/diagbox" element={<DiagboxPage />} />
-                <Route path="/:lang/news/press" element={<PressPage />} />
-                <Route path="/:lang/news/testimonials" element={<TestimonialsPage />} />
-                <Route path="/:lang/news/events" element={<EventsPage />} />
+                <Route path="/:lang/press" element={<PressPage />} />
+                <Route path="/:lang/testimonials" element={<TestimonialsPage />} />
+                <Route path="/:lang/events" element={<EventsPage />} />
+                <Route path="/:lang/documents" element={<DocumentsPage />} />
                 {/* Routes sans langue pour la rétrocompatibilité */}
                 <Route path="/about" element={<About />} />
                 <Route path="/services" element={<Services />} />
@@ -61,9 +63,10 @@ function App() {
                 <Route path="/privacy-policy" element={<PrivacyPolicy />} />
                 <Route path="/legal-notice" element={<LegalNotice />} />
                 <Route path="/diagbox" element={<DiagboxPage />} />
-                <Route path="/news/press" element={<PressPage />} />
-                <Route path="/news/testimonials" element={<TestimonialsPage />} />
-                <Route path="/news/events" element={<EventsPage />} />
+                <Route path="/press" element={<PressPage />} />
+                <Route path="/testimonials" element={<TestimonialsPage />} />
+                <Route path="/events" element={<EventsPage />} />
+                <Route path="/documents" element={<DocumentsPage />} />
               </Routes>
             {/* </AnimatePresence> Mettre en commentaire temporairement */}
           </main>
