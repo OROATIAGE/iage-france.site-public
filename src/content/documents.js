@@ -1,5 +1,5 @@
 // Ce fichier est généré automatiquement. Ne pas modifier directement.
-// Dernière génération : 2025-05-23T17:23:02.835Z
+// Dernière génération : 2025-05-23T17:38:05.814Z
 
 export const documents = [
   {
@@ -35,10 +35,10 @@ export const documents = [
     "lastModified": "2025-05-23T17:00:51.369Z"
   },
   {
-    "path": "/documents/Santé_publique_et_hygiene/Notice d'utilisation preleveur d'eau.pdf",
-    "filename": "Notice d'utilisation preleveur d'eau.pdf",
+    "path": "/documents/Santé_publique_et_hygiene/Notice utilisation preleveur eau.pdf",
+    "filename": "Notice utilisation preleveur eau.pdf",
     "domain": "Santé_publique_et_hygiene",
-    "title": "Notice d'utilisation preleveur d'eau",
+    "title": "Notice utilisation preleveur eau",
     "size": 62244631,
     "lastModified": "2025-05-23T17:00:51.369Z"
   },
