@@ -54,13 +54,13 @@ function DocumentsPage() {
             <section key={domain.key} className="mb-16">
               <h2 className="text-2xl md:text-3xl font-bold text-primary dark:text-secondary mb-2">
                 {getText(`home.sectors.${domain.key}`)}
-              </h2>
+          </h2>
               <div className="w-16 h-1.5 bg-secondary mb-6 rounded-full"></div>
               
               <DocumentSlider documents={domain.documents} />
-            </section>
+        </section>
           ))}
-        </div>
+          </div>
       </div>
     </motion.div>
   );
