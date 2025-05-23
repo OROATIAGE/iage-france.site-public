@@ -1,9 +1,9 @@
 // Ce fichier est généré automatiquement. Ne pas modifier directement.
-// Dernière génération : 2025-05-23T17:38:05.814Z
+// Dernière génération : 2025-05-23T17:43:39.457Z
 
 export const documents = [
   {
-    "path": "/documents/Gazons/Offre_Gazon_V5.pdf",
+    "path": "./documents/Gazons/Offre_Gazon_V5.pdf",
     "filename": "Offre_Gazon_V5.pdf",
     "domain": "Gazons",
     "title": "Offre  Gazon  V5",
@@ -11,7 +11,7 @@ export const documents = [
     "lastModified": "2025-05-23T17:00:51.366Z"
   },
   {
-    "path": "/documents/Gazons/Plaquette_Gazon_V5.pdf",
+    "path": "./documents/Gazons/Plaquette_Gazon_V5.pdf",
     "filename": "Plaquette_Gazon_V5.pdf",
     "domain": "Gazons",
     "title": "Plaquette  Gazon  V5",
@@ -19,7 +19,7 @@ export const documents = [
     "lastModified": "2025-05-23T17:00:51.366Z"
   },
   {
-    "path": "/documents/Gazons/Offre_Gazon_Diagbox_V5.pdf",
+    "path": "./documents/Gazons/Offre_Gazon_Diagbox_V5.pdf",
     "filename": "Offre_Gazon_Diagbox_V5.pdf",
     "domain": "Gazons",
     "title": "Offre  Gazon  Diagbox  V5",
@@ -27,7 +27,7 @@ export const documents = [
     "lastModified": "2025-05-23T17:00:51.365Z"
   },
   {
-    "path": "/documents/Santé_publique_et_hygiene/fiche produit Moisissure habitation PF000051 v2.pdf",
+    "path": "./documents/Santé_publique_et_hygiene/fiche produit Moisissure habitation PF000051 v2.pdf",
     "filename": "fiche produit Moisissure habitation PF000051 v2.pdf",
     "domain": "Santé_publique_et_hygiene",
     "title": "fiche produit  Moisissure habitation  P F000051 v2",
@@ -35,7 +35,7 @@ export const documents = [
     "lastModified": "2025-05-23T17:00:51.369Z"
   },
   {
-    "path": "/documents/Santé_publique_et_hygiene/Notice utilisation preleveur eau.pdf",
+    "path": "./documents/Santé_publique_et_hygiene/Notice utilisation preleveur eau.pdf",
     "filename": "Notice utilisation preleveur eau.pdf",
     "domain": "Santé_publique_et_hygiene",
     "title": "Notice utilisation preleveur eau",
@@ -43,7 +43,7 @@ export const documents = [
     "lastModified": "2025-05-23T17:00:51.369Z"
   },
   {
-    "path": "/documents/Santé_publique_et_hygiene/Fiche produit patho moisissure détection PF000042 v2.pdf",
+    "path": "./documents/Santé_publique_et_hygiene/Fiche produit patho moisissure détection PF000042 v2.pdf",
     "filename": "Fiche produit patho moisissure détection PF000042 v2.pdf",
     "domain": "Santé_publique_et_hygiene",
     "title": "Fiche produit patho moisissure détection  P F000042 v2",
@@ -51,7 +51,7 @@ export const documents = [
     "lastModified": "2025-05-23T17:00:51.368Z"
   },
   {
-    "path": "/documents/Santé_publique_et_hygiene/Fiche produit rongeur PF00031 v1.pdf",
+    "path": "./documents/Santé_publique_et_hygiene/Fiche produit rongeur PF00031 v1.pdf",
     "filename": "Fiche produit rongeur PF00031 v1.pdf",
     "domain": "Santé_publique_et_hygiene",
     "title": "Fiche produit rongeur  P F00031 v1",
@@ -59,7 +59,7 @@ export const documents = [
     "lastModified": "2025-05-23T17:00:51.368Z"
   },
   {
-    "path": "/documents/Santé_publique_et_hygiene/Fiche produit patho moisissure caractérisation PF000003 v2.pdf",
+    "path": "./documents/Santé_publique_et_hygiene/Fiche produit patho moisissure caractérisation PF000003 v2.pdf",
     "filename": "Fiche produit patho moisissure caractérisation PF000003 v2.pdf",
     "domain": "Santé_publique_et_hygiene",
     "title": "Fiche produit patho moisissure caractérisation  P F000003 v2",
@@ -67,7 +67,7 @@ export const documents = [
     "lastModified": "2025-05-23T17:00:51.367Z"
   },
   {
-    "path": "/documents/Santé_publique_et_hygiene/Fiche produit Maladies nosocomiales PF000043 vf.pdf",
+    "path": "./documents/Santé_publique_et_hygiene/Fiche produit Maladies nosocomiales PF000043 vf.pdf",
     "filename": "Fiche produit Maladies nosocomiales PF000043 vf.pdf",
     "domain": "Santé_publique_et_hygiene",
     "title": "Fiche produit  Maladies nosocomiales  P F000043 vf",
@@ -75,7 +75,7 @@ export const documents = [
     "lastModified": "2025-05-23T17:00:51.366Z"
   },
   {
-    "path": "/documents/Santé_publique_et_hygiene/Fiche produit Punaise de lit PF00002 v4.pdf",
+    "path": "./documents/Santé_publique_et_hygiene/Fiche produit Punaise de lit PF00002 v4.pdf",
     "filename": "Fiche produit Punaise de lit PF00002 v4.pdf",
     "domain": "Santé_publique_et_hygiene",
     "title": "Fiche produit  Punaise de lit  P F00002 v4",

@@ -10,6 +10,18 @@
     }
   ],
   "rewrites": [
+    { "source": "/documents/(.*)", "destination": "/documents/$1" },
     { "source": "/(.*)", "destination": "/index.html" }
+  ],
+  "headers": [
+    {
+      "source": "/documents/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
   ]
 } 
