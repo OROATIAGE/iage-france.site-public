@@ -67,10 +67,10 @@ const generateDocumentsList = () => {
     // Scanner le répertoire
     const documents = scanDirectory(DOCUMENTS_DIR);
 
-    // Trier les documents par domaine et date de modification
+    // Trier les documents par domaine et par titre alphabétique, sans tenir compte de la casse
     documents.sort((a, b) => {
       if (a.domain === b.domain) {
-        return new Date(b.lastModified) - new Date(a.lastModified);
+        return a.title.toLowerCase().localeCompare(b.title.toLowerCase(), undefined, { numeric: true });
       }
       return a.domain.localeCompare(b.domain);
     });

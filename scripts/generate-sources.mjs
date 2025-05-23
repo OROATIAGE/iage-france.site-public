@@ -115,7 +115,7 @@ const generateDocuments = () => {
     const documents = scanDirectory(DOCUMENTS_DIR);
     documents.sort((a, b) => {
       if (a.domain === b.domain) {
-        return new Date(b.lastModified) - new Date(a.lastModified);
+        return a.title.toLowerCase().localeCompare(b.title.toLowerCase(), undefined, { numeric: true });
       }
       return a.domain.localeCompare(b.domain);
     });
