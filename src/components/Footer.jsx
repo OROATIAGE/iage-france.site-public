@@ -67,7 +67,7 @@ function Footer() {
               </li>
               <li>
                 <Link to="/diagbox" className="text-gray-300 hover:text-white dark:text-gray-400 dark:hover:text-white transition-colors">
-                  DiagBox®
+                  DIAGBOX®
                 </Link>
               </li>
               <li>
