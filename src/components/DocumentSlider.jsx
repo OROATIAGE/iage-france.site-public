@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { getTextByLanguage } from '../utils/textHelpers';
 
@@ -7,6 +7,7 @@ function DocumentSlider({ documents }) {
   const { language } = useLanguage();
   const getText = (key, defaultValue = '') => getTextByLanguage(key, language, defaultValue);
   const [selectedDoc, setSelectedDoc] = useState(null);
+  const [pdfError, setPdfError] = useState(false);
 
   const handleScroll = (direction) => {
     if (sliderRef.current) {
@@ -14,6 +15,11 @@ function DocumentSlider({ documents }) {
       sliderRef.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
     }
   };
+
+  // Reset PDF error state when selecting a new document
+  useEffect(() => {
+    setPdfError(false);
+  }, [selectedDoc]);
 
   // Fonction pour formater la taille du fichier
   const formatFileSize = (bytes) => {
@@ -43,6 +49,10 @@ function DocumentSlider({ documents }) {
       </div>
     );
   }
+
+  const handlePdfError = () => {
+    setPdfError(true);
+  };
 
   return (
     <>
@@ -78,10 +88,10 @@ function DocumentSlider({ documents }) {
                   <div className="h-80 bg-gray-100 dark:bg-gray-700 flex items-center justify-center group relative">
                     {/* Aperçu du document */}
                     <div className="w-full h-full flex items-center justify-center">
-                      <object
-                        data={doc.path}
-                        type="application/pdf"
+                      <iframe
+                        src={`${doc.path}#toolbar=0&navpanes=0&scrollbar=0`}
                         className="w-full h-full"
+                        onError={handlePdfError}
                       >
                         <div className="flex flex-col items-center justify-center h-full">
                           <svg className="w-12 h-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -89,7 +99,7 @@ function DocumentSlider({ documents }) {
                           </svg>
                           <span className="mt-2 text-sm text-gray-500">Aperçu PDF</span>
                         </div>
-                      </object>
+                      </iframe>
                     </div>
                     {/* Overlay avec texte au survol */}
                     <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 flex items-center justify-center transition-all duration-200">
@@ -125,6 +135,8 @@ function DocumentSlider({ documents }) {
                     <a
                       href={doc.path}
                       download
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="inline-flex items-center text-sm text-primary hover:text-primary-dark dark:text-secondary dark:hover:text-secondary-light"
                     >
                       <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -160,24 +172,60 @@ function DocumentSlider({ documents }) {
               <h3 className="text-lg font-medium text-gray-900 dark:text-gray-100">
                 {selectedDoc.title}
               </h3>
-              <button
-                onClick={() => setSelectedDoc(null)}
-                className="text-gray-400 hover:text-gray-500 dark:hover:text-gray-300"
-              >
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
+              <div className="flex items-center gap-4">
+                <a
+                  href={selectedDoc.path}
+                  download
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary hover:text-primary-dark dark:text-secondary dark:hover:text-secondary-light"
+                >
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                  </svg>
+                </a>
+                <button
+                  onClick={() => setSelectedDoc(null)}
+                  className="text-gray-400 hover:text-gray-500 dark:hover:text-gray-300"
+                >
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
             </div>
             {/* Corps de la modale */}
             <div className="flex-1 relative">
-              <object
-                data={selectedDoc.path}
-                type="application/pdf"
-                className="absolute inset-0 w-full h-full"
-              >
-                <p>Votre navigateur ne peut pas afficher ce PDF. <a href={selectedDoc.path} download>Cliquez ici pour le télécharger</a>.</p>
-              </object>
+              {pdfError ? (
+                <div className="absolute inset-0 flex flex-col items-center justify-center p-4">
+                  <p className="text-gray-600 dark:text-gray-300 mb-4 text-center">
+                    {getText('documents.error.loading', 'Le document ne peut pas être affiché directement.')}
+                  </p>
+                  <a
+                    href={selectedDoc.path}
+                    download
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 bg-primary text-white rounded hover:bg-primary-dark transition-colors"
+                  >
+                    {getText('documents.error.download', 'Télécharger le document')}
+                  </a>
+                </div>
+              ) : (
+                <iframe
+                  src={`${selectedDoc.path}#toolbar=1&navpanes=1`}
+                  className="absolute inset-0 w-full h-full"
+                  onError={handlePdfError}
+                >
+                  <p>
+                    {getText('documents.error.browser', 'Votre navigateur ne peut pas afficher ce PDF.')}
+                    {' '}
+                    <a href={selectedDoc.path} download className="text-primary hover:underline">
+                      {getText('documents.error.download_link', 'Cliquez ici pour le télécharger')}
+                    </a>.
+                  </p>
+                </iframe>
+              )}
             </div>
           </div>
         </div>
