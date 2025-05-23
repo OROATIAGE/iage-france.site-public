@@ -34,9 +34,9 @@ const scanDirectory = (currentDir) => {
       const relativePath = path.relative(DOCUMENTS_DIR, currentDir);
       const domain = relativePath || path.basename(currentDir);
 
-      // Ajouter le document à la liste
+      // Ajouter le document à la liste avec le chemin correct pour Vercel
       documents.push({
-        path: `/documents/${relativePath}/${item}`.replace(/\\/g, '/'),
+        path: path.join('/documents', relativePath, item).replace(/\\/g, '/'),
         filename: item,
         domain: domain,
         title: path.basename(item, path.extname(item))

@@ -46,41 +46,51 @@ function DocumentSlider({ documents }) {
 
   return (
     <>
-      <div className="relative">
-        {/* Navigation buttons */}
-        <button
-          onClick={() => handleScroll('left')}
-          className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white dark:bg-gray-800 p-2 rounded-full shadow-md hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none"
-          aria-label="Scroll left"
-        >
-          <svg className="w-6 h-6 text-gray-600 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-          </svg>
-        </button>
-        
-        {/* Documents container */}
-        <div
-          ref={sliderRef}
-          className="flex overflow-x-auto gap-6 py-4 px-8 no-scrollbar"
-          style={{ scrollSnapType: 'x mandatory' }}
-        >
-          {documents.map((doc, index) => (
-            <div
-              key={index}
-              className="flex-none w-64 scroll-snap-align-start"
-            >
-              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
+    <div className="relative">
+      {/* Navigation buttons */}
+      <button
+        onClick={() => handleScroll('left')}
+        className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white dark:bg-gray-800 p-2 rounded-full shadow-md hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none"
+        aria-label="Scroll left"
+      >
+        <svg className="w-6 h-6 text-gray-600 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+      
+      {/* Documents container */}
+      <div
+        ref={sliderRef}
+        className="flex overflow-x-auto gap-6 py-4 px-8 no-scrollbar"
+        style={{ scrollSnapType: 'x mandatory' }}
+      >
+        {documents.map((doc, index) => (
+          <div
+            key={index}
+            className="flex-none w-64 scroll-snap-align-start"
+          >
+            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
                 {/* Document preview (first page) - Maintenant cliquable */}
                 <button
                   onClick={() => setSelectedDoc(doc)}
                   className="block cursor-pointer w-full"
                 >
                   <div className="h-80 bg-gray-100 dark:bg-gray-700 flex items-center justify-center group relative">
-                    <embed
-                      src={`${doc.path}#page=1`}
-                      type="application/pdf"
-                      className="w-full h-full object-contain"
-                    />
+                    {/* Aperçu du document */}
+                    <div className="w-full h-full flex items-center justify-center">
+                      <object
+                        data={doc.path}
+                        type="application/pdf"
+                        className="w-full h-full"
+                      >
+                        <div className="flex flex-col items-center justify-center h-full">
+                          <svg className="w-12 h-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                          </svg>
+                          <span className="mt-2 text-sm text-gray-500">Aperçu PDF</span>
+                        </div>
+                      </object>
+                    </div>
                     {/* Overlay avec texte au survol */}
                     <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 flex items-center justify-center transition-all duration-200">
                       <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-200">
@@ -89,12 +99,12 @@ function DocumentSlider({ documents }) {
                     </div>
                   </div>
                 </button>
-                
-                {/* Document info */}
-                <div className="p-4">
-                  <h3 className="text-sm font-medium text-gray-900 dark:text-gray-100 mb-2">
-                    {doc.title}
-                  </h3>
+              
+              {/* Document info */}
+              <div className="p-4">
+                <h3 className="text-sm font-medium text-gray-900 dark:text-gray-100 mb-2">
+                  {doc.title}
+                </h3>
                   <div className="text-xs text-gray-500 dark:text-gray-400 mb-3">
                     <p>{formatFileSize(doc.size)}</p>
                     <p>{formatDate(doc.lastModified)}</p>
@@ -123,23 +133,23 @@ function DocumentSlider({ documents }) {
                       {getText('documents.download', 'Télécharger')}
                     </a>
                   </div>
-                </div>
               </div>
             </div>
-          ))}
-        </div>
-
-        {/* Right navigation button */}
-        <button
-          onClick={() => handleScroll('right')}
-          className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white dark:bg-gray-800 p-2 rounded-full shadow-md hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none"
-          aria-label="Scroll right"
-        >
-          <svg className="w-6 h-6 text-gray-600 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-          </svg>
-        </button>
+          </div>
+        ))}
       </div>
+
+      {/* Right navigation button */}
+      <button
+        onClick={() => handleScroll('right')}
+        className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white dark:bg-gray-800 p-2 rounded-full shadow-md hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none"
+        aria-label="Scroll right"
+      >
+        <svg className="w-6 h-6 text-gray-600 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+    </div>
 
       {/* Modal pour afficher le document */}
       {selectedDoc && (
@@ -161,11 +171,13 @@ function DocumentSlider({ documents }) {
             </div>
             {/* Corps de la modale */}
             <div className="flex-1 relative">
-              <embed
-                src={selectedDoc.path}
+              <object
+                data={selectedDoc.path}
                 type="application/pdf"
                 className="absolute inset-0 w-full h-full"
-              />
+              >
+                <p>Votre navigateur ne peut pas afficher ce PDF. <a href={selectedDoc.path} download>Cliquez ici pour le télécharger</a>.</p>
+              </object>
             </div>
           </div>
         </div>
