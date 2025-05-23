@@ -36,7 +36,7 @@ const scanDirectory = (currentDir) => {
 
       // Ajouter le document à la liste
       documents.push({
-        path: `/documents/${relativePath}/${item}`.replace(/\\/g, '/'),
+        path: `/documents/${relativePath ? `${relativePath}/` : ''}${item}`.replace(/\\/g, '/'),
         filename: item,
         domain: domain,
         title: path.basename(item, path.extname(item))
