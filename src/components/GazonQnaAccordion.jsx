@@ -345,21 +345,21 @@ function GazonQnaAccordion({ onOpenKitGroup }) {
                       <div className="flex justify-between items-center w-full mb-2">
                         <span>{recommendationTexts.conclusionSuffix}</span>
                         <FaChevronDown className={`text-primary dark:text-secondary transform transition-transform duration-200 ${openKitAccordions[item.id + '_conclusion'] ? 'rotate-180' : ''}`} />
-                      </div>
+                    </div>
                       <div className="w-16 h-1.5 bg-secondary rounded-full"></div>
                     </button>
-                    
+
                     {openKitAccordions[item.id + '_conclusion'] && (
                       <div className="p-4 bg-white dark:bg-gray-700 rounded-lg shadow-sm mt-2">
-                        {/* Kit recommendations section */}
-                        {item.recommendedKitRefs && (
-                          <div>
-                            <DiagboxKitTable 
-                              kitList={item.recommendedKitRefs.map(kit => kit.ref)}
-                              kitRefToSectionIdMap={kitRefToSectionIdMap}
-                            />
-                          </div>
-                        )}
+                {/* Kit recommendations section */}
+                {item.recommendedKitRefs && (
+                  <div>
+                    <DiagboxKitTable 
+                      kitList={item.recommendedKitRefs.map(kit => kit.ref)}
+                      kitRefToSectionIdMap={kitRefToSectionIdMap}
+                    />
+                  </div>
+                )}
                       </div>
                     )}
                   </div>
