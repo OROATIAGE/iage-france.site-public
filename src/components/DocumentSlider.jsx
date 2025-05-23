@@ -7,7 +7,6 @@ function DocumentSlider({ documents }) {
   const { language } = useLanguage();
   const getText = (key, defaultValue = '') => getTextByLanguage(key, language, defaultValue);
   const [selectedDoc, setSelectedDoc] = useState(null);
-  const [pdfError, setPdfError] = useState({});
 
   const handleScroll = (direction) => {
     if (sliderRef.current) {
@@ -77,34 +76,11 @@ function DocumentSlider({ documents }) {
                   className="block cursor-pointer w-full"
                 >
                   <div className="h-80 bg-gray-100 dark:bg-gray-700 flex items-center justify-center group relative">
-                    <object
-                      data={doc.path}
+                    <embed
+                      src={`${doc.path}#page=1`}
                       type="application/pdf"
                       className="w-full h-full object-contain"
-                      onError={() => setPdfError(prev => ({ ...prev, [doc.path]: true }))}
-                    >
-                      {pdfError[doc.path] ? (
-                        <div className="flex flex-col items-center justify-center h-full">
-                          <p className="text-red-500 dark:text-red-400 text-sm mb-2">
-                            {getText('documents.error_loading', 'Erreur de chargement du PDF')}
-                          </p>
-                          <a
-                            href={doc.path}
-                            download
-                            className="text-primary dark:text-secondary hover:underline text-sm"
-                            onClick={(e) => e.stopPropagation()}
-                          >
-                            {getText('documents.download_instead', 'Télécharger directement')}
-                          </a>
-                        </div>
-                      ) : (
-                        <div className="flex items-center justify-center h-full">
-                          <p className="text-gray-500 dark:text-gray-400 text-sm">
-                            {getText('documents.loading', 'Chargement du PDF...')}
-                          </p>
-                        </div>
-                      )}
-                    </object>
+                    />
                     {/* Overlay avec texte au survol */}
                     <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 flex items-center justify-center transition-all duration-200">
                       <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-200">
@@ -185,33 +161,11 @@ function DocumentSlider({ documents }) {
             </div>
             {/* Corps de la modale */}
             <div className="flex-1 relative">
-              <object
-                data={selectedDoc.path}
+              <embed
+                src={selectedDoc.path}
                 type="application/pdf"
                 className="absolute inset-0 w-full h-full"
-                onError={() => setPdfError(prev => ({ ...prev, [selectedDoc.path]: true }))}
-              >
-                {pdfError[selectedDoc.path] ? (
-                  <div className="flex flex-col items-center justify-center h-full">
-                    <p className="text-red-500 dark:text-red-400 mb-2">
-                      {getText('documents.error_loading', 'Erreur de chargement du PDF')}
-                    </p>
-                    <a
-                      href={selectedDoc.path}
-                      download
-                      className="text-primary dark:text-secondary hover:underline"
-                    >
-                      {getText('documents.download_instead', 'Télécharger directement')}
-                    </a>
-                  </div>
-                ) : (
-                  <div className="flex items-center justify-center h-full">
-                    <p className="text-gray-500 dark:text-gray-400">
-                      {getText('documents.loading', 'Chargement du PDF...')}
-                    </p>
-                  </div>
-                )}
-              </object>
+              />
             </div>
           </div>
         </div>

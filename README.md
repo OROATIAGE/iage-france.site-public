@@ -57,7 +57,4 @@ Le site est déployé sur Vercel. Les mises à jour sont automatiquement déploy
 
 ## Licence
 
-Propriété de IAGE - Tous droits réservés
-
-# Test Git
-Test de modification pour vérifier Git 
+Propriété de IAGE - Tous droits réservés 
