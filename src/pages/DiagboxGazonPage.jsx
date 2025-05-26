@@ -103,26 +103,12 @@ export function DiagboxGazonPage() {
           {getText('diagbox.process.title')}
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8 text-center">
-          <div className="flex flex-col items-center">
-            <img src="/assets/icons/box.svg" alt="Ouvrir le kit" className="w-12 h-12 mb-3" />
-            <p className="text-gray-600 dark:text-gray-400">{getText('diagbox.process.step1.text')}</p>
-          </div>
-          <div className="flex flex-col items-center">
-            <img src="/assets/icons/test-tube.svg" alt="Prélever l'échantillon" className="w-12 h-12 mb-3" />
-            <p className="text-gray-600 dark:text-gray-400">{getText('diagbox.process.step2.text')}</p>
-          </div>
-          <div className="flex flex-col items-center">
-            <img src="/assets/icons/qr-code.svg" alt="Scanner le QR code" className="w-12 h-12 mb-3" />
-            <p className="text-gray-600 dark:text-gray-400">{getText('diagbox.process.step3.text')}</p>
-          </div>
-          <div className="flex flex-col items-center">
-            <img src="/assets/icons/delivery-truck.svg" alt="Envoyer au laboratoire" className="w-12 h-12 mb-3" />
-            <p className="text-gray-600 dark:text-gray-400">{getText('diagbox.process.step4.text')}</p>
-          </div>
-          <div className="flex flex-col items-center">
-            <img src="/assets/icons/chart.svg" alt="Obtenir les résultats" className="w-12 h-12 mb-3" />
-            <p className="text-gray-600 dark:text-gray-400">{getText('diagbox.process.step5.text')}</p>
-          </div>
+          {simpleSteps.map((step, index) => (
+            <div key={index} className="flex flex-col items-center">
+              <img src={step.icon} alt={step.alt} className="w-12 h-12 mb-3" />
+              <p className="text-gray-600 dark:text-gray-400">{getText(`diagbox.${step.key}`)}</p>
+            </div>
+          ))}
         </div>
       </section>
 

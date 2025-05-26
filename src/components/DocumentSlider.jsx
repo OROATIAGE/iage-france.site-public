@@ -213,8 +213,9 @@ function DocumentSlider({ documents }) {
                 </div>
               ) : (
                 <iframe
-                  src={`${selectedDoc.path}#toolbar=1&navpanes=1`}
+                  src={`${selectedDoc.path}#toolbar=1&navpanes=1&view=FitH&scrollbar=1&statusbar=1&messages=1&page=1`}
                   className="absolute inset-0 w-full h-full"
+                  style={{ WebkitOverflowScrolling: 'touch' }}
                   onError={handlePdfError}
                 >
                   <p>
