@@ -486,23 +486,23 @@ function SectorPage() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8 text-center">
             <div className="flex flex-col items-center">
-              <img src="/assets/icons/box.svg" alt="Ouvrir le kit" className="w-12 h-12 mb-3" />
+              <img src="/assets/icons/DIAGBOX.svg" alt="Ouvrir le kit" className="w-12 h-12 mb-3" />
               <p className="text-primary dark:text-secondary">{getText('diagbox.process.step1.text', '')}</p>
             </div>
             <div className="flex flex-col items-center">
-              <img src="/assets/icons/test-tube.svg" alt="Prélever l'échantillon" className="w-12 h-12 mb-3" />
+              <img src="/assets/icons/prélèvement (gazon).svg" alt="Prélever l'échantillon" className="w-12 h-12 mb-3" />
               <p className="text-primary dark:text-secondary">{getText('diagbox.process.step2.text', '')}</p>
             </div>
             <div className="flex flex-col items-center">
-              <img src="/assets/icons/qr-code.svg" alt="Scanner le QR code" className="w-12 h-12 mb-3" />
+              <img src="/assets/icons/enregistrement.svg" alt="Scanner le QR code" className="w-12 h-12 mb-3" />
               <p className="text-primary dark:text-secondary">{getText('diagbox.process.step3.text', '')}</p>
             </div>
             <div className="flex flex-col items-center">
-              <img src="/assets/icons/delivery-truck.svg" alt="Envoyer au laboratoire" className="w-12 h-12 mb-3" />
+              <img src="/assets/icons/envoi.svg" alt="Envoyer au laboratoire" className="w-12 h-12 mb-3" />
               <p className="text-primary dark:text-secondary">{getText('diagbox.process.step4.text', '')}</p>
             </div>
             <div className="flex flex-col items-center">
-              <img src="/assets/icons/chart.svg" alt="Obtenir les résultats" className="w-12 h-12 mb-3" />
+              <img src="/assets/icons/Résultats.svg" alt="Obtenir les résultats" className="w-12 h-12 mb-3" />
               <p className="text-primary dark:text-secondary">{getText('diagbox.process.step5.text', '')}</p>
             </div>
           </div>

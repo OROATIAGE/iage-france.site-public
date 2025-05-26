@@ -113,10 +113,32 @@ const generateDocuments = () => {
 
     // Scanner et trier les documents
     const documents = scanDirectory(DOCUMENTS_DIR);
+
+    // Fonction pour obtenir l'extension d'un fichier
+    const getFileExtension = (filename) => {
+      return filename.slice((filename.lastIndexOf(".") - 1 >>> 0) + 2).toLowerCase();
+    };
+
+    // Trier les documents par type (PDF en premier) puis par titre
     documents.sort((a, b) => {
+      // Si les documents sont dans le même domaine
       if (a.domain === b.domain) {
+        const extA = getFileExtension(a.filename);
+        const extB = getFileExtension(b.filename);
+        
+        // Si l'un est un PDF et l'autre non
+        if (extA === 'pdf' && extB !== 'pdf') return -1;
+        if (extA !== 'pdf' && extB === 'pdf') return 1;
+        
+        // Si les extensions sont différentes
+        if (extA !== extB) {
+          return extA.localeCompare(extB);
+        }
+        
+        // Si même extension, trier par titre sans tenir compte de la casse
         return a.title.toLowerCase().localeCompare(b.title.toLowerCase(), undefined, { numeric: true });
       }
+      // Sinon trier par domaine
       return a.domain.localeCompare(b.domain);
     });
 

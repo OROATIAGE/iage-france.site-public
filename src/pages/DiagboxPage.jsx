@@ -16,11 +16,11 @@ const getPageText = (key, defaultValue = '') => {
 
 // Data for the "Simple à utiliser" steps
 const simpleSteps = [
-  { key: "process.step1", icon: "./assets/icons/box.svg", alt: "Ouvrir le kit" },
-  { key: "process.step2", icon: "./assets/icons/test-tube.svg", alt: "Prélever l'échantillon" },
-  { key: "process.step3", icon: "./assets/icons/qr-code.svg", alt: "Scanner le QR code" },
-  { key: "process.step4", icon: "./assets/icons/delivery-truck.svg", alt: "Envoyer au laboratoire" },
-  { key: "process.step5", icon: "./assets/icons/chart.svg", alt: "Obtenir les résultats" }
+  { key: "process.step1", icon: "./assets/icons/DIAGBOX.svg", alt: "Ouvrir le kit" },
+  { key: "process.step2", icon: "./assets/icons/prélèvement (gazon).svg", alt: "Prélever l'échantillon" },
+  { key: "process.step3", icon: "./assets/icons/enregistrement.svg", alt: "Scanner le QR code" },
+  { key: "process.step4", icon: "./assets/icons/envoi.svg", alt: "Envoyer au laboratoire" },
+  { key: "process.step5", icon: "./assets/icons/Résultats.svg", alt: "Obtenir les résultats" }
 ];
 
 // --- Data for Diagbox List Section ---
