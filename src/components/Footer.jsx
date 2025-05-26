@@ -131,7 +131,7 @@ function Footer() {
         <div className="pt-8 border-t border-gray-700 dark:border-gray-800">
           <div className="text-center text-sm space-y-2">
             <div className="text-gray-400 dark:text-gray-500">
-              {getText('footer.copyright').replace('{année}', currentYear)}
+              {getText('footer.copyright').replace(language === 'fr' ? '{année}' : '{year}', currentYear)}
             </div>
             <div className="text-gray-400 dark:text-gray-500 space-x-4">
               <Link to="/legal-notice" className="hover:text-white transition-colors">
