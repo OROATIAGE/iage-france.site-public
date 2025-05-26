@@ -165,10 +165,10 @@ function DocumentSlider({ documents }) {
 
       {/* Modal pour afficher le document */}
       {selectedDoc && (
-        <div className="fixed inset-0 z-50 overflow-hidden bg-black bg-opacity-75 flex items-center justify-center p-4">
-          <div className="relative bg-white dark:bg-gray-800 rounded-lg shadow-xl w-full max-w-6xl h-[90vh] flex flex-col">
+        <div className="fixed inset-0 z-50 bg-black bg-opacity-75 flex items-center justify-center p-4">
+          <div className="relative bg-white dark:bg-gray-800 rounded-lg shadow-xl w-full max-w-6xl h-[90vh] flex flex-col overflow-auto">
             {/* Header de la modale */}
-            <div className="flex justify-between items-center p-4 border-b dark:border-gray-700">
+            <div className="sticky top-0 z-10 flex justify-between items-center p-4 border-b dark:border-gray-700 bg-white dark:bg-gray-800">
               <h3 className="text-lg font-medium text-gray-900 dark:text-gray-100">
                 {selectedDoc.title}
               </h3>
@@ -195,7 +195,7 @@ function DocumentSlider({ documents }) {
               </div>
             </div>
             {/* Corps de la modale */}
-            <div className="flex-1 relative">
+            <div className="flex-1 relative overflow-hidden">
               {pdfError ? (
                 <div className="absolute inset-0 flex flex-col items-center justify-center p-4">
                   <p className="text-gray-600 dark:text-gray-300 mb-4 text-center">
@@ -213,9 +213,13 @@ function DocumentSlider({ documents }) {
                 </div>
               ) : (
                 <iframe
-                  src={`${selectedDoc.path}#toolbar=1&navpanes=1&view=FitH&scrollbar=1&statusbar=1&messages=1&page=1`}
-                  className="absolute inset-0 w-full h-full"
-                  style={{ WebkitOverflowScrolling: 'touch' }}
+                  src={`${selectedDoc.path}#view=Fit&scrollbar=1&toolbar=1&statusbar=1&messages=1&navpanes=1`}
+                  className="w-full h-full absolute inset-0"
+                  style={{
+                    WebkitOverflowScrolling: 'touch',
+                    overflow: 'auto',
+                    '-webkit-overflow-scrolling': 'touch'
+                  }}
                   onError={handlePdfError}
                 >
                   <p>
