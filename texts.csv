@@ -34,7 +34,7 @@ home.sectors.02.name;Home (Secteurs);Hygiène hospitalière;Hospital hygiene
 home.sectors.03.description;Home (Secteurs);Mesures de contrôle de la qualité de l'air, de présences de nuisibles;Air quality control, pest presence
 home.sectors.03.name;Home (Secteurs);Hygiène intérieure;Indoor hygiene
 home.sectors.04.description;Home (Secteurs);Mesures de présence de pathogènes du gazon;Measurements of the presence of turf pathogens
-home.sectors.04.name;Home (Secteurs);Gazons sportifs;Sports turf
+home.sectors.04.name;Home (Secteurs);Gazons sportifs;Sports turfs
 home.sectors.05.description;Home (Secteurs);Mesures de pathogènes ou de qualité du process;Pathogen or process quality measurements
 home.sectors.05.name;Home (Secteurs);Viti – Vini;Viti – Vini
 home.sectors.06.description;Home (Secteurs);Mesure de pathogènes;Pathogen quantification
@@ -366,7 +366,7 @@ diagbox.gazon.prices.PF000048;DiagBox Gazon;1015,00€;1 015,00 €
 diagbox.gazon.prices.PF000049;DiagBox Gazon;1340,00€;1 340,00 €
 diagbox.gazon.prices.PF000050;DiagBox Gazon;2140,00€;2 140,00 €
 diagbox.gazon.prices.info_link;DiagBox Gazon;(Cliquez sur une désignation ou un type de kit pour voir sa description);(Click on a designation or kit type to see its description)
-diagbox.gazon.prices.title;DiagBox Gazon;DIAGBOX® Gazon - Liste des prix (Indicatifs HT);DIAGBOX® Lawn - Price list (Excluding VAT)
+diagbox.gazon.prices.title;DiagBox Gazon;DIAGBOX® Gazons - Liste des prix (Indicatifs HT);DIAGBOX® turf and Lawn - Price list (Excluding VAT)
 diagbox.gazon.prices.type_header;DiagBox Gazon;Type de Kit;Kit Type
 diagbox.gazon.process.title;DiagBox Gazon;DIAGBOX® : L'analyse de précision, en toute simplicité;DIAGBOX®: Precision analysis, made simple
 diagbox.gazon.pythium_note;DiagBox Gazon;*9 souches pathogènes de Pythium Blight : Pythium aphanidermatum, P. arrhenomanes, P. aristosporum, P. torulosum, P. graminicola, P. tardicrescens, P. periilum, P. catenulatum;*9 pathogenic strains of Pythium Blight: Pythium aphanidermatum, P. arrhenomanes, P. aristosporum, P. torulosum, P. graminicola, P. tardicrescens, P. periilum, P. catenulatum

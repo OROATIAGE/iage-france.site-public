@@ -280,8 +280,11 @@ function SectorPage() {
   const [initiallyOpenKitGroup, setInitiallyOpenKitGroup] = useState(null);
 
   // Get sector data from the correct location in texts
-  const sectorData = texts.fr.home.sectors[sectorId];
-  const pageData = texts.fr.sectors.page[sectorId];
+  const sectorData = texts[language].home.sectors[sectorId];
+  const pageData = texts[language].sectors.page[sectorId];
+
+  // Get sector name using getText for proper translation
+  const sectorName = getText(`home.sectors.${sectorId}.name`) || `Secteur ${sectorId}`;
 
   // Determine the back button text outside the return statement
   const backButtonText = texts.sectors?.common?.back_button || 'Retour à l\'accueil'; // Escaped apostrophe
@@ -332,8 +335,6 @@ function SectorPage() {
       </div>
     );
   }
-
-  const sectorName = sectorData.name || `Secteur ${sectorId}`;
 
   // Conditional Rendering based on sectorId
   if (sectorId === '01') {
