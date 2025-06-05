@@ -1,5 +1,5 @@
 // Ce fichier est généré automatiquement. Ne pas modifier directement.
-// Dernière génération : 2025-05-26T16:38:07.702Z
+// Dernière génération : 2025-06-05T12:33:55.083Z
 
 export const documents = [
   {

@@ -546,7 +546,7 @@ export const texts = {
           "PF000049": "1340,00€",
           "PF000050": "2140,00€",
           "info_link": "(Cliquez sur une désignation ou un type de kit pour voir sa description)",
-          "title": "DIAGBOX® Gazon - Liste des prix (Indicatifs HT)",
+          "title": "DIAGBOX® Gazons - Liste des prix (Indicatifs HT)",
           "type_header": "Type de Kit"
         },
         "process": {
@@ -721,7 +721,7 @@ export const texts = {
           "title": "Step 4"
         },
         "step5": {
-          "text": "5. Recevrez vos résultats d'analyse 48h après sa réception par le laboratoire IAGE",
+          "text": "5. Recevez vos résultats d'analyse 48h après sa réception par le laboratoire IAGE",
           "title": "Step 5"
         }
       },
@@ -1007,7 +1007,7 @@ export const texts = {
         },
         "04": {
           "description": "Measurements of the presence of turf pathogens",
-          "name": "Sports turf"
+          "name": "Sports turfs"
         },
         "05": {
           "description": "Pathogen or process quality measurements",
@@ -1499,7 +1499,7 @@ export const texts = {
           "PF000049": "1 340,00 €",
           "PF000050": "2 140,00 €",
           "info_link": "(Click on a designation or kit type to see its description)",
-          "title": "DIAGBOX® Lawn - Price list (Excluding VAT)",
+          "title": "DIAGBOX® turf and Lawn - Price list (Excluding VAT)",
           "type_header": "Kit Type"
         },
         "process": {
