@@ -34,7 +34,7 @@ home.sectors.02.name;Home (Secteurs);Hygiène hospitalière;Hospital hygiene
 home.sectors.03.description;Home (Secteurs);Mesures de contrôle de la qualité de l'air, de présences de nuisibles;Air quality control, pest presence
 home.sectors.03.name;Home (Secteurs);Hygiène intérieure;Indoor hygiene
 home.sectors.04.description;Home (Secteurs);Mesures de présence de pathogènes du gazon;Measurements of the presence of turf pathogens
-home.sectors.04.name;Home (Secteurs);Gazons sportifs;Sports turfs
+home.sectors.04.name;Home (Secteurs);Gazons sportifs;Stadium turfs
 home.sectors.05.description;Home (Secteurs);Mesures de pathogènes ou de qualité du process;Pathogen or process quality measurements
 home.sectors.05.name;Home (Secteurs);Viti – Vini;Viti – Vini
 home.sectors.06.description;Home (Secteurs);Mesure de pathogènes;Pathogen quantification
@@ -688,7 +688,7 @@ diagbox.process.step4.title;Diagbox Process;Step 4;Step 4
 diagbox.process.step5.text;Diagbox Process;5. Recevez vos résultats d'analyse 48h après sa réception par le laboratoire IAGE;5. Receive your results within 48 hours after receipt by IAGE laboratory
 diagbox.process.step5.title;Diagbox Process;Step 5;Step 5
 home.sectors.09.description;Home (Secteurs);Diagnostic des pathogènes des gazons de golf et suivi de la qualité des greens;Golf course turf pathogen diagnostics and green quality monitoring
-home.sectors.09.name;Home (Secteurs);Gazons de golf;Golf Courses
+home.sectors.09.name;Home (Secteurs);Gazons de golf;Golf turf
 home.sectors.10.description;Home (Secteurs);Diagnostic et suivi des pathogènes des pelouses de cimetières;Cemetery lawn pathogen diagnostics and monitoring
 home.sectors.10.name;Home (Secteurs);Pelouses de cimetières;Cemetery Lawns
 sectors.page.09.catalog.description;Secteur 09 (Page);Consultez notre catalogue d'analyses pour les principaux pathogènes du gazon de golf. Nous pouvons combiner des analyses pour un profil complet ou rechercher des pathogènes spécifiques sur demande.;Check our catalog of analyses for the main golf course turf pathogens. We can combine analyses for a complete profile or search for specific pathogens on request.
@@ -710,7 +710,7 @@ sectors.page.09.intro;Secteur 09 (Page);"**IAGE aide à préserver la qualité d
     - **Optimization** of your preventive and curative treatments"
 sectors.page.09.services.title;Secteur 09 (Page);Vous vous posez des questions sur la santé de vos gazons de golf, voici nos solutions :;Questions about your golf course turf health? Here are our solutions:
 sectors.page.10.catalog.description;Secteur 10 (Page);Consultez notre catalogue d'analyses pour les principaux pathogènes des pelouses de cimetières. Nous pouvons combiner des analyses pour un profil complet ou rechercher des pathogènes spécifiques sur demande.;Check our catalog of analyses for the main cemetery lawn pathogens. We can combine analyses for a complete profile or search for specific pathogens on request.
-sectors.page.10.catalog.title;Secteur 10 (Page);Analyses Catalogue et Combinaisons Spécifiques;[Catalog Analyses and Specific Combinations
+sectors.page.10.catalog.title;Secteur 10 (Page);Analyses Catalogue et Combinaisons Spécifiques;Catalog Analyses and Specific Combinations
 sectors.page.10.catchphrase;Secteur 10 (Page);En charge de l'entretien des pelouses de cimetières, vous devez assurer une qualité respectueuse tout en maîtrisant vos coûts d'entretien.;In charge of cemetery lawn maintenance, you must ensure respectful quality while controlling your maintenance costs.
 sectors.page.10.cta.diagbox;Secteur 10 (Page);Découvrir DIAGBOX® Cimetière;Discover DIAGBOX® Cemetery
 sectors.page.10.development.description;Secteur 10 (Page);En collaboration avec les gestionnaires de cimetières et les experts du secteur, nous développons des méthodes adaptées aux contraintes spécifiques de ces espaces sensibles.;In collaboration with cemetery managers and industry experts, we develop methods adapted to the specific constraints of these sensitive spaces.

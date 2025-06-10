@@ -1007,7 +1007,7 @@ export const texts = {
         },
         "04": {
           "description": "Measurements of the presence of turf pathogens",
-          "name": "Sports turfs"
+          "name": "Stadium turfs"
         },
         "05": {
           "description": "Pathogen or process quality measurements",
@@ -1049,7 +1049,7 @@ export const texts = {
         "mobile_nav_domaine4": "Lawns",
         "09": {
           "description": "Golf course turf pathogen diagnostics and green quality monitoring",
-          "name": "Golf Courses"
+          "name": "Golf turf"
         }
       },
       "services": {
@@ -1137,7 +1137,7 @@ export const texts = {
         "10": {
           "catalog": {
             "description": "Check our catalog of analyses for the main cemetery lawn pathogens. We can combine analyses for a complete profile or search for specific pathogens on request.",
-            "title": "[Catalog Analyses and Specific Combinations"
+            "title": "Catalog Analyses and Specific Combinations"
           },
           "catchphrase": "In charge of cemetery lawn maintenance, you must ensure respectful quality while controlling your maintenance costs.",
           "cta": {
