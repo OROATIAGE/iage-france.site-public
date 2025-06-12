@@ -1,20 +1,20 @@
 import React, { useState, useRef } from 'react';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate
+import { useNavigate } from 'react-router-dom';
 import { texts } from '../content/texts';
-import { FaChevronDown, FaChevronRight } from 'react-icons/fa'; // Icons for accordion
-import { FaRegLightbulb } from 'react-icons/fa'; // Ajout de l'icône ampoule
-import TextWithBoldMarkdown from './TextWithBoldMarkdown'; // Import du composant de mise en forme
+import { FaChevronDown, FaChevronRight } from 'react-icons/fa';
+import { FaRegLightbulb } from 'react-icons/fa';
+import TextWithBoldMarkdown from './TextWithBoldMarkdown';
 import DiagboxKitTable from './DiagboxKitTable';
-import { getEnhancedKitData } from '../utils/kitDataHelpers'; // Import the main helper
+import { getEnhancedKitData } from '../utils/kitDataHelpers';
 import { useLanguage } from '../context/LanguageContext';
 import { getTextByLanguage } from '../utils/textHelpers';
 
 const qnaData = [
   {
     id: 'q1',
-    titleKey: 'gazon.qna.q1_title',
-    recommendationKey: 'diagbox.gazon.qna_reco.qna-group-q1_sub1',
-    bonASavoirKey: 'diagbox.gazon.qna_bon_a_savoir.q1',
+    titleKey: 'sectors.page.09.qna.q1_title',
+    recommendationKey: 'sectors.page.09.qna_reco.qna-group-q1',
+    bonASavoirKey: 'sectors.page.09.qna_bon_a_savoir.q1',
     recommendedKitRefs: [
       { ref: 'PF000049', introKey: 'diagbox.gazon.qna_intro.reco_PF000049' },
       { ref: 'PF000011', introKey: 'diagbox.gazon.qna_intro.reco_PF000011' },
@@ -23,27 +23,27 @@ const qnaData = [
   },
   {
     id: 'q2',
-    titleKey: 'gazon.qna.q2_title',
-    recommendationKey: 'diagbox.gazon.qna_reco.qna-group-q2_sub1',
-    bonASavoirKey: 'diagbox.gazon.qna_bon_a_savoir.q2',
+    titleKey: 'sectors.page.09.qna.q2_title',
+    recommendationKey: 'sectors.page.09.qna_reco.qna-group-q2',
+    bonASavoirKey: 'sectors.page.09.qna_bon_a_savoir.q2',
     recommendedKitRefs: [
       { ref: 'PF000049', introKey: 'diagbox.gazon.qna_intro.reco_PF000049' },
     ],
   },
   {
     id: 'q3',
-    titleKey: 'gazon.qna.q3_title',
-    recommendationKey: 'diagbox.gazon.qna_reco.qna-group-q3',
-    bonASavoirKey: 'diagbox.gazon.qna_bon_a_savoir.q3',
+    titleKey: 'sectors.page.09.qna.q3_title',
+    recommendationKey: 'sectors.page.09.qna_reco.qna-group-q3',
+    bonASavoirKey: 'sectors.page.09.qna_bon_a_savoir.q3',
     recommendedKitRefs: [
       { ref: 'PF000018', introKey: 'diagbox.gazon.qna_intro.reco_PF000018' },
     ],
   },
   {
     id: 'q4',
-    titleKey: 'gazon.qna.q4_title',
-    recommendationKey: 'diagbox.gazon.qna_reco.qna-group-q4_combined',
-    bonASavoirKey: 'diagbox.gazon.qna_bon_a_savoir.q4',
+    titleKey: 'sectors.page.09.qna.q4_title',
+    recommendationKey: 'sectors.page.09.qna_reco.qna-group-q4',
+    bonASavoirKey: 'sectors.page.09.qna_bon_a_savoir.q4',
     recommendedKitRefs: [
       { ref: 'PF000047', introKey: 'diagbox.gazon.qna_intro.reco_PF000047' },
       { ref: 'PF000049', introKey: 'diagbox.gazon.qna_intro.reco_PF000049' },
@@ -52,13 +52,12 @@ const qnaData = [
   },
   {
     id: 'q5',
-    titleKey: 'gazon.qna.q5_title',
-    bonASavoirKey: 'diagbox.gazon.qna_bon_a_savoir.q5',
+    titleKey: 'sectors.page.09.qna.q5_title',
+    bonASavoirKey: 'sectors.page.09.qna_bon_a_savoir.q5',
   },
 ];
 
 // Define kitTypes and kitRefToSectionIdMap here for getEnhancedKitData
-// This can be moved to a shared location if used by more components extensively
 const kitTypes = [
   { type: 'lingette', kits: ['PF000011', 'PF000013', 'PF000015'] },
   { type: 'dechet', kits: ['PF000016', 'PF000018', 'PF000019', 'PF000020'] },
@@ -68,6 +67,7 @@ const kitTypes = [
   { type: 'racine_gazon', kits: ['PF000049'] },
   { type: 'plaquage', kits: ['PF000050'] }
 ];
+
 const kitRefToSectionIdMap = {};
 kitTypes.forEach(typeInfo => {
   typeInfo.kits.forEach(kitRef => {
@@ -138,13 +138,12 @@ const getBonASavoirText = (key, language) => {
   return current;
 };
 
-function GazonQnaAccordion({ onOpenKitGroup }) {
+function GolfQnaAccordion({ onOpenKitGroup }) {
   const { language } = useLanguage();
-  const [openAccordion, setOpenAccordion] = useState(null); // State to track open section
-  const [openKitAccordions, setOpenKitAccordions] = useState({}); // State for kit accordions
-  const navigate = useNavigate(); // Initialize navigate
+  const [openAccordion, setOpenAccordion] = useState(null);
+  const [openKitAccordions, setOpenKitAccordions] = useState({});
+  const navigate = useNavigate();
 
-  // Ajout refs pour chaque question
   const questionRefs = useRef({});
   qnaData.forEach(item => {
     if (!questionRefs.current[item.id]) {
@@ -156,15 +155,12 @@ function GazonQnaAccordion({ onOpenKitGroup }) {
     const isCurrentlyOpen = openAccordion === id;
     const isOpeningNew = !isCurrentlyOpen;
 
-    // Si on ferme l'accordéon actuel ou si on en ouvre un nouveau, fermer l'accordéon des spécifications
     if (!isOpeningNew || openAccordion !== null) {
       setOpenKitAccordions(prev => {
         const newState = { ...prev };
-        // Fermer l'accordéon des spécifications de l'accordéon qu'on ferme
         if (!isOpeningNew) {
           newState[id + '_conclusion'] = false;
         }
-        // Si on ouvre un nouveau, fermer l'accordéon des spécifications de l'ancien
         if (openAccordion !== null) {
           newState[openAccordion + '_conclusion'] = false;
         }
@@ -172,21 +168,19 @@ function GazonQnaAccordion({ onOpenKitGroup }) {
       });
     }
 
-    // Set the new state for the main accordion (open the clicked one, or close it if it was already open)
     setOpenAccordion(isOpeningNew ? id : null);
 
-    // Scroll logic for when a new main accordion is being opened
     if (isOpeningNew) {
       setTimeout(() => {
         const ref = questionRefs.current[id];
         if (ref && ref.current) {
           const rect = ref.current.getBoundingClientRect();
           const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-          const offset = 80; // Ajuste cette valeur selon la hauteur de ton header sticky
+          const offset = 80;
           const top = rect.top + scrollTop - offset;
           window.scrollTo({ top, behavior: 'smooth' });
         }
-      }, 100); // 100ms pour laisser le DOM se mettre à jour
+      }, 100);
     }
   };
 
@@ -207,16 +201,14 @@ function GazonQnaAccordion({ onOpenKitGroup }) {
   };
 
   return (
-    <div id="gazon-qna-accordion" className="space-y-4 mb-12 md:mb-16">
+    <div id="golf-qna-accordion" className="space-y-4 mb-12 md:mb-16">
       {qnaData.map((item) => {
-        // Get data for all recommended kits for this Q&A item
         const recommendedKitsData = item.recommendedKitRefs ? item.recommendedKitRefs.map(kitInfo =>
           getEnhancedKitData(kitInfo.ref, kitInfo.introKey, kitRefToSectionIdMap)
         ) : [];
 
         const recommendationTexts = item.recommendationKey ? getRecommendationText(item.recommendationKey, language) : null;
 
-        // Aggregate summary notes
         let collectiveSumIndividual = null;
         let collectiveSaving = null;
         let hasAnyPythiumNote = false;
@@ -236,33 +228,29 @@ function GazonQnaAccordion({ onOpenKitGroup }) {
             key={item.id}
             className="border rounded-lg overflow-hidden shadow-sm bg-white dark:bg-gray-800 dark:border-gray-700 md:max-w-3xl lg:max-w-4xl md:mx-auto"
           >
-            {/* Accordion Header */}
             <button
               ref={questionRefs.current[item.id]}
               onClick={() => handleToggle(item.id)}
-              className="w-full flex justify-between items-center p-4 text-left text-lg font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
+              className="w-full flex justify-between items-center p-4 text-left text-lg font-semibold text-primary dark:text-white hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
             >
-              <span>{getTextByLanguage(item.titleKey, language)}</span>
+              <span>{getGeneralText(item.titleKey, language)}</span>
               <FaChevronDown className={`text-primary dark:text-secondary transform transition-transform duration-200 ${openAccordion === item.id ? 'rotate-180' : ''}`} />
             </button>
 
-            {/* Accordion Content */}
             {openAccordion === item.id && (
               <div className="p-4 border-t bg-gray-50 dark:bg-gray-800/50 dark:border-gray-600">
-                {/* Bon à savoir */}
                 <div className="flex items-start gap-3 mb-4 p-3 bg-yellow-50 dark:bg-yellow-900/30 border-l-4 border-yellow-400 rounded md:max-w-3xl lg:max-w-4xl md:mx-auto">
                   <div className="flex-shrink-0 text-yellow-500 dark:text-yellow-400">
                     <FaRegLightbulb className="w-5 h-5" />
                   </div>
                   <div>
-                    <div className="font-semibold mb-1 text-[#996515] dark:text-gray-300">{getGeneralText('diagbox.gazon.bon_a_savoir_title', language)}</div>
+                    <div className="font-semibold mb-1 text-[#996515] dark:text-gray-300">{getGeneralText('sectors.page.09.qna_reco.common.bon_a_savoir_title', language)}</div>
                     <div className="text-sm text-[#8B4513] dark:text-gray-300">
                       <TextWithBoldMarkdown text={getBonASavoirText(item.bonASavoirKey, language)} />
                     </div>
                   </div>
                 </div>
 
-                {/* Contact button for q5 only */}
                 {item.id === 'q5' && (
                   <div className="mt-6 text-center">
                     <a
@@ -275,30 +263,6 @@ function GazonQnaAccordion({ onOpenKitGroup }) {
                   </div>
                 )}
 
-                {/* Bon à savoir section */}
-                {item.id === 'qna-group-q4_combined' && (
-                  <div className="mt-4">
-                    <h4 className="text-lg font-semibold mb-2 text-gray-800 dark:text-gray-200">
-                      {getGeneralText('diagbox.gazon.qna_reco.common.bon_a_savoir', language)}
-                    </h4>
-                    <div className="prose dark:prose-invert">
-                      <TextWithBoldMarkdown text={getBonASavoirText(item.bonASavoirKey, language)} />
-                    </div>
-                    
-                    {/* Contact button for the last question */}
-                    <div className="mt-6 text-center">
-                      <a
-                        href="/contact"
-                        onClick={(e) => handleLinkClick(e, '/contact')}
-                        className="inline-block px-6 py-2 bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors"
-                      >
-                        {getGeneralText('home.hero.cta', language)}
-                      </a>
-                    </div>
-                  </div>
-                )}
-
-                {/* Recommendations Section (Text Only) */}
                 {recommendationTexts && (
                   <div className="mt-4 p-4 bg-white dark:bg-gray-700 rounded-lg shadow-sm mb-4 md:max-w-3xl lg:max-w-4xl md:mx-auto">
                     <h4 className="text-lg font-semibold text-primary dark:text-secondary mb-2">
@@ -311,18 +275,16 @@ function GazonQnaAccordion({ onOpenKitGroup }) {
                   </div>
                 )}
 
-                {/* Nous vous accompagnons Section */}
                 {recommendationTexts && item.id !== 'q5' && (
                   <div className="mt-4 p-4 bg-white dark:bg-gray-700 rounded-lg shadow-sm mb-4 md:max-w-3xl lg:max-w-4xl md:mx-auto">
                     <h4 className="text-lg font-semibold text-primary dark:text-secondary mb-2">
-                      {getGeneralText('diagbox.gazon.qna_reco.common.accompagnement_title', language)}
+                      {getGeneralText('sectors.page.09.qna_reco.common.accompagnement_title', language)}
                     </h4>
                     <div className="w-16 h-1.5 bg-secondary mb-4 rounded-full"></div>
                     <div className="prose dark:prose-invert w-full">
-                      <TextWithBoldMarkdown text={getGeneralText(`diagbox.gazon.qna_reco.${item.id}.accompagnement_text`, language)} />
+                      <TextWithBoldMarkdown text={getGeneralText(`sectors.page.09.qna_reco.${item.id}.accompagnement_text`, language)} />
                     </div>
                     
-                    {/* Contact Link - Moved here */}
                     {(item.recommendationKey || item.id === 'q5') && (
                       <div className="mt-6 text-center">
                         <a
@@ -337,7 +299,6 @@ function GazonQnaAccordion({ onOpenKitGroup }) {
                   </div>
                 )}
 
-                {/* Conclusion text if exists */}
                 {recommendationTexts && (
                   <div className="mt-4">
                     <button
@@ -347,21 +308,20 @@ function GazonQnaAccordion({ onOpenKitGroup }) {
                       <div className="flex justify-between items-center w-full mb-2">
                         <span>{recommendationTexts.conclusionSuffix}</span>
                         <FaChevronDown className={`text-primary dark:text-secondary transform transition-transform duration-200 ${openKitAccordions[item.id + '_conclusion'] ? 'rotate-180' : ''}`} />
-                    </div>
+                      </div>
                       <div className="w-16 h-1.5 bg-secondary rounded-full"></div>
                     </button>
 
                     {openKitAccordions[item.id + '_conclusion'] && (
                       <div className="p-4 bg-white dark:bg-gray-700 rounded-lg shadow-sm mt-2">
-                {/* Kit recommendations section */}
-                {item.recommendedKitRefs && (
-                  <div>
-                    <DiagboxKitTable 
-                      kitList={item.recommendedKitRefs.map(kit => kit.ref)}
-                      kitRefToSectionIdMap={kitRefToSectionIdMap}
-                    />
-                  </div>
-                )}
+                        {item.recommendedKitRefs && (
+                          <div>
+                            <DiagboxKitTable 
+                              kitList={item.recommendedKitRefs.map(kit => kit.ref)}
+                              kitRefToSectionIdMap={kitRefToSectionIdMap}
+                            />
+                          </div>
+                        )}
                       </div>
                     )}
                   </div>
@@ -375,4 +335,4 @@ function GazonQnaAccordion({ onOpenKitGroup }) {
   );
 }
 
-export default GazonQnaAccordion; 
+export default GolfQnaAccordion; 

@@ -408,6 +408,62 @@ export const texts = {
           "intro": "**IAGE aide à préserver la qualité de vos gazons de golf et à réduire vos coûts d'entretien grâce :**\n    - à ses services de **détection précoce** et précise des champignons responsables des maladies du gazon\n    - à ses **recommandations** et outils de suivis adaptés aux spécificités des parcours de golf\n    - au **diagnostic rapide** des pathogènes pour une intervention ciblée\n    - à l'**optimisation** de vos traitements préventifs et curatifs",
           "services": {
             "title": "Vous vous posez des questions sur la santé de vos gazons de golf, voici nos solutions :"
+          },
+          "qna_reco": {
+            "common": {
+              "recommendation_title": "Notre recommandation :",
+              "contact_link": "Contactez-nous",
+              "accompagnement_title": "Nous vous accompagnons"
+            },
+            "qna-group-q1": {
+              "recommendation_text": "Nos recommandations :",
+              "conclusion_text_prefix": "**1. Connaissez l'état réel de votre green** : faites un **diagnostic complet (feuilles et les racines)** de votre pelouse (DIAGBOX® PF000049) : vous prenez connaissance de la présence éventuelle de Dollar Spot, et surtout des **autres champignons** présents qui pourraient profiter de vos traitements contre le Dollar Spot pour prendre sa place et **s'étendre à leur tour**.\n**2. Mettez en place un plan simple de surveillance** : à partir des périodes de chaleur propices au développement du Dollar Spot, assurez un **suivi de détection précoce** du Dollar Spot (PF000039). Cette DIAGBOX® est **très facile d'emploi** : Après la tonte, prélevez entre 150g et 500g de résidus frais (non séchés), placez-les dans le sachet fourni, et expédiez-les via l'enveloppe préaffranchie et vous recevrez un rapport d'analyse avec le résultat 72h après. Assurez cette surveillance **au minimum une fois par semaine pendant la période a risque**.\n**3. Mettez en place un suivi renforcé si nécessaire** : Les premiers signes de la Dollar Spot apparaissent en effet de l'ordre de 3 jours après un résultat positif de notre DIAGBOX® : **le suivi rapproché vous permet d'intervenir quand il est encore temps**.\n**4. Surveillez l'efficacité des vos traitements** : vous mettez en œuvre les traitements **dès que la mesure est positive**, sur la zone identifiée, généralement en plusieurs fois. Vous vérifiez l'effet de chaque traitement avec la DIAGBOX® PF000039 qui permet de quantifier la pression du pathogène et sa décroissance au fur et à mesure que les traitements agissent.",
+              "conclusion_text_suffix": "Spécifications techniques et prix des Diagbox recommandées"
+            },
+            "q1": {
+              "accompagnement_text": "Nous vous accompagnons à chaque étape, en particulier dans la mise en place de **traitement de prévention contre les autres pathogènes présents** identifiés lors du diagnostics. L'audit sur les racines permet de calibrer les traitements à prévoir de manière pertinente."
+            },
+            "qna-group-q2": {
+              "recommendation_text": "Nos recommandations :",
+              "conclusion_text_prefix": "**1. Connaissez l'état réel de votre gazon** : faites un **diagnostic complet (feuilles et les racines)** de votre pelouse (DIAGBOX® PF000049) pour identifier vos risques à court et moyen terme.\n\n2. Définissez avec nous **un plan de suivi**, adapté à votre situation et à votre budget : en fonction des pathogènes identifiés et des caractéristiques de votre stade, nous vous conseillons sur les actions à entreprendre",
+              "conclusion_text_suffix": "Spécifications techniques et prix des DIAGBOX® recommandées"
+            },
+            "q2": {
+              "accompagnement_text": "Nous accompagnons votre suivi dans la durée, avec des **outils de visualisation des résultats** pour adapter et optimiser les apports de produits de traitement."
+            },
+            "qna-group-q3": {
+              "recommendation_text": "Nos recommandations :",
+              "conclusion_text_prefix": "1. Réalisez **le plus rapidement possible** la quantification des pathogènes présents en nous envoyant des feuilles des zones touchées. Pour cela, utilisez la DIAGBOX® PF000018 si l'apparition des symptômes a lieu en été, ou PF 000019 en hivers. \n\n2. Pour encore **plus de réactivité et de facilité, disposez dans vos stocks ** de la DIAGBOX® PF000020 qui couvre l'ensemble des pathogènes : **utilisez-la dès que des symptômes apparaissent**.\n\n3. **Si plusieurs zone différentes sont déjà touchées**, réalisez de préférence **un prélèvement différent pour chaque zone** avec les DIAGBOX® retenues: vous disposerez d'un diagnostic pour chaque endroit touché et vous pourrez aller vers des solutions encore plus adaptées.",
+              "conclusion_text_suffix": "Spécifications techniques et prix des Diagbox recommandées"
+            },
+            "q3": {
+              "accompagnement_text": "Nous vous accompagnons dans le suivi des traitements, et pour voir avec vous si des diagnostics des autres compartiments (racine, sols) sont nécessaires."
+            },
+            "qna-group-q4": {
+              "recommendation_text": "Nos recommandations :",
+              "conclusion_text_prefix": "1. Réalisez **un diagnostic des sols** avant tout nouveau plaquage, avec la DIAGBOX® PF000047 : les pathogènes présents dans les sols, même en faibles quantités, représentent un **risque de long terme** et peuvent conduire à la destruction.  Prématurée de votre pelouse, ou à des **surcoûts d'entretien**. Nous vous accompagnerons ensuite au besoin dans le suivi des traitements et de l'état de santé du sol. \n\n2. Vous voulez encore mieux sécuriser votre investissement ? **Testez également les plaquages livrés**, pour évaluer leur bon état (DIAGBOX® PF000049), ou demandez à votre fournisseur une preuve de ce bon état, par exemple avec un relevé de mesures réalisées par ses soins.\n\nPour la réalisation de l'ensemble des analyses par vous même, utilisez la DIAGBOX® PF000050 qui **intègre les analyses des trois compartiments (sols + feuilles et racines)** à un prix réduit.",
+              "conclusion_text_suffix": "Spécifications techniques et prix des Diagbox recommandées"
+            },
+            "q4": {
+              "accompagnement_text": "Nous vous aidons à suivre l'évolution de la situation après la pose."
+            }
+          },
+          "qna": {
+            "q1_title": "Malgré mes actions, j'ai des attaques régulières de dollar spot, que dois-je faire ?",
+            "q2_title": "Je ne vois pas de symptômes, mais je veux des conseils pour planifier mes traitements",
+            "q3_title": "J'ai détecté des symptômes, comment agir avec pertinence ?",
+            "q4_title": "Je vais poser un nouveau gazon (plaquage), comment réduire les risques à moyen-long terme ?",
+            "q5_title": "J'ai d'autres questions"
+          },
+          "qna_bon_a_savoir": {
+            "q1": "Le **dollar spot** est une maladie **récurrente** sur les greens de golf, notamment au printemps et à l'automne, lorsque les conditions sont favorables à son développement (températures douces, humidité nocturne, stress hydrique ou carences). \nMême avec une stratégie de traitement en place, **il peut persister** en raison de plusieurs facteurs : une pression pathogène sous-estimée, une résistance partielle des souches, ou des conditions microclimatiques favorables à sa réactivation.\nPar ailleurs, **d'autres pathogènes** discrets peuvent s'ajouter et **aggraver les symptômes**. \nPour **sortir du cercle des interventions réactives**, il est essentiel de quantifier précisément la pression réelle du dollar spot et de vérifier si d'autres maladies sont également présentes.",
+            "q2": "**Depuis le 1er janvier 2025**, la loi Labbé de 2014 impose la **suppression des produits phytosanitaires de synthèse** pour le traitement des gazons sportifs. \n**Le nombre de produits utilisables est réduit** et vous avez peut être dû revoir vos programmes de traitement.\n**Chaque terrain est spécifique** : type et origine du gazon, sols, météo, usages,... autant de facteurs qui modifient les types de maladies qui peuvent toucher votre terrain et la façon dont elles peuvent évoluer. \nIAGE a développé une expérience concrète qui lui permet d'**adapter pour votre cas particulier ses conseils et l'usage de ses outils**, afin d'assurer un **suivi des risques de court ou moyen termes (feuilles et racines), et des risques à long terme (sol)** adaptés à votre situation et à votre budget.",
+            "q3": "Une **détérioration visible** de votre green indique un **niveau déjà important** du ou des pathogènes en cause. \nDe plus, derrière l'agent principal qui peut souvent être identifié visuellement, des agents secondaires peuvent aussi être présents. Ils peuvent profiter du premier ou seront des facteurs aggravant en se développant à la place du premier si les traitements retenus ne sont pas adaptés.\nIAGE a défini des outils pour **identifier au plus vite tous les agents responsables**, et vous permettre de mettre en place les traitements adaptés avec le plus de chances de sauver la pelouse et de limiter vos coûts d'entretien.",
+            "q4": "Installer un nouveau plaquage représente un **investissement conséquent**. \nL'absence d'évaluation de la santé des sols ou du gazon apportés peut permettre à des pathogènes présents dans le sol ou apportés par le plaquages de proliférer, **conduisant à des coûts d'entretiens élevés**, voir au pire à la ruine de la nouvelle pelouse. \nIAGE a défini des outils pour assurer une **vérification préalable des états de santé de chaque compartiment** (feutre, racines, feuilles) pour réduire les risques au regard de l'investissement réalisé.\nCes analyses ont déjà été utilisées dans le cas d'un litige sur l'origine d'une dégradation après un plaquage.",
+            "q5": "**Chaque parcours a ses particularités** : nature des substrats, exposition, microclimat, pression de jeu, historique des maladies, équipements disponibles… autant de paramètres qui influencent le développement des pathogènes et leur dynamique. Vos contraintes budgétaires, réglementaires et de calendrier sont aussi à prendre en compte.\nIl existe donc une grande diversité de situations ! C'est pourquoi nous vous proposons un accompagnement modulable, adaptée à **votre situation**. N'hésitez pas à nous contacter : notre équipe est à votre écoute pour répondre à vos questions et bâtir avec vous une stratégie efficace et durable."
+          },
+          "ideal_for": {
+            "text": "Terrain de golf - Greens - Fairways - Départs - Approches"
           }
         }
       },
@@ -503,6 +559,11 @@ export const texts = {
           "PF000050": {
             "name": "Pathogènes du gazon",
             "targets": "Combine les cibles des kits PF000020 (Déchets Tonte - Diagnostic), PF000047 (Substrat - Diagnostic) et PF000048 (Racine - Diagnostic)"
+          },
+          "PF000039": {
+            "name": "Dollar Spot",
+            "targets": "Clarireedia jacksonii, C.homoeocarpa",
+            "type": "Déchets de tonte"
           }
         },
         "lingette": {
@@ -547,7 +608,8 @@ export const texts = {
           "PF000050": "2140,00€",
           "info_link": "(Cliquez sur une désignation ou un type de kit pour voir sa description)",
           "title": "DIAGBOX® Gazons - Liste des prix (Indicatifs HT)",
-          "type_header": "Type de Kit"
+          "type_header": "Type de Kit",
+          "PF000039": "185,00€"
         },
         "process": {
           "title": "DIAGBOX® : L'analyse de précision, en toute simplicité"
@@ -675,7 +737,7 @@ export const texts = {
           },
           "qna-group-q4_combined": {
             "recommendation_text": "Nos recommandations :",
-            "conclusion_text_prefix": "1. Réalisez **un diagnostic des sols** avant tout nouveau plaquage, avec la DIAGBOX® PF 000047 : les pathogènes présents dans les sols, même en faibles quantités, représentent un **risque de long terme** et peuvent conduire à la destruction.  Prématurée de votre pelouse, ou à des **surcoûts d'entretien**. Nous vous accompagnerons ensuite au besoin dans le suivi des traitements et de l'état de santé du sol. \n\n2. Vous voulez encore mieux sécuriser votre investissement ? **Testez également les plaquages livrés**, pour évaluer leur bon état (DIAGBOX® PF 000049), ou demandez à votre fournisseur une preuve de ce bon état, par exemple avec un relevé de mesures réalisées par ses soins.\n\nPour la réalisation de l'ensemble des analyses par vous même, utilisez la DIAGBOX® PF 000050 qui **intègre les analyses des trois compartiments (sols + feuilles et racines)** à un prix réduit.",
+            "conclusion_text_prefix": "1. Réalisez **un diagnostic des sols** avant tout nouveau plaquage, avec la DIAGBOX® PF000047 : les pathogènes présents dans les sols, même en faibles quantités, représentent un **risque de long terme** et peuvent conduire à la destruction.  Prématurée de votre pelouse, ou à des **surcoûts d'entretien**. Nous vous accompagnerons ensuite au besoin dans le suivi des traitements et de l'état de santé du sol. \n\n2. Vous voulez encore mieux sécuriser votre investissement ? **Testez également les plaquages livrés**, pour évaluer leur bon état (DIAGBOX® PF000049), ou demandez à votre fournisseur une preuve de ce bon état, par exemple avec un relevé de mesures réalisées par ses soins.\n\nPour la réalisation de l'ensemble des analyses par vous même, utilisez la DIAGBOX® PF000050 qui **intègre les analyses des trois compartiments (sols + feuilles et racines)** à un prix réduit.",
             "conclusion_text_suffix": "Spécifications techniques et prix des Diagbox recommandées"
           },
           "q1": {
@@ -1361,6 +1423,62 @@ export const texts = {
           "intro": "**IAGE helps preserve your golf course turf quality and reduce maintenance costs thanks to:**\n    - **Early detection** services and precise identification of fungi responsible for turf diseases\n    - **Recommendations** and monitoring tools adapted to golf course specificities\n    - **Rapid diagnosis** of pathogens for targeted intervention\n    - **Optimization** of your preventive and curative treatments",
           "services": {
             "title": "Questions about your golf course turf health? Here are our solutions:"
+          },
+          "qna_reco": {
+            "common": {
+              "recommendation_title": "Our commendataire:",
+              "contact_link": "Contact us",
+              "accompagnement_title": "We support you"
+            },
+            "qna-group-q1": {
+              "recommendation_text": "Our commendataire:",
+              "conclusion_text_prefix": "**1. Know the real state of your green**: carry out a **complete diagnosis (leaves and roots)** of your lawn (DIAGBOX® PF000049): you will find out whether Dollar Spot is present, and above all what **other fungi** are present that could take advantage of your Dollar Spot treatments to take its place and **spread in their turn**.\n**2. Set up a simple monitoring plan**: from hot periods favourable to the development of Dollar Spot,** monitor for the early detection** of Dollar Spot (PF000039). This DIAGBOX® is **very easy to use**: after shearing, take between 150g and 500g of fresh (non-dried) residues, place them in the bag provided and send them off in the pre-paid envelope. You will receive an analysis report with the results 72 hours later. Carry out this monitoring **at least once a week during the risk period**.\n**3. Set up closer monitoring if necessary**: the first signs of Dollar Spot appear around 3 days after a positive result from our DIAGBOX® : **close monitoring means you can intervene when there's still time**.\n**4. Monitor the effectiveness of your treatments**: you implement the treatments** as soon as the measurement is positive**, on the identified area, generally in several stages. You check the effect of each treatment using the DIAGBOX® PF000039, which enables you to quantify the pressure of the pathogen and its decrease as the treatments take effect.",
+              "conclusion_text_suffix": "Technical specifications and prices of recommended Diagboxes"
+            },
+            "q1": {
+              "accompagnement_text": "We support you every step of the way, particularly in implementing **preventative treatments against other identified pathogens**. The root audit allows the appropriate treatments to be calibrated."
+            },
+            "qna-group-q2": {
+              "recommendation_text": "Our recommendations:",
+              "conclusion_text_prefix": "**1. Know the real condition of your lawn**: carry out a **complete diagnosis (leaves and roots)** of your lawn (DIAGBOX® PF000049) to identify your short and medium term risks.\n\n2. Define with us **a monitoring plan**, adapted to your situation and your budget: depending on the pathogens identified and the characteristics of your stadium, we advise you on the actions to be taken.",
+              "conclusion_text_suffix": "Technical specifications and prices of recommended DIAGBOX®"
+            },
+            "q2": {
+              "accompagnement_text": "We support your monitoring over the long term, with **results visualization tools** to adapt and optimize the intake of treatment products."
+            },
+            "qna-group-q3": {
+              "recommendation_text": "Our recommendations:",
+              "conclusion_text_prefix": "1. **As soon as possible**, quantify the pathogens present by sending us sheets of the affected areas. To do this, use DIAGBOX® PF000018 if symptoms appear in summer, or PF 000019 in winter.\n\n2. For even more responsiveness and ease, have the DIAGBOX® PF000020 in your stock, which covers all pathogens: use it as soon as symptoms appear.\n\n3. **If several different areas are already affected**, preferably take **a different sample for each area** with the DIAGBOX® selected: you will have a diagnosis for each affected area and you will be able to move towards even more suitable solutions.",
+              "conclusion_text_suffix": "Technical specifications and prices of recommended Diagboxes"
+            },
+            "q3": {
+              "accompagnement_text": "We support you in monitoring treatments, and to see with you if diagnostics of other compartments (root, soil) are necessary. "
+            },
+            "qna-group-q4": {
+              "recommendation_text": "Our recommendations:",
+              "conclusion_text_prefix": "1. Carry out a **soil diagnosis** before layning a new turf, with  DIAGBOX® PF 000047: pathogens present in the soil, even in small quantities, represent a **long-term risk** and can lead to the premature destruction of your lawn, or to **additional maintenance\n\n2. You want to further secure your investment? **Also test the delivered veneers** to assess their good condition (DIAGBOX® PF 000049), or ask your supplier for proof of this good condition, for example with a record of measurements taken by them.\n\nTo carry out all the analyses yourself, use the DIAGBOX® PF 000050 which **integrates the analyses of the three compartments (soil + leaves and roots)** at a reduced price.",
+              "conclusion_text_suffix": "Technical specifications and prices of recommended Diagboxes"
+            },
+            "q4": {
+              "accompagnement_text": "We help you monitor the situation after installation."
+            }
+          },
+          "qna": {
+            "q1_title": "Despite my actions, I'm still getting regular attacks of dollar spot, what should I do?",
+            "q2_title": "I don't see any symptoms, but I want advice on planning my treatments",
+            "q3_title": "I have detected symptoms, how can I act appropriately?",
+            "q4_title": "I am going to lay new turf (paving), how can I reduce the risks in the medium to long term?",
+            "q5_title": "I have further questions"
+          },
+          "qna_bon_a_savoir": {
+            "q1": "**Dollar spot** is a **recurrent** disease on golf greens, particularly in spring and autumn, when conditions are favourable for its development (mild temperatures, night-time humidity, water stress or deficiencies). \nEven with a treatment strategy in place, **it can persist** due to a number of factors: underestimated pathogen pressure, partial resistance of strains, or microclimatic conditions favourable to its reactivation.\nIn addition,** other discrete pathogens** may be added, **aggravating the symptoms**. \n**To break out of the circle of reactive interventions**, it is essential to precisely quantify the real pressure of the spot dollar and to check whether other diseases are also present.",
+            "q2": "**Since January 1, 2025**, the Labbé law of 2014 requires the **elimination of synthetic phytosanitary products** for the treatment of sports turf.\n**The number of usable products is reduced** and you may have had to review your treatment programs.\n**Each pitch is specific**: type and origin of the grass, soil, weather, uses, etc. so many factors that modify the types of diseases that can affect your pitch and the way in which they can develop.\nIAGE has developed concrete experience that allows it to **adapt its advice and the use of its tools to your specific case**, in order to ensure **monitoring of short or medium-term risks (leaves and roots), and long-term risks (soil)** adapted to your si",
+            "q3": "**Visible deterioration** of your greens indicates an **already significant level** of the pathogen(s) in question.\nFurthermore, behind the primary agent, which can often be identified visually, secondary agents may also be present. They may take advantage of the primary agent or become aggravating factors by developing in place of the primary agent if the chosen treat\nIAGE has developed tools to **identify all the responsible agents as quickly as possible**, and allow you to implement the appropriate treatments with the best chance of saving your lawn and limiting your maintenance costs.",
+            "q4": "Installing new veneer is a **significant investment**.\nFailure to assess the health of the soil or turf brought in can allow pathogens present in the soil or brought in by the paving to proliferate, **leading to high maintenance costs**, or at worst to the ruin of the new lawn.\nIAGE has defined tools to ensure a **prior verification of the health status of each compartment** (soil, roots, leaves) to reduce risks with regard to the investment made.\nThese analyses have already been used in the case of a dispute over the origin of degradation after a tackle.",
+            "q5": "**Each course is specific**: nature of the substrates, exposure, microclimate, playing pressure, history of diseases, available equipment... all parameters that influence the development of pathogens and their dynamics. Your budgetary, regulatory and scheduling constraints also need to be taken into account.\nSo there are many different situations! That's why we offer you flexible support, **tailored as closely as possible to the realities of your business**. Don't hesitate to contact us: our team is on hand to answer your questions and work with you to build an effective, sustainable strategy."
+          },
+          "ideal_for": {
+            "text": "Golf course - Greens - Fairways - Tees - Approaches"
           }
         }
       },
@@ -1456,6 +1574,11 @@ export const texts = {
           "PF000050": {
             "name": "Lawn pathogens",
             "targets": "Combines  targets of kits PF000020 (Clipping Waste - Diagnostic), PF000047 (Substrate - Diagnostic) and PF000048 (Root – Diagnostic)"
+          },
+          "PF000039": {
+            "name": "Dollar Spot",
+            "targets": "Clarireedia jacksonii, C.homoeocarpa",
+            "type": "Mowing waste"
           }
         },
         "lingette": {
@@ -1500,7 +1623,8 @@ export const texts = {
           "PF000050": "2 140,00 €",
           "info_link": "(Click on a designation or kit type to see its description)",
           "title": "DIAGBOX® turf and Lawn - Price list (Excluding VAT)",
-          "type_header": "Kit Type"
+          "type_header": "Kit Type",
+          "PF000039": "185,00 €"
         },
         "process": {
           "title": "DIAGBOX®: Precision analysis, made simple"
@@ -1597,7 +1721,7 @@ export const texts = {
           "title": "Quick access to kit types:"
         },
         "types": {
-          "dechet": "Grass cuttings",
+          "dechet": "Mowing waste",
           "lingette": "Wipe",
           "plaquage": "Full Health Status – laying new turf support",
           "racine": "Root",
@@ -1635,7 +1759,7 @@ export const texts = {
             "accompagnement_text": "We support you every step of the way, particularly in implementing **preventative treatments against other identified pathogens**. The root audit allows the appropriate treatments to be calibrated."
           },
           "q2": {
-            "accompagnement_text": "We support your long-term monitoring, with **results visualization tools** to adapt and optimize the intake of treatment products."
+            "accompagnement_text": "We support your monitoring over the long term, with **results visualization tools** to adapt and optimize the intake of treatment products."
           },
           "q3": {
             "accompagnement_text": "We support you in monitoring treatments, and to see with you if diagnostics of other compartments (root, soil) are necessary. "
@@ -1694,7 +1818,7 @@ export const texts = {
         "q2_title": "I don't see any symptoms, but I want advice on planning my treatments",
         "q3_title": "I have detected symptoms, how can I act appropriately?",
         "q4_title": "I am going to lay new turf (paving), how can I reduce the risks in the medium to long term?",
-        "q5_title": "I have other questions"
+        "q5_title": "I have further questions"
       }
     },
     "contact": {
