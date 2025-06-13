@@ -232,7 +232,7 @@ function GolfQnaAccordion({ onOpenKitGroup }) {
             <button
               ref={questionRefs.current[item.id]}
               onClick={() => handleToggle(item.id)}
-              className="w-full flex justify-between items-center p-4 text-left text-lg font-semibold text-primary dark:text-white hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
+              className="w-full flex justify-between items-center p-4 text-left text-lg font-semibold text-primary dark:text-secondary hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
             >
               <span>{getGeneralText(item.titleKey, language)}</span>
               <FaChevronDown className={`text-primary dark:text-secondary transform transition-transform duration-200 ${openAccordion === item.id ? 'rotate-180' : ''}`} />
