@@ -278,6 +278,8 @@ function SectorPage() {
   const [openKitGroupAccordions, setOpenKitGroupAccordions] = useState({});
   const [showAllKitGroups, setShowAllKitGroups] = useState(false);
   const [initiallyOpenKitGroup, setInitiallyOpenKitGroup] = useState(null);
+  const [openSectorKey, setOpenSectorKey] = useState(null);
+  const [isPriceTableOpen, setIsPriceTableOpen] = useState(false);
 
   // Get sector data from the correct location in texts
   const sectorData = texts[language].home.sectors[sectorId];
@@ -531,68 +533,74 @@ function SectorPage() {
 
         {/* Price List Section */}
         <section id="prices" className="mt-12 md:mt-16 pt-10 border-t border-gray-200 dark:border-gray-700 scroll-mt-20 md:scroll-mt-24 md:max-w-3xl lg:max-w-4xl md:mx-auto">
-          <h2 className="text-2xl md:text-3xl font-semibold text-primary dark:text-secondary mb-8 text-center">
-            {getDiagboxText('prices.title', '')}
-          </h2>
-          <div className="bg-white dark:bg-gray-800 shadow-sm md:rounded-lg overflow-hidden">
-            <div className="overflow-x-auto md:overflow-visible">
-              <table className="min-w-full w-full divide-y divide-gray-200 dark:divide-gray-700 responsive-kit-table">
-                <thead className="bg-gray-50 dark:bg-gray-700 hidden md:table-header-group">
-                  <tr>
-                    <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider w-2/12">Référence</th>
-                    <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider w-2/12">Désignation</th>
-                    <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider w-2/12">Type de kit</th>
-                    <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider w-5/12">Pathogènes cibles</th>
-                    <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider w-1/12">Prix Indicatif HT</th>
-                  </tr>
-                </thead>
-                <tbody className="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700 flex flex-col md:table-row-group md:divide-y">
-                {['PF000011', 'PF000013', 'PF000015', 'PF000016', 'PF000018', 'PF000019', 'PF000020', 'PF000033', 'PF000035', 'PF000047', 'PF000048', 'PF000049', 'PF000050'].map((kitRef) => {
-                  const kitInfo = getKitInfo(kitRef);
-                    return (
-                      <tr key={kitRef} className="block md:table-row border-b last:border-b-0 md:border-none dark:border-gray-700 p-4 md:p-0">
-                        <td 
-                          data-label="Référence"
-                          className="block md:table-cell md:px-4 md:py-3 md:whitespace-nowrap text-sm font-medium text-primary dark:text-gray-100 responsive-cell w-2/12"
-                        >
-                        {kitInfo.reference}
-                        </td>
-                        <td 
-                          data-label="Désignation"
-                          className="block md:table-cell md:px-4 md:py-3 text-sm text-primary dark:text-gray-300 responsive-cell w-2/12"
-                        >
-                        {kitInfo.designation}
-                        </td>
-                        <td 
-                          data-label="Type de kit"
-                          className="block md:table-cell md:px-4 md:py-3 text-sm text-gray-500 dark:text-gray-400 responsive-cell w-2/12"
-                        >
-                        {kitInfo.type}
-                        </td>
-                        <td 
-                          data-label="Pathogènes cibles"
-                          className="block md:table-cell md:px-4 md:py-3 text-sm text-gray-600 dark:text-gray-300 responsive-cell w-5/12"
-                        >
-                        {kitInfo.targets}
-                        </td>
-                        <td 
-                          data-label="Prix Indicatif HT"
-                          className="block md:table-cell md:px-4 md:py-3 md:whitespace-nowrap text-sm text-gray-600 dark:text-gray-300 md:text-right responsive-cell w-1/12"
-                        >
-                        {kitInfo.price}
-                        </td>
-                      </tr>
-                    );
-                  })}
-                </tbody>
-              </table>
-              <div className="border-t border-gray-200 dark:border-gray-700">
-                <div className="mt-4 mb-4 text-sm text-gray-500 dark:text-gray-400 italic px-4">
-                  {texts[language]?.diagbox?.gazon?.pythium_note}
+          <button 
+            onClick={() => setIsPriceTableOpen(!isPriceTableOpen)}
+            className="w-full flex justify-between items-center text-left text-2xl md:text-3xl font-semibold text-primary dark:text-secondary mb-8 focus:outline-none"
+          >
+            <span>{getDiagboxText('prices.title', '')}</span>
+            {isPriceTableOpen ? <FaChevronDown className="text-primary dark:text-gray-400" /> : <FaChevronRight className="text-primary dark:text-gray-400" />}
+          </button>
+          {isPriceTableOpen && (
+            <div className="bg-white dark:bg-gray-800 shadow-sm md:rounded-lg overflow-hidden">
+              <div className="overflow-x-auto md:overflow-visible">
+                <table className="min-w-full w-full divide-y divide-gray-200 dark:divide-gray-700 responsive-kit-table">
+                  <thead className="bg-gray-50 dark:bg-gray-700 hidden md:table-header-group">
+                    <tr>
+                      <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider w-2/12">Référence</th>
+                      <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider w-2/12">Désignation</th>
+                      <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider w-2/12">Type de kit</th>
+                      <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider w-5/12">Pathogènes cibles</th>
+                      <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider w-1/12">Prix Indicatif HT</th>
+                    </tr>
+                  </thead>
+                  <tbody className="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700 flex flex-col md:table-row-group md:divide-y">
+                  {['PF000011', 'PF000013', 'PF000015', 'PF000016', 'PF000018', 'PF000019', 'PF000020', 'PF000033', 'PF000035', 'PF000047', 'PF000048', 'PF000049', 'PF000050'].map((kitRef) => {
+                    const kitInfo = getKitInfo(kitRef);
+                      return (
+                        <tr key={kitRef} className="block md:table-row border-b last:border-b-0 md:border-none dark:border-gray-700 p-4 md:p-0">
+                          <td 
+                            data-label="Référence"
+                            className="block md:table-cell md:px-4 md:py-3 md:whitespace-nowrap text-sm font-medium text-primary dark:text-gray-100 responsive-cell w-2/12"
+                          >
+                          {kitInfo.reference}
+                          </td>
+                          <td 
+                            data-label="Désignation"
+                            className="block md:table-cell md:px-4 md:py-3 text-sm text-primary dark:text-gray-300 responsive-cell w-2/12"
+                          >
+                          {kitInfo.designation}
+                          </td>
+                          <td 
+                            data-label="Type de kit"
+                            className="block md:table-cell md:px-4 md:py-3 text-sm text-gray-500 dark:text-gray-400 responsive-cell w-2/12"
+                          >
+                          {kitInfo.type}
+                          </td>
+                          <td 
+                            data-label="Pathogènes cibles"
+                            className="block md:table-cell md:px-4 md:py-3 text-sm text-gray-600 dark:text-gray-300 responsive-cell w-5/12"
+                          >
+                          {kitInfo.targets}
+                          </td>
+                          <td 
+                            data-label="Prix Indicatif HT"
+                            className="block md:table-cell md:px-4 md:py-3 md:whitespace-nowrap text-sm text-gray-600 dark:text-gray-300 md:text-right responsive-cell w-1/12"
+                          >
+                          {kitInfo.price}
+                          </td>
+                        </tr>
+                      );
+                    })}
+                  </tbody>
+                </table>
+                <div className="border-t border-gray-200 dark:border-gray-700">
+                  <div className="mt-4 mb-4 text-sm text-gray-500 dark:text-gray-400 italic px-4">
+                    {texts[language]?.diagbox?.gazon?.pythium_note}
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          )}
         </section>
 
         {/* Section CTA */}
@@ -605,7 +613,7 @@ function SectorPage() {
           </Link>
         </div>
 
-                  {/* Services Sections */}
+                {/* Services Sections */}
         <section className="flex flex-col gap-8 mt-20 mb-12 md:mb-16 md:max-w-3xl lg:max-w-4xl md:mx-auto">
           {/* Analyse Catalogue */}
           <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">

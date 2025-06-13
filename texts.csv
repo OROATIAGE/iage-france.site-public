@@ -50,7 +50,7 @@ home.sectors.category_turf_parks_title;Home (Secteurs);Gazons naturels sportifs 
 home.sectors.subdomain_arboriculture;Home (Secteurs);Arbres fruitiers;Fruit trees
 home.sectors.subdomain_cemeteries;Home (Secteurs);Pelouse des cimetières;Cemetery Lawn
 home.sectors.subdomain_epidemiology;Home (Secteurs);Santé publique par les eaux usées, les sites naturels;Public health through wastewater, natural sites
-home.sectors.subdomain_golf_courses;Home (Secteurs);Gazon des golfs;Golf turf
+home.sectors.subdomain_golf_courses;Home (Secteurs);Gazons des golfs;Golf turf
 home.sectors.subdomain_hospital_hygiene;Home (Secteurs);Hygiène des salles d'hôpital, d'EHPAD;Hygiene of hospital and nursing home wards
 home.sectors.subdomain_indoor_hygiene;Home (Secteurs);"Hygiène intérieure
 (rats, punaises, mérule, moisissures,...)";"Indoor hygiene
@@ -687,28 +687,10 @@ diagbox.process.step4.text;Diagbox Process;4. Envoyez votre échantillon avec l'
 diagbox.process.step4.title;Diagbox Process;Step 4;Step 4
 diagbox.process.step5.text;Diagbox Process;5. Recevez vos résultats d'analyse 48h après sa réception par le laboratoire IAGE;5. Receive your results within 48 hours after receipt by IAGE laboratory
 diagbox.process.step5.title;Diagbox Process;Step 5;Step 5
-home.sectors.09.description;Home (Secteurs);Diagnostic des pathogènes des gazons de golf et suivi de la qualité des greens;Golf course turf pathogen diagnostics and green quality monitoring
-home.sectors.09.name;Home (Secteurs);Gazons de golf;Golf turf
+;;;
+;;;
 home.sectors.10.description;Home (Secteurs);Diagnostic et suivi des pathogènes des pelouses de cimetières;Cemetery lawn pathogen diagnostics and monitoring
 home.sectors.10.name;Home (Secteurs);Pelouses de cimetières;Cemetery Lawns
-sectors.page.09.catalog.description;Secteur 09 (Page);Consultez notre catalogue d'analyses pour les principaux pathogènes du gazon de golf. Nous pouvons combiner des analyses pour un profil complet ou rechercher des pathogènes spécifiques sur demande.;Check our catalog of analyses for the main golf course turf pathogens. We can combine analyses for a complete profile or search for specific pathogens on request.
-sectors.page.09.catalog.title;Secteur 09 (Page);Analyses Catalogue et Combinaisons Spécifiques;Catalog Analyses and Specific Combinations
-sectors.page.09.catchphrase;Secteur 09 (Page);En charge de l'entretien de gazons de golf, vous devez maintenir une qualité optimale tout en respectant les nouvelles réglementations environnementales.;In charge of golf course turf maintenance, you must maintain optimal quality while complying with new environmental regulations.
-sectors.page.09.cta.diagbox;Secteur 09 (Page);Découvrir DIAGBOX® Golf;Discover DIAGBOX® Golf
-sectors.page.09.development.description;Secteur 09 (Page);En collaboration avec les clubs de golf et les experts du secteur, nous développons de nouvelles méthodes pour détecter des pathogènes émergents ou spécifiques aux conditions des parcours de golf.;In collaboration with golf clubs and industry experts, we develop new methods to detect emerging pathogens specific to golf course conditions.
-sectors.page.09.development.title;Secteur 09 (Page);Développement de Nouvelles Méthodes;Development of New Methods
-sectors.page.09.diagbox.description;Secteur 09 (Page);Le kit clé-en-main pour prélever facilement gazon, racines ou substrat et obtenir en 48h un diagnostic précis des pathogènes présents. Anticipez les traitements et optimisez la santé de vos greens et fairways.;The turnkey kit to easily sample turf, roots, or substrate and obtain a precise diagnosis of present pathogens within 48 hours. Anticipate treatments and optimize the health of your greens and fairways.
-sectors.page.09.diagbox.title;Secteur 09 (Page);DIAGBOX® Golf;DIAGBOX® Golf
-sectors.page.09.intro;Secteur 09 (Page);"**IAGE aide à préserver la qualité de vos gazons de golf et à réduire vos coûts d'entretien grâce :**
-    - à ses services de **détection précoce** et précise des champignons responsables des maladies du gazon
-    - à ses **recommandations** et outils de suivis adaptés aux spécificités des parcours de golf
-    - au **diagnostic rapide** des pathogènes pour une intervention ciblée
-    - à l'**optimisation** de vos traitements préventifs et curatifs";"**IAGE helps preserve your golf course turf quality and reduce maintenance costs thanks to:**
-    - **Early detection** services and precise identification of fungi responsible for turf diseases
-    - **Recommendations** and monitoring tools adapted to golf course specificities
-    - **Rapid diagnosis** of pathogens for targeted intervention
-    - **Optimization** of your preventive and curative treatments"
-sectors.page.09.services.title;Secteur 09 (Page);Vous vous posez des questions sur la santé de vos gazons de golf, voici nos solutions :;Questions about your golf course turf health? Here are our solutions:
 sectors.page.10.catalog.description;Secteur 10 (Page);Consultez notre catalogue d'analyses pour les principaux pathogènes des pelouses de cimetières. Nous pouvons combiner des analyses pour un profil complet ou rechercher des pathogènes spécifiques sur demande.;Check our catalog of analyses for the main cemetery lawn pathogens. We can combine analyses for a complete profile or search for specific pathogens on request.
 sectors.page.10.catalog.title;Secteur 10 (Page);Analyses Catalogue et Combinaisons Spécifiques;Catalog Analyses and Specific Combinations
 sectors.page.10.catchphrase;Secteur 10 (Page);En charge de l'entretien des pelouses de cimetières, vous devez assurer une qualité respectueuse tout en maîtrisant vos coûts d'entretien.;In charge of cemetery lawn maintenance, you must ensure respectful quality while controlling your maintenance costs.
@@ -817,6 +799,20 @@ documents.folder.traitements_industriels;Documents;Traitements industriels;Indus
 footer.documents;Footer;Documents;Documents
 diagbox.coming_soon;DiagBox;Les kits DIAGBOX® pour ce secteur seront bientôt disponibles. Contactez-nous pour en savoir plus.;DIAGBOX® kits for this sector will be available soon. Contact us to learn more.
 ;;;
+sectors.page.09.catalog.description;Secteur 09 (Page);Consultez notre catalogue d'analyses pour les principaux pathogènes des gazons de golf. Nous pouvons combiner des analyses pour un profil complet ou rechercher des pathogènes spécifiques sur demande.;Check our catalog of analyses for the main golf course turf pathogens. We can combine analyses for a complete profile or search for specific pathogens on request.
+sectors.page.09.catalog.title;Secteur 09 (Page);Analyses Catalogue et Combinaisons Spécifiques;Catalog Analyses and Specific Combinations
+sectors.page.09.development.description;Secteur 09 (Page);En collaboration avec les clubs de golf et les experts du secteur, nous développons de nouvelles méthodes pour détecter des pathogènes émergents ou spécifiques aux conditions des parcours de golf.;In collaboration with golf clubs and industry experts, we develop new methods to detect emerging pathogens specific to golf course conditions.
+sectors.page.09.development.title;Secteur 09 (Page);Développement de Nouvelles Méthodes;Development of New Methods
+sectors.page.09.diagbox.title;Secteur 09 (Page);DIAGBOX® Golf;DIAGBOX® Golf
+sectors.page.09.intro;Secteur 09 (Page);"**IAGE aide à préserver la qualité de vos gazons de golf et à réduire vos coûts d'entretien grâce :**
+    - à ses services de **détection précoce** et précise des champignons responsables des maladies du gazon
+    - à ses **recommandations** et outils de suivis adaptés aux spécificités des parcours de golf
+    - au **diagnostic rapide** des pathogènes pour une intervention ciblée
+    - à l'**optimisation** de vos traitements préventifs et curatifs";"**IAGE helps preserve your golf course turf quality and reduce maintenance costs thanks to:**
+    - **Early detection** services and precise identification of fungi responsible for turf diseases
+    - **Recommendations** and monitoring tools adapted to golf course specificities
+    - **Rapid diagnosis** of pathogens for targeted intervention
+    - **Optimization** of your preventive and curative treatments"
 ;;;
 sectors.page.09.qna_reco.common.recommendation_title;Secteur 09 (Page);Notre recommandation :;Our commendataire:
 sectors.page.09.qna_reco.common.contact_link;Secteur 09 (Page);Contactez-nous;Contact us
@@ -898,9 +894,9 @@ sectors.page.09.qna.q5_title;Secteur 09 (Page);J'ai d'autres questions;I have fu
 sectors.page.09.qna_bon_a_savoir.q5;Secteur 09 (Page);"**Chaque parcours a ses particularités** : nature des substrats, exposition, microclimat, pression de jeu, historique des maladies, équipements disponibles… autant de paramètres qui influencent le développement des pathogènes et leur dynamique. Vos contraintes budgétaires, réglementaires et de calendrier sont aussi à prendre en compte.
 Il existe donc une grande diversité de situations ! C'est pourquoi nous vous proposons un accompagnement modulable, adaptée à **votre situation**. N'hésitez pas à nous contacter : notre équipe est à votre écoute pour répondre à vos questions et bâtir avec vous une stratégie efficace et durable.";"**Each course is specific**: nature of the substrates, exposure, microclimate, playing pressure, history of diseases, available equipment... all parameters that influence the development of pathogens and their dynamics. Your budgetary, regulatory and scheduling constraints also need to be taken into account.
 So there are many different situations! That's why we offer you flexible support, **tailored as closely as possible to the realities of your business**. Don't hesitate to contact us: our team is on hand to answer your questions and work with you to build an effective, sustainable strategy."
+sectors.page.09.ideal_for.text;Secteur 09 (Page);Terrain de golf - Greens - Fairways - Départs - Approches;Golf course - Greens - Fairways - Tees - Approaches
 ;;;
 diagbox.gazon.kits.PF000039.name;Secteur 09 (Page);Dollar Spot;Dollar Spot
 diagbox.gazon.kits.PF000039.targets;Secteur 09 (Page);Clarireedia jacksonii, C.homoeocarpa;Clarireedia jacksonii, C.homoeocarpa
 diagbox.gazon.kits.PF000039.type;Secteur 09 (Page);Déchets de tonte;Mowing waste
 diagbox.gazon.prices.PF000039;Secteur 09 (Page);185,00€;185,00 €
-sectors.page.09.ideal_for.text;Secteur 09 (Page);Terrain de golf - Greens - Fairways - Départs - Approches;Golf course - Greens - Fairways - Tees - Approaches

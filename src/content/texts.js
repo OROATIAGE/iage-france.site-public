@@ -79,7 +79,7 @@ export const texts = {
         "subdomain_arboriculture": "Arbres fruitiers",
         "subdomain_cemeteries": "Pelouse des cimetières",
         "subdomain_epidemiology": "Santé publique par les eaux usées, les sites naturels",
-        "subdomain_golf_courses": "Gazon des golfs",
+        "subdomain_golf_courses": "Gazons des golfs",
         "subdomain_hospital_hygiene": "Hygiène des salles d'hôpital, d'EHPAD",
         "subdomain_indoor_hygiene": "Hygiène intérieure\n(rats, punaises, mérule, moisissures,...)",
         "subdomain_methanizers": "Méthaniseurs",
@@ -95,8 +95,8 @@ export const texts = {
         "mobile_nav_domaine3": "Industrie",
         "mobile_nav_domaine4": "Gazons",
         "09": {
-          "description": "Diagnostic des pathogènes des gazons de golf et suivi de la qualité des greens",
-          "name": "Gazons de golf"
+          "description": "XXXXX Diagnostic des pathogènes des gazons de golf et suivi de la qualité des greens",
+          "name": "XXXXX Gazons de golf"
         }
       },
       "services": {
@@ -390,24 +390,24 @@ export const texts = {
         },
         "09": {
           "catalog": {
-            "description": "Consultez notre catalogue d'analyses pour les principaux pathogènes du gazon de golf. Nous pouvons combiner des analyses pour un profil complet ou rechercher des pathogènes spécifiques sur demande.",
+            "description": "Consultez notre catalogue d'analyses pour les principaux pathogènes des gazons de golf. Nous pouvons combiner des analyses pour un profil complet ou rechercher des pathogènes spécifiques sur demande.",
             "title": "Analyses Catalogue et Combinaisons Spécifiques"
           },
-          "catchphrase": "En charge de l'entretien de gazons de golf, vous devez maintenir une qualité optimale tout en respectant les nouvelles réglementations environnementales.",
+          "catchphrase": "XXXXX En charge de l'entretien de gazons de golf, vous devez maintenir une qualité optimale tout en respectant les nouvelles réglementations environnementales.",
           "cta": {
-            "diagbox": "Découvrir DIAGBOX® Golf"
+            "diagbox": "XXXXX Découvrir DIAGBOX® Golf"
           },
           "development": {
             "description": "En collaboration avec les clubs de golf et les experts du secteur, nous développons de nouvelles méthodes pour détecter des pathogènes émergents ou spécifiques aux conditions des parcours de golf.",
             "title": "Développement de Nouvelles Méthodes"
           },
           "diagbox": {
-            "description": "Le kit clé-en-main pour prélever facilement gazon, racines ou substrat et obtenir en 48h un diagnostic précis des pathogènes présents. Anticipez les traitements et optimisez la santé de vos greens et fairways.",
+            "description": "XXXXX Le kit clé-en-main pour prélever facilement gazon, racines ou substrat et obtenir en 48h un diagnostic précis des pathogènes présents. Anticipez les traitements et optimisez la santé de vos greens et fairways.",
             "title": "DIAGBOX® Golf"
           },
           "intro": "**IAGE aide à préserver la qualité de vos gazons de golf et à réduire vos coûts d'entretien grâce :**\n    - à ses services de **détection précoce** et précise des champignons responsables des maladies du gazon\n    - à ses **recommandations** et outils de suivis adaptés aux spécificités des parcours de golf\n    - au **diagnostic rapide** des pathogènes pour une intervention ciblée\n    - à l'**optimisation** de vos traitements préventifs et curatifs",
           "services": {
-            "title": "Vous vous posez des questions sur la santé de vos gazons de golf, voici nos solutions :"
+            "title": "XXXXXX Vous vous posez des questions sur la santé de vos gazons de golf, voici nos solutions :"
           },
           "qna_reco": {
             "common": {
@@ -1408,7 +1408,7 @@ export const texts = {
             "description": "Check our catalog of analyses for the main golf course turf pathogens. We can combine analyses for a complete profile or search for specific pathogens on request.",
             "title": "Catalog Analyses and Specific Combinations"
           },
-          "catchphrase": "In charge of golf course turf maintenance, you must maintain optimal quality while complying with new environmental regulations.",
+          "catchphrase": "In charge of golf turf maintenance, you must maintain optimal quality while complying with new environmental regulations.",
           "cta": {
             "diagbox": "Discover DIAGBOX® Golf"
           },

@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { FaAngleRight } from 'react-icons/fa';
+import { FaAngleRight, FaChevronDown, FaChevronRight } from 'react-icons/fa';
 import { useLanguage } from '../context/LanguageContext';
 import { texts } from '../content/texts';
 import TextWithBoldMarkdown from '../components/TextWithBoldMarkdown';
@@ -64,6 +64,7 @@ kitTypes.forEach(typeInfo => {
 
 function Sector09Page() {
   const { language } = useLanguage();
+  const [isPriceTableOpen, setIsPriceTableOpen] = useState(false);
   
   // Helper function to get texts for this page
   const getText = (key, defaultValue = '') => {
@@ -150,52 +151,58 @@ function Sector09Page() {
       {/* DiagBox Table */}
       <div className="mb-12 md:mb-16 md:max-w-3xl lg:max-w-4xl md:mx-auto">
         <div className="pt-10 border-t border-gray-200 dark:border-gray-700">
-          <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-800 dark:text-gray-200 mb-8">
-            {getText('diagbox.gazon.prices.title')}
-          </h2>
-          <div className="bg-white dark:bg-gray-800 shadow-sm md:rounded-lg overflow-hidden">
-            <div className="overflow-x-auto">
-              <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
-                <thead className="bg-gray-50 dark:bg-gray-700 hidden md:table-header-group">
-                  <tr>
-                    <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider w-[12%]">Réf.</th>
-                    <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider w-[18%]">Désignation</th>
-                    <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider w-[12%]">Type de kit</th>
-                    <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider w-[48%]">Pathogènes ciblés</th>
-                    <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider w-[10%]">Prix indicatif HT</th>
-                  </tr>
-                </thead>
-                <tbody className="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700 md:divide-y">
-                  {kitTypes.map((kitTypeInfo) => (
-                    kitTypeInfo.kits.map((kitRef) => (
-                      <tr key={kitRef} className="flex flex-col md:table-row">
-                        <td data-label="Réf." className="block md:table-cell px-4 py-2 md:py-3 text-sm font-medium text-gray-900 dark:text-gray-100 w-full md:w-[12%] before:content-[attr(data-label)] before:float-left md:before:content-none before:font-medium before:text-gray-700 dark:before:text-gray-300">
-                          {kitRef}
-                        </td>
-                        <td data-label="Désignation" className="block md:table-cell px-4 py-2 md:py-3 text-sm text-gray-600 dark:text-gray-300 w-full md:w-[18%] before:content-[attr(data-label)] before:float-left md:before:content-none before:font-medium before:text-gray-700 dark:before:text-gray-300">
-                          {getText(`diagbox.gazon.kits.${kitRef}.name`)}
-                        </td>
-                        <td data-label="Type de kit" className="block md:table-cell px-4 py-2 md:py-3 text-sm text-gray-600 dark:text-gray-300 w-full md:w-[12%] before:content-[attr(data-label)] before:float-left md:before:content-none before:font-medium before:text-gray-700 dark:before:text-gray-300">
-                          {getText(`diagbox.gazon.types.${kitTypeInfo.type}`)}
-                        </td>
-                        <td data-label="Pathogènes ciblés" className="block md:table-cell px-4 py-2 md:py-3 text-sm text-gray-600 dark:text-gray-300 w-full md:w-[48%] before:content-[attr(data-label)] before:float-left md:before:content-none before:font-medium before:text-gray-700 dark:before:text-gray-300 whitespace-pre-line">
-                          {getText(`diagbox.gazon.kits.${kitRef}.targets`)}
-                        </td>
-                        <td data-label="Prix indicatif HT" className="block md:table-cell px-4 py-2 md:py-3 text-sm text-gray-600 dark:text-gray-300 w-full md:w-[10%] before:content-[attr(data-label)] before:float-left md:before:content-none before:font-medium before:text-gray-700 dark:before:text-gray-300">
-                          {getText(`diagbox.gazon.prices.${kitRef}`)}
-                        </td>
-                      </tr>
-                    ))
-                  ))}
-                </tbody>
-              </table>
-              <div className="border-t border-gray-200 dark:border-gray-700">
-                <div className="mt-4 mb-4 text-sm text-gray-500 dark:text-gray-400 italic px-4">
-                  {getText('diagbox.gazon.pythium_note')}
+          <button 
+            onClick={() => setIsPriceTableOpen(!isPriceTableOpen)}
+            className="w-full flex justify-between items-center text-left text-2xl md:text-3xl font-bold text-gray-800 dark:text-gray-200 mb-8 focus:outline-none"
+          >
+            <span>{getText('diagbox.gazon.prices.title')}</span>
+            {isPriceTableOpen ? <FaChevronDown className="text-primary dark:text-gray-400" /> : <FaChevronRight className="text-primary dark:text-gray-400" />}
+          </button>
+          {isPriceTableOpen && (
+            <div className="bg-white dark:bg-gray-800 shadow-sm md:rounded-lg overflow-hidden">
+              <div className="overflow-x-auto">
+                <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
+                  <thead className="bg-gray-50 dark:bg-gray-700 hidden md:table-header-group">
+                    <tr>
+                      <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider w-[12%]">Réf.</th>
+                      <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider w-[18%]">Désignation</th>
+                      <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider w-[12%]">Type de kit</th>
+                      <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider w-[48%]">Pathogènes ciblés</th>
+                      <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider w-[10%]">Prix indicatif HT</th>
+                    </tr>
+                  </thead>
+                  <tbody className="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700 md:divide-y">
+                    {kitTypes.map((kitTypeInfo) => (
+                      kitTypeInfo.kits.map((kitRef) => (
+                        <tr key={kitRef} className="flex flex-col md:table-row">
+                          <td data-label="Réf." className="block md:table-cell px-4 py-2 md:py-3 text-sm font-medium text-gray-900 dark:text-gray-100 w-full md:w-[12%] before:content-[attr(data-label)] before:float-left md:before:content-none before:font-medium before:text-gray-700 dark:before:text-gray-300">
+                            {kitRef}
+                          </td>
+                          <td data-label="Désignation" className="block md:table-cell px-4 py-2 md:py-3 text-sm text-gray-600 dark:text-gray-300 w-full md:w-[18%] before:content-[attr(data-label)] before:float-left md:before:content-none before:font-medium before:text-gray-700 dark:before:text-gray-300">
+                            {getText(`diagbox.gazon.kits.${kitRef}.name`)}
+                          </td>
+                          <td data-label="Type de kit" className="block md:table-cell px-4 py-2 md:py-3 text-sm text-gray-600 dark:text-gray-300 w-full md:w-[12%] before:content-[attr(data-label)] before:float-left md:before:content-none before:font-medium before:text-gray-700 dark:before:text-gray-300">
+                            {getText(`diagbox.gazon.types.${kitTypeInfo.type}`)}
+                          </td>
+                          <td data-label="Pathogènes ciblés" className="block md:table-cell px-4 py-2 md:py-3 text-sm text-gray-600 dark:text-gray-300 w-full md:w-[48%] before:content-[attr(data-label)] before:float-left md:before:content-none before:font-medium before:text-gray-700 dark:before:text-gray-300 whitespace-pre-line">
+                            {getText(`diagbox.gazon.kits.${kitRef}.targets`)}
+                          </td>
+                          <td data-label="Prix indicatif HT" className="block md:table-cell px-4 py-2 md:py-3 text-sm text-gray-600 dark:text-gray-300 w-full md:w-[10%] before:content-[attr(data-label)] before:float-left md:before:content-none before:font-medium before:text-gray-700 dark:before:text-gray-300">
+                            {getText(`diagbox.gazon.prices.${kitRef}`)}
+                          </td>
+                        </tr>
+                      ))
+                    ))}
+                  </tbody>
+                </table>
+                <div className="border-t border-gray-200 dark:border-gray-700">
+                  <div className="mt-4 mb-4 text-sm text-gray-500 dark:text-gray-400 italic px-4">
+                    {getText('diagbox.gazon.pythium_note')}
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          )}
         </div>
       </div>
 

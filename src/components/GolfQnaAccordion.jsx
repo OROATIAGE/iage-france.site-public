@@ -37,6 +37,7 @@ const qnaData = [
     bonASavoirKey: 'sectors.page.09.qna_bon_a_savoir.q3',
     recommendedKitRefs: [
       { ref: 'PF000018', introKey: 'diagbox.gazon.qna_intro.reco_PF000018' },
+      { ref: 'PF000020', introKey: 'diagbox.gazon.qna_intro.reco_PF000020' },
     ],
   },
   {
