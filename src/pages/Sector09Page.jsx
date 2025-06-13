@@ -123,14 +123,14 @@ function Sector09Page() {
 
       {/* --- Process Section --- */}
       <section className="mb-12 md:mb-16 bg-gray-100 dark:bg-gray-800 p-8 rounded-lg shadow-sm md:max-w-3xl lg:max-w-4xl md:mx-auto">
-        <h2 className="text-2xl md:text-3xl font-semibold text-center text-gray-800 dark:text-gray-200 mb-8">
+        <h2 className="text-2xl md:text-3xl font-semibold text-center text-primary dark:text-secondary mb-8">
           {getText('diagbox.gazon.process.title')}
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-8 text-center">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-8 text-center text-primary dark:text-secondary">
           {simpleSteps.map((step, index) => (
             <div key={index} className="flex flex-col items-center">
               <img src={step.icon} alt={step.alt} className="w-12 h-12 mb-3" />
-              <p className="text-gray-600 dark:text-gray-400">{getText(`diagbox.process.${step.key.split('.')[1]}.text`)}</p>
+              <p>{getText(`diagbox.process.${step.key.split('.')[1]}.text`)}</p>
             </div>
           ))}
         </div>
@@ -153,7 +153,7 @@ function Sector09Page() {
         <div className="pt-10 border-t border-gray-200 dark:border-gray-700">
           <button 
             onClick={() => setIsPriceTableOpen(!isPriceTableOpen)}
-            className="w-full flex justify-between items-center text-left text-2xl md:text-3xl font-bold text-gray-800 dark:text-gray-200 mb-8 focus:outline-none"
+            className="w-full flex justify-between items-center text-left text-2xl md:text-3xl font-bold text-primary dark:text-secondary mb-8 focus:outline-none"
           >
             <span>{getText('diagbox.gazon.prices.title')}</span>
             {isPriceTableOpen ? <FaChevronDown className="text-primary dark:text-gray-400" /> : <FaChevronRight className="text-primary dark:text-gray-400" />}
