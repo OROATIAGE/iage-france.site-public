@@ -35,7 +35,7 @@ home.sectors.subdomain_shellfish_farming;Home (Secteurs);Huitres (norovirus);Oys
 home.sectors.subdomain_sports_turf;Home (Secteurs);Gazons des stades;Stadium turf
 home.sectors.subdomain_viticulture;Home (Secteurs);Vignes;Vines
 home.sectors.subdomain_winemaking;Home (Secteurs);Vinification;Winemaking
-home.sectors.title;Home (Secteurs);Vos enjeux, nos outils;Your challenges, our tools
+home.sectors.title;Home (Secteurs);Vos enjeux, nos Experts;Your challenges, our Experts
 home.services.0.title;Home (Services);Analyses de précisions;Precision analyses
 home.services.2.description;Home (Services);Equiments spécialisés, laboratoires locaux, accompagnement technique, pour encore plus de réactivité;Specialized equipment, local laboratories, technical support, for even greater responsiveness
 home.services.2.title;Home (Services);Vous équiper et former vos équipes;Equip and train your teams
@@ -635,9 +635,9 @@ contact.form.message;Contact Form;Votre message;Your message
 contact.form.phone;Contact Form;Téléphone;Phone
 contact.form.submit;Contact Form;Envoyer;Submit
 contact.form.optional;Contact Form;optionnel - utile pour recevoir plus rapidement vos produits;optional - useful for faster product delivery
-contact.form.sector;Contact Form;Secteur d'intérêt;Sector of Interest
+contact.form.sector;Contact Form;Quel Expert souhaitez-vous contacter ?;Which expert would you like to contact?
 contact.form.select_sector;Contact Form;Sélectionnez un domaine ou un secteur;Select a field or a sector
-contact.form.service;Contact Form;Service souhaité;Desired Service
+contact.form.service;Contact Form;Pour quel type de service ?;What type of service are you looking for?
 contact.form.select_service;Contact Form;Sélectionnez un service;Select a service
 contact.form.contact_preference;Contact Form;Mode de réponse souhaité;Preferred contact method
 contact.form.select_contact_preference;Contact Form;Sélectionnez le mode de réponse souhaité;Select your preferred contact method

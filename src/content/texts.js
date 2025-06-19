@@ -69,7 +69,7 @@ export const texts = {
         "subdomain_sports_turf": "Gazons des stades",
         "subdomain_viticulture": "Vignes",
         "subdomain_winemaking": "Vinification",
-        "title": "Vos enjeux, nos outils",
+        "title": "Vos enjeux, nos Experts",
         "subdomain_epidemiology": "Santé publique : Epidémio-surveillance via les eaux usées (WBE)",
         "01": {
           "name": "Epidémiosurveillance via les eaux usées (WBE)"
@@ -843,9 +843,9 @@ export const texts = {
         "firstName": "Prénom",
         "job_title": "Fonction",
         "optional": "optionnel",
-        "sector": "Secteur d'intérêt",
+        "sector": "Quel Expert souhaitez-vous contacter ?",
         "select_sector": "Sélectionnez un domaine ou un secteur",
-        "service": "Service souhaité",
+        "service": "Pour quel type de service ?",
         "select_service": "Sélectionnez un service",
         "contact_preference": "Mode de réponse souhaité",
         "select_contact_preference": "Sélectionnez le mode de réponse souhaité",
@@ -1111,7 +1111,7 @@ export const texts = {
         "subdomain_sports_turf": "Stadium turf",
         "subdomain_viticulture": "Vines",
         "subdomain_winemaking": "Winemaking",
-        "title": "Your challenges, our tools",
+        "title": "Your challenges, our Experts",
         "subdomain_epidemiology": "Public health (epidemic surveillance) through wastewater",
         "01": {
           "name": "Wastewater Based Epidemiology"
@@ -1885,9 +1885,9 @@ export const texts = {
         "firstName": "First Name",
         "job_title": "Job Title",
         "optional": "optional",
-        "sector": "Sector of Interest",
+        "sector": "Which expert would you like to contact?",
         "select_sector": "Select a field or a sector",
-        "service": "Desired Service",
+        "service": "What type of service are you looking for?",
         "select_service": "Select a service",
         "contact_preference": "Preferred contact method",
         "select_contact_preference": "Select your preferred contact method",
