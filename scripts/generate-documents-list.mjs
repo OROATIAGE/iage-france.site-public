@@ -7,7 +7,7 @@ const OUTPUT_FILE = './src/content/documents.js';
 
 // Fonction pour obtenir l'extension d'un fichier
 const getFileExtension = (filename) => {
-  return filename.slice((filename.lastIndexOf(".") - 1 >>> 0) + 2).toLowerCase();
+  return path.extname(filename).toLowerCase();
 };
 
 // Fonction pour vérifier si un fichier est un document supporté

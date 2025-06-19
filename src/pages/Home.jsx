@@ -5,10 +5,12 @@ import { getTextByLanguage } from '../utils/textHelpers'
 import { useEffect, useState } from 'react'
 
 // --- Composant MobileDomainNav ---
-const domainIds = ['domaine1', 'domaine2', 'domaine3', 'domaine4'];
-const domainTitleIds = ['title-domaine1', 'title-domaine2', 'title-domaine3', 'title-domaine4'];
+const domainIds = ['domaine1', 'domaine5', 'domaine6', 'domaine2', 'domaine3', 'domaine4'];
+const domainTitleIds = ['title-domaine1', 'title-domaine5', 'title-domaine6', 'title-domaine2', 'title-domaine3', 'title-domaine4'];
 const domainTextKeys = [
   'mobile_nav_domaine1',
+  'mobile_nav_domaine5',
+  'mobile_nav_domaine6',
   'mobile_nav_domaine2',
   'mobile_nav_domaine3',
   'mobile_nav_domaine4',
@@ -146,14 +148,33 @@ const Home = () => {
 
   const problemSolvingCategories = [
     {
-      id: 'health-hygiene-category',
+      id: 'health-public-category',
       heroCardKey: 'home.hero.card_title_health',
-      imageSrc: '/images/hygiene-sante-publique.webp',
+      imageSrc: '/images/sante_publique.webp',
       titleKey: 'home.sectors.category_health_hygiene_title',
       subdomains: [
         { textKey: 'home.sectors.subdomain_epidemiology', link: `/${language}/sectors/01` },
+        { textKey: 'home.sectors.subdomain_13', link: `/${language}/sectors/13` },
+      ],
+    },
+    {
+      id: 'hygiene-interior-category',
+      heroCardKey: 'home.hero.card_title_hygiene',
+      imageSrc: '/images/hygiène.webp',
+      titleKey: 'home.sectors.category_hygiene_title',
+      subdomains: [
         { textKey: 'home.sectors.subdomain_hospital_hygiene', link: `/${language}/sectors/02` },
         { textKey: 'home.sectors.subdomain_indoor_hygiene', link: `/${language}/sectors/03` },
+        { textKey: 'home.sectors.subdomain_11', link: `/${language}/sectors/11` },
+      ],
+    },
+    {
+      id: 'buildings-category',
+      heroCardKey: 'home.hero.card_title_buildings',
+      imageSrc: '/images/batiment_merule.webp',
+      titleKey: 'home.sectors.category_buildings_title',
+      subdomains: [
+        { textKey: 'home.sectors.subdomain_12', link: `/${language}/sectors/12` },
       ],
     },
     {

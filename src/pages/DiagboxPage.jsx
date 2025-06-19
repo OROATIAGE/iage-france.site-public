@@ -55,8 +55,21 @@ const diagboxDomainData = [
     domainKey: 'category_health_hygiene_title',
     sectors: [
       { sectorKey: 'subdomain_epidemiology', id: '01' },
+      { sectorKey: 'subdomain_13', id: '13' },
+    ],
+  },
+  {
+    domainKey: 'category_hygiene_title',
+    sectors: [
       { sectorKey: 'subdomain_hospital_hygiene', id: '02' },
       { sectorKey: 'subdomain_indoor_hygiene', id: '03' },
+      { sectorKey: 'subdomain_11', id: '11' },
+    ],
+  },
+  {
+    domainKey: 'category_buildings_title',
+    sectors: [
+      { sectorKey: 'subdomain_12', id: '12' },
     ],
   },
   {

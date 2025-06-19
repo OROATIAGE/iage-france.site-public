@@ -13,48 +13,21 @@ navbar.news.events;Navbar;Événements;Events
 home.cta.button;Home (CTA);Prendre contact;Get in touch
 home.cta.subtitle;Home (CTA);Contactez-nous pour discuter de vos besoins et découvrir comment nous pouvons vous aider.;Contact us to discuss your needs and find out how we can help.
 home.cta.title;Home (CTA);Prêt à commencer ?;Ready to get started?
-home.hero.card_title_agriculture;Home (Hero);Agriculture, élevage;Agriculture, livestock
-home.hero.card_title_health;Home (Hero);"Santé publique, 
-Hygiène dans les bâtiments";"Public health,
-Hygiene in buildings"
-home.hero.card_title_industrial;Home (Hero);"Fermentations agroalimentaire,
-Traitement des eaux – bio-énergie...";"Agri-food fermentation,
-Water treatment – bio-energy..."
-home.hero.card_title_turf;Home (Hero);Gazons naturels professionnels, parcs, jardins;Professional natural lawns, parks, gardens
 home.hero.cta;Home (Hero);Contactez-nous;Contact us
-home.hero.professional_intro;Home (Hero);Nos services pour vos secteurs d'activité :;Our services for your sectors of activity:
 home.hero.subtitle;Home (Hero);Nous mettons notre expertise du vivant à votre service;We put our expertise in the living world — powered by DNA and RNA science - at your service
 home.hero.title;Home (Hero);Voir l'invisible pour agir à temps ;See the invisible to act in time
-home.sectors.01.description;Home (Secteurs);"Mesures de pathogènes dans les eaux usées 
-Possibilité de mesures accréditées COFRAC";"Pathogen quantification in wastewater
-Possibility of COFRAC accredited measures"
-home.sectors.01.name;Home (Secteurs);Epidémiosurveillance dans l'environnement;Environmental Epidemiological surveillance
-home.sectors.02.description;Home (Secteurs);Mesures de contrôle de désinfection;Disinfection control measures
-home.sectors.02.name;Home (Secteurs);Hygiène hospitalière;Hospital hygiene
-home.sectors.03.description;Home (Secteurs);Mesures de contrôle de la qualité de l'air, de présences de nuisibles;Air quality control, pest presence
-home.sectors.03.name;Home (Secteurs);Hygiène intérieure;Indoor hygiene
-home.sectors.04.description;Home (Secteurs);Mesures de présence de pathogènes du gazon;Measurements of the presence of turf pathogens
-home.sectors.04.name;Home (Secteurs);Gazons sportifs;Stadium turfs
-home.sectors.05.description;Home (Secteurs);Mesures de pathogènes ou de qualité du process;Pathogen or process quality measurements
+;;;
 home.sectors.05.name;Home (Secteurs);Viti – Vini;Viti – Vini
-home.sectors.06.description;Home (Secteurs);Mesure de pathogènes;Pathogen quantification
 home.sectors.06.name;Home (Secteurs);Arboriculture (Pomme);Arboriculture (Apple)
-home.sectors.07.description;Home (Secteurs);Mesure de contrôle contre la présence de pathogènes humains;Control measure against the presence of human pathogens
 home.sectors.07.name;Home (Secteurs);Conchyliculture;Shellfish farming
-home.sectors.08.description;Home (Secteurs);Mesures de contrôle pathogènes aviaires;Avian pathogen control measures
 home.sectors.08.name;Home (Secteurs);Aviculture;Poultry farming
 home.sectors.category_agriculture_livestock_title;Home (Secteurs);Agriculture et élevage;Agriculture and livestock
-home.sectors.category_health_hygiene_title;Home (Secteurs);Santé publique et Hygiène intérieure;Public Health and Indoor Hygiene
+;;;
 home.sectors.category_industrial_fermentation_title;Home (Secteurs);Procédés de traitement industriels;Industrial treatment processes
-home.sectors.category_turf_parks_title;Home (Secteurs);Gazons naturels sportifs et d'agrément;Natural turfs and lawns
+home.sectors.category_turf_parks_title;Home (Secteurs);Gazons naturels sportifs et d'agrément;Natural sport turfs and lawns
 home.sectors.subdomain_arboriculture;Home (Secteurs);Arbres fruitiers;Fruit trees
 home.sectors.subdomain_cemeteries;Home (Secteurs);Pelouse des cimetières;Cemetery Lawn
-home.sectors.subdomain_epidemiology;Home (Secteurs);Santé publique par les eaux usées, les sites naturels;Public health through wastewater, natural sites
 home.sectors.subdomain_golf_courses;Home (Secteurs);Gazons des golfs;Golf turf
-home.sectors.subdomain_hospital_hygiene;Home (Secteurs);Hygiène des salles d'hôpital, d'EHPAD;Hygiene of hospital and nursing home wards
-home.sectors.subdomain_indoor_hygiene;Home (Secteurs);"Hygiène intérieure
-(rats, punaises, mérule, moisissures,...)";"Indoor hygiene
-(rats, bedbugs, dry rot, mold, etc.)"
 home.sectors.subdomain_methanizers;Home (Secteurs);Méthaniseurs;Methanizers
 home.sectors.subdomain_poultry_farming;Home (Secteurs);Elevages aviaires (grippe aviaire);Poultry farming (avian flu)
 home.sectors.subdomain_purification_systems;Home (Secteurs);Réseaux et Stations d'épuration;Networks and Sewage Treatment Plants
@@ -63,10 +36,7 @@ home.sectors.subdomain_sports_turf;Home (Secteurs);Gazons des stades;Stadium tur
 home.sectors.subdomain_viticulture;Home (Secteurs);Vignes;Vines
 home.sectors.subdomain_winemaking;Home (Secteurs);Vinification;Winemaking
 home.sectors.title;Home (Secteurs);Vos enjeux, nos outils;Your challenges, our tools
-home.services.0.description;Home (Services);Des analyses précises et fiables, sur catalogue ou à la demande, pour répondre à tous vos besoins;Accurate and reliable analyses, from our catalog or on demand, to meet all your needs
 home.services.0.title;Home (Services);Analyses de précisions;Precision analyses
-home.services.1.description;Home (Services);Un accompagnement personnalisé pour accompagner vos prises de décisions;Personalized support to help you make decisions
-home.services.1.title;Home (Services);DIAGBOX®, Conseils et Expertise;DIAGBOX®, Advice and Expertise
 home.services.2.description;Home (Services);Equiments spécialisés, laboratoires locaux, accompagnement technique, pour encore plus de réactivité;Specialized equipment, local laboratories, technical support, for even greater responsiveness
 home.services.2.title;Home (Services);Vous équiper et former vos équipes;Equip and train your teams
 home.services.title;Home (Services);Nos Services;Our Services
@@ -150,50 +120,7 @@ services.page.thresholds_title;Services Page;Définitions de seuils pour facilit
 services.page.title;Services (Page);Nos Solutions et Services Analytiques;Our Analytical Solutions and Services
 services.title;Services;Nos Services;Our Services
 sectors.common.back_button;Sectors Common;Voir tous les domaines;See all areas
-sectors.page.01.catalog.description;Secteur 01 (Page);Choisissez parmi nos analyses standardisées (ex: SARS-CoV-2 dans les eaux usées) ou combinez plusieurs méthodes pour un suivi sur mesure de pathogènes spécifiques à vos problématiques.;Choose from our standardized analyses (e.g., SARS-CoV-2 in wastewater) or combine several methods for customized monitoring of pathogens specific to your issues.
-sectors.page.01.catalog.title;Secteur 01 (Page);Analyses Catalogue et Combinaisons Spécifiques;Catalog Analysis and Specific Combinations
-sectors.page.01.catchphrase;Secteur 01 (Page);Vous portez une responsabilité dans le suivi de la santé de la population locale, ou vous souhaitez contribuer à la prévention des épidémies :;You are responsible for monitoring the health of the local population, or you wish to contribute to the prevention of epidemics:
-sectors.page.01.cta.diagbox;Secteur 01 (Page);Découvrir DIAGBOX® WES;Discover DIAGBOX® WES
-sectors.page.01.development.description;Secteur 01 (Page);Nous innovons avec vous pour développer et valider des méthodes d'analyse pour de nouvelles cibles virales ou bactériennes, répondant aux enjeux émergents de santé publique.;We innovate with you to develop and validate analysis methods for new viral or bacterial targets, responding to emerging public health issues.
-sectors.page.01.development.title;Secteur 01 (Page);Développement de Nouvelles Méthodes;Development of New Methods
-sectors.page.01.diagbox.description;Secteur 01 (Page);Le kit clé-en-main pour une détection et quantification rapide (48h) et autonome des pathogènes (virus, bactéries) dans vos échantillons d'eau. Simple, efficace, et stockable sans contrainte.;The turnkey kit for rapid (48h) and autonomous detection and quantification of pathogens (viruses, bacteria) in your water samples. Simple, effective, and easily stored.
-sectors.page.01.diagbox.title;Secteur 01 (Page);DIAGBOX® WES;DIAGBOX® WES
-sectors.page.01.intro;Secteur 01 (Page);"**IAGE vous accompagne avec des solutions d'analyse génomique précises et rapides pour l'épidémiosurveillance environnementale :**
-  - via l'analyse des **eaux usées** (Wastewater Based Epidemiology – WBE).
-  - via l'analyse **d'autre supports environnementaux** : par exemple mares, plan d'eau pour la détection de maladies véhiculées par les moustiques";"**IAGE supports you with precise and rapid genomic analysis solutions for environmental epidemiological surveillance, particularly through :** 
-   - wastewater analysis (Wastewater Based Epidemiology – WBE).
-   - analysis in **other environmental matrices**, such as ponds for the detection of mosquito-borne diseases."
-sectors.page.01.sampling.description;Secteur 01 (Page);Nous proposons également des solutions pour le prélèvement en continu, particulièrement adaptées au suivi dynamique des matrices aqueuses.;We also offer solutions for continuous sampling, particularly suited to the dynamic monitoring of aqueous matrices.
-sectors.page.01.sampling.title;Secteur 01 (Page);Prélèvement en continu;Continuous sampling
-sectors.page.01.services.title;Secteur 01 (Page);Nos solutions adaptées à l'épidémiosurveillance :;Our solutions adapted to epidemiological surveillance:
-sectors.page.02.catalog.description;Secteur 02 (Page);Choisissez parmi nos analyses standardisées (ex: recherche de légionelles, staphylocoques dorés) ou combinez plusieurs méthodes pour un suivi sur mesure des points critiques de votre établissement.;Choose from our standardized analyses (e.g., legionella and staphylococcus aureus testing) or combine several methods for customized monitoring of your facility's critical areas.
-sectors.page.02.catalog.title;Secteur 02 (Page);Analyses Catalogue et Combinaisons Spécifiques;Catalog Analyses and Specific Combinations
-sectors.page.02.catchphrase;Secteur 02 (Page);Vous êtes responsable de l'hygiène dans un établissement de santé ou une société de nettoyage spécialisée :;You are responsible for hygiene in a healthcare establishment or a specialized cleaning company:
-sectors.page.02.cta.diagbox;Secteur 02 (Page);Découvrir DIAGBOX® Hygiène;Discover DIAGBOX® Hygiene
-sectors.page.02.development.description;Secteur 02 (Page);Nous innovons avec vous pour développer et valider des méthodes d'analyse pour de nouvelles cibles pertinentes en milieu hospitalier (pathogènes émergents, biofilms) ou pour évaluer l'efficacité de nouveaux protocoles/produits de désinfection.;We innovate with you to develop and validate analysis methods for new relevant targets in hospital settings (emerging pathogens, biofilms) or to evaluate the effectiveness of new disinfection protocols/products.
-sectors.page.02.development.title;Secteur 02 (Page);Développement de Nouvelles Méthodes;Development of New Methods
-sectors.page.02.diagbox.description;Secteur 02 (Page);Le kit clé-en-main pour une détection et quantification rapide (48h) et autonome de marqueurs microbiens (bactéries, moisissures) sur surfaces ou dans l'air après désinfection. Simple, efficace, et idéal pour vos contrôles qualité réguliers.;The turnkey kit for rapid (48h) and autonomous detection and quantification of microbial markers (bacteria, mold) on surfaces or in the air after disinfection. Simple, effective, and ideal for your regular quality controls.
-sectors.page.02.diagbox.title;Secteur 02 (Page);DIAGBOX® Hygiène Hospitalière;DIAGBOX® Hospital Hygiene
-sectors.page.02.intro;Secteur 02 (Page);"**IAGE vous accompagne avec des solutions d'analyse en milieu hospitalier, garantissant la sécurité des patients et du personnel :**
-   - contrôle de la désinfection, la validation de protocoles et la surveillance environnementale
-   - détection globale de résistances antibactériennes";"**IAGE supports you with hospital testing solutions that ensure patient and staff safety:**
-   - disinfection control, protocol validation, and environmental monitoring
-   - comprehensive detection of antibacterial resistance"
-sectors.page.02.services.title;Secteur 02 (Page);Nos solutions adaptées à l'hygiène hospitalière :;Our solutions adapted to hospital hygiene:
-sectors.page.03.catalog.description;Secteur 03 (Page);Explorez nos analyses pour la qualité de l'air intérieur (QAI), l'identification d'allergènes ou la détection spécifique de nuisibles. Des combinaisons peuvent être étudiées pour des diagnostics complets.;Explore our testing for indoor air quality (IAQ), allergen identification, or specific pest detection. Combinations can be considered for comprehensive diagnostics.
-sectors.page.03.catalog.title;Secteur 03 (Page);Analyses Catalogue et Combinaisons Spécifiques;Catalog Analyses and Specific Combinations
-sectors.page.03.catchphrase;Secteur 03 (Page);Vous gérez la qualité de l'air intérieur, l'entretien de locaux ou vous luttez contre les nuisibles (PCO) :;You manage indoor air quality, premises maintenance or you fight against pests (PCO):
-sectors.page.03.cta.diagbox;Secteur 03 (Page);Découvrir DIAGBOX® Intérieur;Discover DIAGBOX® Indoor
-sectors.page.03.development.description;Secteur 03 (Page);Besoin d'une méthode spécifique pour un nouveau type de contaminant intérieur ou un nuisible particulier ? Nous développons des solutions d'analyse sur mesure en partenariat avec les professionnels de l'hygiène.;Need a specific method for a new type of indoor contaminant or a particular pest? We develop customized analysis solutions in partnership with hygiene professionals.
-sectors.page.03.development.title;Secteur 03 (Page);Développement de Nouvelles Méthodes;Development of New Methods
-sectors.page.03.diagbox.description;Secteur 03 (Page);Nos kits clé-en-main permettent une détection rapide (48h) et autonome de moisissures dans l'air ou de traces ADN de nuisibles (punaises de lit, rongeurs). Idéal pour un diagnostic rapide et ciblé.;Our turnkey kits allow for rapid (48 hours) and autonomies detection of mold in the air or traces of pest DNA (bedbugs, rodents). Ideal for rapid and targeted diagnosis.
-sectors.page.03.diagbox.title;Secteur 03 (Page);DIAGBOX® Qualité Intérieure & Nuisibles;DIAGBOX® Indoor Quality & Pests
-sectors.page.03.intro;Secteur 03 (Page);"**IAGE offre des outils d'analyse pour détecter les dangers et valider l'efficacité des produits d'entretien : **
-   - évaluer la qualité de l'air (moisissures)
-   - détecter la présence de nuisibles (punaises de lit, rongeurs, mérules...) ";"**IAGE offers analysis tools to assess air quality and validate the effectiveness of cleaning products :**
-   - detection of mold
-   - detection of presence of pests (bedbugs, rodents, dry rot, etc.)"
-sectors.page.03.services.title;Secteur 03 (Page);Nos solutions pour l'hygiène intérieure et publique :;Our solutions for indoor and public hygiene:
+;;;
 sectors.page.04.catalog.description;Secteur 04 (Page);Consultez notre catalogue d'analyses pour les principaux pathogènes du gazon. Nous pouvons combiner des analyses pour un profil complet ou rechercher des pathogènes spécifiques sur demande.;Check out our catalog of tests for major turf pathogens. We can combine tests for a complete profile or search for specific pathogens upon request.
 sectors.page.04.catalog.title;Secteur 04 (Page);Analyses Catalogue et Combinaisons Spécifiques;Catalog Analyses and Specific Combinations
 sectors.page.04.catchphrase;Secteur 04 (Page);"En charge de l'entretien de gazons sportifs (clubs, collectivités, distributeurs), vous faites face à à la diffusion de la Pyriculariose qui menace vos pelouses, tandis que la loi Labbé supprime l'usage des produits phytosanitaires de synthèse.
@@ -590,18 +517,6 @@ diagbox.gazon.qna_reco.qna-group-q1_sub1.conclusion_text_prefix;Diagbox Gazon QN
 
 **4. Monitor the effectiveness of your treatments**: you implement the treatments **as soon as the measurement is positive**, on the identified area, generally in several stages. You check the effect of each treatment with the Diagbox PF000016 which allows the pathogen pressure and its decrease to be quantified as the treatments take effect."
 diagbox.gazon.qna_reco.qna-group-q1_sub1.conclusion_text_suffix;Diagbox Gazon QNA Reco;Spécifications techniques et prix des Diagbox recommandées;Technical specifications and prices of recommended Diagboxes
-diagbox.gazon.qna_reco.qna-group-q1_sub2.recommendation_text;Diagbox Gazon QNA Reco;;
-diagbox.gazon.qna_reco.qna-group-q1_sub2.conclusion_text_prefix;Diagbox Gazon QNA Reco;;
-diagbox.gazon.qna_reco.qna-group-q1_sub2.conclusion_text_suffix;Diagbox Gazon QNA Reco;;
-diagbox.gazon.qna_reco.qna-group-q1_sub3.recommendation_text;Diagbox Gazon QNA Reco;;
-diagbox.gazon.qna_reco.qna-group-q1_sub3.conclusion_text_prefix;Diagbox Gazon QNA Reco;;
-diagbox.gazon.qna_reco.qna-group-q1_sub3.conclusion_text_suffix;Diagbox Gazon QNA Reco;;
-diagbox.gazon.qna_reco.qna-group-q1_sub4.recommendation_text;Diagbox Gazon QNA Reco;;
-diagbox.gazon.qna_reco.qna-group-q1_sub4.conclusion_text_prefix;Diagbox Gazon QNA Reco;;
-diagbox.gazon.qna_reco.qna-group-q1_sub4.conclusion_text_suffix;Diagbox Gazon QNA Reco;;
-diagbox.gazon.qna_reco.qna-group-q1_sub5.recommendation_text;Diagbox Gazon QNA Reco;;
-diagbox.gazon.qna_reco.qna-group-q1_sub5.conclusion_text_prefix;Diagbox Gazon QNA Reco;;
-diagbox.gazon.qna_reco.qna-group-q1_sub5.conclusion_text_suffix;Diagbox Gazon QNA Reco;;
 diagbox.gazon.qna_reco.qna-group-q2_sub1.recommendation_text;Diagbox Gazon QNA Reco;Nos recommandations :;Our recommendations:
 diagbox.gazon.qna_reco.qna-group-q2_sub1.conclusion_text_prefix;Diagbox Gazon QNA Reco;"**1. Connaissez l'état réel de votre gazon** : faites un **diagnostic complet (feuilles et les racines)** de votre pelouse (DIAGBOX® PF000049) pour identifier vos risques à court et moyen terme.
 
@@ -671,10 +586,10 @@ diagbox.gazon.qna_intro.reco_PF000047;DiagBox Gazon QNA Intros;Pour contrôler l
 diagbox.gazon.qna_intro.reco_PF000048;DiagBox Gazon QNA Intros;Pour contrôler l'état des racines;To check the condition of the roots
 diagbox.gazon.qna_intro.reco_PF000049;DiagBox Gazon QNA Intros;Pour un suivi conjoint racines et partie aérienne;For joint monitoring of roots and aerial part
 diagbox.gazon.qna_intro.reco_PF000050;DiagBox Gazon QNA Intros;Pour un état de santé des trois compartiments (sol + racines + gazon) ou sécuriser un nouveau plaquage;For a health condition of the three compartments (soil + roots + grass) or to secure a new plating
-home.sectors.mobile_nav_domaine1;Home (Secteurs);Santé;Health
-home.sectors.mobile_nav_domaine2;Home (Secteurs);Agriculture;Agriculture
-home.sectors.mobile_nav_domaine3;Home (Secteurs);Industrie;Industry
-home.sectors.mobile_nav_domaine4;Home (Secteurs);Gazons;Lawns
+;;;
+;;;
+;;;
+;;;
 diagbox_poultry.page.cta_button;Diagbox Poultry (Page);Protéger mon élevage avec DIAGBOX®;Protect my stock with DIAGBOX®
 diagbox.mainpage.title;Diagbox Main Page;Les DIAGBOX® IAGE;IAGE's DIAGBOX®
 diagbox.process.step1.text;Diagbox Process;1. Ouvrez votre kit DIAGBOX® et trouvez la notice;1. Open your DIAGBOX® and find the notice instructions
@@ -792,10 +707,10 @@ documents.title;Documents;Documents;Documents
 documents.intro;Documents;Retrouvez ici tous nos documents et ressources.;Find here all our documents and resources.
 documents.no_documents;Documents;Les documents seront bientôt disponibles.;Documents will be available soon.
 documents.download;Documents;Télécharger;Download
-documents.folder.agriculture_elevage;Documents;Agriculture et élevage;Agriculture and livestock
-documents.folder.gazons;Documents;Gazons;Turf
-documents.folder.sante_publique_et_hygiene;Documents;Santé publique et hygiène;Public health and hygiene
-documents.folder.traitements_industriels;Documents;Traitements industriels;Industrial treatments
+;;;
+;;;
+;;;
+;;;
 footer.documents;Footer;Documents;Documents
 diagbox.coming_soon;DiagBox;Les kits DIAGBOX® pour ce secteur seront bientôt disponibles. Contactez-nous pour en savoir plus.;DIAGBOX® kits for this sector will be available soon. Contact us to learn more.
 ;;;
@@ -900,3 +815,144 @@ diagbox.gazon.kits.PF000039.name;Secteur 09 (Page);Dollar Spot;Dollar Spot
 diagbox.gazon.kits.PF000039.targets;Secteur 09 (Page);Clarireedia jacksonii, C.homoeocarpa;Clarireedia jacksonii, C.homoeocarpa
 diagbox.gazon.kits.PF000039.type;Secteur 09 (Page);Déchets de tonte;Mowing waste
 diagbox.gazon.prices.PF000039;Secteur 09 (Page);185,00€;185,00 €
+;;;
+home.sectors.subdomain_epidemiology;Home (Secteurs);Santé publique : Epidémio-surveillance via les eaux usées (WBE);Public health (epidemic surveillance) through wastewater
+home.sectors.01.name;Home (Secteurs);Epidémiosurveillance via les eaux usées (WBE);Wastewater Based Epidemiology
+sectors.page.01.intro;Secteur 01 (Page);"**IAGE vous accompagne** avec des solutions d'analyse génomique précises et rapides pour **l'épidémiosurveillance par les eaux usées** (Wastewater Based Epidemiology – WBE)
+
+- Vous **visualisez l'état de santé global** de la population desservie par un réseau ou une STEP, **à l'échelle que vous définissez**: l'agglomération, un quartier, un bâtiment (école, hôpital,...)
+
+- **Vous êtes alerté** en cas de démarrage épidémique ou de niveau important d'une maladie que vous avez décidé de suivre";"**IAGE supports you** with accurate and rapid genomic analysis solutions for **epidemic surveillance through wastewater** (Wastewater-Based Epidemiology – WBE). 
+
+- You can **visualise the overall health status** of the population served by a network or WWTP, **at the scale you define**: a city, a neighbourhood, a building (school, hospital, etc.) 
+
+- **You are alerted** in the event of an outbreak or a significant level of a disease that you have decided to monitor."
+sectors.page.01.services.title;Secteur 01 (Page);Nos solutions adaptées à l'épidémiosurveillance :;Our solutions adapted to epidemiological surveillance:
+sectors.page.01.diagbox.title;Secteur 01 (Page);DIAGBOX® WBE;DIAGBOX® WBE
+sectors.page.01.diagbox.description;Secteur 01 (Page);Le kit clé-en-main pour une détection et quantification rapide (48h) et autonome des pathogènes (virus, bactéries) dans vos échantillons d'eau. Simple, efficace, et stockable sans contrainte.;The turnkey kit for rapid (48h) and autonomous detection and quantification of pathogens (viruses, bacteria) in your water samples. Simple, effective, and easily stored.
+sectors.page.01.catalog.title;Secteur 01 (Page);Analyses Catalogue et Combinaisons Spécifiques;Catalog Analysis and Specific Combinations
+sectors.page.01.catalog.description;Secteur 01 (Page);Choisissez parmi nos analyses standardisées (ex: SARS-CoV-2 dans les eaux usées) ou combinez plusieurs méthodes pour un suivi sur mesure de pathogènes spécifiques à vos problématiques.;Choose from our standardized analyses (e.g., SARS-CoV-2 in wastewater) or combine several methods for customized monitoring of pathogens specific to your issues.
+sectors.page.01.development.title;Secteur 01 (Page);Développement de Nouvelles Méthodes;Development of New Methods
+sectors.page.01.development.description;Secteur 01 (Page);Nous innovons avec vous pour développer et valider des méthodes d'analyse pour de nouvelles cibles virales ou bactériennes, répondant aux enjeux émergents de santé publique.;We innovate with you to develop and validate analysis methods for new viral or bacterial targets, responding to emerging public health issues.
+sectors.page.01.sampling.title;Secteur 01 (Page);Prélèvement en continu dans les réseaux;Continuous sampling in sewage networks
+sectors.page.01.sampling.description;Secteur 01 (Page);Pour installer une surveillance dans les réseaux d'assainissement pour suivre un quartier, ou en sortie de bâtiment, nous proposons en vente ou en location des préleveurs en continu autonomes, créés et produits par IAGE, pouvant être installés dans les regards d'égouts sous circulation, ou dans les locaux techniques de bâtiments.;To install monitoring in sewerage networks to monitor a neighbourhood or at the outlet of a building, we offer for sale or hire autonomous continuous samplers, designed and manufactured by IAGE, which can be installed in sewer manholes under traffic or in the technical rooms of buildings.
+;;;
+home.sectors.subdomain_hospital_hygiene;Home (Secteurs);Hygiène des salles d'hôpital, d'EHPAD;Hygiene of hospital and nursing home wards
+home.sectors.02.name;Home (Secteurs);Hygiène hospitalière;Hospital hygiene
+sectors.page.02.intro;Secteur 02 (Page);**IAGE vous accompagne avec des solutions d'analyse en milieu hospitalier pour renforcer la sécurité des patients et du personnel**, grâce à des solutions de **validation** de protocoles de désinfection et de **contrôle** de l'état bactériologique des salles;**IAGE supports you with analysis solutions for hospitals, to enhance patient and staff safety**, thanks to solutions for **validating** disinfection protocols and **monitoring** the bacteriological status of rooms.
+sectors.page.02.services.title;Secteur 02 (Page);Nos solutions adaptées à l'hygiène hospitalière :;Our solutions adapted to hospital hygiene:
+sectors.page.02.diagbox.title;Secteur 02 (Page);DIAGBOX® Hygiène Hospitalière;DIAGBOX® Hospital Hygiene
+sectors.page.02.diagbox.description;Secteur 02 (Page);Le kit clé-en-main pour une détection et quantification rapide (48h) de marqueurs microbiens (bactéries, moisissures) sur surfaces ou dans l'air après désinfection. Simple, efficace, et idéal pour vos contrôles qualité réguliers.;The turnkey kit for rapid (48h) detection and quantification of microbial markers (bacteria, mold) on surfaces or in the air after disinfection. Simple, effective, and ideal for your regular quality controls.
+sectors.page.02.catalog.title;Secteur 02 (Page);Analyses Catalogue et Combinaisons Spécifiques;Catalog Analyses and Specific Combinations
+sectors.page.02.catalog.description;Secteur 02 (Page);Choisissez parmi nos analyses standardisées (ex: recherche de légionelles, staphylocoques dorés) ou combinez plusieurs méthodes pour un suivi sur mesure des points critiques de votre établissement.;Choose from our standardized analyses (e.g., legionella and staphylococcus aureus testing) or combine several methods for customized monitoring of your facility's critical areas.
+sectors.page.02.development.title;Secteur 02 (Page);Développement de Nouvelles Méthodes;Development of New Methods
+sectors.page.02.development.description;Secteur 02 (Page);Nous innovons avec vous pour développer et valider des méthodes d'analyse pour de nouvelles cibles pertinentes en milieu hospitalier (pathogènes émergents, biofilms) ou pour évaluer l'efficacité de nouveaux protocoles/produits de désinfection.;We innovate with you to develop and validate analysis methods for new relevant targets in hospital settings (emerging pathogens, biofilms) or to evaluate the effectiveness of new disinfection protocols/products.
+;;;
+home.sectors.subdomain_indoor_hygiene;Home (Secteurs);Hygiène intérieure: contrôle de la qualité de l'air ;Indoor hygiene : air quality control
+home.sectors.03.name;Home (Secteurs);Contrôle de la qualité de l'air – lutte contre les moisissures;air quality control – mould prevention
+sectors.page.03.intro;Secteur 03 (Page);"**IAGE propose des outils d'analyse pour détecter de manière précise et quantifier la présence de moisissures qui affectent la qualité de l'air, pour :
+
+- alerter sur les dangers éventuels
+
+- valider l'efficacité des traitements et des produits d'entretien";"**IAGE offers analysis tools to accurately detect and quantify the presence of mould that affects air quality, in order to:
+
+- alert users to potential hazards
+
+- validate the effectiveness of treatments and cleaning products"
+sectors.page.03.services.title;Secteur 03 (Page);Nos solutions pour l'analyse de l'air intérieur :;Our solutions for indoor air control
+sectors.page.03.diagbox.title;Secteur 03 (Page);DIAGBOX® Moisissures;DIAGBOX® Mould
+sectors.page.03.diagbox.description;Secteur 03 (Page);Nos kits clé-en-main permettent une détection rapide (48h) des moisissures présentes dans les systèmes d'aération. Idéal pour un diagnostic rapide et ciblé.;Our turnkey kits enable rapid (48 hours) detection of mould in ventilation systems. Ideal for quick and targeted diagnosis.
+sectors.page.03.catalog.title;Secteur 03 (Page);Analyses Catalogue et Combinaisons Spécifiques;Catalog Analyses and Specific Combinations
+sectors.page.03.catalog.description;Secteur 03 (Page);Explorez nos analyses pour la détection de moisissures. Des combinaisons peuvent être étudiées pour des diagnostics complets.;Explore our testing for mould detection. Combinations can be considered for comprehensive diagnostics.
+sectors.page.03.development.title;Secteur 03 (Page);Développement de Nouvelles Méthodes;Development of New Methods
+sectors.page.03.development.description;Secteur 03 (Page);Besoin d'une méthode spécifique pour une moisissure particulière ? Nous développons des solutions d'analyse sur mesure en partenariat avec les professionnels de l'hygiène.;Need a specific method for a particular mould ? We develop customized analysis solutions in partnership with hygiene professionals.
+;;;
+home.sectors.subdomain_11;Home (Secteurs);Hygiène publique : lutte contre les nuisibles;Public hygiene: pest control
+home.sectors.11.name;Home (Secteurs);lutte contre les nuisibles : outils de détection ;Pest control – tools for detection
+sectors.page.11.intro;Secteur 11 (Page);"**IAGE propose des outils d'analyse pour détecter et qualifier de manière précise la présence de nuisibles dans les bâtiments** pour réagir plus vite ou valider les résultat des traitements réalisés :
+
+- détection précoce des punaises de lit
+
+-détection des rongeur et identification de la race pour adapter les traitements
+
+- détection et identification des moustiques";"**IAGE offers analytical tools to accurately detect and identify pests in buildings** so you can respond more quickly or validate the results of treatments carried out:
+
+- early detection of bed bugs
+
+- detection of rodents and identification of the species to tailor treatments
+
+- detection and identification of mosquitoes"
+sectors.page.11.services.title;Secteur 11 (Page);Nos solutions pour la détection des nuisibles:;Our solutions for pest control
+sectors.page.11.diagbox.title;Secteur 11 (Page);DIAGBOX® nuisibles;DIAGBOX® Pest
+sectors.page.11.diagbox.description;Secteur 11 (Page);Nos kits clé-en-main permettent une détection rapide (48h) et précoces des nuisibles éventuellement présents, ou pour valider le résultat d'un traitement. Idéal pour un diagnostic rapide et ciblé.;Our turnkey kits enable rapid (48 hours) detection of different species of pests. Ideal for quick and targeted diagnosis.
+sectors.page.11.catalog.title;Secteur 11 (Page);Analyses Catalogue et Combinaisons Spécifiques;Catalog Analyses and Specific Combinations
+sectors.page.11.catalog.description;Secteur 11 (Page);Explorez nos analyses pour la détection des nuisibles. Des combinaisons peuvent être étudiées pour des diagnostics complets.;Explore our testing for pest detection. Combinations can be considered for comprehensive diagnostics.
+sectors.page.11.development.title;Secteur 11 (Page);Développement de Nouvelles Méthodes;Development of New Methods
+sectors.page.11.development.description;Secteur 11 (Page);Besoin d'une méthode spécifique pour un nuisible particulier ? Nous développons des solutions d'analyse sur mesure en partenariat avec les professionnels de l'hygiène.;Need a specific method for a particular pest ? We develop customized analysis solutions in partnership with hygiene professionals.
+;;;
+home.sectors.subdomain_12;Home (Secteurs);Champignons lignivores;Wood-decaying fungi
+home.sectors.12.name;Home (Secteurs);Détection des champignons lignivores;Detection of wood-decaying fungi
+sectors.page.12.intro;Secteur 12 (Page);"**IAGE propose des outils d'analyse pour détecter et qualifier de manière précise la présence de champignons lignivore dans les bâtiments** pour **rassurer** en cas d'absence, **réagir plus vite** ou **valider les résultat des traitements** réalisés en cas de présence détectée :
+
+- détection précoce des **mérules**";"**IAGE offers analytical tools to accurately detect and classify the presence of wood-destroying fungi in buildings** to **reassure** in the absence of fungi, **react more quickly** or **validate the results of treatments** carried out in the event of detection:
+
+- early detection of **dry rot**"
+sectors.page.12.services.title;Secteur 12 (Page);Nos solutions pour la détection des champignons lignivores:;Our solutions to detect wood-decaying fungi
+sectors.page.12.diagbox.title;Secteur 12 (Page);DIAGBOX® champignons;DIAGBOX® Fingi
+sectors.page.12.diagbox.description;Secteur 12 (Page);Nos kits clé-en-main permettent une détection rapide (48h) et précoces des champignons lignivores éventuellement présents, ou pour valider le résultat d'un traitement. Idéal pour un diagnostic rapide et ciblé.;Our turnkey kits enable rapid (48 hours) and early detection of any wood-decaying fungi that may be present, or to validate the results of treatment. Ideal for rapid and targeted diagnosis.
+sectors.page.12.catalog.title;Secteur 12 (Page);Analyses Catalogue et Combinaisons Spécifiques;Catalog Analyses and Specific Combinations
+sectors.page.12.catalog.description;Secteur 12 (Page);Explorez nos analyses pour la détection des champignons lignivores. Des combinaisons peuvent être étudiées pour des diagnostics complets.;Explore our testing wood-decaying fungi. Combinations can be considered for comprehensive diagnostics.
+sectors.page.12.development.title;Secteur 12 (Page);Développement de Nouvelles Méthodes;Development of New Methods
+sectors.page.12.development.description;Secteur 12 (Page);Besoin d'une méthode spécifique pour un champignon lignivore particulier ? Nous développons des solutions d'analyse sur mesure en partenariat avec les professionnels du bâtiment.;Need a specific method for a particular fungi ? We develop customized analysis solutions in partnership with hygiene professionals.
+;;;
+home.sectors.subdomain_13;Home (Secteurs);Surveillance des arboviroses émergentes;Monitoring emerging arboviral diseases
+home.sectors.13.name;Home (Secteurs);Détection dans différentes matrices des arboviroses;Detection of arboviruses in different matrices
+sectors.page.13.intro;Secteur 13 (Page);"**IAGE propose des outils d'analyse pour détecter et quantifier les arboviroses émergentes : **
+
+- Dengue
+
+- Chikungunya
+
+**À différents stades** : 
+
+- détecter la **circulation par les moustiques** par des mesures dans des compartiments environnementaux : plan d'eau, supports végétaux, captures d'insectes
+
+- détecter la** présence des maladies au sein de la population**, par des mesures dans les eaux usées";"**IAGE offers analytical tools to detect and quantify emerging arboviruses: **
+
+- Dengue
+
+- Chikungunya
+
+**At different stages**: 
+
+- detect **mosquito circulation** through measures in environmental compartments: water bodies, plant supports, insect captures
+
+- detect the **presence of diseases within the population** through measures in wastewater"
+sectors.page.13.services.title;Secteur 13 (Page);Nos solutions pour la détection des arboviroses:;Our solutions to detect arboviral diseases
+sectors.page.13.diagbox.title;Secteur 13 (Page);DIAGBOX® Arboviroses;DIAGBOX® Arboviruses
+sectors.page.13.diagbox.description;Secteur 13 (Page);Nos kits clé-en-main permettent une détection rapide (48h) et précoces d'arboviroses dans l'environnement ou au sein d'une population via les eaux usées. Ideal pour un suivi rapide et ciblé;Our turnkey kits enable rapid (48-hour) and early detection of arboviral diseases in the environment or within a population via wastewater. Ideal for rapid and targeted monitoring.
+sectors.page.13.catalog.title;Secteur 13 (Page);Analyses Catalogue et Combinaisons Spécifiques;Catalog Analyses and Specific Combinations
+sectors.page.13.catalog.description;Secteur 13 (Page);Explorez nos analyses pour la détection des arboviroses. Des combinaisons peuvent être étudiées pour des diagnostics complets.;Explore our analyses for arbovirus detection. Combinations can be studied for comprehensive diagnostics.
+sectors.page.13.development.title;Secteur 13 (Page);Développement de Nouvelles Méthodes;Development of New Methods
+sectors.page.13.development.description;Secteur 13 (Page);Besoin d'une méthode spécifique pour une arboviroses émergente particulière ? Nous développons des solutions d'analyse sur mesure en partenariat avec les professionnels de la santé.;Need a specific method for a particular emerging arbovirus  ? We develop customized analysis solutions in partnership with healthcare professionals.
+;;;
+home.sectors.mobile_nav_domaine1;Home (Secteurs);Santé;Health
+home.sectors.mobile_nav_domaine5;Home (Secteurs);Hygiène;Hygiene
+home.sectors.mobile_nav_domaine6;Home (Secteurs);Bâtiments;Buildings
+home.sectors.mobile_nav_domaine2;Home (Secteurs);Agriculture;Agriculture
+home.sectors.mobile_nav_domaine3;Home (Secteurs);Industrie;Industry
+home.sectors.mobile_nav_domaine4;Home (Secteurs);Gazons;Lawns
+;;;
+home.sectors.category_health_hygiene_title;Home (Secteurs);Santé publique ;Public Health
+home.sectors.category_hygiene_title;Home (Secteurs);Hygiène intérieure;Indoor hygiene
+home.sectors.category_buildings_title;Home (Secteurs);Pathologies des bâtiments;Building pathologies
+home.sectors.category_agriculture_livestock_title;Home (Secteurs);Agriculture et élevage;Agriculture and livestock
+home.sectors.category_industrial_fermentation_title;Home (Secteurs);Procédés de traitement industriels;Industrial treatment processes
+home.sectors.category_turf_parks_title;Home (Secteurs);Gazons naturels sportifs et d'agrément;Natural sport turfs and lawns
+;;;
+documents.folder.sante_publique_et_hygiene;Documents;Santé publique ;Public Health
+documents.folder.hygiene;Documents;Hygiène intérieure;Indoor hygiene
+documents.folder.batiments;Documents;Pathologies des bâtiments;Building pathologies
+documents.folder.agriculture_elevage;Documents;Agriculture et élevage;Agriculture and livestock
+documents.folder.traitements_industriels;Documents;Procédés de traitement industriels;Industrial treatment processes
+documents.folder.gazons;Documents;Gazons naturels sportifs et d'agrément;Natural sport turfs and lawns

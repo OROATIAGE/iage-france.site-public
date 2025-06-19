@@ -1,7 +1,31 @@
 // Ce fichier est généré automatiquement. Ne pas modifier directement.
-// Dernière génération : 2025-06-13T14:59:18.093Z
+// Dernière génération : 2025-06-19T13:52:28.669Z
 
 export const documents = [
+  {
+    "path": "/documents/Batiments/Fiche produit Moisissure habitation PF000051 v2.pdf",
+    "filename": "Fiche produit Moisissure habitation PF000051 v2.pdf",
+    "domain": "Batiments",
+    "title": "Fiche produit  Moisissure habitation  P F000051 v2",
+    "size": 566381,
+    "lastModified": "2025-05-23T18:00:52.258Z"
+  },
+  {
+    "path": "/documents/Batiments/Fiche produit patho moisissure caractérisation PF000003 v2.pdf",
+    "filename": "Fiche produit patho moisissure caractérisation PF000003 v2.pdf",
+    "domain": "Batiments",
+    "title": "Fiche produit patho moisissure caractérisation  P F000003 v2",
+    "size": 2193460,
+    "lastModified": "2025-05-23T18:00:52.017Z"
+  },
+  {
+    "path": "/documents/Batiments/Fiche produit patho moisissure détection PF000042 v2.pdf",
+    "filename": "Fiche produit patho moisissure détection PF000042 v2.pdf",
+    "domain": "Batiments",
+    "title": "Fiche produit patho moisissure détection  P F000042 v2",
+    "size": 560322,
+    "lastModified": "2025-05-23T18:00:52.022Z"
+  },
   {
     "path": "/documents/Gazons/Offre_Gazon_Diagbox_V5.pdf",
     "filename": "Offre_Gazon_Diagbox_V5.pdf",
@@ -27,57 +51,41 @@ export const documents = [
     "lastModified": "2025-05-23T18:00:51.995Z"
   },
   {
-    "path": "/documents/Santé_publique_et_hygiene/Fiche produit Maladies nosocomiales PF000043 vf.pdf",
+    "path": "/documents/Hygiene_intérieure/Fiche produit Maladies nosocomiales PF000043 vf.pdf",
     "filename": "Fiche produit Maladies nosocomiales PF000043 vf.pdf",
-    "domain": "Santé_publique_et_hygiene",
+    "domain": "Hygiene_intérieure",
     "title": "Fiche produit  Maladies nosocomiales  P F000043 vf",
     "size": 2005984,
     "lastModified": "2025-05-23T18:00:52.003Z"
   },
   {
-    "path": "/documents/Santé_publique_et_hygiene/Fiche produit Moisissure habitation PF000051 v2.pdf",
-    "filename": "Fiche produit Moisissure habitation PF000051 v2.pdf",
-    "domain": "Santé_publique_et_hygiene",
-    "title": "Fiche produit  Moisissure habitation  P F000051 v2",
-    "size": 566381,
-    "lastModified": "2025-05-23T18:00:52.258Z"
-  },
-  {
-    "path": "/documents/Santé_publique_et_hygiene/Fiche produit Punaise de lit PF00002 v4.pdf",
+    "path": "/documents/Hygiene_intérieure/Fiche produit Punaise de lit PF00002 v4.pdf",
     "filename": "Fiche produit Punaise de lit PF00002 v4.pdf",
-    "domain": "Santé_publique_et_hygiene",
+    "domain": "Hygiene_intérieure",
     "title": "Fiche produit  Punaise de lit  P F00002 v4",
     "size": 598587,
     "lastModified": "2025-05-23T18:00:52.008Z"
   },
   {
-    "path": "/documents/Santé_publique_et_hygiene/Fiche produit patho moisissure caractérisation PF000003 v2.pdf",
-    "filename": "Fiche produit patho moisissure caractérisation PF000003 v2.pdf",
-    "domain": "Santé_publique_et_hygiene",
-    "title": "Fiche produit patho moisissure caractérisation  P F000003 v2",
-    "size": 2193460,
-    "lastModified": "2025-05-23T18:00:52.017Z"
-  },
-  {
-    "path": "/documents/Santé_publique_et_hygiene/Fiche produit patho moisissure détection PF000042 v2.pdf",
-    "filename": "Fiche produit patho moisissure détection PF000042 v2.pdf",
-    "domain": "Santé_publique_et_hygiene",
-    "title": "Fiche produit patho moisissure détection  P F000042 v2",
-    "size": 560322,
-    "lastModified": "2025-05-23T18:00:52.022Z"
-  },
-  {
-    "path": "/documents/Santé_publique_et_hygiene/Fiche produit rongeur PF00031 v1.pdf",
+    "path": "/documents/Hygiene_intérieure/Fiche produit rongeur PF00031 v1.pdf",
     "filename": "Fiche produit rongeur PF00031 v1.pdf",
-    "domain": "Santé_publique_et_hygiene",
+    "domain": "Hygiene_intérieure",
     "title": "Fiche produit rongeur  P F00031 v1",
     "size": 578484,
     "lastModified": "2025-05-23T18:00:52.026Z"
   },
   {
-    "path": "/documents/Santé_publique_et_hygiene/Notice d'utilisation du preleveur eau.pdf",
+    "path": "/documents/Hygiene_intérieure/Notice d'utilisation du preleveur eau.pdf",
     "filename": "Notice d'utilisation du preleveur eau.pdf",
-    "domain": "Santé_publique_et_hygiene",
+    "domain": "Hygiene_intérieure",
+    "title": "Notice d'utilisation du preleveur eau",
+    "size": 250818,
+    "lastModified": "2025-05-23T17:58:44.386Z"
+  },
+  {
+    "path": "/documents/Santé_publique/Notice d'utilisation du preleveur eau.pdf",
+    "filename": "Notice d'utilisation du preleveur eau.pdf",
+    "domain": "Santé_publique",
     "title": "Notice d'utilisation du preleveur eau",
     "size": 250818,
     "lastModified": "2025-05-23T17:58:44.386Z"

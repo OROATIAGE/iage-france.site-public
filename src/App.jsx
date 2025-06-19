@@ -17,6 +17,8 @@ import LegalNotice from './pages/LegalNotice'
 import DiagboxPage from './pages/DiagboxPage'
 import Sector09Page from './pages/Sector09Page'
 import Sector10Page from './pages/Sector10Page'
+import Sector12Page from './pages/Sector12Page'
+import Sector13Page from './pages/Sector13Page'
 import PressPage from './pages/PressPage'
 import TestimonialsPage from './pages/TestimonialsPage'
 import EventsPage from './pages/EventsPage'
@@ -43,6 +45,8 @@ function App() {
                 <Route path="/:lang/sectors/:sectorId" element={<SectorPage />} />
                 <Route path="/:lang/sectors/09" element={<Sector09Page />} />
                 <Route path="/:lang/sectors/10" element={<Sector10Page />} />
+                <Route path="/:lang/sectors/12" element={<Sector12Page />} />
+                <Route path="/:lang/sectors/13" element={<Sector13Page />} />
                 <Route path="/:lang/contact" element={<Contact />} />
                 <Route path="/:lang/privacy-policy" element={<PrivacyPolicy />} />
                 <Route path="/:lang/legal-notice" element={<LegalNotice />} />
@@ -59,6 +63,8 @@ function App() {
                 <Route path="/sectors/:sectorId" element={<SectorPage />} />
                 <Route path="/sectors/09" element={<Sector09Page />} />
                 <Route path="/sectors/10" element={<Sector10Page />} />
+                <Route path="/sectors/12" element={<Sector12Page />} />
+                <Route path="/sectors/13" element={<Sector13Page />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/privacy-policy" element={<PrivacyPolicy />} />
                 <Route path="/legal-notice" element={<LegalNotice />} />

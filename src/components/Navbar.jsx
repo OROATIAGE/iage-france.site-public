@@ -54,6 +54,8 @@ function Navbar() {
   // Data for the Domaines dropdown
   const domainDropdownItems = [
     { nameKey: 'category_health_hygiene_title', hash: '#title-domaine1' },
+    { nameKey: 'category_hygiene_title', hash: '#title-domaine5' },
+    { nameKey: 'category_buildings_title', hash: '#title-domaine6' },
     { nameKey: 'category_agriculture_livestock_title', hash: '#title-domaine2' },
     { nameKey: 'category_industrial_fermentation_title', hash: '#title-domaine3' },
     { nameKey: 'category_turf_parks_title', hash: '#title-domaine4' },

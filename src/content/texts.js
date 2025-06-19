@@ -26,12 +26,7 @@ export const texts = {
         "title": "Prêt à commencer ?"
       },
       "hero": {
-        "card_title_agriculture": "Agriculture, élevage",
-        "card_title_health": "Santé publique, \nHygiène dans les bâtiments",
-        "card_title_industrial": "Fermentations agroalimentaire,\nTraitement des eaux – bio-énergie...",
-        "card_title_turf": "Gazons naturels professionnels, parcs, jardins",
         "cta": "Contactez-nous",
-        "professional_intro": "Nos services pour vos secteurs d'activité :",
         "subtitle": "Nous mettons notre expertise du vivant à votre service",
         "title": "Voir l'invisible pour agir à temps "
       },
@@ -40,48 +35,33 @@ export const texts = {
           "description": "Diagnostic et suivi des pathogènes des pelouses de cimetières",
           "name": "Pelouses de cimetières"
         },
-        "01": {
-          "description": "Mesures de pathogènes dans les eaux usées \nPossibilité de mesures accréditées COFRAC",
-          "name": "Epidémiosurveillance dans l'environnement"
+        "11": {
+          "name": "lutte contre les nuisibles : outils de détection "
         },
-        "02": {
-          "description": "Mesures de contrôle de désinfection",
-          "name": "Hygiène hospitalière"
+        "12": {
+          "name": "Détection des champignons lignivores"
         },
-        "03": {
-          "description": "Mesures de contrôle de la qualité de l'air, de présences de nuisibles",
-          "name": "Hygiène intérieure"
-        },
-        "04": {
-          "description": "Mesures de présence de pathogènes du gazon",
-          "name": "Gazons sportifs"
+        "13": {
+          "name": "Détection dans différentes matrices des arboviroses"
         },
         "05": {
-          "description": "Mesures de pathogènes ou de qualité du process",
           "name": "Viti – Vini"
         },
         "06": {
-          "description": "Mesure de pathogènes",
           "name": "Arboriculture (Pomme)"
         },
         "07": {
-          "description": "Mesure de contrôle contre la présence de pathogènes humains",
           "name": "Conchyliculture"
         },
         "08": {
-          "description": "Mesures de contrôle pathogènes aviaires",
           "name": "Aviculture"
         },
         "category_agriculture_livestock_title": "Agriculture et élevage",
-        "category_health_hygiene_title": "Santé publique et Hygiène intérieure",
         "category_industrial_fermentation_title": "Procédés de traitement industriels",
         "category_turf_parks_title": "Gazons naturels sportifs et d'agrément",
         "subdomain_arboriculture": "Arbres fruitiers",
         "subdomain_cemeteries": "Pelouse des cimetières",
-        "subdomain_epidemiology": "Santé publique par les eaux usées, les sites naturels",
         "subdomain_golf_courses": "Gazons des golfs",
-        "subdomain_hospital_hygiene": "Hygiène des salles d'hôpital, d'EHPAD",
-        "subdomain_indoor_hygiene": "Hygiène intérieure\n(rats, punaises, mérule, moisissures,...)",
         "subdomain_methanizers": "Méthaniseurs",
         "subdomain_poultry_farming": "Elevages aviaires (grippe aviaire)",
         "subdomain_purification_systems": "Réseaux et Stations d'épuration",
@@ -90,23 +70,34 @@ export const texts = {
         "subdomain_viticulture": "Vignes",
         "subdomain_winemaking": "Vinification",
         "title": "Vos enjeux, nos outils",
+        "subdomain_epidemiology": "Santé publique : Epidémio-surveillance via les eaux usées (WBE)",
+        "01": {
+          "name": "Epidémiosurveillance via les eaux usées (WBE)"
+        },
+        "subdomain_hospital_hygiene": "Hygiène des salles d'hôpital, d'EHPAD",
+        "02": {
+          "name": "Hygiène hospitalière"
+        },
+        "subdomain_indoor_hygiene": "Hygiène intérieure: contrôle de la qualité de l'air ",
+        "03": {
+          "name": "Contrôle de la qualité de l'air – lutte contre les moisissures"
+        },
+        "subdomain_11": "Hygiène publique : lutte contre les nuisibles",
+        "subdomain_12": "Champignons lignivores",
+        "subdomain_13": "Surveillance des arboviroses émergentes",
         "mobile_nav_domaine1": "Santé",
+        "mobile_nav_domaine5": "Hygiène",
+        "mobile_nav_domaine6": "Bâtiments",
         "mobile_nav_domaine2": "Agriculture",
         "mobile_nav_domaine3": "Industrie",
         "mobile_nav_domaine4": "Gazons",
-        "09": {
-          "description": "XXXXX Diagnostic des pathogènes des gazons de golf et suivi de la qualité des greens",
-          "name": "XXXXX Gazons de golf"
-        }
+        "category_health_hygiene_title": "Santé publique ",
+        "category_hygiene_title": "Hygiène intérieure",
+        "category_buildings_title": "Pathologies des bâtiments"
       },
       "services": {
         "0": {
-          "description": "Des analyses précises et fiables, sur catalogue ou à la demande, pour répondre à tous vos besoins",
           "title": "Analyses de précisions"
-        },
-        "1": {
-          "description": "Un accompagnement personnalisé pour accompagner vos prises de décisions",
-          "title": "DIAGBOX®, Conseils et Expertise"
         },
         "2": {
           "description": "Equiments spécialisés, laboratoires locaux, accompagnement technique, pour encore plus de réactivité",
@@ -203,74 +194,58 @@ export const texts = {
             "title": "Vous vous posez des questions sur l'entretien de vos pelouses de cimetières, voici nos solutions :"
           }
         },
-        "01": {
-          "catalog": {
-            "description": "Choisissez parmi nos analyses standardisées (ex: SARS-CoV-2 dans les eaux usées) ou combinez plusieurs méthodes pour un suivi sur mesure de pathogènes spécifiques à vos problématiques.",
-            "title": "Analyses Catalogue et Combinaisons Spécifiques"
-          },
-          "catchphrase": "Vous portez une responsabilité dans le suivi de la santé de la population locale, ou vous souhaitez contribuer à la prévention des épidémies :",
-          "cta": {
-            "diagbox": "Découvrir DIAGBOX® WES"
-          },
-          "development": {
-            "description": "Nous innovons avec vous pour développer et valider des méthodes d'analyse pour de nouvelles cibles virales ou bactériennes, répondant aux enjeux émergents de santé publique.",
-            "title": "Développement de Nouvelles Méthodes"
+        "11": {
+          "intro": "**IAGE propose des outils d'analyse pour détecter et qualifier de manière précise la présence de nuisibles dans les bâtiments** pour réagir plus vite ou valider les résultat des traitements réalisés :\n\n- détection précoce des punaises de lit\n\n-détection des rongeur et identification de la race pour adapter les traitements\n\n- détection et identification des moustiques",
+          "services": {
+            "title": "Nos solutions pour la détection des nuisibles:"
           },
           "diagbox": {
-            "description": "Le kit clé-en-main pour une détection et quantification rapide (48h) et autonome des pathogènes (virus, bactéries) dans vos échantillons d'eau. Simple, efficace, et stockable sans contrainte.",
-            "title": "DIAGBOX® WES"
+            "title": "DIAGBOX® nuisibles",
+            "description": "Nos kits clé-en-main permettent une détection rapide (48h) et précoces des nuisibles éventuellement présents, ou pour valider le résultat d'un traitement. Idéal pour un diagnostic rapide et ciblé."
           },
-          "intro": "**IAGE vous accompagne avec des solutions d'analyse génomique précises et rapides pour l'épidémiosurveillance environnementale :**\n  - via l'analyse des **eaux usées** (Wastewater Based Epidemiology – WBE).\n  - via l'analyse **d'autre supports environnementaux** : par exemple mares, plan d'eau pour la détection de maladies véhiculées par les moustiques",
-          "sampling": {
-            "description": "Nous proposons également des solutions pour le prélèvement en continu, particulièrement adaptées au suivi dynamique des matrices aqueuses.",
-            "title": "Prélèvement en continu"
+          "catalog": {
+            "title": "Analyses Catalogue et Combinaisons Spécifiques",
+            "description": "Explorez nos analyses pour la détection des nuisibles. Des combinaisons peuvent être étudiées pour des diagnostics complets."
           },
-          "services": {
-            "title": "Nos solutions adaptées à l'épidémiosurveillance :"
+          "development": {
+            "title": "Développement de Nouvelles Méthodes",
+            "description": "Besoin d'une méthode spécifique pour un nuisible particulier ? Nous développons des solutions d'analyse sur mesure en partenariat avec les professionnels de l'hygiène."
           }
         },
-        "02": {
-          "catalog": {
-            "description": "Choisissez parmi nos analyses standardisées (ex: recherche de légionelles, staphylocoques dorés) ou combinez plusieurs méthodes pour un suivi sur mesure des points critiques de votre établissement.",
-            "title": "Analyses Catalogue et Combinaisons Spécifiques"
-          },
-          "catchphrase": "Vous êtes responsable de l'hygiène dans un établissement de santé ou une société de nettoyage spécialisée :",
-          "cta": {
-            "diagbox": "Découvrir DIAGBOX® Hygiène"
-          },
-          "development": {
-            "description": "Nous innovons avec vous pour développer et valider des méthodes d'analyse pour de nouvelles cibles pertinentes en milieu hospitalier (pathogènes émergents, biofilms) ou pour évaluer l'efficacité de nouveaux protocoles/produits de désinfection.",
-            "title": "Développement de Nouvelles Méthodes"
+        "12": {
+          "intro": "**IAGE propose des outils d'analyse pour détecter et qualifier de manière précise la présence de champignons lignivore dans les bâtiments** pour **rassurer** en cas d'absence, **réagir plus vite** ou **valider les résultat des traitements** réalisés en cas de présence détectée :\n\n- détection précoce des **mérules**",
+          "services": {
+            "title": "Nos solutions pour la détection des champignons lignivores:"
           },
           "diagbox": {
-            "description": "Le kit clé-en-main pour une détection et quantification rapide (48h) et autonome de marqueurs microbiens (bactéries, moisissures) sur surfaces ou dans l'air après désinfection. Simple, efficace, et idéal pour vos contrôles qualité réguliers.",
-            "title": "DIAGBOX® Hygiène Hospitalière"
+            "title": "DIAGBOX® champignons",
+            "description": "Nos kits clé-en-main permettent une détection rapide (48h) et précoces des champignons lignivores éventuellement présents, ou pour valider le résultat d'un traitement. Idéal pour un diagnostic rapide et ciblé."
           },
-          "intro": "**IAGE vous accompagne avec des solutions d'analyse en milieu hospitalier, garantissant la sécurité des patients et du personnel :**\n   - contrôle de la désinfection, la validation de protocoles et la surveillance environnementale\n   - détection globale de résistances antibactériennes",
-          "services": {
-            "title": "Nos solutions adaptées à l'hygiène hospitalière :"
+          "catalog": {
+            "title": "Analyses Catalogue et Combinaisons Spécifiques",
+            "description": "Explorez nos analyses pour la détection des champignons lignivores. Des combinaisons peuvent être étudiées pour des diagnostics complets."
+          },
+          "development": {
+            "title": "Développement de Nouvelles Méthodes",
+            "description": "Besoin d'une méthode spécifique pour un champignon lignivore particulier ? Nous développons des solutions d'analyse sur mesure en partenariat avec les professionnels du bâtiment."
           }
         },
-        "03": {
-          "catalog": {
-            "description": "Explorez nos analyses pour la qualité de l'air intérieur (QAI), l'identification d'allergènes ou la détection spécifique de nuisibles. Des combinaisons peuvent être étudiées pour des diagnostics complets.",
-            "title": "Analyses Catalogue et Combinaisons Spécifiques"
-          },
-          "catchphrase": "Vous gérez la qualité de l'air intérieur, l'entretien de locaux ou vous luttez contre les nuisibles (PCO) :",
-          "cta": {
-            "diagbox": "Découvrir DIAGBOX® Intérieur"
-          },
-          "development": {
-            "description": "Besoin d'une méthode spécifique pour un nouveau type de contaminant intérieur ou un nuisible particulier ? Nous développons des solutions d'analyse sur mesure en partenariat avec les professionnels de l'hygiène.",
-            "title": "Développement de Nouvelles Méthodes"
+        "13": {
+          "intro": "**IAGE propose des outils d'analyse pour détecter et quantifier les arboviroses émergentes : **\n\n- Dengue\n\n- Chikungunya\n\n**À différents stades** : \n\n- détecter la **circulation par les moustiques** par des mesures dans des compartiments environnementaux : plan d'eau, supports végétaux, captures d'insectes\n\n- détecter la** présence des maladies au sein de la population**, par des mesures dans les eaux usées",
+          "services": {
+            "title": "Nos solutions pour la détection des arboviroses:"
           },
           "diagbox": {
-            "description": "Nos kits clé-en-main permettent une détection rapide (48h) et autonome de moisissures dans l'air ou de traces ADN de nuisibles (punaises de lit, rongeurs). Idéal pour un diagnostic rapide et ciblé.",
-            "title": "DIAGBOX® Qualité Intérieure & Nuisibles"
+            "title": "DIAGBOX® Arboviroses",
+            "description": "Nos kits clé-en-main permettent une détection rapide (48h) et précoces d'arboviroses dans l'environnement ou au sein d'une population via les eaux usées. Ideal pour un suivi rapide et ciblé"
           },
-          "intro": "**IAGE offre des outils d'analyse pour détecter les dangers et valider l'efficacité des produits d'entretien : **\n   - évaluer la qualité de l'air (moisissures)\n   - détecter la présence de nuisibles (punaises de lit, rongeurs, mérules...) ",
-          "services": {
-            "title": "Nos solutions pour l'hygiène intérieure et publique :"
+          "catalog": {
+            "title": "Analyses Catalogue et Combinaisons Spécifiques",
+            "description": "Explorez nos analyses pour la détection des arboviroses. Des combinaisons peuvent être étudiées pour des diagnostics complets."
+          },
+          "development": {
+            "title": "Développement de Nouvelles Méthodes",
+            "description": "Besoin d'une méthode spécifique pour une arboviroses émergente particulière ? Nous développons des solutions d'analyse sur mesure en partenariat avec les professionnels de la santé."
           }
         },
         "04": {
@@ -393,22 +368,14 @@ export const texts = {
             "description": "Consultez notre catalogue d'analyses pour les principaux pathogènes des gazons de golf. Nous pouvons combiner des analyses pour un profil complet ou rechercher des pathogènes spécifiques sur demande.",
             "title": "Analyses Catalogue et Combinaisons Spécifiques"
           },
-          "catchphrase": "XXXXX En charge de l'entretien de gazons de golf, vous devez maintenir une qualité optimale tout en respectant les nouvelles réglementations environnementales.",
-          "cta": {
-            "diagbox": "XXXXX Découvrir DIAGBOX® Golf"
-          },
           "development": {
             "description": "En collaboration avec les clubs de golf et les experts du secteur, nous développons de nouvelles méthodes pour détecter des pathogènes émergents ou spécifiques aux conditions des parcours de golf.",
             "title": "Développement de Nouvelles Méthodes"
           },
           "diagbox": {
-            "description": "XXXXX Le kit clé-en-main pour prélever facilement gazon, racines ou substrat et obtenir en 48h un diagnostic précis des pathogènes présents. Anticipez les traitements et optimisez la santé de vos greens et fairways.",
             "title": "DIAGBOX® Golf"
           },
           "intro": "**IAGE aide à préserver la qualité de vos gazons de golf et à réduire vos coûts d'entretien grâce :**\n    - à ses services de **détection précoce** et précise des champignons responsables des maladies du gazon\n    - à ses **recommandations** et outils de suivis adaptés aux spécificités des parcours de golf\n    - au **diagnostic rapide** des pathogènes pour une intervention ciblée\n    - à l'**optimisation** de vos traitements préventifs et curatifs",
-          "services": {
-            "title": "XXXXXX Vous vous posez des questions sur la santé de vos gazons de golf, voici nos solutions :"
-          },
           "qna_reco": {
             "common": {
               "recommendation_title": "Notre recommandation :",
@@ -464,6 +431,64 @@ export const texts = {
           },
           "ideal_for": {
             "text": "Terrain de golf - Greens - Fairways - Départs - Approches"
+          }
+        },
+        "01": {
+          "intro": "**IAGE vous accompagne** avec des solutions d'analyse génomique précises et rapides pour **l'épidémiosurveillance par les eaux usées** (Wastewater Based Epidemiology – WBE)\n\n- Vous **visualisez l'état de santé global** de la population desservie par un réseau ou une STEP, **à l'échelle que vous définissez**: l'agglomération, un quartier, un bâtiment (école, hôpital,...)\n\n- **Vous êtes alerté** en cas de démarrage épidémique ou de niveau important d'une maladie que vous avez décidé de suivre",
+          "services": {
+            "title": "Nos solutions adaptées à l'épidémiosurveillance :"
+          },
+          "diagbox": {
+            "title": "DIAGBOX® WBE",
+            "description": "Le kit clé-en-main pour une détection et quantification rapide (48h) et autonome des pathogènes (virus, bactéries) dans vos échantillons d'eau. Simple, efficace, et stockable sans contrainte."
+          },
+          "catalog": {
+            "title": "Analyses Catalogue et Combinaisons Spécifiques",
+            "description": "Choisissez parmi nos analyses standardisées (ex: SARS-CoV-2 dans les eaux usées) ou combinez plusieurs méthodes pour un suivi sur mesure de pathogènes spécifiques à vos problématiques."
+          },
+          "development": {
+            "title": "Développement de Nouvelles Méthodes",
+            "description": "Nous innovons avec vous pour développer et valider des méthodes d'analyse pour de nouvelles cibles virales ou bactériennes, répondant aux enjeux émergents de santé publique."
+          },
+          "sampling": {
+            "title": "Prélèvement en continu dans les réseaux",
+            "description": "Pour installer une surveillance dans les réseaux d'assainissement pour suivre un quartier, ou en sortie de bâtiment, nous proposons en vente ou en location des préleveurs en continu autonomes, créés et produits par IAGE, pouvant être installés dans les regards d'égouts sous circulation, ou dans les locaux techniques de bâtiments."
+          }
+        },
+        "02": {
+          "intro": "**IAGE vous accompagne avec des solutions d'analyse en milieu hospitalier pour renforcer la sécurité des patients et du personnel**, grâce à des solutions de **validation** de protocoles de désinfection et de **contrôle** de l'état bactériologique des salles",
+          "services": {
+            "title": "Nos solutions adaptées à l'hygiène hospitalière :"
+          },
+          "diagbox": {
+            "title": "DIAGBOX® Hygiène Hospitalière",
+            "description": "Le kit clé-en-main pour une détection et quantification rapide (48h) de marqueurs microbiens (bactéries, moisissures) sur surfaces ou dans l'air après désinfection. Simple, efficace, et idéal pour vos contrôles qualité réguliers."
+          },
+          "catalog": {
+            "title": "Analyses Catalogue et Combinaisons Spécifiques",
+            "description": "Choisissez parmi nos analyses standardisées (ex: recherche de légionelles, staphylocoques dorés) ou combinez plusieurs méthodes pour un suivi sur mesure des points critiques de votre établissement."
+          },
+          "development": {
+            "title": "Développement de Nouvelles Méthodes",
+            "description": "Nous innovons avec vous pour développer et valider des méthodes d'analyse pour de nouvelles cibles pertinentes en milieu hospitalier (pathogènes émergents, biofilms) ou pour évaluer l'efficacité de nouveaux protocoles/produits de désinfection."
+          }
+        },
+        "03": {
+          "intro": "**IAGE propose des outils d'analyse pour détecter de manière précise et quantifier la présence de moisissures qui affectent la qualité de l'air, pour :\n\n- alerter sur les dangers éventuels\n\n- valider l'efficacité des traitements et des produits d'entretien",
+          "services": {
+            "title": "Nos solutions pour l'analyse de l'air intérieur :"
+          },
+          "diagbox": {
+            "title": "DIAGBOX® Moisissures",
+            "description": "Nos kits clé-en-main permettent une détection rapide (48h) des moisissures présentes dans les systèmes d'aération. Idéal pour un diagnostic rapide et ciblé."
+          },
+          "catalog": {
+            "title": "Analyses Catalogue et Combinaisons Spécifiques",
+            "description": "Explorez nos analyses pour la détection de moisissures. Des combinaisons peuvent être étudiées pour des diagnostics complets."
+          },
+          "development": {
+            "title": "Développement de Nouvelles Méthodes",
+            "description": "Besoin d'une méthode spécifique pour une moisissure particulière ? Nous développons des solutions d'analyse sur mesure en partenariat avec les professionnels de l'hygiène."
           }
         }
       },
@@ -1007,10 +1032,12 @@ export const texts = {
       "no_documents": "Les documents seront bientôt disponibles.",
       "download": "Télécharger",
       "folder": {
+        "sante_publique_et_hygiene": "Santé publique ",
+        "hygiene": "Hygiène intérieure",
+        "batiments": "Pathologies des bâtiments",
         "agriculture_elevage": "Agriculture et élevage",
-        "gazons": "Gazons",
-        "sante_publique_et_hygiene": "Santé publique et hygiène",
-        "traitements_industriels": "Traitements industriels"
+        "traitements_industriels": "Procédés de traitement industriels",
+        "gazons": "Gazons naturels sportifs et d'agrément"
       }
     }
   },
@@ -1041,12 +1068,7 @@ export const texts = {
         "title": "Ready to get started?"
       },
       "hero": {
-        "card_title_agriculture": "Agriculture, livestock",
-        "card_title_health": "Public health,\nHygiene in buildings",
-        "card_title_industrial": "Agri-food fermentation,\nWater treatment – bio-energy...",
-        "card_title_turf": "Professional natural lawns, parks, gardens",
         "cta": "Contact us",
-        "professional_intro": "Our services for your sectors of activity:",
         "subtitle": "We put our expertise in the living world — powered by DNA and RNA science - at your service",
         "title": "See the invisible to act in time"
       },
@@ -1055,48 +1077,33 @@ export const texts = {
           "description": "Cemetery lawn pathogen diagnostics and monitoring",
           "name": "Cemetery Lawns"
         },
-        "01": {
-          "description": "Pathogen quantification in wastewater\nPossibility of COFRAC accredited measures",
-          "name": "Environmental Epidemiological surveillance"
+        "11": {
+          "name": "Pest control – tools for detection"
         },
-        "02": {
-          "description": "Disinfection control measures",
-          "name": "Hospital hygiene"
+        "12": {
+          "name": "Detection of wood-decaying fungi"
         },
-        "03": {
-          "description": "Air quality control, pest presence",
-          "name": "Indoor hygiene"
-        },
-        "04": {
-          "description": "Measurements of the presence of turf pathogens",
-          "name": "Stadium turfs"
+        "13": {
+          "name": "Detection of arboviruses in different matrices"
         },
         "05": {
-          "description": "Pathogen or process quality measurements",
           "name": "Viti – Vini"
         },
         "06": {
-          "description": "Pathogen quantification",
           "name": "Arboriculture (Apple)"
         },
         "07": {
-          "description": "Control measure against the presence of human pathogens",
           "name": "Shellfish farming"
         },
         "08": {
-          "description": "Avian pathogen control measures",
           "name": "Poultry farming"
         },
         "category_agriculture_livestock_title": "Agriculture and livestock",
-        "category_health_hygiene_title": "Public Health and Indoor Hygiene",
         "category_industrial_fermentation_title": "Industrial treatment processes",
-        "category_turf_parks_title": "Natural turfs and lawns",
+        "category_turf_parks_title": "Natural sport turfs and lawns",
         "subdomain_arboriculture": "Fruit trees",
         "subdomain_cemeteries": "Cemetery Lawn",
-        "subdomain_epidemiology": "Public health through wastewater, natural sites",
         "subdomain_golf_courses": "Golf turf",
-        "subdomain_hospital_hygiene": "Hygiene of hospital and nursing home wards",
-        "subdomain_indoor_hygiene": "Indoor hygiene\n(rats, bedbugs, dry rot, mold, etc.)",
         "subdomain_methanizers": "Methanizers",
         "subdomain_poultry_farming": "Poultry farming (avian flu)",
         "subdomain_purification_systems": "Networks and Sewage Treatment Plants",
@@ -1105,23 +1112,34 @@ export const texts = {
         "subdomain_viticulture": "Vines",
         "subdomain_winemaking": "Winemaking",
         "title": "Your challenges, our tools",
+        "subdomain_epidemiology": "Public health (epidemic surveillance) through wastewater",
+        "01": {
+          "name": "Wastewater Based Epidemiology"
+        },
+        "subdomain_hospital_hygiene": "Hygiene of hospital and nursing home wards",
+        "02": {
+          "name": "Hospital hygiene"
+        },
+        "subdomain_indoor_hygiene": "Indoor hygiene : air quality control",
+        "03": {
+          "name": "air quality control – mould prevention"
+        },
+        "subdomain_11": "Public hygiene: pest control",
+        "subdomain_12": "Wood-decaying fungi",
+        "subdomain_13": "Monitoring emerging arboviral diseases",
         "mobile_nav_domaine1": "Health",
+        "mobile_nav_domaine5": "Hygiene",
+        "mobile_nav_domaine6": "Buildings",
         "mobile_nav_domaine2": "Agriculture",
         "mobile_nav_domaine3": "Industry",
         "mobile_nav_domaine4": "Lawns",
-        "09": {
-          "description": "Golf course turf pathogen diagnostics and green quality monitoring",
-          "name": "Golf turf"
-        }
+        "category_health_hygiene_title": "Public Health",
+        "category_hygiene_title": "Indoor hygiene",
+        "category_buildings_title": "Building pathologies"
       },
       "services": {
         "0": {
-          "description": "Accurate and reliable analyses, from our catalog or on demand, to meet all your needs",
           "title": "Precision analyses"
-        },
-        "1": {
-          "description": "Personalized support to help you make decisions",
-          "title": "DIAGBOX®, Advice and Expertise"
         },
         "2": {
           "description": "Specialized equipment, local laboratories, technical support, for even greater responsiveness",
@@ -1218,74 +1236,58 @@ export const texts = {
             "title": "Questions about your cemetery lawn maintenance? Here are our solutions:"
           }
         },
-        "01": {
-          "catalog": {
-            "description": "Choose from our standardized analyses (e.g., SARS-CoV-2 in wastewater) or combine several methods for customized monitoring of pathogens specific to your issues.",
-            "title": "Catalog Analysis and Specific Combinations"
-          },
-          "catchphrase": "You are responsible for monitoring the health of the local population, or you wish to contribute to the prevention of epidemics:",
-          "cta": {
-            "diagbox": "Discover DIAGBOX® WES"
-          },
-          "development": {
-            "description": "We innovate with you to develop and validate analysis methods for new viral or bacterial targets, responding to emerging public health issues.",
-            "title": "Development of New Methods"
+        "11": {
+          "intro": "**IAGE offers analytical tools to accurately detect and identify pests in buildings** so you can respond more quickly or validate the results of treatments carried out:\n\n- early detection of bed bugs\n\n- detection of rodents and identification of the species to tailor treatments\n\n- detection and identification of mosquitoes",
+          "services": {
+            "title": "Our solutions for pest control"
           },
           "diagbox": {
-            "description": "The turnkey kit for rapid (48h) and autonomous detection and quantification of pathogens (viruses, bacteria) in your water samples. Simple, effective, and easily stored.",
-            "title": "DIAGBOX® WES"
+            "title": "DIAGBOX® Pest",
+            "description": "Our turnkey kits enable rapid (48 hours) detection of different species of pests. Ideal for quick and targeted diagnosis."
           },
-          "intro": "**IAGE supports you with precise and rapid genomic analysis solutions for environmental epidemiological surveillance, particularly through :** \n   - wastewater analysis (Wastewater Based Epidemiology – WBE).\n   - analysis in **other environmental matrices**, such as ponds for the detection of mosquito-borne diseases.",
-          "sampling": {
-            "description": "We also offer solutions for continuous sampling, particularly suited to the dynamic monitoring of aqueous matrices.",
-            "title": "Continuous sampling"
+          "catalog": {
+            "title": "Catalog Analyses and Specific Combinations",
+            "description": "Explore our testing for pest detection. Combinations can be considered for comprehensive diagnostics."
           },
-          "services": {
-            "title": "Our solutions adapted to epidemiological surveillance:"
+          "development": {
+            "title": "Development of New Methods",
+            "description": "Need a specific method for a particular pest ? We develop customized analysis solutions in partnership with hygiene professionals."
           }
         },
-        "02": {
-          "catalog": {
-            "description": "Choose from our standardized analyses (e.g., legionella and staphylococcus aureus testing) or combine several methods for customized monitoring of your facility's critical areas.",
-            "title": "Catalog Analyses and Specific Combinations"
-          },
-          "catchphrase": "You are responsible for hygiene in a healthcare establishment or a specialized cleaning company:",
-          "cta": {
-            "diagbox": "Discover DIAGBOX® Hygiene"
-          },
-          "development": {
-            "description": "We innovate with you to develop and validate analysis methods for new relevant targets in hospital settings (emerging pathogens, biofilms) or to evaluate the effectiveness of new disinfection protocols/products.",
-            "title": "Development of New Methods"
+        "12": {
+          "intro": "**IAGE offers analytical tools to accurately detect and classify the presence of wood-destroying fungi in buildings** to **reassure** in the absence of fungi, **react more quickly** or **validate the results of treatments** carried out in the event of detection:\n\n- early detection of **dry rot**",
+          "services": {
+            "title": "Our solutions to detect wood-decaying fungi"
           },
           "diagbox": {
-            "description": "The turnkey kit for rapid (48h) and autonomous detection and quantification of microbial markers (bacteria, mold) on surfaces or in the air after disinfection. Simple, effective, and ideal for your regular quality controls.",
-            "title": "DIAGBOX® Hospital Hygiene"
+            "title": "DIAGBOX® Fingi",
+            "description": "Our turnkey kits enable rapid (48 hours) and early detection of any wood-decaying fungi that may be present, or to validate the results of treatment. Ideal for rapid and targeted diagnosis."
           },
-          "intro": "**IAGE supports you with hospital testing solutions that ensure patient and staff safety:**\n   - disinfection control, protocol validation, and environmental monitoring\n   - comprehensive detection of antibacterial resistance",
-          "services": {
-            "title": "Our solutions adapted to hospital hygiene:"
+          "catalog": {
+            "title": "Catalog Analyses and Specific Combinations",
+            "description": "Explore our testing wood-decaying fungi. Combinations can be considered for comprehensive diagnostics."
+          },
+          "development": {
+            "title": "Development of New Methods",
+            "description": "Need a specific method for a particular fungi ? We develop customized analysis solutions in partnership with hygiene professionals."
           }
         },
-        "03": {
-          "catalog": {
-            "description": "Explore our testing for indoor air quality (IAQ), allergen identification, or specific pest detection. Combinations can be considered for comprehensive diagnostics.",
-            "title": "Catalog Analyses and Specific Combinations"
-          },
-          "catchphrase": "You manage indoor air quality, premises maintenance or you fight against pests (PCO):",
-          "cta": {
-            "diagbox": "Discover DIAGBOX® Indoor"
-          },
-          "development": {
-            "description": "Need a specific method for a new type of indoor contaminant or a particular pest? We develop customized analysis solutions in partnership with hygiene professionals.",
-            "title": "Development of New Methods"
+        "13": {
+          "intro": "**IAGE offers analytical tools to detect and quantify emerging arboviruses: **\n\n- Dengue\n\n- Chikungunya\n\n**At different stages**: \n\n- detect **mosquito circulation** through measures in environmental compartments: water bodies, plant supports, insect captures\n\n- detect the **presence of diseases within the population** through measures in wastewater",
+          "services": {
+            "title": "Our solutions to detect arboviral diseases"
           },
           "diagbox": {
-            "description": "Our turnkey kits allow for rapid (48 hours) and autonomies detection of mold in the air or traces of pest DNA (bedbugs, rodents). Ideal for rapid and targeted diagnosis.",
-            "title": "DIAGBOX® Indoor Quality & Pests"
+            "title": "DIAGBOX® Arboviruses",
+            "description": "Our turnkey kits enable rapid (48-hour) and early detection of arboviral diseases in the environment or within a population via wastewater. Ideal for rapid and targeted monitoring."
           },
-          "intro": "**IAGE offers analysis tools to assess air quality and validate the effectiveness of cleaning products :**\n   - detection of mold\n   - detection of presence of pests (bedbugs, rodents, dry rot, etc.)",
-          "services": {
-            "title": "Our solutions for indoor and public hygiene:"
+          "catalog": {
+            "title": "Catalog Analyses and Specific Combinations",
+            "description": "Explore our analyses for arbovirus detection. Combinations can be studied for comprehensive diagnostics."
+          },
+          "development": {
+            "title": "Development of New Methods",
+            "description": "Need a specific method for a particular emerging arbovirus  ? We develop customized analysis solutions in partnership with healthcare professionals."
           }
         },
         "04": {
@@ -1408,22 +1410,14 @@ export const texts = {
             "description": "Check our catalog of analyses for the main golf course turf pathogens. We can combine analyses for a complete profile or search for specific pathogens on request.",
             "title": "Catalog Analyses and Specific Combinations"
           },
-          "catchphrase": "In charge of golf turf maintenance, you must maintain optimal quality while complying with new environmental regulations.",
-          "cta": {
-            "diagbox": "Discover DIAGBOX® Golf"
-          },
           "development": {
             "description": "In collaboration with golf clubs and industry experts, we develop new methods to detect emerging pathogens specific to golf course conditions.",
             "title": "Development of New Methods"
           },
           "diagbox": {
-            "description": "The turnkey kit to easily sample turf, roots, or substrate and obtain a precise diagnosis of present pathogens within 48 hours. Anticipate treatments and optimize the health of your greens and fairways.",
             "title": "DIAGBOX® Golf"
           },
           "intro": "**IAGE helps preserve your golf course turf quality and reduce maintenance costs thanks to:**\n    - **Early detection** services and precise identification of fungi responsible for turf diseases\n    - **Recommendations** and monitoring tools adapted to golf course specificities\n    - **Rapid diagnosis** of pathogens for targeted intervention\n    - **Optimization** of your preventive and curative treatments",
-          "services": {
-            "title": "Questions about your golf course turf health? Here are our solutions:"
-          },
           "qna_reco": {
             "common": {
               "recommendation_title": "Our commendataire:",
@@ -1479,6 +1473,64 @@ export const texts = {
           },
           "ideal_for": {
             "text": "Golf course - Greens - Fairways - Tees - Approaches"
+          }
+        },
+        "01": {
+          "intro": "**IAGE supports you** with accurate and rapid genomic analysis solutions for **epidemic surveillance through wastewater** (Wastewater-Based Epidemiology – WBE). \n\n- You can **visualise the overall health status** of the population served by a network or WWTP, **at the scale you define**: a city, a neighbourhood, a building (school, hospital, etc.) \n\n- **You are alerted** in the event of an outbreak or a significant level of a disease that you have decided to monitor.",
+          "services": {
+            "title": "Our solutions adapted to epidemiological surveillance:"
+          },
+          "diagbox": {
+            "title": "DIAGBOX® WBE",
+            "description": "The turnkey kit for rapid (48h) and autonomous detection and quantification of pathogens (viruses, bacteria) in your water samples. Simple, effective, and easily stored."
+          },
+          "catalog": {
+            "title": "Catalog Analysis and Specific Combinations",
+            "description": "Choose from our standardized analyses (e.g., SARS-CoV-2 in wastewater) or combine several methods for customized monitoring of pathogens specific to your issues."
+          },
+          "development": {
+            "title": "Development of New Methods",
+            "description": "We innovate with you to develop and validate analysis methods for new viral or bacterial targets, responding to emerging public health issues."
+          },
+          "sampling": {
+            "title": "Continuous sampling in sewage networks",
+            "description": "To install monitoring in sewerage networks to monitor a neighbourhood or at the outlet of a building, we offer for sale or hire autonomous continuous samplers, designed and manufactured by IAGE, which can be installed in sewer manholes under traffic or in the technical rooms of buildings."
+          }
+        },
+        "02": {
+          "intro": "**IAGE supports you with analysis solutions for hospitals, to enhance patient and staff safety**, thanks to solutions for **validating** disinfection protocols and **monitoring** the bacteriological status of rooms.",
+          "services": {
+            "title": "Our solutions adapted to hospital hygiene:"
+          },
+          "diagbox": {
+            "title": "DIAGBOX® Hospital Hygiene",
+            "description": "The turnkey kit for rapid (48h) detection and quantification of microbial markers (bacteria, mold) on surfaces or in the air after disinfection. Simple, effective, and ideal for your regular quality controls."
+          },
+          "catalog": {
+            "title": "Catalog Analyses and Specific Combinations",
+            "description": "Choose from our standardized analyses (e.g., legionella and staphylococcus aureus testing) or combine several methods for customized monitoring of your facility's critical areas."
+          },
+          "development": {
+            "title": "Development of New Methods",
+            "description": "We innovate with you to develop and validate analysis methods for new relevant targets in hospital settings (emerging pathogens, biofilms) or to evaluate the effectiveness of new disinfection protocols/products."
+          }
+        },
+        "03": {
+          "intro": "**IAGE offers analysis tools to accurately detect and quantify the presence of mould that affects air quality, in order to:\n\n- alert users to potential hazards\n\n- validate the effectiveness of treatments and cleaning products",
+          "services": {
+            "title": "Our solutions for indoor air control"
+          },
+          "diagbox": {
+            "title": "DIAGBOX® Mould",
+            "description": "Our turnkey kits enable rapid (48 hours) detection of mould in ventilation systems. Ideal for quick and targeted diagnosis."
+          },
+          "catalog": {
+            "title": "Catalog Analyses and Specific Combinations",
+            "description": "Explore our testing for mould detection. Combinations can be considered for comprehensive diagnostics."
+          },
+          "development": {
+            "title": "Development of New Methods",
+            "description": "Need a specific method for a particular mould ? We develop customized analysis solutions in partnership with hygiene professionals."
           }
         }
       },
@@ -2022,10 +2074,12 @@ export const texts = {
       "no_documents": "Documents will be available soon.",
       "download": "Download",
       "folder": {
+        "sante_publique_et_hygiene": "Public Health",
+        "hygiene": "Indoor hygiene",
+        "batiments": "Building pathologies",
         "agriculture_elevage": "Agriculture and livestock",
-        "gazons": "Turf",
-        "sante_publique_et_hygiene": "Public health and hygiene",
-        "traitements_industriels": "Industrial treatments"
+        "traitements_industriels": "Industrial treatment processes",
+        "gazons": "Natural sport turfs and lawns"
       }
     }
   }

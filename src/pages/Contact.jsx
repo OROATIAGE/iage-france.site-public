@@ -26,8 +26,21 @@ const sectors = [
     category: 'category_health_hygiene_title',
     subdomains: [
       'subdomain_epidemiology',
+      'subdomain_13',
+    ],
+  },
+  {
+    category: 'category_hygiene_title',
+    subdomains: [
       'subdomain_hospital_hygiene',
       'subdomain_indoor_hygiene',
+      'subdomain_11',
+    ],
+  },
+  {
+    category: 'category_buildings_title',
+    subdomains: [
+      'subdomain_12',
     ],
   },
   {

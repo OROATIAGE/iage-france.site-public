@@ -8,12 +8,22 @@ function DocumentsPage() {
   const { language } = useLanguage();
   const getText = (key, defaultValue = '') => getTextByLanguage(key, language, defaultValue);
 
-  // Structure des domaines (identique à la page d'accueil)
+  // Structure des domaines (adaptée à la nouvelle organisation)
   const domains = [
     {
       key: 'category_health_hygiene_title',
-      folder: 'Santé_publique_et_hygiene',
-      documents: getDocumentsByDomain('Santé_publique_et_hygiene') || []
+      folder: 'Santé_publique',
+      documents: getDocumentsByDomain('Santé_publique') || []
+    },
+    {
+      key: 'category_hygiene_title',
+      folder: 'Hygiene_intérieure',
+      documents: getDocumentsByDomain('Hygiene_intérieure') || []
+    },
+    {
+      key: 'category_buildings_title',
+      folder: 'Batiments',
+      documents: getDocumentsByDomain('Batiments') || []
     },
     {
       key: 'category_agriculture_livestock_title',
