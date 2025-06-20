@@ -44,6 +44,9 @@ export const texts = {
         "13": {
           "name": "Détection dans différentes matrices des arboviroses"
         },
+        "04": {
+          "name": "Gazons des stades"
+        },
         "05": {
           "name": "Viti – Vini"
         },
@@ -78,10 +81,6 @@ export const texts = {
         "02": {
           "name": "Hygiène hospitalière"
         },
-        "subdomain_indoor_hygiene": "Hygiène intérieure: contrôle de la qualité de l'air ",
-        "03": {
-          "name": "Contrôle de la qualité de l'air – lutte contre les moisissures"
-        },
         "subdomain_11": "Hygiène publique : lutte contre les nuisibles",
         "subdomain_12": "Champignons lignivores",
         "subdomain_13": "Surveillance des arboviroses émergentes",
@@ -93,7 +92,11 @@ export const texts = {
         "mobile_nav_domaine4": "Gazons",
         "category_health_hygiene_title": "Santé publique ",
         "category_hygiene_title": "Hygiène intérieure",
-        "category_buildings_title": "Pathologies des bâtiments"
+        "category_buildings_title": "Pathologies des bâtiments",
+        "subdomain_indoor_hygiene": "Hygiène intérieure: contrôle de la qualité de l'air ",
+        "03": {
+          "name": "Contrôle de la qualité de l'air – lutte contre les moisissures"
+        }
       },
       "services": {
         "0": {
@@ -378,7 +381,7 @@ export const texts = {
           "intro": "**IAGE aide à préserver la qualité de vos gazons de golf et à réduire vos coûts d'entretien grâce :**\n    - à ses services de **détection précoce** et précise des champignons responsables des maladies du gazon\n    - à ses **recommandations** et outils de suivis adaptés aux spécificités des parcours de golf\n    - au **diagnostic rapide** des pathogènes pour une intervention ciblée\n    - à l'**optimisation** de vos traitements préventifs et curatifs",
           "qna_reco": {
             "common": {
-              "recommendation_title": "Notre recommandation :",
+              "recommendation_title": "Nos recommandation :",
               "contact_link": "Contactez-nous",
               "accompagnement_title": "Nous vous accompagnons"
             },
@@ -474,10 +477,6 @@ export const texts = {
           }
         },
         "03": {
-          "intro": "**IAGE propose des outils d'analyse pour détecter de manière précise et quantifier la présence de moisissures qui affectent la qualité de l'air, pour :\n\n- alerter sur les dangers éventuels\n\n- valider l'efficacité des traitements et des produits d'entretien",
-          "services": {
-            "title": "Nos solutions pour l'analyse de l'air intérieur :"
-          },
           "diagbox": {
             "title": "DIAGBOX® Moisissures",
             "description": "Nos kits clé-en-main permettent une détection rapide (48h) des moisissures présentes dans les systèmes d'aération. Idéal pour un diagnostic rapide et ciblé."
@@ -489,6 +488,57 @@ export const texts = {
           "development": {
             "title": "Développement de Nouvelles Méthodes",
             "description": "Besoin d'une méthode spécifique pour une moisissure particulière ? Nous développons des solutions d'analyse sur mesure en partenariat avec les professionnels de l'hygiène."
+          },
+          "intro": "**IAGE vous aide maintenir la qualité de l'air dans votre bâtiment pour protéger la santé des occupants,**\nen vous permettant de **prévenir les expositions fongiques invisibles grâce**:\n\n- **à ses services de détection précoce et précise des moisissures pathogènes**, responsables d’allergies, d’asthme ou d’infections respiratoires\n\n-**à ses recommandations ciblées et outils de suivi** adaptés à votre situation et au contexte (bâtiment occupé, après sinistre, présence de personnes vulnérables…)",
+          "qna_reco": {
+            "common": {
+              "recommendation_title": "Nos recommandations :",
+              "contact_link": "Contactez-nous",
+              "accompagnement_title": "Nous vous accompagnons"
+            },
+            "qna-group-q1": {
+              "recommendation_text": "Nos recommandations :",
+              "conclusion_text_prefix": "Utilisez la **DIAGBOX® PATHO MOISISSURE DÉTECTION** (PF000042) pour détecter rapidement toute présence fongique, même en l’absence de moisissures visibles. \n\nCe kit est idéal en phase de levée de doute ou de vérification préventive.",
+              "conclusion_text_suffix": "Spécifications techniques et prix des Diagbox recommandées"
+            },
+            "q1": {
+              "accompagnement_text": "Nous vous fournissons un **kit simple et guidé**, à utiliser vous-même pour prélever les zones sensibles (VMC, fenêtres, climatiseurs…).\n\nUne fois l’échantillon envoyé à notre laboratoire, l’analyse par dPCR est réalisée en 48h. Vous recevez ensuite un **rapport clair et exploitable**, qui vous permet de décider des actions à engager (assainissement, vérification, levée de doute, etc.)."
+            },
+            "qna-group-q2": {
+              "recommendation_text": "Nos recommandations :",
+              "conclusion_text_prefix": "En cas de suspicion ou pour documenter une situation dans un bâtiment sensible, la **DIAGBOX® PATHO MOISISSURE CARACTÉRISATION** (PF000003) permet de **détecter et caractériser les moisissures présentes**, en identifiant les espèces ciblées et en évaluant leur potentiel pathogène. \n\nCette analyse permet également de mieux comprendre l’origine probable de la contamination (source intérieure ou extérieure, humidité, ventilation…).",
+              "conclusion_text_suffix": "Spécifications techniques et prix des DIAGBOX® recommandées"
+            },
+            "q2": {
+              "accompagnement_text": "Le rapport d’analyse fournit une information sur la détection des espèces ciblées et leur pertinence sanitaire, permettant d’adapter les mesures de prévention ou de traitement."
+            },
+            "qna-group-q3": {
+              "recommendation_text": "Nos recommandations :",
+              "conclusion_text_prefix": "Après une intervention de nettoyage, utilisez la **DIAGBOX® PATHO MOISISSURE DÉTECTION** (PF000042) pour valider l’efficacité du traitement ou pour lever le doute avant réintégration des locaux.",
+              "conclusion_text_suffix": "Spécifications techniques et prix des Diagbox recommandées"
+            },
+            "q3": {
+              "accompagnement_text": "Le résultat transmis 48h après réception permet de savoir si les spores pathogènes sont toujours présents ou non"
+            },
+            "qna-group-q4": {
+              "recommendation_text": "Nos recommandations :",
+              "conclusion_text_suffix": "Spécifications techniques et prix des Diagbox recommandées"
+            }
+          },
+          "qna": {
+            "q1_title": "Comment savoir si mon bâtiment est à risque de contamination fongique ?",
+            "q2_title": "Quels sont les risques sanitaires liés aux moisissures, et quelles obligations ont les gestionnaires de bâtiments ?",
+            "q3_title": "Quelles actions mener si une contamination est confirmée ?",
+            "q5_title": "J'ai d'autres questions"
+          },
+          "qna_bon_a_savoir": {
+            "q1": "Les moisissures toxiques se développent dans les zones humides, mal ventilées ou isolées. \nInvisibles à l’œil nu, elles émettent des spores et des COV (Composés Organiques Volatils) pouvant irriter les voies respiratoires, déclencher de l’asthme ou altérer le système immunitaire. \nDes matériaux poreux peuvent concentrer jusqu’à 100 fois plus de spores.",
+            "q2": "Les moisissures pathogènes peuvent déclencher allergies, asthme ou infections, en particulier chez les personnes vulnérables.\nDepuis 2023, les établissements recevant du public (crèches, écoles…) doivent surveiller la qualité de l’air intérieur pour garantir un environnement sain.",
+            "q3": "Certains établissements, du fait de leur vulnérabilité ou de l’exposition prolongée des occupants, nécessitent une vigilance accrue en matière de contamination fongique. C’est notamment le cas des crèches, écoles, établissements de santé ou logements sociaux.\nDans ces environnements sensibles, tout traitement doit être suivi d’un contrôle rigoureux, en particulier après une contamination sévère, pour s’assurer de l’élimination effective des moisissures et de leurs spores.",
+            "q5": "Chaque situation de contamination fongique est spécifique : **configuration des lieux, niveau d’humidité, ventilation, matériaux utilisés, type d’occupation, contraintes réglementaires…** Autant de facteurs qui influencent les risques sanitaires et les réponses à y apporter. Vos objectifs ou contraintes (continuité d’usage, fragilité des occupants, budget, etc.) sont également déterminants.\n\nIl y a donc en effet de nombreuses situations différentes ! **N’hésitez pas à nous contacter** afin de définir le meilleur accompagnement."
+          },
+          "ideal_for": {
+            "text": "Répondre à des interrogations sur la qualité de l'air apporté par les systèmes de ventilation"
           }
         }
       },
@@ -589,6 +639,16 @@ export const texts = {
             "name": "Dollar Spot",
             "targets": "Clarireedia jacksonii, C.homoeocarpa",
             "type": "Déchets de tonte"
+          },
+          "PF000042": {
+            "name": "Patho moisissure - Détection",
+            "targets": "Écouvillon",
+            "type": "Pan-Aspergillus; Talaromyces marneffei; Stachybotrys chartarum; Cladosporium herbarum; Alternaria alternata génotoxique"
+          },
+          "PF000003": {
+            "name": "Patho moisissure – Caractérisation",
+            "targets": "Écouvillon",
+            "type": "Pan-Aspergillus; Talaromyces marneffei; Stachybotrys chartarum; Cladosporium herbarum; Alternaria alternata génotoxique"
           }
         },
         "lingette": {
@@ -634,7 +694,9 @@ export const texts = {
           "info_link": "(Cliquez sur une désignation ou un type de kit pour voir sa description)",
           "title": "DIAGBOX® Gazons - Liste des prix (Indicatifs HT)",
           "type_header": "Type de Kit",
-          "PF000039": "185,00€"
+          "PF000039": "185,00€",
+          "PF000042": "75,00€",
+          "PF000003": "200,00€"
         },
         "process": {
           "title": "DIAGBOX® : L'analyse de précision, en toute simplicité"
@@ -1086,6 +1148,9 @@ export const texts = {
         "13": {
           "name": "Detection of arboviruses in different matrices"
         },
+        "04": {
+          "name": "Stadium turf"
+        },
         "05": {
           "name": "Viti – Vini"
         },
@@ -1120,10 +1185,6 @@ export const texts = {
         "02": {
           "name": "Hospital hygiene"
         },
-        "subdomain_indoor_hygiene": "Indoor hygiene : air quality control",
-        "03": {
-          "name": "air quality control – mould prevention"
-        },
         "subdomain_11": "Public hygiene: pest control",
         "subdomain_12": "Wood-decaying fungi",
         "subdomain_13": "Monitoring emerging arboviral diseases",
@@ -1135,7 +1196,11 @@ export const texts = {
         "mobile_nav_domaine4": "Lawns",
         "category_health_hygiene_title": "Public Health",
         "category_hygiene_title": "Indoor hygiene",
-        "category_buildings_title": "Building pathologies"
+        "category_buildings_title": "Building pathologies",
+        "subdomain_indoor_hygiene": "Indoor hygiene : air quality control",
+        "03": {
+          "name": "air quality control – mould prevention"
+        }
       },
       "services": {
         "0": {
@@ -1420,12 +1485,12 @@ export const texts = {
           "intro": "**IAGE helps preserve your golf course turf quality and reduce maintenance costs thanks to:**\n    - **Early detection** services and precise identification of fungi responsible for turf diseases\n    - **Recommendations** and monitoring tools adapted to golf course specificities\n    - **Rapid diagnosis** of pathogens for targeted intervention\n    - **Optimization** of your preventive and curative treatments",
           "qna_reco": {
             "common": {
-              "recommendation_title": "Our commendataire:",
+              "recommendation_title": "Our recommendations:",
               "contact_link": "Contact us",
               "accompagnement_title": "We support you"
             },
             "qna-group-q1": {
-              "recommendation_text": "Our commendataire:",
+              "recommendation_text": "Our recommendations:",
               "conclusion_text_prefix": "**1. Know the real state of your green**: carry out a **complete diagnosis (leaves and roots)** of your lawn (DIAGBOX® PF000049): you will find out whether Dollar Spot is present, and above all what **other fungi** are present that could take advantage of your Dollar Spot treatments to take its place and **spread in their turn**.\n**2. Set up a simple monitoring plan**: from hot periods favourable to the development of Dollar Spot,** monitor for the early detection** of Dollar Spot (PF000039). This DIAGBOX® is **very easy to use**: after shearing, take between 150g and 500g of fresh (non-dried) residues, place them in the bag provided and send them off in the pre-paid envelope. You will receive an analysis report with the results 72 hours later. Carry out this monitoring **at least once a week during the risk period**.\n**3. Set up closer monitoring if necessary**: the first signs of Dollar Spot appear around 3 days after a positive result from our DIAGBOX® : **close monitoring means you can intervene when there's still time**.\n**4. Monitor the effectiveness of your treatments**: you implement the treatments** as soon as the measurement is positive**, on the identified area, generally in several stages. You check the effect of each treatment using the DIAGBOX® PF000039, which enables you to quantify the pressure of the pathogen and its decrease as the treatments take effect.",
               "conclusion_text_suffix": "Technical specifications and prices of recommended Diagboxes"
             },
@@ -1516,10 +1581,6 @@ export const texts = {
           }
         },
         "03": {
-          "intro": "**IAGE offers analysis tools to accurately detect and quantify the presence of mould that affects air quality, in order to:\n\n- alert users to potential hazards\n\n- validate the effectiveness of treatments and cleaning products",
-          "services": {
-            "title": "Our solutions for indoor air control"
-          },
           "diagbox": {
             "title": "DIAGBOX® Mould",
             "description": "Our turnkey kits enable rapid (48 hours) detection of mould in ventilation systems. Ideal for quick and targeted diagnosis."
@@ -1531,6 +1592,57 @@ export const texts = {
           "development": {
             "title": "Development of New Methods",
             "description": "Need a specific method for a particular mould ? We develop customized analysis solutions in partnership with hygiene professionals."
+          },
+          "intro": "**IAGE helps you maintain air quality in your building to protect the health of its occupants,**\nby enabling you to **prevent invisible fungal exposure thanks to**:\n\n- **its early and accurate detection services for pathogenic mould**, which can cause allergies, asthma or respiratory infections\n\n- **its targeted recommendations and monitoring tools** tailored to your situation and context (occupied building, post-disaster, presence of vulnerable people, etc.)",
+          "qna_reco": {
+            "common": {
+              "recommendation_title": "Our recommendations:",
+              "contact_link": "Contact us",
+              "accompagnement_title": "We support you"
+            },
+            "qna-group-q1": {
+              "recommendation_text": "Our recommendations:",
+              "conclusion_text_prefix": "Use **DIAGBOX® PATHO MOLD DETECTION** (PF000042) to quickly detect any fungal presence, even if there is no visible mould. \n\nThis kit is ideal for when you need to clear up any doubts or for preventive checks.",
+              "conclusion_text_suffix": "Technical specifications and prices of recommended Diagboxes"
+            },
+            "q1": {
+              "accompagnement_text": "We provide you with a **simple, guided kit** that you can use yourself to sample sensitive areas (ventilation, windows, air conditioning units, etc.).\n\nOnce the sample has been sent to our laboratory, the dPCR analysis is carried out within 48 hours. You then receive a **clear, usable report,** enabling you to decide what action to take (remediation, verification, removal of doubt, etc.)."
+            },
+            "qna-group-q2": {
+              "recommendation_text": "Our recommendations:",
+              "conclusion_text_prefix": "In the event of suspicion or to document a situation in a sensitive building, the **DIAGBOX® PATHO Mould Characterisation** (PF000003) can be used to **detect and characterise the moulds present**, identifying the target species and assessing their pathogenic potential. \n\nThis analysis also provides a better understanding of the likely origin of the contamination (indoor or outdoor source, humidity, ventilation, etc.).",
+              "conclusion_text_suffix": "Technical specifications and prices of recommended DIAGBOX®"
+            },
+            "q2": {
+              "accompagnement_text": "The analysis report provides information on the detection of target species and their health relevance, enabling prevention or treatment measures to be adapted."
+            },
+            "qna-group-q3": {
+              "recommendation_text": "Our recommendations:",
+              "conclusion_text_prefix": "After cleaning, use the **DIAGBOX® MOULD DETECTION** (PF000042) to validate the effectiveness of the treatment or to remove any doubts before re-occupying the premises.",
+              "conclusion_text_suffix": "Technical specifications and prices of recommended Diagboxes"
+            },
+            "q3": {
+              "accompagnement_text": "The result, sent 48 hours after receipt, shows whether or not the pathogenic spores are still present."
+            },
+            "qna-group-q4": {
+              "recommendation_text": "Our recommendations:",
+              "conclusion_text_suffix": "Technical specifications and prices of recommended Diagboxes"
+            }
+          },
+          "qna": {
+            "q1_title": "How do I know if my building is at risk of fungal contamination?",
+            "q2_title": "What are the health risks associated with mould, and what obligations do building managers have?",
+            "q3_title": "What action should be taken if contamination is confirmed?",
+            "q5_title": "I have further questions"
+          },
+          "qna_bon_a_savoir": {
+            "q1": "Toxic moulds grow in damp, poorly ventilated or insulated areas. \nInvisible to the naked eye, they emit spores and VOCs (Volatile Organic Compounds) that can irritate the respiratory tract, trigger asthma or alter the immune system. \nPorous materials can concentrate up to 100 times more spores.",
+            "q2": "Pathogenic moulds can trigger allergies, asthma or infections, particularly in vulnerable people.\nSince 2023, establishments open to the public (crèches, schools, etc.) have been required to monitor indoor air quality to ensure a healthy environment",
+            "q3": "Some establishments, because of their vulnerability or the prolonged exposure of their occupants, require greater vigilance in terms of fungal contamination. This is particularly true of crèches, schools, healthcare establishments and social housing.\nIn these sensitive environments, any treatment must be followed by rigorous monitoring, particularly after severe contamination, to ensure that the moulds and their spores have been effectively eliminated.",
+            "q5": "Each situation involving fungal contamination is specific: **configuration of the premises, level of humidity, ventilation, materials used, type of occupancy, regulatory constraints...***. All these factors influence the health risks and the responses to be provided. Your objectives or constraints (continuity of use, fragility of occupants, budget, etc.) are also decisive.\n\nThere are many different situations! **Don't hesitate to contact us** to discuss the best way to support you."
+          },
+          "ideal_for": {
+            "text": "Answer questions about the quality of the air supplied by ventilation systems"
           }
         }
       },
@@ -1631,6 +1743,16 @@ export const texts = {
             "name": "Dollar Spot",
             "targets": "Clarireedia jacksonii, C.homoeocarpa",
             "type": "Mowing waste"
+          },
+          "PF000042": {
+            "name": "Pathological mould – Detection",
+            "targets": "Swab",
+            "type": "Pan-Aspergillus; Talaromyces marneffei; Stachybotrys chartarum; Cladosporium herbarum; Genotoxic Alternaria alternata"
+          },
+          "PF000003": {
+            "name": "Pathological mould – Characterisation",
+            "targets": "Swab",
+            "type": "Pan-Aspergillus; Talaromyces marneffei; Stachybotrys chartarum; Cladosporium herbarum; Genotoxic Alternaria alternata"
           }
         },
         "lingette": {
@@ -1676,7 +1798,9 @@ export const texts = {
           "info_link": "(Click on a designation or kit type to see its description)",
           "title": "DIAGBOX® turf and Lawn - Price list (Excluding VAT)",
           "type_header": "Kit Type",
-          "PF000039": "185,00 €"
+          "PF000039": "185,00 €",
+          "PF000042": "75,00€",
+          "PF000003": "200,00€"
         },
         "process": {
           "title": "DIAGBOX®: Precision analysis, made simple"

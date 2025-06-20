@@ -5,22 +5,6 @@ import { FaLeaf, FaVial, FaPaperPlane } from 'react-icons/fa'; // Exemple d'icô
 import DiagboxGazonNav from '../components/DiagboxGazonNav';
 import { useLanguage } from '../context/LanguageContext';
 
-// Helper function to get texts for this page
-const getText = (key, defaultValue = '') => {
-  const { language } = useLanguage();
-  const keys = key.split('.');
-  let current = texts[language];
-  for (const k of keys) {
-    if (current && typeof current === 'object' && k in current) {
-      current = current[k];
-    } else {
-      console.warn(`Texte manquant pour la clé: ${key}`);
-      return defaultValue;
-    }
-  }
-  return current;
-};
-
 // Structure de données pour les kits (pour faciliter l'itération)
 const kitTypes = [
   {
@@ -69,6 +53,22 @@ const simpleSteps = [
 ];
 
 export function DiagboxGazonPage() {
+  const { language } = useLanguage();
+
+  // Helper function to get texts for this page
+  const getText = (key, defaultValue = '') => {
+    const keys = key.split('.');
+    let current = texts[language];
+    for (const k of keys) {
+      if (current && typeof current === 'object' && k in current) {
+        current = current[k];
+      } else {
+        console.warn(`Texte manquant pour la clé: ${key}`);
+        return defaultValue;
+      }
+    }
+    return current;
+  };
 
   // Créer le mapping Ref -> ID de section
   const kitRefToSectionIdMap = {};
@@ -90,23 +90,23 @@ export function DiagboxGazonPage() {
       {/* --- Hero Section --- */}
       <div className="text-center mb-12 md:mb-16">
         <h1 className="text-4xl md:text-5xl font-bold text-primary dark:text-secondary mb-4">
-          {getText('diagbox.title')}
+          {getText('diagbox.gazon.title')}
         </h1>
         <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-          {getText('diagbox.subtitle')}
+          {getText('diagbox.gazon.subtitle')}
         </p>
       </div>
 
       {/* --- Process Section --- */}
       <section className="mb-12 md:mb-16 bg-gray-100 dark:bg-gray-800 p-8 rounded-lg shadow-sm">
         <h2 className="text-2xl md:text-3xl font-semibold text-center text-gray-800 dark:text-gray-200 mb-8">
-          {getText('diagbox.process.title')}
+          {getText('diagbox.gazon.process.title')}
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8 text-center">
           {simpleSteps.map((step, index) => (
             <div key={index} className="flex flex-col items-center">
               <img src={step.icon} alt={step.alt} className="w-12 h-12 mb-3" />
-              <p className="text-gray-600 dark:text-gray-400">{getText(`diagbox.${step.key}`)}</p>
+              <p className="text-gray-600 dark:text-gray-400">{getText(`diagbox.gazon.${step.key}`)}</p>
             </div>
           ))}
         </div>
@@ -115,19 +115,19 @@ export function DiagboxGazonPage() {
       {/* --- General Info Sections --- */}
       <section className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 md:mb-16">
         <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
-            <h3 className="text-xl font-bold mb-3 text-primary dark:text-secondary">{getText('ideal_for.title')}</h3>
-            <p className="text-gray-700 dark:text-gray-300 text-sm">{getText('ideal_for.text')}</p>
+            <h3 className="text-xl font-bold mb-3 text-primary dark:text-secondary">{getText('diagbox.gazon.ideal_for.title')}</h3>
+            <p className="text-gray-700 dark:text-gray-300 text-sm">{getText('diagbox.gazon.ideal_for.text')}</p>
         </div>
          <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
-            <h3 className="text-xl font-semibold mb-3 text-primary dark:text-secondary">{getText('kit_content.title')}</h3>
-            <p className="text-gray-700 dark:text-gray-300 whitespace-pre-line">{getText('kit_content.text')}</p>
+            <h3 className="text-xl font-semibold mb-3 text-primary dark:text-secondary">{getText('diagbox.gazon.kit_content.title')}</h3>
+            <p className="text-gray-700 dark:text-gray-300 whitespace-pre-line">{getText('diagbox.gazon.kit_content.text')}</p>
         </div>
       </section>
 
       {/* --- Table of Contents Section (New Position) --- */}
       <section id="toc" className="mb-12 md:mb-16 scroll-mt-20 md:scroll-mt-24">
         <h3 className="text-xl font-semibold text-center text-gray-800 dark:text-gray-200 mb-4">
-            {getText('toc.title')} 
+            {getText('diagbox.gazon.toc.title')} 
         </h3>
         <div className="flex flex-wrap justify-center gap-2 md:gap-3">
             {kitTypes.map((kitTypeInfo) => (
@@ -136,7 +136,7 @@ export function DiagboxGazonPage() {
                     href={`#${kitTypeInfo.type}`} 
                     className="px-4 py-2 bg-secondary/10 dark:bg-secondary/20 text-secondary dark:text-secondary-light text-sm font-medium rounded-full hover:bg-secondary/20 dark:hover:bg-secondary/30 transition-colors"
                 >
-                    {getText(`toc.${kitTypeInfo.type}_link`)} 
+                    {getText(`diagbox.gazon.toc.${kitTypeInfo.type}_link`)} 
                 </a>
             ))}
             {/* Ajouter le lien vers les prix */}
@@ -144,7 +144,7 @@ export function DiagboxGazonPage() {
                 href="#prices" 
                 className="px-4 py-2 bg-accent/10 dark:bg-accent/20 text-accent dark:text-orange-300 text-sm font-medium rounded-full hover:bg-accent/20 dark:hover:bg-accent/30 transition-colors"
             >
-                {getText(`toc.prices_link`)} 
+                {getText(`diagbox.gazon.toc.prices_link`)} 
             </a>
         </div>
       </section>
@@ -210,12 +210,12 @@ export function DiagboxGazonPage() {
              </div>
              {/* Pythium Note - Check if any kit in this section needs it */} 
              {(kitTypeInfo.kits.some(ref => getText(`kits.${ref}.targets`, '').includes('Pythium Blight*'))) &&
-                <p className="mt-4 text-xs text-gray-500 dark:text-gray-400 italic">{getText('pythium_note')}</p>
+                <p className="mt-4 text-xs text-gray-500 dark:text-gray-400 italic">{getText('diagbox.gazon.pythium_note')}</p>
              }
              {/* Liens en bas de section */}
             <div className="mt-6 flex justify-between items-center">
               <a href="#prices" className="text-sm text-accent hover:text-accent/80 dark:text-orange-300 dark:hover:text-orange-200 transition-colors font-medium">
-                {getText('link_to_prices')}
+                {getText('diagbox.gazon.link_to_prices')}
               </a>
             </div>
           </section>
@@ -225,7 +225,7 @@ export function DiagboxGazonPage() {
       {/* --- Price List Section --- */}
       <section id="prices" className="mt-12 md:mt-16 pt-10 border-t border-gray-200 dark:border-gray-700 scroll-mt-[140px]">
           <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-800 dark:text-gray-200 mb-8">
-            {getText('prices.title')}
+            {getText('diagbox.gazon.prices.title')}
           </h2>
           {/* Responsive Table Container */}
           <div className="overflow-x-auto md:overflow-visible">
@@ -237,7 +237,7 @@ export function DiagboxGazonPage() {
                   <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Référence</th>
                   <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Désignation</th>
                   <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
-                    {getText('prices.type_header')}
+                    {getText('diagbox.gazon.prices.type_header')}
                   </th>
                   <th scope="col" className="px-6 py-3 text-right text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Prix Indicatif HT</th>
                 </tr>
@@ -269,7 +269,7 @@ export function DiagboxGazonPage() {
                         </a>
                       </td>
                       <td 
-                        data-label={getText('prices.type_header', 'Type')}
+                        data-label={getText('diagbox.gazon.prices.type_header', 'Type')}
                         className="block md:table-cell md:px-6 md:py-4 md:whitespace-nowrap text-sm text-gray-500 dark:text-gray-400 responsive-cell"
                       >
                         <a href={`#${typeId}`} className="hover:underline hover:text-primary dark:hover:text-secondary transition-colors">
@@ -293,17 +293,17 @@ export function DiagboxGazonPage() {
       {/* --- Final CTA Section --- */}
       <section className="mt-12 md:mt-16 text-center">
           <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
-            {getText('cta.text')}
+            {getText('diagbox.gazon.cta.text')}
           </p>
           <Link to="/contact" className="btn-primary">
-            {getText('cta.button')}
+            {getText('diagbox.gazon.cta.button')}
           </Link>
       </section>
 
       {/* Back to Domains Button */}
       <div className="max-w-4xl mx-auto px-4 text-center mt-16 mb-12">
         <Link to="/sectors" className="inline-block bg-[#52c6dd] dark:bg-blue-700 py-3 px-6 rounded-lg text-white hover:text-white/90 dark:text-white dark:hover:text-white/90 font-medium">
-          {getText('sectors.back_to_list')}
+          {getText('sectors.common.back_button')}
         </Link>
       </div>
 

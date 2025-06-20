@@ -96,7 +96,7 @@ const Home = () => {
     },
     {
       id: '04',
-      name: getText('home.sectors.04.name'),
+      name: getText('home.sectors.subdomain_sports_turf'),
       icon: '/assets/icons/football-field.svg',
       isSvg: true,
       color: 'bg-emerald-100 hover:bg-emerald-200',

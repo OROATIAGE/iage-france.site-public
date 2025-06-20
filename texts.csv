@@ -16,13 +16,12 @@ home.cta.title;Home (CTA);Prêt à commencer ?;Ready to get started?
 home.hero.cta;Home (Hero);Contactez-nous;Contact us
 home.hero.subtitle;Home (Hero);Nous mettons notre expertise du vivant à votre service;We put our expertise in the living world — powered by DNA and RNA science - at your service
 home.hero.title;Home (Hero);Voir l'invisible pour agir à temps ;See the invisible to act in time
-;;;
+home.sectors.04.name;Home (Secteurs);Gazons des stades;Stadium turf
 home.sectors.05.name;Home (Secteurs);Viti – Vini;Viti – Vini
 home.sectors.06.name;Home (Secteurs);Arboriculture (Pomme);Arboriculture (Apple)
 home.sectors.07.name;Home (Secteurs);Conchyliculture;Shellfish farming
 home.sectors.08.name;Home (Secteurs);Aviculture;Poultry farming
 home.sectors.category_agriculture_livestock_title;Home (Secteurs);Agriculture et élevage;Agriculture and livestock
-;;;
 home.sectors.category_industrial_fermentation_title;Home (Secteurs);Procédés de traitement industriels;Industrial treatment processes
 home.sectors.category_turf_parks_title;Home (Secteurs);Gazons naturels sportifs et d'agrément;Natural sport turfs and lawns
 home.sectors.subdomain_arboriculture;Home (Secteurs);Arbres fruitiers;Fruit trees
@@ -729,7 +728,7 @@ sectors.page.09.intro;Secteur 09 (Page);"**IAGE aide à préserver la qualité d
     - **Rapid diagnosis** of pathogens for targeted intervention
     - **Optimization** of your preventive and curative treatments"
 ;;;
-sectors.page.09.qna_reco.common.recommendation_title;Secteur 09 (Page);Notre recommandation :;Our commendataire:
+sectors.page.09.qna_reco.common.recommendation_title;Secteur 09 (Page);Nos recommandation :;Our recommendations:
 sectors.page.09.qna_reco.common.contact_link;Secteur 09 (Page);Contactez-nous;Contact us
 ;;;
 sectors.page.09.qna_reco.common.accompagnement_title;Secteur 09 (Page);Nous vous accompagnons;We support you
@@ -741,7 +740,7 @@ Pour **sortir du cercle des interventions réactives**, il est essentiel de quan
 Even with a treatment strategy in place, **it can persist** due to a number of factors: underestimated pathogen pressure, partial resistance of strains, or microclimatic conditions favourable to its reactivation.
 In addition,** other discrete pathogens** may be added, **aggravating the symptoms**. 
 **To break out of the circle of reactive interventions**, it is essential to precisely quantify the real pressure of the spot dollar and to check whether other diseases are also present."
-sectors.page.09.qna_reco.qna-group-q1.recommendation_text;Secteur 09 (Page);Nos recommandations :;Our commendataire:
+sectors.page.09.qna_reco.qna-group-q1.recommendation_text;Secteur 09 (Page);Nos recommandations :;Our recommendations:
 sectors.page.09.qna_reco.qna-group-q1.conclusion_text_prefix;Secteur 09 (Page);"**1. Connaissez l'état réel de votre green** : faites un **diagnostic complet (feuilles et les racines)** de votre pelouse (DIAGBOX® PF000049) : vous prenez connaissance de la présence éventuelle de Dollar Spot, et surtout des **autres champignons** présents qui pourraient profiter de vos traitements contre le Dollar Spot pour prendre sa place et **s'étendre à leur tour**.
 **2. Mettez en place un plan simple de surveillance** : à partir des périodes de chaleur propices au développement du Dollar Spot, assurez un **suivi de détection précoce** du Dollar Spot (PF000039). Cette DIAGBOX® est **très facile d'emploi** : Après la tonte, prélevez entre 150g et 500g de résidus frais (non séchés), placez-les dans le sachet fourni, et expédiez-les via l'enveloppe préaffranchie et vous recevrez un rapport d'analyse avec le résultat 72h après. Assurez cette surveillance **au minimum une fois par semaine pendant la période a risque**.
 **3. Mettez en place un suivi renforcé si nécessaire** : Les premiers signes de la Dollar Spot apparaissent en effet de l'ordre de 3 jours après un résultat positif de notre DIAGBOX® : **le suivi rapproché vous permet d'intervenir quand il est encore temps**.
@@ -848,25 +847,6 @@ sectors.page.02.catalog.description;Secteur 02 (Page);Choisissez parmi nos analy
 sectors.page.02.development.title;Secteur 02 (Page);Développement de Nouvelles Méthodes;Development of New Methods
 sectors.page.02.development.description;Secteur 02 (Page);Nous innovons avec vous pour développer et valider des méthodes d'analyse pour de nouvelles cibles pertinentes en milieu hospitalier (pathogènes émergents, biofilms) ou pour évaluer l'efficacité de nouveaux protocoles/produits de désinfection.;We innovate with you to develop and validate analysis methods for new relevant targets in hospital settings (emerging pathogens, biofilms) or to evaluate the effectiveness of new disinfection protocols/products.
 ;;;
-home.sectors.subdomain_indoor_hygiene;Home (Secteurs);Hygiène intérieure: contrôle de la qualité de l'air ;Indoor hygiene : air quality control
-home.sectors.03.name;Home (Secteurs);Contrôle de la qualité de l'air – lutte contre les moisissures;air quality control – mould prevention
-sectors.page.03.intro;Secteur 03 (Page);"**IAGE propose des outils d'analyse pour détecter de manière précise et quantifier la présence de moisissures qui affectent la qualité de l'air, pour :
-
-- alerter sur les dangers éventuels
-
-- valider l'efficacité des traitements et des produits d'entretien";"**IAGE offers analysis tools to accurately detect and quantify the presence of mould that affects air quality, in order to:
-
-- alert users to potential hazards
-
-- validate the effectiveness of treatments and cleaning products"
-sectors.page.03.services.title;Secteur 03 (Page);Nos solutions pour l'analyse de l'air intérieur :;Our solutions for indoor air control
-sectors.page.03.diagbox.title;Secteur 03 (Page);DIAGBOX® Moisissures;DIAGBOX® Mould
-sectors.page.03.diagbox.description;Secteur 03 (Page);Nos kits clé-en-main permettent une détection rapide (48h) des moisissures présentes dans les systèmes d'aération. Idéal pour un diagnostic rapide et ciblé.;Our turnkey kits enable rapid (48 hours) detection of mould in ventilation systems. Ideal for quick and targeted diagnosis.
-sectors.page.03.catalog.title;Secteur 03 (Page);Analyses Catalogue et Combinaisons Spécifiques;Catalog Analyses and Specific Combinations
-sectors.page.03.catalog.description;Secteur 03 (Page);Explorez nos analyses pour la détection de moisissures. Des combinaisons peuvent être étudiées pour des diagnostics complets.;Explore our testing for mould detection. Combinations can be considered for comprehensive diagnostics.
-sectors.page.03.development.title;Secteur 03 (Page);Développement de Nouvelles Méthodes;Development of New Methods
-sectors.page.03.development.description;Secteur 03 (Page);Besoin d'une méthode spécifique pour une moisissure particulière ? Nous développons des solutions d'analyse sur mesure en partenariat avec les professionnels de l'hygiène.;Need a specific method for a particular mould ? We develop customized analysis solutions in partnership with hygiene professionals.
-;;;
 home.sectors.subdomain_11;Home (Secteurs);Hygiène publique : lutte contre les nuisibles;Public hygiene: pest control
 home.sectors.11.name;Home (Secteurs);lutte contre les nuisibles : outils de détection ;Pest control – tools for detection
 sectors.page.11.intro;Secteur 11 (Page);"**IAGE propose des outils d'analyse pour détecter et qualifier de manière précise la présence de nuisibles dans les bâtiments** pour réagir plus vite ou valider les résultat des traitements réalisés :
@@ -956,3 +936,89 @@ documents.folder.batiments;Documents;Pathologies des bâtiments;Building patholo
 documents.folder.agriculture_elevage;Documents;Agriculture et élevage;Agriculture and livestock
 documents.folder.traitements_industriels;Documents;Procédés de traitement industriels;Industrial treatment processes
 documents.folder.gazons;Documents;Gazons naturels sportifs et d'agrément;Natural sport turfs and lawns
+;;;
+;;;
+home.sectors.subdomain_indoor_hygiene;Home (Secteurs);Hygiène intérieure: contrôle de la qualité de l'air ;Indoor hygiene : air quality control
+home.sectors.03.name;Home (Secteurs);Contrôle de la qualité de l'air – lutte contre les moisissures;air quality control – mould prevention
+;;;
+sectors.page.03.diagbox.title;Secteur 03 (Page);DIAGBOX® Moisissures;DIAGBOX® Mould
+sectors.page.03.diagbox.description;Secteur 03 (Page);Nos kits clé-en-main permettent une détection rapide (48h) des moisissures présentes dans les systèmes d'aération. Idéal pour un diagnostic rapide et ciblé.;Our turnkey kits enable rapid (48 hours) detection of mould in ventilation systems. Ideal for quick and targeted diagnosis.
+sectors.page.03.catalog.title;Secteur 03 (Page);Analyses Catalogue et Combinaisons Spécifiques;Catalog Analyses and Specific Combinations
+sectors.page.03.catalog.description;Secteur 03 (Page);Explorez nos analyses pour la détection de moisissures. Des combinaisons peuvent être étudiées pour des diagnostics complets.;Explore our testing for mould detection. Combinations can be considered for comprehensive diagnostics.
+sectors.page.03.development.title;Secteur 03 (Page);Développement de Nouvelles Méthodes;Development of New Methods
+sectors.page.03.development.description;Secteur 03 (Page);Besoin d'une méthode spécifique pour une moisissure particulière ? Nous développons des solutions d'analyse sur mesure en partenariat avec les professionnels de l'hygiène.;Need a specific method for a particular mould ? We develop customized analysis solutions in partnership with hygiene professionals.
+sectors.page.03.intro;Secteur 03 (Page);"**IAGE vous aide maintenir la qualité de l'air dans votre bâtiment pour protéger la santé des occupants,**
+en vous permettant de **prévenir les expositions fongiques invisibles grâce**:
+
+- **à ses services de détection précoce et précise des moisissures pathogènes**, responsables d’allergies, d’asthme ou d’infections respiratoires
+
+-**à ses recommandations ciblées et outils de suivi** adaptés à votre situation et au contexte (bâtiment occupé, après sinistre, présence de personnes vulnérables…)";"**IAGE helps you maintain air quality in your building to protect the health of its occupants,**
+by enabling you to **prevent invisible fungal exposure thanks to**:
+
+- **its early and accurate detection services for pathogenic mould**, which can cause allergies, asthma or respiratory infections
+
+- **its targeted recommendations and monitoring tools** tailored to your situation and context (occupied building, post-disaster, presence of vulnerable people, etc.)"
+sectors.page.03.qna_reco.common.recommendation_title;Secteur 03 (Page);Nos recommandations :;Our recommendations:
+sectors.page.03.qna_reco.common.contact_link;Secteur 03 (Page);Contactez-nous;Contact us
+sectors.page.03.qna_reco.common.accompagnement_title;Secteur 03 (Page);Nous vous accompagnons;We support you
+sectors.page.03.qna.q1_title;Secteur 03 (Page);Comment savoir si mon bâtiment est à risque de contamination fongique ?;How do I know if my building is at risk of fungal contamination?
+sectors.page.03.qna_bon_a_savoir.q1;Secteur 03 (Page);"Les moisissures toxiques se développent dans les zones humides, mal ventilées ou isolées. 
+Invisibles à l’œil nu, elles émettent des spores et des COV (Composés Organiques Volatils) pouvant irriter les voies respiratoires, déclencher de l’asthme ou altérer le système immunitaire. 
+Des matériaux poreux peuvent concentrer jusqu’à 100 fois plus de spores.";"Toxic moulds grow in damp, poorly ventilated or insulated areas. 
+Invisible to the naked eye, they emit spores and VOCs (Volatile Organic Compounds) that can irritate the respiratory tract, trigger asthma or alter the immune system. 
+Porous materials can concentrate up to 100 times more spores."
+sectors.page.03.qna_reco.qna-group-q1.recommendation_text;Secteur 03 (Page);Nos recommandations :;Our recommendations:
+sectors.page.03.qna_reco.qna-group-q1.conclusion_text_prefix;Secteur 03 (Page);"Utilisez la **DIAGBOX® PATHO MOISISSURE DÉTECTION** (PF000042) pour détecter rapidement toute présence fongique, même en l’absence de moisissures visibles. 
+
+Ce kit est idéal en phase de levée de doute ou de vérification préventive.";"Use **DIAGBOX® PATHO MOLD DETECTION** (PF000042) to quickly detect any fungal presence, even if there is no visible mould. 
+
+This kit is ideal for when you need to clear up any doubts or for preventive checks."
+sectors.page.03.qna_reco.q1.accompagnement_text;Secteur 03 (Page);"Nous vous fournissons un **kit simple et guidé**, à utiliser vous-même pour prélever les zones sensibles (VMC, fenêtres, climatiseurs…).
+
+Une fois l’échantillon envoyé à notre laboratoire, l’analyse par dPCR est réalisée en 48h. Vous recevez ensuite un **rapport clair et exploitable**, qui vous permet de décider des actions à engager (assainissement, vérification, levée de doute, etc.).";"We provide you with a **simple, guided kit** that you can use yourself to sample sensitive areas (ventilation, windows, air conditioning units, etc.).
+
+Once the sample has been sent to our laboratory, the dPCR analysis is carried out within 48 hours. You then receive a **clear, usable report,** enabling you to decide what action to take (remediation, verification, removal of doubt, etc.)."
+sectors.page.03.qna_reco.qna-group-q1.conclusion_text_suffix;Secteur 03 (Page);Spécifications techniques et prix des Diagbox recommandées;Technical specifications and prices of recommended Diagboxes
+sectors.page.03.qna.q2_title;Secteur 03 (Page);Quels sont les risques sanitaires liés aux moisissures, et quelles obligations ont les gestionnaires de bâtiments ?;What are the health risks associated with mould, and what obligations do building managers have?
+sectors.page.03.qna_bon_a_savoir.q2;Secteur 03 (Page);"Les moisissures pathogènes peuvent déclencher allergies, asthme ou infections, en particulier chez les personnes vulnérables.
+Depuis 2023, les établissements recevant du public (crèches, écoles…) doivent surveiller la qualité de l’air intérieur pour garantir un environnement sain.";"Pathogenic moulds can trigger allergies, asthma or infections, particularly in vulnerable people.
+Since 2023, establishments open to the public (crèches, schools, etc.) have been required to monitor indoor air quality to ensure a healthy environment"
+sectors.page.03.qna_reco.qna-group-q2.recommendation_text;Secteur 03 (Page);Nos recommandations :;Our recommendations:
+sectors.page.03.qna_reco.qna-group-q2.conclusion_text_prefix;Secteur 03 (Page);"En cas de suspicion ou pour documenter une situation dans un bâtiment sensible, la **DIAGBOX® PATHO MOISISSURE CARACTÉRISATION** (PF000003) permet de **détecter et caractériser les moisissures présentes**, en identifiant les espèces ciblées et en évaluant leur potentiel pathogène. 
+
+Cette analyse permet également de mieux comprendre l’origine probable de la contamination (source intérieure ou extérieure, humidité, ventilation…).";"In the event of suspicion or to document a situation in a sensitive building, the **DIAGBOX® PATHO Mould Characterisation** (PF000003) can be used to **detect and characterise the moulds present**, identifying the target species and assessing their pathogenic potential. 
+
+This analysis also provides a better understanding of the likely origin of the contamination (indoor or outdoor source, humidity, ventilation, etc.)."
+sectors.page.03.qna_reco.q2.accompagnement_text;Secteur 03 (Page);Le rapport d’analyse fournit une information sur la détection des espèces ciblées et leur pertinence sanitaire, permettant d’adapter les mesures de prévention ou de traitement.;The analysis report provides information on the detection of target species and their health relevance, enabling prevention or treatment measures to be adapted.
+sectors.page.03.qna_reco.qna-group-q2.conclusion_text_suffix;Secteur 03 (Page);Spécifications techniques et prix des DIAGBOX® recommandées;Technical specifications and prices of recommended DIAGBOX®
+sectors.page.03.qna.q3_title;Secteur 03 (Page);Quelles actions mener si une contamination est confirmée ?;What action should be taken if contamination is confirmed?
+sectors.page.03.qna_bon_a_savoir.q3;Secteur 03 (Page);"Certains établissements, du fait de leur vulnérabilité ou de l’exposition prolongée des occupants, nécessitent une vigilance accrue en matière de contamination fongique. C’est notamment le cas des crèches, écoles, établissements de santé ou logements sociaux.
+Dans ces environnements sensibles, tout traitement doit être suivi d’un contrôle rigoureux, en particulier après une contamination sévère, pour s’assurer de l’élimination effective des moisissures et de leurs spores.";"Some establishments, because of their vulnerability or the prolonged exposure of their occupants, require greater vigilance in terms of fungal contamination. This is particularly true of crèches, schools, healthcare establishments and social housing.
+In these sensitive environments, any treatment must be followed by rigorous monitoring, particularly after severe contamination, to ensure that the moulds and their spores have been effectively eliminated."
+sectors.page.03.qna_reco.qna-group-q3.recommendation_text;Secteur 03 (Page);Nos recommandations :;Our recommendations:
+sectors.page.03.qna_reco.qna-group-q3.conclusion_text_prefix;Secteur 03 (Page);Après une intervention de nettoyage, utilisez la **DIAGBOX® PATHO MOISISSURE DÉTECTION** (PF000042) pour valider l’efficacité du traitement ou pour lever le doute avant réintégration des locaux.;After cleaning, use the **DIAGBOX® MOULD DETECTION** (PF000042) to validate the effectiveness of the treatment or to remove any doubts before re-occupying the premises.
+sectors.page.03.qna_reco.q3.accompagnement_text;Secteur 03 (Page);Le résultat transmis 48h après réception permet de savoir si les spores pathogènes sont toujours présents ou non;The result, sent 48 hours after receipt, shows whether or not the pathogenic spores are still present.
+sectors.page.03.qna_reco.qna-group-q3.conclusion_text_suffix;Secteur 03 (Page);Spécifications techniques et prix des Diagbox recommandées;Technical specifications and prices of recommended Diagboxes
+sectors.page.03.qna.q4_title;Secteur 03 (Page);;
+sectors.page.03.qna_bon_a_savoir.q4;Secteur 03 (Page);;
+sectors.page.03.qna_reco.qna-group-q4.recommendation_text;Secteur 03 (Page);Nos recommandations :;Our recommendations:
+sectors.page.03.qna_reco.qna-group-q4.conclusion_text_prefix;Secteur 03 (Page);;
+sectors.page.03.qna_reco.q4.accompagnement_text;Secteur 03 (Page);;
+sectors.page.03.qna_reco.qna-group-q4.conclusion_text_suffix;Secteur 03 (Page);Spécifications techniques et prix des Diagbox recommandées;Technical specifications and prices of recommended Diagboxes
+sectors.page.03.qna.q5_title;Secteur 03 (Page);J'ai d'autres questions;I have further questions
+sectors.page.03.qna_bon_a_savoir.q5;Secteur 03 (Page);"Chaque situation de contamination fongique est spécifique : **configuration des lieux, niveau d’humidité, ventilation, matériaux utilisés, type d’occupation, contraintes réglementaires…** Autant de facteurs qui influencent les risques sanitaires et les réponses à y apporter. Vos objectifs ou contraintes (continuité d’usage, fragilité des occupants, budget, etc.) sont également déterminants.
+
+Il y a donc en effet de nombreuses situations différentes ! **N’hésitez pas à nous contacter** afin de définir le meilleur accompagnement.";"Each situation involving fungal contamination is specific: **configuration of the premises, level of humidity, ventilation, materials used, type of occupancy, regulatory constraints...***. All these factors influence the health risks and the responses to be provided. Your objectives or constraints (continuity of use, fragility of occupants, budget, etc.) are also decisive.
+
+There are many different situations! **Don't hesitate to contact us** to discuss the best way to support you."
+sectors.page.03.ideal_for.text;Secteur 03 (Page);Répondre à des interrogations sur la qualité de l'air apporté par les systèmes de ventilation;Answer questions about the quality of the air supplied by ventilation systems
+;;;
+diagbox.gazon.kits.PF000042.name;Secteur 03 (Page);Patho moisissure - Détection;Pathological mould – Detection
+diagbox.gazon.kits.PF000042.targets;Secteur 03 (Page);Écouvillon;Swab
+diagbox.gazon.kits.PF000042.type;Secteur 03 (Page);"Pan-Aspergillus; Talaromyces marneffei; Stachybotrys chartarum; Cladosporium herbarum; Alternaria alternata génotoxique";"Pan-Aspergillus; Talaromyces marneffei; Stachybotrys chartarum; Cladosporium herbarum; Genotoxic Alternaria alternata"
+diagbox.gazon.prices.PF000042;Secteur 03 (Page);75,00€;75,00€
+;;;
+diagbox.gazon.kits.PF000003.name;Secteur 03 (Page);Patho moisissure – Caractérisation;Pathological mould – Characterisation
+diagbox.gazon.kits.PF000003.targets;Secteur 03 (Page);Écouvillon;Swab
+diagbox.gazon.kits.PF000003.type;Secteur 03 (Page);"Pan-Aspergillus; Talaromyces marneffei; Stachybotrys chartarum; Cladosporium herbarum; Alternaria alternata génotoxique";"Pan-Aspergillus; Talaromyces marneffei; Stachybotrys chartarum; Cladosporium herbarum; Genotoxic Alternaria alternata"
+diagbox.gazon.prices.PF000003;Secteur 03 (Page);200,00€;200,00€

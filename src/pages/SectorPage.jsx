@@ -286,7 +286,7 @@ function SectorPage() {
   const pageData = texts[language].sectors.page[sectorId];
 
   // Get sector name using getText for proper translation
-  const sectorName = getText(`home.sectors.${sectorId}.name`) || `Secteur ${sectorId}`;
+  const sectorName = sectorId === '04' ? getText('home.sectors.subdomain_sports_turf') : getText(`home.sectors.${sectorId}.name`) || `Secteur ${sectorId}`;
 
   // Determine the back button text outside the return statement
   const backButtonText = texts.sectors?.common?.back_button || 'Retour à l\'accueil'; // Escaped apostrophe
